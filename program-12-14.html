@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#070708" />
+<title>12-Week Off-Ice Hockey Program — Ages 12-14 | Elite Hockey Drills</title>
+<meta name="description" content="The Train-to-Train phase. 12-week off-ice program for ages 12-14, block periodization, adolescent-safe. Coach David Ciboch, M.Ed. Sport Science." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#070708;--bg-2:#0C0C10;--bg-3:#131318;
+  --line:#1B1B22;--line-2:#25252E;
+  --ink:#ECEDEF;--ink-2:#9398A2;--ink-3:#5A5F6B;
+  --ice:#5DB4E5;--ice-soft:#5DB4E518;--ice-line:#5DB4E535;
+  --warm:#E8B777;--warm-soft:#E8B77715;
+  --card:#0E0E13;--green:#4FB371;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{font-family:'Inter Tight',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.45'/%3E%3C/svg%3E");pointer-events:none;z-index:1;mix-blend-mode:overlay;opacity:.35;}
+
+.display{font-family:'Bebas Neue',sans-serif;letter-spacing:.01em;line-height:.92;font-weight:400;}
+.serif{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;letter-spacing:-.01em;}
+
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px;}
+section{position:relative;z-index:2;}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:90;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;background:rgba(7,7,8,.85);backdrop-filter:blur(18px) saturate(150%);border-bottom:1px solid var(--line);}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:.14em;display:flex;align-items:center;gap:8px;}
+.nav-logo .dot{width:6px;height:6px;background:var(--ice);border-radius:50%;box-shadow:0 0 12px var(--ice);}
+.nav-back{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--ink-2);transition:color .2s;}
+.nav-back:hover{color:var(--ink);}
+@media(min-width:900px){.nav{padding:18px 40px;}}
+
+/* HERO */
+.hero{padding:120px 24px 60px;position:relative;}
+.hero-glow{position:absolute;top:-10%;left:50%;transform:translateX(-50%);width:90vw;max-width:900px;height:600px;background:radial-gradient(closest-side,var(--ice-soft) 0%,transparent 70%);pointer-events:none;filter:blur(40px);z-index:0;}
+.hero-content{position:relative;z-index:2;max-width:900px;margin:0 auto;text-align:center;}
+
+.hero-back{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:24px;transition:color .2s;}
+.hero-back:hover{color:var(--ice);}
+
+.hero-tag{display:inline-flex;align-items:center;gap:10px;padding:7px 14px 7px 12px;border:1px solid var(--ice-line);background:var(--ice-soft);border-radius:100px;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ice);margin-bottom:28px;}
+.hero-tag::before{content:'';width:6px;height:6px;background:var(--ice);border-radius:50%;box-shadow:0 0 10px var(--ice);}
+
+.hero-h1{font-size:clamp(48px,8vw,96px);line-height:.95;margin-bottom:20px;}
+.hero-h1 em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ice);font-weight:400;display:block;font-size:.6em;margin-top:14px;}
+
+.hero-lead{font-family:'Instrument Serif',serif;font-style:italic;font-size:clamp(18px,3vw,24px);color:var(--ink);max-width:680px;margin:0 auto 36px;line-height:1.5;}
+
+.hero-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:24px;margin-bottom:40px;padding-top:28px;border-top:1px solid var(--line);}
+.hero-meta-item{display:flex;flex-direction:column;align-items:center;}
+.hero-meta-num{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--ink);line-height:1;}
+.hero-meta-label{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:6px;}
+
+/* PRICE BAND */
+.price-band{background:linear-gradient(135deg,#1A1208 0%,#0E0A05 100%);border-top:1px solid rgba(232,183,119,.3);border-bottom:1px solid rgba(232,183,119,.3);padding:48px 24px;position:relative;overflow:hidden;}
+.price-band::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--warm),transparent);}
+.price-inner{max-width:900px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center;}
+.price-badge{background:var(--warm);color:#1A0F00;font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:6px 12px;border-radius:4px;}
+.price-row{display:flex;align-items:baseline;gap:14px;justify-content:center;}
+.price-old{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--ink-3);text-decoration:line-through;text-decoration-color:rgba(146,150,162,.6);}
+.price-now{font-family:'Bebas Neue',sans-serif;font-size:72px;color:var(--warm);line-height:.9;}
+.price-save{font-size:13px;font-weight:600;color:var(--warm);letter-spacing:.04em;}
+.price-cta{display:inline-flex;align-items:center;gap:10px;padding:18px 36px;background:var(--warm);color:#1A0F00;border-radius:100px;font-size:15px;font-weight:700;letter-spacing:.02em;transition:all .2s;}
+.price-cta:hover{transform:translateY(-2px);box-shadow:0 16px 32px -8px rgba(232,183,119,.4);}
+.price-note{font-size:12px;color:var(--ink-3);max-width:480px;}
+
+/* BODY */
+.body-section{padding:88px 24px;}
+.body-inner{max-width:780px;margin:0 auto;}
+
+.intro-text{font-size:clamp(17px,2.4vw,20px);line-height:1.75;color:var(--ink);margin-bottom:24px;}
+.intro-text:last-child{margin-bottom:0;}
+.intro-text strong{color:var(--ice);font-weight:500;}
+
+.divider{height:1px;background:var(--line);margin:64px 0;position:relative;}
+.divider::after{content:'';position:absolute;top:-3px;left:50%;transform:translateX(-50%);width:7px;height:7px;background:var(--ice);border-radius:50%;box-shadow:0 0 12px var(--ice);}
+
+.section-label{display:inline-flex;align-items:center;gap:12px;font-family:'Instrument Serif',serif;font-style:italic;font-size:15px;color:var(--ice);margin-bottom:18px;}
+.section-label::before{content:'';width:32px;height:1px;background:var(--ice);}
+
+.section-h{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,6vw,52px);line-height:1;letter-spacing:.005em;margin-bottom:32px;}
+.section-h em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ice);font-weight:400;}
+
+/* FEATURE LIST */
+.features{list-style:none;display:flex;flex-direction:column;gap:24px;margin-top:8px;}
+.feature-item{display:flex;gap:20px;padding:24px;background:var(--card);border:1px solid var(--line);border-radius:14px;transition:border-color .2s, transform .2s;}
+.feature-item:hover{border-color:var(--ice-line);transform:translateY(-2px);}
+.feature-icon{flex-shrink:0;width:38px;height:38px;background:var(--ice-soft);border:1px solid var(--ice-line);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--ice);}
+.feature-text{flex:1;}
+.feature-text strong{display:block;color:var(--ink);font-size:15px;font-weight:600;margin-bottom:6px;}
+.feature-text p{color:var(--ink-2);font-size:14.5px;line-height:1.65;}
+
+/* META BOX */
+.meta-box{margin-top:48px;padding:28px;background:var(--bg-2);border:1px solid var(--line);border-radius:14px;display:grid;grid-template-columns:1fr;gap:16px;}
+.meta-row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;}
+.meta-row:last-child{border-bottom:none;}
+.meta-row-label{color:var(--ink-3);font-weight:500;}
+.meta-row-value{color:var(--ink);font-weight:600;text-align:right;}
+
+/* CLOSING */
+.closing{padding:64px 24px 88px;text-align:center;}
+.closing-inner{max-width:680px;margin:0 auto;}
+.closing-quote{font-family:'Instrument Serif',serif;font-style:italic;font-size:clamp(20px,3vw,26px);line-height:1.5;color:var(--ink);margin-bottom:36px;}
+.closing-cta{display:inline-flex;align-items:center;gap:10px;padding:18px 36px;background:var(--warm);color:#1A0F00;border-radius:100px;font-size:15px;font-weight:700;letter-spacing:.02em;transition:all .2s;}
+.closing-cta:hover{transform:translateY(-2px);box-shadow:0 16px 32px -8px rgba(232,183,119,.4);}
+
+/* FOOTER */
+.footer{background:#040405;border-top:1px solid var(--line);padding:48px 24px;text-align:center;}
+.footer-inner{max-width:900px;margin:0 auto;}
+.footer-back{display:inline-flex;align-items:center;gap:10px;color:var(--ice);font-size:14px;font-weight:600;margin-bottom:20px;}
+.footer p{color:var(--ink-3);font-size:13px;line-height:1.7;}
+
+/* MODAL */
+.modal{position:fixed;inset:0;z-index:200;background:rgba(7,7,8,.85);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .25s;}
+.modal.open{opacity:1;pointer-events:auto;}
+.modal-card{background:var(--bg-2);border:1px solid var(--line-2);border-radius:20px;max-width:480px;width:100%;padding:36px 28px;position:relative;transform:scale(.95);transition:transform .25s;}
+.modal.open .modal-card{transform:scale(1);}
+.modal-close{position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:50%;background:var(--bg-3);color:var(--ink-2);font-size:18px;display:flex;align-items:center;justify-content:center;transition:background .2s;}
+.modal-close:hover{background:var(--line-2);color:var(--ink);}
+.modal-badge{display:inline-block;background:var(--ice);color:#001626;font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:5px 11px;border-radius:4px;margin-bottom:18px;}
+.modal-h{font-family:'Bebas Neue',sans-serif;font-size:32px;line-height:1;margin-bottom:10px;}
+.modal-h em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ice);font-weight:400;}
+.modal-text{color:var(--ink-2);font-size:14px;line-height:1.65;margin-bottom:24px;}
+.modal-text strong{color:var(--ink);}
+.modal-input{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line-2);border-radius:100px;padding:14px 20px;color:var(--ink);font-size:14px;outline:none;margin-bottom:12px;transition:border-color .2s;}
+.modal-input:focus{border-color:var(--ice);}
+.modal-input::placeholder{color:var(--ink-3);}
+.modal-btn{width:100%;padding:14px 20px;background:var(--ice);color:#001626;border-radius:100px;font-size:14px;font-weight:700;letter-spacing:.02em;transition:all .2s;}
+.modal-btn:hover{background:#7BC6F0;}
+.modal-note{font-size:11px;color:var(--ink-3);text-align:center;margin-top:12px;}
+.modal-success{text-align:center;padding:20px 0;}
+.modal-success-icon{width:60px;height:60px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-size:28px;color:#fff;}
+.modal-success h3{font-family:'Bebas Neue',sans-serif;font-size:28px;margin-bottom:10px;}
+.modal-success p{color:var(--ink-2);font-size:14px;line-height:1.65;}
+
+@media(min-width:780px){
+  .hero{padding:140px 40px 80px;}
+  .body-section{padding:120px 40px;}
+  .price-band{padding:64px 40px;}
+  .meta-box{grid-template-columns:1fr 1fr;gap:8px 32px;}
+  .meta-row{padding:14px 0;}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a href="index.html" class="nav-logo"><span class="dot"></span>ELITE HOCKEY DRILLS</a>
+  <a href="index.html#tiers" class="nav-back">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    All Programs
+  </a>
+</header>
+
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <a href="index.html#tiers" class="hero-back">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to Programs
+    </a>
+    <div class="hero-tag">Ages 12–14 · The Train-to-Train Program</div>
+    <h1 class="hero-h1 display">The 12-Week<br>Train-to-Train Program<em>For Ages 12–14</em></h1>
+    <p class="hero-lead">The window when serious training starts. Don't waste it on a generic plan.</p>
+    <div class="hero-meta">
+      <div class="hero-meta-item"><div class="hero-meta-num display">12<small style="font-size:.5em">wk</small></div><div class="hero-meta-label">Program</div></div>
+      <div class="hero-meta-item"><div class="hero-meta-num display">4×</div><div class="hero-meta-label">Per Week</div></div>
+      <div class="hero-meta-item"><div class="hero-meta-num display">35</div><div class="hero-meta-label">Pages</div></div>
+      <div class="hero-meta-item"><div class="hero-meta-num display">48</div><div class="hero-meta-label">Sessions</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="price-band">
+  <div class="price-inner">
+    <span class="price-badge">Founding Member Pricing · First 100 Buyers</span>
+    <div class="price-row">
+      <span class="price-old">$79</span>
+      <span class="price-now display">$49</span>
+    </div>
+    <div class="price-save">Save $30 · One-time payment · Instant PDF download</div>
+    <button class="price-cta" onclick="openModal()">
+      Reserve Your Spot — Launching Soon
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </button>
+    <p class="price-note">Payment is being set up. Reserve now and we'll notify you the moment the program is live — founding members get first access at this price.</p>
+  </div>
+</section>
+
+<section class="body-section">
+  <div class="body-inner">
+    <p class="intro-text">Between <strong>12 and 14</strong>, your child crosses the line from "kid who plays hockey" to "young athlete who trains for it." This is the <strong>Train-to-Train phase</strong> in long-term athletic development — the window where strength, speed, and power start responding to real training in a way they never did before, and never will quite the same way again.</p>
+    <p class="intro-text">This is the program that uses that window properly.</p>
+    <p class="intro-text">Twelve weeks. Four sessions a week. Sixty to seventy minutes each. Bodyweight and bands only. No barbells (intentionally — adolescent spines are still developing). Built on <strong>block periodization</strong> — the same model used at the NHL, NCAA D1, and elite European junior level.</p>
+
+    <div class="divider"></div>
+
+    <div class="section-label serif">Inside the program</div>
+    <h2 class="section-h">What's <em>included.</em></h2>
+
+    <ul class="features">
+      <li class="feature-item">
+        <div class="feature-icon">01</div>
+        <div class="feature-text">
+          <strong>3 four-week blocks</strong>
+          <p>Foundation → Specific Prep → Power Realization. True block periodization, not random workouts.</p>
+        </div>
+      </li>
+      <li class="feature-item">
+        <div class="feature-icon">02</div>
+        <div class="feature-text">
+          <strong>48 complete sessions</strong>
+          <p>Every exercise, every set, every cue, every safety note. Nothing left to chance.</p>
+        </div>
+      </li>
+      <li class="feature-item">
+        <div class="feature-icon">03</div>
+        <div class="feature-text">
+          <strong>7-test combine battery with mid-block checkpoints</strong>
+          <p>Vertical jump, broad jump, 10m sprint, 5-10-5 agility, single-leg symmetry, Copenhagen, Pallof. Measurable progress every 4 weeks.</p>
+        </div>
+      </li>
+      <li class="feature-item">
+        <div class="feature-icon">04</div>
+        <div class="feature-text">
+          <strong>Plyometrics, sprint mechanics, lateral power, anti-rotation core</strong>
+          <p>All the qualities that translate directly to skating speed and on-ice strength.</p>
+        </div>
+      </li>
+      <li class="feature-item">
+        <div class="feature-icon">05</div>
+        <div class="feature-text">
+          <strong>Single-leg work ≥40% of lower-body volume</strong>
+          <p>Because hockey is played on edges, one leg at a time. Most programs miss this.</p>
+        </div>
+      </li>
+      <li class="feature-item">
+        <div class="feature-icon">06</div>
+        <div class="feature-text">
+          <strong>Adductor work twice a week, every week</strong>
+          <p>The most underprogrammed quality in youth hockey — and the most common injury site.</p>
+        </div>
+      </li>
+      <li class="feature-item">
+        <div class="feature-icon">07</div>
+        <div class="feature-text">
+          <strong>No 1RM testing, no max-effort risks</strong>
+          <p>Adolescent-safe throughout. Designed by a sport scientist who understands growth-phase athletes.</p>
+        </div>
+      </li>
+      <li class="feature-item">
+        <div class="feature-icon">08</div>
+        <div class="feature-text">
+          <strong>Progression/regression library</strong>
+          <p>Every main exercise comes with easier and harder variations. Always the right challenge.</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <p class="intro-text"><strong>Realistic expected gains across twelve weeks:</strong></p>
+    <p class="intro-text">4-8 cm on vertical jump · 15-25 cm on broad jump · 0.15-0.30 sec faster on 10m sprint · noticeable improvement in skating posture, stride length, and recovery between shifts.</p>
+
+    <div class="meta-box">
+      <div class="meta-row"><span class="meta-row-label">Format</span><span class="meta-row-value">35-page PDF</span></div>
+      <div class="meta-row"><span class="meta-row-label">Delivery</span><span class="meta-row-value">Instant download</span></div>
+      <div class="meta-row"><span class="meta-row-label">Compatibility</span><span class="meta-row-value">Print or any device</span></div>
+      <div class="meta-row"><span class="meta-row-label">Support</span><span class="meta-row-value">Direct email to coach</span></div>
+      <div class="meta-row"><span class="meta-row-label">Author</span><span class="meta-row-value">Coach David Ciboch</span></div>
+      <div class="meta-row"><span class="meta-row-label">Credentials</span><span class="meta-row-value">M.Ed. Sport Science</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="closing-inner">
+    <p class="closing-quote">"The Train-to-Train window only opens once. Use it properly — or lose it."</p>
+    <button class="closing-cta" onclick="openModal()">
+      Reserve Your Spot
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="index.html" class="footer-back">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to Elite Hockey Drills
+    </a>
+    <p>© 2025 Elite Hockey Drills · Built by Coach David Ciboch · M.Ed. Sport Science · National Team Coach</p>
+  </div>
+</footer>
+
+<!-- RESERVATION MODAL -->
+<div class="modal" id="reserveModal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <div id="modalForm">
+      <span class="modal-badge">Launching Soon</span>
+      <h3 class="modal-h">Reserve <em>your spot.</em></h3>
+      <p class="modal-text">Enter your email and we'll notify you <strong>the moment this program is live</strong>. Founding members get first access at the $49 price before it goes to $79.</p>
+      <form onsubmit="reserveSubmit(event)">
+        <input type="email" required placeholder="Your email address" class="modal-input" id="reserveEmail" />
+        <button type="submit" class="modal-btn">Reserve My Spot →</button>
+      </form>
+      <p class="modal-note">No spam · No card needed · Founding member benefits guaranteed</p>
+    </div>
+    <div id="modalSuccess" style="display:none;">
+      <div class="modal-success">
+        <div class="modal-success-icon">✓</div>
+        <h3>You're on the list.</h3>
+        <p>We'll email you the moment this program is live. Founding member pricing is yours.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal(){
+  document.getElementById('reserveModal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){
+  document.getElementById('reserveModal').classList.remove('open');
+  document.body.style.overflow='';
+  setTimeout(()=>{
+    document.getElementById('modalForm').style.display='block';
+    document.getElementById('modalSuccess').style.display='none';
+  }, 300);
+}
+function reserveSubmit(e){
+  e.preventDefault();
+  const email = document.getElementById('reserveEmail').value;
+  console.log('Reservation: ages 12-14 program', email);
+  document.getElementById('modalForm').style.display='none';
+  document.getElementById('modalSuccess').style.display='block';
+  setTimeout(()=>{
+    closeModal();
+    e.target.reset();
+  }, 3500);
+}
+document.addEventListener('keydown',(e)=>{
+  if(e.key==='Escape')closeModal();
+});
+</script>
+</body>
+</html>
