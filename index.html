@@ -186,17 +186,30 @@ section{position:relative;z-index:2;}
   .hero-ctas{justify-content:flex-start;}
   .hero-stats{margin-left:0;margin-right:0;max-width:600px;}
 }
+.hero-badges{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin-bottom:36px;}
 .hero-status{
   display:inline-flex;align-items:center;gap:10px;
   padding:7px 14px 7px 12px;
   border:1px solid var(--ice-line);background:var(--ice-soft);
   border-radius:100px;
   font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--ice);margin-bottom:36px;
+  color:var(--ice);
 }
 .hero-status::before{
   content:'';width:6px;height:6px;background:var(--ice);border-radius:50%;
-  box-shadow:0 0 10px var(--ice);animation:dotPulse 2s infinite;
+  box-shadow:0 0 10px var(--ice);animation:dotPulse 2s infinite;flex-shrink:0;
+}
+.hero-presale-pill{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:7px 14px 7px 12px;
+  border:1px solid rgba(232,183,119,.35);background:rgba(232,183,119,.08);
+  border-radius:100px;
+  font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--warm);
+}
+.hero-presale-dot{
+  width:6px;height:6px;background:var(--warm);border-radius:50%;
+  box-shadow:0 0 10px var(--warm);animation:dotPulse 2s infinite;flex-shrink:0;
 }
 .hero-h1{
   font-size:clamp(68px,15vw,104px);
@@ -1362,20 +1375,26 @@ section{position:relative;z-index:2;}
   <div class="hero-content">
     <div class="hero-grid-inner">
       <div class="hero-text">
-        <div class="hero-status">M.Ed. Sport Science · National Team Coach</div>
+        <div class="hero-badges">
+          <div class="hero-status">Coach David Ciboch · M.Ed. Sport Science · National Team Coach</div>
+          <div class="hero-presale-pill">
+            <span class="hero-presale-dot"></span>
+            Founding pre-sale open — programs launch June 2026
+          </div>
+        </div>
         <h1 class="hero-h1 display">
           <span class="line">Off-Ice Training,</span>
           <span class="line"><span class="accent serif">engineered</span> for <span class="ice">hockey.</span></span>
         </h1>
         <p class="hero-sub">
-          Programs built on real sport science — not gym-bro guesswork. <strong>Strength, speed, and conditioning</strong> for hockey players, designed by a coach who's worked with players from grassroots to national team level.
+          12-week programs for <strong>competitive players ages 9–40+</strong> — and parents who want serious off-ice training for their kids. Built on sport science by a national team coach. <strong>Reserve your founding spot at $49</strong> before the price goes to $79 at launch.
         </p>
         <div class="hero-ctas">
-          <a href="survey.html" class="btn btn-primary">
-            Get Your Free Program
+          <a href="#tiers" class="btn btn-primary">
+            Reserve at $49 — Founding Price
             <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
-          <a href="#tiers" class="btn btn-ghost">Explore Programs</a>
+          <a href="survey.html" class="btn btn-ghost">Try Free Program First</a>
         </div>
         <div class="hero-stats">
           <div>
