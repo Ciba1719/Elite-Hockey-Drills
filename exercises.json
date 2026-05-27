@@ -356,7 +356,7 @@
     "progression": "Progress: single-leg banded bridge or hip load | Regress: lighter band or no band",
     "muscles": "Glute max, gluteus medius, hamstrings",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=JRhBbCKZBlc",
     "slug": "band-glute-bridge"
   },
   {
@@ -371,7 +371,7 @@
     "progression": "Progress: hip load or top pause | Regress: keep both feet down (band glute bridge)",
     "muscles": "Glute max, gluteus medius, hamstrings, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=OcPMITAD37k",
     "slug": "sl-glute-bridge-band"
   },
   {
@@ -386,7 +386,7 @@
     "progression": "Progress: heavier DBs or 3-sec eccentric | Regress: lighter load or reduce range (higher finish)",
     "muscles": "Hamstrings, glutes, erector spinae, lats",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=pNdMWbPq0Wo",
     "slug": "db-rdl"
   },
   {
@@ -401,23 +401,8 @@
     "progression": "Progress: heavier DB or eyes closed | Regress: lighter/no weight or tap the back toe down for balance",
     "muscles": "Hamstrings, glutes, hip stabilizers, erectors, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=lI8-igvsnVQ",
     "slug": "sl-db-rdl"
-  },
-  {
-    "num": 28,
-    "name": "SL RDL (BW or Light DB)",
-    "category": "Hinge / Posterior Chain",
-    "execution": "Standing on one leg with a soft knee, hold light or no weight. Hinge from the hip, extending the free leg behind and lowering the torso until roughly parallel to the floor, body forming a straight line from head to heel. Keep the back flat and hips level, then return to standing. Move slowly with control. Switch sides.",
-    "why": "Grooves the single-leg hinge pattern and balance with minimal load, developing hamstring/glute control, proprioception, and the pelvic stability to keep the hips square — building a foundation before loading.",
-    "transfer": "Reinforces the balance and single-leg hip control demanded by gliding on one edge; improves stride stability and proprioception that supports tight turns and recovering balance after contact.",
-    "cues": "\"Body in one line\" · \"hips level, square to the floor\" · \"slow and controlled\"",
-    "mistakes": "Hips opening to the side; bending the standing knee too much (squatting); rushing/losing balance",
-    "progression": "Progress: add a light DB or close eyes | Regress: lightly tap the toe down or hold a support",
-    "muscles": "Hamstrings, glutes, hip stabilizers, core",
-    "energy": "Strength/neural",
-    "video": "",
-    "slug": "sl-rdl-bw-or-light-db"
   },
   {
     "num": 29,
@@ -431,7 +416,7 @@
     "progression": "Progress: heavier band or pause at the stretch | Regress: lighter band or shorter range",
     "muscles": "Hamstrings, glutes, erectors",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=2DswHFace6c",
     "slug": "banded-rdl"
   },
   {
@@ -446,7 +431,7 @@
     "progression": "Progress: heavier band or top hold | Regress: lighter band or touch the back toe for balance",
     "muscles": "Hamstrings, glutes, hip stabilizers, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=WkV4U7N2VSw",
     "slug": "sl-rdl-banded"
   },
   {
@@ -461,7 +446,7 @@
     "progression": "Progress: add band resistance or single-leg | Regress: smaller range or feet-on-floor curls",
     "muscles": "Hamstrings, glutes, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=UaecXxAgsKA",
     "slug": "banded-hamstring-slides"
   },
   {
@@ -476,7 +461,7 @@
     "progression": "Progress: hold DBs or add a pause | Regress: hold a support or reduce depth",
     "muscles": "Quads, glutes, hamstrings, hip stabilizers",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=szbcowvzghA",
     "slug": "reverse-lunge"
   },
   {
@@ -491,7 +476,7 @@
     "progression": "Progress: hold DBs or add a deficit | Regress: in-place reverse lunge or hold a support",
     "muscles": "Quads, glutes, hamstrings, adductors, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=adn4iQE7psM",
     "slug": "walking-lunge"
   },
   {
@@ -506,7 +491,7 @@
     "progression": "Progress: hold DBs or add a pause/tempo | Regress: lower the elevation or do a split squat (rear foot down)",
     "muscles": "Quads, glutes, adductors, hip stabilizers",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/shorts/ubr8VQhAa0U",
     "slug": "bulgarian-split-squat"
   },
   {
@@ -521,7 +506,7 @@
     "progression": "Progress: heavier DB or pause at depth | Regress: bodyweight or reduce depth",
     "muscles": "Quads, glutes, adductors, hip stabilizers",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=SjwHPO3U3aw",
     "slug": "db-goblet-lateral-lunge"
   },
   {
@@ -536,7 +521,7 @@
     "progression": "Progress: heavier DBs or add a knee drive/jump | Regress: lower box or bodyweight",
     "muscles": "Quads, glutes, hamstrings, calves",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=37tVohr7LcE",
     "slug": "box-step-up-dbs"
   },
   {
@@ -551,7 +536,7 @@
     "progression": "Progress: higher box or hold a DB | Regress: lower box or reduce range",
     "muscles": "Quads, glutes, gluteus medius, hip stabilizers",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=S5onhmaz_nQ",
     "slug": "sl-box-step-down"
   },
   {
@@ -566,7 +551,7 @@
     "progression": "Progress: eyes closed or unstable surface | Regress: hold a light support or shorten the time",
     "muscles": "Ankle/foot stabilizers, hip stabilizers, core",
     "energy": "Strength/neural (balance)",
-    "video": "",
+    "video": "https://www.youtube.com/shorts/-YHQrj2VC6o",
     "slug": "sl-balance-eyes-open"
   },
   {
@@ -581,7 +566,7 @@
     "progression": "Progress: heavier band or slower tempo | Regress: lighter band or reduce range",
     "muscles": "Adductors, hip stabilizers, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=yjyRuxTR-SY",
     "slug": "banded-standing-adduction"
   },
   {
@@ -596,7 +581,7 @@
     "progression": "Progress: hold DBs or elevate the rear foot (Bulgarian) | Regress: shorten range or hold a support",
     "muscles": "Quads, glutes, adductors, hip stabilizers",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=Wcmg-3iHwjQ",
     "slug": "split-squat"
   },
   {
@@ -611,7 +596,7 @@
     "progression": "Progress: heavier band or add a DB | Regress: lighter band or bodyweight lateral lunge",
     "muscles": "Glutes, adductors, quads, hip stabilizers",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=Hxkr1DxVPMk",
     "slug": "banded-lateral-lunge"
   },
   {
@@ -626,7 +611,7 @@
     "progression": "Progress: heavier DBs or tempo/pause | Regress: lighter DBs, lower elevation, or bodyweight",
     "muscles": "Quads, glutes, adductors, hip stabilizers",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=Fmjj7wFJWRE",
     "slug": "db-bulgarian-split-squat"
   },
   {
@@ -641,7 +626,7 @@
     "progression": "Progress: unstable surface or add a head turn | Regress: open eyes or lightly touch a support",
     "muscles": "Ankle/foot stabilizers, hip stabilizers, core",
     "energy": "Strength/neural (balance)",
-    "video": "",
+    "video": "https://www.youtube.com/shorts/vj5G3TX0xJI",
     "slug": "sl-balance-eyes-closed"
   },
   {
