@@ -766,7 +766,7 @@ function section(title, text, cls) {
 
 function buildVideoSlot(url) {
   if (!url) return placeholder();
-  const yt = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([A-Za-z0-9_-]{11})/);
+  const yt = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([A-Za-z0-9_-]{11})/);
   if (yt) return `<iframe class="video-embed" src="https://www.youtube.com/embed/${yt[1]}" title="Exercise demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
   const vi = url.match(/vimeo\.com\/(\d+)/);
   if (vi) return `<iframe class="video-embed" src="https://player.vimeo.com/video/${vi[1]}" title="Exercise demo" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
@@ -1035,6 +1035,7 @@ function exerciseCSS() {
 .video-embed{
   position:absolute;inset:0;
   width:100%;height:100%;border:none;display:block;
+  object-fit:contain;background:#000;
 }
 .video-placeholder{
   position:absolute;inset:0;
@@ -1448,6 +1449,14 @@ function main() {
   // Assign slugs (always on full set so slugs are stable across phases)
   const usedSlugs = new Set();
   exercises.forEach(ex => { ex.slug = makeSlug(ex.name, usedSlugs); });
+
+  // Override demo video with our Cloudflare R2 map (built by match-videos.mjs).
+  // Strips the old YouTube links entirely; a blank value renders "coming soon".
+  const VIDEO_MAP = (() => {
+    try { return JSON.parse(fs.readFileSync(path.join(OUT_DIR, 'video-map.json'), 'utf8')); }
+    catch { console.warn('  ⚠ video-map.json not found — all demo videos will show "coming soon".'); return {}; }
+  })();
+  exercises.forEach(ex => { ex.video = VIDEO_MAP[ex.slug] || ''; });
 
   if (TEST_MODE) {
     exercises  = exercises.slice(0, 3);

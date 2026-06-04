@@ -1,2 +1,24 @@
 node_modules/
 *.xlsx
+
+# Paid program + its build artifacts — must NOT be public.
+# program.html is served only via /functions/program.js after payment (from R2).
+program.html
+program.pdf
+program.data.js
+program.css
+fonts.css
+build.js
+render-pdf.js
+embed-fonts.js
+BUILD_REPORT.md
+MISSING_SLUGS.md
+SLUG_MAP.csv
+
+# one-off dev helpers
+match-videos.mjs
+read-shotlist.mjs
+add-missing-to-xlsx.mjs
+video-list.*
+*.xlsx
+backups/
