@@ -926,7 +926,7 @@
     "progression": "Progress: heavier band or pause each position | Regress: lighter/no band, fewer reps",
     "muscles": "Lower/mid traps, rear delts, rotator cuff",
     "energy": "Strength/neural (endurance)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/shoulder_ytw.mp4",
     "slug": "banded-y-t-w"
   },
   {
@@ -1121,7 +1121,7 @@
     "progression": "Progress: add load, longer distance, or harder direction patterns | Regress: forward crawl only, slower, shorter distance",
     "muscles": "Anti-rotation core, shoulders, quads, hip flexors",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/bear_crawl.mp4",
     "slug": "bear-crawl-variations"
   },
   {
@@ -1286,7 +1286,7 @@
     "progression": "Progress: bound farther or add a hold/load | Regress: smaller bound or step between hops",
     "muscles": "Glutes, quads, adductors/abductors, hip stabilizers",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/skater_jump.mp4",
     "slug": "skater-hop-stick-it"
   },
   {
@@ -1376,7 +1376,7 @@
     "progression": "Progress: cover more distance or add reactive cues | Regress: skater hop with a brief stick between bounds",
     "muscles": "Glutes, quads, adductors/abductors, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/lateral_bound.mp4",
     "slug": "lateral-skater-bound"
   },
   {

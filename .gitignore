@@ -19,6 +19,8 @@ SLUG_MAP.csv
 match-videos.mjs
 read-shotlist.mjs
 add-missing-to-xlsx.mjs
+find-duplicates.mjs
+dedupe-website-tab.mjs
 video-list.*
 *.xlsx
 backups/
