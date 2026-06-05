@@ -114,7 +114,34 @@ section{position:relative;z-index:2;}
   padding:9px 16px;border-radius:100px;
   letter-spacing:.04em;
 }
-@media(min-width:900px){.nav-links{display:flex;}.nav{padding:18px 40px;}}
+.nav-right{display:flex;align-items:center;gap:12px;}
+.nav-toggle{
+  display:flex;flex-direction:column;justify-content:center;gap:5px;
+  width:42px;height:42px;padding:11px;
+  background:transparent;border:1px solid var(--line-2);border-radius:10px;
+  cursor:pointer;flex:none;
+}
+.nav-toggle span{display:block;height:2px;width:100%;background:var(--ink);border-radius:2px;transition:transform .25s, opacity .2s;}
+.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-toggle.open span:nth-child(2){opacity:0;}
+.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.mobile-menu{
+  position:absolute;top:100%;left:0;right:0;
+  display:flex;flex-direction:column;
+  background:rgba(7,7,8,.97);
+  backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%);
+  border-bottom:1px solid var(--line);
+  padding:6px 24px 16px;
+  transform:translateY(-10px);opacity:0;pointer-events:none;
+  transition:transform .25s ease, opacity .25s ease;
+}
+.mobile-menu.open{transform:translateY(0);opacity:1;pointer-events:auto;}
+.mobile-menu a{
+  font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.06em;
+  color:var(--ink);padding:14px 2px;border-bottom:1px solid var(--line);
+}
+.mobile-menu a:last-child{border-bottom:none;}
+@media(min-width:900px){.nav-links{display:flex;}.nav{padding:18px 40px;}.nav-toggle,.mobile-menu{display:none;}}
 
 /* HERO */
 .hero{
@@ -1363,7 +1390,20 @@ section{position:relative;z-index:2;}
       <li><a href="#faq">FAQ</a></li>
     </ul>
   </nav>
-  <a href="#tiers" class="nav-cta">Get Started</a>
+  <div class="nav-right">
+    <a href="#tiers" class="nav-cta">Get Started</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">Coach</a>
+    <a href="#method">Method</a>
+    <a href="#tiers">Programs</a>
+    <a href="/library.html">Library</a>
+    <a href="#app">App</a>
+    <a href="#faq">FAQ</a>
+  </div>
 </header>
 
 <section class="hero" id="hero">
@@ -1890,6 +1930,16 @@ section{position:relative;z-index:2;}
 <script>
 const nav = document.getElementById('nav');
 const mobileBar = document.getElementById('mobileBar');
+
+const navToggle = document.getElementById('navToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+function setMenu(open){
+  navToggle.classList.toggle('open', open);
+  mobileMenu.classList.toggle('open', open);
+  navToggle.setAttribute('aria-expanded', open);
+}
+navToggle.addEventListener('click', ()=> setMenu(!mobileMenu.classList.contains('open')));
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=> setMenu(false)));
 window.addEventListener('scroll', ()=>{
   const y = window.scrollY;
   if(y > 24) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
