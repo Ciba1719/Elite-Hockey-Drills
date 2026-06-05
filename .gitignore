@@ -21,6 +21,7 @@ read-shotlist.mjs
 add-missing-to-xlsx.mjs
 find-duplicates.mjs
 dedupe-website-tab.mjs
+fix-dashboard.mjs
 video-list.*
 *.xlsx
 backups/

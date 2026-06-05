@@ -11,7 +11,7 @@
     "progression": "Progress: 2-sec hold at end range | Regress: drop the back knee for support",
     "muscles": "Hip flexors, adductors, glutes, thoracic erectors, obliques",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/spider_lunge_with_rotation.mp4",
     "slug": "spider-lunge-with-rotation"
   },
   {
@@ -26,7 +26,7 @@
     "progression": "Progress: add a shoulder tap at plank | Regress: omit the push-up, walk out and back",
     "muscles": "Hamstrings, anterior core, shoulders, chest, triceps",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/inchworm_to_push_up.mp4",
     "slug": "inchworm-to-push-up"
   },
   {
@@ -41,7 +41,7 @@
     "progression": "Progress: light goblet load or 2-sec pause each side | Regress: hold a pole for balance, reduce depth",
     "muscles": "Adductors, glutes, quads, hip stabilizers",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/lateral_squat_shift.mp4",
     "slug": "lateral-squat-shift"
   },
   {
@@ -56,7 +56,7 @@
     "progression": "Progress: A-skip moving for distance | Regress: marching in place with knee drive",
     "muscles": "Hip flexors, calves, glutes, anterior tibialis",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/a_skip_in_place.mp4",
     "slug": "a-skip-in-place"
   },
   {
@@ -71,7 +71,7 @@
     "progression": "Progress: hands off the floor / lean over the front shin | Regress: assist with hands, reduce range",
     "muscles": "Hip rotators, glutes, adductors, core",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/90_90_hip_switch.mp4",
     "slug": "90-90-hip-switch"
   },
   {
@@ -86,7 +86,7 @@
     "progression": "Progress: seal jacks or faster tempo | Regress: step-out jacks (no jump)",
     "muscles": "Shoulders, calves, hip abductors/adductors",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/jumping_jacks.mp4",
     "slug": "jumping-jacks"
   },
   {
@@ -116,7 +116,7 @@
     "progression": "Progress: butt kicks moving at higher cadence | Regress: slower alternating heel flicks",
     "muscles": "Hamstrings, calves, hip flexors",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/butt_kicks.mp4",
     "slug": "butt-kicks"
   },
   {
@@ -131,7 +131,7 @@
     "progression": "Progress: heavier band or isometric hold at top | Regress: lighter/no band, smaller range",
     "muscles": "Gluteus medius, deep hip external rotators",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_clamshell.mp4",
     "slug": "banded-clamshell"
   },
   {
@@ -146,7 +146,7 @@
     "progression": "Progress: heavier band or lower stance | Regress: lighter band, fewer steps",
     "muscles": "Gluteus medius, glute max, hip abductors",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_lateral_walk.mp4",
     "slug": "banded-lateral-walk"
   },
   {
@@ -176,7 +176,7 @@
     "progression": "Progress: exhale and 2-sec hold at end range | Regress: smaller range, slower tempo",
     "muscles": "Thoracic erectors, obliques, rotatores",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/t_spine_rotation.mp4",
     "slug": "t-spine-rotation"
   },
   {
@@ -191,7 +191,7 @@
     "progression": "Progress: increase range or brief end-range hold | Regress: smaller range, less rock-back",
     "muscles": "Adductors, hip flexors, groin",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/adductor_rocker.mp4",
     "slug": "adductor-rocker"
   },
   {
@@ -221,7 +221,7 @@
     "progression": "Progress: heavier band or lower stance | Regress: lighter band, higher stance, fewer steps",
     "muscles": "Gluteus medius, glute max, hip abductors",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_monster_walk.mp4",
     "slug": "banded-monster-walk"
   },
   {
@@ -281,7 +281,7 @@
     "progression": "Progress: heavier band or bottom pause | Regress: lighter band or bodyweight goblet squat",
     "muscles": "Quads, glutes, upper back, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_front_squat.mp4",
     "slug": "banded-front-squat"
   },
   {
@@ -311,7 +311,7 @@
     "progression": "Progress: heavier band or faster concentric | Regress: lighter band or bodyweight squat",
     "muscles": "Quads, glutes, adductors, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_squat.mp4",
     "slug": "banded-squat"
   },
   {
@@ -326,7 +326,7 @@
     "progression": "Progress: longer hold or light goblet load | Regress: hold a support or elevate the heels slightly",
     "muscles": "Quads, glutes, adductors, hips/ankles",
     "energy": "Strength/neural (isometric)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/deep_squat_hold.mp4",
     "slug": "deep-squat-hold"
   },
   {
@@ -356,7 +356,7 @@
     "progression": "Progress: single-leg banded bridge or hip load | Regress: lighter band or no band",
     "muscles": "Glute max, gluteus medius, hamstrings",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/band_glute_bridge.mp4",
     "slug": "band-glute-bridge"
   },
   {
@@ -371,7 +371,7 @@
     "progression": "Progress: hip load or top pause | Regress: keep both feet down (band glute bridge)",
     "muscles": "Glute max, gluteus medius, hamstrings, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sl_glute_bridge_band.mp4",
     "slug": "sl-glute-bridge-band"
   },
   {
@@ -416,7 +416,7 @@
     "progression": "Progress: heavier band or pause at the stretch | Regress: lighter band or shorter range",
     "muscles": "Hamstrings, glutes, erectors",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_rdl.mp4",
     "slug": "banded-rdl"
   },
   {
@@ -446,7 +446,7 @@
     "progression": "Progress: add band resistance or single-leg | Regress: smaller range or feet-on-floor curls",
     "muscles": "Hamstrings, glutes, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_hamstring_slides.mp4",
     "slug": "banded-hamstring-slides"
   },
   {
@@ -596,7 +596,7 @@
     "progression": "Progress: heavier band or add a DB | Regress: lighter band or bodyweight lateral lunge",
     "muscles": "Glutes, adductors, quads, hip stabilizers",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_lateral_lunge.mp4",
     "slug": "banded-lateral-lunge"
   },
   {
@@ -626,7 +626,7 @@
     "progression": "Progress: unstable surface or add a head turn | Regress: open eyes or lightly touch a support",
     "muscles": "Ankle/foot stabilizers, hip stabilizers, core",
     "energy": "Strength/neural (balance)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sl_balance_eyes_closed.mp4",
     "slug": "sl-balance-eyes-closed"
   },
   {
@@ -731,7 +731,7 @@
     "progression": "Progress: feet closer or add a tempo | Regress: from the knees or slow the transitions",
     "muscles": "Shoulders, triceps, anti-rotation core, chest",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/plank_to_push_up.mp4",
     "slug": "plank-to-push-up"
   },
   {
@@ -761,7 +761,7 @@
     "progression": "Progress: more weight on the working arm toward a one-arm push-up | Regress: from the knees or reduce the shift",
     "muscles": "Pectorals, triceps, anterior deltoids, anti-rotation core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/archer_push_up.mp4",
     "slug": "archer-push-up"
   },
   {
@@ -776,7 +776,7 @@
     "progression": "Progress: heavier band or single-arm (anti-rotation) | Regress: lighter band or shorter range",
     "muscles": "Pectorals, anterior deltoids, triceps, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_chest_press.mp4",
     "slug": "banded-chest-press"
   },
   {
@@ -866,7 +866,7 @@
     "progression": "Progress: heavier band or longer sets | Regress: lighter band or slow-tempo pull-aparts",
     "muscles": "Rhomboids, mid/lower traps, rear deltoids",
     "energy": "Strength/neural (speed-endurance)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/band_pull_apart_speed.mp4",
     "slug": "band-pull-apart-speed"
   },
   {
@@ -881,7 +881,7 @@
     "progression": "Progress: heavier band or single-arm (anti-rotation) | Regress: lighter band or shorter range",
     "muscles": "Lats, rhomboids, mid-traps, biceps, rear delts",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/band_row.mp4",
     "slug": "band-row"
   },
   {
@@ -1361,7 +1361,7 @@
     "progression": "Progress: bound farther or add load | Regress: smaller bound or step to reset",
     "muscles": "Glutes, quads, adductors/abductors, hip stabilizers",
     "energy": "Alactic/ATP-PC",
-    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/lateral_bound_stick.mp4",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/lateral_bound.mp4",
     "slug": "lateral-bound-stick"
   },
   {
