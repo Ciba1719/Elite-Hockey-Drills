@@ -1,5 +1,10 @@
 {
   "devDependencies": {
     "xlsx": "^0.18.5"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^10.7.9",
+    "pdf-lib": "^1.17.1",
+    "puppeteer-core": "^25.1.0"
   }
 }

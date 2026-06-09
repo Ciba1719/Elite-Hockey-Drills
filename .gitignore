@@ -2,7 +2,8 @@ node_modules/
 *.xlsx
 
 # Paid program + its build artifacts — must NOT be public.
-# program.html is served only via /functions/program.js after payment (from R2).
+# program.html is served only via the /program Netlify function after payment
+# (from the Netlify Blobs "program" store; upload it with upload-program.mjs).
 program.html
 program.pdf
 program.data.js
@@ -16,6 +17,7 @@ MISSING_SLUGS.md
 SLUG_MAP.csv
 
 # one-off dev helpers
+upload-program.mjs
 match-videos.mjs
 read-shotlist.mjs
 add-missing-to-xlsx.mjs

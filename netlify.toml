@@ -1,0 +1,43 @@
+# Netlify config for the Elite Hockey Drills site.
+# Static HTML lives at the repo root; the paid-program gate runs as Netlify
+# Functions (v2). Each function claims its own URL via `export const config.path`.
+
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Safety net: never serve the paid program's source files as static assets, even
+# if one is committed by accident. (They are normally .gitignored and never
+# deployed at all — the program is delivered only via the /program function.)
+[[redirects]]
+  from = "/program.html"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/program.data.js"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/program.css"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/program.pdf"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/fonts.css"
+  to = "/index.html"
+  status = 404
+  force = true
