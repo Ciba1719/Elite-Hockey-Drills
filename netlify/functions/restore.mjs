@@ -1,8 +1,8 @@
 // /api/restore -> let a buyer re-unlock the program on a new device using their email.
 import { getStore } from '@netlify/blobs';
-import { makeToken, cookie, COOKIE_NAME } from '../lib/paywall.mjs';
+import { makeToken, cookie, COOKIE_NAME, sendAccessEmail } from '../lib/paywall.mjs';
 
-export const config = { path: '/api/restore' };
+export const config = { path: ['/api/restore', '/restore'] };
 
 const page = (msg = '') => `<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -41,7 +41,16 @@ export default async (req) => {
   if (!email) return html(page('Please enter your email.'), 400);
 
   const rec = await getStore('buyers').get('buyer:' + email, { type: 'json' });
-  if (!rec) return html(page("We couldn't find a purchase for that email. Check the address or contact support."), 404);
+  if (!rec) return html(page("We couldn't find a purchase under that email. Double-check the spelling, and try any other address you may have used (Apple Pay can use a private relay email). Still stuck? Email elitehockeydrills@gmail.com."), 404);
+
+  // Re-send the permanent magic link to their inbox (best-effort) so even a buyer who
+  // deleted the email gets their forever-key back — not just a transient cookie.
+  try {
+    const longToken = await makeToken(process.env.COOKIE_SECRET, email, 60 * 60 * 24 * 365 * 10);
+    await sendAccessEmail({ to: email, link: url.origin + '/program?t=' + longToken });
+  } catch (e) {
+    console.error('restore email failed:', e.message);
+  }
 
   const token = await makeToken(process.env.COOKIE_SECRET, email);
   return new Response(null, {

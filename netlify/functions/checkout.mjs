@@ -10,7 +10,7 @@ export default async (req) => {
       mode: 'payment',
       'line_items[0][price]': process.env.STRIPE_PRICE_ID,
       'line_items[0][quantity]': '1',
-      success_url: `${origin}/program?session_id={CHECKOUT_SESSION_ID}`,
+      success_url: `${origin}/welcome?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${origin}/#tiers`,
       allow_promotion_codes: 'true',
     });
