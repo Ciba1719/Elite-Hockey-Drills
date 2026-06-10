@@ -101,7 +101,7 @@
     "progression": "Progress: high knees for distance at higher cadence | Regress: marching high knees",
     "muscles": "Hip flexors, calves, anterior tibialis, glutes",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/high_knees.mp4",
     "slug": "high-knees"
   },
   {
@@ -206,7 +206,7 @@
     "progression": "Progress: move foot farther from wall / add light load | Regress: foot closer to wall, smaller range",
     "muscles": "Gastrocnemius, soleus, ankle joint complex",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/ankle_dorsiflexion_wall.mp4",
     "slug": "ankle-dorsiflexion-wall"
   },
   {
@@ -296,7 +296,7 @@
     "progression": "Progress: DB on the lap or single-leg | Regress: shorter hold or higher knee angle",
     "muscles": "Quads, glutes, isometric core",
     "energy": "Strength/neural (isometric)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/iso_wall_sit.mp4",
     "slug": "iso-wall-sit"
   },
   {
@@ -386,7 +386,7 @@
     "progression": "Progress: heavier DBs or 3-sec eccentric | Regress: lighter load or reduce range (higher finish)",
     "muscles": "Hamstrings, glutes, erector spinae, lats",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/db_rdl.mp4",
     "slug": "db-rdl"
   },
   {
@@ -401,7 +401,7 @@
     "progression": "Progress: heavier DB or eyes closed | Regress: lighter/no weight or tap the back toe down for balance",
     "muscles": "Hamstrings, glutes, hip stabilizers, erectors, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sl_db_rdl.mp4",
     "slug": "sl-db-rdl"
   },
   {
@@ -431,7 +431,7 @@
     "progression": "Progress: heavier band or top hold | Regress: lighter band or touch the back toe for balance",
     "muscles": "Hamstrings, glutes, hip stabilizers, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sl_rdl_banded.mp4",
     "slug": "sl-rdl-banded"
   },
   {
@@ -506,7 +506,7 @@
     "progression": "Progress: heavier DB or pause at depth | Regress: bodyweight or reduce depth",
     "muscles": "Quads, glutes, adductors, hip stabilizers",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/db_goblet_lateral_lunge.mp4",
     "slug": "db-goblet-lateral-lunge"
   },
   {
@@ -521,7 +521,7 @@
     "progression": "Progress: heavier DBs or add a knee drive/jump | Regress: lower box or bodyweight",
     "muscles": "Quads, glutes, hamstrings, calves",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/box_step_up_dbs.mp4",
     "slug": "box-step-up-dbs"
   },
   {
@@ -536,7 +536,7 @@
     "progression": "Progress: higher box or hold a DB | Regress: lower box or reduce range",
     "muscles": "Quads, glutes, gluteus medius, hip stabilizers",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sl_box_step_down.mp4",
     "slug": "sl-box-step-down"
   },
   {
@@ -566,7 +566,7 @@
     "progression": "Progress: heavier band or slower tempo | Regress: lighter band or reduce range",
     "muscles": "Adductors, hip stabilizers, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_standing_adduction.mp4",
     "slug": "banded-standing-adduction"
   },
   {
@@ -611,7 +611,7 @@
     "progression": "Progress: heavier DBs or tempo/pause | Regress: lighter DBs, lower elevation, or bodyweight",
     "muscles": "Quads, glutes, adductors, hip stabilizers",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/db_bulgarian_split_squat.mp4",
     "slug": "db-bulgarian-split-squat"
   },
   {
@@ -656,7 +656,7 @@
     "progression": "Progress: heavier DBs or single-arm (anti-rotation) | Regress: lighter DBs or one arm at a time slowly",
     "muscles": "Pectorals, triceps, anterior deltoids",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/db_floor_press.mp4",
     "slug": "db-floor-press"
   },
   {
@@ -671,7 +671,7 @@
     "progression": "Progress: heavier DB or tall-kneeling/standing | Regress: lighter DB or seated for stability",
     "muscles": "Deltoids, triceps, upper traps, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/half_kneeling_db_press.mp4",
     "slug": "half-kneeling-db-press"
   },
   {
@@ -686,7 +686,7 @@
     "progression": "Progress: heavier DBs or feet closer | Regress: row only (no push-up) or from the knees",
     "muscles": "Pectorals, lats, triceps, biceps, anti-rotation core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/db_push_up_to_row.mp4",
     "slug": "db-push-up-to-row"
   },
   {
@@ -746,7 +746,7 @@
     "progression": "Progress: greater deficit or add load | Regress: standard floor push-up or hands elevated",
     "muscles": "Pectorals, anterior deltoids, triceps, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/deficit_push_up.mp4",
     "slug": "deficit-push-up"
   },
   {
@@ -791,7 +791,7 @@
     "progression": "Progress: longer reach or hold at the top | Regress: shorter reach or from the knees",
     "muscles": "Pectorals, triceps, serratus anterior, anti-rotation core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/push_up_to_reach.mp4",
     "slug": "push-up-to-reach"
   },
   {
@@ -851,7 +851,7 @@
     "progression": "Progress: heavier band or pause at end range | Regress: lighter band or narrower grip",
     "muscles": "Rhomboids, mid/lower traps, rear deltoids",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/band_pull_apart.mp4",
     "slug": "band-pull-apart"
   },
   {
@@ -1031,7 +1031,7 @@
     "progression": "Progress: add a light DB or pause at end range | Regress: from the knees or smaller rotation",
     "muscles": "Obliques, quadratus lumborum, gluteus medius, thoracic rotators",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/side_plank_with_reach.mp4",
     "slug": "side-plank-with-reach"
   },
   {
@@ -1061,7 +1061,7 @@
     "progression": "Progress: arms fully overhead or hold a light DB | Regress: tucked hollow rock (knees bent)",
     "muscles": "Rectus abdominis, transverse abdominis, hip flexors",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/hollow_rock.mp4",
     "slug": "hollow-rock"
   },
   {
@@ -1151,7 +1151,7 @@
     "progression": "Progress: add ankle weight / top-leg raises or longer hold | Regress: short-lever Copenhagen (knee on bench)",
     "muscles": "Adductors, obliques, quadratus lumborum, hip stabilizers",
     "energy": "Strength/neural (isometric)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/copenhagen_plank_long.mp4",
     "slug": "copenhagen-plank-long"
   },
   {
@@ -1166,7 +1166,7 @@
     "progression": "Progress: heavier band, standing, or add rotation | Regress: lighter band or smaller range",
     "muscles": "Obliques, transverse abdominis, lats, shoulders, hip stabilizers",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_chop_lift.mp4",
     "slug": "banded-chop-lift"
   },
   {
@@ -1181,7 +1181,7 @@
     "progression": "Progress: straight-leg raise or add ankle weight | Regress: bent-knee tucks or lying leg raises",
     "muscles": "Lower abs, hip flexors, forearm/grip",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/hanging_knee_raise.mp4",
     "slug": "hanging-knee-raise"
   },
   {
@@ -1196,7 +1196,7 @@
     "progression": "Progress: slower negatives or full dragon flags | Regress: bent-knee/tucked negatives or hollow holds",
     "muscles": "Rectus abdominis, transverse abdominis, hip flexors, lats",
     "energy": "Strength/neural (eccentric)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/dragon_flag_negatives.mp4",
     "slug": "dragon-flag-negatives"
   },
   {
@@ -1211,7 +1211,7 @@
     "progression": "Progress: press fully out while marching or heavier band | Regress: hold at the chest, lighter band, slower march",
     "muscles": "Obliques, transverse abdominis, hip flexors, deep core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/pallof_march.mp4",
     "slug": "pallof-march"
   },
   {
@@ -1226,7 +1226,7 @@
     "progression": "Progress: raise higher (toes-to-bar) or add ankle weight | Regress: hanging knee raise or bent-knee raises",
     "muscles": "Lower abs, hip flexors, forearm/grip, lats",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/hanging_straight_leg_raise.mp4",
     "slug": "hanging-straight-leg-raise"
   },
   {
@@ -1241,7 +1241,7 @@
     "progression": "Progress: feet closer together or add a tempo | Regress: wider feet or from the knees",
     "muscles": "Anti-rotation core, obliques, shoulders, serratus",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/plank_shoulder_tap.mp4",
     "slug": "plank-shoulder-tap"
   },
   {
@@ -1256,7 +1256,7 @@
     "progression": "Progress: heavier DBs or longer distance | Regress: bodyweight bear crawl",
     "muscles": "Anti-rotation core, shoulders, quads, hip flexors, grip",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/bear_crawl_with_dbs.mp4",
     "slug": "bear-crawl-with-dbs"
   },
   {
@@ -1346,7 +1346,7 @@
     "progression": "Progress: longer sprint or resisted start | Regress: shorter sprint or jump-then-jog",
     "muscles": "Glutes, hamstrings, quads, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/broad_jump_sprint_10m.mp4",
     "slug": "broad-jump-sprint-10m"
   },
   {
@@ -1436,7 +1436,7 @@
     "progression": "Progress: single-leg ankle hop stick or higher hop | Regress: lower hop or two-foot landing",
     "muscles": "Calves/Achilles, anterior tibialis, foot/ankle stabilizers",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/ankle_hop_stick.mp4",
     "slug": "ankle-hop-stick"
   },
   {
@@ -1451,7 +1451,7 @@
     "progression": "Progress: higher/faster hops or add directional travel | Regress: two-leg pogo hops or lower height",
     "muscles": "Calves/Achilles, anterior tibialis, foot/ankle and hip stabilizers",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/single_leg_pogo_hops.mp4",
     "slug": "single-leg-pogo-hops"
   },
   {
@@ -1481,7 +1481,7 @@
     "progression": "Progress: drop to a deeper/single-leg position or from a small hop | Regress: slower controlled drop to a higher position",
     "muscles": "Quads, glutes, hamstrings, hip stabilizers",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/drop_squat.mp4",
     "slug": "drop-squat"
   },
   {
@@ -1496,7 +1496,7 @@
     "progression": "Progress: higher box or single-leg depth drop | Regress: lower box or step-down to a stick",
     "muscles": "Quads, glutes, hamstrings, calves, hip stabilizers",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/depth_drop_low_box.mp4",
     "slug": "depth-drop-low-box"
   },
   {
@@ -1511,7 +1511,7 @@
     "progression": "Progress: higher box (within control) or single-leg | Regress: lower box or depth drop (stick only, no rebound)",
     "muscles": "Quads, glutes, hamstrings, calves/Achilles",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/depth_jump.mp4",
     "slug": "depth-jump-low-box"
   },
   {
@@ -1526,7 +1526,7 @@
     "progression": "Progress: heavier band or add a hold/DB | Regress: lighter band or bodyweight squat jump",
     "muscles": "Quads, glutes, hamstrings, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_squat_jump.mp4",
     "slug": "banded-squat-jump"
   },
   {
@@ -1541,7 +1541,7 @@
     "progression": "Progress: optimize load/rest or use heavier potentiation | Regress: lighter contrast or just explosive jumps alone",
     "muscles": "Quads, glutes, hamstrings, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/contrast_jump.mp4",
     "slug": "contrast-jump"
   },
   {
@@ -1616,7 +1616,7 @@
     "progression": "Progress: more distance/reps or greater bound | Regress: skater hop with a brief stick between bounds",
     "muscles": "Glutes, quads, adductors/abductors, calves, hip stabilizers",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/skater_jump_continuous.mp4",
     "slug": "continuous-skater-hop"
   },
   {
@@ -1661,7 +1661,7 @@
     "progression": "Progress: higher box or single-leg hop-up | Regress: lower box or step-up",
     "muscles": "Quads, glutes, hamstrings, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/low_box_hop_up_stick.mp4",
     "slug": "low-box-hop-up-stick"
   },
   {
@@ -1676,7 +1676,7 @@
     "progression": "Progress: jump for height or add a reach/load | Regress: smaller jump or two-foot CMJ stick",
     "muscles": "Quads, glutes, hamstrings, calves, hip stabilizers",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sl_cmj_stick.mp4",
     "slug": "sl-cmj-stick"
   },
   {
@@ -1736,7 +1736,7 @@
     "progression": "Progress: A-skip into a sprint or higher cadence | Regress: A-march or A-skip in place",
     "muscles": "Hip flexors, glutes, calves, anterior tibialis, core",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/a_skip_moving.mp4",
     "slug": "a-skip-moving"
   },
   {
@@ -1781,7 +1781,7 @@
     "progression": "Progress: heavier resistance or longer distance | Regress: lighter resistance or unresisted drive",
     "muscles": "Glutes, quads, hamstrings, calves, core",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/band_resisted_start.mp4",
     "slug": "band-resisted-start"
   },
   {
@@ -1931,7 +1931,7 @@
     "progression": "Progress: add a reactive cue or a puck/ball | Regress: slower, shorter distances, or walk-through cuts",
     "muscles": "Glutes, quads, hamstrings, adductors/abductors, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/pro_agility_505.mp4",
     "slug": "5-10-5-pro-agility"
   },
   {
@@ -2066,7 +2066,7 @@
     "progression": "Progress: heavier load or longer distance | Regress: lighter load or shorter distance",
     "muscles": "Obliques, quadratus lumborum, grip, traps, core",
     "energy": "Strength/neural (strength-endurance)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/db_suitcase_carry.mp4",
     "slug": "db-suitcase-carry"
   },
   {
@@ -2081,7 +2081,7 @@
     "progression": "Progress: heavier loads or longer distances | Regress: lighter loads or shorter segments",
     "muscles": "Grip/forearms, traps, obliques, quadratus lumborum, core, glutes",
     "energy": "Strength/neural (strength-endurance)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/farmer_suitcase_complex.mp4",
     "slug": "farmer-suitcase-complex"
   },
   {
@@ -2096,7 +2096,7 @@
     "progression": "Progress: heavier load or fewer support points | Regress: lighter load or fewer position changes",
     "muscles": "Obliques, quadratus lumborum, glutes, quads, core, grip",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/suitcase_get_up.mp4",
     "slug": "suitcase-get-up"
   },
   {
@@ -2111,7 +2111,7 @@
     "progression": "Progress: heavier band/load or longer distance | Regress: lighter band or standard farmer carry",
     "muscles": "Grip/forearms, traps, core, glutes, posterior chain",
     "energy": "Strength/neural (strength-endurance)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/farmer_carry_banded.mp4",
     "slug": "farmer-carry-banded"
   },
   {
@@ -2126,7 +2126,7 @@
     "progression": "Progress: heavier loads or longer segments | Regress: lighter loads, fewer positions, or shorter distances",
     "muscles": "Grip/forearms, traps, deltoids, obliques, quadratus lumborum, core, glutes",
     "energy": "Strength/neural (strength-endurance)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/carry_complex_farmer_suitcase_overhead.mp4",
     "slug": "carry-complex-farmer-suitcase-overhead"
   },
   {
@@ -2186,7 +2186,7 @@
     "progression": "Progress: heavier band or more explosive | Regress: lighter band or smaller range",
     "muscles": "Obliques, pectorals, anterior deltoids, hips, core",
     "energy": "Alactic/ATP-PC (power)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_rotational_press.mp4",
     "slug": "banded-rotational-press"
   },
   {
@@ -2201,7 +2201,7 @@
     "progression": "Progress: heavier band or more explosive | Regress: lighter band or technical-speed reps",
     "muscles": "Obliques, hips/glutes, core, shoulders",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_rotational_throw_wall.mp4",
     "slug": "banded-rotational-throw-wall"
   },
   {
@@ -2216,7 +2216,7 @@
     "progression": "Progress: heavier band or more explosive | Regress: lighter band or smaller range",
     "muscles": "Hips/glutes, obliques, core, shoulders",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/band_rotational_scoop_toss.mp4",
     "slug": "band-rotational-scoop-toss"
   },
   {
@@ -2231,7 +2231,7 @@
     "progression": "Progress: heavier DBs or for power (low reps, max intent) | Regress: lighter DBs or split into squat + press",
     "muscles": "Quads, glutes, deltoids, triceps, core",
     "energy": "Strength/neural (glycolytic at high reps)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/db_thruster.mp4",
     "slug": "db-thruster"
   },
   {
@@ -2246,7 +2246,7 @@
     "progression": "Progress: heavier DBs, more reps, or more exercises | Regress: lighter DBs, fewer reps, or shorter complex",
     "muscles": "Full body (posterior chain, legs, shoulders, grip, core)",
     "energy": "Glycolytic",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/db_complex.mp4",
     "slug": "db-complex"
   },
   {
