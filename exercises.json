@@ -2608,5 +2608,35 @@
     "energy": "N/A (mobility/recovery)",
     "video": "",
     "slug": "hip-groin-flow"
+  },
+  {
+    "num": 177,
+    "name": "20m Sprint",
+    "category": "Speed, Sprint & Agility",
+    "execution": "From a stationary two-point stance, sprint a flat-out 20 metres in a straight line. Drive hard out of the start with a forward lean and powerful arm action, staying low for the first strides, then rise gradually as you build speed. Run through the 20-metre line without decelerating. Time each effort, taking full recovery between reps on the same surface and footwear.",
+    "why": "Trains and measures pure acceleration — the ability to overcome inertia and apply large horizontal forces over the first 20 metres. Short-distance sprinting develops the explosive force production and powerful arm-leg coordination that a longer run rarely taxes.",
+    "transfer": "Almost every sprint in hockey is short and acceleration-dominant — jumping on a loose puck, beating an opponent to the boards, exploding out on a breakaway. A faster 20-metre time is a direct dry-land read on first-step quickness.",
+    "cues": "\"Push the ground back, don’t reach\" · \"lean and drive the arms\" · \"low and patient, then tall\"",
+    "mistakes": "Popping upright on the first steps; over-striding instead of pushing; tensing the shoulders and face; easing off before the line",
+    "progression": "Progress: resisted starts (sled or band) or extend to a 30 m sprint | Regress: 10 m accelerations focused on the drive phase",
+    "muscles": "Glutes, hamstrings, quads, calves",
+    "energy": "Alactic / ATP-PC",
+    "video": "",
+    "slug": "20m-sprint"
+  },
+  {
+    "num": 178,
+    "name": "20m Flying Sprint",
+    "category": "Speed, Sprint & Agility",
+    "execution": "Build speed gradually over a 20–30 metre run-in, then hit a flat-out, maximal-velocity 20-metre flying zone. Run tall and relaxed with a fast, cyclical leg action and brief ground contacts — the goal is the highest speed you can hold through the zone, not acceleration. Time only the flying 20 metres, with full recovery between efforts.",
+    "why": "Isolates maximal sprinting velocity by removing the acceleration phase, so you train and measure pure top-end speed and the efficient, relaxed mechanics that let an athlete hold it. Flying sprints expose and develop the highest-velocity stride a player can produce.",
+    "transfer": "Top-end speed separates players on long, straight-line efforts — beating a defender wide, backchecking to erase a rush, or stretching the ice. Training high-velocity mechanics also builds the hamstring resilience those speeds demand.",
+    "cues": "\"Tall and relaxed — float, don’t strain\" · \"strike down and back, quick off the ground\" · \"fast hands, loose face\"",
+    "mistakes": "Tensing up and over-striding; reaching the feet out in front of the body; trying to keep accelerating through the zone instead of holding speed; entering the zone unrecovered",
+    "progression": "Progress: lengthen the fly zone or add light assisted (downhill / towed) sprints | Regress: shorten to a 10 m fly or run build-up strides",
+    "muscles": "Hamstrings, glutes, quads, calves",
+    "energy": "Alactic / ATP-PC",
+    "video": "",
+    "slug": "20m-flying-sprint"
   }
 ]
