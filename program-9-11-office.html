@@ -732,7 +732,7 @@ a.ex:hover .lk{opacity:1;}
   .exrow a.ex::after, .gloss-item .gi-name a.ex::after{content:'▾';font-size:.62em;margin-left:.4em;color:var(--ice);display:inline-block;transition:transform .22s;vertical-align:middle;}
   .exrow.open a.ex::after, .gloss-item.open .gi-name a.ex::after{transform:rotate(180deg);}
   .ex-panel{display:none;margin-top:12px;padding-top:13px;border-top:1px solid var(--line2);}
-  .exrow.open .ex-panel, .gloss-item.open .ex-panel{display:block;animation:exPanel .26s cubic-bezier(.2,.7,.2,1);}
+  .exrow.open .ex-panel, .gloss-item.open .ex-panel, .test-card.open .ex-panel{display:block;animation:exPanel .26s cubic-bezier(.2,.7,.2,1);}
   @keyframes exPanel{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:none;}}
   .ex-actions{display:flex;flex-wrap:wrap;gap:10px;}
   .ex-btn{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:10px 18px;border-radius:100px;border:1px solid var(--line2);background:var(--bg2);color:var(--ink);cursor:pointer;transition:all .18s;text-decoration:none;}
@@ -5187,7 +5187,7 @@ a.ex:hover .lk{opacity:1;}
   // exercise → inline Watch Video + Full Guide (workout rows + glossary cards)
   document.addEventListener('click', function(e){
     var a=e.target.closest('a.ex'); if(!a) return;
-    var host=a.closest('.exrow')||a.closest('.gloss-item'); if(!host) return;
+    var host=a.closest('.exrow')||a.closest('.gloss-item')||a.closest('.test-card'); if(!host) return;
     e.preventDefault();
     var panel=host.querySelector(':scope > .ex-panel');
     if(!panel){
