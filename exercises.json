@@ -1803,10 +1803,10 @@
     "num": 123,
     "name": "Crossover Step",
     "category": "Speed, Sprint & Agility",
-    "execution": "From an athletic stance facing forward, to move laterally, open the hips and cross the trailing leg over and in front, then continue accelerating in that direction with driving steps. Coordinate the arm swing with the crossover and keep the first steps low and powerful. Practice exploding out of the stance into the crossover in both directions.",
+    "execution": "From an athletic stance, crossover-step a few metres to one side — opening the hips and crossing the trailing leg over and in front with quick, low steps — then plant, change direction, and crossover-step back the other way. Keep shuffling side to side for the set, staying low and powerful and swinging the arms with each cross.",
     "why": "Trains the crossover acceleration mechanic — opening the hips and crossing over is the fastest way to accelerate laterally from a stationary or athletic position; develops the coordination and push-off used to convert a side-on stance into forward speed in a new direction.",
     "transfer": "Directly mirrors the on-ice crossover start and the change-of-direction acceleration used to explode laterally and into turns; the open-hip crossover step transfers to building speed through crossovers and reacting to play laterally.",
-    "cues": "\"Open the hips, cross over\" · \"low, powerful first steps\" · \"swing the arms with the cross\"",
+    "cues": "\"Open the hips, cross over\" · \"low and quick, both ways\" · \"swing the arms with the cross\"",
     "mistakes": "A slow, upright crossover; false-stepping (stepping the wrong way first); not opening the hips; a weak push-off",
     "progression": "Progress: add a reactive cue or sprint out | Regress: walk through the crossover pattern slowly",
     "muscles": "Glutes, adductors/abductors, quads, hip stabilizers",
@@ -2636,7 +2636,7 @@
     "progression": "Progress: lengthen the fly zone or add light assisted (downhill / towed) sprints | Regress: shorten to a 10 m fly or run build-up strides",
     "muscles": "Hamstrings, glutes, quads, calves",
     "energy": "Alactic / ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sprint_fly_20m.mp4",
     "slug": "20m-flying-sprint"
   }
 ]
