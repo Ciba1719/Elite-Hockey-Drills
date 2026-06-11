@@ -735,9 +735,11 @@ a.ex:hover .lk{opacity:1;}
   .exrow.open .ex-panel, .gloss-item.open .ex-panel, .test-card.open .ex-panel, .cd-list li.open .ex-panel, .rp-list li.open .ex-panel, .pr-row.open .ex-panel{display:block;animation:exPanel .26s cubic-bezier(.2,.7,.2,1);}
   .pr-row.open .ex-panel{grid-column:1 / -1;}
   /* card/list exercise names act as a dropdown: show a chevron that flips when open */
-  .test-card a.ex .lk, .cd-list a.ex .lk, .rp-list a.ex .lk, .pr-row a.ex .lk{font-size:0;vertical-align:middle;margin-left:.3em;}
-  .test-card a.ex .lk::after, .cd-list a.ex .lk::after, .rp-list a.ex .lk::after, .pr-row a.ex .lk::after{content:"▾";font-size:13px;line-height:1;display:inline-block;opacity:.65;}
-  .test-card.open a.ex .lk::after, .cd-list li.open a.ex .lk::after, .rp-list li.open a.ex .lk::after, .pr-row.open a.ex .lk::after{content:"▴";opacity:1;}
+  .test-card a.ex .lk, .cd-list a.ex .lk, .rp-list a.ex .lk, .pr-row a.ex .lk, .sc-table .tname a.ex .lk{font-size:0;vertical-align:middle;margin-left:.3em;}
+  .test-card a.ex .lk::after, .cd-list a.ex .lk::after, .rp-list a.ex .lk::after, .pr-row a.ex .lk::after, .sc-table .tname a.ex .lk::after{content:"▾";font-size:13px;line-height:1;display:inline-block;opacity:.65;}
+  .test-card.open a.ex .lk::after, .cd-list li.open a.ex .lk::after, .rp-list li.open a.ex .lk::after, .pr-row.open a.ex .lk::after, .sc-table tbody tr.open .tname a.ex .lk::after{content:"▴";opacity:1;}
+  .ex-panel-row td{border:none !important;padding:2px 0 14px !important;background:none;}
+  .ex-panel-row .ex-panel{display:block;margin-top:0;padding-top:4px;border-top:none;}
   @keyframes exPanel{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:none;}}
   .ex-actions{display:flex;flex-wrap:wrap;gap:10px;}
   .ex-btn{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:10px 18px;border-radius:100px;border:1px solid var(--line2);background:var(--bg2);color:var(--ink);cursor:pointer;transition:all .18s;text-decoration:none;}
@@ -991,7 +993,7 @@ a.ex:hover .lk{opacity:1;}
           </div>
           <div class="test-card">
             <div class="tc-top"><span class="tc-n display">02</span><span class="tc-gain">−0.1 to −0.3 s</span></div>
-            <h3 class="tc-name"><a class="ex" href="https://elitehockeydrills.com/exercises/20m-sprint" target="_blank" rel="noopener">20m Sprint<span class="lk" aria-hidden="true">↗</span></a></h3>
+            <h3 class="tc-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/20m_sprint.mp4" href="https://elitehockeydrills.com/exercises/20m-sprint" target="_blank" rel="noopener">20m Sprint<span class="lk" aria-hidden="true">↗</span></a></h3>
             <div class="tc-quality">Acceleration &amp; speed</div>
             <div class="tc-proto">Best of 2 · full rest · time in s</div>
             <p class="tc-how">From a standing start, sprint a marked 20m as fast as you can. Time it with a phone timer or a partner.</p>
@@ -1037,7 +1039,7 @@ a.ex:hover .lk{opacity:1;}
       <div class="checkpoints">3 CHECK-INS · WEEK 1 → WEEK 4 → WEEK 8</div>
     <div class="scorecard">
       <div class="sc-head"><h3 class="display">WEEK 1 — STARTING POINT</h3><span class="sc-sub serif">Where you begin. These are the numbers you get to beat.</span></div>
-      <table class="sc-table"><thead><tr><th>Skill check</th><th>What it shows</th><th>Try 1</th><th>Try 2</th><th>Try 3</th><th class="hi">Best</th></tr></thead><tbody><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/broad_jump.mp4" href="https://elitehockeydrills.com/exercises/broad-jump" target="_blank" rel="noopener">Broad Jump<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Power · jump distance</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" href="https://elitehockeydrills.com/exercises/20m-sprint" target="_blank" rel="noopener">20m Sprint<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Acceleration &amp; speed</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sprint_fly_20m.mp4" href="https://elitehockeydrills.com/exercises/20m-flying-sprint" target="_blank" rel="noopener">20m Flying Sprint<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Top speed</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/iso_wall_sit.mp4" href="https://elitehockeydrills.com/exercises/iso-wall-sit" target="_blank" rel="noopener">Iso Wall Sit<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Leg strength · max hold</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sl_balance_eyes_closed.mp4" href="https://elitehockeydrills.com/exercises/sl-balance-eyes-closed" target="_blank" rel="noopener">SL Balance — Eyes Closed<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Balance · max hold</td><td></td><td></td><td></td><td class="hi"></td></tr></tbody></table>
+      <table class="sc-table"><thead><tr><th>Skill check</th><th>What it shows</th><th>Try 1</th><th>Try 2</th><th>Try 3</th><th class="hi">Best</th></tr></thead><tbody><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/broad_jump.mp4" href="https://elitehockeydrills.com/exercises/broad-jump" target="_blank" rel="noopener">Broad Jump<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Power · jump distance</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/20m_sprint.mp4" href="https://elitehockeydrills.com/exercises/20m-sprint" target="_blank" rel="noopener">20m Sprint<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Acceleration &amp; speed</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sprint_fly_20m.mp4" href="https://elitehockeydrills.com/exercises/20m-flying-sprint" target="_blank" rel="noopener">20m Flying Sprint<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Top speed</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/iso_wall_sit.mp4" href="https://elitehockeydrills.com/exercises/iso-wall-sit" target="_blank" rel="noopener">Iso Wall Sit<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Leg strength · max hold</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sl_balance_eyes_closed.mp4" href="https://elitehockeydrills.com/exercises/sl-balance-eyes-closed" target="_blank" rel="noopener">SL Balance — Eyes Closed<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Balance · max hold</td><td></td><td></td><td></td><td class="hi"></td></tr></tbody></table>
       <p class="sc-note">Write down your best number. Re-test on the same surface, shoes, and method each time.</p>
     </div>
     </section>
@@ -1100,7 +1102,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">01</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/wall-drive-hold" target="_blank" rel="noopener">Wall Drive Hold<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/wall_drive_hold.mp4" href="https://elitehockeydrills.com/exercises/wall-drive-hold" target="_blank" rel="noopener">Wall Drive Hold<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>3×10s/side</b></span>
@@ -1234,7 +1236,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">01</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/crossover-step" target="_blank" rel="noopener">Crossover Step<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/crossover_step.mp4" href="https://elitehockeydrills.com/exercises/crossover-step" target="_blank" rel="noopener">Crossover Step<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>3×20–30s</b></span>
@@ -1246,7 +1248,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">02</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/reactive-5m-sprint" target="_blank" rel="noopener">Reactive 5m Sprint<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/reactive_5m_sprint.mp4" href="https://elitehockeydrills.com/exercises/reactive-5m-sprint" target="_blank" rel="noopener">Reactive 5m Sprint<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>4×5m</b></span>
@@ -1381,7 +1383,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">02</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/reactive-lateral-start" target="_blank" rel="noopener">Reactive Lateral Start<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/reactive_lateral_start.mp4" href="https://elitehockeydrills.com/exercises/reactive-lateral-start" target="_blank" rel="noopener">Reactive Lateral Start<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>4×5m</b></span>
@@ -1515,7 +1517,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">01</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/wall-drive-hold" target="_blank" rel="noopener">Wall Drive Hold<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/wall_drive_hold.mp4" href="https://elitehockeydrills.com/exercises/wall-drive-hold" target="_blank" rel="noopener">Wall Drive Hold<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>3×12s/side</b></span>
@@ -1527,7 +1529,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">02</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/a-skip-march-combo" target="_blank" rel="noopener">A-Skip + March Combo<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/a_skip_march_combo.mp4" href="https://elitehockeydrills.com/exercises/a-skip-march-combo" target="_blank" rel="noopener">A-Skip + March Combo<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>3×12m</b></span>
@@ -1757,7 +1759,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">01</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/multi-direction-bound" target="_blank" rel="noopener">Multi-Direction Bound<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/multi_direction_bound.mp4" href="https://elitehockeydrills.com/exercises/multi-direction-bound" target="_blank" rel="noopener">Multi-Direction Bound<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>2×4</b></span>
@@ -1784,7 +1786,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">01</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/a-skip-b-skip" target="_blank" rel="noopener">A-Skip + B-Skip<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/a_skip_b_skip.mp4" href="https://elitehockeydrills.com/exercises/a-skip-b-skip" target="_blank" rel="noopener">A-Skip + B-Skip<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>3×10m</b></span>
@@ -1903,7 +1905,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">01</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/high-low-pogo-combo" target="_blank" rel="noopener">High-Low Pogo Combo<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/high_low_pogo_combo.mp4" href="https://elitehockeydrills.com/exercises/high-low-pogo-combo" target="_blank" rel="noopener">High-Low Pogo Combo<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>3×8</b></span>
@@ -1942,7 +1944,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">02</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/resisted-free-sprint" target="_blank" rel="noopener">Resisted → Free Sprint<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/resisted_free_sprint.mp4" href="https://elitehockeydrills.com/exercises/resisted-free-sprint" target="_blank" rel="noopener">Resisted → Free Sprint<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>3×8m</b></span>
@@ -2065,7 +2067,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">01</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/crossover-step" target="_blank" rel="noopener">Crossover Step<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/crossover_step.mp4" href="https://elitehockeydrills.com/exercises/crossover-step" target="_blank" rel="noopener">Crossover Step<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>3×20–30s</b></span>
@@ -2077,7 +2079,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">02</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/reactive-lateral-start" target="_blank" rel="noopener">Reactive Lateral Start<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/reactive_lateral_start.mp4" href="https://elitehockeydrills.com/exercises/reactive-lateral-start" target="_blank" rel="noopener">Reactive Lateral Start<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>4×5m</b></span>
@@ -2200,7 +2202,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">01</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/hill-stride" target="_blank" rel="noopener">Hill Stride<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/hill_stride.mp4" href="https://elitehockeydrills.com/exercises/hill-stride" target="_blank" rel="noopener">Hill Stride<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>4×15m</b></span>
@@ -2468,7 +2470,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">01</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/crossover-step" target="_blank" rel="noopener">Crossover Step<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/crossover_step.mp4" href="https://elitehockeydrills.com/exercises/crossover-step" target="_blank" rel="noopener">Crossover Step<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>3×20–30s</b></span>
@@ -2603,7 +2605,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">02</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/20m-sprint" target="_blank" rel="noopener">20m Sprint<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/20m_sprint.mp4" href="https://elitehockeydrills.com/exercises/20m-sprint" target="_blank" rel="noopener">20m Sprint<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>best of 2</b></span>
@@ -2676,7 +2678,7 @@ a.ex:hover .lk{opacity:1;}
     <section class="sheet" id="scorecard-mid">
     <div class="scorecard">
       <div class="sc-head"><h3 class="display">WEEK 4 — CHECK-IN</h3><span class="sc-sub serif">Halfway. Re-do the five tests and see what moved.</span></div>
-      <table class="sc-table"><thead><tr><th>Skill check</th><th>What it shows</th><th>Try 1</th><th>Try 2</th><th>Try 3</th><th class="hi">Best</th></tr></thead><tbody><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/broad_jump.mp4" href="https://elitehockeydrills.com/exercises/broad-jump" target="_blank" rel="noopener">Broad Jump<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Power · jump distance</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" href="https://elitehockeydrills.com/exercises/20m-sprint" target="_blank" rel="noopener">20m Sprint<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Acceleration &amp; speed</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sprint_fly_20m.mp4" href="https://elitehockeydrills.com/exercises/20m-flying-sprint" target="_blank" rel="noopener">20m Flying Sprint<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Top speed</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/iso_wall_sit.mp4" href="https://elitehockeydrills.com/exercises/iso-wall-sit" target="_blank" rel="noopener">Iso Wall Sit<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Leg strength · max hold</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sl_balance_eyes_closed.mp4" href="https://elitehockeydrills.com/exercises/sl-balance-eyes-closed" target="_blank" rel="noopener">SL Balance — Eyes Closed<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Balance · max hold</td><td></td><td></td><td></td><td class="hi"></td></tr></tbody></table>
+      <table class="sc-table"><thead><tr><th>Skill check</th><th>What it shows</th><th>Try 1</th><th>Try 2</th><th>Try 3</th><th class="hi">Best</th></tr></thead><tbody><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/broad_jump.mp4" href="https://elitehockeydrills.com/exercises/broad-jump" target="_blank" rel="noopener">Broad Jump<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Power · jump distance</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/20m_sprint.mp4" href="https://elitehockeydrills.com/exercises/20m-sprint" target="_blank" rel="noopener">20m Sprint<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Acceleration &amp; speed</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sprint_fly_20m.mp4" href="https://elitehockeydrills.com/exercises/20m-flying-sprint" target="_blank" rel="noopener">20m Flying Sprint<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Top speed</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/iso_wall_sit.mp4" href="https://elitehockeydrills.com/exercises/iso-wall-sit" target="_blank" rel="noopener">Iso Wall Sit<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Leg strength · max hold</td><td></td><td></td><td></td><td class="hi"></td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sl_balance_eyes_closed.mp4" href="https://elitehockeydrills.com/exercises/sl-balance-eyes-closed" target="_blank" rel="noopener">SL Balance — Eyes Closed<span class="lk" aria-hidden="true">↗</span></a></td><td class="tdim">Balance · max hold</td><td></td><td></td><td></td><td class="hi"></td></tr></tbody></table>
       <p class="sc-note">Compare to Week 1. Even a small gain — farther, faster, or longer — counts.</p>
     </div></section>
     <section class="sheet block-intro" id="block-2">
@@ -2857,7 +2859,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">02</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/high-low-pogo-combo" target="_blank" rel="noopener">High-Low Pogo Combo<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/high_low_pogo_combo.mp4" href="https://elitehockeydrills.com/exercises/high-low-pogo-combo" target="_blank" rel="noopener">High-Low Pogo Combo<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>2×8</b></span>
@@ -2980,7 +2982,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">01</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/multi-direction-bound" target="_blank" rel="noopener">Multi-Direction Bound<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/multi_direction_bound.mp4" href="https://elitehockeydrills.com/exercises/multi-direction-bound" target="_blank" rel="noopener">Multi-Direction Bound<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>2×4</b></span>
@@ -3007,7 +3009,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">01</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/resisted-free-sprint" target="_blank" rel="noopener">Resisted → Free Sprint<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/resisted_free_sprint.mp4" href="https://elitehockeydrills.com/exercises/resisted-free-sprint" target="_blank" rel="noopener">Resisted → Free Sprint<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>4×8m</b></span>
@@ -3407,7 +3409,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">02</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/high-low-pogo-combo" target="_blank" rel="noopener">High-Low Pogo Combo<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/high_low_pogo_combo.mp4" href="https://elitehockeydrills.com/exercises/high-low-pogo-combo" target="_blank" rel="noopener">High-Low Pogo Combo<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>2×8</b></span>
@@ -3811,7 +3813,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">01</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/multi-direction-bound" target="_blank" rel="noopener">Multi-Direction Bound<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/multi_direction_bound.mp4" href="https://elitehockeydrills.com/exercises/multi-direction-bound" target="_blank" rel="noopener">Multi-Direction Bound<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>3×4</b></span>
@@ -3838,7 +3840,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">01</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/resisted-free-sprint" target="_blank" rel="noopener">Resisted → Free Sprint<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/resisted_free_sprint.mp4" href="https://elitehockeydrills.com/exercises/resisted-free-sprint" target="_blank" rel="noopener">Resisted → Free Sprint<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>4×8m</b></span>
@@ -4106,7 +4108,7 @@ a.ex:hover .lk{opacity:1;}
     <div class="exrow">
       <div class="ex-head">
         <span class="ex-idx">02</span>
-        <a class="ex" href="https://elitehockeydrills.com/exercises/20m-sprint" target="_blank" rel="noopener">20m Sprint<span class="lk" aria-hidden="true">↗</span></a>
+        <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/20m_sprint.mp4" href="https://elitehockeydrills.com/exercises/20m-sprint" target="_blank" rel="noopener">20m Sprint<span class="lk" aria-hidden="true">↗</span></a>
       </div>
       <div class="ex-specs">
         <span class="spec"><b>best of 2</b></span>
@@ -4301,7 +4303,7 @@ a.ex:hover .lk{opacity:1;}
     <section class="sheet" id="scorecard-final">
     <div class="scorecard">
       <div class="sc-head"><h3 class="display">WEEK 8 — YOU vs YOU</h3><span class="sc-sub serif">The proof. The same five tests, eight weeks apart.</span></div>
-      <table class="sc-table"><thead><tr><th>Skill check</th><th>Week 1</th><th>Week 8</th><th class="hi">Change</th><th>Better?</th><th>Aim</th></tr></thead><tbody><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/broad_jump.mp4" href="https://elitehockeydrills.com/exercises/broad-jump" target="_blank" rel="noopener">Broad Jump<span class="lk" aria-hidden="true">↗</span></a></td><td></td><td></td><td class="hi"></td><td></td><td class="tdim">+5–10 cm</td></tr><tr><td class="tname"><a class="ex" href="https://elitehockeydrills.com/exercises/20m-sprint" target="_blank" rel="noopener">20m Sprint<span class="lk" aria-hidden="true">↗</span></a></td><td></td><td></td><td class="hi"></td><td></td><td class="tdim">−0.1 to −0.3 s</td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sprint_fly_20m.mp4" href="https://elitehockeydrills.com/exercises/20m-flying-sprint" target="_blank" rel="noopener">20m Flying Sprint<span class="lk" aria-hidden="true">↗</span></a></td><td></td><td></td><td class="hi"></td><td></td><td class="tdim">−0.1 to −0.3 s</td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/iso_wall_sit.mp4" href="https://elitehockeydrills.com/exercises/iso-wall-sit" target="_blank" rel="noopener">Iso Wall Sit<span class="lk" aria-hidden="true">↗</span></a></td><td></td><td></td><td class="hi"></td><td></td><td class="tdim">+15–30 s</td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sl_balance_eyes_closed.mp4" href="https://elitehockeydrills.com/exercises/sl-balance-eyes-closed" target="_blank" rel="noopener">SL Balance — Eyes Closed<span class="lk" aria-hidden="true">↗</span></a></td><td></td><td></td><td class="hi"></td><td></td><td class="tdim">+10–20 s</td></tr></tbody></table>
+      <table class="sc-table"><thead><tr><th>Skill check</th><th>Week 1</th><th>Week 8</th><th class="hi">Change</th><th>Better?</th><th>Aim</th></tr></thead><tbody><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/broad_jump.mp4" href="https://elitehockeydrills.com/exercises/broad-jump" target="_blank" rel="noopener">Broad Jump<span class="lk" aria-hidden="true">↗</span></a></td><td></td><td></td><td class="hi"></td><td></td><td class="tdim">+5–10 cm</td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/20m_sprint.mp4" href="https://elitehockeydrills.com/exercises/20m-sprint" target="_blank" rel="noopener">20m Sprint<span class="lk" aria-hidden="true">↗</span></a></td><td></td><td></td><td class="hi"></td><td></td><td class="tdim">−0.1 to −0.3 s</td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sprint_fly_20m.mp4" href="https://elitehockeydrills.com/exercises/20m-flying-sprint" target="_blank" rel="noopener">20m Flying Sprint<span class="lk" aria-hidden="true">↗</span></a></td><td></td><td></td><td class="hi"></td><td></td><td class="tdim">−0.1 to −0.3 s</td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/iso_wall_sit.mp4" href="https://elitehockeydrills.com/exercises/iso-wall-sit" target="_blank" rel="noopener">Iso Wall Sit<span class="lk" aria-hidden="true">↗</span></a></td><td></td><td></td><td class="hi"></td><td></td><td class="tdim">+15–30 s</td></tr><tr><td class="tname"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sl_balance_eyes_closed.mp4" href="https://elitehockeydrills.com/exercises/sl-balance-eyes-closed" target="_blank" rel="noopener">SL Balance — Eyes Closed<span class="lk" aria-hidden="true">↗</span></a></td><td></td><td></td><td class="hi"></td><td></td><td class="tdim">+10–20 s</td></tr></tbody></table>
       <p class="sc-note">Farther, faster, or longer — every one is a win. Tag your progress and celebrate it.</p>
     </div></section>
 <aside class="pullquote"><p class="serif">Move well, land soft, then go fast. That is how you build an athlete who lasts.</p><span class="pq-by">Coach David Ciboch</span></aside>
@@ -4311,12 +4313,12 @@ a.ex:hover .lk{opacity:1;}
       <p class="kit-note serif">A few short names you’ll see: <strong>SL</strong> = single-leg · <strong>CMJ</strong> = countermovement (two-foot) jump · <strong>RDL</strong> = Romanian deadlift (a hip hinge) · <strong>Iso</strong> = isometric (a still hold) · <strong>DB</strong> = dumbbell.</p>
       <div class="gloss-group"><h3 class="display gloss-cat">Jumps, Speed &amp; Agility</h3><div class="gloss-list">
       <div class="gloss-item">
-        <div class="gi-name"><a class="ex" href="https://elitehockeydrills.com/exercises/a-skip-b-skip" target="_blank" rel="noopener">A-Skip + B-Skip<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="gi-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/a_skip_b_skip.mp4" href="https://elitehockeydrills.com/exercises/a-skip-b-skip" target="_blank" rel="noopener">A-Skip + B-Skip<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="gi-cue">Travel forward alternating A-skips (knee driven to hip height, toe up) with B-skips (from the high knee, actively extend the lower leg out, then “paw” it back down and under the hip).</div>
         <div class="gi-tags"><span class="gi-tag">Speed & Agility</span></div>
       </div>
       <div class="gloss-item">
-        <div class="gi-name"><a class="ex" href="https://elitehockeydrills.com/exercises/a-skip-march-combo" target="_blank" rel="noopener">A-Skip + March Combo<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="gi-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/a_skip_march_combo.mp4" href="https://elitehockeydrills.com/exercises/a-skip-march-combo" target="_blank" rel="noopener">A-Skip + March Combo<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="gi-cue">Alternate between A-march (a slow, deliberate marching version emphasizing positions — high knee, toe up, tall posture) and A-skip (the rhythmic skipping version) in a prescribed sequence as you travel forward.</div>
         <div class="gi-tags"><span class="gi-tag">Speed & Agility</span></div>
       </div>
@@ -4367,11 +4369,11 @@ a.ex:hover .lk{opacity:1;}
       </div>
       <div class="gloss-item">
         <div class="gi-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/contrast_jump.mp4" href="https://elitehockeydrills.com/exercises/contrast-jump" target="_blank" rel="noopener">Contrast Jump<span class="lk" aria-hidden="true">↗</span></a></div>
-        <div class="gi-cue">Perform a heavier or resisted effort (e.g., a loaded jump or banded squat jump) for a few reps, then after a short rest immediately perform a few maximal unloaded jumps (e.</div>
+        <div class="gi-cue">Perform a heavier or resisted effort (e.g., a loaded jump or banded squat jump) for a few reps, then after a short rest immediately perform a few maximal unloaded jumps (e.g., a vertical or broad jump), using the springy, potentiated feeling.</div>
         <div class="gi-tags"><span class="gi-tag">Plyometric</span></div>
       </div>
       <div class="gloss-item">
-        <div class="gi-name"><a class="ex" href="https://elitehockeydrills.com/exercises/crossover-step" target="_blank" rel="noopener">Crossover Step<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="gi-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/crossover_step.mp4" href="https://elitehockeydrills.com/exercises/crossover-step" target="_blank" rel="noopener">Crossover Step<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="gi-cue">From an athletic stance, crossover-step a few metres to one side — hips open, trailing leg crossing over with low, quick steps — then plant and crossover back the other way, shuffling side to side for the set.</div>
         <div class="gi-tags"><span class="gi-tag">Speed & Agility</span></div>
       </div>
@@ -4406,12 +4408,12 @@ a.ex:hover .lk{opacity:1;}
         <div class="gi-tags"><span class="gi-tag">Speed & Agility</span></div>
       </div>
       <div class="gloss-item">
-        <div class="gi-name"><a class="ex" href="https://elitehockeydrills.com/exercises/high-low-pogo-combo" target="_blank" rel="noopener">High-Low Pogo Combo<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="gi-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/high_low_pogo_combo.mp4" href="https://elitehockeydrills.com/exercises/high-low-pogo-combo" target="_blank" rel="noopener">High-Low Pogo Combo<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="gi-cue">Alternate between low, fast pogo hops (small amplitude, very quick contacts) and higher pogo hops (greater amplitude) in a prescribed rhythm — for example, several quick low hops then a few high hops.</div>
         <div class="gi-tags"><span class="gi-tag">Plyometric</span></div>
       </div>
       <div class="gloss-item">
-        <div class="gi-name"><a class="ex" href="https://elitehockeydrills.com/exercises/hill-stride" target="_blank" rel="noopener">Hill Stride<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="gi-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/hill_stride.mp4" href="https://elitehockeydrills.com/exercises/hill-stride" target="_blank" rel="noopener">Hill Stride<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="gi-cue">Find a moderate incline. Stride up it at a controlled, submaximal effort with tall posture, strong knee drive, and active arm action, emphasizing clean mechanics and powerful ground contact rather than all-out speed.</div>
         <div class="gi-tags"><span class="gi-tag">Speed & Agility</span></div>
       </div>
@@ -4446,7 +4448,7 @@ a.ex:hover .lk{opacity:1;}
         <div class="gi-tags"><span class="gi-tag">Speed & Agility</span></div>
       </div>
       <div class="gloss-item">
-        <div class="gi-name"><a class="ex" href="https://elitehockeydrills.com/exercises/multi-direction-bound" target="_blank" rel="noopener">Multi-Direction Bound<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="gi-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/multi_direction_bound.mp4" href="https://elitehockeydrills.com/exercises/multi-direction-bound" target="_blank" rel="noopener">Multi-Direction Bound<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="gi-cue">Bound explosively in varied directions on a prescribed pattern — forward, laterally, and diagonally — landing softly on one or both legs and controlling each landing before the next bound.</div>
         <div class="gi-tags"><span class="gi-tag">Plyometric</span></div>
       </div>
@@ -4456,12 +4458,12 @@ a.ex:hover .lk{opacity:1;}
         <div class="gi-tags"><span class="gi-tag">Speed & Agility</span></div>
       </div>
       <div class="gloss-item">
-        <div class="gi-name"><a class="ex" href="https://elitehockeydrills.com/exercises/reactive-5m-sprint" target="_blank" rel="noopener">Reactive 5m Sprint<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="gi-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/reactive_5m_sprint.mp4" href="https://elitehockeydrills.com/exercises/reactive-5m-sprint" target="_blank" rel="noopener">Reactive 5m Sprint<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="gi-cue">From an athletic ready stance, react to a cue (a coach’s call, a hand signal, or a partner’s movement) and sprint maximally for 5 metres, driving the arms and leaning into the acceleration.</div>
         <div class="gi-tags"><span class="gi-tag">Speed & Agility</span></div>
       </div>
       <div class="gloss-item">
-        <div class="gi-name"><a class="ex" href="https://elitehockeydrills.com/exercises/reactive-lateral-start" target="_blank" rel="noopener">Reactive Lateral Start<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="gi-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/reactive_lateral_start.mp4" href="https://elitehockeydrills.com/exercises/reactive-lateral-start" target="_blank" rel="noopener">Reactive Lateral Start<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="gi-cue">From an athletic ready stance, react to a cue (call, signal, or partner) and explode laterally in the indicated direction using a crossover or drop step, accelerating hard for a few metres.</div>
         <div class="gi-tags"><span class="gi-tag">Speed & Agility</span></div>
       </div>
@@ -4481,7 +4483,7 @@ a.ex:hover .lk{opacity:1;}
         <div class="gi-tags"><span class="gi-tag">Conditioning</span></div>
       </div>
       <div class="gloss-item">
-        <div class="gi-name"><a class="ex" href="https://elitehockeydrills.com/exercises/resisted-free-sprint" target="_blank" rel="noopener">Resisted → Free Sprint<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="gi-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/resisted_free_sprint.mp4" href="https://elitehockeydrills.com/exercises/resisted-free-sprint" target="_blank" rel="noopener">Resisted → Free Sprint<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="gi-cue">Sprint several metres against a band or sled resistance, then have the resistance released (or run out of a held band) and immediately continue into a free, unresisted sprint — feeling light and fast as the resistance disappears.</div>
         <div class="gi-tags"><span class="gi-tag">Speed & Agility</span></div>
       </div>
@@ -4512,7 +4514,7 @@ a.ex:hover .lk{opacity:1;}
       </div>
       <div class="gloss-item">
         <div class="gi-name"><a class="ex" href="https://elitehockeydrills.com/exercises/sprint-intervals-15s" target="_blank" rel="noopener">Sprint Intervals 15s<span class="lk" aria-hidden="true">↗</span></a></div>
-        <div class="gi-cue">Sprint maximally (running, bike, or skating-pattern work) for 15 seconds, then rest for the prescribed recovery, repeating for the set number of intervals.</div>
+        <div class="gi-cue">Sprint maximally (running, bike, or lateral shuffles) for 15 seconds, then rest for the prescribed recovery, repeating for the set number of intervals.</div>
         <div class="gi-tags"><span class="gi-tag">Conditioning</span></div>
       </div>
       <div class="gloss-item">
@@ -4526,7 +4528,7 @@ a.ex:hover .lk{opacity:1;}
         <div class="gi-tags"><span class="gi-tag">Plyometric</span></div>
       </div>
       <div class="gloss-item">
-        <div class="gi-name"><a class="ex" href="https://elitehockeydrills.com/exercises/wall-drive-hold" target="_blank" rel="noopener">Wall Drive Hold<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="gi-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/wall_drive_hold.mp4" href="https://elitehockeydrills.com/exercises/wall-drive-hold" target="_blank" rel="noopener">Wall Drive Hold<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="gi-cue">Stand an arm’s length from a wall, lean forward with the body in a straight line from head to heel at roughly 45°, hands on the wall, and drive one knee up so the thigh is parallel and the ankle dorsiflexed (toe up), the support leg fully extended.</div>
         <div class="gi-tags"><span class="gi-tag">Speed & Agility</span></div>
       </div></div></div><div class="gloss-group"><h3 class="display gloss-cat">Strength, Squat &amp; Single-Leg</h3><div class="gloss-list">
@@ -4832,7 +4834,7 @@ a.ex:hover .lk{opacity:1;}
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> A little higher, or hop and land on one foot.</div>
       </div>
       <div class="pr-row">
-        <div class="pr-name"><a class="ex" href="https://elitehockeydrills.com/exercises/wall-drive-hold" target="_blank" rel="noopener">Wall Drive Hold<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="pr-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/wall_drive_hold.mp4" href="https://elitehockeydrills.com/exercises/wall-drive-hold" target="_blank" rel="noopener">Wall Drive Hold<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="pr-reg"><span class="pr-lab reg">EASIER</span> Shorter holds, or stand a bit more upright.</div>
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Switch the driving leg, or trade legs back and forth.</div>
       </div>
@@ -4847,12 +4849,12 @@ a.ex:hover .lk{opacity:1;}
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Lift one foot off, or hold a moment at the top.</div>
       </div>
       <div class="pr-row">
-        <div class="pr-name"><a class="ex" href="https://elitehockeydrills.com/exercises/crossover-step" target="_blank" rel="noopener">Crossover Step<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="pr-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/crossover_step.mp4" href="https://elitehockeydrills.com/exercises/crossover-step" target="_blank" rel="noopener">Crossover Step<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="pr-reg"><span class="pr-lab reg">EASIER</span> Walk slowly through the crossover, one way then back.</div>
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Go faster and lower, or cover more ground each way.</div>
       </div>
       <div class="pr-row">
-        <div class="pr-name"><a class="ex" href="https://elitehockeydrills.com/exercises/reactive-5m-sprint" target="_blank" rel="noopener">Reactive 5m Sprint<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="pr-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/reactive_5m_sprint.mp4" href="https://elitehockeydrills.com/exercises/reactive-5m-sprint" target="_blank" rel="noopener">Reactive 5m Sprint<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="pr-reg"><span class="pr-lab reg">EASIER</span> Start on your own count, or run a shorter distance.</div>
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Run a little farther, or react to a surprise go-signal.</div>
       </div>
@@ -4882,7 +4884,7 @@ a.ex:hover .lk{opacity:1;}
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Quicker feet, or a slightly trickier pattern.</div>
       </div>
       <div class="pr-row">
-        <div class="pr-name"><a class="ex" href="https://elitehockeydrills.com/exercises/reactive-lateral-start" target="_blank" rel="noopener">Reactive Lateral Start<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="pr-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/reactive_lateral_start.mp4" href="https://elitehockeydrills.com/exercises/reactive-lateral-start" target="_blank" rel="noopener">Reactive Lateral Start<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="pr-reg"><span class="pr-lab reg">EASIER</span> Start on your own count, or use just one direction.</div>
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> React to a surprise go-signal, or add more directions.</div>
       </div>
@@ -4912,7 +4914,7 @@ a.ex:hover .lk{opacity:1;}
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Slightly higher box, or land on one foot.</div>
       </div>
       <div class="pr-row">
-        <div class="pr-name"><a class="ex" href="https://elitehockeydrills.com/exercises/a-skip-march-combo" target="_blank" rel="noopener">A-Skip + March Combo<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="pr-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/a_skip_march_combo.mp4" href="https://elitehockeydrills.com/exercises/a-skip-march-combo" target="_blank" rel="noopener">A-Skip + March Combo<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="pr-reg"><span class="pr-lab reg">EASIER</span> March only, or do it on the spot.</div>
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Finish by skipping into a short run.</div>
       </div>
@@ -4967,12 +4969,12 @@ a.ex:hover .lk{opacity:1;}
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Longer or quicker jumping bouts, or shorter rests.</div>
       </div>
       <div class="pr-row">
-        <div class="pr-name"><a class="ex" href="https://elitehockeydrills.com/exercises/multi-direction-bound" target="_blank" rel="noopener">Multi-Direction Bound<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="pr-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/multi_direction_bound.mp4" href="https://elitehockeydrills.com/exercises/multi-direction-bound" target="_blank" rel="noopener">Multi-Direction Bound<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="pr-reg"><span class="pr-lab reg">EASIER</span> Fewer directions, or stick each landing before the next.</div>
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Quicker changes, or react to a surprise go-signal.</div>
       </div>
       <div class="pr-row">
-        <div class="pr-name"><a class="ex" href="https://elitehockeydrills.com/exercises/a-skip-b-skip" target="_blank" rel="noopener">A-Skip + B-Skip<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="pr-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/a_skip_b_skip.mp4" href="https://elitehockeydrills.com/exercises/a-skip-b-skip" target="_blank" rel="noopener">A-Skip + B-Skip<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="pr-reg"><span class="pr-lab reg">EASIER</span> Just the A-skip, or slowly march the B pattern.</div>
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Skip a little faster, or skip into a short run.</div>
       </div>
@@ -4987,12 +4989,12 @@ a.ex:hover .lk{opacity:1;}
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Rest a light weight on your lap, or sit on one leg.</div>
       </div>
       <div class="pr-row">
-        <div class="pr-name"><a class="ex" href="https://elitehockeydrills.com/exercises/high-low-pogo-combo" target="_blank" rel="noopener">High-Low Pogo Combo<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="pr-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/high_low_pogo_combo.mp4" href="https://elitehockeydrills.com/exercises/high-low-pogo-combo" target="_blank" rel="noopener">High-Low Pogo Combo<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="pr-reg"><span class="pr-lab reg">EASIER</span> Steady hops that all stay the same height.</div>
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Hop on one foot, or switch heights more quickly.</div>
       </div>
       <div class="pr-row">
-        <div class="pr-name"><a class="ex" href="https://elitehockeydrills.com/exercises/resisted-free-sprint" target="_blank" rel="noopener">Resisted → Free Sprint<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="pr-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/resisted_free_sprint.mp4" href="https://elitehockeydrills.com/exercises/resisted-free-sprint" target="_blank" rel="noopener">Resisted → Free Sprint<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="pr-reg"><span class="pr-lab reg">EASIER</span> Lighter resistance, or do the two parts separately.</div>
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Smooth the hand-off into the free run, or run farther free.</div>
       </div>
@@ -5017,7 +5019,7 @@ a.ex:hover .lk{opacity:1;}
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Quicker or longer bounds, or add a band for resistance.</div>
       </div>
       <div class="pr-row">
-        <div class="pr-name"><a class="ex" href="https://elitehockeydrills.com/exercises/hill-stride" target="_blank" rel="noopener">Hill Stride<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="pr-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/hill_stride.mp4" href="https://elitehockeydrills.com/exercises/hill-stride" target="_blank" rel="noopener">Hill Stride<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="pr-reg"><span class="pr-lab reg">EASIER</span> A gentler slope, or a shorter distance.</div>
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> A steeper hill, or longer, quicker strides.</div>
       </div>
@@ -5027,7 +5029,7 @@ a.ex:hover .lk{opacity:1;}
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Bring the feet closer, or slow the up-and-down on purpose.</div>
       </div>
       <div class="pr-row">
-        <div class="pr-name"><a class="ex" href="https://elitehockeydrills.com/exercises/20m-flying-sprint" target="_blank" rel="noopener">20m Flying Sprint<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="pr-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sprint_fly_20m.mp4" href="https://elitehockeydrills.com/exercises/20m-flying-sprint" target="_blank" rel="noopener">20m Flying Sprint<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="pr-reg"><span class="pr-lab reg">EASIER</span> Shorten to a 10 m fly, or run easy build-up strides.</div>
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Make the fly zone longer, or add a gentle downhill run.</div>
       </div>
@@ -5037,7 +5039,7 @@ a.ex:hover .lk{opacity:1;}
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Jump again right away, or jump into a short sprint.</div>
       </div>
       <div class="pr-row">
-        <div class="pr-name"><a class="ex" href="https://elitehockeydrills.com/exercises/20m-sprint" target="_blank" rel="noopener">20m Sprint<span class="lk" aria-hidden="true">↗</span></a></div>
+        <div class="pr-name"><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/20m_sprint.mp4" href="https://elitehockeydrills.com/exercises/20m-sprint" target="_blank" rel="noopener">20m Sprint<span class="lk" aria-hidden="true">↗</span></a></div>
         <div class="pr-reg"><span class="pr-lab reg">EASIER</span> Short 10 m starts focused on the first hard pushes.</div>
         <div class="pr-prog"><span class="pr-lab prog">HARDER</span> Add a band or sled at the start, or run out to 30 m.</div>
       </div>
@@ -5192,6 +5194,29 @@ a.ex:hover .lk{opacity:1;}
   // exercise → inline Watch Video + Full Guide (workout rows + glossary cards)
   document.addEventListener('click', function(e){
     var a=e.target.closest('a.ex'); if(!a) return;
+    var trow=a.closest('.sc-table tbody tr');
+    if(trow){
+      e.preventDefault();
+      var prow=trow.nextElementSibling;
+      if(prow && prow.classList.contains('ex-panel-row')){
+        var op=trow.classList.toggle('open');
+        prow.style.display = op ? '' : 'none';
+        if(!op){ var bx=prow.querySelector('.ex-video'); if(bx) bx.innerHTML=''; var wb=prow.querySelector('.ex-btn.watch'); if(wb) wb.innerHTML='▶ Watch Video'; }
+        return;
+      }
+      var tvid=a.getAttribute('data-video'), tguide=a.getAttribute('href');
+      prow=document.createElement('tr'); prow.className='ex-panel-row';
+      var ptd=document.createElement('td'); ptd.colSpan=trow.children.length;
+      var th='<div class="ex-panel"><div class="ex-actions">';
+      if(tvid) th+='<button type="button" class="ex-btn watch">▶ Watch Video</button>';
+      th+='<a class="ex-btn guide" href="'+tguide+'" target="_blank" rel="noopener">Full Guide ↗</a></div><div class="ex-video"></div></div>';
+      ptd.innerHTML=th; prow.appendChild(ptd);
+      trow.insertAdjacentElement('afterend', prow);
+      trow.classList.add('open');
+      var tw=prow.querySelector('.ex-btn.watch');
+      if(tw) tw.addEventListener('click', function(){ var box=prow.querySelector('.ex-video'); if(box.firstChild){ box.innerHTML=''; tw.innerHTML='▶ Watch Video'; return; } box.innerHTML='<video class="ex-video-el" src="'+tvid+'" controls autoplay playsinline preload="metadata"></video>'; tw.innerHTML='✕ Hide Video'; });
+      return;
+    }
     var host=a.closest('.exrow')||a.closest('.gloss-item')||a.closest('.test-card')||a.closest('.cd-list li')||a.closest('.rp-list li')||a.closest('.pr-row'); if(!host) return;
     e.preventDefault();
     var panel=host.querySelector(':scope > .ex-panel');
