@@ -365,9 +365,9 @@ a.ex:hover .lk{opacity:1;}
 .rp-h .display{font-size:28px;letter-spacing:.05em;}
 .rp-sub{font-size:12px;font-weight:600;color:var(--ink3);letter-spacing:.1em;text-transform:uppercase;}
 .rp-desc{font-size:14px;color:var(--ink2);margin-bottom:12px;line-height:1.6;}
-.rp-list{list-style:none;display:flex;flex-wrap:wrap;gap:8px;}
-.rp-list li{font-size:13.5px;}
-.rp-list li::after{content:'·';color:var(--ink3);margin-left:8px;}
+.rp-list{list-style:none;display:flex;flex-direction:column;align-items:flex-start;gap:6px;}
+.rp-list li{font-size:15px;}
+.rp-list li::after{content:'';}
 .rp-list li:last-child::after{content:'';}
 @media(min-width:760px){.ramp-grid{grid-template-columns:1fr 1fr;}}
 
@@ -375,9 +375,9 @@ a.ex:hover .lk{opacity:1;}
 .cd-split{display:grid;grid-template-columns:1fr;gap:28px;}
 .cd-col{border:1px solid var(--line2);border-radius:14px;padding:28px;background:var(--card);}
 .cd-kick{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ice);margin-bottom:10px;}
-.cd-title{font-size:40px;letter-spacing:.02em;margin-bottom:14px;}
-.cd-list{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
-.cd-list li::after{content:'·';color:var(--ink3);margin-left:8px;}
+.cd-title{font-size:46px;line-height:.9;letter-spacing:.02em;margin-bottom:14px;}
+.cd-list{list-style:none;display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin-top:12px;}
+.cd-list li::after{content:'';}
 .cd-list li:last-child::after{content:'';}
 .screen-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin:14px 0;}
 .screen-list li{position:relative;padding-left:30px;font-size:14.5px;color:var(--ink);line-height:1.55;}
@@ -732,11 +732,12 @@ a.ex:hover .lk{opacity:1;}
   .exrow a.ex::after, .gloss-item .gi-name a.ex::after{content:'▾';font-size:.62em;margin-left:.4em;color:var(--ice);display:inline-block;transition:transform .22s;vertical-align:middle;}
   .exrow.open a.ex::after, .gloss-item.open .gi-name a.ex::after{transform:rotate(180deg);}
   .ex-panel{display:none;margin-top:12px;padding-top:13px;border-top:1px solid var(--line2);}
-  .exrow.open .ex-panel, .gloss-item.open .ex-panel, .test-card.open .ex-panel{display:block;animation:exPanel .26s cubic-bezier(.2,.7,.2,1);}
-  /* test-card name acts as a dropdown: show a chevron that flips when open */
-  .test-card a.ex .lk{font-size:0;vertical-align:middle;margin-left:.3em;}
-  .test-card a.ex .lk::after{content:"▾";font-size:13px;line-height:1;display:inline-block;opacity:.65;}
-  .test-card.open a.ex .lk::after{content:"▴";opacity:1;}
+  .exrow.open .ex-panel, .gloss-item.open .ex-panel, .test-card.open .ex-panel, .cd-list li.open .ex-panel, .rp-list li.open .ex-panel, .pr-row.open .ex-panel{display:block;animation:exPanel .26s cubic-bezier(.2,.7,.2,1);}
+  .pr-row.open .ex-panel{grid-column:1 / -1;}
+  /* card/list exercise names act as a dropdown: show a chevron that flips when open */
+  .test-card a.ex .lk, .cd-list a.ex .lk, .rp-list a.ex .lk, .pr-row a.ex .lk{font-size:0;vertical-align:middle;margin-left:.3em;}
+  .test-card a.ex .lk::after, .cd-list a.ex .lk::after, .rp-list a.ex .lk::after, .pr-row a.ex .lk::after{content:"▾";font-size:13px;line-height:1;display:inline-block;opacity:.65;}
+  .test-card.open a.ex .lk::after, .cd-list li.open a.ex .lk::after, .rp-list li.open a.ex .lk::after, .pr-row.open a.ex .lk::after{content:"▴";opacity:1;}
   @keyframes exPanel{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:none;}}
   .ex-actions{display:flex;flex-wrap:wrap;gap:10px;}
   .ex-btn{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:10px 18px;border-radius:100px;border:1px solid var(--line2);background:var(--bg2);color:var(--ink);cursor:pointer;transition:all .18s;text-decoration:none;}
@@ -958,13 +959,13 @@ a.ex:hover .lk{opacity:1;}
       <div class="cd-split">
         <div class="cd-col">
           <div class="cd-kick">After every session · 3–5 min</div>
-          <h2 class="display cd-title">THE COOL-DOWN</h2>
+          <h2 class="cd-title"><span class="st-lead">THE</span><span class="st-accent serif">cool-down.</span></h2>
           <p class="lead">Slow everything down. Quiet the breath first, then move through some gentle, easy stretches. This is when the body recovers and grows.</p>
           <ul class="cd-list"><li><a class="ex" href="https://elitehockeydrills.com/exercises/slow-walk-with-nose-breathing" target="_blank" rel="noopener">Slow Walk with Nose Breathing<span class="lk" aria-hidden="true">↗</span></a></li><li><a class="ex" href="https://elitehockeydrills.com/exercises/child-s-pose-with-breath" target="_blank" rel="noopener">Child's Pose with Breath<span class="lk" aria-hidden="true">↗</span></a></li><li><a class="ex" href="https://elitehockeydrills.com/exercises/90-90-hip-stretch-t-spine-opener" target="_blank" rel="noopener">90/90 Hip Stretch + T-Spine Opener<span class="lk" aria-hidden="true">↗</span></a></li><li><a class="ex" href="https://elitehockeydrills.com/exercises/supine-spinal-twist" target="_blank" rel="noopener">Supine Spinal Twist<span class="lk" aria-hidden="true">↗</span></a></li><li><a class="ex" href="https://elitehockeydrills.com/exercises/foam-roll-tissue-work" target="_blank" rel="noopener">Foam Roll / Tissue Work<span class="lk" aria-hidden="true">↗</span></a></li><li><a class="ex" href="https://elitehockeydrills.com/exercises/hip-groin-flow" target="_blank" rel="noopener">Hip / Groin Flow<span class="lk" aria-hidden="true">↗</span></a></li></ul>
         </div>
         <div class="cd-col screen-col">
           <div class="cd-kick">A quick check for parents &amp; coaches</div>
-          <h2 class="display cd-title">SAFETY &amp; FUN FIRST</h2>
+          <h2 class="cd-title"><span class="st-lead">SAFETY &amp;</span><span class="st-accent serif">fun first.</span></h2>
           <p class="lead">This is a development program for young athletes — fun and good movement come before anything else. Keep these in mind every session.</p>
           <ul class="screen-list"><li>Before starting, have your child cleared for physical activity by a physician — especially with any injury, illness, or health condition.</li><li>It should feel like play. If a child dreads it, lighten it and keep it fun.</li><li>Good shoes, a flat non-slip surface, and a clear space to move.</li><li>Every rep is about quality, not tiredness — never train “to failure.”</li><li>Stop any movement that causes sharp pain, and rest when tired or unwell.</li><li>An adult supervises — watch that landings stay quiet with the knees tracking over the toes, keep the box low enough to land in control, and end a set the moment form turns sloppy. The warm-up is always done before the fast or jumping work.</li></ul>
           <p class="screen-note serif">Kids grow and develop at different rates — that is completely normal. Scale every movement to the child in front of you (see the Make It Easier / Harder library).</p>
@@ -5191,7 +5192,7 @@ a.ex:hover .lk{opacity:1;}
   // exercise → inline Watch Video + Full Guide (workout rows + glossary cards)
   document.addEventListener('click', function(e){
     var a=e.target.closest('a.ex'); if(!a) return;
-    var host=a.closest('.exrow')||a.closest('.gloss-item')||a.closest('.test-card'); if(!host) return;
+    var host=a.closest('.exrow')||a.closest('.gloss-item')||a.closest('.test-card')||a.closest('.cd-list li')||a.closest('.rp-list li')||a.closest('.pr-row'); if(!host) return;
     e.preventDefault();
     var panel=host.querySelector(':scope > .ex-panel');
     if(!panel){
