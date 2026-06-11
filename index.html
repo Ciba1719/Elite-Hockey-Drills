@@ -37,6 +37,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+
 <style>
 :root{
   --bg:        #070708;
@@ -175,11 +179,56 @@ section{position:relative;z-index:2;}
 .hero-3d{
   position:absolute;inset:0;z-index:1;
   pointer-events:none;display:none;
-  opacity:0;transition:opacity 1.6s ease;
+  opacity:0;transition:opacity 1.2s ease;
 }
 .hero-3d.on{opacity:1;}
 .hero-3d canvas{width:100% !important;height:100% !important;display:block;}
 @media(min-width:900px){.hero-3d{display:block;}}
+
+/* HERO 3D ACTIVE — full-stage tumbling puck layout (only when WebGL boots) */
+.hero-h1-wrap{position:relative;}
+.hero-h1-front{display:none;}
+body.hero3d-active .hero-photo-desktop{opacity:0;visibility:hidden;transition:opacity .5s, visibility 0s .5s;}
+body.hero3d-active .hero-content{z-index:auto;}
+body.hero3d-active .hero-grid-inner{display:block;}
+body.hero3d-active .hero-text{padding-right:0;display:flex;flex-direction:column;align-items:center;text-align:center;}
+body.hero3d-active .hero-badges{align-items:center;}
+body.hero3d-active .hero-h1{font-size:clamp(80px,11.5vw,176px);line-height:.88;letter-spacing:.01em;}
+body.hero3d-active .hero-sub{margin-left:auto;margin-right:auto;text-align:center;}
+body.hero3d-active .hero-ctas{justify-content:center;}
+body.hero3d-active .hero-stats{margin-left:auto;margin-right:auto;}
+body.hero3d-active .hero-badges,
+body.hero3d-active .hero-sub,
+body.hero3d-active .hero-ctas,
+body.hero3d-active .hero-stats{position:relative;z-index:4;}
+body.hero3d-active .hero-3d{z-index:3;}
+body.hero3d-active .hero-h1-front{
+  display:block;position:absolute;inset:0;z-index:4;pointer-events:none;
+}
+.hero-h1-front .line{visibility:hidden;}
+.hero-h1-front .line.front{visibility:visible;}
+body.hero3d-active .hero-h1 .line{opacity:0;transform:translateY(44px);animation:heroLine .9s cubic-bezier(.16,.84,.28,1) forwards;}
+body.hero3d-active .hero-h1 .line:nth-child(2){animation-delay:.12s;}
+body.hero3d-active .hero-h1 .line:nth-child(3){animation-delay:.24s;}
+@keyframes heroLine{to{opacity:1;transform:none;}}
+
+/* TICKER */
+.ticker{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-2);padding:16px 0;position:relative;z-index:2;}
+.ticker-track{display:flex;width:max-content;animation:tickerMove 38s linear infinite;}
+.ticker-half{display:flex;align-items:center;gap:48px;padding-right:48px;}
+.ticker-half span{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:.14em;color:var(--ink-2);white-space:nowrap;}
+.ticker-half em{font-family:'Instrument Serif',serif;font-style:italic;font-size:22px;color:var(--ice);}
+@keyframes tickerMove{to{transform:translateX(-50%);}}
+@media (prefers-reduced-motion: reduce){.ticker-track{animation:none;}}
+
+/* FOOTER GIANT MARK */
+.footer-mark{overflow:hidden;padding:90px 24px 10px;position:relative;z-index:2;}
+.footer-mark .display{
+  font-size:clamp(88px,15vw,230px);line-height:.85;
+  transform:rotate(-3.5deg);transform-origin:left center;
+  color:var(--ink);letter-spacing:.02em;
+}
+.footer-mark .ice{color:var(--ice);}
 .hero-content{position:relative;z-index:2;max-width:900px;}
 .hero-photo-desktop{display:none;}
 
@@ -1436,10 +1485,18 @@ section{position:relative;z-index:2;}
             Founding pre-sale open — programs launch June 2026
           </div>
         </div>
-        <h1 class="hero-h1 display">
-          <span class="line">Off-Ice Training,</span>
-          <span class="line"><span class="accent serif">engineered</span> for <span class="ice">hockey.</span></span>
-        </h1>
+        <div class="hero-h1-wrap" id="heroH1Wrap">
+          <h1 class="hero-h1 display">
+            <span class="line">Off-Ice Training,</span>
+            <span class="line"><span class="accent serif">engineered</span> for</span>
+            <span class="line"><span class="ice">hockey.</span></span>
+          </h1>
+          <div class="hero-h1 display hero-h1-front" aria-hidden="true">
+            <span class="line">Off-Ice Training,</span>
+            <span class="line"><span class="accent serif">engineered</span> for</span>
+            <span class="line front"><span class="ice">hockey.</span></span>
+          </div>
+        </div>
         <p class="hero-sub">
           12-week programs for <strong>competitive players ages 9–40+</strong> — and parents who want serious off-ice training for their kids. Built on sport science by a national team coach. <strong>Reserve your founding spot at $49</strong> before the price goes to $79 at launch.
         </p>
@@ -1472,6 +1529,17 @@ section{position:relative;z-index:2;}
     </div>
   </div>
 </section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <div class="ticker-half">
+      <span>Off-Ice Training</span><em>✶</em><span>Engineered for Hockey</span><em>✶</em><span>12-Week Programs</span><em>✶</em><span>Ages 9–40+</span><em>✶</em><span>Built on Sport Science</span><em>✶</em>
+    </div>
+    <div class="ticker-half">
+      <span>Off-Ice Training</span><em>✶</em><span>Engineered for Hockey</span><em>✶</em><span>12-Week Programs</span><em>✶</em><span>Ages 9–40+</span><em>✶</em><span>Built on Sport Science</span><em>✶</em>
+    </div>
+  </div>
+</div>
 
 <section class="about" id="about">
   <div class="wrap">
@@ -1897,6 +1965,9 @@ section{position:relative;z-index:2;}
 </section>
 
 <footer class="footer">
+  <div class="footer-mark" aria-hidden="true">
+    <div class="display">Elite Hockey<br>Drills<span class="ice">.</span></div>
+  </div>
   <div class="footer-inner">
     <div class="footer-brand">
       <a class="nav-logo" href="#hero"><span class="dot"></span>ELITE HOCKEY DRILLS</a>
@@ -2050,8 +2121,8 @@ function toggleFaq(btn){
   btn.closest('.faq-item').classList.toggle('open');
 }
 
-/* HERO 3D — reflective ice + drifting puck.
-   Desktop only, loads after the page is idle, fails silent (hero works without it). */
+/* HERO 3D — giant photoreal puck tumbling through the headline.
+   Desktop only, loads after the page is idle, fails silent (hero falls back to the photo layout). */
 (function(){
   const host = document.getElementById('hero3d');
   if(!host) return;
@@ -2064,215 +2135,179 @@ function toggleFaq(btn){
   else window.addEventListener('load', ()=>idle(load), {once:true});
 
   function load(){
-    import('https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js')
-      .then(start).catch(()=>{});
+    Promise.all([
+      import('three'),
+      import('three/addons/environments/RoomEnvironment.js'),
+      document.fonts ? document.fonts.ready : Promise.resolve()
+    ]).then(([THREE, RE])=>start(THREE, RE.RoomEnvironment)).catch(()=>{});
   }
 
-  function start(THREE){
+  function start(THREE, RoomEnvironment){
     let renderer;
     try{
-      renderer = new THREE.WebGLRenderer({antialias:true, alpha:true, powerPreference:'low-power'});
+      renderer = new THREE.WebGLRenderer({antialias:true, alpha:true, powerPreference:'high-performance'});
     }catch(e){ return; }
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
     renderer.setClearColor(0x000000, 0);
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
     host.appendChild(renderer.domElement);
 
     const scene = new THREE.Scene();
-    scene.fog = new THREE.Fog(0x070708, 9, 19);
+    const camera = new THREE.PerspectiveCamera(30, 1, .1, 50);
+    camera.position.set(0, 0, 11);
 
-    const camera = new THREE.PerspectiveCamera(34, 1, .1, 60);
-    camera.position.set(0, 1.9, 10);
-    camera.lookAt(0, 2.4, 0);
+    const pmrem = new THREE.PMREMGenerator(renderer);
+    scene.environment = pmrem.fromScene(new RoomEnvironment(), .04).texture;
 
-    scene.add(new THREE.AmbientLight(0x223240, 1.4));
-    const key = new THREE.PointLight(0x5DB4E5, 9, 8, 2);
-    key.position.set(0, .9, 0);
-    scene.add(key);
-    const warm = new THREE.DirectionalLight(0xE8B777, .3);
-    warm.position.set(6, 3, 2);
-    scene.add(warm);
+    /* studio lighting — dark rubber needs hard rims to read on a dark page */
+    const key = new THREE.DirectionalLight(0xffffff, .5);
+    key.position.set(-4, 6, 6); scene.add(key);
+    const rimIce = new THREE.DirectionalLight(0x5DB4E5, 3.4);
+    rimIce.position.set(-6, 2, -5); scene.add(rimIce);
+    const rimWarm = new THREE.DirectionalLight(0xE8B777, 1.7);
+    rimWarm.position.set(6, -2, -4); scene.add(rimWarm);
+    scene.add(new THREE.AmbientLight(0x1a2230, 1.1));
 
-    const floor = new THREE.Mesh(
-      new THREE.PlaneGeometry(46, 26),
-      new THREE.MeshStandardMaterial({color:0x0B0D12, metalness:.5, roughness:.42})
-    );
-    floor.rotation.x = -Math.PI/2;
-    scene.add(floor);
-
-    /* faint face-off circle */
-    const mc = document.createElement('canvas');
-    mc.width = mc.height = 512;
-    const g = mc.getContext('2d');
-    g.strokeStyle = 'rgba(93,180,229,.5)';
-    g.lineWidth = 3;
-    g.beginPath(); g.arc(256,256,170,0,Math.PI*2); g.stroke();
-    g.fillStyle = 'rgba(93,180,229,.55)';
-    g.beginPath(); g.arc(256,256,7,0,Math.PI*2); g.fill();
-    [[-1,-1],[1,-1],[-1,1],[1,1]].forEach(s=>{
-      g.beginPath();
-      g.moveTo(256+s[0]*60, 256+s[1]*150);
-      g.lineTo(256+s[0]*60, 256+s[1]*186);
-      g.stroke();
-    });
-    const markings = new THREE.Mesh(
-      new THREE.PlaneGeometry(9, 9),
-      new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(mc), transparent:true, opacity:.45, blending:THREE.AdditiveBlending, depthWrite:false})
-    );
-    markings.rotation.x = -Math.PI/2;
-    markings.position.set(-1.2, .01, .4);
-    scene.add(markings);
+    /* puck — knurled side, embossed EHD cap, beveled edges */
+    function capTexture(){
+      const c = document.createElement('canvas'); c.width = c.height = 1024;
+      const g = c.getContext('2d');
+      g.fillStyle = '#15171c'; g.fillRect(0,0,1024,1024);
+      g.strokeStyle = 'rgba(236,237,239,.10)'; g.lineWidth = 10;
+      g.beginPath(); g.arc(512,512,430,0,Math.PI*2); g.stroke();
+      g.lineWidth = 4;
+      g.beginPath(); g.arc(512,512,392,0,Math.PI*2); g.stroke();
+      g.font = '400 300px "Bebas Neue", sans-serif';
+      g.textAlign = 'center'; g.textBaseline = 'middle';
+      g.fillStyle = 'rgba(236,237,239,.14)';
+      g.fillText('EHD', 512, 505);
+      g.fillStyle = 'rgba(93,180,229,.5)';
+      g.beginPath(); g.arc(512, 712, 15, 0, Math.PI*2); g.fill();
+      const t = new THREE.CanvasTexture(c);
+      t.anisotropy = 8; t.colorSpace = THREE.SRGBColorSpace;
+      return t;
+    }
+    function sideTexture(){
+      const c = document.createElement('canvas'); c.width = 1024; c.height = 128;
+      const g = c.getContext('2d');
+      g.fillStyle = '#17191f'; g.fillRect(0,0,1024,128);
+      for(let x=0; x<1024; x+=8){
+        g.fillStyle = (x/8)%2 ? '#1c1f26' : '#13151a';
+        g.fillRect(x,0,4,128);
+      }
+      const t = new THREE.CanvasTexture(c);
+      t.wrapS = THREE.RepeatWrapping; t.repeat.set(4,1);
+      t.anisotropy = 8; t.colorSpace = THREE.SRGBColorSpace;
+      return t;
+    }
+    const R = 1.3, H = .87;
+    const sTex = sideTexture();
+    const sideMat = new THREE.MeshStandardMaterial({metalness:.05, roughness:.48, envMapIntensity:.3, map:sTex, bumpMap:sTex, bumpScale:.02});
+    const capMat = new THREE.MeshStandardMaterial({metalness:.05, roughness:.5, envMapIntensity:.35, map:capTexture()});
+    const edgeMat = new THREE.MeshStandardMaterial({color:0x14161b, metalness:.05, roughness:.45, envMapIntensity:.4});
 
     const puck = new THREE.Group();
-    const body = new THREE.Mesh(
-      new THREE.CylinderGeometry(.34, .34, .13, 48),
-      new THREE.MeshStandardMaterial({color:0x14161B, metalness:.5, roughness:.4})
-    );
-    body.position.y = .065;
-    puck.add(body);
-    const rim = new THREE.Mesh(
-      new THREE.CylinderGeometry(.39, .39, .02, 48),
-      new THREE.MeshBasicMaterial({color:0x5DB4E5, transparent:true, opacity:.35, blending:THREE.AdditiveBlending, depthWrite:false})
-    );
-    rim.position.y = .02;
-    puck.add(rim);
-    puck.position.set(-1.5, 0, .4);
+    puck.add(new THREE.Mesh(new THREE.CylinderGeometry(R, R, H, 96, 1), [sideMat, capMat, capMat]));
+    const eTop = new THREE.Mesh(new THREE.TorusGeometry(R-.05, .055, 24, 96), edgeMat);
+    eTop.rotation.x = Math.PI/2; eTop.position.y = H/2 - .02; puck.add(eTop);
+    const eBot = eTop.clone(); eBot.position.y = -H/2 + .02; puck.add(eBot);
+    puck.scale.set(0,0,0);
     scene.add(puck);
 
-    /* ice-spray trail */
-    const TRAIL = 240;
-    const tPos = new Float32Array(TRAIL*3);
-    const tCol = new Float32Array(TRAIL*3);
-    const parts = [];
-    for(let i=0;i<TRAIL;i++) parts.push({x:0,y:-9,z:0,vx:0,vy:0,vz:0,life:0});
-    const trailGeo = new THREE.BufferGeometry();
-    trailGeo.setAttribute('position', new THREE.BufferAttribute(tPos, 3));
-    trailGeo.setAttribute('color', new THREE.BufferAttribute(tCol, 3));
-    const trail = new THREE.Points(trailGeo, new THREE.PointsMaterial({
-      size:.055, vertexColors:true, transparent:true, opacity:.85,
-      blending:THREE.AdditiveBlending, depthWrite:false
-    }));
-    scene.add(trail);
-
-    /* ambient dust */
-    const DUST = 140;
-    const dPos = new Float32Array(DUST*3);
-    const dBase = [];
-    for(let i=0;i<DUST;i++){
-      const x = (Math.random()*2-1)*9, y = .1 + Math.random()*2.1, z = -4 + Math.random()*7;
-      dPos[i*3]=x; dPos[i*3+1]=y; dPos[i*3+2]=z;
-      dBase.push({y, phase:Math.random()*Math.PI*2, speed:.2+Math.random()*.5});
+    /* ice flecks drifting around the stage */
+    const N = 90;
+    const fPos = new Float32Array(N*3); const fBase = [];
+    for(let i=0;i<N;i++){
+      const a = Math.random()*Math.PI*2, rr = 2.2 + Math.random()*4.5;
+      const x = Math.cos(a)*rr, y = (Math.random()*2-1)*2.8, z = -2 + Math.random()*3;
+      fPos[i*3]=x; fPos[i*3+1]=y; fPos[i*3+2]=z;
+      fBase.push({x, y, sp:.1+Math.random()*.4, ph:Math.random()*Math.PI*2, amp:.15+Math.random()*.35});
     }
-    const dustGeo = new THREE.BufferGeometry();
-    dustGeo.setAttribute('position', new THREE.BufferAttribute(dPos, 3));
-    const dust = new THREE.Points(dustGeo, new THREE.PointsMaterial({
-      color:0x5DB4E5, size:.04, transparent:true, opacity:.32,
-      blending:THREE.AdditiveBlending, depthWrite:false
-    }));
-    scene.add(dust);
+    const fGeo = new THREE.BufferGeometry();
+    fGeo.setAttribute('position', new THREE.BufferAttribute(fPos,3));
+    scene.add(new THREE.Points(fGeo, new THREE.PointsMaterial({color:0x5DB4E5, size:.05, transparent:true, opacity:.5, blending:THREE.AdditiveBlending, depthWrite:false})));
 
-    /* puck wandering + cursor influence */
-    const vel = new THREE.Vector3();
-    const steer = new THREE.Vector3();
-    const goal = new THREE.Vector3();
-    const cursorPt = new THREE.Vector3();
-    const ndc = new THREE.Vector2();
-    const ray = new THREE.Raycaster();
-    const ground = new THREE.Plane(new THREE.Vector3(0,1,0), 0);
-    let target = newTarget();
-    let nextRetarget = 4;
-    let lastMove = -9999;
-    let mx = 0, my = 0;
-    function newTarget(){
-      return new THREE.Vector3(-2.6 + Math.random()*2.8, 0, -1.4 + Math.random()*3.0);
+    /* soft bokeh discs — the "bubbles" of our brand, in ice */
+    function discTexture(){
+      const c = document.createElement('canvas'); c.width=c.height=128;
+      const g = c.getContext('2d');
+      const grad = g.createRadialGradient(64,64,0,64,64,64);
+      grad.addColorStop(0,'rgba(93,180,229,.9)');
+      grad.addColorStop(.4,'rgba(93,180,229,.25)');
+      grad.addColorStop(1,'rgba(93,180,229,0)');
+      g.fillStyle = grad; g.fillRect(0,0,128,128);
+      return new THREE.CanvasTexture(c);
     }
-    const hero = document.getElementById('hero');
-    hero.addEventListener('mousemove', (e)=>{
-      const r = host.getBoundingClientRect();
-      if(!r.width) return;
-      mx = ((e.clientX - r.left)/r.width)*2 - 1;
-      my = ((e.clientY - r.top)/r.height)*2 - 1;
-      ndc.set(mx, -my);
-      ray.setFromCamera(ndc, camera);
-      if(ray.ray.intersectPlane(ground, cursorPt)) lastMove = elapsed;
-    }, {passive:true});
+    const bokehMat = new THREE.SpriteMaterial({map:discTexture(), transparent:true, opacity:.22, depthWrite:false, blending:THREE.AdditiveBlending});
+    const bokehs = [];
+    for(let i=0;i<10;i++){
+      const s = new THREE.Sprite(bokehMat);
+      const sc = .25 + Math.random()*.7;
+      s.scale.set(sc,sc,1);
+      s.position.set((Math.random()*2-1)*5.5, (Math.random()*2-1)*2.8, -2.5 + Math.random()*2);
+      s.userData = {sp:.08+Math.random()*.25, ph:Math.random()*Math.PI*2, baseY:s.position.y};
+      bokehs.push(s); scene.add(s);
+    }
 
-    function resize(){
+    /* size + position the puck onto the headline block */
+    const h1wrap = document.getElementById('heroH1Wrap');
+    let puckBaseY = .6, puckScale = 1;
+    function frame(){
       const r = host.getBoundingClientRect();
       if(!r.width || !r.height) return;
       renderer.setSize(r.width, r.height);
       camera.aspect = r.width/r.height;
       camera.updateProjectionMatrix();
+      const halfH = Math.tan(THREE.MathUtils.degToRad(15)) * 11;
+      const pxPerWorld = r.height / (halfH*2);
+      if(h1wrap){
+        const hr = h1wrap.getBoundingClientRect();
+        const cy = (hr.top + hr.height/2) - r.top;
+        puckBaseY = ((r.height/2 - cy) / r.height) * halfH * 2;
+        const targetPx = Math.min(r.width*.34, hr.height*1.15);
+        puckScale = (targetPx / pxPerWorld) / (R*2);
+      }
     }
-    window.addEventListener('resize', resize);
-    resize();
+    window.addEventListener('resize', frame);
+
+    let mx = 0, my = 0;
+    document.getElementById('hero').addEventListener('mousemove', (e)=>{
+      const r = host.getBoundingClientRect();
+      if(!r.width) return;
+      mx = ((e.clientX - r.left)/r.width)*2 - 1;
+      my = ((e.clientY - r.top)/r.height)*2 - 1;
+    }, {passive:true});
 
     const clock = new THREE.Clock();
-    let elapsed = 0, spawnAcc = 0;
-
+    let t = 0, intro = 0;
     function update(dt){
-      elapsed += dt;
+      t += dt;
+      intro = Math.min(1, intro + dt*.7);
+      const pop = 1 - Math.pow(1-intro, 3);
+      const sc = puckScale * pop;
+      puck.scale.set(sc, sc, sc);
 
-      if(elapsed > nextRetarget){
-        target = newTarget();
-        nextRetarget = elapsed + 3 + Math.random()*2.5;
+      const scroll = window.scrollY || 0;
+      puck.position.y = puckBaseY - scroll*.0012;
+      puck.rotation.x = .45 + t*.22 + scroll*.0035;
+      puck.rotation.y = t*.16 + mx*.3;
+      puck.rotation.z = Math.sin(t*.12)*.25 + my*.15;
+
+      for(let i=0;i<N;i++){
+        const b = fBase[i];
+        fPos[i*3+1] = b.y + Math.sin(t*b.sp + b.ph)*b.amp;
+        fPos[i*3]   = b.x + Math.cos(t*b.sp*.7 + b.ph)*b.amp*.6;
       }
-      goal.copy(target);
-      if(elapsed - lastMove < 2.2) goal.lerp(cursorPt, .45);
-      goal.x = Math.max(-2.8, Math.min(.4, goal.x));
-      goal.z = Math.max(-1.4, Math.min(1.6, goal.z));
-      goal.y = 0;
+      fGeo.attributes.position.needsUpdate = true;
+      bokehs.forEach(s=>{ s.position.y = s.userData.baseY + Math.sin(t*s.userData.sp + s.userData.ph)*.4; });
 
-      steer.copy(goal).sub(puck.position); steer.y = 0;
-      vel.addScaledVector(steer, dt*1.6);
-      vel.multiplyScalar(Math.pow(.86, dt*60));
-      if(vel.length() > 3) vel.setLength(3);
-      puck.position.addScaledVector(vel, dt);
-      puck.rotation.y += vel.length()*dt*.8;
-      key.position.set(puck.position.x, 1.1, puck.position.z);
-
-      /* trail */
-      spawnAcc += dt * (6 + vel.length()*40);
-      let toSpawn = Math.floor(spawnAcc);
-      spawnAcc -= toSpawn;
-      for(let i=0;i<TRAIL && toSpawn>0;i++){
-        const p = parts[i];
-        if(p.life > 0) continue;
-        p.x = puck.position.x + (Math.random()-.5)*.3;
-        p.y = .06 + Math.random()*.08;
-        p.z = puck.position.z + (Math.random()-.5)*.3;
-        p.vx = -vel.x*.15 + (Math.random()-.5)*.3;
-        p.vy = .15 + Math.random()*.35;
-        p.vz = -vel.z*.15 + (Math.random()-.5)*.3;
-        p.life = 1;
-        toSpawn--;
-      }
-      for(let i=0;i<TRAIL;i++){
-        const p = parts[i];
-        if(p.life > 0){
-          p.life -= dt*.9;
-          p.x += p.vx*dt; p.y += p.vy*dt; p.z += p.vz*dt;
-          p.vy -= dt*.4;
-        }
-        const l = Math.max(0, p.life);
-        const f = l*l;
-        tPos[i*3]=p.x; tPos[i*3+1]=p.life>0?p.y:-9; tPos[i*3+2]=p.z;
-        tCol[i*3]=.36*f; tCol[i*3+1]=.71*f; tCol[i*3+2]=.9*f;
-      }
-      trailGeo.attributes.position.needsUpdate = true;
-      trailGeo.attributes.color.needsUpdate = true;
-
-      /* dust drift */
-      for(let i=0;i<DUST;i++){
-        const b = dBase[i];
-        dPos[i*3+1] = b.y + Math.sin(elapsed*b.speed + b.phase)*.25;
-      }
-      dustGeo.attributes.position.needsUpdate = true;
-
-      /* camera parallax */
-      camera.position.x += (mx*.55 - camera.position.x)*Math.min(1, dt*2);
-      camera.position.y += ((1.9 - my*.2) - camera.position.y)*Math.min(1, dt*2);
-      camera.lookAt(0, 2.4, 0);
+      camera.position.x += (mx*.45 - camera.position.x)*Math.min(1, dt*2.5);
+      camera.position.y += (-my*.25 - camera.position.y)*Math.min(1, dt*2.5);
+      camera.lookAt(0, puck.position.y*.35, 0);
     }
+
+    document.body.classList.add('hero3d-active');
+    frame();
 
     let visible = true, running = false, rafId = 0, faded = false;
     function loop(){
