@@ -172,6 +172,14 @@ section{position:relative;z-index:2;}
   background:radial-gradient(closest-side,var(--ice-soft) 0%,transparent 70%);
   pointer-events:none;filter:blur(20px);z-index:0;
 }
+.hero-3d{
+  position:absolute;inset:0;z-index:1;
+  pointer-events:none;display:none;
+  opacity:0;transition:opacity 1.6s ease;
+}
+.hero-3d.on{opacity:1;}
+.hero-3d canvas{width:100% !important;height:100% !important;display:block;}
+@media(min-width:900px){.hero-3d{display:block;}}
 .hero-content{position:relative;z-index:2;max-width:900px;}
 .hero-photo-desktop{display:none;}
 
@@ -1414,6 +1422,7 @@ section{position:relative;z-index:2;}
 <section class="hero" id="hero">
   <div class="hero-bg"></div>
   <div class="hero-glow"></div>
+  <div class="hero-3d" id="hero3d" aria-hidden="true"></div>
   <div class="hero-photo-desktop">
     <img src="ehd_hero_medball.jpg" alt="Hockey player off-ice medicine ball training" />
   </div>
@@ -2040,6 +2049,249 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 function toggleFaq(btn){
   btn.closest('.faq-item').classList.toggle('open');
 }
+
+/* HERO 3D — reflective ice + drifting puck.
+   Desktop only, loads after the page is idle, fails silent (hero works without it). */
+(function(){
+  const host = document.getElementById('hero3d');
+  if(!host) return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if(!window.matchMedia('(min-width:900px)').matches) return;
+  if((navigator.hardwareConcurrency || 8) < 4) return;
+
+  const idle = window.requestIdleCallback ? (fn)=>requestIdleCallback(fn,{timeout:4000}) : (fn)=>setTimeout(fn,1500);
+  if(document.readyState === 'complete') idle(load);
+  else window.addEventListener('load', ()=>idle(load), {once:true});
+
+  function load(){
+    import('https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js')
+      .then(start).catch(()=>{});
+  }
+
+  function start(THREE){
+    let renderer;
+    try{
+      renderer = new THREE.WebGLRenderer({antialias:true, alpha:true, powerPreference:'low-power'});
+    }catch(e){ return; }
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
+    renderer.setClearColor(0x000000, 0);
+    host.appendChild(renderer.domElement);
+
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.Fog(0x070708, 9, 19);
+
+    const camera = new THREE.PerspectiveCamera(34, 1, .1, 60);
+    camera.position.set(0, 1.9, 10);
+    camera.lookAt(0, 2.4, 0);
+
+    scene.add(new THREE.AmbientLight(0x223240, 1.4));
+    const key = new THREE.PointLight(0x5DB4E5, 9, 8, 2);
+    key.position.set(0, .9, 0);
+    scene.add(key);
+    const warm = new THREE.DirectionalLight(0xE8B777, .3);
+    warm.position.set(6, 3, 2);
+    scene.add(warm);
+
+    const floor = new THREE.Mesh(
+      new THREE.PlaneGeometry(46, 26),
+      new THREE.MeshStandardMaterial({color:0x0B0D12, metalness:.5, roughness:.42})
+    );
+    floor.rotation.x = -Math.PI/2;
+    scene.add(floor);
+
+    /* faint face-off circle */
+    const mc = document.createElement('canvas');
+    mc.width = mc.height = 512;
+    const g = mc.getContext('2d');
+    g.strokeStyle = 'rgba(93,180,229,.5)';
+    g.lineWidth = 3;
+    g.beginPath(); g.arc(256,256,170,0,Math.PI*2); g.stroke();
+    g.fillStyle = 'rgba(93,180,229,.55)';
+    g.beginPath(); g.arc(256,256,7,0,Math.PI*2); g.fill();
+    [[-1,-1],[1,-1],[-1,1],[1,1]].forEach(s=>{
+      g.beginPath();
+      g.moveTo(256+s[0]*60, 256+s[1]*150);
+      g.lineTo(256+s[0]*60, 256+s[1]*186);
+      g.stroke();
+    });
+    const markings = new THREE.Mesh(
+      new THREE.PlaneGeometry(9, 9),
+      new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(mc), transparent:true, opacity:.45, blending:THREE.AdditiveBlending, depthWrite:false})
+    );
+    markings.rotation.x = -Math.PI/2;
+    markings.position.set(-1.2, .01, .4);
+    scene.add(markings);
+
+    const puck = new THREE.Group();
+    const body = new THREE.Mesh(
+      new THREE.CylinderGeometry(.34, .34, .13, 48),
+      new THREE.MeshStandardMaterial({color:0x14161B, metalness:.5, roughness:.4})
+    );
+    body.position.y = .065;
+    puck.add(body);
+    const rim = new THREE.Mesh(
+      new THREE.CylinderGeometry(.39, .39, .02, 48),
+      new THREE.MeshBasicMaterial({color:0x5DB4E5, transparent:true, opacity:.35, blending:THREE.AdditiveBlending, depthWrite:false})
+    );
+    rim.position.y = .02;
+    puck.add(rim);
+    puck.position.set(-1.5, 0, .4);
+    scene.add(puck);
+
+    /* ice-spray trail */
+    const TRAIL = 240;
+    const tPos = new Float32Array(TRAIL*3);
+    const tCol = new Float32Array(TRAIL*3);
+    const parts = [];
+    for(let i=0;i<TRAIL;i++) parts.push({x:0,y:-9,z:0,vx:0,vy:0,vz:0,life:0});
+    const trailGeo = new THREE.BufferGeometry();
+    trailGeo.setAttribute('position', new THREE.BufferAttribute(tPos, 3));
+    trailGeo.setAttribute('color', new THREE.BufferAttribute(tCol, 3));
+    const trail = new THREE.Points(trailGeo, new THREE.PointsMaterial({
+      size:.055, vertexColors:true, transparent:true, opacity:.85,
+      blending:THREE.AdditiveBlending, depthWrite:false
+    }));
+    scene.add(trail);
+
+    /* ambient dust */
+    const DUST = 140;
+    const dPos = new Float32Array(DUST*3);
+    const dBase = [];
+    for(let i=0;i<DUST;i++){
+      const x = (Math.random()*2-1)*9, y = .1 + Math.random()*2.1, z = -4 + Math.random()*7;
+      dPos[i*3]=x; dPos[i*3+1]=y; dPos[i*3+2]=z;
+      dBase.push({y, phase:Math.random()*Math.PI*2, speed:.2+Math.random()*.5});
+    }
+    const dustGeo = new THREE.BufferGeometry();
+    dustGeo.setAttribute('position', new THREE.BufferAttribute(dPos, 3));
+    const dust = new THREE.Points(dustGeo, new THREE.PointsMaterial({
+      color:0x5DB4E5, size:.04, transparent:true, opacity:.32,
+      blending:THREE.AdditiveBlending, depthWrite:false
+    }));
+    scene.add(dust);
+
+    /* puck wandering + cursor influence */
+    const vel = new THREE.Vector3();
+    const steer = new THREE.Vector3();
+    const goal = new THREE.Vector3();
+    const cursorPt = new THREE.Vector3();
+    const ndc = new THREE.Vector2();
+    const ray = new THREE.Raycaster();
+    const ground = new THREE.Plane(new THREE.Vector3(0,1,0), 0);
+    let target = newTarget();
+    let nextRetarget = 4;
+    let lastMove = -9999;
+    let mx = 0, my = 0;
+    function newTarget(){
+      return new THREE.Vector3(-2.6 + Math.random()*2.8, 0, -1.4 + Math.random()*3.0);
+    }
+    const hero = document.getElementById('hero');
+    hero.addEventListener('mousemove', (e)=>{
+      const r = host.getBoundingClientRect();
+      if(!r.width) return;
+      mx = ((e.clientX - r.left)/r.width)*2 - 1;
+      my = ((e.clientY - r.top)/r.height)*2 - 1;
+      ndc.set(mx, -my);
+      ray.setFromCamera(ndc, camera);
+      if(ray.ray.intersectPlane(ground, cursorPt)) lastMove = elapsed;
+    }, {passive:true});
+
+    function resize(){
+      const r = host.getBoundingClientRect();
+      if(!r.width || !r.height) return;
+      renderer.setSize(r.width, r.height);
+      camera.aspect = r.width/r.height;
+      camera.updateProjectionMatrix();
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    const clock = new THREE.Clock();
+    let elapsed = 0, spawnAcc = 0;
+
+    function update(dt){
+      elapsed += dt;
+
+      if(elapsed > nextRetarget){
+        target = newTarget();
+        nextRetarget = elapsed + 3 + Math.random()*2.5;
+      }
+      goal.copy(target);
+      if(elapsed - lastMove < 2.2) goal.lerp(cursorPt, .45);
+      goal.x = Math.max(-2.8, Math.min(.4, goal.x));
+      goal.z = Math.max(-1.4, Math.min(1.6, goal.z));
+      goal.y = 0;
+
+      steer.copy(goal).sub(puck.position); steer.y = 0;
+      vel.addScaledVector(steer, dt*1.6);
+      vel.multiplyScalar(Math.pow(.86, dt*60));
+      if(vel.length() > 3) vel.setLength(3);
+      puck.position.addScaledVector(vel, dt);
+      puck.rotation.y += vel.length()*dt*.8;
+      key.position.set(puck.position.x, 1.1, puck.position.z);
+
+      /* trail */
+      spawnAcc += dt * (6 + vel.length()*40);
+      let toSpawn = Math.floor(spawnAcc);
+      spawnAcc -= toSpawn;
+      for(let i=0;i<TRAIL && toSpawn>0;i++){
+        const p = parts[i];
+        if(p.life > 0) continue;
+        p.x = puck.position.x + (Math.random()-.5)*.3;
+        p.y = .06 + Math.random()*.08;
+        p.z = puck.position.z + (Math.random()-.5)*.3;
+        p.vx = -vel.x*.15 + (Math.random()-.5)*.3;
+        p.vy = .15 + Math.random()*.35;
+        p.vz = -vel.z*.15 + (Math.random()-.5)*.3;
+        p.life = 1;
+        toSpawn--;
+      }
+      for(let i=0;i<TRAIL;i++){
+        const p = parts[i];
+        if(p.life > 0){
+          p.life -= dt*.9;
+          p.x += p.vx*dt; p.y += p.vy*dt; p.z += p.vz*dt;
+          p.vy -= dt*.4;
+        }
+        const l = Math.max(0, p.life);
+        const f = l*l;
+        tPos[i*3]=p.x; tPos[i*3+1]=p.life>0?p.y:-9; tPos[i*3+2]=p.z;
+        tCol[i*3]=.36*f; tCol[i*3+1]=.71*f; tCol[i*3+2]=.9*f;
+      }
+      trailGeo.attributes.position.needsUpdate = true;
+      trailGeo.attributes.color.needsUpdate = true;
+
+      /* dust drift */
+      for(let i=0;i<DUST;i++){
+        const b = dBase[i];
+        dPos[i*3+1] = b.y + Math.sin(elapsed*b.speed + b.phase)*.25;
+      }
+      dustGeo.attributes.position.needsUpdate = true;
+
+      /* camera parallax */
+      camera.position.x += (mx*.55 - camera.position.x)*Math.min(1, dt*2);
+      camera.position.y += ((1.9 - my*.2) - camera.position.y)*Math.min(1, dt*2);
+      camera.lookAt(0, 2.4, 0);
+    }
+
+    let visible = true, running = false, rafId = 0, faded = false;
+    function loop(){
+      rafId = requestAnimationFrame(loop);
+      const dt = Math.min(clock.getDelta(), .05);
+      update(dt);
+      renderer.render(scene, camera);
+      if(!faded){ faded = true; host.classList.add('on'); }
+    }
+    function toggle(){
+      const want = visible && !document.hidden;
+      if(want && !running){ running = true; clock.getDelta(); loop(); }
+      else if(!want && running){ running = false; cancelAnimationFrame(rafId); }
+    }
+    new IntersectionObserver((es)=>{ visible = es[0].isIntersecting; toggle(); }, {threshold:0}).observe(host);
+    document.addEventListener('visibilitychange', toggle);
+    toggle();
+  }
+})();
 </script>
 </body>
 </html>
