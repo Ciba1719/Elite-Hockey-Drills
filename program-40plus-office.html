@@ -383,6 +383,15 @@ a.ex:hover .lk{opacity:1;}
 .screen-list li{position:relative;padding-left:30px;font-size:14.5px;color:var(--ink);line-height:1.55;}
 .screen-list li::before{content:'';position:absolute;left:0;top:3px;width:18px;height:18px;border:1px solid var(--ice-line);border-radius:5px;background:var(--ice-soft);}
 .screen-note{font-size:14px;color:var(--ink2);margin-top:8px;}
+.screen-panel{position:relative;border-color:var(--warm-line);background:var(--warm-soft);overflow:hidden;}
+.screen-panel::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--warm);}
+.screen-head{display:flex;align-items:center;gap:13px;margin-bottom:16px;}
+.screen-badge{width:42px;height:42px;border-radius:11px;background:var(--warm-soft);border:1px solid var(--warm-line);display:flex;align-items:center;justify-content:center;color:var(--warm);flex-shrink:0;}
+.screen-badge svg{width:22px;height:22px;}
+.screen-panel .cd-kick{color:var(--warm);margin-bottom:0;line-height:1.4;}
+.screen-panel .screen-list li::before{border:1.5px solid #E8B77766;background:var(--warm-soft);}
+.screen-panel .screen-note{color:#C7CCD5;font-size:15.5px;border-left:2px solid #E8B77755;padding:2px 0 2px 14px;margin-top:16px;}
+.screen-panel .screen-note b, .screen-panel .screen-note strong{color:var(--warm);font-style:normal;font-weight:600;}
 @media(min-width:820px){.cd-split{grid-template-columns:1fr 1fr;}}
 
 /* ---------- tests ---------- */
@@ -936,8 +945,8 @@ a.ex:hover .lk{opacity:1;}
           <p class="lead">Shift out of go-mode and into recovery. Slow the breath first, then move gently through range. At 40+ this is where tomorrow&rsquo;s training is protected.</p>
           <ul class="cd-list"><li><a class="ex" href="https://elitehockeydrills.com/exercises/slow-walk-with-nose-breathing" target="_blank" rel="noopener">Slow Walk with Nose Breathing<span class="lk" aria-hidden="true">↗</span></a></li><li><a class="ex" href="https://elitehockeydrills.com/exercises/child-s-pose-with-breath" target="_blank" rel="noopener">Child's Pose with Breath<span class="lk" aria-hidden="true">↗</span></a></li><li><a class="ex" href="https://elitehockeydrills.com/exercises/supine-spinal-twist" target="_blank" rel="noopener">Supine Spinal Twist<span class="lk" aria-hidden="true">↗</span></a></li><li><a class="ex" href="https://elitehockeydrills.com/exercises/hip-groin-flow" target="_blank" rel="noopener">Hip / Groin Flow<span class="lk" aria-hidden="true">↗</span></a></li></ul>
         </div>
-        <div class="cd-col screen-col">
-          <div class="cd-kick">A 60-second readiness check, before you train</div>
+        <div class="cd-col screen-col screen-panel">
+          <div class="screen-head"><span class="screen-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.572a5 5 0 1 1 7.5 6.572"/></svg></span><div class="cd-kick">A 60-second readiness check, before you train</div></div>
           <h2 class="display cd-title">THE BODY CHECK</h2>
           <p class="lead">A quick self-check before each session. A &ldquo;yes&rdquo; below means dial it back today — regress the hard work, cut the impact, and lean on mobility and easy movement.</p>
           <ul class="screen-list"><li>Any joint (knee, hip, back, shoulder) achy, swollen, or stiffer than usual today?</li><li>Sharp pain anywhere that gets worse under load?</li><li>Poor sleep, run-down, sick, or unusually sore from the last session?</li><li>A nagging tweak — groin, hamstring, low back — still not settled?</li><li>Stiff and under-warmed, or short on time for the full RAMP?</li></ul>
