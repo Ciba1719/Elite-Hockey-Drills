@@ -376,8 +376,8 @@ a.ex:hover .lk{opacity:1;}
 .cd-col{border:1px solid var(--line2);border-radius:14px;padding:28px;background:var(--card);}
 .cd-kick{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ice);margin-bottom:10px;}
 .cd-title{font-size:40px;letter-spacing:.02em;margin-bottom:14px;}
-.cd-list{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
-.cd-list li::after{content:'·';color:var(--ink3);margin-left:8px;}
+.cd-list{list-style:none;display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin-top:12px;}
+.cd-list li::after{content:'';}
 .cd-list li:last-child::after{content:'';}
 .screen-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin:14px 0;}
 .screen-list li{position:relative;padding-left:30px;font-size:14.5px;color:var(--ink);line-height:1.55;}
@@ -732,7 +732,13 @@ a.ex:hover .lk{opacity:1;}
   .exrow a.ex::after, .gloss-item .gi-name a.ex::after{content:'▾';font-size:.62em;margin-left:.4em;color:var(--ice);display:inline-block;transition:transform .22s;vertical-align:middle;}
   .exrow.open a.ex::after, .gloss-item.open .gi-name a.ex::after{transform:rotate(180deg);}
   .ex-panel{display:none;margin-top:12px;padding-top:13px;border-top:1px solid var(--line2);}
-  .exrow.open .ex-panel, .gloss-item.open .ex-panel{display:block;animation:exPanel .26s cubic-bezier(.2,.7,.2,1);}
+  .exrow.open .ex-panel, .gloss-item.open .ex-panel, .test-card.open .ex-panel, .cd-list li.open .ex-panel, .rp-list li.open .ex-panel, .pr-row.open .ex-panel{display:block;animation:exPanel .26s cubic-bezier(.2,.7,.2,1);}
+.pr-row.open .ex-panel{grid-column:1 / -1;}
+.cd-list a.ex .lk, .rp-list a.ex .lk, .pr-row a.ex .lk, .sc-table .tname a.ex .lk{font-size:0;vertical-align:middle;margin-left:.3em;}
+.cd-list a.ex .lk::after, .rp-list a.ex .lk::after, .pr-row a.ex .lk::after, .sc-table .tname a.ex .lk::after{content:"▾";font-size:13px;line-height:1;display:inline-block;opacity:.65;}
+.cd-list li.open a.ex .lk::after, .rp-list li.open a.ex .lk::after, .pr-row.open a.ex .lk::after, .sc-table tbody tr.open .tname a.ex .lk::after{content:"▴";opacity:1;}
+.ex-panel-row td{border:none !important;padding:2px 0 14px !important;background:none;}
+.ex-panel-row .ex-panel{display:block;margin-top:0;padding-top:4px;border-top:none;}
   @keyframes exPanel{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:none;}}
   .ex-actions{display:flex;flex-wrap:wrap;gap:10px;}
   .ex-btn{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:10px 18px;border-radius:100px;border:1px solid var(--line2);background:var(--bg2);color:var(--ink);cursor:pointer;transition:all .18s;text-decoration:none;}
@@ -4620,7 +4626,30 @@ a.ex:hover .lk{opacity:1;}
   // exercise → inline Watch Video + Full Guide (workout rows + glossary cards)
   document.addEventListener('click', function(e){
     var a=e.target.closest('a.ex'); if(!a) return;
-    var host=a.closest('.exrow')||a.closest('.gloss-item'); if(!host) return;
+    var trow=a.closest('.sc-table tbody tr');
+    if(trow){
+      e.preventDefault();
+      var prow=trow.nextElementSibling;
+      if(prow && prow.classList.contains('ex-panel-row')){
+        var op=trow.classList.toggle('open');
+        prow.style.display = op ? '' : 'none';
+        if(!op){ var bx=prow.querySelector('.ex-video'); if(bx) bx.innerHTML=''; var wb=prow.querySelector('.ex-btn.watch'); if(wb) wb.innerHTML='▶ Watch Video'; }
+        return;
+      }
+      var tvid=a.getAttribute('data-video'), tguide=a.getAttribute('href');
+      prow=document.createElement('tr'); prow.className='ex-panel-row';
+      var ptd=document.createElement('td'); ptd.colSpan=trow.children.length;
+      var th='<div class="ex-panel"><div class="ex-actions">';
+      if(tvid) th+='<button type="button" class="ex-btn watch">▶ Watch Video</button>';
+      th+='<a class="ex-btn guide" href="'+tguide+'" target="_blank" rel="noopener">Full Guide ↗</a></div><div class="ex-video"></div></div>';
+      ptd.innerHTML=th; prow.appendChild(ptd);
+      trow.insertAdjacentElement('afterend', prow);
+      trow.classList.add('open');
+      var tw=prow.querySelector('.ex-btn.watch');
+      if(tw) tw.addEventListener('click', function(){ var box=prow.querySelector('.ex-video'); if(box.firstChild){ box.innerHTML=''; tw.innerHTML='▶ Watch Video'; return; } box.innerHTML='<video class="ex-video-el" src="'+tvid+'" controls autoplay playsinline preload="metadata"></video>'; tw.innerHTML='✕ Hide Video'; });
+      return;
+    }
+    var host=a.closest('.exrow')||a.closest('.gloss-item')||a.closest('.test-card')||a.closest('.cd-list li')||a.closest('.rp-list li')||a.closest('.pr-row'); if(!host) return;
     e.preventDefault();
     var panel=host.querySelector(':scope > .ex-panel');
     if(!panel){
@@ -4629,7 +4658,9 @@ a.ex:hover .lk{opacity:1;}
       var h='<div class="ex-actions">';
       if(vid) h+='<button type="button" class="ex-btn watch">▶ Watch Video</button>';
       h+='<a class="ex-btn guide" href="'+guide+'" target="_blank" rel="noopener">Full Guide ↗</a></div><div class="ex-video"></div>';
-      panel.innerHTML=h; host.appendChild(panel);
+      panel.innerHTML=h;
+      var nameEl=host.classList.contains('test-card')?host.querySelector('.tc-name'):null;
+      if(nameEl){ nameEl.insertAdjacentElement('afterend', panel); } else { host.appendChild(panel); }
       var w=panel.querySelector('.ex-btn.watch');
       if(w) w.addEventListener('click', function(){
         var box=panel.querySelector('.ex-video');
