@@ -383,6 +383,15 @@ a.ex:hover .lk{opacity:1;}
 .screen-list li{position:relative;padding-left:30px;font-size:14.5px;color:var(--ink);line-height:1.55;}
 .screen-list li::before{content:'';position:absolute;left:0;top:3px;width:18px;height:18px;border:1px solid var(--ice-line);border-radius:5px;background:var(--ice-soft);}
 .screen-note{font-size:14px;color:var(--ink2);margin-top:8px;}
+.safety-panel{position:relative;border-color:var(--warm-line);background:var(--warm-soft);overflow:hidden;}
+.safety-panel::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--warm);}
+.safety-head{display:flex;align-items:center;gap:13px;margin-bottom:16px;}
+.safety-badge{width:42px;height:42px;border-radius:11px;background:var(--warm-soft);border:1px solid var(--warm-line);display:flex;align-items:center;justify-content:center;color:var(--warm);flex-shrink:0;}
+.safety-badge svg{width:22px;height:22px;}
+.safety-panel .cd-kick{color:var(--warm);margin-bottom:0;}
+.safety-panel .cd-title .st-accent{color:var(--warm);}
+.safety-panel .screen-list li::before{content:'✓';display:flex;align-items:center;justify-content:center;top:1px;width:19px;height:19px;border:1px solid var(--warm-line);border-radius:50%;background:var(--warm-soft);color:var(--warm);font-size:11px;font-weight:700;}
+.safety-panel .screen-note{border-top:1px solid var(--warm-line);padding-top:15px;margin-top:18px;}
 @media(min-width:820px){.cd-split{grid-template-columns:1fr 1fr;}}
 
 /* ---------- tests ---------- */
@@ -965,13 +974,15 @@ a.ex:hover .lk{opacity:1;}
           <p class="lead">Slow everything down. Quiet the breath first, then move through some gentle, easy stretches. This is when the body recovers and grows.</p>
           <ul class="cd-list"><li><a class="ex" href="https://elitehockeydrills.com/exercises/slow-walk-with-nose-breathing" target="_blank" rel="noopener">Slow Walk with Nose Breathing<span class="lk" aria-hidden="true">↗</span></a></li><li><a class="ex" href="https://elitehockeydrills.com/exercises/child-s-pose-with-breath" target="_blank" rel="noopener">Child's Pose with Breath<span class="lk" aria-hidden="true">↗</span></a></li><li><a class="ex" href="https://elitehockeydrills.com/exercises/supine-spinal-twist" target="_blank" rel="noopener">Supine Spinal Twist<span class="lk" aria-hidden="true">↗</span></a></li><li><a class="ex" href="https://elitehockeydrills.com/exercises/hip-groin-flow" target="_blank" rel="noopener">Hip / Groin Flow<span class="lk" aria-hidden="true">↗</span></a></li></ul>
         </div>
-        <div class="cd-col screen-col">
-          <div class="cd-kick">A quick check for parents &amp; coaches</div>
+        <div class="cd-col screen-col safety-panel">
+          <div class="safety-head">
+            <span class="safety-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <div class="cd-kick">A quick check for parents &amp; coaches</div>
+          </div>
           <h2 class="cd-title"><span class="st-lead">SAFETY &amp;</span><span class="st-accent serif">fun first.</span></h2>
           <p class="lead">This is a development program for young athletes — fun and good movement come before anything else. Keep these in mind every session.</p>
           <ul class="screen-list"><li>Before starting, have your child cleared for physical activity by a physician — especially with any injury, illness, or health condition.</li><li>It should feel like play. If a child dreads it, lighten it and keep it fun.</li><li>Good shoes, a flat non-slip surface, and a clear space to move.</li><li>Every rep is about quality, not tiredness — never train “to failure.”</li><li>Stop any movement that causes sharp pain, and rest when tired or unwell.</li><li>An adult supervises — watch that landings stay quiet with the knees tracking over the toes, keep the box low enough to land in control, and end a set the moment form turns sloppy. The warm-up is always done before the fast or jumping work.</li></ul>
           <p class="screen-note serif">Kids grow and develop at different rates — that is completely normal. Scale every movement to the child in front of you (see the Make It Easier / Harder library).</p>
-          <p class="screen-note serif"><strong>Please note.</strong> This program is general fitness guidance, not medical advice, and it does not replace professional supervision or care. Training — including jumping, landing, and sprinting — carries inherent risk; by using it you accept responsibility for your child’s safe participation and agree to stop and seek advice if anything causes pain or concern. Not satisfied? Email us within 30 days for a full refund.</p>
         </div>
       </div>
     </section>
