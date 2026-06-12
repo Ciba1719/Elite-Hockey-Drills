@@ -18,6 +18,13 @@ const SITE_URL   = 'https://elitehockeydrills.com';
 const TODAY      = new Date().toISOString().slice(0, 10);
 const GA_TAG     = 'G-JH623WRMN8';
 
+// Slugs the user has decided NOT to film — render no media box at all (instead
+// of the "Demo video coming soon" placeholder). Maintained in no-video.json.
+const NO_VIDEO = (() => {
+  try { return new Set(JSON.parse(fs.readFileSync(path.resolve('no-video.json'), 'utf8'))); }
+  catch { return new Set(); }
+})();
+
 // ─── 1. Parse Excel ───────────────────────────────────────────────────────────
 
 function parseExcel(filePath) {
@@ -502,7 +509,9 @@ function buildExercisePage(ex, allInCat, prevEx, nextEx) {
     if (!progressText && !regMatch) { progressText = ex.progression; }
   }
 
-  // Video embed
+  // Video embed — suppress the whole media box for no-video slugs the user
+  // chose not to film (no "Demo video coming soon" placeholder).
+  const suppressMedia = !ex.video && NO_VIDEO.has(ex.slug);
   const videoSlot = buildVideoSlot(ex.video);
 
   // Related: up to 3 others in same category
@@ -595,7 +604,7 @@ ${navHTML()}
   </div>
 </section>
 
-<!-- MEDIA SLOT -->
+${suppressMedia ? '' : `<!-- MEDIA SLOT -->
 <div class="media-wrap">
   <div class="wrap">
     <div class="media-slot reveal">
@@ -603,7 +612,7 @@ ${navHTML()}
     </div>
   </div>
 </div>
-
+`}
 <!-- CONTENT SECTIONS -->
 <div class="ex-body">
 
