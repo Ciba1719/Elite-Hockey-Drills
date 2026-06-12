@@ -43,52 +43,69 @@
   <div class="lib-hero-glow"></div>
   <div class="lib-hero-grid"></div>
   <div class="wrap lib-hero-content">
-    <div class="eyebrow ice lib-eyebrow">Exercise Library</div>
-    <h1 id="lib-h1" class="display lib-title">The Full<br><em class="serif">Exercise Arsenal.</em></h1>
-    <p class="lib-subtitle">175 exercises &nbsp;·&nbsp; 16 movement patterns</p>
+    <div class="eyebrow ice lib-eyebrow hero-rise">Exercise Library</div>
+    <h1 id="lib-h1" class="display lib-title"><span class="reveal-line"><span class="reveal-inner">The Full</span></span><span class="reveal-line"><span class="reveal-inner serif">Exercise Arsenal.</span></span></h1>
+    <p class="lib-subtitle hero-rise"><span id="statExercises">175</span> exercises &nbsp;·&nbsp; <span id="statPatterns">16</span> movement patterns</p>
 
     <!-- Hero search -->
-    <div class="hero-search" id="heroSearchWrap">
+    <div class="hero-search hero-rise" id="heroSearchWrap">
       <svg class="hero-search-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
       <input type="search" id="heroSearch" class="hero-search-input"
         placeholder="Search 175 exercises…" aria-label="Search exercises" autocomplete="off" />
+      <kbd class="search-kbd" aria-hidden="true">/</kbd>
       <button class="hero-search-clear" id="heroSearchClear" aria-label="Clear search" hidden>✕</button>
     </div>
     <p class="result-count" id="resultCount" aria-live="polite" aria-atomic="true"></p>
   </div>
 </section>
 
-<!-- ── CATEGORY TABS (sticky, auto-hide on scroll-down) ── -->
-<div class="cat-tabs-wrap" id="catTabsWrap">
-  <div class="wrap">
-    <div class="cat-tabs" id="catTabs" role="tablist" aria-label="Filter by category">
-      <button class="cat-tab cat-tab--all is-active" data-cat="" aria-pressed="true">All <span class="cat-tab-count">175</span></button>
-      <button class="cat-tab" data-cat="Warm-up / Mobility" aria-pressed="false">Warm-up / Mobility</button>
-      <button class="cat-tab" data-cat="Squat / Knee-dominant" aria-pressed="false">Squat / Knee-dominant</button>
-      <button class="cat-tab" data-cat="Hinge / Posterior Chain" aria-pressed="false">Hinge / Posterior Chain</button>
-      <button class="cat-tab" data-cat="Lunge &amp; Single-leg" aria-pressed="false">Lunge &amp; Single-leg</button>
-      <button class="cat-tab" data-cat="Upper Body / Push" aria-pressed="false">Upper Body / Push</button>
-      <button class="cat-tab" data-cat="Upper Body / Pull" aria-pressed="false">Upper Body / Pull</button>
-      <button class="cat-tab" data-cat="Core &amp; Anti-rotation" aria-pressed="false">Core &amp; Anti-rotation</button>
-      <button class="cat-tab" data-cat="Jump &amp; Plyometric" aria-pressed="false">Jump &amp; Plyometric</button>
-      <button class="cat-tab" data-cat="Speed, Sprint &amp; Agility" aria-pressed="false">Speed, Sprint &amp; Agility</button>
-      <button class="cat-tab" data-cat="Loaded Carries" aria-pressed="false">Loaded Carries</button>
-      <button class="cat-tab" data-cat="Rotational Power" aria-pressed="false">Rotational Power</button>
-      <button class="cat-tab" data-cat="Full-body &amp; Complexes" aria-pressed="false">Full-body &amp; Complexes</button>
-      <button class="cat-tab" data-cat="Conditioning / Jump Rope" aria-pressed="false">Conditioning / Jump Rope</button>
-      <button class="cat-tab" data-cat="Energy Systems / Intervals" aria-pressed="false">Energy Systems / Intervals</button>
-      <button class="cat-tab" data-cat="Competitive Play" aria-pressed="false">Competitive Play</button>
-      <button class="cat-tab" data-cat="Cool-down / Recovery" aria-pressed="false">Cool-down / Recovery</button>
-    </div>
-  </div>
-</div>
+<!-- category filter now lives in the sidebar rail inside <main> -->
+
 
 <!-- ── CONTENT ── -->
 <main id="main">
+  <div class="lib-shell wrap">
+
+  <!-- ── CATEGORY RAIL (sidebar filter) ── -->
+  <aside class="cat-rail" id="catRailWrap" aria-label="Filter by movement pattern">
+    <div class="cat-rail-label">Movement Pattern</div>
+    <div class="cat-rail-list" id="catTabs" role="tablist">
+      <div class="rail-marker" id="railMarker" aria-hidden="true"></div>
+      <button class="cat-link is-active" data-cat="" aria-pressed="true"><span class="cat-link-name">All exercises</span><span class="cat-link-count">175</span></button>
+      <button class="cat-link" data-cat="Warm-up / Mobility" aria-pressed="false"><span class="cat-link-name">Warm-up / Mobility</span><span class="cat-link-count"></span></button>
+      <button class="cat-link" data-cat="Squat / Knee-dominant" aria-pressed="false"><span class="cat-link-name">Squat / Knee-dominant</span><span class="cat-link-count"></span></button>
+      <button class="cat-link" data-cat="Hinge / Posterior Chain" aria-pressed="false"><span class="cat-link-name">Hinge / Posterior Chain</span><span class="cat-link-count"></span></button>
+      <button class="cat-link" data-cat="Lunge &amp; Single-leg" aria-pressed="false"><span class="cat-link-name">Lunge &amp; Single-leg</span><span class="cat-link-count"></span></button>
+      <button class="cat-link" data-cat="Upper Body / Push" aria-pressed="false"><span class="cat-link-name">Upper Body / Push</span><span class="cat-link-count"></span></button>
+      <button class="cat-link" data-cat="Upper Body / Pull" aria-pressed="false"><span class="cat-link-name">Upper Body / Pull</span><span class="cat-link-count"></span></button>
+      <button class="cat-link" data-cat="Core &amp; Anti-rotation" aria-pressed="false"><span class="cat-link-name">Core &amp; Anti-rotation</span><span class="cat-link-count"></span></button>
+      <button class="cat-link" data-cat="Jump &amp; Plyometric" aria-pressed="false"><span class="cat-link-name">Jump &amp; Plyometric</span><span class="cat-link-count"></span></button>
+      <button class="cat-link" data-cat="Speed, Sprint &amp; Agility" aria-pressed="false"><span class="cat-link-name">Speed, Sprint &amp; Agility</span><span class="cat-link-count"></span></button>
+      <button class="cat-link" data-cat="Loaded Carries" aria-pressed="false"><span class="cat-link-name">Loaded Carries</span><span class="cat-link-count"></span></button>
+      <button class="cat-link" data-cat="Rotational Power" aria-pressed="false"><span class="cat-link-name">Rotational Power</span><span class="cat-link-count"></span></button>
+      <button class="cat-link" data-cat="Full-body &amp; Complexes" aria-pressed="false"><span class="cat-link-name">Full-body &amp; Complexes</span><span class="cat-link-count"></span></button>
+      <button class="cat-link" data-cat="Conditioning / Jump Rope" aria-pressed="false"><span class="cat-link-name">Conditioning / Jump Rope</span><span class="cat-link-count"></span></button>
+      <button class="cat-link" data-cat="Energy Systems / Intervals" aria-pressed="false"><span class="cat-link-name">Energy Systems / Intervals</span><span class="cat-link-count"></span></button>
+      <button class="cat-link" data-cat="Competitive Play" aria-pressed="false"><span class="cat-link-name">Competitive Play</span><span class="cat-link-count"></span></button>
+      <button class="cat-link" data-cat="Cool-down / Recovery" aria-pressed="false"><span class="cat-link-name">Cool-down / Recovery</span><span class="cat-link-count"></span></button>
+    </div>
+  </aside>
+
+  <div class="lib-content">
 
   <!-- Search / tab results -->
   <section class="results-section" id="resultsSection" hidden aria-label="Filtered exercises">
-    <div class="wrap">
+    <div class="lib-inner">
+      <div class="results-toolbar">
+        <div class="sort-wrap">
+          <label class="sort-label" for="sortSelect">Sort</label>
+          <select class="sort-select" id="sortSelect" aria-label="Sort exercises">
+            <option value="category">Default order</option>
+            <option value="az">A–Z</option>
+            <option value="num">Catalog №</option>
+          </select>
+        </div>
+      </div>
       <div class="ex-grid" id="resultsGrid"></div>
       <div class="empty-state" id="emptyState" hidden>
         <p class="display empty-headline">No results.</p>
@@ -100,7 +117,7 @@
 
   <!-- Default grouped view -->
   <section class="grouped-section" id="groupedSection" aria-label="Exercises by category">
-    <div class="wrap">
+    <div class="lib-inner">
       
     <div class="cat-group" data-category="Warm-up / Mobility" id="cat-warm-up-mobility">
       <div class="cat-group-header">
@@ -1633,6 +1650,8 @@
     </div>
   </section>
 
+  </div><!-- /.lib-content -->
+  </div><!-- /.lib-shell -->
 </main>
 
 <footer class="footer">
@@ -1680,9 +1699,14 @@
 // Nav scroll
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 24); }, { passive: true });
-// Reveal
+// Reveal (then drop .reveal once shown so card hover/tilt transitions stay snappy)
 const io = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) => { if (e.isIntersecting) { setTimeout(() => e.target.classList.add('in'), i * 40); io.unobserve(e.target); } });
+  entries.forEach((e, i) => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    setTimeout(() => { el.classList.add('in'); setTimeout(() => el.classList.remove('reveal'), 800); }, i * 40);
+    io.unobserve(el);
+  });
 }, { threshold: .08, rootMargin: '0px 0px -40px 0px' });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
