@@ -1421,7 +1421,7 @@
     "progression": "Progress: faster transitions or reactive (cued) directions | Regress: fewer directions or stick each landing",
     "muscles": "Glutes, quads, adductors/abductors, hip stabilizers, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/multi_direction_bound.mp4",
     "slug": "multi-direction-bound"
   },
   {
@@ -1466,7 +1466,7 @@
     "progression": "Progress: single-leg or faster transitions | Regress: steady same-height pogos",
     "muscles": "Calves/Achilles, anterior tibialis, foot/ankle stabilizers",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/high_low_pogo_combo.mp4",
     "slug": "high-low-pogo-combo"
   },
   {
@@ -1691,7 +1691,7 @@
     "progression": "Progress: higher hurdles or single-leg hops | Regress: lower hurdles or reset between each",
     "muscles": "Calves/Achilles, quads, glutes, hip flexors",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/hurdle_hops_continuous.mp4",
     "slug": "hurdle-hops-continuous"
   },
   {
@@ -1706,7 +1706,7 @@
     "progression": "Progress: add a leg-switch (drive) or alternating drives | Regress: shorter holds or a higher hand position (more upright)",
     "muscles": "Hip flexors, glutes, quads, calves, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/wall_drive_hold.mp4",
     "slug": "wall-drive-hold"
   },
   {
@@ -1751,7 +1751,7 @@
     "progression": "Progress: react to less predictable cues or longer distance | Regress: self-initiated start or shorter distance",
     "muscles": "Glutes, quads, hamstrings, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/reactive_5m_sprint.mp4",
     "slug": "reactive-5m-sprint"
   },
   {
@@ -1766,7 +1766,7 @@
     "progression": "Progress: progress into a sprint after the combo | Regress: march only, or in place",
     "muscles": "Hip flexors, glutes, calves, anterior tibialis, core",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/a_skip_march_combo.mp4",
     "slug": "a-skip-march-combo"
   },
   {
@@ -1803,15 +1803,15 @@
     "num": 123,
     "name": "Crossover Step",
     "category": "Speed, Sprint & Agility",
-    "execution": "From an athletic stance, crossover-step a few metres to one side — opening the hips and crossing the trailing leg over and in front with quick, low steps — then plant, change direction, and crossover-step back the other way. Keep shuffling side to side for the set, staying low and powerful and swinging the arms with each cross.",
+    "execution": "From an athletic stance facing forward, to move laterally, open the hips and cross the trailing leg over and in front, then continue accelerating in that direction with driving steps. Coordinate the arm swing with the crossover and keep the first steps low and powerful. Practice exploding out of the stance into the crossover in both directions.",
     "why": "Trains the crossover acceleration mechanic — opening the hips and crossing over is the fastest way to accelerate laterally from a stationary or athletic position; develops the coordination and push-off used to convert a side-on stance into forward speed in a new direction.",
     "transfer": "Directly mirrors the on-ice crossover start and the change-of-direction acceleration used to explode laterally and into turns; the open-hip crossover step transfers to building speed through crossovers and reacting to play laterally.",
-    "cues": "\"Open the hips, cross over\" · \"low and quick, both ways\" · \"swing the arms with the cross\"",
+    "cues": "\"Open the hips, cross over\" · \"low, powerful first steps\" · \"swing the arms with the cross\"",
     "mistakes": "A slow, upright crossover; false-stepping (stepping the wrong way first); not opening the hips; a weak push-off",
     "progression": "Progress: add a reactive cue or sprint out | Regress: walk through the crossover pattern slowly",
     "muscles": "Glutes, adductors/abductors, quads, hip stabilizers",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/crossover_step.mp4",
     "slug": "crossover-step"
   },
   {
@@ -1841,7 +1841,7 @@
     "progression": "Progress: optimize the resistance/release or longer free portion | Regress: lighter resistance or run the two portions separately",
     "muscles": "Glutes, quads, hamstrings, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/resisted_free_sprint.mp4",
     "slug": "resisted-free-sprint"
   },
   {
@@ -1886,7 +1886,7 @@
     "progression": "Progress: faster cadence or progress into a sprint | Regress: A-skip only, or march the B pattern slowly",
     "muscles": "Hamstrings, hip flexors, glutes, calves, core",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/a_skip_b_skip.mp4",
     "slug": "a-skip-b-skip"
   },
   {
@@ -1901,7 +1901,7 @@
     "progression": "Progress: less predictable cues or more directions | Regress: self-initiated lateral start or fewer directions",
     "muscles": "Glutes, adductors/abductors, quads, hip stabilizers",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/reactive_lateral_start.mp4",
     "slug": "reactive-lateral-start"
   },
   {
@@ -1961,7 +1961,7 @@
     "progression": "Progress: steeper hill or longer/faster strides | Regress: gentler incline or shorter distance",
     "muscles": "Glutes, hamstrings, quads, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/hill_stride.mp4",
     "slug": "hill-stride"
   },
   {
@@ -2505,21 +2505,6 @@
     "slug": "legs-up-the-wall-or-shin-pull"
   },
   {
-    "num": 170,
-    "name": "90/90 Hip Stretch + T-Spine Opener",
-    "category": "Cool-down / Recovery",
-    "execution": "Sit in the 90/90 position (one leg bent in front at 90°, the other out to the side at 90°). Gently lean over the front shin to stretch the hip, then add a thoracic opener by reaching the top arm up and over, rotating and opening the chest. Breathe into each position and move slowly. Hold and repeat each side.",
-    "why": "Combines a hip-rotation stretch (the 90/90 opens internal and external hip rotation) with a thoracic-spine opener, gently restoring rotary hip and upper-back mobility in a recovery context with relaxed breathing — addressing two commonly tight areas.",
-    "transfer": "Restores the hip-rotation and t-spine mobility used for tight turns, crossovers, and rotating into shots; maintaining these ranges supports skating mechanics and reduces stiffness that can limit rotation and stride.",
-    "cues": "\"Lean over the front shin, breathe\" · \"open the chest with the t-spine reach\" · \"slow and relaxed, no force\"",
-    "mistakes": "Forcing the range; rotating from the low back; holding the breath; rushing",
-    "progression": "Progress: deeper lean or longer holds | Regress: smaller range or sit more upright",
-    "muscles": "N/A (mobility/recovery — hip rotators, thoracic spine)",
-    "energy": "N/A (mobility/recovery)",
-    "video": "",
-    "slug": "90-90-hip-stretch-t-spine-opener"
-  },
-  {
     "num": 171,
     "name": "Figure-4 Stretch",
     "category": "Cool-down / Recovery",
@@ -2580,21 +2565,6 @@
     "slug": "supine-spinal-twist"
   },
   {
-    "num": 175,
-    "name": "Foam Roll / Tissue Work",
-    "category": "Cool-down / Recovery",
-    "execution": "Use a foam roller (or ball) to slowly roll over the major muscle groups — quads, hamstrings, glutes, calves, and back — pausing on tender spots and breathing slowly to let the tissue relax. Roll at a controlled pace, spending the prescribed time on each area without rushing or rolling directly over joints or bones. Keep the pressure tolerable.",
-    "why": "Self-myofascial release applies pressure to the muscles and fascia, which can reduce perceived tightness, improve tissue pliability, and promote relaxation and blood flow; a recovery tool that helps the muscles relax and may improve short-term range of motion and comfort.",
-    "transfer": "Supports recovery and tissue quality after the loading of skating and training — reducing tightness and helping the muscles feel and move better; maintaining supple tissue supports range of motion and comfort for skating.",
-    "cues": "\"Roll slow, pause on tender spots\" · \"breathe and let it relax\" · \"tolerable pressure, avoid the joints\"",
-    "mistakes": "Rolling too fast; excessive painful pressure; rolling directly over joints or bones; holding the breath",
-    "progression": "Progress: more pressure or a firmer roller/ball | Regress: lighter pressure or a softer roller",
-    "muscles": "N/A (recovery — full-body tissue work)",
-    "energy": "N/A (mobility/recovery)",
-    "video": "",
-    "slug": "foam-roll-tissue-work"
-  },
-  {
     "num": 176,
     "name": "Hip / Groin Flow",
     "category": "Cool-down / Recovery",
@@ -2621,7 +2591,7 @@
     "progression": "Progress: resisted starts (sled or band) or extend to a 30 m sprint | Regress: 10 m accelerations focused on the drive phase",
     "muscles": "Glutes, hamstrings, quads, calves",
     "energy": "Alactic / ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/20m_sprint.mp4",
     "slug": "20m-sprint"
   },
   {
@@ -2638,5 +2608,20 @@
     "energy": "Alactic / ATP-PC",
     "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sprint_fly_20m.mp4",
     "slug": "20m-flying-sprint"
+  },
+  {
+    "num": 200,
+    "name": "Beep Test",
+    "category": "Energy Systems / Intervals",
+    "execution": "Set two markers exactly 20 metres apart on a flat, non-slip surface and play the standard beep-test audio (free \"beep test\" or \"multistage fitness test\" apps and tracks are widely available). Run from one line to the other, reaching the far line before each beep, then turn and run back on the next beep. The beeps start slow and speed up at the end of every level, so you run faster and faster. Keep going as long as you can reach the line in time; your score is the level and shuttle you reach when you can no longer keep pace (or choose to stop). Warm up thoroughly first, ease into the early levels, and STOP at any sharp or joint pain — this is a hard, maximal test, so respect it and push only as hard as your body allows.",
+    "why": "The beep test is a simple, repeatable field measure of maximal aerobic capacity (VO2max). By making you run progressively faster until you cannot keep up, it puts one honest number on the size of your aerobic engine — the system that powers recovery between shifts and across a game — so you can track whether it grows over the eight weeks.",
+    "transfer": "Your aerobic engine is what lets you recover between shifts and still skate hard in the third period. A higher beep-test level means faster between-shift recovery and more high-quality shifts in a game — the difference between fading late and finishing strong.",
+    "cues": "Reach the line before the beep; turn tight and push off; ease in and build; stop on sharp pain",
+    "mistakes": "Starting too fast and burning out early; not reaching the line before the beep; testing cold; pushing through joint pain on the turns",
+    "progression": "Progression: a higher level or more shuttles. Regression: stop earlier, or use a longer shuttle (about 30 m) with gentler turns if the sharp 180-degree turns bother your knees or ankles.",
+    "muscles": "Full body (aerobic/cardiovascular)",
+    "energy": "Aerobic (maximal test)",
+    "video": "",
+    "slug": "beep-test"
   }
 ]
