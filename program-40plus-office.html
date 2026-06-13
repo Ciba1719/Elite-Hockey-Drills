@@ -4623,9 +4623,20 @@ a.ex:hover .lk{opacity:1;}
   var chips={};document.querySelectorAll('.tb-weeks a[data-wk]').forEach(function(a){chips[a.getAttribute('href').slice(1)]=a;});
   var weeks=document.querySelectorAll('.sheet.week[id]');
   if(weeks.length&&hasIO){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){
-      if(e.isIntersecting){for(var k in chips)chips[k].classList.remove('active');var c=chips[e.target.id];if(c){c.classList.add('active');c.scrollIntoView({inline:'center',block:'nearest'});}}
-    });},{rootMargin:'-96px 0px -70% 0px'});
+    // Active week = the section crossing the reading line just below the sticky
+    // header (135px tall). Deterministic, so two weeks touching the detection
+    // band can't pick the wrong one (the old off-by-one highlight bug).
+    var setWk=function(){
+      var line=150,id=null;
+      for(var i=0;i<weeks.length;i++){var r=weeks[i].getBoundingClientRect();if(r.top<=line&&r.bottom>line){id=weeks[i].id;break;}}
+      if(!id)return;
+      for(var k in chips)chips[k].classList.remove('active');
+      var c=chips[id];if(!c)return;c.classList.add('active');
+      // keep the active chip in view only by scrolling the week bar itself (never the page)
+      var bar=c.closest('.tb-weeks');
+      if(bar&&bar.scrollWidth>bar.clientWidth+1){var cr=c.getBoundingClientRect(),br=bar.getBoundingClientRect();bar.scrollLeft+=(cr.left+cr.width/2)-(br.left+br.width/2);}
+    };
+    var io=new IntersectionObserver(setWk,{rootMargin:'-150px 0px -45% 0px'});
     weeks.forEach(function(w){io.observe(w);});
   }
   // scroll-progress bar
