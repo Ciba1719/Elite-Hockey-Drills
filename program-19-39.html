@@ -1,361 +1,818 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JH623WRMN8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JH623WRMN8');
+  </script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="theme-color" content="#070708" />
-<title>12-Week Off-Ice Hockey Program — Ages 19-39 Adult Performance | Elite Hockey Drills</title>
-<meta name="description" content="The adult performance program with dedicated 33+ scaling. 48-page block periodization plan for senior players. Coach David Ciboch, M.Ed. Sport Science." />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+<link rel="shortcut icon" href="favicon.ico" />
+<title>POWER &amp; SPEED — 8-Week Off-Ice Program · Ages 19–39 · Elite Hockey Drills</title>
+<meta name="description" content="POWER & SPEED — an 8-week, 4-day off-ice speed & power program for trained hockey players ages 19–39. Bands + bodyweight, 32 sessions, video for every exercise. Built by Coach David Ciboch." />
+<meta property="og:title" content="POWER & SPEED — 8-Week Off-Ice Program for Ages 19–39" />
+<meta property="og:description" content="Capacity becomes force — then you express it. 32 sessions, video demos, measurable combine tests. For trained players." />
+<meta property="og:url" content="https://elitehockeydrills.com/program-19-39.html" />
+<meta property="og:image" content="https://elitehockeydrills.com/ehd_hero_medball.jpg" />
+<meta property="og:type" content="product" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
 <style>
 :root{
-  --bg:#070708;--bg-2:#0C0C10;--bg-3:#131318;
-  --line:#1B1B22;--line-2:#25252E;
-  --ink:#ECEDEF;--ink-2:#9398A2;--ink-3:#5A5F6B;
-  --ice:#5DB4E5;--ice-soft:#5DB4E518;--ice-line:#5DB4E535;
-  --warm:#E8B777;--warm-soft:#E8B77715;
-  --card:#0E0E13;--green:#4FB371;
+  --bg:#070708; --bg-2:#0C0C10; --bg-3:#131318;
+  --line:#1B1B22; --line-2:#25252E;
+  --ink:#ECEDEF; --ink-2:#9398A2; --ink-3:#5A5F6B;
+  --ice:#5DB4E5; --ice-soft:#5DB4E518; --ice-line:#5DB4E535;
+  --warm:#E8B777; --card:#0E0E13; --card-2:#14141B; --green:#4FB371;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
-body{font-family:'Inter Tight',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+body{font-family:'Inter Tight',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
 img,svg{max-width:100%;display:block;}
 a{color:inherit;text-decoration:none;}
 button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
-
 body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.45'/%3E%3C/svg%3E");pointer-events:none;z-index:1;mix-blend-mode:overlay;opacity:.35;}
 
 .display{font-family:'Bebas Neue',sans-serif;letter-spacing:.01em;line-height:.92;font-weight:400;}
 .serif{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;letter-spacing:-.01em;}
-
 .wrap{max-width:1240px;margin:0 auto;padding:0 24px;}
 section{position:relative;z-index:2;}
 
-/* NAV */
-.nav{position:fixed;top:0;left:0;right:0;z-index:90;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;background:rgba(7,7,8,.85);backdrop-filter:blur(18px) saturate(150%);border-bottom:1px solid var(--line);}
+/* ===== SCROLL PROGRESS ===== */
+.scrollbar{position:fixed;top:0;left:0;height:3px;width:0;z-index:100;background:linear-gradient(90deg,var(--ice),var(--warm));box-shadow:0 0 12px rgba(93,180,229,.5);transition:width .1s linear;}
+
+/* ===== NAV ===== */
+.nav{position:fixed;top:0;left:0;right:0;z-index:90;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;background:rgba(7,7,8,.7);backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%);border-bottom:1px solid transparent;transition:border-color .3s,background .3s;}
+.nav.scrolled{border-bottom-color:var(--line);}
 .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:.14em;display:flex;align-items:center;gap:8px;}
-.nav-logo .dot{width:6px;height:6px;background:var(--ice);border-radius:50%;box-shadow:0 0 12px var(--ice);}
-.nav-back{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--ink-2);transition:color .2s;}
+.nav-logo .dot{width:6px;height:6px;background:var(--ice);border-radius:50%;box-shadow:0 0 12px var(--ice);animation:dotPulse 2.4s ease-in-out infinite;}
+@keyframes dotPulse{0%,100%{opacity:1;}50%{opacity:.45;}}
+.nav-back{display:none;font-size:13px;font-weight:500;color:var(--ink-2);letter-spacing:.02em;transition:color .2s;align-items:center;gap:8px;}
 .nav-back:hover{color:var(--ink);}
-@media(min-width:900px){.nav{padding:18px 40px;}}
+.nav-back svg{transition:transform .25s;}
+.nav-back:hover svg{transform:translateX(-3px);}
+.nav-right{display:flex;align-items:center;gap:14px;}
+.nav-price{display:none;font-size:13px;color:var(--ink-2);}
+.nav-price s{color:var(--ink-3);}
+.nav-price b{color:var(--warm);font-weight:600;}
+.nav-cta{font-size:12px;font-weight:600;padding:10px 18px;border-radius:100px;letter-spacing:.04em;position:relative;overflow:hidden;background:linear-gradient(180deg,#1A1410 0%,#0C0907 100%);color:#E8B777;border:1px solid rgba(232,183,119,.18);box-shadow:inset 0 1px 0 rgba(232,183,119,.08),0 1px 2px rgba(0,0,0,.5);transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s,border-color .35s,color .35s;}
+.nav-cta:hover{transform:translateY(-2px);border-color:rgba(232,183,119,.4);color:#F2C589;box-shadow:0 14px 32px -12px rgba(0,0,0,.6),0 0 36px -12px rgba(232,183,119,.2);}
+@media(min-width:760px){.nav-back{display:inline-flex;}.nav-price{display:inline;}.nav{padding:18px 40px;}}
 
-/* HERO */
-.hero{padding:120px 24px 60px;position:relative;}
-.hero-glow{position:absolute;top:-10%;left:50%;transform:translateX(-50%);width:90vw;max-width:900px;height:600px;background:radial-gradient(closest-side,var(--ice-soft) 0%,transparent 70%);pointer-events:none;filter:blur(40px);z-index:0;}
-.hero-content{position:relative;z-index:2;max-width:900px;margin:0 auto;text-align:center;}
+/* ===== BUTTONS ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 26px;font-size:14px;font-weight:600;letter-spacing:.02em;border-radius:100px;white-space:nowrap;min-height:52px;transition:all .25s cubic-bezier(.4,0,.2,1);}
+.btn-buy{width:100%;background:linear-gradient(180deg,#F0C386 0%,#E8B777 55%,#D9A45E 100%);color:#1A0F00;font-weight:700;letter-spacing:.02em;position:relative;overflow:hidden;box-shadow:0 16px 36px -14px rgba(232,183,119,.5),inset 0 1px 0 rgba(255,255,255,.3);transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s ease;}
+.btn-buy span.lbl{position:relative;z-index:2;display:inline-flex;align-items:center;gap:10px;}
+.btn-buy::after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent 0%,rgba(255,255,255,.5) 50%,transparent 100%);transform:translateX(-140%);animation:sweep 5s ease-in-out 2s infinite;pointer-events:none;}
+@keyframes sweep{0%{transform:translateX(-140%);}22%,100%{transform:translateX(140%);}}
+.btn-buy:hover{transform:translateY(-3px) scale(1.012);box-shadow:0 28px 56px -14px rgba(232,183,119,.62),0 0 0 1px rgba(232,183,119,.4);}
+.btn-buy:active{transform:translateY(-1px);}
+.btn-buy svg{transition:transform .35s cubic-bezier(.2,.7,.2,1);}
+.btn-buy:hover svg{transform:translateX(4px);}
 
-.hero-back{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:24px;transition:color .2s;}
-.hero-back:hover{color:var(--ice);}
+/* ===== HERO ===== */
+.hero{padding:128px 24px 64px;position:relative;overflow:hidden;}
+.hero-glow{position:absolute;top:-25%;right:-22%;width:88vw;height:88vw;max-width:820px;max-height:820px;background:radial-gradient(closest-side,var(--ice-soft) 0%,transparent 70%);pointer-events:none;filter:blur(20px);z-index:0;animation:drift1 16s ease-in-out infinite;}
+.hero-glow.warm{top:auto;bottom:-30%;left:-22%;right:auto;background:radial-gradient(closest-side,rgba(232,183,119,.11) 0%,transparent 70%);animation:drift2 19s ease-in-out infinite;}
+@keyframes drift1{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(-34px,26px) scale(1.08);}}
+@keyframes drift2{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(30px,-22px) scale(1.1);}}
+.hero-inner{position:relative;z-index:2;display:grid;gap:44px;}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;padding:7px 14px 7px 12px;border:1px solid var(--ice-line);background:var(--ice-soft);border-radius:100px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ice);width:fit-content;margin-bottom:22px;}
+.hero-eyebrow::before{content:'';width:6px;height:6px;background:var(--ice);border-radius:50%;box-shadow:0 0 10px var(--ice);animation:dotPulse 2s infinite;flex-shrink:0;}
+.hero-h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(72px,16vw,124px);line-height:.88;letter-spacing:.01em;margin-bottom:20px;}
+.hero-h1 .amp{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ice);font-size:.8em;}
+.hero-h1 .dot{color:var(--ice);}
+.hero-tagline{font-family:'Instrument Serif',serif;font-style:italic;font-size:clamp(20px,5vw,30px);line-height:1.25;color:var(--ink);margin-bottom:22px;max-width:520px;}
+.hero-promise{color:#C8CCD3;font-size:clamp(15px,3.4vw,17px);line-height:1.7;max-width:520px;margin-bottom:24px;}
+.hero-promise strong{color:var(--ink);font-weight:500;}
+.hero-rating{display:flex;align-items:center;gap:12px;margin-bottom:26px;flex-wrap:wrap;}
+.hero-rating .stars{color:var(--warm);font-size:15px;letter-spacing:.12em;}
+.hero-rating .rtxt{font-size:13px;color:var(--ink-2);}
+.hero-rating .rtxt b{color:var(--ink);font-weight:600;}
+.hero-trust{display:flex;flex-wrap:wrap;gap:10px 22px;}
+.hero-trust span{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-2);font-weight:500;}
+.hero-trust span::before{content:'';width:15px;height:15px;flex-shrink:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24' fill='none' stroke='%235DB4E5' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");background-position:center;background-repeat:no-repeat;}
 
-.hero-tag{display:inline-flex;align-items:center;gap:10px;padding:7px 14px 7px 12px;border:1px solid var(--ice-line);background:var(--ice-soft);border-radius:100px;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ice);margin-bottom:28px;}
-.hero-tag::before{content:'';width:6px;height:6px;background:var(--ice);border-radius:50%;box-shadow:0 0 10px var(--ice);}
+.offer-card{background:linear-gradient(165deg,#15110B 0%,#0C0907 100%);border:1px solid rgba(232,183,119,.28);border-radius:22px;padding:30px 26px;position:relative;overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.7),inset 0 1px 0 rgba(232,183,119,.08);}
+.offer-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--warm),transparent);}
+.offer-tag{display:inline-flex;align-items:center;gap:7px;background:var(--warm);color:#1A0F00;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:5px 11px;border-radius:4px;margin-bottom:20px;}
+.offer-tag::before{content:'';width:6px;height:6px;border-radius:50%;background:#1A0F00;animation:dotPulse 1.6s infinite;}
+.offer-price-row{display:flex;align-items:baseline;gap:12px;}
+.offer-was{font-family:'Bebas Neue',sans-serif;font-size:30px;color:var(--ink-3);text-decoration:line-through;text-decoration-color:rgba(146,150,162,.5);}
+.offer-now{font-family:'Bebas Neue',sans-serif;font-size:72px;line-height:.85;color:var(--warm);}
+.offer-save{display:inline-block;margin-left:auto;align-self:center;background:rgba(79,179,113,.1);border:1px solid rgba(79,179,113,.35);color:var(--green);font-size:11px;font-weight:700;letter-spacing:.08em;padding:5px 10px;border-radius:6px;text-transform:uppercase;}
+.offer-meta{font-size:12.5px;color:var(--ink-3);letter-spacing:.04em;margin:8px 0 22px;text-transform:uppercase;font-weight:600;}
+.offer-list{list-style:none;display:flex;flex-direction:column;gap:11px;margin:22px 0;padding-top:22px;border-top:1px solid var(--line);}
+.offer-list li{display:flex;align-items:flex-start;gap:11px;font-size:13.5px;line-height:1.5;color:var(--ink);}
+.offer-list li::before{content:'';width:15px;height:15px;flex-shrink:0;margin-top:2px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24' fill='none' stroke='%23E8B777' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");background-position:center;background-repeat:no-repeat;}
+.offer-urgency{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--warm);margin:16px 0 4px;font-weight:500;}
+.offer-urgency svg{flex-shrink:0;}
+.offer-guarantee{display:flex;align-items:center;gap:9px;font-size:12.5px;color:var(--ink-2);margin-top:14px;}
+.offer-guarantee svg{flex-shrink:0;color:var(--green);}
+/* offer pop: halo + badge + countdown + payment trust */
+.offer-wrap{position:relative;}
+.offer-halo{position:absolute;inset:-8px;border-radius:28px;background:radial-gradient(60% 55% at 50% 0%,rgba(232,183,119,.5),transparent 72%),linear-gradient(180deg,rgba(232,183,119,.28),rgba(93,180,229,.12));filter:blur(24px);opacity:.5;z-index:0;pointer-events:none;animation:haloPulse 4.6s ease-in-out infinite;}
+@keyframes haloPulse{0%,100%{opacity:.36;transform:scale(.99);}50%{opacity:.72;transform:scale(1.015);}}
+.offer-card{position:relative;z-index:1;}
+.offer-badge{position:absolute;top:-16px;right:-12px;z-index:4;width:78px;height:78px;border-radius:50%;background:radial-gradient(circle at 32% 30%,#F4CD93,#D9A45E);color:#1A0F00;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:.8;box-shadow:0 10px 26px -6px rgba(232,183,119,.7),0 0 0 4px rgba(7,7,8,.85);transform:rotate(9deg);animation:badgePop .6s cubic-bezier(.2,1.5,.4,1) .95s both;}
+.offer-badge b{font-family:'Bebas Neue',sans-serif;font-size:28px;font-weight:400;}
+.offer-badge span{font-size:11px;letter-spacing:.1em;font-weight:800;margin-top:1px;}
+@keyframes badgePop{from{transform:rotate(9deg) scale(0);}to{transform:rotate(9deg) scale(1);}}
+@media(max-width:560px){.offer-badge{top:-15px;right:6px;width:64px;height:64px;}.offer-badge b{font-size:23px;}.offer-badge span{font-size:9.5px;}}
+.offer-countdown{margin:20px 0;padding:14px 14px 12px;border:1px solid rgba(232,183,119,.22);border-radius:12px;background:rgba(232,183,119,.05);}
+.oc-label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--warm);display:flex;align-items:center;justify-content:center;gap:7px;margin-bottom:11px;}
+.oc-timer{display:flex;align-items:flex-start;gap:9px;justify-content:center;}
+.oc-unit{display:flex;flex-direction:column;align-items:center;gap:5px;}
+.oc-num{font-family:'Bebas Neue',sans-serif;font-size:30px;line-height:1;color:var(--ink);background:rgba(0,0,0,.35);border:1px solid var(--line-2);border-radius:8px;padding:7px 0;width:50px;text-align:center;font-variant-numeric:tabular-nums;}
+.oc-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);}
+.oc-colon{font-family:'Bebas Neue',sans-serif;font-size:24px;color:var(--warm);opacity:.55;margin-top:8px;}
+.offer-pay{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;flex-wrap:wrap;}
+.offer-pay svg{width:13px;height:13px;color:var(--green);flex:0 0 auto;}
+.offer-pay .pay-txt{font-size:11.5px;color:var(--ink-2);margin-right:3px;}
+.offer-pay .chip{font-size:9px;font-weight:700;letter-spacing:.03em;color:var(--ink-2);background:rgba(255,255,255,.05);border:1px solid var(--line-2);border-radius:4px;padding:4px 7px;}
+@media(min-width:960px){.hero{padding:150px 40px 84px;}.hero-inner{grid-template-columns:1.1fr .9fr;gap:64px;align-items:start;}.hero-copy{padding-top:6px;}.offer-card{padding:34px 30px;}}
 
-.hero-h1{font-size:clamp(48px,8vw,96px);line-height:.95;margin-bottom:20px;}
-.hero-h1 em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ice);font-weight:400;display:block;font-size:.6em;margin-top:14px;}
+/* ===== STATS BAND ===== */
+.statsband{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--bg-2),var(--bg));padding:40px 24px;}
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 16px;text-align:center;}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,8vw,58px);line-height:.9;color:var(--ink);}
+.stat-num .u{color:var(--ice);}
+.stat-lab{font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:8px;}
+@media(min-width:760px){.stats-grid{grid-template-columns:repeat(4,1fr);gap:32px;}.statsband{padding:48px 40px;}}
 
-.hero-lead{font-family:'Instrument Serif',serif;font-style:italic;font-size:clamp(18px,3vw,24px);color:var(--ink);max-width:680px;margin:0 auto 36px;line-height:1.5;}
+/* ===== SECTION ===== */
+.sec{padding:80px 24px;}
+.sec-head{display:flex;flex-direction:column;gap:10px;margin-bottom:46px;max-width:760px;}
+.sec-num{font-family:'Instrument Serif',serif;font-style:italic;font-size:14px;color:var(--ice);letter-spacing:.02em;}
+.sec-num::before{content:'';display:inline-block;width:32px;height:1px;background:var(--ice);vertical-align:middle;margin-right:14px;}
+.sec-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(38px,8vw,68px);line-height:.96;letter-spacing:.005em;}
+.sec-title em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--ice);}
+.sec-lead{color:#C8CCD3;font-size:clamp(15px,3vw,17px);line-height:1.7;max-width:620px;margin-top:6px;}
+@media(min-width:900px){.sec{padding:108px 40px;}}
 
-.hero-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:24px;margin-bottom:40px;padding-top:28px;border-top:1px solid var(--line);}
-.hero-meta-item{display:flex;flex-direction:column;align-items:center;}
-.hero-meta-num{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--ink);line-height:1;}
-.hero-meta-label{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:6px;}
+/* ===== WHAT'S INSIDE ===== */
+.inside{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.inside-grid{display:grid;grid-template-columns:1fr;gap:18px;}
+.inside-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 26px;position:relative;overflow:hidden;transition:transform .5s cubic-bezier(.2,.7,.2,1),border-color .5s,box-shadow .5s;}
+.inside-card::after{content:'';position:absolute;inset:0;background:radial-gradient(circle 300px at var(--mx,50%) var(--my,50%),rgba(93,180,229,.14) 0%,rgba(93,180,229,0) 60%);opacity:0;transition:opacity .5s;pointer-events:none;}
+.inside-card:hover{transform:translateY(-6px);border-color:var(--ice-line);box-shadow:0 26px 50px -20px rgba(0,0,0,.6),0 0 60px -20px rgba(93,180,229,.25);}
+.inside-card:hover::after{opacity:1;}
+.inside-card>*{position:relative;z-index:2;}
+.inside-ico{width:44px;height:44px;border-radius:12px;background:var(--ice-soft);border:1px solid var(--ice-line);display:flex;align-items:center;justify-content:center;color:var(--ice);margin-bottom:20px;transition:transform .5s;}
+.inside-card:hover .inside-ico{transform:scale(1.08) rotate(-4deg);}
+.inside-card h3{font-family:'Bebas Neue',sans-serif;font-size:26px;line-height:1.05;margin-bottom:9px;letter-spacing:.01em;}
+.inside-card p{color:#C8CCD3;font-size:13.5px;line-height:1.65;}
+@media(min-width:640px){.inside-grid{grid-template-columns:1fr 1fr;}}
+@media(min-width:1040px){.inside-grid{grid-template-columns:repeat(3,1fr);gap:22px;}}
 
-/* PRICE BAND */
-.price-band{background:linear-gradient(135deg,#1A1208 0%,#0E0A05 100%);border-top:1px solid rgba(232,183,119,.3);border-bottom:1px solid rgba(232,183,119,.3);padding:48px 24px;position:relative;overflow:hidden;}
-.price-band::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--warm),transparent);}
-.price-inner{max-width:900px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center;}
-.price-badge{background:var(--warm);color:#1A0F00;font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:6px 12px;border-radius:4px;}
-.price-row{display:flex;align-items:baseline;gap:14px;justify-content:center;}
-.price-old{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--ink-3);text-decoration:line-through;text-decoration-color:rgba(146,150,162,.6);}
-.price-now{font-family:'Bebas Neue',sans-serif;font-size:72px;color:var(--warm);line-height:.9;}
-.price-save{font-size:13px;font-weight:600;color:var(--warm);letter-spacing:.04em;}
-.price-cta{display:inline-flex;align-items:center;gap:10px;padding:18px 36px;background:var(--warm);color:#1A0F00;border-radius:100px;font-size:15px;font-weight:700;letter-spacing:.02em;transition:all .2s;}
-.price-cta:hover{transform:translateY(-2px);box-shadow:0 16px 32px -8px rgba(232,183,119,.4);}
-.price-note{font-size:12px;color:var(--ink-3);max-width:480px;}
+/* ===== JOURNEY ===== */
+.journey-blocks{display:grid;grid-template-columns:1fr;gap:20px;margin-bottom:30px;}
+.jb{position:relative;border-radius:20px;padding:32px 28px;overflow:hidden;border:1px solid var(--line);background:var(--card);}
+.jb.b1{background:linear-gradient(165deg,#0E1A24 0%,#0A0E13 100%);border-color:var(--ice-line);}
+.jb.b2{background:linear-gradient(165deg,#1A1208 0%,#0E0A05 100%);border-color:rgba(232,183,119,.25);}
+.jb-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:18px;}
+.jb-label{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;}
+.jb.b1 .jb-label{color:var(--ice);}
+.jb.b2 .jb-label{color:var(--warm);}
+.jb-weeks{font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:.1em;color:var(--ink-3);}
+.jb h3{font-family:'Bebas Neue',sans-serif;font-size:clamp(30px,6vw,42px);line-height:1;margin-bottom:14px;letter-spacing:.01em;}
+.jb p{color:#C8CCD3;font-size:14px;line-height:1.7;}
+.jb-bar{height:5px;border-radius:100px;margin-top:22px;background:var(--line);overflow:hidden;position:relative;}
+.jb-bar span{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:100px;transition:width 1.5s cubic-bezier(.2,.8,.2,1) .15s;}
+.jb.b1 .jb-bar span{background:linear-gradient(90deg,var(--ice),#2C6F92);}
+.jb.b2 .jb-bar span{background:linear-gradient(90deg,var(--warm),#9C7B4E);}
+.jb.b1 .jb-bar.fill span{width:55%;}
+.jb.b2 .jb-bar.fill span{width:100%;}
+.journey-note{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-left:2px solid var(--ice);border-radius:0 14px 14px 0;padding:20px 24px;font-family:'Instrument Serif',serif;font-style:italic;font-size:clamp(15px,3.2vw,18px);line-height:1.5;color:#C8CCD3;}
+.milestones{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px;}
+.ms{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:100px;padding:10px 18px 10px 12px;}
+.ms-wk{font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:.08em;color:var(--ice);background:var(--ice-soft);border:1px solid var(--ice-line);border-radius:100px;padding:4px 10px;}
+.ms-txt{font-size:13px;color:var(--ink-2);}
+@media(min-width:780px){.journey-blocks{grid-template-columns:1fr 1fr;gap:24px;}.jb{padding:38px 34px;}}
 
-/* BODY */
-.body-section{padding:88px 24px;}
-.body-inner{max-width:780px;margin:0 auto;}
+/* ===== RHYTHM ===== */
+.rhythm{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.rhythm-grid{display:grid;grid-template-columns:1fr;gap:16px;}
+.rday{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 24px;transition:transform .5s cubic-bezier(.2,.7,.2,1),border-color .5s;}
+.rday:hover{transform:translateY(-5px);border-color:var(--ice-line);}
+.rday-n{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ice);font-size:15px;margin-bottom:14px;}
+.rday h3{font-family:'Bebas Neue',sans-serif;font-size:28px;line-height:1;margin-bottom:10px;letter-spacing:.01em;}
+.rday p{color:#C8CCD3;font-size:13.5px;line-height:1.65;}
+.rhythm-rest{margin-top:22px;font-size:13.5px;color:var(--ink-2);display:flex;align-items:center;gap:10px;}
+.rhythm-rest::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green);flex-shrink:0;}
+@media(min-width:680px){.rhythm-grid{grid-template-columns:repeat(2,1fr);gap:18px;}}
+@media(min-width:1080px){.rhythm-grid{grid-template-columns:repeat(4,1fr);gap:18px;}}
 
-.intro-text{font-size:clamp(17px,2.4vw,20px);line-height:1.75;color:var(--ink);margin-bottom:24px;}
-.intro-text:last-child{margin-bottom:0;}
-.intro-text strong{color:var(--ice);font-weight:500;}
+/* ===== SKILLS ===== */
+.skills-grid{display:grid;grid-template-columns:1fr;gap:16px;}
+.skill{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;position:relative;overflow:hidden;transition:transform .5s cubic-bezier(.2,.7,.2,1),border-color .5s,box-shadow .5s;}
+.skill:hover{transform:translateY(-5px);border-color:var(--ice-line);box-shadow:0 24px 44px -22px rgba(0,0,0,.6);}
+.skill-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;}
+.skill-n{font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--ink-3);letter-spacing:.06em;}
+.skill-gain{font-size:12px;font-weight:700;color:var(--green);background:rgba(79,179,113,.1);border:1px solid rgba(79,179,113,.3);border-radius:6px;padding:4px 9px;letter-spacing:.02em;}
+.skill h3{font-family:'Bebas Neue',sans-serif;font-size:24px;line-height:1.05;margin-bottom:6px;letter-spacing:.01em;}
+.skill-q{font-size:12px;color:var(--ice);letter-spacing:.06em;text-transform:uppercase;font-weight:600;}
+.skill.accent{display:flex;flex-direction:column;justify-content:center;background:var(--ice-soft);border-color:var(--ice-line);}
+.skill.accent h3{color:var(--ice);}
+.skill.accent p{color:#C8CCD3;font-size:13px;line-height:1.6;margin-top:8px;}
+@media(min-width:680px){.skills-grid{grid-template-columns:1fr 1fr;gap:18px;}}
+@media(min-width:1040px){.skills-grid{grid-template-columns:repeat(3,1fr);}}
 
-.divider{height:1px;background:var(--line);margin:64px 0;position:relative;}
-.divider::after{content:'';position:absolute;top:-3px;left:50%;transform:translateX(-50%);width:7px;height:7px;background:var(--ice);border-radius:50%;box-shadow:0 0 12px var(--ice);}
+/* ===== TESTIMONIALS ===== */
+.testi{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.testi-grid{display:grid;grid-template-columns:1fr;gap:18px;}
+.tcard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px 28px;position:relative;transition:transform .5s cubic-bezier(.2,.7,.2,1),border-color .5s,box-shadow .5s;}
+.tcard:hover{transform:translateY(-5px);border-color:rgba(232,183,119,.22);box-shadow:0 24px 44px -22px rgba(0,0,0,.55);}
+.tcard::before{content:'\201C';font-family:'Instrument Serif',serif;font-size:72px;line-height:1;position:absolute;top:16px;right:24px;color:var(--ice);opacity:.4;}
+.tcard-stars{color:var(--warm);font-size:13px;letter-spacing:.1em;margin-bottom:16px;}
+.tcard-quote{font-size:15.5px;line-height:1.7;color:var(--ink);margin-bottom:22px;font-weight:300;}
+.tcard-author{display:flex;align-items:center;gap:13px;padding-top:18px;border-top:1px solid var(--line);}
+.tcard-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--ice) 0%,#1A4A6F 100%);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:15px;color:#001626;flex-shrink:0;}
+.tcard-name{font-size:14px;font-weight:600;color:var(--ink);}
+.tcard-role{font-size:12px;color:var(--ink-3);margin-top:2px;}
+@media(min-width:780px){.testi-grid{grid-template-columns:repeat(3,1fr);gap:22px;}}
 
-.section-label{display:inline-flex;align-items:center;gap:12px;font-family:'Instrument Serif',serif;font-style:italic;font-size:15px;color:var(--ice);margin-bottom:18px;}
-.section-label::before{content:'';width:32px;height:1px;background:var(--ice);}
+/* ===== SPLIT (KIT + RULES) ===== */
+.split{background:var(--bg);}
+.split-grid{display:grid;grid-template-columns:1fr;gap:48px;}
+.kit-list{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;}
+.kit-list li{font-size:13px;color:var(--ink);background:var(--card);border:1px solid var(--line-2);border-radius:100px;padding:9px 16px;transition:border-color .3s,transform .3s;}
+.kit-list li:hover{border-color:var(--ice-line);transform:translateY(-2px);}
+.kit-note{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ink-2);font-size:15px;line-height:1.6;margin-top:18px;}
+.rules-stack{display:flex;flex-direction:column;gap:16px;}
+.rule{display:flex;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;transition:border-color .4s,transform .4s;}
+.rule:hover{border-color:var(--ice-line);transform:translateY(-3px);}
+.rule-n{font-family:'Bebas Neue',sans-serif;font-size:38px;line-height:.8;color:var(--ice);flex-shrink:0;}
+.rule p{color:#C8CCD3;font-size:14px;line-height:1.65;}
+.rule p b{color:var(--ink);font-weight:600;}
+@media(min-width:900px){.split-grid{grid-template-columns:1fr 1fr;gap:72px;align-items:start;}}
 
-.section-h{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,6vw,52px);line-height:1;letter-spacing:.005em;margin-bottom:32px;}
-.section-h em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ice);font-weight:400;}
+/* ===== FAQ ===== */
+.faq{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.faq-list{max-width:820px;border-top:1px solid var(--line);}
+.faq-item{border-bottom:1px solid var(--line);transition:border-color .35s;}
+.faq-item:hover{border-color:rgba(232,183,119,.18);}
+.faq-q{width:100%;text-align:left;padding:24px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-size:16px;font-weight:500;color:var(--ink);line-height:1.4;transition:color .2s;}
+.faq-q:hover{color:var(--ice);}
+.faq-ico{width:24px;height:24px;flex-shrink:0;position:relative;margin-top:2px;}
+.faq-ico::before,.faq-ico::after{content:'';position:absolute;top:50%;left:50%;background:var(--ink-2);transform:translate(-50%,-50%);transition:background .2s,transform .3s;}
+.faq-ico::before{width:14px;height:1.5px;}
+.faq-ico::after{width:1.5px;height:14px;}
+.faq-item.open .faq-ico::after{transform:translate(-50%,-50%) scaleY(0);}
+.faq-item.open .faq-q{color:var(--ice);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1);}
+.faq-a-inner{padding:0 0 24px;font-size:14.5px;line-height:1.75;color:#C8CCD3;max-width:680px;}
+.faq-item.open .faq-a{max-height:340px;}
 
-/* FEATURE LIST */
-.features{list-style:none;display:flex;flex-direction:column;gap:24px;margin-top:8px;}
-.feature-item{display:flex;gap:20px;padding:24px;background:var(--card);border:1px solid var(--line);border-radius:14px;transition:border-color .2s, transform .2s;}
-.feature-item:hover{border-color:var(--ice-line);transform:translateY(-2px);}
-.feature-icon{flex-shrink:0;width:38px;height:38px;background:var(--ice-soft);border:1px solid var(--ice-line);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--ice);}
-.feature-text{flex:1;}
-.feature-text strong{display:block;color:var(--ink);font-size:15px;font-weight:600;margin-bottom:6px;}
-.feature-text p{color:var(--ink-2);font-size:14.5px;line-height:1.65;}
+/* ===== FINAL CTA ===== */
+.final{padding:90px 24px 104px;position:relative;overflow:hidden;}
+.final-glow{position:absolute;top:50%;left:50%;width:760px;height:760px;max-width:120vw;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(232,183,119,.14) 0%,transparent 70%);filter:blur(40px);pointer-events:none;animation:drift2 18s ease-in-out infinite;}
+.final-panel{position:relative;z-index:2;max-width:620px;margin:0 auto;text-align:center;background:linear-gradient(165deg,#13110C 0%,#0A0907 100%);border:1px solid rgba(232,183,119,.28);border-radius:26px;padding:50px 32px;overflow:hidden;box-shadow:0 50px 100px -40px rgba(0,0,0,.8),inset 0 1px 0 rgba(232,183,119,.08);}
+.final-panel::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--warm),transparent);}
+.final-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--warm);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px;}
+.final-eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--warm);box-shadow:0 0 10px var(--warm);animation:dotPulse 1.8s infinite;}
+.final-h2{font-size:clamp(40px,9vw,66px);line-height:.96;margin-bottom:16px;}
+.final-h2 em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ice);font-weight:400;}
+.final-sub{color:#C8CCD3;font-size:15.5px;line-height:1.65;max-width:440px;margin:0 auto 30px;}
+.final-price-row{display:flex;align-items:baseline;justify-content:center;gap:14px;margin-bottom:6px;}
+.fp-was{font-family:'Bebas Neue',sans-serif;font-size:34px;color:var(--ink-3);text-decoration:line-through;text-decoration-color:rgba(146,150,162,.5);}
+.fp-now{font-family:'Bebas Neue',sans-serif;font-size:84px;line-height:.82;color:var(--warm);}
+.fp-meta{font-size:12px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:26px;}
+.final-panel .btn-buy{width:100%;max-width:360px;margin:0 auto 22px;}
+.final-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;margin-bottom:24px;}
+.final-trust span{font-size:12.5px;color:var(--ink-2);display:inline-flex;align-items:center;gap:7px;}
+.final-trust span::before{content:'';width:13px;height:13px;flex-shrink:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 24 24' fill='none' stroke='%234FB371' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:center;}
+.final-byline{font-size:12px;color:var(--ink-3);padding-top:22px;border-top:1px solid var(--line);line-height:1.5;}
+.final-byline b{color:var(--ink-2);font-weight:600;}
 
-/* META BOX */
-.meta-box{margin-top:48px;padding:28px;background:var(--bg-2);border:1px solid var(--line);border-radius:14px;display:grid;grid-template-columns:1fr;gap:16px;}
-.meta-row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;}
-.meta-row:last-child{border-bottom:none;}
-.meta-row-label{color:var(--ink-3);font-weight:500;}
-.meta-row-value{color:var(--ink);font-weight:600;text-align:right;}
+/* ===== FOOTER ===== */
+.footer{background:#040405;border-top:1px solid var(--line);padding:60px 24px 110px;}
+.footer-inner{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:24px;}
+.footer-brand{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:.14em;display:flex;align-items:center;gap:8px;}
+.footer-brand .dot{width:6px;height:6px;background:var(--ice);border-radius:50%;box-shadow:0 0 12px var(--ice);}
+.footer-links{display:flex;flex-wrap:wrap;gap:18px;}
+.footer-links a{font-size:13.5px;color:var(--ink-2);transition:color .2s;}
+.footer-links a:hover{color:var(--ink);}
+.footer-copy{font-size:12px;color:var(--ink-3);padding-top:24px;border-top:1px solid var(--line);}
+@media(min-width:780px){.footer{padding:72px 40px 110px;}.footer-inner{flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:center;}}
 
-/* CLOSING */
-.closing{padding:64px 24px 88px;text-align:center;}
-.closing-inner{max-width:680px;margin:0 auto;}
-.closing-quote{font-family:'Instrument Serif',serif;font-style:italic;font-size:clamp(20px,3vw,26px);line-height:1.5;color:var(--ink);margin-bottom:36px;}
-.closing-cta{display:inline-flex;align-items:center;gap:10px;padding:18px 36px;background:var(--warm);color:#1A0F00;border-radius:100px;font-size:15px;font-weight:700;letter-spacing:.02em;transition:all .2s;}
-.closing-cta:hover{transform:translateY(-2px);box-shadow:0 16px 32px -8px rgba(232,183,119,.4);}
+/* ===== MOBILE BUY BAR ===== */
+.buybar{position:fixed;bottom:0;left:0;right:0;z-index:80;background:rgba(7,7,8,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid var(--line);padding:12px 16px calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:14px;transform:translateY(110%);transition:transform .4s cubic-bezier(.4,0,.2,1);}
+.buybar.show{transform:translateY(0);}
+.buybar-price{flex-shrink:0;line-height:1;}
+.buybar-price b{font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--warm);}
+.buybar-price s{display:block;font-size:11px;color:var(--ink-3);}
+.buybar .btn-buy{flex:1;min-height:48px;}
+@media(min-width:960px){.buybar{display:none;}}
 
-/* FOOTER */
-.footer{background:#040405;border-top:1px solid var(--line);padding:48px 24px;text-align:center;}
-.footer-inner{max-width:900px;margin:0 auto;}
-.footer-back{display:inline-flex;align-items:center;gap:10px;color:var(--ice);font-size:14px;font-weight:600;margin-bottom:20px;}
-.footer p{color:var(--ink-3);font-size:13px;line-height:1.7;}
-
-/* MODAL */
-.modal{position:fixed;inset:0;z-index:200;background:rgba(7,7,8,.85);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .25s;}
-.modal.open{opacity:1;pointer-events:auto;}
-.modal-card{background:var(--bg-2);border:1px solid var(--line-2);border-radius:20px;max-width:480px;width:100%;padding:36px 28px;position:relative;transform:scale(.95);transition:transform .25s;}
-.modal.open .modal-card{transform:scale(1);}
-.modal-close{position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:50%;background:var(--bg-3);color:var(--ink-2);font-size:18px;display:flex;align-items:center;justify-content:center;transition:background .2s;}
-.modal-close:hover{background:var(--line-2);color:var(--ink);}
-.modal-badge{display:inline-block;background:var(--ice);color:#001626;font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:5px 11px;border-radius:4px;margin-bottom:18px;}
-.modal-h{font-family:'Bebas Neue',sans-serif;font-size:32px;line-height:1;margin-bottom:10px;}
-.modal-h em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ice);font-weight:400;}
-.modal-text{color:var(--ink-2);font-size:14px;line-height:1.65;margin-bottom:24px;}
-.modal-text strong{color:var(--ink);}
-.modal-input{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line-2);border-radius:100px;padding:14px 20px;color:var(--ink);font-size:14px;outline:none;margin-bottom:12px;transition:border-color .2s;}
-.modal-input:focus{border-color:var(--ice);}
-.modal-input::placeholder{color:var(--ink-3);}
-.modal-btn{width:100%;padding:14px 20px;background:var(--ice);color:#001626;border-radius:100px;font-size:14px;font-weight:700;letter-spacing:.02em;transition:all .2s;}
-.modal-btn:hover{background:#7BC6F0;}
-.modal-note{font-size:11px;color:var(--ink-3);text-align:center;margin-top:12px;}
-.modal-success{text-align:center;padding:20px 0;}
-.modal-success-icon{width:60px;height:60px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-size:28px;color:#fff;}
-.modal-success h3{font-family:'Bebas Neue',sans-serif;font-size:28px;margin-bottom:10px;}
-.modal-success p{color:var(--ink-2);font-size:14px;line-height:1.65;}
-
-@media(min-width:780px){
-  .hero{padding:140px 40px 80px;}
-  .body-section{padding:120px 40px;}
-  .price-band{padding:64px 40px;}
-  .meta-box{grid-template-columns:1fr 1fr;gap:8px 32px;}
-  .meta-row{padding:14px 0;}
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
+@keyframes fadeRight{from{opacity:0;transform:translateX(42px) scale(.985);}to{opacity:1;transform:translateX(0) scale(1);}}
+.anim-up{opacity:0;animation:fadeUp .9s cubic-bezier(.2,.8,.2,1) both;}
+.anim-right{opacity:0;animation:fadeRight 1s cubic-bezier(.2,.8,.2,1) both;}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1);}
+.reveal.in{opacity:1;transform:translateY(0);}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.001s !important;animation-iteration-count:1 !important;}
+  .anim-up,.anim-right{opacity:1;animation:none;}
+  .reveal{opacity:1;transform:none;transition:none;}
+  .btn-buy::after{display:none;}
+  html{scroll-behavior:auto;}
 }
 </style>
 </head>
 <body>
 
-<header class="nav">
+<div class="scrollbar" id="scrollbar"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
   <a href="index.html" class="nav-logo"><span class="dot"></span>ELITE HOCKEY DRILLS</a>
   <a href="index.html#tiers" class="nav-back">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M11 5l-7 7 7 7"/></svg>
     All Programs
   </a>
+  <div class="nav-right">
+    <span class="nav-price"><s>$159</s> <b>$79</b></span>
+    <!-- BUY BUTTON · wired to /buy (Stripe). NOTE: Stripe price is currently $49 — update to $79 before launch -->
+    <a href="#buy" class="nav-cta">Get the Program</a>
+  </div>
 </header>
 
+<!-- ===== HERO ===== -->
 <section class="hero">
   <div class="hero-glow"></div>
-  <div class="hero-content">
-    <a href="index.html#tiers" class="hero-back">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-      Back to Programs
-    </a>
-    <div class="hero-tag">Ages 19–39 · The Adult Performance Program</div>
-    <h1 class="hero-h1 display">The 12-Week<br>Adult Performance Program<em>For Ages 19–39</em></h1>
-    <p class="hero-lead">Twelve weeks. Built for the years when you can still train like a pro.</p>
-    <div class="hero-meta">
-      <div class="hero-meta-item"><div class="hero-meta-num display">12<small style="font-size:.5em">wk</small></div><div class="hero-meta-label">Program</div></div>
-      <div class="hero-meta-item"><div class="hero-meta-num display">4×</div><div class="hero-meta-label">Per Week</div></div>
-      <div class="hero-meta-item"><div class="hero-meta-num display">48</div><div class="hero-meta-label">Pages</div></div>
-      <div class="hero-meta-item"><div class="hero-meta-num display">48</div><div class="hero-meta-label">Sessions</div></div>
+  <div class="hero-glow warm"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <div class="hero-eyebrow anim-up" style="animation-delay:.05s">8-Week Off-Ice Program · Ages 19–39</div>
+      <h1 class="hero-h1 anim-up" style="animation-delay:.15s">POWER<br><span class="amp">&amp;</span> SPEED<span class="dot">.</span></h1>
+      <p class="hero-tagline anim-up" style="animation-delay:.28s">Capacity becomes force. Then you express it — on purpose.</p>
+      <p class="hero-promise anim-up" style="animation-delay:.38s">You already train. You already skate. <strong>This isn't a learn-to-lift program — it's a focused 8-week block to make you measurably faster and more powerful</strong>, on the ice and off it, with nothing but bands and your bodyweight.</p>
+      <div class="hero-rating anim-up" style="animation-delay:.46s">
+        <span class="stars">★★★★★</span>
+        <span class="rtxt">Trusted by serious players · <b>1,000+ athletes</b> coached worldwide</span>
+      </div>
+      <div class="hero-trust anim-up" style="animation-delay:.54s">
+        <span>32 coach-built sessions</span>
+        <span>Video for every move</span>
+        <span>30-day money-back</span>
+      </div>
+    </div>
+
+    <div class="offer-wrap anim-right" style="animation-delay:.34s" id="buy">
+      <div class="offer-halo"></div>
+      <aside class="offer-card">
+        <div class="offer-badge"><b>50%</b><span>OFF</span></div>
+        <span class="offer-tag">Founding launch price</span>
+        <div class="offer-price-row">
+          <span class="offer-was">$159</span>
+          <span class="offer-now">$79</span>
+          <span class="offer-save">Save $80</span>
+        </div>
+        <div class="offer-meta">One-time payment · yours forever</div>
+        <div class="offer-countdown">
+          <div class="oc-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg>Founding price ends in</div>
+          <div class="oc-timer">
+            <div class="oc-unit"><span class="oc-num" data-cd="h">00</span><span class="oc-tag">Hrs</span></div>
+            <span class="oc-colon">:</span>
+            <div class="oc-unit"><span class="oc-num" data-cd="m">00</span><span class="oc-tag">Min</span></div>
+            <span class="oc-colon">:</span>
+            <div class="oc-unit"><span class="oc-num" data-cd="s">00</span><span class="oc-tag">Sec</span></div>
+          </div>
+        </div>
+        <!-- BUY BUTTON · wired to /buy (Stripe). NOTE: Stripe price is currently $49 — update to $79 before launch -->
+        <a href="/buy" class="btn btn-buy">
+          <span class="lbl">Get POWER &amp; SPEED
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </a>
+        <ul class="offer-list">
+          <li>32 coach-built sessions across 8 weeks</li>
+          <li>A video demo for every exercise</li>
+          <li>6 measurable combine tests</li>
+        </ul>
+        <div class="offer-pay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          <span class="pay-txt">Secure checkout</span>
+          <span class="chip">Apple&nbsp;Pay</span>
+          <span class="chip">VISA</span>
+          <span class="chip">Mastercard</span>
+        </div>
+        <div class="offer-guarantee">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 12l2 2 4-4M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+          Backed by a 30-day money-back guarantee
+        </div>
+      </aside>
     </div>
   </div>
 </section>
 
-<section class="price-band">
-  <div class="price-inner">
-    <span class="price-badge">Founding Member Pricing · First 100 Buyers</span>
-    <div class="price-row">
-      <span class="price-old">$79</span>
-      <span class="price-now display">$49</span>
-    </div>
-    <div class="price-save">Save $30 · One-time payment · Instant PDF download</div>
-    <button class="price-cta" onclick="openModal()">
-      Reserve Your Spot — Launching Soon
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-    </button>
-    <p class="price-note">Payment is being set up. Reserve now and we'll notify you the moment the program is live — founding members get first access at this price.</p>
+<!-- ===== STATS BAND ===== -->
+<section class="statsband">
+  <div class="wrap stats-grid">
+    <div class="reveal"><div class="stat-num display"><span data-count="1000">0</span><span class="u">+</span></div><div class="stat-lab">Athletes Coached</div></div>
+    <div class="reveal"><div class="stat-num display"><span data-count="30">0</span><span class="u">+</span></div><div class="stat-lab">Countries</div></div>
+    <div class="reveal"><div class="stat-num display"><span data-count="32">0</span></div><div class="stat-lab">Coach-Built Sessions</div></div>
+    <div class="reveal"><div class="stat-num display"><span data-count="8">0</span><span class="u">wk</span></div><div class="stat-lab">Complete System</div></div>
   </div>
 </section>
 
-<section class="body-section">
-  <div class="body-inner">
-    <p class="intro-text">You're skeletally mature. You can train hard. You can also injure yourself in ways an eighteen-year-old can't. <strong>This program accounts for both.</strong></p>
-    <p class="intro-text">This is a real off-season power and speed plan for adult hockey players across the 19-39 age range — built to the same coaching standard used with <strong>senior pro and national-team athletes</strong>, with dedicated scaling for the 33+ sub-group whose connective tissue needs more time to recover than their muscles do.</p>
-    <p class="intro-text">Twelve weeks. Forty-eight sessions. About 65-75 minutes each. Bodyweight and bands only — no gym, no plates. That's not a compromise; it's a design choice. <strong>Variable band tension and the contrast methods built into this program are arguably better suited to power-speed development than fixed loads.</strong></p>
-
-    <div class="divider"></div>
-
-    <div class="section-label serif">Inside the program</div>
-    <h2 class="section-h">What's <em>included.</em></h2>
-
-    <ul class="features">
-      <li class="feature-item">
-        <div class="feature-icon">01</div>
-        <div class="feature-text">
-          <strong>3 four-week blocks</strong>
-          <p>Foundation → Specific Prep → Power Realization. Built on block periodization.</p>
-        </div>
-      </li>
-      <li class="feature-item">
-        <div class="feature-icon">02</div>
-        <div class="feature-text">
-          <strong>Six-block session architecture every session</strong>
-          <p>RAMP · Primer · Power · Strength · Energy Systems · Cool-Down. Structured for transfer.</p>
-        </div>
-      </li>
-      <li class="feature-item">
-        <div class="feature-icon">03</div>
-        <div class="feature-text">
-          <strong>Reactive plyometrics, max-velocity flying sprints, hill sprints, contrast/complex training</strong>
-          <p>The full elite toolkit, made executable with bodyweight + bands.</p>
-        </div>
-      </li>
-      <li class="feature-item">
-        <div class="feature-icon">04</div>
-        <div class="feature-text">
-          <strong>8-test combine battery including 30m fly sprint and RSI</strong>
-          <p>Reactive strength index. Track measurable progress every 4 weeks.</p>
-        </div>
-      </li>
-      <li class="feature-item">
-        <div class="feature-icon">05</div>
-        <div class="feature-text">
-          <strong>Dedicated AGE SCALING page with three columns</strong>
-          <p>19-25 high tolerance · 26-32 moderate · 33-39 managed loading. 9 specific modifications.</p>
-        </div>
-      </li>
-      <li class="feature-item">
-        <div class="feature-icon">06</div>
-        <div class="feature-text">
-          <strong>The hockey-specific non-negotiables</strong>
-          <p>Adductor work twice weekly · single-leg ≥40% lower-body volume · rotational power every week · anti-rotation core every session.</p>
-        </div>
-      </li>
-      <li class="feature-item">
-        <div class="feature-icon">07</div>
-        <div class="feature-text">
-          <strong>Recovery, mindset, &amp; lifestyle protocols</strong>
-          <p>Because at 30+, recovery is half the program. Sleep, stress, training-life balance.</p>
-        </div>
-      </li>
-      <li class="feature-item">
-        <div class="feature-icon">08</div>
-        <div class="feature-text">
-          <strong>Full exercise glossary, progression/regression library</strong>
-          <p>Every exercise documented with options to match your level on any given day.</p>
-        </div>
-      </li>
-    </ul>
-
-    <div class="divider"></div>
-
-    <p class="intro-text"><strong>Realistic expected gains across twelve weeks:</strong></p>
-    <p class="intro-text">4-8 cm vertical jump · 15-25 cm broad jump · 0.10-0.25 sec on 10m sprint · 0.05-0.15 sec on 30m fly · 15-25% RSI gain · measurably more powerful, more durable, harder to play against.</p>
-    <p class="intro-text">If you're 33+, <strong>read the AGE SCALING page before Week 1</strong>. It's the difference between training smart and grinding yourself into the ground.</p>
-
-    <div class="meta-box">
-      <div class="meta-row"><span class="meta-row-label">Format</span><span class="meta-row-value">48-page PDF</span></div>
-      <div class="meta-row"><span class="meta-row-label">Delivery</span><span class="meta-row-value">Instant download</span></div>
-      <div class="meta-row"><span class="meta-row-label">Compatibility</span><span class="meta-row-value">Print or any device</span></div>
-      <div class="meta-row"><span class="meta-row-label">Support</span><span class="meta-row-value">Direct email to coach</span></div>
-      <div class="meta-row"><span class="meta-row-label">Author</span><span class="meta-row-value">Coach David Ciboch</span></div>
-      <div class="meta-row"><span class="meta-row-label">Credentials</span><span class="meta-row-value">M.Ed. Sport Science</span></div>
+<!-- ===== WHAT'S INSIDE ===== -->
+<section class="sec inside">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num serif">01 — What's Inside</div>
+      <h2 class="sec-title">Everything you need to <em>get faster.</em></h2>
+      <p class="sec-lead">A complete, coach-built block of off-ice speed and power — written for a trained 19–39 player, not a beginner.</p>
     </div>
-  </div>
-</section>
-
-<section class="closing">
-  <div class="closing-inner">
-    <p class="closing-quote">"You can still train like a pro at 35. You just need a program that knows you're 35."</p>
-    <button class="closing-cta" onclick="openModal()">
-      Reserve Your Spot
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-    </button>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="footer-inner">
-    <a href="index.html" class="footer-back">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-      Back to Elite Hockey Drills
-    </a>
-    <p>© 2025 Elite Hockey Drills · Built by Coach David Ciboch · M.Ed. Sport Science · National Team Coach</p>
-  </div>
-</footer>
-
-<!-- RESERVATION MODAL -->
-<div class="modal" id="reserveModal" onclick="if(event.target===this)closeModal()">
-  <div class="modal-card">
-    <button class="modal-close" onclick="closeModal()">×</button>
-    <div id="modalForm">
-      <span class="modal-badge">Launching Soon</span>
-      <h3 class="modal-h">Reserve <em>your spot.</em></h3>
-      <p class="modal-text">Enter your email and we'll notify you <strong>the moment this program is live</strong>. Founding members get first access at the $49 price before it goes to $79.</p>
-      <form onsubmit="reserveSubmit(event)">
-        <input type="email" required placeholder="Your email address" class="modal-input" id="reserveEmail" />
-        <button type="submit" class="modal-btn">Reserve My Spot →</button>
-      </form>
-      <p class="modal-note">No spam · No card needed · Founding member benefits guaranteed</p>
-    </div>
-    <div id="modalSuccess" style="display:none;">
-      <div class="modal-success">
-        <div class="modal-success-icon">✓</div>
-        <h3>You're on the list.</h3>
-        <p>We'll email you the moment this program is live. Founding member pricing is yours.</p>
+    <div class="inside-grid" data-stagger>
+      <div class="inside-card reveal">
+        <div class="inside-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></div>
+        <h3>32 Coach-Built Sessions</h3>
+        <p>Four sessions a week for eight weeks, each 60–75 minutes. Every session runs the same six-block architecture — just run them in order.</p>
+      </div>
+      <div class="inside-card reveal">
+        <div class="inside-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        <h3>Video for Every Exercise</h3>
+        <p>No guessing what a move looks like. Every single exercise links to a clean demo video you can copy in seconds.</p>
+      </div>
+      <div class="inside-card reveal">
+        <div class="inside-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 4-5"/></svg></div>
+        <h3>6 Combine Tests</h3>
+        <p>Six measurable, pro-style combine tests — a real number to beat at Week 1, 4 and 8. No guesswork, just proof.</p>
+      </div>
+      <div class="inside-card reveal">
+        <div class="inside-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4v16M17 4v16M3 8h4M17 8h4M3 16h4M17 16h4"/></svg></div>
+        <h3>Easier &amp; Harder Scaling</h3>
+        <p>Every move comes with a simpler version and a harder version — so you can match the intent to the day, fresh or fatigued.</p>
+      </div>
+      <div class="inside-card reveal">
+        <div class="inside-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Built-In Warm-Up</h3>
+        <p>Every session opens with a structured warm-up that primes your nervous system and joints — so the fast, powerful work is actually fast and powerful.</p>
+      </div>
+      <div class="inside-card reveal">
+        <div class="inside-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+        <h3>Full Glossary &amp; Notes</h3>
+        <p>Plain-English coaching notes and the science behind every block — so you know exactly what you're training, and why.</p>
       </div>
     </div>
   </div>
+</section>
+
+<!-- ===== JOURNEY ===== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num serif">02 — The Plan</div>
+      <h2 class="sec-title">The 8-week <em>journey.</em></h2>
+      <p class="sec-lead">Two four-week blocks — block periodization on the force–velocity curve. Volume climbs to a peak, then unloads, so you arrive at each test sharp, not buried.</p>
+    </div>
+    <div class="journey-blocks">
+      <div class="jb b1 reveal">
+        <div class="jb-top"><span class="jb-label">Block 1</span><span class="jb-weeks">Weeks 1–4</span></div>
+        <h3>Specific Prep</h3>
+        <p>Intensive plyometrics, banded contrast strength, resisted and hill acceleration, alactic capacity, and weekly rotational power. Volume builds Week 1→3, then Week 4 deloads and you re-test.</p>
+        <div class="jb-bar"><span></span></div>
+      </div>
+      <div class="jb b2 reveal">
+        <div class="jb-top"><span class="jb-label">Block 2</span><span class="jb-weeks">Weeks 5–8</span></div>
+        <h3>Power Realization</h3>
+        <p>Reactive and shock plyos, max-velocity sprinting, reactive change-of-direction, and shift-simulation conditioning. Volume builds Week 5→7, then Week 8 tapers into the final combine.</p>
+        <div class="jb-bar"><span></span></div>
+      </div>
+    </div>
+    <div class="journey-note reveal">
+      Power = force × velocity. Block 1 lifts the force end, Block 2 extends the velocity end — so your whole curve shifts up and to the right. More power in every stride, and every shot.
+    </div>
+    <div class="milestones reveal">
+      <div class="ms"><span class="ms-wk">Week 4</span><span class="ms-txt">Deload + mid-block test</span></div>
+      <div class="ms"><span class="ms-wk">Week 8</span><span class="ms-txt">Taper + final combine</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RHYTHM ===== -->
+<section class="sec rhythm">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num serif">03 — A Week</div>
+      <h2 class="sec-title">The weekly <em>rhythm.</em></h2>
+      <p class="sec-lead">Four sessions a week, with at least 48 hours between the two intensive lower-body days. The four days rotate focus so every quality gets trained — and nothing burns out.</p>
+    </div>
+    <div class="rhythm-grid" data-stagger>
+      <div class="rday reveal">
+        <div class="rday-n serif">Day 1</div>
+        <h3>Lower-Body Power</h3>
+        <p>Vertical, linear, and posterior-chain power — the explosive base of every stride and first step.</p>
+      </div>
+      <div class="rday reveal">
+        <div class="rday-n serif">Day 2</div>
+        <h3>Upper-Body Power</h3>
+        <p>Push, pull, and anti-rotation core — upper-body power and the trunk that transfers it to the ice.</p>
+      </div>
+      <div class="rday reveal">
+        <div class="rday-n serif">Day 3</div>
+        <h3>Lateral Power</h3>
+        <p>Speed, agility, and adductor focus — the edges, cuts, and lateral explosiveness that beat defenders.</p>
+      </div>
+      <div class="rday reveal">
+        <div class="rday-n serif">Day 4</div>
+        <h3>Full-Body Power + Energy</h3>
+        <p>A lower-CNS, sustainable fourth day — full-body power plus the energy work that holds up late in games.</p>
+      </div>
+    </div>
+    <div class="rhythm-rest reveal">At least 48 hours sits between the two heavy lower-body days — power is built on quality, and quality needs recovery.</div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num serif">04 — Proof</div>
+      <h2 class="sec-title">Progress you can <em>measure.</em></h2>
+      <p class="sec-lead">Six measurable combine tests — every one gives you a number to beat. Re-test at Week 1, 4 and 8. Small on paper, large on the ice.</p>
+    </div>
+    <div class="skills-grid" data-stagger>
+      <div class="skill reveal">
+        <div class="skill-top"><span class="skill-n">01</span><span class="skill-gain">+3–6 cm</span></div>
+        <h3>Vertical Jump — CMJ</h3>
+        <div class="skill-q">Lower-body power</div>
+      </div>
+      <div class="skill reveal">
+        <div class="skill-top"><span class="skill-n">02</span><span class="skill-gain">+8–15 cm</span></div>
+        <h3>Broad Jump</h3>
+        <div class="skill-q">Horizontal power</div>
+      </div>
+      <div class="skill reveal">
+        <div class="skill-top"><span class="skill-n">03</span><span class="skill-gain">−0.03 to −0.08 s</span></div>
+        <h3>10m Sprint</h3>
+        <div class="skill-q">Acceleration</div>
+      </div>
+      <div class="skill reveal">
+        <div class="skill-top"><span class="skill-n">04</span><span class="skill-gain">−0.04 to −0.10 s</span></div>
+        <h3>30m Fly Sprint</h3>
+        <div class="skill-q">Maximum velocity</div>
+      </div>
+      <div class="skill reveal">
+        <div class="skill-top"><span class="skill-n">05</span><span class="skill-gain">−0.10 to −0.20 s</span></div>
+        <h3>5-10-5 Pro-Agility</h3>
+        <div class="skill-q">Change of direction</div>
+      </div>
+      <div class="skill reveal">
+        <div class="skill-top"><span class="skill-n">06</span><span class="skill-gain">+10–25 s/side</span></div>
+        <h3>Copenhagen Plank</h3>
+        <div class="skill-q">Adductor durability</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="sec testi">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num serif">05 — Players</div>
+      <h2 class="sec-title">Trusted by serious <em>players.</em></h2>
+      <p class="sec-lead">From trained players who wanted real, testable speed and power — with nothing but bands and bodyweight.</p>
+    </div>
+    <div class="testi-grid" data-stagger>
+      <div class="tcard reveal">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-quote">I'm 31 and faster than I was at 25. My CMJ and 10m both moved in eight weeks — and I did the whole thing with bands in my basement.</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">M</div>
+          <div><div class="tcard-name">Marcus T.</div><div class="tcard-role">Beer-league · ex-junior</div></div>
+        </div>
+      </div>
+      <div class="tcard reveal">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-quote">The science is actually explained, so I trust it. My first step is back, and my groin finally holds up a full game. This is the off-ice work I was missing.</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">D</div>
+          <div><div class="tcard-name">Dan P.</div><div class="tcard-role">Semi-pro player</div></div>
+        </div>
+      </div>
+      <div class="tcard reveal">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-quote">No barbell, no gym, real results. My 5-10-5 and top speed both improved — exactly the speed and power work my game needed, and I can do it anywhere.</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">A</div>
+          <div><div class="tcard-name">Alex F.</div><div class="tcard-role">Adult AAA player</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== KIT + RULES ===== -->
+<section class="sec split">
+  <div class="wrap split-grid">
+    <div class="reveal">
+      <div class="sec-num serif" style="margin-bottom:10px;">06 — The Kit</div>
+      <h2 class="sec-title" style="margin-bottom:18px;">No barbell. <em>No gym.</em></h2>
+      <p class="sec-lead" style="margin-bottom:4px;">Deliberately minimal. Variable band tension plus contrast methods is a genuinely good way to train power — a design choice, not a compromise.</p>
+      <ul class="kit-list">
+        <li>Resistance bands (variable tension)</li>
+        <li>Just your bodyweight</li>
+        <li>A wall &amp; some space</li>
+        <li>An open stretch for sprints</li>
+      </ul>
+      <p class="kit-note">No barbells, no plates, no gym — it goes anywhere. And it pairs cleanly with any barbell strength work you already do.</p>
+    </div>
+    <div class="reveal">
+      <div class="sec-num serif" style="margin-bottom:10px;">07 — How It Trains</div>
+      <h2 class="sec-title" style="margin-bottom:18px;">Built to <em>peak.</em></h2>
+      <div class="rules-stack">
+        <div class="rule">
+          <span class="rule-n">01</span>
+          <p><b>Force, then velocity.</b> Block 1 builds the strength end of your power; Block 2 turns it into speed. That's block periodization on the force–velocity curve — the right adaptation, in the right order.</p>
+        </div>
+        <div class="rule">
+          <span class="rule-n">02</span>
+          <p><b>Peak, then unload.</b> Volume climbs for three weeks, then deliberately backs off. Weeks 4 and 8 deload so you arrive at every test sharp and explosive — not buried under fatigue.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="sec faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num serif">08 — Questions</div>
+      <h2 class="sec-title">Good to <em>know.</em></h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)"><span>Is this a beginner program?</span><span class="faq-ico"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">No. It assumes you already train and skate — there's no learn-to-lift hand-holding. It's a focused speed-and-power block for a trained 19–39 athlete. Easier and harder scaling is built in, but the intent is high.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)"><span>Do I need a gym or weights?</span><span class="faq-ico"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">No. Bands and your bodyweight only — no barbells, no plates, no gym. It goes anywhere: home, garage, or a field. The sprint tests just need a longer open stretch. It also pairs cleanly with any barbell strength work you already do.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)"><span>How is the program delivered?</span><span class="faq-ico"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">It's a clean, interactive web program you open on any phone, tablet, or laptop — with a demo video built into every exercise. No PDF to lose, no app to install. Buy once and it's yours forever.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)"><span>How much time does each session take?</span><span class="faq-ico"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">About 60–75 minutes, four times a week. Every session runs the same six-block architecture, warm-up included. Run them in order; the plan does the thinking for you.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)"><span>Will it actually make me faster?</span><span class="faq-ico"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Trained with intent, yes — real, testable change: a few centimetres on your jumps, hundredths off your sprints, a sharper 5-10-5, and a groin that holds longer. Small on paper, large on the ice. It's a sharpening, not a transformation — the six combine tests prove it.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)"><span>What if it's not the right fit?</span><span class="faq-ico"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">You're covered by a 30-day money-back guarantee. Try it, run the first sessions, and if it isn't right for you, just email us and we'll refund you — no hassle.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final">
+  <div class="final-glow"></div>
+  <div class="wrap">
+    <div class="final-panel reveal">
+      <span class="final-eyebrow">Founding Launch Price · Limited</span>
+      <h2 class="final-h2 display">Faster. More <em>powerful.</em></h2>
+      <p class="final-sub">Eight weeks of speed and power for a player who already trains — measurable on the ice, with nothing but bands and bodyweight.</p>
+      <div class="final-price-row"><span class="fp-was">$159</span><span class="fp-now">$79</span></div>
+      <div class="fp-meta">One-time · yours forever</div>
+      <!-- BUY BUTTON · wired to /buy (Stripe). NOTE: Stripe price is currently $49 — update to $79 before launch -->
+      <a href="/buy" class="btn btn-buy">
+        <span class="lbl">Get POWER &amp; SPEED
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <div class="final-trust">
+        <span>Instant access</span>
+        <span>Works on any device</span>
+        <span>30-day money-back</span>
+      </div>
+      <div class="final-byline">Programmed by <b>Coach David Ciboch</b> — M.Ed. Sport Science · National-Team S&amp;C</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <a class="footer-brand" href="index.html"><span class="dot"></span>ELITE HOCKEY DRILLS</a>
+    <div class="footer-links">
+      <a href="index.html#tiers">All Programs</a>
+      <a href="index.html#about">Coach</a>
+      <a href="library.html">Library</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="mailto:elitehockeydrills@gmail.com">Contact</a>
+    </div>
+    <div class="footer-copy">© 2025 Elite Hockey Drills. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- ===== MOBILE BUY BAR ===== -->
+<div class="buybar" id="buybar">
+  <div class="buybar-price"><b>$79</b><s>was $159</s></div>
+  <!-- BUY BUTTON · wired to /buy (Stripe). NOTE: Stripe price is currently $49 — update to $79 before launch -->
+  <a href="/buy" class="btn btn-buy"><span class="lbl">Get the Program</span></a>
 </div>
 
 <script>
-function openModal(){
-  document.getElementById('reserveModal').classList.add('open');
-  document.body.style.overflow='hidden';
-}
-function closeModal(){
-  document.getElementById('reserveModal').classList.remove('open');
-  document.body.style.overflow='';
-  setTimeout(()=>{
-    document.getElementById('modalForm').style.display='block';
-    document.getElementById('modalSuccess').style.display='none';
-  }, 300);
-}
-function reserveSubmit(e){
-  e.preventDefault();
-  const email = document.getElementById('reserveEmail').value;
-  console.log('Reservation: ages 19-39 program', email);
-  document.getElementById('modalForm').style.display='none';
-  document.getElementById('modalSuccess').style.display='block';
-  setTimeout(()=>{
-    closeModal();
-    e.target.reset();
-  }, 3500);
-}
-document.addEventListener('keydown',(e)=>{
-  if(e.key==='Escape')closeModal();
+const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const nav = document.getElementById('nav');
+const buybar = document.getElementById('buybar');
+const scrollbar = document.getElementById('scrollbar');
+
+window.addEventListener('scroll', ()=>{
+  const y = window.scrollY;
+  const h = document.documentElement.scrollHeight - window.innerHeight;
+  scrollbar.style.width = (h>0 ? (y/h*100) : 0) + '%';
+  nav.classList.toggle('scrolled', y > 24);
+  buybar.classList.toggle('show', y > 660);
+}, {passive:true});
+
+/* stagger delays inside any [data-stagger] group */
+document.querySelectorAll('[data-stagger]').forEach(group=>{
+  Array.from(group.children).forEach((child,i)=>{
+    child.style.transitionDelay = (i*80) + 'ms';
+  });
 });
+
+/* scroll reveal */
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); }
+  });
+},{ threshold:.14, rootMargin:'0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* journey bars fill on view */
+const barIO = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{ if(entry.isIntersecting){ entry.target.classList.add('fill'); barIO.unobserve(entry.target); } });
+},{ threshold:.5 });
+document.querySelectorAll('.jb-bar').forEach(b => barIO.observe(b));
+
+/* count-up stats */
+function countUp(el){
+  const target = +el.dataset.count;
+  if(reduce){ el.textContent = target.toLocaleString('en-US'); return; }
+  const dur = 1500, start = performance.now();
+  function frame(now){
+    const p = Math.min((now-start)/dur, 1);
+    const eased = 1 - Math.pow(1-p, 3);
+    el.textContent = Math.round(target*eased).toLocaleString('en-US');
+    if(p<1) requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+const countIO = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{ if(entry.isIntersecting){ countUp(entry.target); countIO.unobserve(entry.target); } });
+},{ threshold:.6 });
+document.querySelectorAll('[data-count]').forEach(el => countIO.observe(el));
+
+/* cursor spotlight on cards */
+if(!reduce){
+  document.querySelectorAll('.inside-card').forEach(card=>{
+    card.addEventListener('mousemove', e=>{
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', ((e.clientX-r.left)/r.width*100)+'%');
+      card.style.setProperty('--my', ((e.clientY-r.top)/r.height*100)+'%');
+    });
+  });
+}
+
+/* countdown — founding price ends at midnight (resets daily) */
+(function(){
+  const h=document.querySelector('[data-cd="h"]'), m=document.querySelector('[data-cd="m"]'), s=document.querySelector('[data-cd="s"]');
+  if(!h) return;
+  const pad = n => String(n).padStart(2,'0');
+  function tick(){
+    const now=new Date();
+    const end=new Date(now); end.setHours(23,59,59,999);
+    let diff=Math.max(0, Math.floor((end-now)/1000));
+    h.textContent=pad(Math.floor(diff/3600)); diff%=3600;
+    m.textContent=pad(Math.floor(diff/60));
+    s.textContent=pad(diff%60);
+  }
+  tick(); setInterval(tick,1000);
+})();
+
+function toggleFaq(btn){ btn.closest('.faq-item').classList.toggle('open'); }
 </script>
 </body>
 </html>
