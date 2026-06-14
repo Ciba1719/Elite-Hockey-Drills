@@ -330,6 +330,69 @@ section{position:relative;z-index:2;}
   .btn-buy::after{display:none;}
   html{scroll-behavior:auto;}
 }
+/* ===== LOOK INSIDE — real interactive session (ported from program-15-18-office) ===== */
+.peek{--bg2:var(--bg-2);--line2:var(--line-2);--ink2:var(--ink-2);--ink3:var(--ink-3);--card2:var(--card-2);}
+.peek-stage{max-width:680px;margin:0 auto;}
+.peek-hint{display:flex;align-items:center;justify-content:center;gap:9px;margin-bottom:18px;font-size:12.5px;font-weight:600;letter-spacing:.04em;color:var(--ice);}
+.peek-hint svg{flex-shrink:0;}
+.peek .sec-lead strong{color:var(--ink);font-weight:600;}
+.peek .session{border:1px solid var(--line2);border-radius:16px;background:var(--card);overflow:hidden;box-shadow:0 30px 70px -32px rgba(0,0,0,.7);}
+.peek .session-week{display:none;}
+.peek .session-head{display:flex;align-items:center;gap:16px;padding:18px 22px;background:linear-gradient(90deg,var(--card2),var(--card));border-bottom:1px solid var(--line2);}
+.peek .sh-day{display:flex;flex-direction:column;line-height:1;}
+.peek .sh-day .display{font-size:30px;letter-spacing:.04em;color:var(--ice);}
+.peek .sh-dow{font-size:10px;font-weight:600;letter-spacing:.14em;color:var(--ink3);text-transform:uppercase;margin-top:3px;}
+.peek .sh-focus{border-left:1px solid var(--line2);padding-left:16px;}
+.peek .sh-focus-main{display:block;font-size:16px;font-weight:600;color:var(--ink);letter-spacing:.02em;}
+.peek .sh-focus-sub{display:block;font-size:12px;color:var(--ink2);margin-top:2px;}
+.peek .blockgroup{padding:14px 22px;border-bottom:1px solid var(--line);}
+.peek .blockgroup:last-child{border-bottom:none;}
+.peek .blockgroup.ref{background:var(--bg2);}
+.peek .bg-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:10px;}
+.peek .bg-name{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);display:flex;align-items:baseline;gap:8px;}
+.peek .bg-num{font-family:'Bebas Neue',sans-serif;font-size:16px;color:var(--ice);letter-spacing:.05em;}
+.peek .bg-mins{font-size:11px;font-weight:600;color:var(--ice);letter-spacing:.04em;white-space:nowrap;}
+.peek .ref-text{font-size:13px;color:var(--ink2);line-height:1.55;}
+.peek .exrow{padding:10px 0;border-top:1px dashed var(--line);}
+.peek .exrow:first-of-type{border-top:none;}
+.peek .ex-head{display:flex;align-items:baseline;gap:10px;margin-bottom:5px;}
+.peek .ex-idx{font-family:'Bebas Neue',sans-serif;font-size:14px;color:var(--ink3);letter-spacing:.04em;min-width:20px;}
+.peek a.ex{color:var(--ice);text-decoration:none;font-weight:500;border-bottom:1px dotted var(--ice-line);transition:color .18s,border-color .18s;white-space:normal;cursor:pointer;}
+.peek a.ex:hover{color:var(--warm);border-bottom-color:var(--warm);}
+.peek a.ex .lk{font-size:.7em;vertical-align:super;margin-left:.18em;opacity:.7;}
+.peek .exrow a.ex .lk{display:none;}
+.peek .exrow a.ex::after{content:'▾';font-size:.62em;margin-left:.4em;color:var(--ice);display:inline-block;transition:transform .22s;vertical-align:middle;}
+.peek .exrow.open a.ex::after{transform:rotate(180deg);}
+.peek .ex-specs{display:flex;flex-wrap:wrap;gap:6px 14px;padding-left:30px;align-items:baseline;}
+.peek .spec{font-size:13px;color:var(--ink2);}
+.peek .spec b{color:var(--ink);font-weight:600;font-size:14px;}
+.peek .spec.dim{color:var(--ink3);}
+.peek .spec.rest{font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--warm);}
+.peek .ex-note{font-size:12.5px;color:var(--ink3);line-height:1.5;padding-left:30px;margin-top:5px;font-style:italic;}
+.peek .ramp-grid{display:grid;grid-template-columns:1fr;gap:12px;}
+.peek .ramp-phase{display:flex;gap:18px;border:1px solid var(--line2);border-radius:14px;padding:18px 20px;background:var(--card2);align-items:flex-start;}
+.peek .rp-letter{font-size:52px;color:var(--ice);line-height:.8;min-width:42px;text-align:center;}
+.peek .rp-body{flex:1;min-width:0;}
+.peek .rp-h{display:flex;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap;}
+.peek .rp-h .display{font-size:26px;letter-spacing:.05em;color:var(--ink);}
+.peek .rp-sub{font-size:12px;font-weight:600;color:var(--ink3);letter-spacing:.1em;text-transform:uppercase;}
+.peek .rp-desc{font-size:13.5px;color:var(--ink2);margin-bottom:11px;line-height:1.55;}
+.peek .rp-list{list-style:none;display:flex;flex-direction:column;align-items:flex-start;gap:7px;padding:0;}
+.peek .rp-list li{font-size:14.5px;}
+.peek .rp-list a.ex .lk{font-size:0;vertical-align:middle;margin-left:.3em;}
+.peek .rp-list a.ex .lk::after{content:"▾";font-size:13px;line-height:1;display:inline-block;opacity:.65;color:var(--ice);}
+.peek .rp-list li.open a.ex .lk::after{content:"▴";opacity:1;}
+.peek .rp-list li.open .ex-panel{display:block;animation:exPanel .26s cubic-bezier(.2,.7,.2,1);}
+.peek .ex-panel{display:none;margin-top:12px;padding-top:13px;border-top:1px solid var(--line2);}
+.peek .exrow.open .ex-panel{display:block;animation:exPanel .26s cubic-bezier(.2,.7,.2,1);}
+@keyframes exPanel{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:none;}}
+.peek .ex-actions{display:flex;flex-wrap:wrap;gap:10px;}
+.peek .ex-btn{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:10px 18px;border-radius:100px;border:1px solid var(--line2);background:var(--bg2);color:var(--ink);cursor:pointer;transition:all .18s;text-decoration:none;}
+.peek .ex-btn.watch{background:var(--ice);color:#06141d;border-color:var(--ice);}
+.peek .ex-btn.watch:hover{box-shadow:0 0 18px rgba(93,180,229,.55);transform:translateY(-1px);}
+.peek .ex-btn.guide:hover{border-color:var(--warm);color:var(--warm);transform:translateY(-1px);}
+.peek .ex-video:not(:empty){margin-top:13px;}
+.peek .ex-video video{width:100%;max-width:560px;aspect-ratio:16/9;border:0;border-radius:12px;background:#000;box-shadow:0 14px 36px rgba(0,0,0,.5);object-fit:contain;}
 </style>
 </head>
 <body>
@@ -428,11 +491,200 @@ section{position:relative;z-index:2;}
   </div>
 </section>
 
+<!-- ===== LOOK INSIDE (real interactive session) ===== -->
+<section class="sec peek">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num serif">01 — Look Inside</div>
+      <h2 class="sec-title">See a <em>real session.</em></h2>
+      <p class="sec-lead">This is exactly what you get — one real session from BUILD &amp; COMPETE, pulled straight out of the program (Day 4 of Week 3, a peak week). Real demo videos, sets, reps, and coaching notes. Eight weeks of these, built for a 15–18 athlete training to compete.</p>
+    </div>
+    <div class="peek-stage reveal">
+      <div class="peek-hint">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Tap any exercise below to watch the demo
+      </div>
+      <article class="session">
+        <div class="session-week">BLOCK 1 · FOUNDATION &amp; SPEED · WEEK 3 · PEAK</div>
+        <div class="session-head">
+          <div class="sh-day"><span class="display">DAY 4</span><span class="sh-dow">Sat</span></div>
+          <div class="sh-focus"><span class="sh-focus-main">Max-Velocity &amp; Compete</span><span class="sh-focus-sub">Top speed · Contrast · Engine</span></div>
+        </div>
+        <div class="blockgroup">
+          <div class="bg-head"><span class="bg-name"><span class="bg-num">1</span> RAMP Warm-Up</span><span class="bg-mins">10 min</span></div>
+          <div class="ramp-grid">
+            <div class="ramp-phase">
+              <div class="rp-letter display">R</div>
+              <div class="rp-body">
+                <div class="rp-h"><span class="display">Raise</span><span class="rp-sub">~2 min</span></div>
+                <p class="rp-desc">Lift the heart rate, temperature, and blood flow.</p>
+                <ul class="rp-list">
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/jumping_jacks.mp4" href="https://elitehockeydrills.com/exercises/jumping-jacks" target="_blank" rel="noopener">Jumping Jacks<span class="lk" aria-hidden="true">↗</span></a></li>
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/butt_kicks.mp4" href="https://elitehockeydrills.com/exercises/butt-kicks" target="_blank" rel="noopener">Butt Kicks<span class="lk" aria-hidden="true">↗</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ramp-phase">
+              <div class="rp-letter display">A</div>
+              <div class="rp-body">
+                <div class="rp-h"><span class="display">Activate</span><span class="rp-sub">~2–3 min</span></div>
+                <p class="rp-desc">Switch on the glutes, groin, and deep core that steady every stride.</p>
+                <ul class="rp-list">
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_monster_walk.mp4" href="https://elitehockeydrills.com/exercises/banded-monster-walk" target="_blank" rel="noopener">Banded Monster Walk<span class="lk" aria-hidden="true">↗</span></a></li>
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_lateral_walk.mp4" href="https://elitehockeydrills.com/exercises/banded-lateral-walk" target="_blank" rel="noopener">Banded Lateral Walk<span class="lk" aria-hidden="true">↗</span></a></li>
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_clamshell.mp4" href="https://elitehockeydrills.com/exercises/banded-clamshell" target="_blank" rel="noopener">Banded Clamshell<span class="lk" aria-hidden="true">↗</span></a></li>
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/adductor_rocker.mp4" href="https://elitehockeydrills.com/exercises/adductor-rocker" target="_blank" rel="noopener">Adductor Rocker<span class="lk" aria-hidden="true">↗</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ramp-phase">
+              <div class="rp-letter display">M</div>
+              <div class="rp-body">
+                <div class="rp-h"><span class="display">Mobilize</span><span class="rp-sub">~2–3 min</span></div>
+                <p class="rp-desc">Open the hips, groin, ankles, and upper back through the ranges skating demands.</p>
+                <ul class="rp-list">
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/spider_lunge_with_rotation.mp4" href="https://elitehockeydrills.com/exercises/spider-lunge-with-rotation" target="_blank" rel="noopener">Spider Lunge with Rotation<span class="lk" aria-hidden="true">↗</span></a></li>
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/90_90_hip_switch.mp4" href="https://elitehockeydrills.com/exercises/90-90-hip-switch" target="_blank" rel="noopener">90/90 Hip Switch<span class="lk" aria-hidden="true">↗</span></a></li>
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/t_spine_rotation.mp4" href="https://elitehockeydrills.com/exercises/t-spine-rotation" target="_blank" rel="noopener">T-Spine Rotation<span class="lk" aria-hidden="true">↗</span></a></li>
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/ankle_dorsiflexion_wall.mp4" href="https://elitehockeydrills.com/exercises/ankle-dorsiflexion-wall" target="_blank" rel="noopener">Ankle Dorsiflexion (Wall)<span class="lk" aria-hidden="true">↗</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ramp-phase">
+              <div class="rp-letter display">P</div>
+              <div class="rp-body">
+                <div class="rp-h"><span class="display">Prime</span><span class="rp-sub">~2 min</span></div>
+                <p class="rp-desc">Wake up fast, coordinated movement with a few crisp, near-maximal efforts.</p>
+                <ul class="rp-list">
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/a_skip_in_place.mp4" href="https://elitehockeydrills.com/exercises/a-skip-in-place" target="_blank" rel="noopener">A-Skip in Place<span class="lk" aria-hidden="true">↗</span></a></li>
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/lateral_squat_shift.mp4" href="https://elitehockeydrills.com/exercises/lateral-squat-shift" target="_blank" rel="noopener">Lateral Squat Shift<span class="lk" aria-hidden="true">↗</span></a></li>
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/inchworm_to_push_up.mp4" href="https://elitehockeydrills.com/exercises/inchworm-to-push-up" target="_blank" rel="noopener">Inchworm to Push-Up<span class="lk" aria-hidden="true">↗</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blockgroup">
+          <div class="bg-head"><span class="bg-name"><span class="bg-num">2</span> Speed &amp; Power</span><span class="bg-mins">14–18 min</span></div>
+          <div class="exrow">
+            <div class="ex-head">
+              <span class="ex-idx">01</span>
+              <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/30m_fly_sprint.mp4" href="https://elitehockeydrills.com/exercises/30m-fly-sprint" target="_blank" rel="noopener">30m Fly Sprint<span class="lk" aria-hidden="true">↗</span></a>
+            </div>
+            <div class="ex-specs">
+              <span class="spec"><b>3×30m</b></span>
+              <span class="spec dim">top speed</span>
+              <span class="spec rest">REST 2–3 min</span>
+            </div>
+            <div class="ex-note">Long run-in, then hold top speed through 30m. Tall, relaxed, fast turnover.</div>
+          </div>
+          <div class="exrow">
+            <div class="ex-head">
+              <span class="ex-idx">02</span>
+              <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/contrast_jump.mp4" href="https://elitehockeydrills.com/exercises/contrast-jump" target="_blank" rel="noopener">Contrast Jump<span class="lk" aria-hidden="true">↗</span></a>
+            </div>
+            <div class="ex-specs">
+              <span class="spec"><b>4 sets · 3+3</b></span>
+              <span class="spec dim">X · heavy then light</span>
+              <span class="spec rest">REST 2 min</span>
+            </div>
+            <div class="ex-note">A few banded jumps, short rest, then free jumps at max intent. Feel the spring.</div>
+          </div>
+        </div>
+        <div class="blockgroup">
+          <div class="bg-head"><span class="bg-name"><span class="bg-num">3</span> Main Work</span><span class="bg-mins">22–28 min</span></div>
+          <div class="exrow">
+            <div class="ex-head">
+              <span class="ex-idx">01</span>
+              <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/db_thruster.mp4" href="https://elitehockeydrills.com/exercises/db-thruster" target="_blank" rel="noopener">DB Thruster<span class="lk" aria-hidden="true">↗</span></a>
+            </div>
+            <div class="ex-specs">
+              <span class="spec"><b>3×8</b></span>
+              <span class="spec dim">X · drive</span>
+              <span class="spec rest">REST 75s</span>
+            </div>
+            <div class="ex-note">Drive the legs and press in one chain. Strong, unbroken, upright.</div>
+          </div>
+          <div class="exrow">
+            <div class="ex-head">
+              <span class="ex-idx">02</span>
+              <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/sl_db_rdl.mp4" href="https://elitehockeydrills.com/exercises/sl-db-rdl" target="_blank" rel="noopener">SL DB RDL<span class="lk" aria-hidden="true">↗</span></a>
+            </div>
+            <div class="ex-specs">
+              <span class="spec"><b>3×6/side</b></span>
+              <span class="spec dim">3011 · heavy</span>
+              <span class="spec rest">REST 60s</span>
+            </div>
+            <div class="ex-note">Heavier one-leg hinge, flat back, balanced. Square hips, slow control.</div>
+          </div>
+          <div class="exrow">
+            <div class="ex-head">
+              <span class="ex-idx">03</span>
+              <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/pallof_march.mp4" href="https://elitehockeydrills.com/exercises/pallof-march" target="_blank" rel="noopener">Pallof March<span class="lk" aria-hidden="true">↗</span></a>
+            </div>
+            <div class="ex-specs">
+              <span class="spec"><b>3×8/side</b></span>
+              <span class="spec dim">brace</span>
+              <span class="spec rest">REST 40s</span>
+            </div>
+            <div class="ex-note">March tall against the band, trunk locked, no twist.</div>
+          </div>
+          <div class="exrow">
+            <div class="ex-head">
+              <span class="ex-idx">04</span>
+              <a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/farmer_suitcase_complex.mp4" href="https://elitehockeydrills.com/exercises/farmer-suitcase-complex" target="_blank" rel="noopener">Farmer + Suitcase Complex<span class="lk" aria-hidden="true">↗</span></a>
+            </div>
+            <div class="ex-specs">
+              <span class="spec"><b>2 rounds</b></span>
+              <span class="spec dim">tall · loaded</span>
+              <span class="spec rest">REST 60s</span>
+            </div>
+            <div class="ex-note">Farmer then single-side carry without stopping. Stay tall and braced throughout.</div>
+          </div>
+        </div>
+        <div class="blockgroup">
+          <div class="bg-head"><span class="bg-name"><span class="bg-num">4</span> Compete &amp; Finish</span><span class="bg-mins">8–12 min</span></div>
+          <div class="exrow">
+            <div class="ex-head">
+              <span class="ex-idx">01</span>
+              <a class="ex" href="https://elitehockeydrills.com/exercises/repeat-efforts-shift-simulation" target="_blank" rel="noopener">Repeat Efforts — Shift Simulation<span class="lk" aria-hidden="true">↗</span></a>
+            </div>
+            <div class="ex-specs">
+              <span class="spec"><b>5×30s</b></span>
+              <span class="spec dim">shift</span>
+              <span class="spec rest">REST 50s</span>
+            </div>
+            <div class="ex-note">Shift-length bursts on short rest. Train to repeat your power like a real shift.</div>
+          </div>
+        </div>
+        <div class="blockgroup">
+          <div class="bg-head"><span class="bg-name"><span class="bg-num">5</span> Cool-Down</span><span class="bg-mins">4–6 min</span></div>
+          <div class="ramp-grid">
+            <div class="ramp-phase">
+              <div class="rp-letter display">C</div>
+              <div class="rp-body">
+                <div class="rp-h"><span class="display">Cool-Down</span><span class="rp-sub">~4–6 min</span></div>
+                <p class="rp-desc">Easy, unhurried stretches — slow the breath and let the heart rate settle.</p>
+                <ul class="rp-list">
+                  <li><a class="ex" href="https://elitehockeydrills.com/exercises/slow-walk-with-nose-breathing" target="_blank" rel="noopener">Slow Walk with Nose Breathing<span class="lk" aria-hidden="true">↗</span></a></li>
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/child_s_pose_with_breath.mp4" href="https://elitehockeydrills.com/exercises/child-s-pose-with-breath" target="_blank" rel="noopener">Child's Pose with Breath<span class="lk" aria-hidden="true">↗</span></a></li>
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/supine_spinal_twist.mp4" href="https://elitehockeydrills.com/exercises/supine-spinal-twist" target="_blank" rel="noopener">Supine Spinal Twist<span class="lk" aria-hidden="true">↗</span></a></li>
+                  <li><a class="ex" data-video="https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/hip_groin_flow.mp4" href="https://elitehockeydrills.com/exercises/hip-groin-flow" target="_blank" rel="noopener">Hip / Groin Flow<span class="lk" aria-hidden="true">↗</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- ===== WHAT'S INSIDE ===== -->
 <section class="sec inside">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-num serif">01 — What's Inside</div>
+      <div class="sec-num serif">02 — What's Inside</div>
       <h2 class="sec-title">Everything you need to <em>get faster.</em></h2>
       <p class="sec-lead">A complete, coach-built block of off-ice speed, power, and conditioning — written for a serious 15–18 player, not a generic gym template.</p>
     </div>
@@ -475,7 +727,7 @@ section{position:relative;z-index:2;}
 <section class="sec">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-num serif">02 — The Plan</div>
+      <div class="sec-num serif">03 — The Plan</div>
       <h2 class="sec-title">The 8-week <em>journey.</em></h2>
       <p class="sec-lead">Two four-week blocks. Intensity climbs to a peak, then unloads — so you arrive at each checkpoint sharp and fast, not buried.</p>
     </div>
@@ -507,7 +759,7 @@ section{position:relative;z-index:2;}
 <section class="sec rhythm">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-num serif">03 — A Week</div>
+      <div class="sec-num serif">04 — A Week</div>
       <h2 class="sec-title">The weekly <em>rhythm.</em></h2>
       <p class="sec-lead">Four sessions a week. The four days rotate focus — straight-line speed, upper &amp; core, lateral power, and the engine — so the whole athlete gets built, with nothing missed.</p>
     </div>
@@ -541,7 +793,7 @@ section{position:relative;z-index:2;}
 <section class="sec">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-num serif">04 — Proof</div>
+      <div class="sec-num serif">05 — Proof</div>
       <h2 class="sec-title">Progress you can <em>measure.</em></h2>
       <p class="sec-lead">Five simple tests — every one gives you a number to beat. Do the same five, in the same order, three times: Week 1, Week 4, and Week 8. No gym needed.</p>
     </div>
@@ -583,7 +835,7 @@ section{position:relative;z-index:2;}
 <section class="sec testi">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-num serif">05 — Players</div>
+      <div class="sec-num serif">06 — Players</div>
       <h2 class="sec-title">Trusted by serious <em>players.</em></h2>
       <p class="sec-lead">From players and parents who wanted real off-ice speed and power — built for hockey, not bro-gym filler.</p>
     </div>
@@ -620,12 +872,13 @@ section{position:relative;z-index:2;}
 <section class="sec split">
   <div class="wrap split-grid">
     <div class="reveal">
-      <div class="sec-num serif" style="margin-bottom:10px;">06 — The Kit</div>
+      <div class="sec-num serif" style="margin-bottom:10px;">07 — The Kit</div>
       <h2 class="sec-title" style="margin-bottom:18px;">No barbell. <em>Goes anywhere.</em></h2>
       <p class="sec-lead" style="margin-bottom:4px;">Minimal on purpose — this program goes anywhere. Bands, dumbbells, a box, and open space build a serious off-ice engine.</p>
       <ul class="kit-list">
         <li>Loop resistance bands</li>
         <li>Light–moderate dumbbells</li>
+        <li>Pull-up bar (optional)</li>
         <li>A low box or bench</li>
         <li>Space to move</li>
         <li>An open stretch for sprints</li>
@@ -633,7 +886,7 @@ section{position:relative;z-index:2;}
       <p class="kit-note">Done at home, in a garage, or at a field. This is your speed, power &amp; conditioning work — pair it with your barbell strength work when you can.</p>
     </div>
     <div class="reveal">
-      <div class="sec-num serif" style="margin-bottom:10px;">07 — How It Trains</div>
+      <div class="sec-num serif" style="margin-bottom:10px;">08 — How It Trains</div>
       <h2 class="sec-title" style="margin-bottom:18px;">Built to <em>peak.</em></h2>
       <div class="rules-stack">
         <div class="rule">
@@ -653,7 +906,7 @@ section{position:relative;z-index:2;}
 <section class="sec faq">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-num serif">08 — Questions</div>
+      <div class="sec-num serif">09 — Questions</div>
       <h2 class="sec-title">Good to <em>know.</em></h2>
     </div>
     <div class="faq-list reveal">
@@ -813,6 +1066,35 @@ if(!reduce){
 })();
 
 function toggleFaq(btn){ btn.closest('.faq-item').classList.toggle('open'); }
+/* look-inside: tap an exercise → inline Watch Video + Full Guide (mirrors the real program) */
+(function(){
+  const stage = document.querySelector('.peek');
+  if(!stage) return;
+  stage.addEventListener('click', function(e){
+    const a = e.target.closest('a.ex'); if(!a) return;
+    const host = a.closest('.exrow') || a.closest('.rp-list li'); if(!host) return;
+    e.preventDefault();
+    let panel = host.querySelector(':scope > .ex-panel');
+    if(!panel){
+      panel = document.createElement('div'); panel.className = 'ex-panel';
+      const vid = a.getAttribute('data-video'), guide = a.getAttribute('href');
+      let h = '<div class="ex-actions">';
+      if(vid) h += '<button type="button" class="ex-btn watch">▶ Watch Video</button>';
+      h += '<a class="ex-btn guide" href="'+guide+'" target="_blank" rel="noopener">Full Guide ↗</a></div><div class="ex-video"></div>';
+      panel.innerHTML = h;
+      host.appendChild(panel);
+      const w = panel.querySelector('.ex-btn.watch');
+      if(w) w.addEventListener('click', function(){
+        const box = panel.querySelector('.ex-video');
+        if(box.firstChild){ box.innerHTML = ''; w.innerHTML = '▶ Watch Video'; return; }
+        box.innerHTML = '<video class="ex-video-el" src="'+vid+'" controls autoplay playsinline preload="metadata"></video>';
+        w.innerHTML = '✕ Hide Video';
+      });
+    }
+    const open = host.classList.toggle('open');
+    if(!open){ const b = panel.querySelector('.ex-video'); if(b) b.innerHTML = ''; const ww = panel.querySelector('.ex-btn.watch'); if(ww) ww.innerHTML = '▶ Watch Video'; }
+  });
+})();
 </script>
 </body>
 </html>
