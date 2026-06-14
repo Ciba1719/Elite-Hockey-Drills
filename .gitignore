@@ -9,6 +9,14 @@ program.pdf
 program.data.js
 program.css
 fonts.css
+
+# The other 4 age-group deliverables — also paid, served only via /program after
+# payment (from Netlify Blobs). Must NOT ship as public static files.
+program-9-11-office.html
+program-12-14-office.html
+program-15-18-office.html
+program-40plus-office.html
+program-15-18-office.BACKUP.html
 build.js
 render-pdf.js
 embed-fonts.js

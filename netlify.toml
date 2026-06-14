@@ -41,3 +41,28 @@
   to = "/index.html"
   status = 404
   force = true
+
+# The other 4 paid deliverables — block public access (served only via /program).
+[[redirects]]
+  from = "/program-9-11-office.html"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/program-12-14-office.html"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/program-15-18-office.html"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/program-40plus-office.html"
+  to = "/index.html"
+  status = 404
+  force = true
