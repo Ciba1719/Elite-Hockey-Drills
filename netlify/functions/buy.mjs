@@ -7,7 +7,18 @@ import { stripe } from '../lib/paywall.mjs';
 
 export const config = { path: '/buy' };
 
-const page = (clientSecret, pk) => `<!doctype html><html lang="en"><head>
+// Format the real amount Stripe will charge (from the created session) so the
+// summary box can never show a stale, hardcoded price. `amount` is an integer in
+// the currency's smallest unit (e.g. cents / fils).
+function priceLabel(amount, currency) {
+  if (amount == null || !currency) return '';
+  const v = amount / 100;
+  const n = Number.isInteger(v) ? String(v) : v.toFixed(2);
+  const sym = { usd: '$', aed: 'AED ', eur: '€', gbp: '£', cad: 'CA$', aud: 'A$' }[currency.toLowerCase()];
+  return sym ? `${sym}${n}` : `${currency.toUpperCase()} ${n}`;
+}
+
+const page = (clientSecret, pk, priceText) => `<!doctype html><html lang="en"><head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="theme-color" content="#070708" />
@@ -39,7 +50,7 @@ body{min-height:100vh;background:#070708;color:#ECEDEF;font-family:'Inter Tight'
       <div class="eyebrow">Founding price · Ages 19–39</div>
       <h1>Power &amp; Speed</h1>
     </div>
-    <div class="price">$49<small>One-time · forever</small></div>
+    <div class="price">${priceText}<small>One-time · forever</small></div>
   </div>
   <div id="err" class="err">Couldn't load the payment form. Please refresh, or email elitehockeydrills@gmail.com.</div>
   <div id="checkout"></div>
@@ -74,7 +85,7 @@ export default async (req) => {
       return_url: `${origin}/welcome?session_id={CHECKOUT_SESSION_ID}`,
       allow_promotion_codes: 'true',
     });
-    return new Response(page(session.client_secret, pk), {
+    return new Response(page(session.client_secret, pk, priceLabel(session.amount_total, session.currency)), {
       status: 200,
       headers: {
         'Content-Type': 'text/html; charset=utf-8',
