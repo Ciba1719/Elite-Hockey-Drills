@@ -48,7 +48,7 @@ h1 em{font-family:'Instrument Serif',serif;font-style:italic;color:#5DB4E5;font-
 <div class="check">&#10003;</div>
 <div class="eyebrow">Payment confirmed</div>
 <h1>You're <em>in.</em></h1>
-<p class="lead">Welcome to <strong>Power &amp; Speed</strong> — your 12-week off-ice program. Let's get to work.</p>
+<p class="lead">Welcome to <strong>Power &amp; Speed</strong> — your 8-week off-ice program. Let's get to work.</p>
 <a class="cta" href="/program?t=${token}">Open my program &rarr;</a>
 ${e ? `<p class="tied">Your access is tied to <strong>${e}</strong> — that's your key.</p>` : ''}
 <div class="rules">
