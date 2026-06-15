@@ -68,7 +68,7 @@ export default async (req) => {
   try {
     const session = await stripe(process.env.STRIPE_SECRET_KEY, 'POST', 'checkout/sessions', {
       mode: 'payment',
-      ui_mode: 'embedded',
+      ui_mode: 'embedded_page', // Stripe renamed 'embedded' -> 'embedded_page' (2026-03-25.dahlia)
       'line_items[0][price]': process.env.STRIPE_PRICE_ID,
       'line_items[0][quantity]': '1',
       return_url: `${origin}/welcome?session_id={CHECKOUT_SESSION_ID}`,
