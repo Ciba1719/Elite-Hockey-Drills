@@ -1,9 +1,10 @@
-// GET /buy -> branded on-site checkout using Stripe Embedded Checkout.
+// GET /buy?p=<program> -> branded on-site checkout using Stripe Embedded Checkout.
 // Creates an *embedded* Checkout Session server-side and renders Stripe's payment
 // form INSIDE elitehockeydrills.com (no redirect to checkout.stripe.com). On a
 // successful payment Stripe returns the buyer to /welcome?session_id=... — the
 // existing access flow (cookie, /program, webhook, email, restore) is unchanged.
-import { stripe } from '../lib/paywall.mjs';
+// `?p=` selects which of the 5 age-group programs is bought (defaults to 19-39).
+import { stripe, getProgram, programById, programPriceId, SUPPORT_EMAIL } from '../lib/paywall.mjs';
 
 export const config = { path: '/buy' };
 
@@ -14,11 +15,11 @@ function priceLabel(amount, currency) {
   if (amount == null || !currency) return '';
   const v = amount / 100;
   const n = Number.isInteger(v) ? String(v) : v.toFixed(2);
-  const sym = { usd: '$', aed: 'AED ', eur: '€', gbp: '£', cad: 'CA$', aud: 'A$' }[currency.toLowerCase()];
-  return sym ? `${sym}${n}` : `${currency.toUpperCase()} ${n}`;
+  const sym = { usd: '$', aed: 'AED ', eur: '€', gbp: '£', cad: 'CA$', aud: 'A$' }[currency.toLowerCase()];
+  return sym ? `${sym}${n}` : `${currency.toUpperCase()} ${n}`;
 }
 
-const page = (clientSecret, pk, priceText) => `<!doctype html><html lang="en"><head>
+const page = (clientSecret, pk, priceText, prog) => `<!doctype html><html lang="en"><head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="theme-color" content="#070708" />
@@ -47,15 +48,15 @@ body{min-height:100vh;background:#070708;color:#ECEDEF;font-family:'Inter Tight'
   <div class="top"><a class="brand" href="/">ELITE HOCKEY DRILLS</a></div>
   <div class="summary">
     <div>
-      <div class="eyebrow">Founding price · Ages 19–39</div>
-      <h1>Power &amp; Speed</h1>
+      <div class="eyebrow">Founding price · Ages ${prog.age}</div>
+      <h1>${prog.name.replace(/&/g, '&amp;')}</h1>
     </div>
     <div class="price">${priceText}<small>One-time · forever</small></div>
   </div>
   <div id="err" class="err">Couldn't load the payment form. Please refresh, or email elitehockeydrills@gmail.com.</div>
   <div id="checkout"></div>
   <p class="secure">&#128274; Secure payment by <strong>Stripe</strong> · Apple Pay &amp; cards accepted</p>
-  <a class="back" href="/#tiers">&larr; Back to programs</a>
+  <a class="back" href="${prog.sales}">&larr; Back to program</a>
 </div>
 <script>
   (async () => {
@@ -73,19 +74,25 @@ body{min-height:100vh;background:#070708;color:#ECEDEF;font-family:'Inter Tight'
 </body></html>`;
 
 export default async (req) => {
-  const origin = new URL(req.url).origin;
+  const url = new URL(req.url);
+  const origin = url.origin;
+  const id = getProgram(url.searchParams.get('p'));
+  const prog = programById(id);
   const pk = process.env.STRIPE_PUBLISHABLE_KEY;
   if (!pk) return new Response('Checkout is not configured yet (missing STRIPE_PUBLISHABLE_KEY).', { status: 500 });
+  const priceId = programPriceId(id);
+  if (!priceId) return new Response(`Checkout for "${prog.name}" isn't set up yet (missing its Stripe price). Please email ${SUPPORT_EMAIL}.`, { status: 500 });
   try {
     const session = await stripe(process.env.STRIPE_SECRET_KEY, 'POST', 'checkout/sessions', {
       mode: 'payment',
       ui_mode: 'embedded_page', // Stripe renamed 'embedded' -> 'embedded_page' (2026-03-25.dahlia)
-      'line_items[0][price]': process.env.STRIPE_PRICE_ID,
+      'line_items[0][price]': priceId,
       'line_items[0][quantity]': '1',
+      'metadata[program]': id,
       return_url: `${origin}/welcome?session_id={CHECKOUT_SESSION_ID}`,
       allow_promotion_codes: 'true',
     });
-    return new Response(page(session.client_secret, pk, priceLabel(session.amount_total, session.currency)), {
+    return new Response(page(session.client_secret, pk, priceLabel(session.amount_total, session.currency), prog), {
       status: 200,
       headers: {
         'Content-Type': 'text/html; charset=utf-8',

@@ -4,8 +4,57 @@
 // (standard Web Request/Response; global `crypto`, `fetch`, `btoa`/`atob`).
 
 export const COOKIE_NAME = 'ehd_access';
-export const PROGRAM_KEY = 'program'; // object key in the Netlify Blobs "program" store
+export const PROGRAM_KEY = 'program'; // legacy/default object key in the Netlify Blobs "program" store
 const enc = new TextEncoder();
+
+// ---- Program catalog: all 5 age-group products, sold separately at $79 ----
+// `blob` = key in the Netlify Blobs "program" store; `priceEnv` = Netlify env var
+// holding that program's Stripe price id; `sales` = public sales page.
+export const DEFAULT_PROGRAM = '19-39';
+export const PROGRAMS = {
+  '9-11':   { name: 'Move & Play',      age: '9–11',  blob: 'program-9-11',   sales: '/program-9-11.html',   priceEnv: 'STRIPE_PRICE_9_11' },
+  '12-14':  { name: 'Develop & Drive',  age: '12–14', blob: 'program-12-14',  sales: '/program-12-14.html',  priceEnv: 'STRIPE_PRICE_12_14' },
+  '15-18':  { name: 'Build & Compete',  age: '15–18', blob: 'program-15-18',  sales: '/program-15-18.html',  priceEnv: 'STRIPE_PRICE_15_18' },
+  '19-39':  { name: 'Power & Speed',    age: '19–39', blob: 'program',        sales: '/program-19-39.html',  priceEnv: 'STRIPE_PRICE_19_39' },
+  '40plus': { name: 'Strong & Durable', age: '40+',   blob: 'program-40plus', sales: '/program-40-plus.html', priceEnv: 'STRIPE_PRICE_40PLUS' },
+};
+// Normalize any incoming ?p= value to a known program id (falls back to default).
+export function getProgram(id) { return PROGRAMS[id] ? id : DEFAULT_PROGRAM; }
+export function programById(id) { return PROGRAMS[getProgram(id)]; }
+// Stripe price id for a program. 19-39 falls back to the original STRIPE_PRICE_ID so
+// the already-live product keeps working until its dedicated $79 price is set.
+export function programPriceId(id) {
+  const key = getProgram(id);
+  return process.env[PROGRAMS[key].priceEnv] || (key === DEFAULT_PROGRAM ? process.env.STRIPE_PRICE_ID : undefined);
+}
+
+// ---- Per-program ownership (caller passes the Netlify Blobs "buyers" store) ----
+export async function recordPurchase(store, email, id, sid) {
+  await store.setJSON(`buyer:${email}:${getProgram(id)}`, { sid, program: getProgram(id), t: Date.now() });
+}
+export async function ownsProgram(store, email, id) {
+  if (!email) return false;
+  const key = getProgram(id);
+  if (await store.get(`buyer:${email}:${key}`)) return true;
+  // Honor the pre-multi-program record (stored at buyer:<email>) for 19-39.
+  if (key === DEFAULT_PROGRAM && (await store.get(`buyer:${email}`))) return true;
+  return false;
+}
+export async function ownedPrograms(store, email) {
+  if (!email) return [];
+  const owned = new Set();
+  try {
+    const { blobs } = await store.list({ prefix: `buyer:${email}` });
+    for (const b of blobs) {
+      if (b.key === `buyer:${email}`) owned.add(DEFAULT_PROGRAM); // legacy record
+      else if (b.key.startsWith(`buyer:${email}:`)) {
+        const id = b.key.slice(`buyer:${email}:`.length);
+        if (PROGRAMS[id]) owned.add(id);
+      }
+    }
+  } catch { /* list unavailable -> treat as none found */ }
+  return [...owned];
+}
 
 // ---- base64url ----
 export function b64url(bytes) {
@@ -102,7 +151,7 @@ const EMAIL_FROM = 'Elite Hockey Drills <access@elitehockeydrills.com>';
 const RESTORE_URL = 'https://elitehockeydrills.com/restore';
 const escHtml = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-function accessEmailHtml({ name, link }) {
+function accessEmailHtml({ name, link, programName = 'Power & Speed', programAge = '19–39' }) {
   const hi = name ? `, ${escHtml(name)}` : '';
   return `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
 <body style="margin:0;padding:0;background:#f4f4f5;">
@@ -110,7 +159,7 @@ function accessEmailHtml({ name, link }) {
 <tr><td align="center">
 <table role="presentation" width="480" cellpadding="0" cellspacing="0" style="max-width:480px;width:100%;background:#0E0E13;border:1px solid #25252E;border-radius:16px;">
 <tr><td style="padding:28px 32px 0;text-align:center;font-family:Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:3px;font-size:15px;color:#E8B777;">ELITE HOCKEY DRILLS</td></tr>
-<tr><td style="padding:22px 32px 0;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;color:#E8B777;text-transform:uppercase;">Power &amp; Speed &middot; Ages 19&ndash;39</td></tr>
+<tr><td style="padding:22px 32px 0;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;color:#E8B777;text-transform:uppercase;">${escHtml(programName)} &middot; Ages ${escHtml(programAge)}</td></tr>
 <tr><td style="padding:6px 32px 0;"><h1 style="margin:0 0 14px;font-family:Arial,Helvetica,sans-serif;font-size:25px;line-height:1.25;color:#ECEDEF;">Your program is ready &mdash; forever.</h1>
 <p style="margin:0 0 24px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.6;color:#C8CCD3;">Thanks for joining${hi}. Tap below to open your full 8-week off-ice program. <strong style="color:#ECEDEF;">Keep this email</strong> &mdash; this link is yours forever and works on any device, anytime.</p></td></tr>
 <tr><td align="center" style="padding:0 32px;"><a href="${link}" style="display:inline-block;background:#E8B777;color:#1A0F00;text-decoration:none;font-weight:700;font-size:16px;font-family:Arial,Helvetica,sans-serif;padding:15px 38px;border-radius:100px;">Open my program &rarr;</a></td></tr>
@@ -121,9 +170,9 @@ function accessEmailHtml({ name, link }) {
 </table></td></tr></table></body></html>`;
 }
 
-function accessEmailText({ link }) {
+function accessEmailText({ link, programName = 'Power & Speed' }) {
   return [
-    'Your Power & Speed program is ready — forever.',
+    `Your ${programName} program is ready — forever.`,
     '',
     'Open it here (keep this link — it works on any device, anytime):',
     link,
@@ -139,7 +188,7 @@ function accessEmailText({ link }) {
 // Best-effort transactional "your program, forever" email via Resend. Returns false
 // (without throwing) if email isn't configured yet or there is no recipient; throws
 // only on a genuine send failure so callers can log it without breaking their flow.
-export async function sendAccessEmail({ to, name, link }) {
+export async function sendAccessEmail({ to, name, link, programName = 'Power & Speed', programAge = '19–39' }) {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey || !to) return false;
   const res = await fetch('https://api.resend.com/emails', {
@@ -149,9 +198,9 @@ export async function sendAccessEmail({ to, name, link }) {
       from: EMAIL_FROM,
       to: [to],
       reply_to: SUPPORT_EMAIL,
-      subject: 'Your Power & Speed program — open it anytime',
-      html: accessEmailHtml({ name, link }),
-      text: accessEmailText({ link }),
+      subject: `Your ${programName} program — open it anytime`,
+      html: accessEmailHtml({ name, link, programName, programAge }),
+      text: accessEmailText({ link, programName }),
     }),
   });
   if (!res.ok) throw new Error(`Resend ${res.status}: ${await res.text().catch(() => '')}`);

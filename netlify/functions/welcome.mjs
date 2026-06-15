@@ -1,16 +1,17 @@
 // GET /welcome?session_id=... -> branded "you're in" confirmation after Stripe checkout.
-// Verifies the paid session, records the buyer, sets the access cookie on THIS 200
-// response (reliable on iOS Safari), and shows a button into the program plus the
-// "your email is your forever key" messaging.
+// Verifies the paid session, records the buyer for the program they purchased, sets the
+// access cookie on THIS 200 response (reliable on iOS Safari), and shows a button into
+// the program plus the "your email is your forever key" messaging.
 import { getStore } from '@netlify/blobs';
-import { stripe, makeToken, cookie, COOKIE_NAME } from '../lib/paywall.mjs';
+import { stripe, makeToken, cookie, COOKIE_NAME, getProgram, programById, recordPurchase } from '../lib/paywall.mjs';
 
 export const config = { path: '/welcome' };
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-const page = (email, token, emailed) => {
+const page = (email, token, id, emailed) => {
   const e = esc(email);
+  const prog = programById(id);
   return `<!doctype html><html lang="en"><head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
@@ -48,8 +49,8 @@ h1 em{font-family:'Instrument Serif',serif;font-style:italic;color:#5DB4E5;font-
 <div class="check">&#10003;</div>
 <div class="eyebrow">Payment confirmed</div>
 <h1>You're <em>in.</em></h1>
-<p class="lead">Welcome to <strong>Power &amp; Speed</strong> — your 8-week off-ice program. Let's get to work.</p>
-<a class="cta" href="/program?t=${token}">Open my program &rarr;</a>
+<p class="lead">Welcome to <strong>${esc(prog.name)}</strong> — your 8-week off-ice program for ages ${esc(prog.age)}. Let's get to work.</p>
+<a class="cta" href="/program?p=${id}&t=${token}">Open my program &rarr;</a>
 ${e ? `<p class="tied">Your access is tied to <strong>${e}</strong> — that's your key.</p>` : ''}
 <div class="rules">
 <div><span>&#8734;</span><span><strong>Yours forever.</strong> One purchase, lifetime access.</span></div>
@@ -72,10 +73,11 @@ export default async (req) => {
     if (session.payment_status !== 'paid') return Response.redirect(url.origin + '/#tiers', 302);
 
     const email = (session.customer_details?.email || '').trim().toLowerCase();
-    if (email) await getStore('buyers').setJSON('buyer:' + email, { sid, t: Date.now() });
+    const id = getProgram(session.metadata?.program);
+    if (email) await recordPurchase(getStore('buyers'), email, id, sid);
 
     const token = await makeToken(process.env.COOKIE_SECRET, email || 'buyer');
-    return new Response(page(email, token, !!process.env.RESEND_API_KEY), {
+    return new Response(page(email, token, id, !!process.env.RESEND_API_KEY), {
       status: 200,
       headers: {
         'Content-Type': 'text/html; charset=utf-8',

@@ -1,7 +1,8 @@
 // POST /api/webhook -> Stripe sends checkout.session.completed here.
-// Source of truth for "who paid" even if the buyer closes the tab before redirect.
+// Source of truth for "who paid" (even if the buyer closes the tab before redirect),
+// recorded per program, and the sole proactive sender of the "your program" email.
 import { getStore } from '@netlify/blobs';
-import { hmacHex, timingSafeEqual, makeToken, sendAccessEmail } from '../lib/paywall.mjs';
+import { hmacHex, timingSafeEqual, makeToken, sendAccessEmail, getProgram, programById, recordPurchase } from '../lib/paywall.mjs';
 
 export const config = { path: '/api/webhook' };
 
@@ -27,13 +28,21 @@ export default async (req) => {
     if (s.payment_status === 'paid') {
       const email = (s.customer_details?.email || '').trim().toLowerCase();
       if (email) {
-        await getStore('buyers').setJSON('buyer:' + email, { sid: s.id, t: Date.now() });
+        const id = getProgram(s.metadata?.program);
+        await recordPurchase(getStore('buyers'), email, id, s.id);
         // Send the "your program, forever" email. Best-effort: never let an email
         // failure 500 the webhook, or Stripe will retry and re-send.
         try {
           const origin = process.env.SITE_URL || new URL(req.url).origin;
           const token = await makeToken(process.env.COOKIE_SECRET, email, 60 * 60 * 24 * 365 * 10);
-          await sendAccessEmail({ to: email, name: s.customer_details?.name, link: `${origin}/program?t=${token}` });
+          const prog = programById(id);
+          await sendAccessEmail({
+            to: email,
+            name: s.customer_details?.name,
+            link: `${origin}/program?p=${id}&t=${token}`,
+            programName: prog.name,
+            programAge: prog.age,
+          });
         } catch (e) {
           console.error('access email failed:', e.message);
         }
