@@ -73,15 +73,58 @@ body{min-height:100vh;background:#070708;color:#ECEDEF;font-family:'Inter Tight'
 </script>
 </body></html>`;
 
+// Branded fallback shown whenever a checkout session can't be created (Stripe
+// outage, a mis-configured price, a missing key). The buyer sees a calm
+// "try again / email us" page instead of raw Stripe or internal config text,
+// and the real cause is written to the Netlify function logs for diagnosis.
+function errorResponse(prog) {
+  const html = `<!doctype html><html lang="en"><head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#070708" />
+<meta name="robots" content="noindex" />
+<title>Checkout — Elite Hockey Drills</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{-webkit-text-size-adjust:100%}
+body{min-height:100vh;display:flex;align-items:center;justify-content:center;background:#070708;color:#ECEDEF;font-family:'Inter Tight',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;padding:32px 22px;text-align:center}
+.glow{position:fixed;inset:0;background:radial-gradient(60% 50% at 50% 0%,rgba(232,183,119,.10),transparent 70%);pointer-events:none}
+.card{position:relative;max-width:440px}
+.brand{font-family:'Bebas Neue',sans-serif;letter-spacing:.14em;font-size:13px;color:#5A5F6B;text-decoration:none;display:block;margin-bottom:30px}
+h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:36px;line-height:1.04;letter-spacing:.01em;margin-bottom:16px}
+p{font-size:15px;color:#C8CCD3;margin-bottom:12px}
+.mail{color:#E8B777;text-decoration:none;font-weight:600}
+.back{display:inline-block;margin-top:24px;font-size:13.5px;color:#5DB4E5;text-decoration:none}
+</style></head><body><div class="glow"></div>
+<div class="card">
+  <a class="brand" href="/">ELITE HOCKEY DRILLS</a>
+  <h1>Checkout is taking a break</h1>
+  <p>We couldn't start your payment just now &mdash; this one's on us, not you. <strong>No charge was made.</strong></p>
+  <p>Please try again in a minute. If it keeps happening, email <a class="mail" href="mailto:${SUPPORT_EMAIL}">${SUPPORT_EMAIL}</a> and we'll get you in fast.</p>
+  <a class="back" href="${prog.sales}">&larr; Back to ${prog.name.replace(/&/g, '&amp;')}</a>
+</div>
+</body></html>`;
+  return new Response(html, {
+    status: 500,
+    headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'private, no-store' },
+  });
+}
+
 export default async (req) => {
   const url = new URL(req.url);
   const origin = url.origin;
   const id = getProgram(url.searchParams.get('p'));
   const prog = programById(id);
   const pk = process.env.STRIPE_PUBLISHABLE_KEY;
-  if (!pk) return new Response('Checkout is not configured yet (missing STRIPE_PUBLISHABLE_KEY).', { status: 500 });
+  if (!pk) {
+    console.error('[buy] STRIPE_PUBLISHABLE_KEY is not set');
+    return errorResponse(prog);
+  }
   const priceId = programPriceId(id);
-  if (!priceId) return new Response(`Checkout for "${prog.name}" isn't set up yet (missing its Stripe price). Please email ${SUPPORT_EMAIL}.`, { status: 500 });
+  if (!priceId) {
+    console.error(`[buy] no Stripe price configured for program ${id}`);
+    return errorResponse(prog);
+  }
   try {
     const session = await stripe(process.env.STRIPE_SECRET_KEY, 'POST', 'checkout/sessions', {
       mode: 'payment',
@@ -100,6 +143,7 @@ export default async (req) => {
       },
     });
   } catch (e) {
-    return new Response(`Checkout error: ${e.message}`, { status: 500 });
+    console.error(`[buy] checkout session failed for program ${id}: ${e?.message || e}`);
+    return errorResponse(prog);
   }
 };
