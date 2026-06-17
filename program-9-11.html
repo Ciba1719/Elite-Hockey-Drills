@@ -137,6 +137,7 @@ section{position:relative;z-index:2;}
 .oc-num{font-family:'Bebas Neue',sans-serif;font-size:30px;line-height:1;color:var(--ink);background:rgba(0,0,0,.35);border:1px solid var(--line-2);border-radius:8px;padding:7px 0;width:50px;text-align:center;font-variant-numeric:tabular-nums;}
 .oc-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);}
 .oc-colon{font-family:'Bebas Neue',sans-serif;font-size:24px;color:var(--warm);opacity:.55;margin-top:8px;}
+.oc-closed{font-size:12px;line-height:1.55;color:#C7CCD5;text-align:center;}
 .offer-pay{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;flex-wrap:wrap;}
 .offer-pay svg{width:13px;height:13px;color:var(--green);flex:0 0 auto;}
 .offer-pay .pay-txt{font-size:11.5px;color:var(--ink-2);margin-right:3px;}
@@ -446,13 +447,13 @@ section{position:relative;z-index:2;}
         </div>
         <div class="offer-meta">One-time payment · yours forever</div>
         <div class="offer-countdown">
-          <div class="oc-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg>Founding price ends in</div>
+          <div class="oc-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg>Start by Jul 1 to finish before the season</div>
           <div class="oc-timer">
+            <div class="oc-unit"><span class="oc-num" data-cd="d">00</span><span class="oc-tag">Days</span></div>
+            <span class="oc-colon">:</span>
             <div class="oc-unit"><span class="oc-num" data-cd="h">00</span><span class="oc-tag">Hrs</span></div>
             <span class="oc-colon">:</span>
             <div class="oc-unit"><span class="oc-num" data-cd="m">00</span><span class="oc-tag">Min</span></div>
-            <span class="oc-colon">:</span>
-            <div class="oc-unit"><span class="oc-num" data-cd="s">00</span><span class="oc-tag">Sec</span></div>
           </div>
         </div>
         <!-- BUY BUTTON · wire href to your checkout when ready -->
@@ -1064,20 +1065,32 @@ if(!reduce){
   });
 }
 
-/* countdown — founding price ends at midnight (resets daily) */
+/* countdown — real start-by deadline (start by Jul 1 to finish all 8 weeks before the season) */
 (function(){
-  const h=document.querySelector('[data-cd="h"]'), m=document.querySelector('[data-cd="m"]'), s=document.querySelector('[data-cd="s"]');
-  if(!h) return;
+  const box = document.querySelector('.offer-countdown');
+  if(!box) return;
+  const TARGET = new Date(2026, 6, 1, 23, 59, 59); // Jul 1 2026, local — bump this date to relaunch the start window
   const pad = n => String(n).padStart(2,'0');
-  function tick(){
-    const now=new Date();
-    const end=new Date(now); end.setHours(23,59,59,999);
-    let diff=Math.max(0, Math.floor((end-now)/1000));
-    h.textContent=pad(Math.floor(diff/3600)); diff%=3600;
-    m.textContent=pad(Math.floor(diff/60));
-    s.textContent=pad(diff%60);
+  function render(){
+    let diff = Math.floor((TARGET - new Date()) / 1000);
+    if(diff <= 0){
+      box.innerHTML = '<div class="oc-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg>Start window closed</div>'
+        + '<div class="oc-closed">A new start-by date opens soon — your plan and price are still here.</div>';
+      return false;
+    }
+    const d = box.querySelector('[data-cd="d"]'),
+          h = box.querySelector('[data-cd="h"]'),
+          m = box.querySelector('[data-cd="m"]');
+    if(d){
+      d.textContent = pad(Math.floor(diff/86400)); diff %= 86400;
+      h.textContent = pad(Math.floor(diff/3600)); diff %= 3600;
+      m.textContent = pad(Math.floor(diff/60));
+    }
+    return true;
   }
-  tick(); setInterval(tick,1000);
+  if(render()){
+    const timer = setInterval(function(){ if(!render()) clearInterval(timer); }, 1000);
+  }
 })();
 
 function toggleFaq(btn){ btn.closest('.faq-item').classList.toggle('open'); }
