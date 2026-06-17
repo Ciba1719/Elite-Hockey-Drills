@@ -228,15 +228,32 @@ body::after{
 .success-title em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ice);font-weight:400;}
 .success-sub{color:var(--ink-2);font-size:15px;line-height:1.65;margin-bottom:36px;max-width:440px;}
 .success-sub strong{color:var(--ink);font-weight:500;}
-.success-ig{
-  display:inline-flex;align-items:center;gap:10px;
-  padding:14px 22px;min-height:50px;
-  border-radius:100px;border:1px solid var(--ice-line);
-  background:var(--ice-soft);color:var(--ice);
-  font-size:13px;font-weight:600;letter-spacing:.04em;transition:all .25s;
+.success-cta{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:17px 32px;min-height:56px;
+  border-radius:100px;background:var(--warm);color:#1A0F00;
+  font-size:15.5px;font-weight:700;letter-spacing:.01em;
+  box-shadow:0 14px 30px -10px rgba(232,183,119,.5);
+  transition:transform .25s, box-shadow .25s;
 }
-.success-ig:hover{background:var(--ice);color:#001626;}
-.success-ig svg{width:18px;height:18px;}
+.success-cta:hover{transform:translateY(-2px);box-shadow:0 18px 38px -10px rgba(232,183,119,.62);}
+.success-cta .price{font-weight:800;}
+.success-cta svg{width:16px;height:16px;transition:transform .25s;}
+.success-cta:hover svg{transform:translateX(3px);}
+.success-ctas{display:flex;flex-direction:column;align-items:center;gap:10px;width:100%;}
+.success-pick{
+  display:flex;align-items:center;gap:12px;width:100%;max-width:360px;
+  padding:15px 20px;min-height:58px;
+  border-radius:14px;border:1px solid var(--warm);
+  background:rgba(232,183,119,.06);color:var(--ink);
+  font-size:14.5px;font-weight:600;text-align:left;
+  transition:background .2s, transform .15s;
+}
+.success-pick:hover{background:rgba(232,183,119,.13);}
+.success-pick:active{transform:scale(.985);}
+.success-pick .pick-age{color:var(--warm);font-weight:800;white-space:nowrap;}
+.success-pick .pick-name{flex:1;color:var(--ink);}
+.success-pick svg{width:16px;height:16px;color:var(--warm);flex-shrink:0;}
 .success-footnote{font-size:12px;color:var(--ink-3);margin-top:32px;}
 
 body.success-mode .topbar,body.success-mode .progress-track{display:none;}
@@ -402,13 +419,12 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
     </div>
     <h2 class="success-title display">Check your <em>inbox</em><br>in 60 seconds.</h2>
     <p class="success-sub">
-      Your custom 5-day off-ice program is on its way to <strong id="successEmail">your inbox</strong>. While you wait, follow along for daily hockey training content.
+      Your 5-day plan is on its way to <strong id="successEmail">your inbox</strong>. <span id="successSubTail"></span>
     </p>
-    <a class="success-ig" href="https://instagram.com/elite_hockey_drills" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg>
-      Follow @elite_hockey_drills
-    </a>
-    <p class="success-footnote">Didn't see it? Check spam or promotions. Or email <a href="mailto:elitehockeydrills@gmail.com" style="color:var(--ice);">elitehockeydrills@gmail.com</a></p>
+    <div class="success-ctas" id="successCtas"></div>
+    <p class="success-guarantee">Founding price · was $159 · 30-day money-back guarantee</p>
+    <a class="success-ig-link" href="https://instagram.com/elite_hockey_drills" target="_blank" rel="noopener">Following along? Find us @elite_hockey_drills →</a>
+    <p class="success-footnote">Didn't see the email? Check spam or promotions. Or email <a href="mailto:elitehockeydrills@gmail.com" style="color:var(--ice);">elitehockeydrills@gmail.com</a></p>
   </section>
 
 </main>
@@ -505,6 +521,7 @@ function showScreen(step, direction){
 
   if(step === 'success'){
     document.body.classList.add('success-mode');
+    populateSuccessScreen();
   } else {
     document.body.classList.remove('success-mode');
   }
@@ -587,6 +604,42 @@ function populateEmailScreen(){
   const audience = `${answers.ageLabel} ${audienceWord}`;
   const goalText = (answers.goalShort || answers.goalLabel || 'off-ice training').toLowerCase();
   sub.innerHTML = `Enter your email to receive your custom 5-day off-ice program — built specifically for <strong>${audience}</strong> focused on <strong>${goalText}</strong>.`;
+}
+
+/* ============================================================
+   MATCHED PROGRAM (success screen)
+   ============================================================
+   The quiz has 4 age buckets but there are 5 programs, so each
+   bucket maps to its best-overlap program. 9–13 shows both 9–11
+   and 12–14 so a parent can pick by their player's exact age.
+   ============================================================ */
+const PROGRAM_MATCH = {
+  '9_13':   [ { name:'Move & Play',      age:'9–11',  url:'/program-9-11.html'    },
+              { name:'Develop & Drive',  age:'12–14', url:'/program-12-14.html'   } ],
+  '14_18':  [ { name:'Build & Compete',  age:'15–18', url:'/program-15-18.html'   } ],
+  '19_39':  [ { name:'Power & Speed',    age:'19–39', url:'/program-19-39.html'   } ],
+  '40plus': [ { name:'Strong & Durable', age:'40+',   url:'/program-40-plus.html' } ]
+};
+
+const ARROW_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>';
+
+function populateSuccessScreen(){
+  const list = PROGRAM_MATCH[answers.age] || PROGRAM_MATCH['19_39'];
+  const tail = document.getElementById('successSubTail');
+  const wrap = document.getElementById('successCtas');
+  if(!wrap) return;
+
+  if(list.length === 1){
+    const p = list[0];
+    if(tail) tail.innerHTML = `It's a taste of the full 8-week <strong>${p.name}</strong>. Ready to see the whole thing?`;
+    wrap.innerHTML =
+      `<a class="success-cta" href="${p.url}"><span>See your full program <span class="price">— $79</span></span>${ARROW_SVG}</a>`;
+  } else {
+    if(tail) tail.innerHTML = `Two programs cover ages ${answers.ageLabel || '9–13'} — pick your player's (<strong>$79 each</strong>):`;
+    wrap.innerHTML = list.map(p =>
+      `<a class="success-pick" href="${p.url}"><span class="pick-age">Ages ${p.age}</span><span class="pick-name">${p.name}</span>${ARROW_SVG}</a>`
+    ).join('');
+  }
 }
 
 /* ============================================================
