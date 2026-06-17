@@ -434,23 +434,13 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
 
 <script>
 /* ============================================================
-   ⚠️ PASTE YOUR MAILERLITE API TOKEN BELOW
+   SUBSCRIBE — handled server-side (no token in this public page)
    ============================================================
-   The token is the long string starting with "eyJ0..." that
-   you saved in mailerlite-token.txt. Replace the placeholder
-   text inside the quotes with your actual token.
+   The MailerLite token lives in the Netlify env var
+   MAILERLITE_API_TOKEN and is used only by
+   netlify/functions/subscribe.mjs (path /api/subscribe). The form
+   POSTs the survey answers; the function picks the age group.
    ============================================================ */
-const MAILERLITE_API_TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiNDRkY2I2YjEwNWU5MjU5MDg3ZDMyY2QwNTZiZGY3OTM0Yjg1YmUxZTFkY2IxMWZlNzBhZWFlYjA1ZTM2NmM5Yjg2MDY5OTUwMDVlODI2NDkiLCJpYXQiOjE3NzkwMzA0NjQuOTcxODA2LCJuYmYiOjE3NzkwMzA0NjQuOTcxODA5LCJleHAiOjQ5MzQ3MDQwNjQuOTY1MTMsInN1YiI6IjIzNzQxNjAiLCJzY29wZXMiOltdfQ.PlKU9eTKAWObfTq0obM84HiuVjvMrTxZ8CWe-rUvnW0NnwrUsoa8Cm9OprGyLjP89-odcIdCwWiEituCn5WmUj74ydd0OVV3-n4v4p3gh9WianEnW4j_09dOZzZKdKk4Rtqtlh4PHYiJ56EhKhcW5rUE4666BSBfZ8pAnNz-lLT5IbiO2JyyBpO7Rt1-z-Qx6xgj0ZbIRt-hBPTTr506zkP6RtriGcoKBDZQ7gdoGV1xiRPaGH5msFVYLnzykYoR50Iiw5XphRhwGA4269qfouDL8rsJhr1snNqWepNdRxM7AADn4VgmquNMaJW1MSrxvLen-pN8f0YkvELx4JATJVuixjogE6Ky2scjEjAIoY4LOl0QM4IBOvjyodwRQfT4pecEN4VoCoVb6LJmeriMpIn8Ytvxdb1ORv2lbNGH96rztPT2B_0217REorOqTp_8Zv7wGrRsZAjjWKYvqHJJVBvrIwO5PbcOEmfh2z8EKDSsxPD4nnjyYKVYjfET_WUXwBVcWr95yeSgzVVAX-Wu1D-9enL8HLGgdy19w4HcwgdkletoZ2i5Mr3yAeaKO7a6EviwtDDP-3J6sLoVQjmo-09YQPS0xV2WpErRVck6fdVayQBz734clVtZ72IRfs58CS5bIX5a5dxvtYNTSWZ47taJ4fm10VhnHBnyJXrjYVE';
-
-/* ============================================================
-   GROUP NAMES IN MAILERLITE (must match exactly)
-   ============================================================ */
-const GROUP_NAMES = {
-  youth:   'youth-program',
-  teen:    'teen-program',
-  adult:   'adult-program',
-  masters: 'masters-program'
-};
 
 /* ============================================================
    SURVEY STATE
@@ -580,16 +570,7 @@ bindSingleSelect(getScreen(2), 'position');
 bindSingleSelect(getScreen(3), 'level');
 bindSingleSelect(getScreen(4), 'goal');
 
-/* ============================================================
-   ROUTING — age determines which MailerLite group to add to
-   ============================================================ */
-function pickGroupName(a){
-  if(a.age === '9_13')   return GROUP_NAMES.youth;
-  if(a.age === '14_18')  return GROUP_NAMES.teen;
-  if(a.age === '19_39')  return GROUP_NAMES.adult;
-  if(a.age === '40plus') return GROUP_NAMES.masters;
-  return GROUP_NAMES.adult;
-}
+/* Age -> MailerLite group routing now happens server-side in subscribe.mjs. */
 
 function populateEmailScreen(){
   const pillsEl = document.getElementById('summaryPills');
@@ -651,53 +632,7 @@ function populateSuccessScreen(){
   wrap.innerHTML = list.map(buildCard).join('');
 }
 
-/* ============================================================
-   MAILERLITE API
-   ============================================================
-   1) Look up all groups by name (cached for the session)
-   2) On submit, add subscriber + assign to the right group
-   ============================================================ */
-let GROUP_ID_CACHE = null;
-
-async function fetchGroupIds(){
-  if(GROUP_ID_CACHE) return GROUP_ID_CACHE;
-  const res = await fetch('https://connect.mailerlite.com/api/groups?limit=100', {
-    method:'GET',
-    headers:{
-      'Authorization': 'Bearer ' + MAILERLITE_API_TOKEN,
-      'Content-Type':'application/json',
-      'Accept':'application/json'
-    }
-  });
-  if(!res.ok) throw new Error('Could not fetch groups (' + res.status + ')');
-  const data = await res.json();
-  const map = {};
-  (data.data || []).forEach(g => { map[g.name] = g.id; });
-  GROUP_ID_CACHE = map;
-  return map;
-}
-
-async function addSubscriberToGroup(email, groupId, fields){
-  const res = await fetch('https://connect.mailerlite.com/api/subscribers', {
-    method:'POST',
-    headers:{
-      'Authorization': 'Bearer ' + MAILERLITE_API_TOKEN,
-      'Content-Type':'application/json',
-      'Accept':'application/json'
-    },
-    body: JSON.stringify({
-      email: email,
-      groups: [groupId],
-      fields: fields,
-      status: 'active'
-    })
-  });
-  if(!res.ok){
-    const txt = await res.text();
-    throw new Error('Subscribe failed (' + res.status + '): ' + txt);
-  }
-  return res.json();
-}
+/* All MailerLite API calls are server-side in netlify/functions/subscribe.mjs. */
 
 /* ============================================================
    SUBMIT
@@ -727,35 +662,25 @@ emailForm.addEventListener('submit', async (e) => {
   }
   answers.email = email;
 
-  const targetGroupName = pickGroupName(answers);
-
-  // Optional fields stored on the subscriber for future segmentation.
-  // MailerLite ignores fields that don't exist on the account, so this is safe.
-  const fields = {
-    age_bucket: answers.age || '',
-    position:   answers.position || '',
-    level:      answers.level || '',
-    goal:       answers.goal || ''
-  };
-
-  // Log payload locally for debugging
-  console.log('[EHD Survey] Submitting:', { email, targetGroupName, fields });
-
   submitBtn.classList.add('loading');
   submitBtn.disabled = true;
 
   try {
-    if(MAILERLITE_API_TOKEN === 'PASTE_YOUR_MAILERLITE_TOKEN_HERE' || !MAILERLITE_API_TOKEN){
-      throw new Error('MailerLite API token not configured.');
-    }
-
-    const groupMap = await fetchGroupIds();
-    const groupId = groupMap[targetGroupName];
-    if(!groupId){
-      throw new Error('Group "' + targetGroupName + '" not found in MailerLite.');
-    }
-
-    await addSubscriberToGroup(email, groupId, fields);
+    // MailerLite is called server-side in netlify/functions/subscribe.mjs so the
+    // API token is never exposed in this public page. We POST the answers; the
+    // function picks the age group and adds the subscriber.
+    const res = await fetch('/api/subscribe', {
+      method:'POST',
+      headers:{ 'Content-Type':'application/json' },
+      body: JSON.stringify({
+        email,
+        age:      answers.age,
+        position: answers.position,
+        level:    answers.level,
+        goal:     answers.goal
+      })
+    });
+    if(!res.ok) throw new Error('Subscribe failed (' + res.status + ')');
 
     document.getElementById('successEmail').textContent = email;
     history.push('success');
