@@ -206,55 +206,54 @@ body::after{
 }
 
 .success-screen{text-align:center;align-items:center;justify-content:center;padding:20px 0;}
-.success-icon{
-  width:84px;height:84px;border-radius:50%;
-  background:var(--ice-soft);border:1px solid var(--ice-line);
-  display:flex;align-items:center;justify-content:center;
-  margin:0 auto 32px;position:relative;
-  animation:pop .6s cubic-bezier(.22,.61,.36,1) both;
+.success-confirm{
+  display:inline-flex;align-items:center;gap:11px;
+  margin:0 auto 30px;max-width:480px;padding:10px 18px 10px 12px;
+  border-radius:100px;background:rgba(79,179,113,.08);border:1px solid rgba(79,179,113,.30);
+  font-size:13.5px;line-height:1.4;color:var(--ink-2);text-align:left;
 }
-.success-icon::after{
-  content:'';position:absolute;inset:-12px;
-  border-radius:50%;border:1px solid var(--ice-line);opacity:0;
-  animation:ripple 1.6s ease-out .3s infinite;
-}
-@keyframes pop{0%{transform:scale(.4);opacity:0;}60%{transform:scale(1.08);}100%{transform:scale(1);opacity:1;}}
-@keyframes ripple{0%{transform:scale(.9);opacity:.8;}100%{transform:scale(1.4);opacity:0;}}
-.success-icon svg{width:36px;height:36px;color:var(--ice);}
-.success-title{
-  font-family:'Bebas Neue',sans-serif;
-  font-size:clamp(38px,9vw,60px);line-height:.98;margin-bottom:16px;
-}
+.success-confirm strong{color:var(--ink);font-weight:600;}
+.success-confirm .sc-check{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--green);display:grid;place-items:center;}
+.success-confirm .sc-check svg{width:13px;height:13px;color:#06140C;}
+.success-eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--warm);margin-bottom:13px;}
+.success-eyebrow::before,.success-eyebrow::after{content:'';display:inline-block;width:22px;height:1px;background:rgba(232,183,119,.5);vertical-align:middle;margin:0 10px 3px;}
+.success-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,9vw,62px);line-height:.96;letter-spacing:.005em;margin-bottom:14px;}
 .success-title em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ice);font-weight:400;}
-.success-sub{color:var(--ink-2);font-size:15px;line-height:1.65;margin-bottom:36px;max-width:440px;}
-.success-sub strong{color:var(--ink);font-weight:500;}
-.success-cta{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  padding:17px 32px;min-height:56px;
-  border-radius:100px;background:var(--warm);color:#1A0F00;
-  font-size:15.5px;font-weight:700;letter-spacing:.01em;
-  box-shadow:0 14px 30px -10px rgba(232,183,119,.5);
-  transition:transform .25s, box-shadow .25s;
+.success-sub{color:#C7CCD5;font-size:15.5px;line-height:1.6;margin:0 auto 28px;max-width:470px;}
+.success-sub strong{color:var(--ink);font-weight:600;}
+.success-ctas{display:flex;flex-direction:column;align-items:center;gap:12px;width:100%;}
+.pcard{
+  position:relative;overflow:hidden;display:flex;flex-direction:column;text-align:left;
+  width:100%;max-width:380px;padding:18px 20px;color:var(--ink);
+  background:linear-gradient(160deg,#16161D,#0C0C11);
+  border:1px solid var(--line-2);border-radius:18px;
+  box-shadow:0 16px 38px -24px rgba(0,0,0,.95);
+  transition:transform .25s, border-color .25s, box-shadow .25s;
 }
-.success-cta:hover{transform:translateY(-2px);box-shadow:0 18px 38px -10px rgba(232,183,119,.62);}
-.success-cta .price{font-weight:800;}
-.success-cta svg{width:16px;height:16px;transition:transform .25s;}
-.success-cta:hover svg{transform:translateX(3px);}
-.success-ctas{display:flex;flex-direction:column;align-items:center;gap:10px;width:100%;}
-.success-pick{
-  display:flex;align-items:center;gap:12px;width:100%;max-width:360px;
-  padding:15px 20px;min-height:58px;
-  border-radius:14px;border:1px solid var(--warm);
-  background:rgba(232,183,119,.06);color:var(--ink);
-  font-size:14.5px;font-weight:600;text-align:left;
-  transition:background .2s, transform .15s;
+.pcard::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(232,183,119,.6),transparent);}
+.pcard:hover{transform:translateY(-3px);border-color:rgba(232,183,119,.55);box-shadow:0 24px 46px -22px rgba(232,183,119,.32);}
+.pcard:active{transform:translateY(-1px);}
+.pcard-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:11px;}
+.pcard-badge{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--warm);background:rgba(232,183,119,.10);border:1px solid rgba(232,183,119,.32);border-radius:100px;padding:5px 11px;}
+.pcard-price{display:flex;align-items:baseline;gap:7px;}
+.pcard-price b{font-size:19px;font-weight:800;color:var(--warm);}
+.pcard-price s{font-size:13px;color:var(--ink-3);}
+.pcard-name{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:28px;line-height:1;letter-spacing:.01em;margin-bottom:7px;}
+.pcard-desc{font-size:13px;color:#AEB3BD;line-height:1.45;margin-bottom:15px;}
+.pcard-go{margin-top:auto;display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:700;color:var(--warm);letter-spacing:.01em;}
+.pcard-arrow{width:27px;height:27px;border-radius:50%;background:var(--warm);display:grid;place-items:center;transition:transform .25s;}
+.pcard-arrow svg{width:14px;height:14px;color:#1A0F00;}
+.pcard:hover .pcard-arrow{transform:translateX(4px);}
+.success-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:9px 18px;margin:26px auto 0;max-width:520px;}
+.success-trust span{font-size:12.5px;color:#AEB3BD;display:inline-flex;align-items:center;gap:6px;}
+.success-trust span::before{content:'✓';color:var(--green);font-weight:800;font-size:12px;}
+.success-ig-link{display:inline-block;margin-top:22px;font-size:13px;color:var(--ice);font-weight:500;transition:opacity .2s;}
+.success-ig-link:hover{opacity:.75;text-decoration:underline;}
+.success-footnote{font-size:12px;color:var(--ink-3);margin-top:18px;line-height:1.5;}
+@media(min-width:620px){
+  .success-ctas.is-dual{flex-direction:row;align-items:stretch;max-width:660px;}
+  .success-ctas.is-dual .pcard{max-width:none;flex:1;}
 }
-.success-pick:hover{background:rgba(232,183,119,.13);}
-.success-pick:active{transform:scale(.985);}
-.success-pick .pick-age{color:var(--warm);font-weight:800;white-space:nowrap;}
-.success-pick .pick-name{flex:1;color:var(--ink);}
-.success-pick svg{width:16px;height:16px;color:var(--warm);flex-shrink:0;}
-.success-footnote{font-size:12px;color:var(--ink-3);margin-top:32px;}
 
 body.success-mode .topbar,body.success-mode .progress-track{display:none;}
 body.success-mode .stage{padding-top:calc(60px + var(--sat));}
@@ -414,16 +413,20 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
 
   <!-- SUCCESS -->
   <section class="screen success-screen" data-screen="success">
-    <div class="success-icon">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    <div class="success-confirm">
+      <span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+      <span>Your free 5-day plan is on its way to <strong id="successEmail">your inbox</strong> — check it in 60 seconds.</span>
     </div>
-    <h2 class="success-title display">Check your <em>inbox</em><br>in 60 seconds.</h2>
-    <p class="success-sub">
-      Your 5-day plan is on its way to <strong id="successEmail">your inbox</strong>. <span id="successSubTail"></span>
-    </p>
+    <div class="success-eyebrow">Your matched program</div>
+    <h2 class="success-title display">Your 5 days are just the <em>warm-up</em>.</h2>
+    <p class="success-sub"><span id="successSubTail"></span></p>
     <div class="success-ctas" id="successCtas"></div>
-    <p class="success-guarantee">Founding price · was $159 · 30-day money-back guarantee</p>
-    <a class="success-ig-link" href="https://instagram.com/elite_hockey_drills" target="_blank" rel="noopener">Following along? Find us @elite_hockey_drills →</a>
+    <div class="success-trust">
+      <span>30-day money-back</span>
+      <span>UAE National Team coach</span>
+      <span>No gym needed</span>
+    </div>
+    <a class="success-ig-link" href="https://instagram.com/elite_hockey_drills" target="_blank" rel="noopener">Just want the free plan for now? Follow @elite_hockey_drills →</a>
     <p class="success-footnote">Didn't see the email? Check spam or promotions. Or email <a href="mailto:elitehockeydrills@gmail.com" style="color:var(--ice);">elitehockeydrills@gmail.com</a></p>
   </section>
 
@@ -614,32 +617,38 @@ function populateEmailScreen(){
    and 12–14 so a parent can pick by their player's exact age.
    ============================================================ */
 const PROGRAM_MATCH = {
-  '9_13':   [ { name:'Move & Play',      age:'9–11',  url:'/program-9-11.html'    },
-              { name:'Develop & Drive',  age:'12–14', url:'/program-12-14.html'   } ],
-  '14_18':  [ { name:'Build & Compete',  age:'15–18', url:'/program-15-18.html'   } ],
-  '19_39':  [ { name:'Power & Speed',    age:'19–39', url:'/program-19-39.html'   } ],
-  '40plus': [ { name:'Strong & Durable', age:'40+',   url:'/program-40-plus.html' } ]
+  '9_13':   [ { name:'Move & Play',      age:'9–11',  url:'/program-9-11.html',    desc:'Off-ice foundation — speed, balance & athletic movement.' },
+              { name:'Develop & Drive',  age:'12–14', url:'/program-12-14.html',   desc:'Growth-smart strength & speed for developing players.' } ],
+  '14_18':  [ { name:'Build & Compete',  age:'15–18', url:'/program-15-18.html',   desc:'Power & performance for serious junior players.' } ],
+  '19_39':  [ { name:'Power & Speed',    age:'19–39', url:'/program-19-39.html',   desc:'Explosive power, speed & conditioning for prime years.' } ],
+  '40plus': [ { name:'Strong & Durable', age:'40+',   url:'/program-40-plus.html', desc:'Joint-friendly strength & mobility that lasts.' } ]
 };
 
 const ARROW_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>';
+
+function buildCard(p){
+  return `<a class="pcard" href="${p.url}">`
+    + `<div class="pcard-top"><span class="pcard-badge">Ages ${p.age}</span>`
+    + `<span class="pcard-price"><b>$79</b><s>$159</s></span></div>`
+    + `<div class="pcard-name">${p.name}</div>`
+    + `<div class="pcard-desc">${p.desc}</div>`
+    + `<span class="pcard-go">See the program <span class="pcard-arrow">${ARROW_SVG}</span></span>`
+    + `</a>`;
+}
 
 function populateSuccessScreen(){
   const list = PROGRAM_MATCH[answers.age] || PROGRAM_MATCH['19_39'];
   const tail = document.getElementById('successSubTail');
   const wrap = document.getElementById('successCtas');
   if(!wrap) return;
-
-  if(list.length === 1){
-    const p = list[0];
-    if(tail) tail.innerHTML = `It's a taste of the full 8-week <strong>${p.name}</strong>. Ready to see the whole thing?`;
-    wrap.innerHTML =
-      `<a class="success-cta" href="${p.url}"><span>See your full program <span class="price">— $79</span></span>${ARROW_SVG}</a>`;
+  if(list.length > 1){
+    wrap.classList.add('is-dual');
+    if(tail) tail.innerHTML = `The real gains are in the full 8-week build. Two fit <strong>ages ${answers.ageLabel || '9–13'}</strong> — pick your player's:`;
   } else {
-    if(tail) tail.innerHTML = `Two programs cover ages ${answers.ageLabel || '9–13'} — pick your player's (<strong>$79 each</strong>):`;
-    wrap.innerHTML = list.map(p =>
-      `<a class="success-pick" href="${p.url}"><span class="pick-age">Ages ${p.age}</span><span class="pick-name">${p.name}</span>${ARROW_SVG}</a>`
-    ).join('');
+    wrap.classList.remove('is-dual');
+    if(tail) tail.innerHTML = `The real gains are in the full 8-week build — here's the one matched to you:`;
   }
+  wrap.innerHTML = list.map(buildCard).join('');
 }
 
 /* ============================================================
