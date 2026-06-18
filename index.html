@@ -517,6 +517,10 @@ section{position:relative;z-index:2;}
   position:relative;
   transition:transform .3s, border-color .3s, box-shadow .3s;
   overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
 }
 .tier-card:hover{
   transform:translateY(-4px);
@@ -549,15 +553,20 @@ section{position:relative;z-index:2;}
 
 .tier-age{
   font-family:'Bebas Neue',sans-serif;
-  font-size:14px;
-  letter-spacing:.16em;
-  color:var(--ice);
+  font-size:15px;
+  letter-spacing:.14em;
+  color:#A5DAFA;
   margin-bottom:16px;
-  display:flex;align-items:center;gap:10px;
+  display:flex;align-items:center;gap:9px;
+  align-self:flex-start;
+  background:rgba(93,180,229,.10);
+  border:1px solid rgba(93,180,229,.40);
+  padding:6px 13px;
+  border-radius:100px;
 }
 .tier-age::before{
   content:'';width:6px;height:6px;
-  background:var(--ice);border-radius:50%;
+  background:#A5DAFA;border-radius:50%;
   box-shadow:0 0 8px var(--ice);
 }
 .tier-headline{
@@ -1420,7 +1429,7 @@ section{position:relative;z-index:2;}
     <div class="tier-grid">
 
       <!-- 9-11 -->
-      <div class="tier-card reveal">
+      <a class="tier-card reveal" href="program-9-11.html" aria-label="View the Foundations program for ages 9 to 11">
         <div class="tier-badge">Founding Price</div>
         <div class="tier-age">Ages 9–11</div>
         <h3 class="tier-headline">Foundations<em>Athletic Movement</em></h3>
@@ -1437,12 +1446,12 @@ section{position:relative;z-index:2;}
             <div class="tier-price-old">$159</div>
             <div class="tier-price">$79<small>Save $80</small></div>
           </div>
-          <a href="program-9-11.html" class="tier-btn">View Program →</a>
+          <span class="tier-btn" aria-hidden="true">View Program →</span>
         </div>
-      </div>
+      </a>
 
       <!-- 12-14 -->
-      <div class="tier-card reveal">
+      <a class="tier-card reveal" href="program-12-14.html" aria-label="View the Develop program for ages 12 to 14">
         <div class="tier-badge">Founding Price</div>
         <div class="tier-age">Ages 12–14</div>
         <h3 class="tier-headline">Develop<em>Strength &amp; Speed</em></h3>
@@ -1459,12 +1468,12 @@ section{position:relative;z-index:2;}
             <div class="tier-price-old">$159</div>
             <div class="tier-price">$79<small>Save $80</small></div>
           </div>
-          <a href="program-12-14.html" class="tier-btn">View Program →</a>
+          <span class="tier-btn" aria-hidden="true">View Program →</span>
         </div>
-      </div>
+      </a>
 
       <!-- 15-18 -->
-      <div class="tier-card reveal">
+      <a class="tier-card reveal" href="program-15-18.html" aria-label="View the Compete program for ages 15 to 18">
         <div class="tier-badge">Founding Price</div>
         <div class="tier-age">Ages 15–18</div>
         <h3 class="tier-headline">Compete<em>Power &amp; Performance</em></h3>
@@ -1481,12 +1490,12 @@ section{position:relative;z-index:2;}
             <div class="tier-price-old">$159</div>
             <div class="tier-price">$79<small>Save $80</small></div>
           </div>
-          <a href="program-15-18.html" class="tier-btn">View Program →</a>
+          <span class="tier-btn" aria-hidden="true">View Program →</span>
         </div>
-      </div>
+      </a>
 
       <!-- 19-39 -->
-      <div class="tier-card reveal">
+      <a class="tier-card reveal" href="program-19-39.html" aria-label="View the Dominate program for ages 19 to 39">
         <div class="tier-badge">Founding Price</div>
         <div class="tier-age">Ages 19–39</div>
         <h3 class="tier-headline">Dominate<em>Peak Performance</em></h3>
@@ -1503,12 +1512,12 @@ section{position:relative;z-index:2;}
             <div class="tier-price-old">$159</div>
             <div class="tier-price">$79<small>Save $80</small></div>
           </div>
-          <a href="program-19-39.html" class="tier-btn">View Program →</a>
+          <span class="tier-btn" aria-hidden="true">View Program →</span>
         </div>
-      </div>
+      </a>
 
       <!-- 40+ -->
-      <div class="tier-card reveal">
+      <a class="tier-card reveal" href="program-40-plus.html" aria-label="View the Sustain program for ages 40 plus">
         <div class="tier-badge">Founding Price</div>
         <div class="tier-age">Ages 40+</div>
         <h3 class="tier-headline">Sustain<em>Longevity &amp; Power</em></h3>
@@ -1525,9 +1534,9 @@ section{position:relative;z-index:2;}
             <div class="tier-price-old">$159</div>
             <div class="tier-price">$79<small>Save $80</small></div>
           </div>
-          <a href="program-40-plus.html" class="tier-btn">View Program →</a>
+          <span class="tier-btn" aria-hidden="true">View Program →</span>
         </div>
-      </div>
+      </a>
 
     </div>
   </div>
