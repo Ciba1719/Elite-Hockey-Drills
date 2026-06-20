@@ -59,7 +59,8 @@ export default async (req) => {
   const email = String(body.email || '').trim().toLowerCase();
   if (!isEmail(email)) return json({ error: 'invalid_email' }, 400);
 
-  const groupName = pickGroupName(body.age);
+  const name = String(body.name || '').trim();
+  const source = String(body.source || (body.age ? 'survey' : 'newsletter')).trim();
   // Stored on the subscriber for future segmentation. MailerLite silently drops
   // fields that don't exist on the account, so sending these is always safe.
   const fields = {
@@ -67,23 +68,37 @@ export default async (req) => {
     position: String(body.position || ''),
     level: String(body.level || ''),
     goal: String(body.goal || ''),
+    source,
   };
+  if (name) fields.name = name;
 
   try {
-    // 1) Resolve the group name to its id.
+    // 1) Resolve the target group id. Survey leads (age present) go to their age
+    //    group, which must exist. Newsletter signups (no age) go to a "newsletter"
+    //    group if one exists, otherwise they are added with no group so a signup
+    //    is never lost.
     const gRes = await ml('/groups?limit=100');
     if (!gRes.ok) throw new Error(`groups lookup failed (${gRes.status})`);
     const groups = (await gRes.json()).data || [];
-    const group = groups.find((g) => g.name === groupName);
-    if (!group) {
-      console.error(`[subscribe] MailerLite group "${groupName}" not found`);
-      return json({ error: 'group_not_found' }, 500);
+
+    let groupIds = [];
+    if (body.age) {
+      const groupName = pickGroupName(body.age);
+      const group = groups.find((g) => g.name === groupName);
+      if (!group) {
+        console.error(`[subscribe] MailerLite group "${groupName}" not found`);
+        return json({ error: 'group_not_found' }, 500);
+      }
+      groupIds = [group.id];
+    } else {
+      const nl = groups.find((g) => g.name === 'newsletter');
+      if (nl) groupIds = [nl.id];
     }
 
-    // 2) Upsert the subscriber straight into that group.
+    // 2) Upsert the subscriber into the resolved group(s).
     const sRes = await ml('/subscribers', {
       method: 'POST',
-      body: JSON.stringify({ email, groups: [group.id], fields, status: 'active' }),
+      body: JSON.stringify({ email, groups: groupIds, fields, status: 'active' }),
     });
     if (!sRes.ok) {
       console.error(`[subscribe] MailerLite subscribe failed (${sRes.status}): ${await sRes.text().catch(() => '')}`);

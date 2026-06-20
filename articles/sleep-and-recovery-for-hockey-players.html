@@ -300,6 +300,28 @@
   </article>
 </div><!-- /.art-body -->
 
+<!-- NEWSLETTER -->
+<section class="art-news" aria-labelledby="news-h">
+  <div class="art-news-card reveal">
+    <div class="art-news-glow"></div>
+    <div class="eyebrow ice art-news-eyebrow">The inside track</div>
+    <h2 id="news-h" class="display art-news-title">Get the next one <em class="serif">first.</em></h2>
+    <p class="art-news-sub">New science-backed guides on training, nutrition, and recovery, sent straight to your inbox. No fluff, no spam, just what makes you harder to play against.</p>
+    <form class="art-news-form" id="newsForm" novalidate>
+      <div class="art-news-fields">
+        <input type="text" id="newsName" class="art-news-input" placeholder="First name" autocomplete="given-name" aria-label="First name" required />
+        <input type="email" id="newsEmail" class="art-news-input" placeholder="your@email.com" autocomplete="email" inputmode="email" aria-label="Email address" required />
+      </div>
+      <button type="submit" class="btn btn-primary art-news-btn" id="newsBtn">
+        <span class="btn-label">Send me the guides</span>
+        <span class="news-spinner" aria-hidden="true"></span>
+      </button>
+      <p class="art-news-note">No spam. Unsubscribe anytime. By subscribing you agree to receive training emails from Elite Hockey Drills.</p>
+      <p class="art-news-msg" id="newsMsg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
 <!-- END CTA -->
 <section class="art-cta">
   <div class="art-cta-glow"></div>
@@ -405,6 +427,38 @@ const io = new IntersectionObserver((entries) => {
   });
 }, { threshold: .08, rootMargin: '0px 0px -40px 0px' });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+const newsForm = document.getElementById('newsForm');
+if (newsForm) {
+  const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  newsForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = document.getElementById('newsName').value.trim();
+    const email = document.getElementById('newsEmail').value.trim();
+    const msg = document.getElementById('newsMsg');
+    const btn = document.getElementById('newsBtn');
+    if (!emailRe.test(email)) { msg.textContent = 'Please enter a valid email address.'; msg.className = 'art-news-msg err'; return; }
+    btn.classList.add('loading'); btn.disabled = true; msg.textContent = ''; msg.className = 'art-news-msg';
+    try {
+      const res = await fetch('/api/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name, email, source: 'newsletter' }) });
+      if (res.ok) {
+        newsForm.reset();
+        msg.textContent = "You're in. Watch your inbox for the next one.";
+        msg.className = 'art-news-msg ok';
+        btn.querySelector('.btn-label').textContent = 'Subscribed';
+      } else {
+        msg.textContent = 'Something went wrong. Please try again in a moment.';
+        msg.className = 'art-news-msg err';
+        btn.disabled = false;
+      }
+    } catch (err) {
+      msg.textContent = 'Network error. Please check your connection and try again.';
+      msg.className = 'art-news-msg err';
+      btn.disabled = false;
+    }
+    btn.classList.remove('loading');
+  });
+}
 </script>
 </body>
 </html>
