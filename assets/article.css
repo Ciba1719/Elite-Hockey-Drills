@@ -504,12 +504,7 @@
 @keyframes ncRing{to{stroke-dashoffset:0;}}
 @keyframes ncTick{to{stroke-dashoffset:0;}}
 .news-success-title{font-size:clamp(36px,6.4vw,54px);line-height:1;color:var(--ink);margin-bottom:12px;}
-.news-success-sub{font-size:15.5px;line-height:1.6;color:var(--art-ink);max-width:40ch;margin:0 auto 26px;}
-.news-gift{border-top:1px solid var(--line);padding-top:24px;}
-.news-gift-label{display:block;font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--warm);margin-bottom:14px;}
-.news-gift-btn{display:inline-flex;}
-.news-keep{display:block;margin-top:16px;font-size:13px;color:var(--ink-3);transition:color .2s;}
-.news-keep:hover{color:var(--ice);}
+.news-success-sub{font-size:15.5px;line-height:1.6;color:var(--art-ink);max-width:40ch;margin:0 auto;}
 /* confetti (contained inside the card) */
 .news-confetti{position:absolute;inset:0;z-index:3;pointer-events:none;overflow:hidden;border-radius:22px;}
 .news-confetti i{position:absolute;top:-12px;width:8px;height:8px;border-radius:2px;opacity:0;
