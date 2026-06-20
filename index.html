@@ -528,6 +528,19 @@ section{position:relative;z-index:2;}
   box-shadow:0 20px 40px -16px rgba(0,0,0,.5),0 0 60px var(--ice-soft);
 }
 
+/* Program box render — full-bleed hero at the top of each card */
+.tier-media{
+  margin:-28px -24px 22px;        /* bleed to the card edges (matches base padding 28/24) */
+  border-radius:18px 18px 0 0;
+  overflow:hidden;
+  background:#08080B;             /* dark placeholder while the image loads */
+}
+.tier-media img{
+  width:100%;height:auto;display:block;
+  transition:transform .55s cubic-bezier(.2,.7,.2,1);
+}
+.tier-card:hover .tier-media img{transform:scale(1.04);}
+
 /* Founding badge - top right corner */
 .tier-badge{
   position:absolute;
@@ -662,10 +675,12 @@ section{position:relative;z-index:2;}
   .tiers{padding:120px 40px;}
   .tier-grid{grid-template-columns:repeat(3,1fr);gap:20px;}
   .tier-card{padding:32px 28px;}
+  .tier-media{margin:-32px -28px 24px;}
 }
 @media(min-width:1280px){
   .tier-grid{grid-template-columns:repeat(5,1fr);gap:18px;}
   .tier-card{padding:28px 22px;}
+  .tier-media{margin:-28px -22px 20px;}
   .tier-headline{font-size:36px;}
   .tier-bottom{flex-direction:column;align-items:stretch;gap:14px;}
   .tier-btn{justify-content:center;}
@@ -1529,6 +1544,9 @@ section{position:relative;z-index:2;}
 
       <!-- 9-11 -->
       <a class="tier-card reveal" href="program-9-11.html" aria-label="View the Foundations program for ages 9 to 11">
+        <div class="tier-media">
+          <img src="assets/programs/foundations.webp" width="700" height="933" loading="lazy" alt="Foundations program box — Athletic Movement, ages 9 to 11" />
+        </div>
         <div class="tier-badge">Founding Price</div>
         <div class="tier-age">Ages 9–11</div>
         <div class="tier-proof">
@@ -1554,6 +1572,9 @@ section{position:relative;z-index:2;}
 
       <!-- 12-14 -->
       <a class="tier-card reveal" href="program-12-14.html" aria-label="View the Develop program for ages 12 to 14">
+        <div class="tier-media">
+          <img src="assets/programs/develop.webp" width="700" height="933" loading="lazy" alt="Develop program box — Strength & Speed, ages 12 to 14" />
+        </div>
         <div class="tier-badge">Founding Price</div>
         <div class="tier-age">Ages 12–14</div>
         <div class="tier-proof">
@@ -1579,6 +1600,9 @@ section{position:relative;z-index:2;}
 
       <!-- 15-18 -->
       <a class="tier-card reveal" href="program-15-18.html" aria-label="View the Compete program for ages 15 to 18">
+        <div class="tier-media">
+          <img src="assets/programs/compete.webp" width="700" height="933" loading="lazy" alt="Compete program box — Power & Performance, ages 15 to 18" />
+        </div>
         <div class="tier-badge">Founding Price</div>
         <div class="tier-age">Ages 15–18</div>
         <div class="tier-proof">
@@ -1604,6 +1628,9 @@ section{position:relative;z-index:2;}
 
       <!-- 19-39 -->
       <a class="tier-card reveal" href="program-19-39.html" aria-label="View the Dominate program for ages 19 to 39">
+        <div class="tier-media">
+          <img src="assets/programs/dominate.webp" width="700" height="933" loading="lazy" alt="Dominate program box — Peak Performance, ages 19 to 39" />
+        </div>
         <div class="tier-badge">Founding Price</div>
         <div class="tier-age">Ages 19–39</div>
         <div class="tier-proof">
@@ -1629,6 +1656,9 @@ section{position:relative;z-index:2;}
 
       <!-- 40+ -->
       <a class="tier-card reveal" href="program-40-plus.html" aria-label="View the Sustain program for ages 40 plus">
+        <div class="tier-media">
+          <img src="assets/programs/sustain.webp" width="700" height="933" loading="lazy" alt="Sustain program box — Longevity & Power, ages 40 plus" />
+        </div>
         <div class="tier-badge">Founding Price</div>
         <div class="tier-age">Ages 40+</div>
         <div class="tier-proof">
