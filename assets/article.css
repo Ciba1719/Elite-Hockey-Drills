@@ -423,6 +423,21 @@
 }
 @media(min-width:900px){.art-hero.has-photo{padding-bottom:72px;}}
 
+/* ===== MOBILE: phone-native diagrams + hero crop fix ===== */
+/* desktop hides the mobile chart; phones swap to it */
+.art-figure svg.fig-mobile{display:none;}
+@media(max-width:640px){
+  .art-figure svg:not(.fig-mobile){display:none;}
+  .art-figure svg.fig-mobile{display:block;}
+}
+/* on phones the wide hero photo is heavily cropped, so darken vertically (bottom-heavy) instead of left-to-right so the headline stays readable over whatever shows */
+@media(max-width:760px){
+  .art-hero.has-photo .art-hero-bg{background-position:center;}
+  .art-hero.has-photo .art-hero-bg::after{
+    background:linear-gradient(180deg, rgba(7,7,8,.55) 0%, rgba(7,7,8,.72) 52%, rgba(7,7,8,.93) 100%);
+  }
+}
+
 @media(prefers-reduced-motion:reduce){
   .art-card{transition:border-color .35s,box-shadow .35s!important;}
 }
