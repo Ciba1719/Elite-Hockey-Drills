@@ -1194,13 +1194,6 @@ section{position:relative;z-index:2;}
   line-height:1;
   white-space:nowrap;
 }
-.tier-proof-label{
-  font-size:11.5px;
-  font-weight:600;
-  letter-spacing:.01em;
-  color:var(--ink-2);
-}
-
 /* Honest momentum / authority line above the carousel */
 .tiers-proof-bar{
   display:flex;align-items:center;justify-content:center;gap:11px;
@@ -1212,8 +1205,9 @@ section{position:relative;z-index:2;}
 .tiers-proof-bar .txt{font-size:13.5px;color:var(--ink-2);font-weight:500;line-height:1.5;}
 .tiers-proof-bar .txt strong{color:var(--ink);font-weight:700;}
 
-/* Swipe hint — only shows on the mobile/tablet carousel */
+/* Swipe hint + dot indicators — only show on the mobile/tablet carousel */
 .tiers-swipe-hint{display:none;}
+.tiers-dots{display:none;}
 
 @media(max-width:1023px){
   /* Turn the program grid into a horizontal scroll-snap carousel */
@@ -1247,6 +1241,26 @@ section{position:relative;z-index:2;}
     color:var(--ink-3);
   }
   .tiers-swipe-hint svg{animation:swipeNudge 1.8s ease-in-out infinite;}
+
+  /* Dot indicators — which program you're on */
+  .tiers-dots{
+    display:flex;align-items:center;justify-content:center;gap:4px;
+    margin-top:14px;
+  }
+  .tiers-dot{
+    display:flex;padding:8px;background:none;border:none;cursor:pointer;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .tiers-dot::before{
+    content:'';width:8px;height:8px;border-radius:100px;
+    background:rgba(255,255,255,.20);
+    transition:width .35s cubic-bezier(.2,.7,.2,1), background .35s ease;
+  }
+  .tiers-dot.is-active::before{
+    width:24px;
+    background:var(--ice);
+    box-shadow:0 0 12px var(--ice-soft);
+  }
 }
 
 @keyframes swipeNudge{
@@ -1519,7 +1533,6 @@ section{position:relative;z-index:2;}
         <div class="tier-age">Ages 9–11</div>
         <div class="tier-proof">
           <span class="tier-stars" aria-label="Rated 5 out of 5 stars">★★★★★</span>
-          <span class="tier-proof-label">Rated 5★ by early players</span>
         </div>
         <h3 class="tier-headline">Foundations<em>Athletic Movement</em></h3>
         <p class="tier-desc">Build the movement, balance, and speed every young player needs — fun-first athletic development with bands, light dumbbells, and bodyweight — no gym.</p>
@@ -1545,7 +1558,6 @@ section{position:relative;z-index:2;}
         <div class="tier-age">Ages 12–14</div>
         <div class="tier-proof">
           <span class="tier-stars" aria-label="Rated 5 out of 5 stars">★★★★★</span>
-          <span class="tier-proof-label">Rated 5★ by early players</span>
         </div>
         <h3 class="tier-headline">Develop<em>Strength &amp; Speed</em></h3>
         <p class="tier-desc">The growth-spurt window. Build speed, power, and durable movement the smart way — growth-smart (PHV-aware), with bands and bodyweight.</p>
@@ -1571,7 +1583,6 @@ section{position:relative;z-index:2;}
         <div class="tier-age">Ages 15–18</div>
         <div class="tier-proof">
           <span class="tier-stars" aria-label="Rated 5 out of 5 stars">★★★★★</span>
-          <span class="tier-proof-label">Rated 5★ by early players</span>
         </div>
         <h3 class="tier-headline">Compete<em>Power &amp; Performance</em></h3>
         <p class="tier-desc">For serious juniors — the off-ice speed, power, and conditioning engine. Bands, dumbbells, and bodyweight; it pairs with your gym strength work, never replaces it.</p>
@@ -1597,7 +1608,6 @@ section{position:relative;z-index:2;}
         <div class="tier-age">Ages 19–39</div>
         <div class="tier-proof">
           <span class="tier-stars" aria-label="Rated 5 out of 5 stars">★★★★★</span>
-          <span class="tier-proof-label">Rated 5★ by early players</span>
         </div>
         <h3 class="tier-headline">Dominate<em>Peak Performance</em></h3>
         <p class="tier-desc">Built for the prime years — trained adult players. The off-ice speed and power block, with bands, a pull-up bar, and bodyweight. Force-velocity periodization that shows up on the ice.</p>
@@ -1623,7 +1633,6 @@ section{position:relative;z-index:2;}
         <div class="tier-age">Ages 40+</div>
         <div class="tier-proof">
           <span class="tier-stars" aria-label="Rated 5 out of 5 stars">★★★★★</span>
-          <span class="tier-proof-label">Rated 5★ by early players</span>
         </div>
         <h3 class="tier-headline">Sustain<em>Longevity &amp; Power</em></h3>
         <p class="tier-desc">Hockey isn't just for the young. Stay fast, strong, and durable deep into your career — joint-friendly off-ice training built around how a 40+ body recovers.</p>
@@ -1648,6 +1657,14 @@ section{position:relative;z-index:2;}
     <div class="tiers-swipe-hint" aria-hidden="true">
       <span>Swipe to explore all 5 programs</span>
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </div>
+
+    <div class="tiers-dots" role="group" aria-label="Choose a program">
+      <button class="tiers-dot is-active" type="button" aria-label="Go to program 1"></button>
+      <button class="tiers-dot" type="button" aria-label="Go to program 2"></button>
+      <button class="tiers-dot" type="button" aria-label="Go to program 3"></button>
+      <button class="tiers-dot" type="button" aria-label="Go to program 4"></button>
+      <button class="tiers-dot" type="button" aria-label="Go to program 5"></button>
     </div>
   </div>
 </section>
@@ -2008,6 +2025,46 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
       card.style.setProperty('--my', y + '%');
     });
   });
+})();
+
+/* Program carousel — dot indicators sync + click-to-scroll (mobile/tablet) */
+(function(){
+  const grid = document.querySelector('.tier-grid');
+  const dotsWrap = document.querySelector('.tiers-dots');
+  if(!grid || !dotsWrap) return;
+  const dots = Array.prototype.slice.call(dotsWrap.querySelectorAll('.tiers-dot'));
+  const cards = Array.prototype.slice.call(grid.querySelectorAll('.tier-card'));
+  if(!dots.length || !cards.length) return;
+
+  function setActive(i){
+    dots.forEach((d, di) => d.classList.toggle('is-active', di === i));
+  }
+  function nearestCard(){
+    const gr = grid.getBoundingClientRect();
+    const center = gr.left + gr.width / 2;
+    let best = 0, bestDist = Infinity;
+    cards.forEach((c, i) => {
+      const r = c.getBoundingClientRect();
+      const dist = Math.abs((r.left + r.width / 2) - center);
+      if(dist < bestDist){ bestDist = dist; best = i; }
+    });
+    return best;
+  }
+
+  function onScroll(){ setActive(nearestCard()); }
+  grid.addEventListener('scroll', onScroll, { passive:true });
+  window.addEventListener('resize', onScroll);
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      const card = cards[i];
+      if(!card) return;
+      const delta = card.getBoundingClientRect().left - grid.getBoundingClientRect().left;
+      grid.scrollBy({ left: delta - 24, behavior: 'smooth' });
+    });
+  });
+
+  setActive(nearestCard());
 })();
 
 function toggleFaq(btn){
