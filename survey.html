@@ -291,13 +291,18 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
     <h2 class="q-title display">What's your <em>age?</em></h2>
     <p class="q-sub">This is the most important question — your program is built around your stage of development.</p>
     <div class="options">
-      <button class="option" data-value="9_13" data-label="9–13">
-        <span>9–13<span class="option-sub">Youth development stage</span></span>
+      <button class="option" data-value="9_11" data-label="9–11">
+        <span>9–11<span class="option-sub">Youth foundation stage</span></span>
         <svg class="opt-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></span>
       </button>
-      <button class="option" data-value="14_18" data-label="14–18">
-        <span>14–18<span class="option-sub">Junior / high school years</span></span>
+      <button class="option" data-value="12_14" data-label="12–14">
+        <span>12–14<span class="option-sub">Development stage</span></span>
+        <svg class="opt-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+      </button>
+      <button class="option" data-value="15_18" data-label="15–18">
+        <span>15–18<span class="option-sub">Junior / high school years</span></span>
         <svg class="opt-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></span>
       </button>
@@ -466,15 +471,11 @@ function getScreen(step){
 }
 
 function getTotal(){
-  return answers.age === '9_13' ? 3 : 4;
+  return 4;
 }
 
 function stepToPosition(step){
-  const isYouth = answers.age === '9_13';
-  if(step === 1) return 1;
-  if(step === 2) return 2;
-  if(step === 3) return 3;
-  if(step === 4) return isYouth ? 3 : 4;
+  if(step >= 1 && step <= 4) return step;
   return 0;
 }
 
@@ -531,9 +532,7 @@ function showScreen(step, direction){
 
 function goNext(){
   let next;
-  if(currentStep === 2 && answers.age === '9_13'){
-    next = 4;
-  } else if(currentStep < 4){
+  if(currentStep < 4){
     next = currentStep + 1;
   } else if(currentStep === 4){
     next = 'email';
@@ -593,14 +592,13 @@ function populateEmailScreen(){
 /* ============================================================
    MATCHED PROGRAM (success screen)
    ============================================================
-   The quiz has 4 age buckets but there are 5 programs, so each
-   bucket maps to its best-overlap program. 9–13 shows both 9–11
-   and 12–14 so a parent can pick by their player's exact age.
+   Five age buckets, one paid program each — 1:1 with the free
+   plan the survey delivers.
    ============================================================ */
 const PROGRAM_MATCH = {
-  '9_13':   [ { name:'Move & Play',      age:'9–11',  url:'/program-9-11.html',    desc:'Off-ice foundation — speed, balance & athletic movement.' },
-              { name:'Develop & Drive',  age:'12–14', url:'/program-12-14.html',   desc:'Growth-smart strength & speed for developing players.' } ],
-  '14_18':  [ { name:'Build & Compete',  age:'15–18', url:'/program-15-18.html',   desc:'Power & performance for serious junior players.' } ],
+  '9_11':   [ { name:'Move & Play',      age:'9–11',  url:'/program-9-11.html',    desc:'Off-ice foundation — speed, balance & athletic movement.' } ],
+  '12_14':  [ { name:'Develop & Drive',  age:'12–14', url:'/program-12-14.html',   desc:'Growth-smart strength & speed for developing players.' } ],
+  '15_18':  [ { name:'Build & Compete',  age:'15–18', url:'/program-15-18.html',   desc:'Power & performance for serious junior players.' } ],
   '19_39':  [ { name:'Power & Speed',    age:'19–39', url:'/program-19-39.html',   desc:'Explosive power, speed & conditioning for prime years.' } ],
   '40plus': [ { name:'Strong & Durable', age:'40+',   url:'/program-40-plus.html', desc:'Joint-friendly strength & mobility that lasts.' } ]
 };
@@ -622,13 +620,7 @@ function populateSuccessScreen(){
   const tail = document.getElementById('successSubTail');
   const wrap = document.getElementById('successCtas');
   if(!wrap) return;
-  if(list.length > 1){
-    wrap.classList.add('is-dual');
-    if(tail) tail.innerHTML = `The real gains are in the full 8-week build. Two fit <strong>ages ${answers.ageLabel || '9–13'}</strong> — pick your player's:`;
-  } else {
-    wrap.classList.remove('is-dual');
-    if(tail) tail.innerHTML = `The real gains are in the full 8-week build — here's the one matched to you:`;
-  }
+  if(tail) tail.innerHTML = `The real gains are in the full 8-week build — here's the one matched to you:`;
   wrap.innerHTML = list.map(buildCard).join('');
 }
 

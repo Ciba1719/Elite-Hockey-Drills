@@ -14,8 +14,9 @@ const MAILERLITE_API = 'https://connect.mailerlite.com/api';
 // Survey age bucket -> MailerLite group name. Names must match the groups in the
 // MailerLite account exactly. Unknown/missing age falls back to the adult group.
 const GROUP_NAMES = {
-  '9_13':   'youth-program',
-  '14_18':  'teen-program',
+  '9_11':   'kids-program',     // NEW group — create this in MailerLite
+  '12_14':  'youth-program',    // existing group, now serves 12–14 (was 9–13)
+  '15_18':  'teen-program',     // existing group, now serves 15–18 (was 14–18)
   '19_39':  'adult-program',
   '40plus': 'masters-program',
 };
