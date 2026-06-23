@@ -251,7 +251,7 @@
     "progression": "Progress: heavier DB or bottom pause | Regress: lighter/no weight (bodyweight squat)",
     "muscles": "Quads, glutes, adductors, upper back, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/goblet_squat_light_db.mp4",
     "slug": "goblet-squat-light-db"
   },
   {
@@ -461,7 +461,7 @@
     "progression": "Progress: hold DBs or add a pause | Regress: hold a support or reduce depth",
     "muscles": "Quads, glutes, hamstrings, hip stabilizers",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/reverse_lunge.mp4",
     "slug": "reverse-lunge"
   },
   {
@@ -476,7 +476,7 @@
     "progression": "Progress: hold DBs or add a deficit | Regress: in-place reverse lunge or hold a support",
     "muscles": "Quads, glutes, hamstrings, adductors, core",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/walking_lunge.mp4",
     "slug": "walking-lunge"
   },
   {
@@ -491,7 +491,7 @@
     "progression": "Progress: hold DBs or add a pause/tempo | Regress: lower the elevation or do a split squat (rear foot down)",
     "muscles": "Quads, glutes, adductors, hip stabilizers",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/bulgarian_split_squat.mp4",
     "slug": "bulgarian-split-squat"
   },
   {
@@ -806,7 +806,7 @@
     "progression": "Progress: hands leave the floor / plyo or clap push-up | Regress: standard push-up with fast intent or from the knees",
     "muscles": "Pectorals, triceps, anterior deltoids, core",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/explosive_push_up.mp4",
     "slug": "explosive-push-up"
   },
   {
@@ -821,7 +821,7 @@
     "progression": "Progress: heavier band or single-arm | Regress: lighter band or non-ballistic press",
     "muscles": "Pectorals, anterior deltoids, triceps, core",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/band_chest_pass.mp4",
     "slug": "band-chest-pass"
   },
   {
@@ -836,7 +836,7 @@
     "progression": "Progress: heavier DBs or single-arm | Regress: lighter DBs or strict overhead press",
     "muscles": "Quads, glutes, deltoids, triceps, core",
     "energy": "Alactic/ATP-PC (power)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/db_push_press.mp4",
     "slug": "db-push-press"
   },
   {
@@ -896,7 +896,7 @@
     "progression": "Progress: longer hold, single-arm, or add load | Regress: feet lightly supported or shorter holds",
     "muscles": "Forearm/finger flexors, lats, scapular stabilizers",
     "energy": "Strength/neural (grip-endurance)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/hanging_bar_hold.mp4",
     "slug": "hanging-bar-hold"
   },
   {
@@ -911,7 +911,7 @@
     "progression": "Progress: heavier band or pause/external-rotation hold | Regress: lighter band or reduce range",
     "muscles": "Rear deltoids, external rotators, mid/lower traps",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/band_face_pull.mp4",
     "slug": "band-face-pull"
   },
   {
@@ -926,7 +926,7 @@
     "progression": "Progress: heavier band or pause each position | Regress: lighter/no band, fewer reps",
     "muscles": "Lower/mid traps, rear delts, rotator cuff",
     "energy": "Strength/neural (endurance)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_y_t_w.mp4",
     "slug": "banded-y-t-w"
   },
   {
@@ -941,7 +941,7 @@
     "progression": "Progress: heavier band or add holds | Regress: lighter band or reduce range",
     "muscles": "Wrist flexors, wrist extensors, forearm muscles",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_wrist_work.mp4",
     "slug": "banded-wrist-work"
   },
   {
@@ -956,7 +956,7 @@
     "progression": "Progress: heavier band or pause at end range | Regress: lighter band or smaller range",
     "muscles": "Rotator cuff (infraspinatus, teres minor, subscapularis)",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/banded_shoulder_cuff_rotation.mp4",
     "slug": "banded-shoulder-cuff-rotation"
   },
   {
@@ -971,7 +971,7 @@
     "progression": "Progress: heavier DBs or feet closer | Regress: wider feet, lighter DBs, or from the knees",
     "muscles": "Lats, rhomboids, biceps, anti-rotation core, shoulders",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/renegade_row.mp4",
     "slug": "renegade-row"
   },
   {
@@ -1001,7 +1001,7 @@
     "progression": "Progress: heavier DB or both limbs simultaneously | Regress: lighter/no weight (bodyweight dead bug)",
     "muscles": "Rectus abdominis, transverse abdominis, hip flexors, shoulders",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/dead_bug_with_db.mp4",
     "slug": "dead-bug-with-db"
   },
   {
@@ -1076,7 +1076,7 @@
     "progression": "Progress: heavier band, step closer, or longer hold | Regress: lighter band or step farther from the anchor",
     "muscles": "Obliques, transverse abdominis, deep core, hip stabilizers",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/pallof_press.mp4",
     "slug": "pallof-press"
   },
   {
@@ -1091,7 +1091,7 @@
     "progression": "Progress: heavier DB or feet closer | Regress: lighter DB, wider feet, or from the knees",
     "muscles": "Anti-rotation core, obliques, shoulders, serratus",
     "energy": "Strength/neural",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/tall_plank_db_drag.mp4",
     "slug": "tall-plank-db-drag"
   },
   {
@@ -1136,7 +1136,7 @@
     "progression": "Progress: lengthen the lever (foot on bench) or add a hold/load | Regress: shorter hold or bottom leg assists more",
     "muscles": "Adductors, obliques, quadratus lumborum, hip stabilizers",
     "energy": "Strength/neural (isometric)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/copenhagen_plank_short.mp4",
     "slug": "copenhagen-plank-short"
   },
   {
@@ -1331,7 +1331,7 @@
     "progression": "Progress: continuous tuck jumps or higher tuck | Regress: jump squat (no tuck) or reduce height",
     "muscles": "Quads, glutes, hip flexors, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/squat_to_tuck_jump.mp4",
     "slug": "squat-to-tuck-jump"
   },
   {
@@ -1406,7 +1406,7 @@
     "progression": "Progress: add load or more reactive reps | Regress: fewer reps or stick every landing",
     "muscles": "Glutes, quads, adductors/abductors, calves, hip stabilizers",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/skater_hop_complex.mp4",
     "slug": "skater-hop-complex"
   },
   {
@@ -1586,7 +1586,7 @@
     "progression": "Progress: longer pause, deeper squat, or add load | Regress: shorter pause or smaller jump",
     "muscles": "Quads, glutes, hamstrings, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/squat_to_broad_jump.mp4",
     "slug": "squat-to-broad-jump"
   },
   {
@@ -1601,7 +1601,7 @@
     "progression": "Progress: more distance/reps or add a target to clear | Regress: bound with a brief stick between reps",
     "muscles": "Glutes, quads, adductors/abductors, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/continuous_lateral_bound.mp4",
     "slug": "continuous-lateral-bound"
   },
   {
@@ -1631,7 +1631,7 @@
     "progression": "Progress: faster/longer or add resistance | Regress: slower crossover steps without a powerful bound",
     "muscles": "Glutes, adductors/abductors, quads, hip stabilizers, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/crossover_step_bound.mp4",
     "slug": "crossover-step-bound"
   },
   {
@@ -1646,7 +1646,7 @@
     "progression": "Progress: higher box or greater bound distance | Regress: lower box or lateral depth drop with a stick (no bound)",
     "muscles": "Glutes, quads, adductors/abductors, hip stabilizers",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/lateral_depth_drop_to_bound.mp4",
     "slug": "lateral-depth-drop-to-bound"
   },
   {
@@ -1803,10 +1803,10 @@
     "num": 123,
     "name": "Crossover Step",
     "category": "Speed, Sprint & Agility",
-    "execution": "From an athletic stance facing forward, to move laterally, open the hips and cross the trailing leg over and in front, then continue accelerating in that direction with driving steps. Coordinate the arm swing with the crossover and keep the first steps low and powerful. Practice exploding out of the stance into the crossover in both directions.",
+    "execution": "From an athletic stance, crossover-step a few metres to one side — opening the hips and crossing the trailing leg over and in front with quick, low steps — then plant, change direction, and crossover-step back the other way. Keep shuffling side to side for the set, staying low and powerful and swinging the arms with each cross.",
     "why": "Trains the crossover acceleration mechanic — opening the hips and crossing over is the fastest way to accelerate laterally from a stationary or athletic position; develops the coordination and push-off used to convert a side-on stance into forward speed in a new direction.",
     "transfer": "Directly mirrors the on-ice crossover start and the change-of-direction acceleration used to explode laterally and into turns; the open-hip crossover step transfers to building speed through crossovers and reacting to play laterally.",
-    "cues": "\"Open the hips, cross over\" · \"low, powerful first steps\" · \"swing the arms with the cross\"",
+    "cues": "\"Open the hips, cross over\" · \"low and quick, both ways\" · \"swing the arms with the cross\"",
     "mistakes": "A slow, upright crossover; false-stepping (stepping the wrong way first); not opening the hips; a weak push-off",
     "progression": "Progress: add a reactive cue or sprint out | Regress: walk through the crossover pattern slowly",
     "muscles": "Glutes, adductors/abductors, quads, hip stabilizers",
@@ -1871,7 +1871,7 @@
     "progression": "Progress: faster cadence or more complex patterns | Regress: slower walk-through of the pattern",
     "muscles": "Calves, hip flexors, foot/ankle stabilizers, coordination",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/fast_feet_ladder_equiv.mp4",
     "slug": "fast-feet-ladder-equiv"
   },
   {
@@ -1916,7 +1916,7 @@
     "progression": "Progress: longer fly zone or faster run-in | Regress: shorter fly zone or submaximal build-ups",
     "muscles": "Hamstrings, glutes, quads, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/30m_fly_sprint.mp4",
     "slug": "30m-fly-sprint"
   },
   {
@@ -1976,7 +1976,7 @@
     "progression": "Progress: extend to a 20–30m fly | Regress: submaximal build-ups or shorter zone",
     "muscles": "Hamstrings, glutes, quads, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/flying_10m_sprint.mp4",
     "slug": "flying-10m-sprint"
   },
   {
@@ -1991,7 +1991,7 @@
     "progression": "Progress: add a reactive cue or longer sprint | Regress: slower, walk-through transition",
     "muscles": "Glutes, adductors/abductors, quads, hamstrings, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/crossover_step_to_sprint.mp4",
     "slug": "crossover-step-to-sprint"
   },
   {
@@ -2006,7 +2006,7 @@
     "progression": "Progress: steeper hill, longer distance, or resisted | Regress: gentler hill or submaximal hill stride",
     "muscles": "Glutes, hamstrings, quads, calves",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/hill_sprint.mp4",
     "slug": "hill-sprint"
   },
   {
@@ -2021,7 +2021,7 @@
     "progression": "Progress: heavier resistance or progress into a resisted sprint | Regress: lighter resistance or unresisted A-skip",
     "muscles": "Hip flexors, glutes, calves, anterior tibialis, core",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/a_skip_resisted.mp4",
     "slug": "a-skip-resisted"
   },
   {
@@ -2141,7 +2141,7 @@
     "progression": "Progress: heavier ball or more explosive/farther | Regress: lighter ball or slower technical reps",
     "muscles": "Obliques, hips/glutes, core, shoulders",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/rotational_med_ball_toss.mp4",
     "slug": "rotational-med-ball-toss"
   },
   {
@@ -2156,7 +2156,7 @@
     "progression": "Progress: heavier ball or more explosive | Regress: lighter ball or technical-speed reps",
     "muscles": "Obliques, hips/glutes, core, shoulders",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/rotational_med_ball_side_toss.mp4",
     "slug": "rotational-med-ball-side-toss"
   },
   {
@@ -2276,7 +2276,7 @@
     "progression": "Progress: longer duration or faster steady pace | Regress: shorter bouts or step-throughs",
     "muscles": "Calves, foot/ankle stabilizers, shoulders/forearms",
     "energy": "Aerobic",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/jump_rope_steady.mp4",
     "slug": "jump-rope-steady"
   },
   {
@@ -2291,7 +2291,7 @@
     "progression": "Progress: longer/harder work or shorter rest | Regress: shorter work, longer rest, or steady skipping",
     "muscles": "Calves, foot/ankle stabilizers, shoulders",
     "energy": "Glycolytic / aerobic (mixed)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/jump_rope_intervals.mp4",
     "slug": "jump-rope-intervals"
   },
   {
@@ -2306,7 +2306,7 @@
     "progression": "Progress: double-unders or faster bursts | Regress: fast single-unders or shorter bursts",
     "muscles": "Calves/Achilles, foot/ankle stabilizers, forearms",
     "energy": "Alactic/ATP-PC",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/jump_rope_speed.mp4",
     "slug": "jump-rope-speed"
   },
   {
@@ -2486,7 +2486,7 @@
     "progression": "Progress: walk the hands to one side for a lat stretch | Regress: place a cushion under the hips for comfort",
     "muscles": "N/A (mobility/recovery — lats, low back, hips)",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/child_s_pose_with_breath.mp4",
     "slug": "child-s-pose-with-breath"
   },
   {
@@ -2501,7 +2501,7 @@
     "progression": "Progress: longer duration or add gentle ankle pumps | Regress: legs on a chair instead of the wall",
     "muscles": "N/A (recovery — circulation)",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/legs_up_the_wall_or_shin_pull.mp4",
     "slug": "legs-up-the-wall-or-shin-pull"
   },
   {
@@ -2561,7 +2561,7 @@
     "progression": "Progress: deeper twist or longer hold | Regress: place a cushion under the knee or reduce range",
     "muscles": "N/A (mobility/recovery — spinal rotators, glutes, chest)",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/supine_spinal_twist.mp4",
     "slug": "supine-spinal-twist"
   },
   {
@@ -2576,7 +2576,7 @@
     "progression": "Progress: deeper ranges or longer holds in each position | Regress: smaller ranges or fewer positions",
     "muscles": "N/A (mobility/recovery — hips, adductors/groin)",
     "energy": "N/A (mobility/recovery)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/hip_groin_flow.mp4",
     "slug": "hip-groin-flow"
   },
   {
@@ -2621,7 +2621,7 @@
     "progression": "Progression: a higher level or more shuttles. Regression: stop earlier, or use a longer shuttle (about 30 m) with gentler turns if the sharp 180-degree turns bother your knees or ankles.",
     "muscles": "Full body (aerobic/cardiovascular)",
     "energy": "Aerobic (maximal test)",
-    "video": "",
+    "video": "https://pub-40102464ff0f4d61a636f1749e9d3111.r2.dev/beep_test.mp4",
     "slug": "beep-test"
   }
 ]

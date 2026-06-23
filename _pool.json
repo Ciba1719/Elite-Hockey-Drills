@@ -1,0 +1,1098 @@
+[
+ {
+  "name": "Spider Lunge with Rotation",
+  "file": "spider_lunge_with_rotation",
+  "slug": "spider-lunge-with-rotation",
+  "equip": "Bodyweight",
+  "cat": "Warm-up / Mobility",
+  "how": "From a plank, step one foot to the outside of the same-side hand into a deep lunge, back leg long and hips low. Reach the inside arm under and through, then rotate it up toward the ceiling, opening the chest and following the hand with your eyes. Return the hand down and step back to plank. Alternate sides."
+ },
+ {
+  "name": "Inchworm to Push-Up",
+  "file": "inchworm_to_push_up",
+  "slug": "inchworm-to-push-up",
+  "equip": "Bodyweight",
+  "cat": "Warm-up / Mobility",
+  "how": "Stand tall, hinge at the hips and place hands on the floor (bend knees as needed). Walk the hands out to a plank, core braced and hips level. Perform one push-up, then walk the hands back toward the feet and stand to finish. Move smoothly and control each phase."
+ },
+ {
+  "name": "Lateral Squat Shift",
+  "file": "lateral_squat_shift",
+  "slug": "lateral-squat-shift",
+  "equip": "Bodyweight",
+  "cat": "Warm-up / Mobility",
+  "how": "Stand wide, toes mostly forward. Shift weight to one side, bending that knee and pushing the hips back while the opposite leg stays straight. Both heels down, chest tall. Sink to a comfortable depth, feel the straight-leg adductor stretch, then glide smoothly to the other side. Stay low throughout."
+ },
+ {
+  "name": "A-Skip in Place",
+  "file": "a_skip_in_place",
+  "slug": "a-skip-in-place",
+  "equip": "Cones & Ladder",
+  "cat": "Warm-up / Mobility",
+  "how": "Standing tall, skip in place driving one knee to hip height while the opposite arm drives forward in a 1-2 rhythm. Stay on the balls of the feet, dorsiflex the lifted ankle (toe up), and strike the ground actively under the hip. Keep posture upright and the rhythm crisp."
+ },
+ {
+  "name": "90/90 Hip Switch",
+  "file": "90_90_hip_switch",
+  "slug": "90-90-hip-switch",
+  "equip": "Bodyweight",
+  "cat": "Warm-up / Mobility",
+  "how": "Sit with one leg bent in front (shin across, 90°) and the other bent to the side (90°), both knees down. Chest tall, lift the knees and rotate the hips to switch to the mirror position on the other side. Control the rotation through the hips, not by hiking the spine. Alternate smoothly."
+ },
+ {
+  "name": "Jumping Jacks",
+  "file": "jumping_jacks",
+  "slug": "jumping-jacks",
+  "equip": "Bodyweight",
+  "cat": "Warm-up / Mobility",
+  "how": "Stand tall, feet together, arms at sides. Jump the feet out wide while sweeping the arms overhead, then jump back as the arms return. Land softly on the balls of the feet with soft knees and keep a steady, rhythmic pace. Breathe rhythmically for the prescribed time."
+ },
+ {
+  "name": "Butt Kicks",
+  "file": "butt_kicks",
+  "slug": "butt-kicks",
+  "equip": "Bodyweight",
+  "cat": "Warm-up / Mobility",
+  "how": "Jog in place or move forward, flicking the heels up toward the glutes with a quick hamstring contraction. Stay tall on the balls of the feet with short ground contacts and let the arms swing in rhythm. Keep the knees pointing down and the cadence quick."
+ },
+ {
+  "name": "Banded Clamshell",
+  "file": "banded_clamshell",
+  "slug": "banded-clamshell",
+  "equip": "Bands",
+  "cat": "Warm-up / Mobility",
+  "how": "Side-lying, hips and knees bent ~45°, mini-band above the knees, feet stacked. Keeping feet together and pelvis stable (don’t roll back), lift the top knee against the band by rotating from the hip. Pause at the top, then lower with control. Complete reps, then switch sides."
+ },
+ {
+  "name": "Banded Lateral Walk",
+  "file": "banded_lateral_walk",
+  "slug": "banded-lateral-walk",
+  "equip": "Bands",
+  "cat": "Warm-up / Mobility",
+  "how": "Mini-band above knees or ankles. Drop into a quarter-squat athletic stance with band tension. Step one foot out to the side, then bring the trailing foot part-way in — keep constant tension. Stay low, chest up, toes forward. Travel a set number of steps each direction."
+ },
+ {
+  "name": "T-Spine Rotation",
+  "file": "t_spine_rotation",
+  "slug": "t-spine-rotation",
+  "equip": "Bodyweight",
+  "cat": "Warm-up / Mobility",
+  "how": "In quadruped or half-kneeling, place one hand behind the head. Rotate that elbow down and under toward the opposite arm, then open it up and back toward the ceiling, following the elbow with your eyes. Keep the hips square and the movement from the upper back, not the lumbar spine. Switch sides."
+ },
+ {
+  "name": "Adductor Rocker",
+  "file": "adductor_rocker",
+  "slug": "adductor-rocker",
+  "equip": "Bodyweight",
+  "cat": "Warm-up / Mobility",
+  "how": "On hands and knees, extend one leg straight out to the side, foot flat and toes forward, hips level. Sit the hips back toward the bent-leg heel, feeling a stretch through the straight leg’s inner thigh, then rock forward. Keep a flat back, move slowly. Repeat, then switch sides."
+ },
+ {
+  "name": "Ankle Dorsiflexion (Wall)",
+  "file": "ankle_dorsiflexion_wall",
+  "slug": "ankle-dorsiflexion-wall",
+  "equip": "Bodyweight",
+  "cat": "Warm-up / Mobility",
+  "how": "Half-kneeling or staggered stance facing a wall, front foot a few inches away. Keeping the heel flat, drive the front knee forward over the toes toward the wall without the heel lifting. Touch the knee to the wall if able, then return. Move the foot back to progress. Reps per side."
+ },
+ {
+  "name": "Banded Monster Walk",
+  "file": "banded_monster_walk",
+  "slug": "banded-monster-walk",
+  "equip": "Bands",
+  "cat": "Warm-up / Mobility",
+  "how": "Mini-band around ankles or above the knees. In an athletic quarter-squat, step diagonally forward-and-out with one foot, then the other, “walking” forward against constant tension. Keep the stance wide, toes forward, knees pushed out, chest tall. Walk forward a set number of steps, then backward."
+ },
+ {
+  "name": "Banded Front Squat",
+  "file": "banded_front_squat",
+  "slug": "banded-front-squat",
+  "equip": "Bands",
+  "cat": "Squat / Knee-dominant",
+  "how": "Stand on a long band, feet shoulder-width, and rack the band across the front of the shoulders (elbows high). Brace and squat to parallel, torso upright and elbows lifted. Drive up through the whole foot against increasing band tension. Keep the chest tall throughout."
+ },
+ {
+  "name": "Iso Wall Sit",
+  "file": "iso_wall_sit",
+  "slug": "iso-wall-sit",
+  "equip": "Bodyweight",
+  "cat": "Squat / Knee-dominant",
+  "how": "Back flat against a wall, slide down until hips and knees are at ~90°, thighs parallel. Keep the feet flat and under the knees, back pressed to the wall, weight in the heels. Hold for the prescribed time, breathing steadily, then stand to finish."
+ },
+ {
+  "name": "Banded Squat",
+  "file": "banded_squat",
+  "slug": "banded-squat",
+  "equip": "Bands",
+  "cat": "Squat / Knee-dominant",
+  "how": "Stand on a band, feet shoulder-width, holding the other end at shoulder height (or looped over shoulders). Brace and squat to parallel, knees tracking over the toes, then drive up against the band. Keep the chest tall and heels down throughout; the band makes the top hardest."
+ },
+ {
+  "name": "Deep Squat Hold",
+  "file": "deep_squat_hold",
+  "slug": "deep-squat-hold",
+  "equip": "Bodyweight",
+  "cat": "Squat / Knee-dominant",
+  "how": "Lower into the bottom of a deep squat — hips below parallel — feet flat, heels down, knees pushed out. Keep the chest as tall as mobility allows and use the elbows to gently press the knees apart. Settle weight evenly through the feet and hold for the prescribed time, breathing into the position."
+ },
+ {
+  "name": "Band Glute Bridge",
+  "file": "band_glute_bridge",
+  "slug": "band-glute-bridge",
+  "equip": "Bands",
+  "cat": "Hinge / Posterior Chain",
+  "how": "On your back, knees bent, feet flat, mini-band above the knees. Press the knees outward against the band. Drive through the heels to lift the hips into a straight line, squeezing the glutes at the top while maintaining outward knee pressure. Pause, then lower under control."
+ },
+ {
+  "name": "SL Glute Bridge (Band)",
+  "file": "sl_glute_bridge_band",
+  "slug": "sl-glute-bridge-band",
+  "equip": "Bands",
+  "cat": "Hinge / Posterior Chain",
+  "how": "On your back, mini-band above the knees, one foot flat and the other leg extended or knee tucked. Press the working knee slightly out against the band, then drive through the planted heel to lift the hips level, squeezing the glute. Keep the pelvis square — don’t let it tip. Lower with control. Switch sides."
+ },
+ {
+  "name": "DB RDL",
+  "file": "db_rdl",
+  "slug": "db-rdl",
+  "equip": "Dumbbells",
+  "cat": "Hinge / Posterior Chain",
+  "how": "Hold DBs in front of the thighs, feet hip-width, knees softly bent. Brace and push the hips straight back, sliding the DBs down the front of the legs while keeping the back flat and the bells close. Lower until you feel a hamstring stretch around mid-shin, then drive the hips forward to stand, squeezing the glutes. Keep the shins near vertical."
+ },
+ {
+  "name": "SL DB RDL",
+  "file": "sl_db_rdl",
+  "slug": "sl-db-rdl",
+  "equip": "Dumbbells",
+  "cat": "Hinge / Posterior Chain",
+  "how": "Hold a DB in one or both hands and stand on one leg with a soft knee. Hinge at the hip, extending the free leg straight behind as the torso lowers and the DB tracks toward the floor; keep the hips square and back flat. Lower until you feel a hamstring stretch, then drive the hip forward to return to standing. Reps, then switch."
+ },
+ {
+  "name": "Banded RDL",
+  "file": "banded_rdl",
+  "slug": "banded-rdl",
+  "equip": "Bands",
+  "cat": "Hinge / Posterior Chain",
+  "how": "Stand on a band, feet hip-width, holding the other end at the hips or shoulders. Soft knees, brace, push the hips straight back against rising band tension, keeping the back flat. Lower to a hamstring stretch, then drive the hips forward to stand against the band. Keep the band path close to the body."
+ },
+ {
+  "name": "SL RDL (Banded)",
+  "file": "sl_rdl_banded",
+  "slug": "sl-rdl-banded",
+  "equip": "Bands",
+  "cat": "Hinge / Posterior Chain",
+  "how": "Anchor a band underfoot of the standing leg (or to the working hip) and stand on one leg. Hinge at the hip, free leg extending behind, lowering against band tension to a hamstring stretch with a flat back and square hips. Drive the hip forward to stand against the band. Reps, then switch."
+ },
+ {
+  "name": "Banded Hamstring Slides",
+  "file": "banded_hamstring_slides",
+  "slug": "banded-hamstring-slides",
+  "equip": "Bands",
+  "cat": "Hinge / Posterior Chain",
+  "how": "Lie on your back, heels on sliders or a towel, optionally with a band adding tension. Bridge the hips up, then slide the heels out by straightening the legs while keeping the hips lifted, then curl the heels back in toward the glutes under control. Keep the hips high throughout."
+ },
+ {
+  "name": "DB Goblet Lateral Lunge",
+  "file": "db_goblet_lateral_lunge",
+  "slug": "db-goblet-lateral-lunge",
+  "equip": "Dumbbells",
+  "cat": "Lunge & Single-leg",
+  "how": "Hold a DB at the chest (goblet). Step wide to one side, bending that knee and pushing the hips back while the trailing leg stays straight, both feet flat and toes forward. Descend until the working thigh nears parallel, chest tall, then drive back to center. Reps, then switch sides."
+ },
+ {
+  "name": "Box Step-Up (DBs)",
+  "file": "box_step_up_dbs",
+  "slug": "box-step-up-dbs",
+  "equip": "Plyo & Hurdles",
+  "cat": "Lunge & Single-leg",
+  "how": "Hold DBs at the sides, standing facing a knee-height box. Place one whole foot on the box, drive through that heel to stand tall on top (bringing the trailing leg up or into a knee drive). Lower under control back to the floor with the same leg leading. Complete reps, then switch."
+ },
+ {
+  "name": "SL Box Step-Down",
+  "file": "sl_box_step_down",
+  "slug": "sl-box-step-down",
+  "equip": "Plyo & Hurdles",
+  "cat": "Lunge & Single-leg",
+  "how": "Stand on top of a low box on one leg, the other leg hanging off the edge. Slowly bend the standing leg to lower the free heel toward the floor under control, keeping the standing knee tracking over the foot and the hips level. Lightly tap the floor (or hover), then drive back up to standing. Reps, then switch."
+ },
+ {
+  "name": "Banded Standing Adduction",
+  "file": "banded_standing_adduction",
+  "slug": "banded-standing-adduction",
+  "equip": "Bands",
+  "cat": "Lunge & Single-leg",
+  "how": "Anchor a band at ankle height to a post and loop it around the inside ankle of the working leg; stand side-on so the band pulls the leg outward. Stabilize on the outside leg, then pull the banded leg across the midline (adduction) against the band, and control it back out. Keep the torso tall and pelvis stable. Reps, then switch."
+ },
+ {
+  "name": "Banded Lateral Lunge",
+  "file": "banded_lateral_lunge",
+  "slug": "banded-lateral-lunge",
+  "equip": "Bands",
+  "cat": "Lunge & Single-leg",
+  "how": "Loop a band for resistance (around the working leg or held) and stand tall. Step wide to one side, bending that knee and pushing the hips back while the trailing leg stays straight, feet flat. Descend to a comfortable depth against band tension, then drive back to center against the band. Reps, then switch."
+ },
+ {
+  "name": "DB Bulgarian Split Squat",
+  "file": "db_bulgarian_split_squat",
+  "slug": "db-bulgarian-split-squat",
+  "equip": "Dumbbells",
+  "cat": "Lunge & Single-leg",
+  "how": "Hold DBs at the sides with the top of the rear foot on a bench a stride behind. Brace and lower the back knee toward the floor by bending the front leg, front shin near vertical, torso slightly forward. Descend until the front thigh nears parallel, then drive through the front foot to stand. Reps, then switch."
+ },
+ {
+  "name": "SL Balance — Eyes Closed",
+  "file": "sl_balance_eyes_closed",
+  "slug": "sl-balance-eyes-closed",
+  "equip": "Bodyweight",
+  "cat": "Lunge & Single-leg",
+  "how": "Stand on one leg with the other foot lifted, find a tall posture, then close the eyes. Maintain a level pelvis and tall spine, letting the foot and ankle make constant small corrections without vision. Hold for the prescribed time, then switch sides. Stand near a wall for safety."
+ },
+ {
+  "name": "DB Floor Press",
+  "file": "db_floor_press",
+  "slug": "db-floor-press",
+  "equip": "Dumbbells",
+  "cat": "Upper Body / Push",
+  "how": "Lie on the floor, knees bent, a DB in each hand pressed up over the chest. Lower the DBs until the upper arms (triceps) rest lightly on the floor, elbows at ~45°, then press back up to lockout, keeping the wrists stacked over the elbows. Control each rep; the floor limits the range."
+ },
+ {
+  "name": "Half-Kneeling DB Press",
+  "file": "half_kneeling_db_press",
+  "slug": "half-kneeling-db-press",
+  "equip": "Dumbbells",
+  "cat": "Upper Body / Push",
+  "how": "Half-kneeling (one knee down, opposite foot forward), DB racked at the shoulder on the down-knee side. Brace the core and glutes, ribs down, and press the DB straight overhead to lockout without leaning back. Lower under control to the shoulder. Complete reps, then switch sides/knees."
+ },
+ {
+  "name": "DB Push-Up to Row",
+  "file": "db_push_up_to_row",
+  "slug": "db-push-up-to-row",
+  "equip": "Dumbbells",
+  "cat": "Upper Body / Push",
+  "how": "In a push-up position gripping two DBs, feet wide for stability and body in a straight line. Perform a push-up, then at the top row one DB to the ribs while bracing hard against rotation, lower it, and row the other side. Keep the hips square and level throughout. Alternate rows."
+ },
+ {
+  "name": "Plank to Push-Up",
+  "file": "plank_to_push_up",
+  "slug": "plank-to-push-up",
+  "equip": "Bodyweight",
+  "cat": "Upper Body / Push",
+  "how": "Start in a forearm plank, body straight and braced. Press up onto one hand, then the other, into a full push-up position, then lower back down to the forearms one arm at a time. Keep the hips as square and still as possible — minimize side-to-side rocking. Alternate the leading arm each rep."
+ },
+ {
+  "name": "Deficit Push-Up",
+  "file": "deficit_push_up",
+  "slug": "deficit-push-up",
+  "equip": "Bodyweight",
+  "cat": "Upper Body / Push",
+  "how": "Place each hand on a low surface (low blocks, books, or plates) a bit wider than the shoulders, body in a straight line and braced. Lower the chest between the hands below hand level for an extended range, then press back to full lockout. Keep the elbows at ~45°, hips level, neck neutral. Control the deeper descent."
+ },
+ {
+  "name": "Archer Push-Up",
+  "file": "archer_push_up",
+  "slug": "archer-push-up",
+  "equip": "Bodyweight",
+  "cat": "Upper Body / Push",
+  "how": "Set the hands wide, body straight and braced. Lower toward one hand by bending that elbow while the opposite arm stays nearly straight, sliding the weight onto the working side. Press back to center, then alternate. Keep the hips square and level; control the shift to each side."
+ },
+ {
+  "name": "Banded Chest Press",
+  "file": "banded_chest_press",
+  "slug": "banded-chest-press",
+  "equip": "Bands",
+  "cat": "Upper Body / Push",
+  "how": "Anchor a band behind you at chest height (or loop it across the upper back), a handle in each hand at the chest, in a staggered stance for balance. Press the hands forward to full extension against the band, squeezing the chest, then return under control to the chest. Keep the torso upright and braced."
+ },
+ {
+  "name": "Push-Up to Reach",
+  "file": "push_up_to_reach",
+  "slug": "push-up-to-reach",
+  "equip": "Bodyweight",
+  "cat": "Upper Body / Push",
+  "how": "Perform a push-up; at the top, lift one hand and reach it forward (or out in front) while bracing hard to keep the hips square, then return the hand and repeat on the other side. Keep the body in a straight line, hips level — no rocking. Alternate the reaching arm each rep."
+ },
+ {
+  "name": "Explosive Push-Up",
+  "file": "explosive_push_up",
+  "slug": "explosive-push-up",
+  "equip": "Bodyweight",
+  "cat": "Upper Body / Push",
+  "how": "From a full push-up position, body braced, lower with control, then press up as fast and forcefully as possible — driving the hands hard into the floor so the press is explosive (the hands may leave the floor slightly). Reset and repeat with intent on every concentric. Keep the hips level and core tight."
+ },
+ {
+  "name": "Band Chest Pass",
+  "file": "band_chest_pass",
+  "slug": "band-chest-pass",
+  "equip": "Bands",
+  "cat": "Upper Body / Push",
+  "how": "Anchor a band behind you, handles at the chest, in a staggered athletic stance. Explosively press both hands forward to full extension as fast as possible (like a two-hand chest pass), then control the return. Reset posture each rep and press with maximal intent. Brace the trunk against the band’s pull."
+ },
+ {
+  "name": "DB Push Press",
+  "file": "db_push_press",
+  "slug": "db-push-press",
+  "equip": "Dumbbells",
+  "cat": "Upper Body / Push",
+  "how": "Stand with DBs racked at the shoulders, feet hip-width. Brace, perform a quick shallow dip at the knees and hips, then explosively extend the legs to drive the DBs overhead, finishing with the arms locked out and ribs down. Lower under control to the shoulders. Keep the torso upright through the dip-drive."
+ },
+ {
+  "name": "Band Pull-Apart Speed",
+  "file": "band_pull_apart_speed",
+  "slug": "band-pull-apart-speed",
+  "equip": "Bands",
+  "cat": "Upper Body / Pull",
+  "how": "Hold the band in front at shoulder height, arms straight. Pull apart and return in a fast, rhythmic cadence, squeezing the shoulder blades on each rep while keeping the ribs down. Maintain crisp form at speed for the prescribed reps or time; don’t let the shoulders shrug up."
+ },
+ {
+  "name": "Band Row",
+  "file": "band_row",
+  "slug": "band-row",
+  "equip": "Bands",
+  "cat": "Upper Body / Pull",
+  "how": "Anchor a band in front at chest or waist height, a handle in each hand, arms extended, in an athletic staggered or hip-width stance. Row the handles toward the ribs by driving the elbows back and squeezing the shoulder blades, then extend the arms under control. Keep the torso upright and braced; don’t lean back."
+ },
+ {
+  "name": "Hanging / Bar Hold",
+  "file": "hanging_bar_hold",
+  "slug": "hanging-bar-hold",
+  "equip": "Pull-Up Bar",
+  "cat": "Upper Body / Pull",
+  "how": "Grip a pull-up bar with hands shoulder-width, palms forward, and hang with the arms straight. Keep the shoulders lightly “packed” (not fully shrugged to the ears) and the core gently braced. Hold for the prescribed time, breathing steadily, then lower under control. Build the time gradually."
+ },
+ {
+  "name": "Band Face Pull",
+  "file": "band_face_pull",
+  "slug": "band-face-pull",
+  "equip": "Bands",
+  "cat": "Upper Body / Pull",
+  "how": "Anchor a band at upper-chest or face height. Hold it with both hands, arms extended, and pull the band toward the face by driving the elbows high and out to the sides, externally rotating so the hands finish beside the ears. Squeeze the upper back, then return under control. Keep the ribs down."
+ },
+ {
+  "name": "Banded Y-T-W",
+  "file": "banded_y_t_w",
+  "slug": "banded-y-t-w",
+  "equip": "Bands",
+  "cat": "Upper Body / Pull",
+  "how": "Hold a band with light tension, arms in front. Raise the arms overhead into a “Y” (thumbs up), return; pull out to a “T” (arms straight to the sides, squeezing the blades), return; then a “W” (elbows bent, driven down and back). Move slowly with the ribs down, leading with the shoulder blades through each shape."
+ },
+ {
+  "name": "Banded Wrist Work",
+  "file": "banded_wrist_work",
+  "slug": "banded-wrist-work",
+  "equip": "Bands",
+  "cat": "Upper Body / Pull",
+  "how": "Anchor a light band and loop it around the hand. Work the wrist through its actions against tension — flexion (curling the palm toward the forearm), extension (lifting the back of the hand), and radial/ulnar deviation or rotation — moving slowly through a full range. Keep the forearm supported and still; only the wrist moves. Switch hands."
+ },
+ {
+  "name": "Banded Shoulder Cuff Rotation",
+  "file": "banded_shoulder_cuff_rotation",
+  "slug": "banded-shoulder-cuff-rotation",
+  "equip": "Bands",
+  "cat": "Upper Body / Pull",
+  "how": "Anchor a band at elbow height. With the working elbow tucked to the side and bent 90°, rotate the forearm outward against the band (external rotation), keeping the elbow pinned to the ribs, then control back in. For internal rotation, face the other way and rotate the forearm across the body. Keep the wrist neutral. Reps each direction and side."
+ },
+ {
+  "name": "Renegade Row",
+  "file": "renegade_row",
+  "slug": "renegade-row",
+  "equip": "Bodyweight",
+  "cat": "Upper Body / Pull",
+  "how": "Start in a high plank gripping two DBs, feet wide for stability, body in a straight line and braced. Row one DB to the ribs by driving the elbow back while resisting any hip rotation, lower it under control, then row the other side. Keep the hips square and level throughout. Alternate rows."
+ },
+ {
+  "name": "Dead Bug with DB",
+  "file": "dead_bug_with_db",
+  "slug": "dead-bug-with-db",
+  "equip": "Dumbbells",
+  "cat": "Core & Anti-rotation",
+  "how": "Lie on your back, knees bent 90° over the hips, holding a DB (or DBs) pressed toward the ceiling. Press the low back into the floor, then lower the opposite arm (with the DB) and leg toward the floor, keeping the back flat, and return. Switch sides. Move slowly and keep the ribs down throughout."
+ },
+ {
+  "name": "Side Plank with Reach",
+  "file": "side_plank_with_reach",
+  "slug": "side-plank-with-reach",
+  "equip": "Bodyweight",
+  "cat": "Core & Anti-rotation",
+  "how": "From a side plank with the hips high, reach the top arm up, then thread it under the torso and through, rotating the upper back, before opening it back up to the ceiling. Keep the hips high and stable throughout — only the upper body rotates. Complete reps, then switch sides."
+ },
+ {
+  "name": "Hollow Rock",
+  "file": "hollow_rock",
+  "slug": "hollow-rock",
+  "equip": "Bodyweight",
+  "cat": "Core & Anti-rotation",
+  "how": "Get into a hollow dish position (low back pressed, shoulders and legs lifted, arms overhead). Maintaining that rigid shape, rock the whole body back and forth as a unit using a small drive, without letting the dish change. Keep the low back from arching throughout. Continue for the prescribed reps or time."
+ },
+ {
+  "name": "Tall Plank DB Drag",
+  "file": "tall_plank_db_drag",
+  "slug": "tall-plank-db-drag",
+  "equip": "Dumbbells",
+  "cat": "Core & Anti-rotation",
+  "how": "In a high plank with the feet wide, set a DB just outside one hand. Brace hard, then reach the opposite hand across and drag the DB under the body to the other side, keeping the hips as square and level as possible. Reset and drag it back. Minimize any hip rotation or rocking throughout. Alternate."
+ },
+ {
+  "name": "Bear Crawl Variations",
+  "file": "bear_crawl_variations",
+  "slug": "bear-crawl-variations",
+  "equip": "Bodyweight",
+  "cat": "Core & Anti-rotation",
+  "how": "From the bear position (knees hovering an inch off the floor, back flat, hips at shoulder height), perform crawling variations — moving laterally, backward, or adding a shoulder tap or reach between steps. Keep the knees low, hips level, and resist any twisting. Move slowly and controlled through each pattern for the prescribed distance or time."
+ },
+ {
+  "name": "Copenhagen Plank — Long",
+  "file": "copenhagen_plank_long",
+  "slug": "copenhagen-plank-long",
+  "equip": "Bodyweight",
+  "cat": "Core & Anti-rotation",
+  "how": "Lie on your side with the top leg’s foot or ankle on a bench (long lever), forearm under the shoulder. Lift the hips into a straight line, supported by the forearm and the top foot, the bottom leg lifted or hovering. Squeeze the top-leg adductor to hold. Hold for the prescribed time, keeping the body rigid, then switch sides."
+ },
+ {
+  "name": "Banded Chop / Lift",
+  "file": "banded_chop_lift",
+  "slug": "banded-chop-lift",
+  "equip": "Bands",
+  "cat": "Core & Anti-rotation",
+  "how": "Anchor a band high for a chop (or low for a lift). In a tall- or half-kneeling stance, grip the band with both hands and pull it diagonally across the body — high-to-low for a chop, low-to-high for a lift — keeping the arms relatively straight and moving from the trunk. Resist rotation; control it back. Reps each pattern and side."
+ },
+ {
+  "name": "Dragon Flag Negatives",
+  "file": "dragon_flag_negatives",
+  "slug": "dragon-flag-negatives",
+  "equip": "Bodyweight",
+  "cat": "Core & Anti-rotation",
+  "how": "Lie on a bench and grip behind your head for anchorage. Kick the legs up so the body is near-vertical, supported on the upper back, then lower the rigid, straight body slowly toward the bench as one unit, resisting the descent. Keep the whole body stiff — no bending at the hips. Reset and repeat the lowering."
+ },
+ {
+  "name": "Pallof March",
+  "file": "pallof_march",
+  "slug": "pallof-march",
+  "equip": "Bodyweight",
+  "cat": "Core & Anti-rotation",
+  "how": "Anchor a band at chest height to the side; hold it pressed out (or at the chest) and stand tall, hips and shoulders square. Maintaining the anti-rotation brace, march one knee up to hip height, lower it, then the other — resisting any rotation or side-tilt the whole time. Keep the press steady. Reps, then switch sides."
+ },
+ {
+  "name": "Hanging Straight-Leg Raise",
+  "file": "hanging_straight_leg_raise",
+  "slug": "hanging-straight-leg-raise",
+  "equip": "Pull-Up Bar",
+  "cat": "Core & Anti-rotation",
+  "how": "Hang from a bar, shoulders lightly packed, legs straight. Brace and raise the straight legs toward horizontal (or higher), curling the pelvis at the top, without swinging. Pause, then lower the straight legs under control to the start. Keep the legs straight and the movement deliberate throughout. Repeat for reps."
+ },
+ {
+  "name": "Plank Shoulder Tap",
+  "file": "plank_shoulder_tap",
+  "slug": "plank-shoulder-tap",
+  "equip": "Bodyweight",
+  "cat": "Core & Anti-rotation",
+  "how": "Start in a high plank, feet about hip-width (wider is easier), body in a straight line and braced. Lift one hand to tap the opposite shoulder while keeping the hips as square and still as possible, then return and tap with the other hand. Minimize any side-to-side hip rock. Alternate taps at a controlled pace."
+ },
+ {
+  "name": "Bear Crawl with DBs",
+  "file": "bear_crawl_with_dbs",
+  "slug": "bear-crawl-with-dbs",
+  "equip": "Bodyweight",
+  "cat": "Core & Anti-rotation",
+  "how": "Set up in the bear position gripping a DB in each hand (knees hovering, back flat, hips level). Crawl forward moving the opposite hand and foot together, keeping the knees low and the hips level while the hands grip the DBs. Move slowly and controlled, resisting any twist. Continue for the prescribed distance."
+ },
+ {
+  "name": "Skater Hop — Stick It",
+  "file": "skater_hop_stick_it",
+  "slug": "skater-hop-stick-it",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "From a single-leg athletic stance, push off explosively sideways and bound onto the opposite leg, swinging the arms for momentum. Land softly on the outside leg with a bent knee and the hips back, and “stick” the landing — holding balanced for a moment before the next bound. Absorb the landing quietly. Alternate sides."
+ },
+ {
+  "name": "Squat to Tuck Jump",
+  "file": "squat_to_tuck_jump",
+  "slug": "squat-to-tuck-jump",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "From a squat, explosively jump straight up and quickly tuck both knees toward the chest at the peak, then extend the legs to land softly on the whole foot with bent knees. Absorb the landing and reset. Keep the chest tall and minimize forward lean. Repeat with quick, snappy tucks."
+ },
+ {
+  "name": "Broad Jump → Sprint 10m",
+  "file": "broad_jump_sprint_10m",
+  "slug": "broad-jump-sprint-10m",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "Perform a maximal broad jump, and on landing immediately transition into a 10-metre acceleration sprint without a pause — converting the landing into the first driving strides. Drive the arms and lean forward into the acceleration. Reset and repeat with full recovery between efforts. Emphasize a seamless jump-to-sprint transition."
+ },
+ {
+  "name": "Lateral Skater Bound",
+  "file": "lateral_skater_bound",
+  "slug": "lateral-skater-bound",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "Bound laterally from one leg to the other in a continuous, rhythmic pattern, swinging the arms and pushing off explosively each time. Land on the outside leg with a soft, athletic knee and immediately push back the other way, minimizing ground-contact time. Keep the bounds powerful and reactive. Continue for reps or distance."
+ },
+ {
+  "name": "Skater Hop Complex",
+  "file": "skater_hop_complex",
+  "slug": "skater-hop-complex",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "Perform a programmed series of lateral skater movements in sequence — for example, a maximal bound with a stuck landing, followed by several continuous reactive bounds, then repeat. Push off explosively each time, controlling the stuck landings and minimizing contact on the continuous ones. Follow the prescribed sequence and reset between rounds."
+ },
+ {
+  "name": "Multi-Direction Bound",
+  "file": "multi_direction_bound",
+  "slug": "multi-direction-bound",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "Bound explosively in varied directions on a prescribed pattern — forward, laterally, and diagonally — landing softly on one or both legs and controlling each landing before the next bound. Use the arms for momentum and keep the knees tracking out. Reset balance between directional changes. Follow the prescribed sequence."
+ },
+ {
+  "name": "Ankle Hop Stick",
+  "file": "ankle_hop_stick",
+  "slug": "ankle-hop-stick",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "From a tall stance, perform a stiff-ankle hop (mostly from the ankles, minimal knee bend), then land on the balls of the feet and stick the landing quietly under control, holding balanced. Reset and repeat. Emphasize a stiff, reactive ankle on the hop and a quiet, controlled stick on the landing."
+ },
+ {
+  "name": "Single-Leg Pogo Hops",
+  "file": "single_leg_pogo_hops",
+  "slug": "single-leg-pogo-hops",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "Standing on one leg, hop continuously straight up using mostly the ankle, with the knee nearly straight and stiff. Land on the ball of the foot and immediately rebound with the shortest possible ground contact. Keep the body tall and the hips level; use the arms for balance. Continue for reps, then switch legs."
+ },
+ {
+  "name": "High-Low Pogo Combo",
+  "file": "high_low_pogo_combo",
+  "slug": "high-low-pogo-combo",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "Alternate between low, fast pogo hops (small amplitude, very quick contacts) and higher pogo hops (greater amplitude) in a prescribed rhythm — for example, several quick low hops then a few high hops. Keep the ankles stiff and the body tall throughout, landing on the balls of the feet with short contacts. Follow the sequence."
+ },
+ {
+  "name": "Drop Squat",
+  "file": "drop_squat",
+  "slug": "drop-squat",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "Stand tall, then quickly drop the body down into an athletic quarter-squat landing position — feet snapping out to landing width, hips back, knees bent and tracking out — absorbing the descent and freezing in a stable, braced stance. The aim is to “beat the floor down” and stick the position instantly. Reset tall and repeat."
+ },
+ {
+  "name": "Depth Drop (Low Box)",
+  "file": "depth_drop_low_box",
+  "slug": "depth-drop-low-box",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "Stand on a low box, step (don’t jump) off the edge, and land on both feet in an athletic position — knees bent, hips back, weight on the whole foot. Stick and hold the landing quietly under control, absorbing the impact without collapsing. Step back up and reset. Keep the landings soft and balanced."
+ },
+ {
+  "name": "Banded Squat Jump",
+  "file": "banded_squat_jump",
+  "slug": "banded-squat-jump",
+  "equip": "Bands",
+  "cat": "Jump & Plyometric",
+  "how": "Stand on a band (or with it looped over the shoulders), feet shoulder-width. Dip into a quarter squat, then jump explosively against the band’s resistance, fighting it all the way to full extension. Land softly with bent knees, reset, and repeat. Keep the chest tall and knees tracking out, jumping with maximal intent each rep."
+ },
+ {
+  "name": "Contrast Jump",
+  "file": "contrast_jump",
+  "slug": "contrast-jump",
+  "equip": "Bodyweight",
+  "cat": "Jump & Plyometric",
+  "how": "Perform a heavier or resisted effort (e.g., a loaded jump or banded squat jump) for a few reps, then after a short rest immediately perform a few maximal unloaded jumps (e.g., bodyweight jump squats or broad jumps). Land softly and reset between. The contrast of heavy-then-light is the point; jump with maximal intent on the light set."
+ },
+ {
+  "name": "Squat to Broad Jump",
+  "file": "squat_to_broad_jump",
+  "slug": "squat-to-broad-jump",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "Descend into a full (or near-parallel) squat, hold the bottom briefly to remove the stretch reflex, then explosively extend and throw the arms forward to broad jump for distance. Land softly on both feet with the hips back, sticking the landing. Reset and repeat. The pause-then-explode emphasizes concentric strength into the jump."
+ },
+ {
+  "name": "Continuous Lateral Bound",
+  "file": "continuous_lateral_bound",
+  "slug": "continuous-lateral-bound",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "Bound laterally from one leg to the other in a continuous chain, pushing off explosively and landing on the outside leg with a soft, athletic knee, then immediately driving back the other way. Minimize ground-contact time and keep a steady side-to-side rhythm, swinging the arms. Continue for the prescribed reps or distance."
+ },
+ {
+  "name": "Crossover Step Bound",
+  "file": "crossover_step_bound",
+  "slug": "crossover-step-bound",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "Using a crossover pattern, push off and bound laterally while the trailing leg crosses over in front, then plant and push off again, continuing across the floor. Coordinate the arm swing and the cross-step with each lateral push, landing on a soft athletic knee. Keep the hips facing forward as you travel sideways. Continue for the prescribed distance."
+ },
+ {
+  "name": "Lateral Depth Drop to Bound",
+  "file": "lateral_depth_drop_to_bound",
+  "slug": "lateral-depth-drop-to-bound",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "Stand on a low box, step off to the side and land on the outside leg, then immediately on contact rebound into a lateral bound onto the opposite leg, minimizing ground time. Stick or control the final landing. Reset on the box and repeat. The drop pre-loads the leg for an explosive reactive lateral push."
+ },
+ {
+  "name": "Low Box Hop-Up — Stick",
+  "file": "low_box_hop_up_stick",
+  "slug": "low-box-hop-up-stick",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "Stand facing a low box, dip and explosively jump up onto the box, landing softly on both feet in an athletic position and sticking the landing quietly on top. Step back down (don’t jump down) and reset. Focus on an explosive jump up and a controlled, stable landing on the box. Repeat for the prescribed reps."
+ },
+ {
+  "name": "SL CMJ Stick",
+  "file": "sl_cmj_stick",
+  "slug": "sl-cmj-stick",
+  "equip": "Bodyweight",
+  "cat": "Jump & Plyometric",
+  "how": "Standing on one leg, perform a quick countermovement dip and explosively jump straight up on that single leg, swinging the arms. Land softly on the same leg with a bent knee and the hips back, sticking the landing under control and holding balanced. Reset and repeat, then switch legs. Keep the knee tracking out throughout."
+ },
+ {
+  "name": "Hurdle Hops — Continuous",
+  "file": "hurdle_hops_continuous",
+  "slug": "hurdle-hops-continuous",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "Set a row of low hurdles. Hop over them continuously with both feet, using a stiff, reactive bounce — landing on the balls of the feet and immediately rebounding over the next hurdle with the shortest possible ground contact. Keep the knees driving up enough to clear each hurdle and the body tall. Continue through the row."
+ },
+ {
+  "name": "Wall Drive Hold",
+  "file": "wall_drive_hold",
+  "slug": "wall-drive-hold",
+  "equip": "Bodyweight",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Stand an arm’s length from a wall, lean forward with the body in a straight line from head to heel at roughly 45°, hands on the wall, and drive one knee up so the thigh is parallel and the ankle dorsiflexed (toe up), the support leg fully extended. Hold the position, keeping a rigid line from the support heel through the head. Switch legs."
+ },
+ {
+  "name": "A-Skip Moving",
+  "file": "a_skip_moving",
+  "slug": "a-skip-moving",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Skip forward driving one knee to hip height with a dorsiflexed ankle (toe up), the opposite arm driving in a 1-2 rhythm, striking the ground actively under the hip on the balls of the feet. Stay tall and travel forward with crisp, rhythmic skips. Maintain upright posture and active, paw-back ground contacts throughout the distance."
+ },
+ {
+  "name": "Reactive 5m Sprint",
+  "file": "reactive_5m_sprint",
+  "slug": "reactive-5m-sprint",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "From an athletic ready stance, react to your OWN cue — drop a ball and chase it, or count 3-2-1 — and accelerate sharply for 5 metres at a controlled, sub-maximal effort, driving the arms and leaning into the acceleration. Decelerate under control after the line. Reset fully and repeat on a fresh cue. The emphasis is reacting fast and accelerating cleanly over the short distance — no partner needed."
+ },
+ {
+  "name": "A-Skip + March Combo",
+  "file": "a_skip_march_combo",
+  "slug": "a-skip-march-combo",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Alternate between A-march (a slow, deliberate marching version emphasizing positions — high knee, toe up, tall posture) and A-skip (the rhythmic skipping version) in a prescribed sequence as you travel forward. Use the march to reinforce the positions, then the skip to add rhythm and elastic ground contact. Keep posture tall and arms active throughout."
+ },
+ {
+  "name": "Crossover Step",
+  "file": "crossover_step",
+  "slug": "crossover-step",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "From an athletic stance facing forward, to move laterally, open the hips and cross the trailing leg over and in front, then continue accelerating in that direction with driving steps. Coordinate the arm swing with the crossover and keep the first steps low and powerful. Practice exploding out of the stance into the crossover in both directions."
+ },
+ {
+  "name": "Reactive Mirror Sprint",
+  "file": "reactive_mirror_sprint",
+  "slug": "reactive-mirror-sprint",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Face a partner a few metres apart. The partner moves unpredictably (forward, lateral, or backward), and you mirror their movement as fast and accurately as possible, sprinting and changing direction to match. React to their actual movement, not anticipation, staying in an athletic ready stance between cues. Switch roles after each bout."
+ },
+ {
+  "name": "Resisted → Free Sprint",
+  "file": "resisted_free_sprint",
+  "slug": "resisted-free-sprint",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Sprint several metres against a band or sled resistance, then have the resistance released (or run out of a held band) and immediately continue into a free, unresisted sprint — feeling light and fast as the resistance disappears. Maintain the powerful driving mechanics into the free portion. Reset fully and repeat."
+ },
+ {
+  "name": "Mirror Sprint Game",
+  "file": "mirror_sprint_game",
+  "slug": "mirror-sprint-game",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Pair up facing a partner across a line or in a small box. One leads with unpredictable movements — sprinting, shuffling, changing direction — while the follower mirrors as fast and accurately as possible; score points for the leader escaping or the follower staying glued. Swap roles each round. Play multiple short, maximal bouts with rest between."
+ },
+ {
+  "name": "Fast Feet / Ladder Equiv",
+  "file": "fast_feet_ladder_equiv",
+  "slug": "fast-feet-ladder-equiv",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Using an agility ladder (or imagined rungs/lines), perform quick-feet patterns — one foot in each box, two feet in, lateral in-outs — moving the feet as fast as possible with short, light ground contacts on the balls of the feet. Stay tall with a slight forward lean and pump the arms. Complete the prescribed patterns crisply."
+ },
+ {
+  "name": "A-Skip + B-Skip",
+  "file": "a_skip_b_skip",
+  "slug": "a-skip-b-skip",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Travel forward alternating A-skips (knee driven to hip height, toe up) with B-skips (from the high knee, actively extend the lower leg out, then “paw” it back down and under the hip). Keep tall posture and rhythmic arms throughout. The B portion adds the active hamstring claw of the foot back toward the body on ground contact."
+ },
+ {
+  "name": "Reactive Lateral Start",
+  "file": "reactive_lateral_start",
+  "slug": "reactive-lateral-start",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "From an athletic ready stance, react to your OWN cue — a ball drop or a 3-2-1 count — and move laterally with a crossover (default; skip the drop step) for a few controlled metres. Decelerate under control, reset, and go again on a fresh cue, mixing directions. Emphasize reacting promptly and a clean, low first lateral push — no partner needed."
+ },
+ {
+  "name": "30m Fly Sprint",
+  "file": "30m_fly_sprint",
+  "slug": "30m-fly-sprint",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Use a run-in of 10–20 metres to gradually build to maximal speed, then hit a marked 30-metre zone at full, relaxed top-end velocity, maintaining tall posture and powerful, cyclical mechanics through the zone before decelerating. Take full recovery between reps. The build-in lets you reach and hold true max-velocity mechanics."
+ },
+ {
+  "name": "Reactive 4-Cone",
+  "file": "reactive_4_cone",
+  "slug": "reactive-4-cone",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Set four cones in a square or diamond around a central start. From an athletic stance at the center, react to a cue indicating a cone and sprint/cut to it, then return to center and react to the next cue. Mix the directions unpredictably. Stay low, plant and change direction sharply, and react to the actual cue each time. Multiple short bouts."
+ },
+ {
+  "name": "Hill Stride",
+  "file": "hill_stride",
+  "slug": "hill-stride",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Find a moderate incline. Stride up it at a controlled, submaximal effort with tall posture, strong knee drive, and active arm action, emphasizing clean mechanics and powerful ground contact rather than all-out speed. Walk back down to recover and repeat. The incline naturally encourages a forward lean and full push."
+ },
+ {
+  "name": "Flying 10m Sprint",
+  "file": "flying_10m_sprint",
+  "slug": "flying-10m-sprint",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Use a short run-in to build speed, then sprint a marked 10-metre zone at maximal velocity with tall, relaxed, powerful mechanics before decelerating. Take full recovery between reps. The shorter fly zone targets near-max velocity with a brief, intense effort and a build-in to reach speed before the zone."
+ },
+ {
+  "name": "Crossover Step to Sprint",
+  "file": "crossover_step_to_sprint",
+  "slug": "crossover-step-to-sprint",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "From an athletic stance, open the hips and crossover step laterally, then transition the crossover into a forward acceleration, sprinting out for several metres. Coordinate the arms and keep the steps low and powerful as you convert the lateral start into linear speed. Reset and repeat both directions. Emphasize a smooth crossover-into-sprint transition."
+ },
+ {
+  "name": "Hill Sprint",
+  "file": "hill_sprint",
+  "slug": "hill-sprint",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Find a moderate-to-steep incline. Sprint up it at maximal effort with a strong forward lean, powerful knee drive, and hard arm action, driving through each step. Walk back down for full recovery between reps. The incline provides resistance that overloads the push-off through a brief, all-out effort."
+ },
+ {
+  "name": "A-Skip Resisted",
+  "file": "a_skip_resisted",
+  "slug": "a-skip-resisted",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Wear a belt/band anchored behind (or held by a partner) and perform A-skips moving forward against the resistance — driving the knee to hip height with a dorsiflexed ankle, the opposite arm punching, against the band’s backward pull. Keep tall posture and active ground strikes. Travel against the tension for the prescribed distance."
+ },
+ {
+  "name": "30-Sec Shuttle",
+  "file": "30_sec_shuttle",
+  "slug": "30-sec-shuttle",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Run continuous shuttles between two markers a set distance apart for 30 seconds — sprinting, touching/turning at each line, and sprinting back, repeating at high intensity for the full duration. Push hard the whole interval, then rest for the prescribed recovery. Each rep is a sustained, high-effort shuttle bout."
+ },
+ {
+  "name": "DB Suitcase Carry",
+  "file": "db_suitcase_carry",
+  "slug": "db-suitcase-carry",
+  "equip": "Dumbbells",
+  "cat": "Loaded Carries",
+  "how": "Hold a single DB in one hand at the side (like a suitcase), stand tall and square. Brace hard and walk with controlled steps, resisting the load’s pull to tip you toward that side — keep the shoulders and hips level and the torso upright. Walk the prescribed distance, then switch the weight to the other hand. Don’t lean away."
+ },
+ {
+  "name": "Farmer + Suitcase Complex",
+  "file": "farmer_suitcase_complex",
+  "slug": "farmer-suitcase-complex",
+  "equip": "Bodyweight",
+  "cat": "Loaded Carries",
+  "how": "Perform a complex combining carry styles — a bilateral farmer carry for a distance, then transition to a single-side suitcase carry (one weight down) for a distance each side — all within one continuous bout. Maintain tall posture and a hard brace throughout, adjusting the anti-tip demand as the load changes. Complete the prescribed sequence."
+ },
+ {
+  "name": "Suitcase Get-Up",
+  "file": "suitcase_get_up",
+  "slug": "suitcase-get-up",
+  "equip": "Bodyweight",
+  "cat": "Loaded Carries",
+  "how": "Holding a DB in one hand at your side, start seated or kneeling on the floor, then stand up to full height while keeping the torso tall and resisting the load’s pull to that side — moving through the get-up sequence (to a kneel, to a lunge, to standing) without tipping. Reverse to the floor under control. Reps, then switch sides."
+ },
+ {
+  "name": "Farmer Carry (Banded)",
+  "file": "farmer_carry_banded",
+  "slug": "farmer-carry-banded",
+  "equip": "Bands",
+  "cat": "Loaded Carries",
+  "how": "Perform a farmer carry while a band adds resistance — anchored behind to resist forward travel, or looped to add load. Hold the weights at the sides, stay tall and braced, and walk forward against the band’s pull with controlled, even steps. Keep the posture upright and resist any twist or lean. Carry the prescribed distance."
+ },
+ {
+  "name": "Carry Complex (Farmer + Suitcase + Overhead)",
+  "file": "carry_complex_farmer_suitcase_overhead",
+  "slug": "carry-complex-farmer-suitcase-overhead",
+  "equip": "Bodyweight",
+  "cat": "Loaded Carries",
+  "how": "Perform a continuous carry complex moving through positions — a farmer carry, then a one-side suitcase carry, then an overhead carry (weight pressed and held overhead) — each for a set distance within one bout. Keep the core braced and posture appropriate to each position (ribs down on the overhead, level on the suitcase). Complete the sequence, then switch sides."
+ },
+ {
+  "name": "Rotational Med Ball Toss",
+  "file": "rotational_med_ball_toss",
+  "slug": "rotational-med-ball-toss",
+  "equip": "Medicine Ball",
+  "cat": "Rotational Power",
+  "how": "Stand side-on to a wall in an athletic stance, holding a med ball at the trunk. Wind up by rotating back into the trail hip, then explosively rotate the hips and trunk to whip the ball forward into the wall, finishing with the hips turned through. Catch or retrieve and reset. Drive the rotation from the ground up — hips, then trunk, then arms. Reps each side."
+ },
+ {
+  "name": "Rotational Med Ball Side Toss",
+  "file": "rotational_med_ball_side_toss",
+  "slug": "rotational-med-ball-side-toss",
+  "equip": "Medicine Ball",
+  "cat": "Rotational Power",
+  "how": "Stand side-on to a wall, athletic stance, holding the med ball low and to the trail side. Wind into the back hip, then explosively rotate and toss the ball sideways into the wall with a scooping/side motion, driving through the hips and trunk. Retrieve, reset, and repeat. Emphasize the hip-driven rotation and a powerful, ballistic release. Reps each side."
+ },
+ {
+  "name": "Banded Rotational Press",
+  "file": "banded_rotational_press",
+  "slug": "banded-rotational-press",
+  "equip": "Bands",
+  "cat": "Rotational Power",
+  "how": "Anchor a band to the side at chest height. In an athletic stance side-on, hold the band at the chest and press it forward while rotating the trunk and hips away from the anchor, finishing with the arms extended and the body turned through. Control the return. Drive the rotation from the hips through the trunk into the press. Reps each side."
+ },
+ {
+  "name": "Banded Rotational Throw (Wall)",
+  "file": "banded_rotational_throw_wall",
+  "slug": "banded-rotational-throw-wall",
+  "equip": "Bands",
+  "cat": "Rotational Power",
+  "how": "Anchor a band to the side. Hold it at the trunk in an athletic side-on stance, wind into the back hip against the band, then explosively rotate and release toward the wall — or drive into a hard rotational follow-through — driving the hips and trunk. Reset and repeat. Emphasize a ballistic, hip-driven rotation. Reps each side."
+ },
+ {
+  "name": "Band Rotational Scoop Toss",
+  "file": "band_rotational_scoop_toss",
+  "slug": "band-rotational-scoop-toss",
+  "equip": "Bands",
+  "cat": "Rotational Power",
+  "how": "Anchor a band low to the side. In an athletic stance, hold it low and to the trail side, wind into the back hip, then explosively rotate and “scoop” the band up and across the body diagonally (low-to-high), driving from the hips and legs through the trunk. Control back to the start. Reps each side. Emphasize the diagonal, ground-up power."
+ },
+ {
+  "name": "DB Thruster",
+  "file": "db_thruster",
+  "slug": "db-thruster",
+  "equip": "Dumbbells",
+  "cat": "Full-body & Complexes",
+  "how": "Hold DBs racked at the shoulders, feet shoulder-width. Squat to at least parallel, then drive explosively up through the legs and, as the hips and knees extend, press the DBs overhead in one fluid motion, finishing with arms locked out and ribs down. Lower the DBs to the shoulders as you descend into the next squat. Repeat continuously."
+ },
+ {
+  "name": "DB Complex",
+  "file": "db_complex",
+  "slug": "db-complex",
+  "equip": "Dumbbells",
+  "cat": "Full-body & Complexes",
+  "how": "Perform a series of DB exercises back-to-back without setting the weights down — for example, RDL → row → hang clean → front squat → press — completing the prescribed reps of each before flowing to the next. Keep the DBs in hand throughout, maintaining form as fatigue builds, then rest. Choose a load you can sustain across the whole sequence."
+ },
+ {
+  "name": "Combine Circuit",
+  "file": "combine_circuit",
+  "slug": "combine-circuit",
+  "equip": "Bodyweight",
+  "cat": "Full-body & Complexes",
+  "how": "Move through a circuit of varied stations — for example, jumps, sprints, carries, core, and pressing — performing each for a set time or reps with minimal rest between stations, then resting after a full round. Maintain quality on each movement while keeping the pace up. Complete the prescribed number of rounds."
+ },
+ {
+  "name": "Jump Rope — Steady",
+  "file": "jump_rope_steady",
+  "slug": "jump-rope-steady",
+  "equip": "Cardio Gear",
+  "cat": "Conditioning / Jump Rope",
+  "how": "Skip rope at a steady, sustainable pace, staying tall on the balls of the feet with small, quick hops and the wrists turning the rope (not the arms). Keep a relaxed rhythm and continuous breathing for the prescribed duration. Land softly and keep the knees and ankles springy throughout."
+ },
+ {
+  "name": "Jump Rope — Intervals",
+  "file": "jump_rope_intervals",
+  "slug": "jump-rope-intervals",
+  "equip": "Cardio Gear",
+  "cat": "Conditioning / Jump Rope",
+  "how": "Alternate harder, faster skipping bursts with easier recovery skipping (or rest) on a prescribed work-to-rest ratio — fast skipping for a set time, then easy skipping or rest, repeated. Push the pace on the work bouts and recover on the easy ones. Stay on the balls of the feet with efficient wrist turns throughout."
+ },
+ {
+  "name": "Jump Rope — Speed",
+  "file": "jump_rope_speed",
+  "slug": "jump-rope-speed",
+  "equip": "Cardio Gear",
+  "cat": "Conditioning / Jump Rope",
+  "how": "Perform short bursts of maximal-speed skipping — turning the rope and moving the feet as fast as possible (fast single-unders or double-unders) for a brief duration, then resting. Stay tall, light, and reactive on the balls of the feet with rapid wrist turns. Each burst is short and all-out, with full recovery between."
+ },
+ {
+  "name": "Tempo BW Circuit",
+  "file": "tempo_bw_circuit",
+  "slug": "tempo-bw-circuit",
+  "equip": "Bodyweight",
+  "cat": "Energy Systems / Intervals",
+  "how": "Perform a circuit of bodyweight movements (or tempo runs) at a moderate, controlled intensity (~65–75% effort) with short rests, focusing on smooth, rhythmic work rather than all-out efforts. Keep good form and steady breathing throughout the prescribed rounds. The pace should feel challenging but sustainable and repeatable."
+ },
+ {
+  "name": "Repeat Tempo Intervals",
+  "file": "repeat_tempo_intervals",
+  "slug": "repeat-tempo-intervals",
+  "equip": "Bodyweight",
+  "cat": "Energy Systems / Intervals",
+  "how": "Perform repeated moderate-intensity intervals (tempo runs or work bouts) at a controlled, sustainable effort with set recovery between each, repeating for the prescribed number. Hold a consistent, repeatable pace across all intervals rather than fading. Keep form clean and breathing rhythmic throughout."
+ },
+ {
+  "name": "Sprint Intervals 15s",
+  "file": "sprint_intervals_15s",
+  "slug": "sprint-intervals-15s",
+  "equip": "Cones & Ladder",
+  "cat": "Energy Systems / Intervals",
+  "how": "Sprint maximally (running, bike, or skating-pattern work) for 15 seconds, then rest for the prescribed recovery, repeating for the set number of intervals. Push each 15-second bout near-maximally and use the recovery to partially recover before the next. Maintain effort and form across the intervals as fatigue accumulates."
+ },
+ {
+  "name": "Repeat Sprint Ability",
+  "file": "repeat_sprint_ability",
+  "slug": "repeat-sprint-ability",
+  "equip": "Cones & Ladder",
+  "cat": "Energy Systems / Intervals",
+  "how": "Perform repeated short maximal sprints (5–10 seconds each) with short recovery between, repeating for the prescribed number. Sprint each bout at maximal effort and take only the brief prescribed rest, aiming to maintain sprint speed across all reps. The short rest is the challenge — resist the drop-off in speed."
+ },
+ {
+  "name": "Aerobic Circuit (Zone 2)",
+  "file": "aerobic_circuit_zone_2",
+  "slug": "aerobic-circuit-zone-2",
+  "equip": "Bodyweight",
+  "cat": "Energy Systems / Intervals",
+  "how": "Perform a continuous circuit of low-intensity movements (or steady cardio) keeping the heart rate in Zone 2 — a conversational, sustainable intensity (~60–70% max HR). Move smoothly and continuously for the prescribed duration, keeping the effort easy enough to maintain comfortably and nasal-breathe. Hold the steady, low-intensity pace throughout."
+ },
+ {
+  "name": "Repeat Efforts — Shift Simulation",
+  "file": "repeat_efforts_shift_simulation",
+  "slug": "repeat-efforts-shift-simulation",
+  "equip": "Bodyweight",
+  "cat": "Energy Systems / Intervals",
+  "how": "Perform repeated high-intensity work bouts that mimic a hockey shift — roughly 40–60 seconds of mixed-intensity effort (sprints, changes of direction, battles) followed by a rest interval simulating bench time, repeated for the prescribed number of “shifts.” Push hard through each bout and recover during the rest, simulating the work-rest pattern of a game."
+ },
+ {
+  "name": "Mirror Game / Free Play",
+  "file": "mirror_game_free_play",
+  "slug": "mirror-game-free-play",
+  "equip": "Bodyweight",
+  "cat": "Competitive Play",
+  "how": "In a small space, players engage in a mirror or free-play game — mirroring a partner’s movements, playing tag, or freely moving and reacting in a competitive but unstructured way. Keep it active and reactive, changing direction and pace in response to others. Play in short, intense bouts with rest between rounds."
+ },
+ {
+  "name": "Free Play / 1v1 Game",
+  "file": "free_play_1v1_game",
+  "slug": "free-play-1v1-game",
+  "equip": "Bodyweight",
+  "cat": "Competitive Play",
+  "how": "Two players compete one-on-one in a small-space game — trying to reach a target, win possession of a ball/object, or beat the other to a spot — using movement, reaction, and effort to win. Play short, intense rounds with rest between, switching opponents or roles. Compete hard and react to the opponent’s actions throughout."
+ },
+ {
+  "name": "Battle Game / 1v1",
+  "file": "battle_game_1v1",
+  "slug": "battle-game-1v1",
+  "equip": "Bodyweight",
+  "cat": "Competitive Play",
+  "how": "Two players engage in a 1v1 battle for possession or position — protecting an object/ball while the other tries to win it, or competing for a spot using body position and leverage. Use a wide base, low center of gravity, and body positioning to win or hold possession. Battle hard in short rounds with rest, then switch."
+ },
+ {
+  "name": "Free Play with Intent",
+  "file": "free_play_with_intent",
+  "slug": "free-play-with-intent",
+  "equip": "Bodyweight",
+  "cat": "Competitive Play",
+  "how": "Engage in free, game-like play but with a specific intent or constraint emphasized by the coach — focusing on quick first steps, staying low, reacting fast, or using a particular movement. Play freely and competitively while consciously applying the targeted quality throughout the bout. Short, intense rounds with rest."
+ },
+ {
+  "name": "Slow Walk with Nose Breathing",
+  "file": "slow_walk_with_nose_breathing",
+  "slug": "slow-walk-with-nose-breathing",
+  "equip": "Bodyweight",
+  "cat": "Cool-down / Recovery",
+  "how": "Walk slowly and easily for the prescribed duration, breathing only through the nose — slow, deep, controlled inhales and exhales. Keep the pace gentle and the body relaxed, letting the heart rate gradually come down. Focus on the calm, rhythmic nasal breathing throughout the walk."
+ },
+ {
+  "name": "Child's Pose with Breath",
+  "file": "child_s_pose_with_breath",
+  "slug": "child-s-pose-with-breath",
+  "equip": "Bodyweight",
+  "cat": "Cool-down / Recovery",
+  "how": "Kneel and sit the hips back toward the heels, reaching the arms forward and lowering the chest toward the floor, forehead resting down. Relax into the position and breathe slowly and deeply, feeling the back and hips gently open with each exhale. Hold for the prescribed time, breathing calmly throughout."
+ },
+ {
+  "name": "90/90 Hip Stretch + T-Spine Opener",
+  "file": "90_90_hip_stretch_t_spine_opener",
+  "slug": "90-90-hip-stretch-t-spine-opener",
+  "equip": "Bodyweight",
+  "cat": "Cool-down / Recovery",
+  "how": "Sit in the 90/90 position (one leg bent in front at 90°, the other out to the side at 90°). Gently lean over the front shin to stretch the hip, then add a thoracic opener by reaching the top arm up and over, rotating and opening the chest. Breathe into each position and move slowly. Hold and repeat each side."
+ },
+ {
+  "name": "Supine Spinal Twist",
+  "file": "supine_spinal_twist",
+  "slug": "supine-spinal-twist",
+  "equip": "Bodyweight",
+  "cat": "Cool-down / Recovery",
+  "how": "Lie on your back, draw one knee up and across the body toward the floor on the opposite side, extending the same-side arm out and turning the head the other way. Keep the shoulders relaxed toward the floor and breathe slowly, letting the spine and hip gently rotate. Hold for the prescribed time, then switch sides."
+ },
+ {
+  "name": "Foam Roll / Tissue Work",
+  "file": "foam_roll_tissue_work",
+  "slug": "foam-roll-tissue-work",
+  "equip": "Bodyweight",
+  "cat": "Cool-down / Recovery",
+  "how": "Use a foam roller (or ball) to slowly roll over the major muscle groups — quads, hamstrings, glutes, calves, and back — pausing on tender spots and breathing slowly to let the tissue relax. Roll at a controlled pace, spending the prescribed time on each area without rushing or rolling directly over joints or bones. Keep the pressure tolerable."
+ },
+ {
+  "name": "Hip / Groin Flow",
+  "file": "hip_groin_flow",
+  "slug": "hip-groin-flow",
+  "equip": "Bodyweight",
+  "cat": "Cool-down / Recovery",
+  "how": "Move through a flowing sequence of hip and groin mobility movements — deep squat holds, adductor rockers, hip circles, and gentle lunges with rotation — transitioning smoothly between positions and breathing throughout. Move slowly and rhythmically, easing into each range without forcing. Complete the prescribed flow."
+ },
+ {
+  "name": "Broad Jump",
+  "file": "broad_jump",
+  "slug": "broad-jump",
+  "equip": "Plyo & Hurdles",
+  "cat": "Jump & Plyometric",
+  "how": "From an athletic stance, swing the arms back and dip the hips, then explosively extend and throw the arms forward to jump forward for maximal distance. Land softly on both feet with bent knees and the hips back, sticking the landing under control. Reset fully before the next jump. Maximize horizontal projection each rep."
+ },
+ {
+  "name": "20m Sprint",
+  "file": "20m_sprint",
+  "slug": "20m-sprint",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "From a stationary two-point stance, sprint a flat-out 20 metres in a straight line. Drive hard out of the start with a forward lean and powerful arm action, staying low for the first strides, then rise gradually as you build speed. Run through the 20-metre line without decelerating. Time each effort, taking full recovery between reps on the same surface and footwear."
+ },
+ {
+  "name": "20m Flying Sprint",
+  "file": "20m_flying_sprint",
+  "slug": "20m-flying-sprint",
+  "equip": "Cones & Ladder",
+  "cat": "Speed, Sprint & Agility",
+  "how": "Build speed gradually over a 20–30 metre run-in, then hit a flat-out, maximal-velocity 20-metre flying zone. Run tall and relaxed with a fast, cyclical leg action and brief ground contacts — the goal is the highest speed you can hold through the zone, not acceleration. Time only the flying 20 metres, with full recovery between efforts."
+ },
+ {
+  "name": "Beep Test",
+  "file": "beep_test",
+  "slug": "beep-test",
+  "equip": "Cones & Ladder",
+  "cat": "Energy Systems / Intervals",
+  "how": "Set two markers 20 metres apart and run between them in time with the standard beep-test audio (free apps): reach the far line before each beep, turn, and run back. The beeps speed up each level; keep pace as long as you can. Your score is the level/shuttle you reach when you can no longer keep up. Warm up fully first and STOP at any sharp or joint pain."
+ }
+]

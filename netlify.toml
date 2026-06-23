@@ -66,3 +66,37 @@
   to = "/index.html"
   status = 404
   force = true
+
+# ── SEO: canonicalize program landing pages to the .html URL ──────────────────
+# Google indexed both /program-9-11 and /program-9-11.html (duplicate content).
+# Force the extensionless URL to 301 to the canonical .html version so all
+# ranking signals consolidate onto one URL. (Canonical tags already point here.)
+[[redirects]]
+  from = "/program-9-11"
+  to = "/program-9-11.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/program-12-14"
+  to = "/program-12-14.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/program-15-18"
+  to = "/program-15-18.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/program-19-39"
+  to = "/program-19-39.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/program-40-plus"
+  to = "/program-40-plus.html"
+  status = 301
+  force = true

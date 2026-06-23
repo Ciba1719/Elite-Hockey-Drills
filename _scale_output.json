@@ -1,0 +1,234 @@
+{
+  "ankle-hop-stick": {
+    "easier": "Smaller hop, or land softly on two feet.",
+    "harder": "A little higher, or hop and land on one foot."
+  },
+  "wall-drive-hold": {
+    "easier": "Shorter holds, or stand a bit more upright.",
+    "harder": "Switch the driving leg, or trade legs back and forth."
+  },
+  "a-skip-moving": {
+    "easier": "March it out, or skip on the spot.",
+    "harder": "Skip a little faster, or skip into a short run."
+  },
+  "band-glute-bridge": {
+    "easier": "Lighter band, or no band at all.",
+    "harder": "Lift one foot off, or hold a moment at the top."
+  },
+  "crossover-step": {
+    "easier": "Walk slowly through the crossover steps.",
+    "harder": "Add a surprise go-signal, or sprint out of it."
+  },
+  "reactive-5m-sprint": {
+    "easier": "Start on your own count, or run a shorter distance.",
+    "harder": "Run a little farther, or react to a surprise go-signal."
+  },
+  "banded-standing-adduction": {
+    "easier": "Lighter band, or a smaller pull inward.",
+    "harder": "Heavier band, or move slower and more controlled."
+  },
+  "dead-bug-with-db": {
+    "easier": "Drop the weight and just use your arms and legs.",
+    "harder": "Hold a light dumbbell, or move both arms and legs together."
+  },
+  "jump-rope-steady": {
+    "easier": "Shorter turns, or step over the rope instead of jumping.",
+    "harder": "Jump a bit longer, or keep a quicker steady pace."
+  },
+  "bear-crawl-variations": {
+    "easier": "Crawl forward only, slower, and a shorter distance.",
+    "harder": "Crawl farther, change directions, or carry a light weight."
+  },
+  "fast-feet-ladder-equiv": {
+    "easier": "Walk slowly through the foot pattern.",
+    "harder": "Quicker feet, or a slightly trickier pattern."
+  },
+  "reactive-lateral-start": {
+    "easier": "Start on your own count, or use just one direction.",
+    "harder": "React to a surprise go-signal, or add more directions."
+  },
+  "deep-squat-hold": {
+    "easier": "Hold onto something, or put a small lift under your heels.",
+    "harder": "Hold a little longer, or hug a light weight to your chest."
+  },
+  "sl-balance-eyes-closed": {
+    "easier": "Open your eyes, or lightly touch something for balance.",
+    "harder": "Stand on a soft surface, or add a slow head turn."
+  },
+  "plank-shoulder-tap": {
+    "easier": "Wider feet, or do it from the knees.",
+    "harder": "Bring the feet closer, or tap slower and more controlled."
+  },
+  "hollow-rock": {
+    "easier": "Bend the knees and tuck in while you rock.",
+    "harder": "Reach arms all the way overhead, or hold a light weight."
+  },
+  "depth-drop-low-box": {
+    "easier": "Lower box, or just step down and stick the landing.",
+    "harder": "Slightly higher box, or land on one foot."
+  },
+  "a-skip-march-combo": {
+    "easier": "March only, or do it on the spot.",
+    "harder": "Finish by skipping into a short run."
+  },
+  "banded-front-squat": {
+    "easier": "Lighter band, or a plain bodyweight squat.",
+    "harder": "Heavier band, or pause for a moment at the bottom."
+  },
+  "banded-chop-lift": {
+    "easier": "Lighter band, or a smaller motion.",
+    "harder": "Heavier band, do it standing, or add a slight twist."
+  },
+  "lateral-skater-bound": {
+    "easier": "Hop side to side with a brief pause to stick each landing.",
+    "harder": "Cover more side-to-side distance, or add a surprise go-signal."
+  },
+  "single-leg-pogo-hops": {
+    "easier": "Hop on two feet, or keep the hops lower.",
+    "harder": "Bouncier or quicker hops, or hop while moving forward."
+  },
+  "crossover-step-to-sprint": {
+    "easier": "Walk slowly through the change into a jog.",
+    "harder": "Add a surprise go-signal, or sprint a little farther."
+  },
+  "reactive-mirror-sprint": {
+    "easier": "Go slower, fewer directions, or have the leader signal early.",
+    "harder": "Bigger, faster moves, or add more directions to follow."
+  },
+  "sl-box-step-down": {
+    "easier": "Lower box, or only step down part way.",
+    "harder": "Slightly higher box, or hold a light dumbbell."
+  },
+  "banded-rdl": {
+    "easier": "Lighter band, or hinge only part way down.",
+    "harder": "Heavier band, or pause at the bottom of the hinge."
+  },
+  "tall-plank-db-drag": {
+    "easier": "Lighter weight, wider feet, or do it from the knees.",
+    "harder": "Heavier weight, or bring the feet closer together."
+  },
+  "jump-rope-intervals": {
+    "easier": "Shorter jumping, longer rests, or just steady skipping.",
+    "harder": "Longer or quicker jumping bouts, or shorter rests."
+  },
+  "multi-direction-bound": {
+    "easier": "Fewer directions, or stick each landing before the next.",
+    "harder": "Quicker changes, or react to a surprise go-signal."
+  },
+  "a-skip-b-skip": {
+    "easier": "Just the A-skip, or slowly march the B pattern.",
+    "harder": "Skip a little faster, or skip into a short run."
+  },
+  "reactive-4-cone": {
+    "easier": "Fewer cones, slower signals, or know the order ahead of time.",
+    "harder": "More cones, faster signals, or carry a puck."
+  },
+  "iso-wall-sit": {
+    "easier": "Hold for less time, or sit a little higher.",
+    "harder": "Rest a light weight on your lap, or sit on one leg."
+  },
+  "high-low-pogo-combo": {
+    "easier": "Steady hops that all stay the same height.",
+    "harder": "Hop on one foot, or switch heights more quickly."
+  },
+  "resisted-free-sprint": {
+    "easier": "Lighter resistance, or do the two parts separately.",
+    "harder": "Smooth the hand-off into the free run, or run farther free."
+  },
+  "db-goblet-lateral-lunge": {
+    "easier": "No weight, or only lunge part way down.",
+    "harder": "Hold a heavier dumbbell, or pause at the bottom."
+  },
+  "sprint-intervals-15s": {
+    "easier": "Fewer sprints, longer rests, or shorter sprints.",
+    "harder": "More sprints, shorter rests, or run each one a bit longer."
+  },
+  "jump-rope-speed": {
+    "easier": "Quick single spins, or shorter fast bursts.",
+    "harder": "Two spins per jump, or quicker bursts."
+  },
+  "crossover-step-bound": {
+    "easier": "Slower crossover steps without a big push-off.",
+    "harder": "Quicker or longer bounds, or add a band for resistance."
+  },
+  "hill-stride": {
+    "easier": "A gentler slope, or a shorter distance.",
+    "harder": "A steeper hill, or longer, quicker strides."
+  },
+  "plank-to-push-up": {
+    "easier": "From the knees, or move slowly between positions.",
+    "harder": "Bring the feet closer, or slow the up-and-down on purpose."
+  },
+  "20m-flying-sprint": {
+    "easier": "Shorten to a 10 m fly, or run easy build-up strides.",
+    "harder": "Make the fly zone longer, or add a gentle downhill run."
+  },
+  "broad-jump": {
+    "easier": "A shorter jump, or step back to reset each time.",
+    "harder": "Jump again right away, or jump into a short sprint."
+  },
+  "20m-sprint": {
+    "easier": "Short 10 m starts focused on the first hard pushes.",
+    "harder": "Add a band or sled at the start, or run out to 30 m."
+  },
+  "squat-to-tuck-jump": {
+    "easier": "A plain jump squat with no knee tuck, or lower jumps.",
+    "harder": "Tuck the knees higher, or jump again without resetting."
+  },
+  "a-skip-resisted": {
+    "easier": "Lighter resistance, or skip with no resistance at all.",
+    "harder": "More resistance, or skip into a resisted short run."
+  },
+  "banded-squat-jump": {
+    "easier": "Lighter band, or a plain bodyweight squat jump.",
+    "harder": "Heavier band, or hold a light weight as you jump."
+  },
+  "rotational-med-ball-toss": {
+    "easier": "Lighter ball, or slower reps to groove the motion.",
+    "harder": "Heavier ball, or throw farther and more explosively."
+  },
+  "rotational-med-ball-side-toss": {
+    "easier": "Lighter ball, or slower reps to groove the motion.",
+    "harder": "Heavier ball, or throw with more snap."
+  },
+  "mirror-sprint-game": {
+    "easier": "Smaller space, slower leader, or fewer directions.",
+    "harder": "Bigger space, more directions, or add a puck or ball."
+  },
+  "banded-rotational-press": {
+    "easier": "Lighter band, or a smaller motion.",
+    "harder": "Heavier band, or press with more snap."
+  },
+  "sl-cmj-stick": {
+    "easier": "A smaller jump, or jump and land on two feet.",
+    "harder": "Jump higher, or add a reach or light weight."
+  },
+  "squat-to-broad-jump": {
+    "easier": "A quicker pause, or a shorter jump.",
+    "harder": "A longer pause, a deeper squat, or hold a light weight."
+  },
+  "contrast-jump": {
+    "easier": "A lighter warm-up move, or just the explosive jumps on their own.",
+    "harder": "Dial in the rest between moves, or use a heavier warm-up first."
+  },
+  "banded-rotational-throw-wall": {
+    "easier": "Lighter band, or slower reps to groove the motion.",
+    "harder": "Heavier band, or throw with more snap."
+  },
+  "continuous-lateral-bound": {
+    "easier": "Add a brief pause to stick each landing.",
+    "harder": "Cover more distance or reps, or clear a small target."
+  },
+  "band-rotational-scoop-toss": {
+    "easier": "Lighter band, or a smaller motion.",
+    "harder": "Heavier band, or scoop with more snap."
+  },
+  "repeat-efforts-shift-simulation": {
+    "easier": "Fewer shifts, shorter bursts, or longer rests on the bench.",
+    "harder": "More shifts, longer bursts, or shorter rests between them."
+  },
+  "repeat-sprint-ability": {
+    "easier": "Fewer sprints, longer rests, or more recovery between sets.",
+    "harder": "More sprints, or shorter rests between them."
+  }
+}

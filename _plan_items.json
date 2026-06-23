@@ -1,0 +1,1066 @@
+[
+ {
+  "cat": "Warm-up / Mobility",
+  "name": "Spider Lunge with Rotation",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Warm-up / Mobility",
+  "name": "Inchworm to Push-Up",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Inchworm walk-out is high-value mobility for 40+, but the terminal push-up adds real (low-moderate) loaded shoulder/wrist end-range plus lumbar-sag risk on an unwarmed pattern, so scale not exclude.",
+  "reg": "Drop the push-up and walk the hands out to a braced plank and back per the exercise's own \"walk the hands out to a plank\" cue (bend knees as needed); if shoulders/wrists are cranky, sub Spider Lunge with Rotation, which is in the pool, same Warm-up/Mobility category, with no loaded terminal push-up."
+ },
+ {
+  "cat": "Warm-up / Mobility",
+  "name": "Lateral Squat Shift",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Warm-up / Mobility",
+  "name": "A-Skip in Place",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "The \"how\" explicitly prescribes balls-of-feet active ground strikes, a real low-grade Achilles/calf/knee aggravator for cranky 40+ tissue; AMBER+regress keeps the movement while offering a no-hop fallback, so it is correctly calibrated, not over-restricted.",
+  "reg": "If it nags your Achilles, calf, or knee, do an A-march instead: keep one foot grounded (no hop), march in place driving the knee to hip height with the toe up and tall posture — same positions and warm-up benefit, no forefoot ground-strike impact. (A-march is the marching component named in the pool's \"A-Skip + March Combo.\")"
+ },
+ {
+  "cat": "Warm-up / Mobility",
+  "name": "90/90 Hip Switch",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Warm-up / Mobility",
+  "name": "Jumping Jacks",
+  "tier": "AMBER",
+  "dec": "keep",
+  "risk": "Soft-landing, self-paced jumping jacks are low-amplitude impact the 40+ rules permit; keep with a plain opt-out rather than substituting the movement out by default.",
+  "reg": "If your Achilles or knees bark, do step-out jacks (step one foot out at a time, no jump, arms still sweeping overhead) to keep the warm-up effect with near-zero impact."
+ },
+ {
+  "cat": "Warm-up / Mobility",
+  "name": "Butt Kicks",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "Impact is real but minimal (cued short ground contacts, balls of feet, low amplitude); this is a staple warm-up that should be kept GREEN with a self-scaling regression, not defaulted-down.",
+  "reg": "If your knee or Achilles is cranky, march in place flicking the heels toward the glutes without leaving the ground (same hamstring flick, no bounce), keeping the cadence light; skip the forward-traveling version."
+ },
+ {
+  "cat": "Warm-up / Mobility",
+  "name": "Banded Clamshell",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Warm-up / Mobility",
+  "name": "Banded Lateral Walk",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Warm-up / Mobility",
+  "name": "T-Spine Rotation",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Warm-up / Mobility",
+  "name": "Adductor Rocker",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Warm-up / Mobility",
+  "name": "Ankle Dorsiflexion (Wall)",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Warm-up / Mobility",
+  "name": "Banded Monster Walk",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Squat / Knee-dominant",
+  "name": "Banded Front Squat",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Squat / Knee-dominant",
+  "name": "Iso Wall Sit",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Squat / Knee-dominant",
+  "name": "Banded Squat",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Squat / Knee-dominant",
+  "name": "Deep Squat Hold",
+  "tier": "AMBER",
+  "dec": "keep",
+  "risk": "Unloaded end-range mobility hold is high-value joint-prep for 40+, not a loaded deep squat — keep it AMBER with a depth off-ramp rather than swapping the movement out entirely.",
+  "reg": "If it bothers your knee, hip, or back, only sink to a depth that stays comfortable — stop at or above parallel and ease off prying the knees apart — or substitute the Iso Wall Sit, a wall-supported 90-degree hold that keeps your back supported and avoids end-range."
+ },
+ {
+  "cat": "Hinge / Posterior Chain",
+  "name": "Band Glute Bridge",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Hinge / Posterior Chain",
+  "name": "SL Glute Bridge (Band)",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Hinge / Posterior Chain",
+  "name": "DB RDL",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Loaded hinge genuinely loads a cranky 40+ lumbar spine, but it's a high-value technique-led pattern to keep — regress (not exclude) is correctly calibrated; the how already caps depth at mid-shin with flat back/near-vertical shins.",
+  "reg": "If it bothers your back, do Banded RDL instead (band tension is lightest at the bottom, so it de-loads the spine right where it's most vulnerable) — or per the cue shorten the range (stop at the knee, not mid-shin), slow the tempo, and drop the load."
+ },
+ {
+  "cat": "Hinge / Posterior Chain",
+  "name": "SL DB RDL",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Loaded single-leg hinge genuinely stacks balance + lateral-hip + lumbar demand for a worn 40+ back/hip, so AMBER/regress (not RED, not keep) is correctly rated and not over-restricted.",
+  "reg": "If balance or the back/hip complains, regress to DB RDL (two legs) — present in the pool, same hinge pattern with the instability removed — or keep a fingertip on a wall and lower only to a comfortable hamstring stretch. (Banded RDL / SL RDL Banded also exist if even gentler bottom-range loading is wanted.)"
+ },
+ {
+  "cat": "Hinge / Posterior Chain",
+  "name": "Banded RDL",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Hinge / Posterior Chain",
+  "name": "SL RDL (Banded)",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Single-leg hinge under rising band tension is a real balance-vs-spinal-position conflict for a worn 40+ back, but it's high-value unilateral work, not RED — keep it with a regression.",
+  "reg": "If balance is shaky, regress to Banded RDL (two legs), or steady yourself with a fingertip on a wall and keep the range short with a flat back."
+ },
+ {
+  "cat": "Hinge / Posterior Chain",
+  "name": "Banded Hamstring Slides",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Long-lever eccentric hamstring load in a bridge genuinely provokes cramps/strains in aging hamstrings, but it is low-impact and valuable, so AMBER+regress is correctly calibrated.",
+  "reg": "If the hamstrings cramp or strain, shorten the slide range and slow the tempo; if it still bothers them, regress to Band Glute Bridge (short-lever, no eccentric lengthening) until tolerance builds."
+ },
+ {
+  "cat": "Lunge & Single-leg",
+  "name": "DB Goblet Lateral Lunge",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Lunge & Single-leg",
+  "name": "Box Step-Up (DBs)",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Lunge & Single-leg",
+  "name": "SL Box Step-Down",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Real PF-joint risk at the deep single-leg bottom range for cranky 40+ knees, but it's a high-value Elevate-category single-leg movement, so keep-with-regression (not exclude) is correct.",
+  "reg": "Knee bothering you at the bottom? Use a lower box and only tap-and-hover (don't sink to a full floor tap) so the standing knee never reaches its deepest, most compressed angle. Still cranky? Swap to Box Step-Up (DBs) — driving up onto a knee-height box is concentric-led and far more knee-friendly than lowering down. Keep the knee tracking over the foot and the hips level either way."
+ },
+ {
+  "cat": "Lunge & Single-leg",
+  "name": "Banded Standing Adduction",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Lunge & Single-leg",
+  "name": "Banded Lateral Lunge",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Lunge & Single-leg",
+  "name": "DB Bulgarian Split Squat",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Rear-foot-elevated single-leg loads the front knee and demands balance — a real but manageable concern for cranky 40+ knees, so keep-with-regression (not exclude) is correct; note the \"how\" already stops near parallel, so the depth risk is moderate not deep.",
+  "reg": "First scale in-movement: keep the front shin near vertical, stop well short of parallel, and drop or lighten the DBs. If balance or the front knee still complains, swap to DB Goblet Lateral Lunge (both feet flat, more stable) or Box Step-Up (DBs) to a knee-height box — both are in the pool and lower-impact loaded single-leg work."
+ },
+ {
+  "cat": "Lunge & Single-leg",
+  "name": "SL Balance — Eyes Closed",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Upper Body / Push",
+  "name": "DB Floor Press",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Upper Body / Push",
+  "name": "Half-Kneeling DB Press",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Overhead-to-lockout under load is a real aggravator for the assumed cranky 40+ shoulder, but the movement is valuable for posture/overhead health, so regress (not exclude) is correct.",
+  "reg": "If overhead bothers the shoulder, switch to DB Floor Press (in pool, no overhead component, floor caps the range); or lighten the DB and press only to a pain-free height with ribs down."
+ },
+ {
+  "cat": "Upper Body / Push",
+  "name": "DB Push-Up to Row",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Loaded push-up + balancing anti-rotation row genuinely taxes worn wrists/shoulders; no impact or deep ROM, so AMBER+regress (not RED-exclude) is correct, and both named regressions exist in the pool and lower the load.",
+  "reg": "If wrists complain, do Band Row (upright, no hand-weight-bearing) for the same pulling stimulus; if shoulders are the issue, do Renegade Row (drops the push-up) or elevate the hands on a bench to ease the bottom of the press."
+ },
+ {
+  "cat": "Upper Body / Push",
+  "name": "Plank to Push-Up",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Upper Body / Push",
+  "name": "Deficit Push-Up",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Below-hand deficit loads the anterior shoulder capsule at end-range horizontal abduction — a deep loaded range to avoid for worn 40+ shoulders; regress the deficit, keep the valuable push pattern.",
+  "reg": "Drop the blocks and do a regular floor-range push-up (or, if shoulders complain, switch to a pool option that caps the depth: DB Floor Press — the floor limits the range — or Banded Chest Press). Note: the original cue \"per its own cue to keep range pain-free\" is inaccurate — the how-text gives no pain-free cue and instead instructs going below hand level."
+ },
+ {
+  "cat": "Upper Body / Push",
+  "name": "Archer Push-Up",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Single-arm near-full-load on a cranky shoulder/elbow is a real but controllable risk — AMBER-regress correctly scales the overload without excluding a valuable, self-limiting push pattern.",
+  "reg": "Regress to Plank to Push-Up (even-loaded, both arms share the work — present in the pool), or keep the Archer but elevate the hands and keep the side-to-side shift small until strength allows more."
+ },
+ {
+  "cat": "Upper Body / Push",
+  "name": "Banded Chest Press",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Upper Body / Push",
+  "name": "Push-Up to Reach",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Upper Body / Push",
+  "name": "Explosive Push-Up",
+  "tier": "RED",
+  "dec": "exclude",
+  "risk": "How-text confirms an airborne phase (\"hands may leave the floor\"), delivering ballistic closed-chain landing shock to cranky 40+ wrists/elbows/shoulders — real, correctly rated; exclude-with-substitution preserves the explosive-press value.",
+  "reg": "Band Chest Pass delivers the same explosive press intent without any landing impact on the joints."
+ },
+ {
+  "cat": "Upper Body / Push",
+  "name": "Band Chest Pass",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Upper Body / Push",
+  "name": "DB Push Press",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Ballistic dip-drive to overhead lockout loads cranky 40+ shoulders and lumbar spine at end range; regressing (not excluding) keeps the overhead pattern while removing the leg drive and lean.",
+  "reg": "Use Half-Kneeling DB Press strict and lighter (half-kneeling base removes the leg drive; cue \"press straight overhead without leaning back, ribs down\" limits lumbar extension), or press only to a pain-free overhead height. Both are in the pool and self-coachable."
+ },
+ {
+  "cat": "Upper Body / Pull",
+  "name": "Band Pull-Apart Speed",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Upper Body / Pull",
+  "name": "Band Row",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Upper Body / Pull",
+  "name": "Hanging / Bar Hold",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Active packed hang still taxes cranky cuff/grip in 40+ players, so AMBER-regress is right; the floor-assist scaling and the in-pool Band Row are both valid lower-risk options.",
+  "reg": "Keep feet partly on the floor to offload bodyweight and shorten the hold, building time gradually as the how-text advises; or substitute the pool's Band Row (or Band Face Pull) for a fully supported, joint-friendly pulling stimulus."
+ },
+ {
+  "cat": "Upper Body / Pull",
+  "name": "Band Face Pull",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Upper Body / Pull",
+  "name": "Banded Y-T-W",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Upper Body / Pull",
+  "name": "Banded Wrist Work",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Upper Body / Pull",
+  "name": "Banded Shoulder Cuff Rotation",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Upper Body / Pull",
+  "name": "Renegade Row",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Loaded high-plank support shoulder + wrist extension + anti-rotation lumbar demand is a real concern for accumulated-wear 40+ shoulders/backs; not RED (no impact/failure/ballistics) but not a clean default GREEN, so AMBER/regress is correctly tiered.",
+  "reg": "Substitute Band Row (in pool, Upper Body / Pull) for the same horizontal pull from a standing braced stance with no shoulder weight-bearing or wrist-extension load; if the lower back is the main limiter, regress further to Band Face Pull or Dead Bug for the anti-rotation work."
+ },
+ {
+  "cat": "Core & Anti-rotation",
+  "name": "Dead Bug with DB",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Core & Anti-rotation",
+  "name": "Side Plank with Reach",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Core & Anti-rotation",
+  "name": "Hollow Rock",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Long-lever overhead anti-extension + rocking momentum genuinely cycles cranky 40+ lumbars into extension when the dish fails; scaling (not excluding) is correctly rated AMBER.",
+  "reg": "Shorten the lever first: hold a static hollow with arms by the sides and knees bent (no rocking), keeping the low back pressed flat. If the back still complains, switch to Dead Bug (in the pool as \"Dead Bug with DB\") — and go bodyweight-only, no DB, if lumbar control is the limiter, focusing on keeping the back flat and ribs down."
+ },
+ {
+  "cat": "Core & Anti-rotation",
+  "name": "Tall Plank DB Drag",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Core & Anti-rotation",
+  "name": "Bear Crawl Variations",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Core & Anti-rotation",
+  "name": "Copenhagen Plank — Long",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Long-lever Copenhagen genuinely maxes adductor tension at a top hockey-strain site; AMBER+regress is correct — valuable enough to keep but must default to a shorter lever for 40+ tissue.",
+  "reg": "Shorten the lever by placing the bent top knee (not the ankle) on the bench for a short-Copenhagen hold; if the groin still complains, do Side Plank with Reach instead."
+ },
+ {
+  "cat": "Core & Anti-rotation",
+  "name": "Banded Chop / Lift",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Core & Anti-rotation",
+  "name": "Dragon Flag Negatives",
+  "tier": "RED",
+  "dec": "exclude",
+  "risk": "Max anti-extension long-lever load with high lumbar shear and a fall-onto-extended-back failure mode is correctly RED for a 40+ player with lumbar wear; but the regression should match the trained quality.",
+  "reg": "Dead Bug with DB"
+ },
+ {
+  "cat": "Core & Anti-rotation",
+  "name": "Pallof March",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Core & Anti-rotation",
+  "name": "Hanging Straight-Leg Raise",
+  "tier": "RED",
+  "dec": "exclude",
+  "risk": "Stacks lumbar (straight-leg hip-flexor lever pulling on the spine) and a loaded grip/shoulder dead-hang at once — two vulnerable 40+ tissues with no easy in-set scaling; correctly RED.",
+  "reg": "Dead Bug with DB"
+ },
+ {
+  "cat": "Core & Anti-rotation",
+  "name": "Plank Shoulder Tap",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Core & Anti-rotation",
+  "name": "Bear Crawl with DBs",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Gripped DBs add loaded/unstable wrist-shoulder stress in a weight-bearing crawl with no anti-rotation benefit beyond the bodyweight version, so regressing to the bodyweight bear crawl keeps the value and drops the cost.",
+  "reg": "Drop the dumbbells and perform \"Bear Crawl Variations\" (bodyweight) on flat palms — or on fists on a mat to keep the wrists neutral — keeping knees low, hips level, and resisting any twist."
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Skater Hop — Stick It",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Squat to Tuck Jump",
+  "tier": "RED",
+  "dec": "exclude",
+  "risk": "Max-amplitude double-leg tuck jump = high ground-reaction-force landing with no soft-landing variant; the tuck itself is the hazard, so RED/exclude is correct for cranky 40+ knees/back/Achilles.",
+  "reg": "Low Box Hop-Up — Stick"
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Broad Jump → Sprint 10m",
+  "tier": "RED",
+  "dec": "exclude",
+  "risk": "Maximal horizontal jump with a deliberately UNABSORBED landing converted straight into an accelerating sprint is a textbook Achilles/hamstring ballistic trap that violates the 40+ no-max-impact / moderate-amplitude rules; not over-restricted since safer reactive options retain the value.",
+  "reg": "Skater Hop — Stick It"
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Lateral Skater Bound",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Continuous reactive bounding with minimized ground contact is real tendon/joint shock for a worn 40+ athlete, but the valuable lateral skater pattern survives intact in the stick-it variant, so regress (not exclude) is correct.",
+  "reg": "Regress to Skater Hop — Stick It (present in pool, same movement family): bound, stick and balance each landing rather than rebounding continuously, absorbing each landing quietly with a bent knee and hips back; keep amplitude moderate and volume low. If knees or Achilles still complain, shorten the push-off distance further or drop to lateral step-overs."
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Skater Hop Complex",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Continuous reactive bounds are genuine fast-SSC Achilles/patellar shock for a worn 40+ athlete; regressing to the existing stuck-landing version keeps the lateral power/balance value while removing the shock.",
+  "reg": "Drop the continuous-bound portion and perform only the maximal stuck-landing bounds (as in Skater Hop — Stick It), holding each landing balanced before resetting."
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Multi-Direction Bound",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Real risk: diagonal/varied-vector bounding plus the single-leg landing option adds rotational shear to wear-prone masters knees/ankles, so AMBER+regress (not exclude, not GREEN) is correctly calibrated for a still-competitive 40+ player.",
+  "reg": "Land softly on BOTH legs and fully stick/control each landing before the next bound, with reduced amplitude — skip the single-leg diagonal landings if a knee or ankle complains. The pool already permits \"one or both legs\" for this movement, so this is a valid in-exercise scaling. If two-foot landings still aggravate the joint, drop to a no-flight bilateral option from the pool — \"Drop Squat\" (snap into a stuck athletic landing) or \"Ankle Hop Stick\" for the lowest-impact reactive version."
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Ankle Hop Stick",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Single-Leg Pogo Hops",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "\"How\" text confirms continuous stiff-knee single-leg rebounding loads one Achilles/calf in fast repeated SSC with no recovery — a real 40+ tendon risk; valuable movement, so scale not exclude.",
+  "reg": "Regress to \"Ankle Hop Stick\" (in pool): same stiff-ankle hop but on two feet, sticking and resetting each landing quietly under control instead of continuous rebounding. Or do single-leg hops you stick and reset between reps — keep amplitude small, reps low, and skip if it bothers your Achilles or calf."
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "High-Low Pogo Combo",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "High-amplitude, continuous reactive pogos load the Achilles/calf as fatigue accumulates — a textbook masters-athlete risk; regress (not exclude) preserves the valuable low-amplitude ankle stimulus.",
+  "reg": "Do Ankle Hop Stick instead: from a tall stance, perform a single low, stiff-ankle hop, land quietly on the balls of the feet, and stick/hold the landing under control before resetting. Skip the high-amplitude hops entirely; keep amplitude small, contacts soft, and volume low. If your Achilles or calf is cranky, drop it altogether and warm the ankles with calf raises."
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Drop Squat",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Depth Drop (Low Box)",
+  "tier": "AMBER",
+  "dec": "keep",
+  "risk": "Low-box step-off + bilateral stick is a protective landing drill, not max-impact plyo; keep at AMBER with the Drop Squat swap offered rather than mandated.",
+  "reg": "Use the lowest possible box (or a curb) and stick the landing softly and quietly; if a knee complains, replace with Drop Squat (confirmed in pool) — it trains the same absorb-and-stick pattern by dropping your own bodyweight into the catch, with no fall through space and therefore lower landing shock."
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Banded Squat Jump",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Risk is real and correctly rated: the \"how\" cues maximal-intent repeated jumps with a hard floor landing the band does not soften — exactly the max-impact plyo the 40+ rules flag; AMBER/regress (not exclude) rightly keeps the valuable power stimulus while scaling the impact.",
+  "reg": "Drop the \"maximal intent\" cue: stay in a quarter-squat, jump at moderate (sub-maximal) amplitude, land soft with bent knees, and keep volume low. If knees, Achilles, or low back complain, substitute \"Low Box Hop-Up — Stick\" (jump up onto a low box, step back down) to remove the hard floor landing entirely."
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Contrast Jump",
+  "tier": "RED",
+  "dec": "exclude",
+  "risk": "Maximal-intent peak-output landings are the inseparable core of the movement (PAP contrast method) — real, correctly-rated tendon/joint overload risk for 40+; cannot be softened without changing the exercise.",
+  "reg": "Low Box Hop-Up — Stick"
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Squat to Broad Jump",
+  "tier": "RED",
+  "dec": "exclude",
+  "risk": "Max-distance broad jump = high horizontal landing/braking force on Achilles, hamstrings and patellar tendon — exactly the ballistic shock the 40+ rules prohibit; RED/exclude is correct, not over-restricted.",
+  "reg": "Skater Hop — Stick It (present in pool; self-governed sub-maximal lateral bound with explicit soft/stick landing, lower impact and more hockey-specific — cue \"moderate hop distance, no max efforts\")."
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Continuous Lateral Bound",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Continuous reactive chain with explicit \"minimize ground-contact time\" cyclically shocks Achilles/patellar tendon — real risk for worn 40+ tissue; regress (not exclude) since the lateral pattern is valuable.",
+  "reg": "Convert to stuck-landing skater hops (Skater Hop — Stick It): push off, land softly on the outside leg, and hold balanced before the next bound rather than rebounding continuously."
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Crossover Step Bound",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Continuous crossover bound keeps hips square while the trailing leg crosses in front, loading a transverse-plane twist on a planted knee during reactive decel/reaccel — real for 40+ knees, but valuable enough to scale rather than cut.",
+  "reg": "Slow the tempo to a controlled crossover STEP-and-stick rather than an explosive bound, or replace with Skater Hop — Stick It (in pool): a pure frontal-plane lateral push that \"sticks\" each landing, removing the rotational/reactive shock while keeping the same lateral push training effect."
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Lateral Depth Drop to Bound",
+  "tier": "RED",
+  "dec": "exclude",
+  "risk": "Box step-off adds free-fall shock onto a single-leg reactive lateral bound with a minimize-ground-time cue — stacked ballistic impact plus frontal-plane shear on knee/Achilles, squarely in the max-impact-plyo prohibition for 40+.",
+  "reg": "Skater Hop — Stick It"
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Low Box Hop-Up — Stick",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "SL CMJ Stick",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Maximal single-leg jump-and-stick concentrates ballistic takeoff/landing shock on one knee/Achilles — correctly AMBER+regress for cranky 40+ tissue, but valuable enough not to exclude.",
+  "reg": "Regress to a two-leg jump with stuck landing (Low Box Hop-Up — Stick, confirmed in pool — two-leg takeoff and box-height landing cut impact), or perform the single-leg version at moderate amplitude with a soft, well-controlled stick and low volume to keep the skating-specific single-leg transfer."
+ },
+ {
+  "cat": "Jump & Plyometric",
+  "name": "Hurdle Hops — Continuous",
+  "tier": "RED",
+  "dec": "exclude",
+  "risk": "Continuous stiff-reactive double-leg hopping over a hurdle row is sustained max-impact shock to Achilles/patellar tendon plus a real trip/fall hazard — squarely the masters \"no ballistic shock / no max-impact plyo\" exclusion; the defining quality can't be kept while removing the risk.",
+  "reg": "Ankle Hop Stick"
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "Wall Drive Hold",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "A-Skip Moving",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "Reactive 5m Sprint",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "\"Sprint maximally\" + reactive cue from a dead stop is real posterior-chain strain risk for 40+; AMBER/regress is correct, not over-restricted.",
+  "reg": "Same-movement scaling first: on thoroughly warm legs, self-initiate (no reaction cue) and cap effort at ~80% over the 5m, focusing on smooth acceleration; only after several clean reps add the reactive cue back in. If the calf/hamstring feels cranky, substitute Hill Stride (submaximal uphill, controlled mechanics) which naturally limits speed and eccentric load."
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "A-Skip + March Combo",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "Crossover Step",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "Reactive Mirror Sprint",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Open-skill unanticipated maximal cutting is a real knee/groin risk in worn 40+ joints, but it is bodyweight and low-volume, so regress (not exclude) to a self-paced closed-skill version is correct.",
+  "reg": "Drop the reactive partner element: practice the closed-skill Crossover Step instead, controlling your own pace and pre-planning each direction so every plant is anticipated. Push off explosively in both directions at a speed your knees and groin tolerate; if any cut still bothers a joint, slow to a controlled shuffle."
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "Resisted → Free Sprint",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Contrast release into \"light and fast\" overspeed sprinting spikes late-swing hamstring eccentric load at top velocity — the classic 40+ acute pull mechanism; AMBER/regress (not exclude) is correct since the drive stimulus is preserved via scaling.",
+  "reg": "Keep the free portion submaximal with light band tension only (no max release), or substitute pool exercise \"Hill Stride\" — controlled, submaximal incline striding that delivers the same push-off/drive overload without the overspeed release spike. (Do NOT substitute \"Hill Sprint,\" which is maximal.)"
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "Mirror Sprint Game",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Unpredictable partner-driven cuts at explicitly maximal/competitive escape effort genuinely maxes ACL/MCL and adductor-strain risk for aging tissue, but the reactive pattern is valuable and scalable, so regress (not exclude) is correctly calibrated.",
+  "reg": "Cap effort and play as a slower, shuffle-only mirror with no sprinting/escape, OR substitute Reactive Lateral Start (in pool, same category) using pre-set directions — discrete reps with full controlled deceleration and reset between, no competitive chase. If it tweaks your knee, back, or groin, drop to predictable pre-called directions at sub-maximal speed."
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "Fast Feet / Ladder Equiv",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "A-Skip + B-Skip",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "B-skip's active full-length lower-leg extension + paw-back is a real lengthened-eccentric hamstring load that 40+ tissue tolerates poorly cold; AMBER/regress (not exclude) correctly keeps the valuable A-skip and scales only the high-strain B component.",
+  "reg": "If the B-skip's leg-flick tugs your hamstring, drop it and do \"A-Skip Moving\" (knee drive, toe up, tall posture, active paw-back, no leg extension) until thoroughly warm; only then add the B as a small, partial-range lower-leg extension, never a forceful full-length whip."
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "Reactive Lateral Start",
+  "tier": "AMBER",
+  "dec": "keep",
+  "risk": "Ground-level reactive start-and-accelerate (no box, no bound, no landing shock); genuine groin/medial-knee risk is the drop step under a surprise cue, which is manageable by cueing crossover + sub-max first reps rather than regressing away the reactive value.",
+  "reg": "Default to the crossover (skip the drop step) and start sub-maximal, increasing cue speed only as it feels clean; if it nags your groin or inside knee, drop the reactive cue and do planned Crossover Step at moderate effort in both directions before re-adding the reaction."
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "30m Fly Sprint",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Holding true max velocity over a full 30m zone (plus 10-20m build-in) is the pool's highest hamstring-strain and Achilles demand for worn 40+ legs; valuable enough to keep via regression, not exclude.",
+  "reg": "Shorten to a Flying 10m Sprint (a real pool entry; same max-velocity pattern, two-thirds less time in the strain zone) or run the zone at ~90% relaxed effort with full recovery and thorough warm-up first."
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "Reactive 4-Cone",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Unanticipated sharp plant-and-cut at speed is a real ACL/MCL/groin mechanism for accumulated-wear 40+ knees/groin, so AMBER+regress is correct; the pre-planned controlled-speed version preserves the valuable hockey pattern.",
+  "reg": "Run it as a pre-planned (non-reactive) cone pattern at controlled, sub-maximal speed with rounded rather than sharp plants, so you know the next cone in advance. If your knee, groin, or back complains, drop to the Reactive 5m Sprint as linear-only (react then accelerate straight, no cutting)."
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "Hill Stride",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "Flying 10m Sprint",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Max-velocity fly is the #1 hamstring/Achilles pull mechanism for 40+ athletes; valuable as mechanics work, so regress (not exclude) with a capped-effort option plus a real pool substitute (Hill Stride).",
+  "reg": "Run the fly zone at ~90% relaxed, smooth effort with a long, gradual build-in and full recovery between reps — never a true all-out top gear. If your hamstring or Achilles feels tight or twingy, switch to Hill Stride: stride a moderate incline at controlled submaximal effort focusing on clean mechanics, which caps your speed and shortens the stride so the hamstring is never stretched at full velocity."
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "Crossover Step to Sprint",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Real but moderate groin/adductor strain risk from the open-hip crossover plant into hard acceleration; no impact shock, so AMBER+regress (not exclude) is correct for cranky 40+ tissue.",
+  "reg": "Warm the groin/hips first, then keep the crossover at moderate effort and the sprint-out submaximal. If your groin feels tight or cold, do the standalone \"Crossover Step\" (same lateral pattern, no sprint transition) until the movement feels smooth, then add a gentle build-up to the sprint-out."
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "Hill Sprint",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "The \"how\" is explicitly maximal/all-out, loading cranky 40+ calf/Achilles/hamstring tissue hard; AMBER+regress keeps a valuable movement while capping intensity.",
+  "reg": "Use Hill Stride (submaximal, clean mechanics) on a moderate grade instead of the all-out effort until well-conditioned."
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "A-Skip Resisted",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Speed, Sprint & Agility",
+  "name": "30-Sec Shuttle",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Real risk: 30s of continuous max sprint-plant-turn cycles loads knees/groin and degrades hamstring mechanics under accumulating fatigue — exactly when masters soft-tissue strains happen; regress (not exclude) keeps a valuable CoD skill in scaled form.",
+  "reg": "Lengthen the shuttle distance so the turns are gentler and there are fewer of them, cut the bout to ~15-20s, and run at ~80% so you can brake under control — if a turn pinches a knee or groin, round it off into a wide arc instead of a hard plant, or swap to a straight tempo run/15s sprint interval with no cut."
+ },
+ {
+  "cat": "Loaded Carries",
+  "name": "DB Suitcase Carry",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Loaded Carries",
+  "name": "Farmer + Suitcase Complex",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Loaded Carries",
+  "name": "Suitcase Get-Up",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Loaded deep kneel/lunge, eccentric floor descent, and offset spinal load genuinely stack knee/back/balance demand for worn 40+ joints; AMBER+regress (not RED) is correct since the anti-tip value is retained via a scaled carry.",
+  "reg": "If it bothers your knee or back, do the DB Suitcase Carry instead (same anti-tip/anti-lean stimulus, no floor transition); or lighten the load and limit the range to half-kneeling-to-stand."
+ },
+ {
+  "cat": "Loaded Carries",
+  "name": "Farmer Carry (Banded)",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Loaded Carries",
+  "name": "Carry Complex (Farmer + Suitcase + Overhead)",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Real risk is the loaded overhead-hold segment (end-range shoulder + lumbar arching for cranky-shouldered masters); farmer/suitcase segments are great, so regress (not exclude) is correct.",
+  "reg": "If overhead bothers your shoulder or back, drop that segment and do the Farmer + Suitcase Complex instead (it exists in the pool — same carry minus the overhead); or keep the load light and short and hold the weight in a front-rack carry rather than overhead."
+ },
+ {
+  "cat": "Rotational Power",
+  "name": "Rotational Med Ball Toss",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Full-amplitude ballistic rotational whip plus asymmetric wall catch is a real lumbar/oblique risk for a cranky 40+ back, but the pattern is too hockey-valuable to exclude — so regress, not remove.",
+  "reg": "First scale within the movement per its own 'how': shorten the wind-up and rotate sub-maximally, adding speed only once the back stays quiet. If it still bothers your back, swap to the pool's Banded Rotational Press — same hip-driven transverse pattern but no free-release and an explicitly controlled eccentric return, removing the ballistic spike and the catch/deceleration shock."
+ },
+ {
+  "cat": "Rotational Power",
+  "name": "Rotational Med Ball Side Toss",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "The low, trail-side, scooping ballistic release loads rotation under flexion/side-bend — a real oblique/low-back strain pattern for 40+ trunks; AMBER+regress is correct (not RED: it stays valuable and is self-throttleable; not GREEN: explicit \"ballistic release\" of a free mass is exactly the shock to treat with restraint).",
+  "reg": "Use Band Rotational Scoop Toss (present in the pool, same Rotational Power category and same low-to-high scoop intent, but the band controls the return so there is no uncontrolled snap) — or per the \"how,\" shorten the wind into the back hip and throttle release intent down. If the low scoop still bothers the back, drop to Banded Chop / Lift for controlled rotation with no ballistic load."
+ },
+ {
+  "cat": "Rotational Power",
+  "name": "Banded Rotational Press",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Rotational Power",
+  "name": "Banded Rotational Throw (Wall)",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Ballistic banded trunk snap (esp. the no-release \"hard follow-through\") loads/decelerates the lumbar at end-range under elastic recoil — a real aggravator for a worn 40+ back; regress not exclude.",
+  "reg": "Default to the controlled Banded Rotational Press (drive the rotation but keep tension and control the return) rather than a ballistic release; if it bothers the back, slow the tempo and reduce rotational range per the 'how'."
+ },
+ {
+  "cat": "Rotational Power",
+  "name": "Band Rotational Scoop Toss",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Full-body & Complexes",
+  "name": "DB Thruster",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Real risk is the ballistic, continuously-cycled overhead lockout under leg drive (cranky shoulders + rib-flare), not depth; AMBER/regress is right, not an exclude.",
+  "reg": "Keep depth at parallel and press strict and slow with lighter DBs — decouple the leg drive from the press (pause at the top of the squat before pressing) so it isn't ballistic; or fully decouple into the pool's Half-Kneeling DB Press, where the half-kneeling base prevents leaning back and removes leg drive entirely."
+ },
+ {
+  "cat": "Full-body & Complexes",
+  "name": "DB Complex",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "The ballistic hang clean plus the explicit \"maintain form as fatigue builds\" cue are two genuine masters-rule violations (no ballistic shock, no grinding to failure); regressing rather than excluding correctly keeps a valuable full-body stimulus.",
+  "reg": "Drop the clean, shorten the sequence to RDL-row-front squat-press with a light sustainable load and stop short of form breakdown; for a no-ballistic full-body stimulus use Carry Complex (Farmer + Suitcase + Overhead)."
+ },
+ {
+  "cat": "Full-body & Complexes",
+  "name": "Combine Circuit",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "The \"how\" explicitly pairs max-effort jumps and sprints under minimal rest, so fatigued high-impact stations are a real Achilles/knee hazard for 40+ tissue; format is valuable, so scale rather than exclude.",
+  "reg": "Build the round from lower-impact stations only — DB Suitcase Carry, Pallof March / core, tempo BW work, and low-amplitude soft-landing jumps — with generous rest so quality holds; use Tempo BW Circuit pacing (~65-75%). If a knee/Achilles complains, drop the jumps entirely and sub a loaded carry or march."
+ },
+ {
+  "cat": "Conditioning / Jump Rope",
+  "name": "Jump Rope — Steady",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Continuous repetitive landing impact genuinely accumulates on masters Achilles/calves/knees, but the movement is valuable and self-protective via its own cues, so cap-and-gate (AMBER/regress) is the right altitude — not exclude.",
+  "reg": "Keep the bout short and break a long target into a few shorter rounds with rest rather than one long continuous skip. Use the exercise's own cues — small, quick hops, soft landings, springy ankles, wrists turning the rope. If the Achilles, calves, or knees complain, swap to Aerobic Circuit (Zone 2) for low/no-impact steady conditioning at the same easy, sustainable effort."
+ },
+ {
+  "cat": "Conditioning / Jump Rope",
+  "name": "Jump Rope — Intervals",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Real but moderate Achilles/calf load from faster work-bouts on aged plantarflexors; correctly AMBER (not RED like the Speed variant, not GREEN like Steady), with a regression that keeps the value while capping impact.",
+  "reg": "Keep the work bouts at a moderate (not all-out) pace with easy-skip recovery as written; if impact bothers the lower legs, run the same work:rest pattern with a bodyweight circuit instead (Tempo BW Circuit / Repeat Tempo Intervals) to remove the rope foot-strike."
+ },
+ {
+  "cat": "Conditioning / Jump Rope",
+  "name": "Jump Rope — Speed",
+  "tier": "RED",
+  "dec": "exclude",
+  "risk": "All-out maximal single/double-unders are exactly the ballistic Achilles/calf shock the 40+ rules exclude; safe rope stimulus stays via Steady/Intervals, so excluding only the maximal variant is surgical, not over-restrictive.",
+  "reg": "Jump Rope — Intervals"
+ },
+ {
+  "cat": "Energy Systems / Intervals",
+  "name": "Tempo BW Circuit",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Energy Systems / Intervals",
+  "name": "Repeat Tempo Intervals",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Energy Systems / Intervals",
+  "name": "Sprint Intervals 15s",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Near-maximal repeated 15s sprint-running under accumulating fatigue is a real hamstring/Achilles strain risk for 40+ tissue; AMBER+regress is correct (not RED-exclude) because the movement's own \"how\" offers a non-impact bike/skate modality that preserves the conditioning stimulus.",
+  "reg": "Use the exercise's own non-impact option: do the 15s bouts on a bike or in a skating-pattern instead of all-out running, or drop to 'Repeat Tempo Intervals' at a controlled, repeatable pace."
+ },
+ {
+  "cat": "Energy Systems / Intervals",
+  "name": "Repeat Sprint Ability",
+  "tier": "RED",
+  "dec": "exclude",
+  "risk": "Repeated 5-10s MAX-velocity ground sprints on incomplete rest (\"resist the drop-off\") is the textbook acute hamstring/Achilles mechanism, and 40+ is the peak Achilles-rupture demographic — correctly RED, not over-restricted (7 other energy-system options cover conditioning).",
+  "reg": "Sprint Intervals 15s — run it on a BIKE or skating-pattern (not ground running) at hard-but-controlled effort with the prescribed longer recovery; this keeps the repeat-conditioning stimulus while removing the max-velocity ground impact. (For the most joint-friendly option, the pool's \"Repeat Tempo Intervals\" gives the same repeated-bout structure at sustainable effort with no max velocity.)"
+ },
+ {
+  "cat": "Energy Systems / Intervals",
+  "name": "Aerobic Circuit (Zone 2)",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Energy Systems / Intervals",
+  "name": "Repeat Efforts — Shift Simulation",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Bundled max sprints + sharp cuts + uncontrolled battles under fatigue is a real cutting/impact risk for 40+ tissue, but the valuable shift-pattern conditioning is worth keeping, so AMBER+regress is correct, not exclude.",
+  "reg": "Run this as \"Repeat Tempo Intervals\" (in pool, same Energy Systems/Intervals category): keep the 40–60s work / bench-rest shift pattern but hold a controlled, repeatable moderate effort instead of all-out. Swap the max sprints, sharp cuts, and battles for steady bike, easy shuttle jog (no hard cutting), or tempo running. If knees/back/groin bark, lengthen the rest and drop a shift or two."
+ },
+ {
+  "cat": "Competitive Play",
+  "name": "Mirror Game / Free Play",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Reactive, unanticipated cuts/decel in all-out small-space play are a genuine joint-shear/Achilles risk for worn 40+ knees/ankles, but the movement is high-value sport-specific work the rules elevate, so AMBER+regress (not RED/exclude, not GREEN) is correct.",
+  "reg": "Keep it strictly non-contact and submaximal; if cutting bothers a joint, scale to \"Reactive Mirror Sprint\" (in pool) with bigger spacing and slower partner cues so direction changes are wider and more anticipatable — avoid the maximal \"Mirror Sprint Game\" variant which reintroduces sharp all-out planting."
+ },
+ {
+  "cat": "Competitive Play",
+  "name": "Free Play / 1v1 Game",
+  "tier": "AMBER",
+  "dec": "regress",
+  "risk": "Open-ended \"beat the opponent to a spot\" 1v1 forces all-out reactive cuts/decels that stress aging joints — real risk, but valuable reactive work, so cap-and-keep (AMBER) is correct, not exclusion.",
+  "reg": "Cap effort to ~80%, widen the playing space to soften cuts, and keep it non-contact; if it still aggravates a joint, swap to Mirror Game / Free Play (lower-impact reactive movement without the race-to-a-spot win condition)."
+ },
+ {
+  "cat": "Competitive Play",
+  "name": "Battle Game / 1v1",
+  "tier": "RED",
+  "dec": "exclude",
+  "risk": "The \"how\" explicitly prescribes opponent-driven leverage/body-position battling, so intensity is set by the opponent, not self-scalable — genuine collision/fall/shoulder-back shear risk for cranky 40+ tissue; exclude is correct.",
+  "reg": "Replace with \"Free Play / 1v1 Game\" (same Competitive Play category, present in pool) — it keeps the 1v1 compete-and-react stimulus but its \"how\" drops the body-contact/leverage instruction, so it's a faithful lower-impact scaling of this movement. For a more conservative, fully non-contact floor, fall back to \"Mirror Game / Free Play.\""
+ },
+ {
+  "cat": "Competitive Play",
+  "name": "Free Play with Intent",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Cool-down / Recovery",
+  "name": "Slow Walk with Nose Breathing",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Cool-down / Recovery",
+  "name": "Child's Pose with Breath",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Cool-down / Recovery",
+  "name": "90/90 Hip Stretch + T-Spine Opener",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Cool-down / Recovery",
+  "name": "Supine Spinal Twist",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Cool-down / Recovery",
+  "name": "Foam Roll / Tissue Work",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ },
+ {
+  "cat": "Cool-down / Recovery",
+  "name": "Hip / Groin Flow",
+  "tier": "GREEN",
+  "dec": "keep",
+  "risk": "",
+  "reg": ""
+ }
+]

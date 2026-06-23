@@ -1,0 +1,466 @@
+[
+  {
+    "slug": "ankle-hop-stick",
+    "name": "Ankle Hop Stick",
+    "category": "Jump & Plyometric",
+    "harder_raw": "single-leg ankle hop stick or higher hop",
+    "easier_raw": "lower hop or two-foot landing",
+    "hasVideo": true
+  },
+  {
+    "slug": "wall-drive-hold",
+    "name": "Wall Drive Hold",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "add a leg-switch (drive) or alternating drives",
+    "easier_raw": "shorter holds or a higher hand position (more upright)",
+    "hasVideo": false
+  },
+  {
+    "slug": "a-skip-moving",
+    "name": "A-Skip Moving",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "A-skip into a sprint or higher cadence",
+    "easier_raw": "A-march or A-skip in place",
+    "hasVideo": true
+  },
+  {
+    "slug": "band-glute-bridge",
+    "name": "Band Glute Bridge",
+    "category": "Hinge / Posterior Chain",
+    "harder_raw": "single-leg banded bridge or hip load",
+    "easier_raw": "lighter band or no band",
+    "hasVideo": true
+  },
+  {
+    "slug": "crossover-step",
+    "name": "Crossover Step",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "add a reactive cue or sprint out",
+    "easier_raw": "walk through the crossover pattern slowly",
+    "hasVideo": false
+  },
+  {
+    "slug": "reactive-5m-sprint",
+    "name": "Reactive 5m Sprint",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "react to less predictable cues or longer distance",
+    "easier_raw": "self-initiated start or shorter distance",
+    "hasVideo": false
+  },
+  {
+    "slug": "banded-standing-adduction",
+    "name": "Banded Standing Adduction",
+    "category": "Lunge & Single-leg",
+    "harder_raw": "heavier band or slower tempo",
+    "easier_raw": "lighter band or reduce range",
+    "hasVideo": true
+  },
+  {
+    "slug": "dead-bug-with-db",
+    "name": "Dead Bug with DB",
+    "category": "Core & Anti-rotation",
+    "harder_raw": "heavier DB or both limbs simultaneously",
+    "easier_raw": "lighter/no weight (bodyweight dead bug)",
+    "hasVideo": false
+  },
+  {
+    "slug": "jump-rope-steady",
+    "name": "Jump Rope — Steady",
+    "category": "Conditioning / Jump Rope",
+    "harder_raw": "longer duration or faster steady pace",
+    "easier_raw": "shorter bouts or step-throughs",
+    "hasVideo": false
+  },
+  {
+    "slug": "bear-crawl-variations",
+    "name": "Bear Crawl Variations",
+    "category": "Core & Anti-rotation",
+    "harder_raw": "add load, longer distance, or harder direction patterns",
+    "easier_raw": "forward crawl only, slower, shorter distance",
+    "hasVideo": true
+  },
+  {
+    "slug": "fast-feet-ladder-equiv",
+    "name": "Fast Feet / Ladder Equiv",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "faster cadence or more complex patterns",
+    "easier_raw": "slower walk-through of the pattern",
+    "hasVideo": false
+  },
+  {
+    "slug": "reactive-lateral-start",
+    "name": "Reactive Lateral Start",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "less predictable cues or more directions",
+    "easier_raw": "self-initiated lateral start or fewer directions",
+    "hasVideo": false
+  },
+  {
+    "slug": "deep-squat-hold",
+    "name": "Deep Squat Hold",
+    "category": "Squat / Knee-dominant",
+    "harder_raw": "longer hold or light goblet load",
+    "easier_raw": "hold a support or elevate the heels slightly",
+    "hasVideo": true
+  },
+  {
+    "slug": "sl-balance-eyes-closed",
+    "name": "SL Balance — Eyes Closed",
+    "category": "Lunge & Single-leg",
+    "harder_raw": "unstable surface or add a head turn",
+    "easier_raw": "open eyes or lightly touch a support",
+    "hasVideo": true
+  },
+  {
+    "slug": "plank-shoulder-tap",
+    "name": "Plank Shoulder Tap",
+    "category": "Core & Anti-rotation",
+    "harder_raw": "feet closer together or add a tempo",
+    "easier_raw": "wider feet or from the knees",
+    "hasVideo": true
+  },
+  {
+    "slug": "hollow-rock",
+    "name": "Hollow Rock",
+    "category": "Core & Anti-rotation",
+    "harder_raw": "arms fully overhead or hold a light DB",
+    "easier_raw": "tucked hollow rock (knees bent)",
+    "hasVideo": true
+  },
+  {
+    "slug": "depth-drop-low-box",
+    "name": "Depth Drop (Low Box)",
+    "category": "Jump & Plyometric",
+    "harder_raw": "higher box or single-leg depth drop",
+    "easier_raw": "lower box or step-down to a stick",
+    "hasVideo": true
+  },
+  {
+    "slug": "a-skip-march-combo",
+    "name": "A-Skip + March Combo",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "progress into a sprint after the combo",
+    "easier_raw": "march only, or in place",
+    "hasVideo": false
+  },
+  {
+    "slug": "banded-front-squat",
+    "name": "Banded Front Squat",
+    "category": "Squat / Knee-dominant",
+    "harder_raw": "heavier band or bottom pause",
+    "easier_raw": "lighter band or bodyweight goblet squat",
+    "hasVideo": true
+  },
+  {
+    "slug": "banded-chop-lift",
+    "name": "Banded Chop / Lift",
+    "category": "Core & Anti-rotation",
+    "harder_raw": "heavier band, standing, or add rotation",
+    "easier_raw": "lighter band or smaller range",
+    "hasVideo": true
+  },
+  {
+    "slug": "lateral-skater-bound",
+    "name": "Lateral Skater Bound",
+    "category": "Jump & Plyometric",
+    "harder_raw": "cover more distance or add reactive cues",
+    "easier_raw": "skater hop with a brief stick between bounds",
+    "hasVideo": true
+  },
+  {
+    "slug": "single-leg-pogo-hops",
+    "name": "Single-Leg Pogo Hops",
+    "category": "Jump & Plyometric",
+    "harder_raw": "higher/faster hops or add directional travel",
+    "easier_raw": "two-leg pogo hops or lower height",
+    "hasVideo": true
+  },
+  {
+    "slug": "crossover-step-to-sprint",
+    "name": "Crossover Step to Sprint",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "add a reactive cue or longer sprint",
+    "easier_raw": "slower, walk-through transition",
+    "hasVideo": false
+  },
+  {
+    "slug": "reactive-mirror-sprint",
+    "name": "Reactive Mirror Sprint",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "faster/larger movements or more directions",
+    "easier_raw": "slower, fewer directions, or a leader who telegraphs moves",
+    "hasVideo": false
+  },
+  {
+    "slug": "sl-box-step-down",
+    "name": "SL Box Step-Down",
+    "category": "Lunge & Single-leg",
+    "harder_raw": "higher box or hold a DB",
+    "easier_raw": "lower box or reduce range",
+    "hasVideo": true
+  },
+  {
+    "slug": "banded-rdl",
+    "name": "Banded RDL",
+    "category": "Hinge / Posterior Chain",
+    "harder_raw": "heavier band or pause at the stretch",
+    "easier_raw": "lighter band or shorter range",
+    "hasVideo": true
+  },
+  {
+    "slug": "tall-plank-db-drag",
+    "name": "Tall Plank DB Drag",
+    "category": "Core & Anti-rotation",
+    "harder_raw": "heavier DB or feet closer",
+    "easier_raw": "lighter DB, wider feet, or from the knees",
+    "hasVideo": false
+  },
+  {
+    "slug": "jump-rope-intervals",
+    "name": "Jump Rope — Intervals",
+    "category": "Conditioning / Jump Rope",
+    "harder_raw": "longer/harder work or shorter rest",
+    "easier_raw": "shorter work, longer rest, or steady skipping",
+    "hasVideo": false
+  },
+  {
+    "slug": "multi-direction-bound",
+    "name": "Multi-Direction Bound",
+    "category": "Jump & Plyometric",
+    "harder_raw": "faster transitions or reactive (cued) directions",
+    "easier_raw": "fewer directions or stick each landing",
+    "hasVideo": false
+  },
+  {
+    "slug": "a-skip-b-skip",
+    "name": "A-Skip + B-Skip",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "faster cadence or progress into a sprint",
+    "easier_raw": "A-skip only, or march the B pattern slowly",
+    "hasVideo": false
+  },
+  {
+    "slug": "reactive-4-cone",
+    "name": "Reactive 4-Cone",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "more cones, faster cues, or add a puck",
+    "easier_raw": "fewer cones, slower cues, or pre-planned order",
+    "hasVideo": false
+  },
+  {
+    "slug": "iso-wall-sit",
+    "name": "Iso Wall Sit",
+    "category": "Squat / Knee-dominant",
+    "harder_raw": "DB on the lap or single-leg",
+    "easier_raw": "shorter hold or higher knee angle",
+    "hasVideo": true
+  },
+  {
+    "slug": "high-low-pogo-combo",
+    "name": "High-Low Pogo Combo",
+    "category": "Jump & Plyometric",
+    "harder_raw": "single-leg or faster transitions",
+    "easier_raw": "steady same-height pogos",
+    "hasVideo": false
+  },
+  {
+    "slug": "resisted-free-sprint",
+    "name": "Resisted → Free Sprint",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "optimize the resistance/release or longer free portion",
+    "easier_raw": "lighter resistance or run the two portions separately",
+    "hasVideo": false
+  },
+  {
+    "slug": "db-goblet-lateral-lunge",
+    "name": "DB Goblet Lateral Lunge",
+    "category": "Lunge & Single-leg",
+    "harder_raw": "heavier DB or pause at depth",
+    "easier_raw": "bodyweight or reduce depth",
+    "hasVideo": true
+  },
+  {
+    "slug": "sprint-intervals-15s",
+    "name": "Sprint Intervals 15s",
+    "category": "Energy Systems / Intervals",
+    "harder_raw": "more intervals, shorter rest, or longer work",
+    "easier_raw": "fewer intervals, longer rest, or shorter sprints",
+    "hasVideo": false
+  },
+  {
+    "slug": "jump-rope-speed",
+    "name": "Jump Rope — Speed",
+    "category": "Conditioning / Jump Rope",
+    "harder_raw": "double-unders or faster bursts",
+    "easier_raw": "fast single-unders or shorter bursts",
+    "hasVideo": false
+  },
+  {
+    "slug": "crossover-step-bound",
+    "name": "Crossover Step Bound",
+    "category": "Jump & Plyometric",
+    "harder_raw": "faster/longer or add resistance",
+    "easier_raw": "slower crossover steps without a powerful bound",
+    "hasVideo": false
+  },
+  {
+    "slug": "hill-stride",
+    "name": "Hill Stride",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "steeper hill or longer/faster strides",
+    "easier_raw": "gentler incline or shorter distance",
+    "hasVideo": false
+  },
+  {
+    "slug": "plank-to-push-up",
+    "name": "Plank to Push-Up",
+    "category": "Upper Body / Push",
+    "harder_raw": "feet closer or add a tempo",
+    "easier_raw": "from the knees or slow the transitions",
+    "hasVideo": true
+  },
+  {
+    "slug": "20m-flying-sprint",
+    "name": "20m Flying Sprint",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "lengthen the fly zone or add light assisted (downhill / towed) sprints",
+    "easier_raw": "shorten to a 10 m fly or run build-up strides",
+    "hasVideo": false
+  },
+  {
+    "slug": "broad-jump",
+    "name": "Broad Jump",
+    "category": "Jump & Plyometric",
+    "harder_raw": "continuous/repeat broad jumps or jump-to-sprint",
+    "easier_raw": "shorter jump or step back to reset",
+    "hasVideo": true
+  },
+  {
+    "slug": "20m-sprint",
+    "name": "20m Sprint",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "resisted starts (sled or band) or extend to a 30 m sprint",
+    "easier_raw": "10 m accelerations focused on the drive phase",
+    "hasVideo": false
+  },
+  {
+    "slug": "squat-to-tuck-jump",
+    "name": "Squat to Tuck Jump",
+    "category": "Jump & Plyometric",
+    "harder_raw": "continuous tuck jumps or higher tuck",
+    "easier_raw": "jump squat (no tuck) or reduce height",
+    "hasVideo": false
+  },
+  {
+    "slug": "a-skip-resisted",
+    "name": "A-Skip Resisted",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "heavier resistance or progress into a resisted sprint",
+    "easier_raw": "lighter resistance or unresisted A-skip",
+    "hasVideo": false
+  },
+  {
+    "slug": "banded-squat-jump",
+    "name": "Banded Squat Jump",
+    "category": "Jump & Plyometric",
+    "harder_raw": "heavier band or add a hold/DB",
+    "easier_raw": "lighter band or bodyweight squat jump",
+    "hasVideo": true
+  },
+  {
+    "slug": "rotational-med-ball-toss",
+    "name": "Rotational Med Ball Toss",
+    "category": "Rotational Power",
+    "harder_raw": "heavier ball or more explosive/farther",
+    "easier_raw": "lighter ball or slower technical reps",
+    "hasVideo": false
+  },
+  {
+    "slug": "rotational-med-ball-side-toss",
+    "name": "Rotational Med Ball Side Toss",
+    "category": "Rotational Power",
+    "harder_raw": "heavier ball or more explosive",
+    "easier_raw": "lighter ball or technical-speed reps",
+    "hasVideo": false
+  },
+  {
+    "slug": "mirror-sprint-game",
+    "name": "Mirror Sprint Game",
+    "category": "Speed, Sprint & Agility",
+    "harder_raw": "bigger area, more directions, or add a puck/ball",
+    "easier_raw": "smaller area, slower leader, fewer directions",
+    "hasVideo": false
+  },
+  {
+    "slug": "banded-rotational-press",
+    "name": "Banded Rotational Press",
+    "category": "Rotational Power",
+    "harder_raw": "heavier band or more explosive",
+    "easier_raw": "lighter band or smaller range",
+    "hasVideo": true
+  },
+  {
+    "slug": "sl-cmj-stick",
+    "name": "SL CMJ Stick",
+    "category": "Jump & Plyometric",
+    "harder_raw": "jump for height or add a reach/load",
+    "easier_raw": "smaller jump or two-foot CMJ stick",
+    "hasVideo": true
+  },
+  {
+    "slug": "squat-to-broad-jump",
+    "name": "Squat to Broad Jump",
+    "category": "Jump & Plyometric",
+    "harder_raw": "longer pause, deeper squat, or add load",
+    "easier_raw": "shorter pause or smaller jump",
+    "hasVideo": false
+  },
+  {
+    "slug": "contrast-jump",
+    "name": "Contrast Jump",
+    "category": "Jump & Plyometric",
+    "harder_raw": "optimize load/rest or use heavier potentiation",
+    "easier_raw": "lighter contrast or just explosive jumps alone",
+    "hasVideo": true
+  },
+  {
+    "slug": "banded-rotational-throw-wall",
+    "name": "Banded Rotational Throw (Wall)",
+    "category": "Rotational Power",
+    "harder_raw": "heavier band or more explosive",
+    "easier_raw": "lighter band or technical-speed reps",
+    "hasVideo": true
+  },
+  {
+    "slug": "continuous-lateral-bound",
+    "name": "Continuous Lateral Bound",
+    "category": "Jump & Plyometric",
+    "harder_raw": "more distance/reps or add a target to clear",
+    "easier_raw": "bound with a brief stick between reps",
+    "hasVideo": false
+  },
+  {
+    "slug": "band-rotational-scoop-toss",
+    "name": "Band Rotational Scoop Toss",
+    "category": "Rotational Power",
+    "harder_raw": "heavier band or more explosive",
+    "easier_raw": "lighter band or smaller range",
+    "hasVideo": true
+  },
+  {
+    "slug": "repeat-efforts-shift-simulation",
+    "name": "Repeat Efforts — Shift Simulation",
+    "category": "Energy Systems / Intervals",
+    "harder_raw": "more shifts, longer work, or shorter bench rest",
+    "easier_raw": "fewer shifts, shorter work, or longer rest",
+    "hasVideo": false
+  },
+  {
+    "slug": "repeat-sprint-ability",
+    "name": "Repeat Sprint Ability",
+    "category": "Energy Systems / Intervals",
+    "harder_raw": "more reps or shorter rest",
+    "easier_raw": "fewer reps, longer rest, or longer recovery between sets",
+    "hasVideo": false
+  }
+]
