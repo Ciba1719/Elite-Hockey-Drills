@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Wedding Seating — Two Tables</title>
+<style>
+  :root{
+    --paper:#f3ece0;        /* warm linen */
+    --ink:#2b2620;          /* dark walnut */
+    --river:#3f6b6e;        /* muted teal-green, the Otava river */
+    --river-deep:#2c4d4f;
+    --gold:#a8843c;         /* brass accent */
+    --rose:#9a5a52;         /* dusty terracotta-rose */
+    --line:#d9cdb8;
+    --empty:#e8ddc9;
+    --shadow:0 2px 8px rgba(43,38,32,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:'Georgia','Iowan Old Style',serif;
+    background:var(--paper);
+    color:var(--ink);
+    padding:28px 22px 80px;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1{
+    font-size:30px;font-weight:400;letter-spacing:.5px;
+    margin-bottom:2px;
+  }
+  h1 .amp{color:var(--gold);font-style:italic}
+  .sub{font-size:13px;color:var(--river-deep);letter-spacing:2px;text-transform:uppercase;margin-bottom:22px}
+
+  .toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:20px}
+  button{
+    font-family:inherit;font-size:13px;
+    border:1px solid var(--line);background:#fff;color:var(--ink);
+    padding:8px 14px;border-radius:3px;cursor:pointer;transition:.15s;
+  }
+  button:hover{border-color:var(--river);color:var(--river-deep)}
+  button.primary{background:var(--river);color:#fff;border-color:var(--river)}
+  button.primary:hover{background:var(--river-deep);color:#fff}
+  button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+  .layout{display:grid;grid-template-columns:260px 1fr;gap:26px;align-items:start}
+  @media(max-width:880px){.layout{grid-template-columns:1fr}}
+
+  /* ---- Pool / name entry ---- */
+  .panel{background:#fff;border:1px solid var(--line);border-radius:6px;padding:16px;box-shadow:var(--shadow)}
+  .panel h2{font-size:14px;text-transform:uppercase;letter-spacing:1.5px;color:var(--river-deep);font-weight:400;margin-bottom:12px}
+  .add-row{display:flex;gap:6px;margin-bottom:10px}
+  input[type=text]{flex:1;font-family:inherit;font-size:14px;padding:8px;border:1px solid var(--line);border-radius:3px;background:var(--paper)}
+  input[type=text]:focus{outline:none;border-color:var(--river)}
+  select{font-family:inherit;font-size:12px;padding:7px;border:1px solid var(--line);border-radius:3px;background:#fff;width:100%;margin-bottom:12px}
+
+  .pool{display:flex;flex-direction:column;gap:6px;max-height:560px;overflow-y:auto}
+  .pool-empty{font-size:13px;color:#9a8f7a;font-style:italic;padding:8px 0}
+
+  .chip{
+    display:flex;align-items:center;gap:8px;
+    padding:7px 9px;border-radius:4px;cursor:grab;
+    border:1px solid var(--line);background:var(--paper);font-size:14px;
+    user-select:none;
+  }
+  .chip:hover{border-color:var(--river)}
+  .chip.selected{border-color:var(--gold);box-shadow:0 0 0 2px rgba(168,132,60,.25)}
+  .chip .dot{width:10px;height:10px;border-radius:50%;flex:0 0 auto}
+  .chip .x{margin-left:auto;color:#b3a892;cursor:pointer;font-size:16px;line-height:1}
+  .chip .x:hover{color:var(--rose)}
+
+  .legend{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;font-size:12px}
+  .legend span{display:flex;align-items:center;gap:5px}
+  .legend .dot{width:9px;height:9px;border-radius:50%}
+
+  /* ---- Tables ---- */
+  .floor{display:flex;flex-direction:column;gap:34px}
+  .table-block{}
+  .table-label{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;text-align:center}
+  .banquet{
+    display:flex;align-items:center;gap:10px;
+    background:#fff;border:1px solid var(--line);border-radius:8px;
+    padding:14px 16px;box-shadow:var(--shadow);overflow-x:auto;
+  }
+  .side{display:flex;flex-direction:column;gap:6px}
+  .surface{
+    flex:1;min-width:120px;align-self:stretch;
+    background:linear-gradient(180deg,#fbf6ec,#efe5d2);
+    border:1px solid var(--line);border-radius:4px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#b3a892;
+    min-height:120px;
+  }
+  .seat{
+    width:104px;height:46px;border-radius:4px;
+    border:1px dashed #cbbf a6;border:1px dashed #cbbfa6;
+    background:var(--empty);
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    font-size:11.5px;line-height:1.15;padding:3px;cursor:pointer;
+    position:relative;transition:.12s;
+  }
+  .seat .num{position:absolute;top:2px;left:4px;font-size:8px;color:#b3a892}
+  .seat.filled{border-style:solid;color:#fff;font-weight:500}
+  .seat.drop{border-color:var(--gold);box-shadow:0 0 0 2px rgba(168,132,60,.4) inset}
+  .seat:focus-visible{outline:2px solid var(--gold);outline-offset:1px}
+
+  .hint{font-size:12.5px;color:var(--river-deep);margin-bottom:16px;line-height:1.5}
+  .count{font-size:12px;color:#9a8f7a;margin-left:auto}
+
+  @media print{
+    body{padding:0;background:#fff}
+    .panel,.toolbar,.hint{display:none}
+    .layout{grid-template-columns:1fr}
+    .banquet{box-shadow:none}
+    .seat{cursor:default}
+  }
+</style>
+</head>
+<body>
+  <h1>Wedding Seating <span class="amp">&amp;</span> Tables</h1>
+  <div class="sub">Restaurace Ostrov · Písek</div>
+
+  <div class="hint">
+    Add guests &amp; pick a group → then either <strong>drag a name onto a seat</strong>, or <strong>click a name then click a seat</strong>. Click a filled seat to send the guest back. <strong>Export</strong> often — it saves your plan to a file you can re-open later.
+  </div>
+
+  <div class="toolbar">
+    <button class="primary" onclick="exportData()">⤓ Export (save)</button>
+    <button onclick="document.getElementById('importFile').click()">⤒ Import</button>
+    <input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)">
+    <button onclick="window.print()">⎙ Print</button>
+    <button onclick="clearSeats()">Clear seats</button>
+    <span class="count" id="counter"></span>
+  </div>
+
+  <div class="layout">
+    <div class="panel">
+      <h2>Guests</h2>
+      <div class="add-row">
+        <input type="text" id="nameInput" placeholder="Name" onkeydown="if(event.key==='Enter')addGuest()">
+        <button onclick="addGuest()">Add</button>
+      </div>
+      <select id="groupSelect">
+        <option value="czech">Czech family (groom)</option>
+        <option value="bride">Bride's family</option>
+        <option value="hockey">Hockey</option>
+        <option value="friends">Friends</option>
+        <option value="other">Other</option>
+      </select>
+      <div class="pool" id="pool"></div>
+      <div class="legend" id="legend"></div>
+    </div>
+
+    <div class="floor" id="floor"></div>
+  </div>
+
+<script>
+const GROUPS = {
+  czech:  {label:"Czech family (groom)", color:"#3f6b6e"},
+  bride:  {label:"Bride's family",       color:"#9a5a52"},
+  hockey: {label:"Hockey",               color:"#a8843c"},
+  friends:{label:"Friends",              color:"#6a7b4f"},
+  other:  {label:"Other",                color:"#7a6e8c"}
+};
+// Table definitions: id, label, seats per side (top/bottom). headOnly = single row.
+const TABLES = [
+  {id:"H",  label:"Head Table", top:6, bottom:0, headOnly:true},
+  {id:"T1", label:"Table 1",    top:13, bottom:13},
+  {id:"T2", label:"Table 2",    top:13, bottom:13},
+  {id:"A",  label:"Table A",    top:3, bottom:3},
+  {id:"B",  label:"Table B",    top:3, bottom:3}
+];
+const TOTAL_SEATS = TABLES.reduce((n,t)=>n+t.top+t.bottom,0);
+
+let guests = {};   // id -> {name, group, seat:null|"T1-3"}
+let nextId = 1;
+let selectedId = null;
+
+function uid(){return 'g'+(nextId++);}
+
+function addGuest(){
+  const inp=document.getElementById('nameInput');
+  const name=inp.value.trim();
+  if(!name)return;
+  const group=document.getElementById('groupSelect').value;
+  const id=uid();
+  guests[id]={name,group,seat:null};
+  inp.value='';inp.focus();
+  render();
+}
+
+function removeGuest(id){delete guests[id];if(selectedId===id)selectedId=null;render();}
+
+function selectChip(id){selectedId=(selectedId===id)?null:id;render();}
+
+function seatClick(seatId){
+  // if occupied -> free it
+  const occ=Object.keys(guests).find(g=>guests[g].seat===seatId);
+  if(occ){guests[occ].seat=null;selectedId=null;render();return;}
+  // else place selected
+  if(selectedId){guests[selectedId].seat=seatId;selectedId=null;render();}
+}
+
+function clearSeats(){Object.values(guests).forEach(g=>g.seat=null);selectedId=null;render();}
+
+/* drag & drop */
+function onDragStart(e,id){e.dataTransfer.setData('text/plain',id);}
+function onDrop(e,seatId){
+  e.preventDefault();
+  const id=e.dataTransfer.getData('text/plain');
+  if(!guests[id])return;
+  const occ=Object.keys(guests).find(g=>guests[g].seat===seatId);
+  if(occ)guests[occ].seat=null;
+  guests[id].seat=seatId;
+  selectedId=null;render();
+}
+
+function render(){
+  // pool
+  const pool=document.getElementById('pool');
+  pool.innerHTML='';
+  const unseated=Object.entries(guests).filter(([_,g])=>!g.seat);
+  if(unseated.length===0){
+    pool.innerHTML='<div class="pool-empty">Everyone is seated. ✦</div>';
+  }
+  unseated.forEach(([id,g])=>{
+    const c=document.createElement('div');
+    c.className='chip'+(selectedId===id?' selected':'');
+    c.draggable=true;
+    c.ondragstart=e=>onDragStart(e,id);
+    c.onclick=ev=>{if(ev.target.classList.contains('x'))return;selectChip(id);};
+    c.innerHTML=`<span class="dot" style="background:${GROUPS[g.group].color}"></span>
+      <span>${g.name}</span>
+      <span class="x" onclick="removeGuest('${id}')">×</span>`;
+    pool.appendChild(c);
+  });
+
+  // legend
+  const lg=document.getElementById('legend');
+  lg.innerHTML=Object.values(GROUPS).map(x=>
+    `<span><span class="dot" style="background:${x.color}"></span>${x.label}</span>`).join('');
+
+  // tables
+  const floor=document.getElementById('floor');
+  floor.innerHTML='';
+  TABLES.forEach(t=>{
+    const block=document.createElement('div');
+    block.className='table-block';
+    block.innerHTML=`<div class="table-label">${t.label}</div>`;
+    const banquet=document.createElement('div');
+    banquet.className='banquet';
+
+    const topSide=document.createElement('div');topSide.className='side';
+    const surface=document.createElement('div');surface.className='surface';surface.textContent=t.label;
+
+    let n=0;
+    for(let i=0;i<t.top;i++){topSide.appendChild(makeSeat(`${t.id}-T${i+1}`,++n));}
+    banquet.appendChild(topSide);
+    banquet.appendChild(surface);
+    if(t.bottom>0){
+      const botSide=document.createElement('div');botSide.className='side';
+      for(let i=0;i<t.bottom;i++){botSide.appendChild(makeSeat(`${t.id}-B${i+1}`,++n));}
+      banquet.appendChild(botSide);
+    }
+    block.appendChild(banquet);
+    floor.appendChild(block);
+  });
+
+  // counter
+  const total=Object.keys(guests).length;
+  const seated=Object.values(guests).filter(g=>g.seat).length;
+  document.getElementById('counter').textContent=`${seated} seated · ${total-seated} waiting · ${total}/${TOTAL_SEATS}`;
+}
+
+function makeSeat(seatId,num){
+  const s=document.createElement('div');
+  s.className='seat';s.tabIndex=0;
+  s.dataset.seat=seatId;
+  s.ondragover=e=>{e.preventDefault();s.classList.add('drop');};
+  s.ondragleave=()=>s.classList.remove('drop');
+  s.ondrop=e=>{s.classList.remove('drop');onDrop(e,seatId);};
+  s.onclick=()=>seatClick(seatId);
+  s.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();seatClick(seatId);}};
+  const occ=Object.values(guests).find(g=>g.seat===seatId);
+  if(occ){
+    s.classList.add('filled');
+    s.style.background=GROUPS[occ.group].color;
+    s.innerHTML=`<span class="num">${num}</span>${occ.name}`;
+  }else{
+    s.innerHTML=`<span class="num">${num}</span>`;
+  }
+  return s;
+}
+
+/* persistence */
+function exportData(){
+  const blob=new Blob([JSON.stringify({guests,nextId},null,2)],{type:'application/json'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='wedding-seating.json';
+  a.click();
+}
+function importData(e){
+  const f=e.target.files[0];if(!f)return;
+  const r=new FileReader();
+  r.onload=()=>{try{const d=JSON.parse(r.result);guests=d.guests||{};nextId=d.nextId||1;selectedId=null;render();}
+    catch{alert('That file could not be read.');}};
+  r.readAsText(f);
+  e.target.value='';
+}
+
+render();
+</script>
+</body>
+</html>
