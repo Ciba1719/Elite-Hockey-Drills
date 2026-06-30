@@ -315,7 +315,7 @@ async function load(){
   applyingRemote=true;render();applyingRemote=false;
   // 2) sync with the shared server copy
   try{
-    const r=await fetch(API);const d=await r.json();
+    const r=await fetch(API,{cache:'no-store'});const d=await r.json();
     const serverCount=d?Object.keys(d.guests||{}).length:0;
     const localCount=Object.keys(guests).length;
     if((!d||!d.updatedAt)&&serverCount===0&&localCount>0){
@@ -329,7 +329,7 @@ async function load(){
 async function poll(){
   if(applyingRemote)return;
   try{
-    const r=await fetch(API);const d=await r.json();
+    const r=await fetch(API,{cache:'no-store'});const d=await r.json();
     if(d&&(d.updatedAt||0)>lastSync)applyRemote(d);
   }catch(e){}
 }

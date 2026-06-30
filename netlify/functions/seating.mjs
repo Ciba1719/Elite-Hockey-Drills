@@ -8,7 +8,10 @@ export const config = { path: '/api/seating' };
 
 const KEY = 'plan';
 const json = (obj, status = 200) =>
-  new Response(JSON.stringify(obj), { status, headers: { 'Content-Type': 'application/json' } });
+  new Response(JSON.stringify(obj), {
+    status,
+    headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+  });
 
 export default async (req) => {
   const store = getStore('seating');
