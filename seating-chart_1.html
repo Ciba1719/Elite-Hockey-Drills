@@ -30,9 +30,9 @@
   .chip .x:hover { color:#b0463a; }
   .chip.sel .x { color:#cdd6c9; }
   #floor { flex:1; overflow:auto; position:relative; }
-  #canvas { position:relative; width:1180px; height:820px; margin:20px auto; }
-  .table { position:absolute; border:2.5px solid #3d4a3d; border-radius:10px; background:#fbf7ee; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:600; color:#3d4a3d; text-align:center; }
-  .chair { position:absolute; width:30px; height:26px; border:1.5px solid #9a8f78; border-radius:5px; background:#fff; font-size:9px; line-height:1.05; display:flex; align-items:center; justify-content:center; text-align:center; cursor:pointer; overflow:hidden; padding:1px; color:#333; }
+  #canvas { position:relative; width:1560px; height:1120px; margin:20px auto; }
+  .table { position:absolute; border:2.5px solid #3d4a3d; border-radius:10px; background:#fbf7ee; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:600; color:#3d4a3d; text-align:center; }
+  .chair { position:absolute; width:84px; height:44px; border:1.5px solid #9a8f78; border-radius:6px; background:#fff; font-size:11px; line-height:1.1; display:flex; align-items:center; justify-content:center; text-align:center; cursor:pointer; overflow:hidden; padding:2px 3px; color:#333; word-break:break-word; }
   .chair:hover { border-color:#3d4a3d; }
   .chair.filled { background:#3d4a3d; color:#fff; border-color:#3d4a3d; font-weight:600; cursor:grab; }
   .chair.empty { color:#bbb; }
@@ -67,14 +67,14 @@
 </div>
 <script>
 const TABLES = [
- {id:'A',   name:'Table A',    x:60,  y:50,  w:210, h:115, sides:{top:3,bottom:3}},
- {id:'head',name:'Head Table', x:475, y:70,  w:250, h:95,  sides:{top:6}},
- {id:'B',   name:'Table B',    x:910, y:50,  w:210, h:115, sides:{top:3,bottom:3}},
- {id:'1',   name:'Table 1',    x:300, y:300, w:120, h:470, sides:{left:13,right:13}},
- {id:'2',   name:'Table 2',    x:760, y:300, w:120, h:470, sides:{left:13,right:13}},
+ {id:'A',   name:'Table A',    x:40,   y:120, w:380, h:140, sides:{top:3,bottom:3}},
+ {id:'head',name:'Head Table', x:470,  y:130, w:620, h:120, sides:{top:6}},
+ {id:'B',   name:'Table B',    x:1140, y:120, w:380, h:140, sides:{top:3,bottom:3}},
+ {id:'1',   name:'Table 1',    x:470,  y:360, w:150, h:720, sides:{left:13,right:13}},
+ {id:'2',   name:'Table 2',    x:960,  y:360, w:150, h:720, sides:{left:13,right:13}},
 ];
 
-const CS = 30, CH = 26, GAP = 5;
+const CS = 84, CH = 44, GAP = 6;
 let chairs = [];
 let guests = {};      // id -> { name, seat: chairKey | null }
 let nextId = 1;
@@ -116,11 +116,6 @@ function buildChairs(){
   document.getElementById('cChairs').textContent=chairs.length;
 }
 
-function shortName(full){
-  const p=full.replace(/\s*\(.*?\)/,'').trim().split(/\s+/);
-  return p.length>1 ? p[0]+' '+p[1][0]+'.' : p[0];
-}
-
 function addGuest(){
   const inp=document.getElementById('nameInput');
   const name=inp.value.trim();
@@ -159,7 +154,7 @@ function render(){
   chairs.forEach(c=>{
     const occ = Object.keys(guests).find(k=>guests[k].seat===c.key);
     if(occ){
-      c.el.className='chair filled'; c.el.textContent=shortName(guests[occ].name); c.el.title=guests[occ].name;
+      c.el.className='chair filled'; c.el.textContent=guests[occ].name; c.el.title=guests[occ].name;
       c.el.draggable=true;
       c.el.ondragstart=e=>e.dataTransfer.setData('text/plain', occ);
     } else {
