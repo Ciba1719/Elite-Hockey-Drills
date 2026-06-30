@@ -122,7 +122,7 @@
   <div class="sub">Restaurace Ostrov · Písek</div>
 
   <div class="hint">
-    Add guests &amp; pick a group → then either <strong>drag a name onto a seat</strong>, or <strong>click a name then click a seat</strong>. Click a filled seat to send the guest back. Your plan <strong>saves automatically on this device</strong> and stays after a refresh. Use <strong>Export</strong> to back it up to a file or move it to another device.
+    Add guests &amp; pick a group → then either <strong>drag a name onto a seat</strong>, or <strong>click a name then click a seat</strong>. Click a filled seat to send the guest back. Your plan <strong>saves automatically and is shared</strong> with everyone who has this link — changes from other people appear within a few seconds. Use <strong>Export</strong> to keep a backup file.
   </div>
 
   <div class="toolbar">
@@ -275,13 +275,62 @@ function render(){
   save();
 }
 
-/* auto-save to this browser so a refresh keeps the plan */
+/* ---- Shared persistence ----
+   Saves to the server (/api/seating) so everyone with the link edits ONE
+   shared plan. localStorage is kept as an instant-paint cache + offline
+   fallback. Last write wins; we poll so editors see each other's changes. */
 const STORE_KEY='wedding-seating-v1';
-function save(){try{localStorage.setItem(STORE_KEY,JSON.stringify({guests,nextId}));}catch(e){}}
-function load(){
+const API='/api/seating';
+let lastSync=0;        // updatedAt of the last server state we hold
+let applyingRemote=false;  // true while loading remote -> suppress re-upload
+let pushTimer=null;
+
+function saveLocal(){try{localStorage.setItem(STORE_KEY,JSON.stringify({guests,nextId}));}catch(e){}}
+
+function pushRemote(){
+  clearTimeout(pushTimer);
+  pushTimer=setTimeout(async()=>{
+    try{
+      const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({guests,nextId})});
+      const d=await r.json();
+      if(d&&d.updatedAt)lastSync=d.updatedAt;
+    }catch(e){}
+  },600);
+}
+
+function save(){saveLocal();if(!applyingRemote)pushRemote();}
+
+function applyRemote(d){
+  applyingRemote=true;
+  guests=d.guests||{};nextId=d.nextId||1;lastSync=d.updatedAt||0;
+  if(selectedId&&!guests[selectedId])selectedId=null;
+  render();
+  applyingRemote=false;
+}
+
+async function load(){
+  // 1) instant paint from local cache (also the offline fallback)
+  try{const d=JSON.parse(localStorage.getItem(STORE_KEY));if(d){guests=d.guests||{};nextId=d.nextId||1;}}catch(e){}
+  applyingRemote=true;render();applyingRemote=false;
+  // 2) sync with the shared server copy
   try{
-    const d=JSON.parse(localStorage.getItem(STORE_KEY));
-    if(d){guests=d.guests||{};nextId=d.nextId||1;}
+    const r=await fetch(API);const d=await r.json();
+    const serverCount=d?Object.keys(d.guests||{}).length:0;
+    const localCount=Object.keys(guests).length;
+    if((!d||!d.updatedAt)&&serverCount===0&&localCount>0){
+      render(); // server empty but we have a local plan -> push it up
+    }else if(d){
+      applyRemote(d);
+    }
+  }catch(e){}
+}
+
+async function poll(){
+  if(applyingRemote)return;
+  try{
+    const r=await fetch(API);const d=await r.json();
+    if(d&&(d.updatedAt||0)>lastSync)applyRemote(d);
   }catch(e){}
 }
 
@@ -323,7 +372,7 @@ function importData(e){
 }
 
 load();
-render();
+setInterval(poll,4000);
 </script>
 </body>
 </html>
