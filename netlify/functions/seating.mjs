@@ -14,7 +14,9 @@ const json = (obj, status = 200) =>
   });
 
 export default async (req) => {
-  const store = getStore('seating');
+  // Strong consistency: a GET right after a POST must return the new value,
+  // otherwise editors briefly see each other's changes revert.
+  const store = getStore({ name: 'seating', consistency: 'strong' });
 
   if (req.method === 'GET') {
     const data = await store.get(KEY, { type: 'json' });
