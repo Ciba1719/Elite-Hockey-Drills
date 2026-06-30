@@ -30,7 +30,10 @@
   .chip .x:hover { color:#b0463a; }
   .chip.sel .x { color:#cdd6c9; }
   #floor { flex:1; overflow:auto; position:relative; }
-  #canvas { position:relative; width:1560px; height:1120px; margin:20px auto; }
+  #stage { margin:20px auto; }
+  #canvas { position:relative; width:1560px; height:1120px; margin:0; transform-origin:top left; }
+  .zoom button { font-family:inherit; font-size:15px; line-height:1; width:30px; padding:6px 0; }
+  .zoom .fit { width:auto; padding:6px 10px; font-size:13px; }
   .table { position:absolute; border:2.5px solid #3d4a3d; border-radius:10px; background:#fbf7ee; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:600; color:#3d4a3d; text-align:center; }
   .chair { position:absolute; width:84px; height:44px; border:1.5px solid #9a8f78; border-radius:6px; background:#fff; font-size:11px; line-height:1.1; display:flex; align-items:center; justify-content:center; text-align:center; cursor:pointer; overflow:hidden; padding:2px 3px; color:#333; word-break:break-word; }
   .chair:hover { border-color:#3d4a3d; }
@@ -58,7 +61,12 @@
   <h1>Bella &amp; David — Seating Chart</h1>
   <div class="counter">Seated: <b id="cSeated">0</b> / <span id="cTotal">0</span> &nbsp;·&nbsp; Seats: <b id="cChairs">70</b></div>
   <div class="warn" id="warn"></div>
-  <div class="controls" style="margin-left:auto">
+  <div class="controls zoom" style="margin-left:auto">
+    <button onclick="zoomBy(0.8)" title="Zoom out">−</button>
+    <button class="fit" onclick="fitAll()" title="Fit all tables on screen">Fit</button>
+    <button onclick="zoomBy(1.25)" title="Zoom in">+</button>
+  </div>
+  <div class="controls">
     <button onclick="window.print()">🖨 Print</button>
     <button onclick="exportText()">⧉ Copy list</button>
     <button onclick="resetAll()">↺ Reset</button>
@@ -73,7 +81,7 @@
     <div class="hint">Add your guests above. Then <b>drag a name onto a chair</b> (or click a name, then click a chair). Click a filled chair to free it.<br>Saved automatically and shared with everyone who has this link.</div>
     <div id="guestList"></div>
   </div>
-  <div id="floor"><div id="canvas"></div></div>
+  <div id="floor"><div id="stage"><div id="canvas"></div></div></div>
 </div>
 <script>
 const TABLES = [
@@ -85,6 +93,8 @@ const TABLES = [
 ];
 
 const CS = 84, CH = 44, GAP = 6;
+const CANVAS_W = 1560, CANVAS_H = 1120;
+let scale = 1, fitMode = false;
 let chairs = [];
 let guests = {};      // id -> { name, seat: chairKey | null }
 let nextId = 1;
@@ -208,6 +218,28 @@ function tableLabel(key){
   const t=TABLES.find(x=>x.id===id); return t?t.name.replace('Table ','T'):id;
 }
 
+/* ---- Zoom ---- */
+function applyZoom(){
+  const cv=document.getElementById('canvas');
+  const stage=document.getElementById('stage');
+  cv.style.transform='scale('+scale+')';
+  stage.style.width=(CANVAS_W*scale)+'px';
+  stage.style.height=(CANVAS_H*scale)+'px';
+}
+function zoomBy(f){
+  fitMode=false;
+  scale=Math.min(2, Math.max(0.15, scale*f));
+  applyZoom();
+}
+function fitAll(){
+  fitMode=true;
+  const fl=document.getElementById('floor');
+  const pad=16;
+  scale=Math.min(2, Math.max(0.12, Math.min((fl.clientWidth-pad)/CANVAS_W, (fl.clientHeight-pad)/CANVAS_H)));
+  applyZoom();
+}
+window.addEventListener('resize', ()=>{ if(fitMode) fitAll(); });
+
 /* ---- Shared persistence ----
    Saves to the server (/api/seating) so everyone with the link edits ONE
    shared chart. localStorage is an instant-paint cache + offline fallback.
@@ -294,6 +326,8 @@ function exportText(){
 buildChairs();
 loadLocal();
 render();
+applyZoom();
+if(window.innerWidth<=700) fitAll();   // phones start zoomed out so all tables are visible
 syncFromServer();
 setInterval(poll, 4000);
 </script>
