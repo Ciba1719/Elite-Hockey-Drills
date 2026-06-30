@@ -44,10 +44,11 @@
   button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 
   .layout{display:grid;grid-template-columns:260px 1fr;gap:26px;align-items:start}
-  @media(max-width:880px){.layout{grid-template-columns:1fr}}
+  @media(max-width:880px){.layout{grid-template-columns:1fr}.panel{position:static;max-height:none}}
 
   /* ---- Pool / name entry ---- */
-  .panel{background:#fff;border:1px solid var(--line);border-radius:6px;padding:16px;box-shadow:var(--shadow)}
+  .panel{background:#fff;border:1px solid var(--line);border-radius:6px;padding:16px;box-shadow:var(--shadow);
+    position:sticky;top:20px;align-self:start;max-height:calc(100vh - 40px);overflow-y:auto}
   .panel h2{font-size:14px;text-transform:uppercase;letter-spacing:1.5px;color:var(--river-deep);font-weight:400;margin-bottom:12px}
   .add-row{display:flex;gap:6px;margin-bottom:10px}
   input[type=text]{flex:1;font-family:inherit;font-size:14px;padding:8px;border:1px solid var(--line);border-radius:3px;background:var(--paper)}
@@ -121,7 +122,7 @@
   <div class="sub">Restaurace Ostrov · Písek</div>
 
   <div class="hint">
-    Add guests &amp; pick a group → then either <strong>drag a name onto a seat</strong>, or <strong>click a name then click a seat</strong>. Click a filled seat to send the guest back. <strong>Export</strong> often — it saves your plan to a file you can re-open later.
+    Add guests &amp; pick a group → then either <strong>drag a name onto a seat</strong>, or <strong>click a name then click a seat</strong>. Click a filled seat to send the guest back. Your plan <strong>saves automatically on this device</strong> and stays after a refresh. Use <strong>Export</strong> to back it up to a file or move it to another device.
   </div>
 
   <div class="toolbar">
@@ -270,6 +271,18 @@ function render(){
   const total=Object.keys(guests).length;
   const seated=Object.values(guests).filter(g=>g.seat).length;
   document.getElementById('counter').textContent=`${seated} seated · ${total-seated} waiting · ${total}/${TOTAL_SEATS}`;
+
+  save();
+}
+
+/* auto-save to this browser so a refresh keeps the plan */
+const STORE_KEY='wedding-seating-v1';
+function save(){try{localStorage.setItem(STORE_KEY,JSON.stringify({guests,nextId}));}catch(e){}}
+function load(){
+  try{
+    const d=JSON.parse(localStorage.getItem(STORE_KEY));
+    if(d){guests=d.guests||{};nextId=d.nextId||1;}
+  }catch(e){}
 }
 
 function makeSeat(seatId,num){
@@ -309,6 +322,7 @@ function importData(e){
   e.target.value='';
 }
 
+load();
 render();
 </script>
 </body>
