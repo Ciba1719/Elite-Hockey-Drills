@@ -15,22 +15,28 @@
   .controls button:hover { background:#ffe08a; }
   .wrap { display:flex; height:calc(100vh - 52px); }
   #sidebar { width:260px; background:#fffdf8; border-right:1px solid #e3ddd0; overflow:auto; padding:10px; flex-shrink:0; }
-  #sidebar h2 { font-size:13px; text-transform:uppercase; letter-spacing:.5px; color:#7a7263; margin:12px 4px 6px; }
+  .addbox { display:flex; gap:6px; margin:2px 2px 8px; }
+  .addbox input { flex:1; font-family:inherit; font-size:14px; padding:7px 9px; border:1px solid #d8cfbb; border-radius:6px; }
+  .addbox input:focus { outline:none; border-color:#3d4a3d; }
+  .addbox button { font-family:inherit; font-size:13px; padding:7px 12px; border:0; border-radius:6px; cursor:pointer; background:#3d4a3d; color:#fff; }
+  .addbox button:hover { background:#52634f; }
   .hint { font-size:12px; color:#8a8170; padding:4px 4px 10px; line-height:1.4; }
-  .grp { margin-bottom:4px; }
-  .grp-label { font-size:11px; color:#a59c88; padding:2px 4px; }
-  .chip { display:block; width:100%; text-align:left; font-size:13px; padding:5px 8px; margin:2px 0; border:1px solid #e0d9c8; border-radius:6px; background:#fff; cursor:pointer; }
+  .pool-empty { font-size:13px; color:#a59c88; font-style:italic; padding:8px 4px; }
+  .chip { display:flex; align-items:center; gap:6px; width:100%; text-align:left; font-size:13px; padding:6px 8px; margin:3px 0; border:1px solid #e0d9c8; border-radius:6px; background:#fff; cursor:grab; }
   .chip:hover { border-color:#b9a86a; }
   .chip.sel { background:#3d4a3d; color:#fff; border-color:#3d4a3d; }
-  .chip.seated { opacity:.45; text-decoration:line-through; }
-  .chip .where { float:right; font-size:11px; color:#b08a3a; text-decoration:none; }
+  .chip .nm { flex:1; }
+  .chip .x { color:#c0b89f; cursor:pointer; font-size:16px; line-height:1; padding:0 2px; }
+  .chip .x:hover { color:#b0463a; }
+  .chip.sel .x { color:#cdd6c9; }
   #floor { flex:1; overflow:auto; position:relative; }
   #canvas { position:relative; width:1180px; height:820px; margin:20px auto; }
   .table { position:absolute; border:2.5px solid #3d4a3d; border-radius:10px; background:#fbf7ee; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:600; color:#3d4a3d; text-align:center; }
   .chair { position:absolute; width:30px; height:26px; border:1.5px solid #9a8f78; border-radius:5px; background:#fff; font-size:9px; line-height:1.05; display:flex; align-items:center; justify-content:center; text-align:center; cursor:pointer; overflow:hidden; padding:1px; color:#333; }
   .chair:hover { border-color:#3d4a3d; }
-  .chair.filled { background:#3d4a3d; color:#fff; border-color:#3d4a3d; font-weight:600; }
+  .chair.filled { background:#3d4a3d; color:#fff; border-color:#3d4a3d; font-weight:600; cursor:grab; }
   .chair.empty { color:#bbb; }
+  .chair.drop { border-color:#b08a3a; box-shadow:0 0 0 2px rgba(176,138,58,.5); background:#fff7e6; }
   @media print {
     header .controls, #sidebar, .hint { display:none; }
     .wrap { height:auto; }
@@ -40,7 +46,7 @@
 </style>
 <header>
   <h1>Bella &amp; David — Seating Chart</h1>
-  <div class="counter">Seated: <b id="cSeated">0</b> / <span id="cTotal">71</span> &nbsp;·&nbsp; Seats: <b id="cChairs">70</b></div>
+  <div class="counter">Seated: <b id="cSeated">0</b> / <span id="cTotal">0</span> &nbsp;·&nbsp; Seats: <b id="cChairs">70</b></div>
   <div class="warn" id="warn"></div>
   <div class="controls" style="margin-left:auto">
     <button onclick="window.print()">🖨 Print</button>
@@ -50,50 +56,16 @@
 </header>
 <div class="wrap">
   <div id="sidebar">
-    <div class="hint">Click a guest, then click a chair to seat them. Click a filled chair to free it.<br>Saved automatically and shared with everyone who has this link — changes appear within a few seconds.</div>
+    <div class="addbox">
+      <input id="nameInput" placeholder="Guest name" onkeydown="if(event.key==='Enter')addGuest()" autofocus>
+      <button onclick="addGuest()">Add</button>
+    </div>
+    <div class="hint">Add your guests above. Then <b>drag a name onto a chair</b> (or click a name, then click a chair). Click a filled chair to free it.<br>Saved automatically and shared with everyone who has this link.</div>
     <div id="guestList"></div>
   </div>
   <div id="floor"><div id="canvas"></div></div>
 </div>
 <script>
-const GUESTS = [
- ["Škodovka","Škodovka +"],["Monika","Škodovka +"],
- ["Eliška","Eliška +"],["Migas","Eliška +"],
- ["Milan Choulík","Choulík"],["Martina Choulíková","Choulík"],
- ["Martin Palcút","Palcút"],["Ivana Palcútová","Palcút"],
- ["Ondřej Slanina","Slanina"],["Veronika","Slanina"],
- ["Zuzka","Zuzka +"],["Eda","Zuzka +"],
- ["Radka Večlová","Večl"],["Ondřej Večl","Večl"],
- ["Tereza Kořánová","Kořán"],["Tobiáš Kořán","Kořán"],["Anna Reinišová","(single)"],
- ["Káťa","Káťa +"],["Lukáš","Káťa +"],
- ["Marta Kobulská","Kobulská/Slánský"],["Jan Slánský","Kobulská/Slánský"],["Tobiáš Slánský","Kobulská/Slánský"],
- ["Tomáš Kolínský","Kolínský"],["Denisa Kolínská","Kolínský"],["Maya","Kolínský"],
- ["Jan Hemala","Hemala"],["Aisha Hemalová","Hemala"],
- ["Marketa Lafatova","Lafatova"],["Jaroslav Horsky","Lafatova"],
- ["Kryštof Kovářík","Kovářík"],["Zuzana Nováková","Kovářík"],
- ["Vojtěch Kužel","Vojtěch Kužel"],["Simona Kuželová","Vojtěch Kužel"],
- ["Jakub Hodina","Hodina"],["Kateřina Hodinová","Hodina"],["Šimon Hodina (2y)","Hodina"],
- ["Ondřej Kužel","Ondřej Kužel"],["Kamila","Ondřej Kužel"],["Sofie (dcera)","Ondřej Kužel"],
- ["Petr Vecko","Vecko"],["Ludmila Zayat","Vecko"],["Valerie Vecková","Vecko"],
- ["Pavla Voborníková","Voborník"],["Pavlík Voborník (syn)","Voborník"],["Pavla Šišková (babička)","Voborník"],
- ["Diana Voborníková","Diana V."],["Vítězslav Janča","Diana V."],
- ["Václav Pecka","Václav Pecka"],["Jiřina Pecková","Václav Pecka"],["Emma Pecková (1,5r)","Václav Pecka"],
- ["Sabina Banašíková","Banašík"],["Robin Banašík","Banašík"],
- ["Lucie Brašničková","Brašnička"],["Jaroslav Brašnička","Brašnička"],
- ["Karolína Šišková","(single)"],
- ["Ondřej Pecka","(single)"],
- ["Mirka Pecková","(single)"],
- ["Mirka Šišková","M. Šišková"],["Libor Šiška","M. Šišková"],
- ["Eva Bušinová","Bušinová"],["Karel Bohdálek","Bušinová"],
- ["Petr Hučko","(single)"],
- ["Ondřej Leština","Leština"],["Natálie Pokorká","Leština"],
- ["Aleš Zeman","Zeman"],["Michaela Válková","Zeman"],
- ["Václav Kápl","Kápl"],["Václav Kápl ml.","Kápl"],
- ["Jessica Sierra","(single)"],
- ["Faycal","(single)"],
- ["Khald Ansari","(single)"]
-];
-
 const TABLES = [
  {id:'A',   name:'Table A',    x:60,  y:50,  w:210, h:115, sides:{top:3,bottom:3}},
  {id:'head',name:'Head Table', x:475, y:70,  w:250, h:95,  sides:{top:6}},
@@ -104,8 +76,9 @@ const TABLES = [
 
 const CS = 30, CH = 26, GAP = 5;
 let chairs = [];
-let assign = {};
-let selected = null;
+let guests = {};      // id -> { name, seat: chairKey | null }
+let nextId = 1;
+let selected = null;  // selected guest id
 
 function buildChairs(){
   const canvas = document.getElementById('canvas');
@@ -131,6 +104,9 @@ function buildChairs(){
         c.className='chair empty'; c.style.left=cx+'px'; c.style.top=cy+'px';
         c.dataset.key=key; c.textContent='+';
         c.onclick=()=>chairClick(key);
+        c.ondragover=e=>{ e.preventDefault(); c.classList.add('drop'); };
+        c.ondragleave=()=>c.classList.remove('drop');
+        c.ondrop=e=>{ e.preventDefault(); c.classList.remove('drop'); const id=e.dataTransfer.getData('text/plain'); if(guests[id]) seatGuest(id,key); };
         canvas.appendChild(c);
         chairs.push({key,el:c});
       }
@@ -141,56 +117,85 @@ function buildChairs(){
 }
 
 function shortName(full){
-  const p=full.replace(/\s*\(.*?\)/,'').trim().split(' ');
+  const p=full.replace(/\s*\(.*?\)/,'').trim().split(/\s+/);
   return p.length>1 ? p[0]+' '+p[1][0]+'.' : p[0];
 }
 
-function chairClick(key){
-  if(assign[key]!=null){
-    delete assign[key];
-  } else if(selected!=null){
-    for(const k in assign){ if(assign[k]===selected) delete assign[k]; }
-    assign[key]=selected;
-    selected=null;
-  }
+function addGuest(){
+  const inp=document.getElementById('nameInput');
+  const name=inp.value.trim();
+  if(!name) return;
+  const id='g'+(nextId++);
+  guests[id]={name, seat:null};
+  inp.value=''; inp.focus();
   save(); render();
 }
 
-function selectGuest(i){
-  selected = (selected===i)? null : i;
+function removeGuest(id){
+  delete guests[id];
+  if(selected===id) selected=null;
+  save(); render();
+}
+
+function selectGuest(id){
+  selected = (selected===id) ? null : id;
   render();
+}
+
+function seatGuest(id, chairKey){
+  for(const k in guests){ if(guests[k].seat===chairKey) guests[k].seat=null; } // free the chair first
+  guests[id].seat = chairKey;
+  selected = null;
+  save(); render();
+}
+
+function chairClick(chairKey){
+  const occ = Object.keys(guests).find(k=>guests[k].seat===chairKey);
+  if(occ){ guests[occ].seat=null; selected=null; save(); render(); return; }
+  if(selected!=null) seatGuest(selected, chairKey);
 }
 
 function render(){
   chairs.forEach(c=>{
-    const g=assign[c.key];
-    if(g!=null){ c.el.className='chair filled'; c.el.textContent=shortName(GUESTS[g][0]); c.el.title=GUESTS[g][0]; }
-    else { c.el.className='chair empty'; c.el.textContent='+'; c.el.title=''; }
+    const occ = Object.keys(guests).find(k=>guests[k].seat===c.key);
+    if(occ){
+      c.el.className='chair filled'; c.el.textContent=shortName(guests[occ].name); c.el.title=guests[occ].name;
+      c.el.draggable=true;
+      c.el.ondragstart=e=>e.dataTransfer.setData('text/plain', occ);
+    } else {
+      c.el.className='chair empty'; c.el.textContent='+'; c.el.title='';
+      c.el.draggable=false; c.el.ondragstart=null;
+    }
   });
-  const seatOf={};
-  for(const k in assign){ seatOf[assign[k]] = tableLabel(k); }
+
   const list=document.getElementById('guestList');
   list.innerHTML='';
-  const groups={};
-  GUESTS.forEach((g,i)=>{ (groups[g[1]]=groups[g[1]]||[]).push(i); });
-  for(const gname in groups){
-    const box=document.createElement('div'); box.className='grp';
-    const lbl=document.createElement('div'); lbl.className='grp-label'; lbl.textContent=gname;
-    box.appendChild(lbl);
-    groups[gname].forEach(i=>{
-      const b=document.createElement('button');
-      b.className='chip'+(selected===i?' sel':'')+(seatOf[i]?' seated':'');
-      b.onclick=()=>selectGuest(i);
-      b.innerHTML = GUESTS[i][0] + (seatOf[i]?`<span class="where">${seatOf[i]}</span>`:'');
-      box.appendChild(b);
-    });
-    list.appendChild(box);
+  const unseated = Object.keys(guests).filter(id=>!guests[id].seat);
+  if(Object.keys(guests).length===0){
+    list.innerHTML='<div class="pool-empty">No guests yet — add names above.</div>';
+  } else if(unseated.length===0){
+    list.innerHTML='<div class="pool-empty">Everyone is seated ✓</div>';
   }
-  const seated=Object.keys(assign).length;
+  unseated.forEach(id=>{
+    const b=document.createElement('div');
+    b.className='chip'+(selected===id?' sel':'');
+    b.draggable=true;
+    b.ondragstart=e=>e.dataTransfer.setData('text/plain', id);
+    b.onclick=ev=>{ if(ev.target.classList.contains('x')) return; selectGuest(id); };
+    b.innerHTML='<span class="nm"></span><span class="x" title="Remove">&times;</span>';
+    b.querySelector('.nm').textContent=guests[id].name;
+    b.querySelector('.x').onclick=()=>removeGuest(id);
+    list.appendChild(b);
+  });
+
+  const total=Object.keys(guests).length;
+  const seated=Object.keys(guests).filter(id=>guests[id].seat).length;
   document.getElementById('cSeated').textContent=seated;
+  document.getElementById('cTotal').textContent=total;
   const w=document.getElementById('warn');
-  const unseated=GUESTS.length-seated;
-  w.textContent = unseated>0 ? `${unseated} guest(s) not yet seated — only ${chairs.length} seats for ${GUESTS.length} guests` : 'All guests seated ✓';
+  if(total===0){ w.textContent=''; }
+  else if(seated<total){ w.textContent=`${total-seated} guest(s) not yet seated`; }
+  else { w.textContent='All guests seated ✓'; }
 }
 
 function tableLabel(key){
@@ -208,14 +213,14 @@ let lastSync=0;
 let applyingRemote=false;
 let pushTimer=null;
 
-function saveLocal(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(assign)); }catch(e){} }
-function loadLocal(){ try{ const s=localStorage.getItem(STORE_KEY); if(s) assign=JSON.parse(s)||{}; }catch(e){} }
+function saveLocal(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify({guests,nextId})); }catch(e){} }
+function loadLocal(){ try{ const s=localStorage.getItem(STORE_KEY); if(s){ const d=JSON.parse(s); guests=d.guests||{}; nextId=d.nextId||1; } }catch(e){} }
 
 function pushRemote(){
   clearTimeout(pushTimer);
   pushTimer=setTimeout(async()=>{
     try{
-      const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({assign})});
+      const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({guests,nextId})});
       const d=await r.json();
       if(d&&d.updatedAt) lastSync=d.updatedAt;
     }catch(e){}
@@ -226,9 +231,10 @@ function save(){ saveLocal(); if(!applyingRemote) pushRemote(); }
 
 function applyRemote(d){
   applyingRemote=true;
-  assign = d.assign||{};
+  guests = d.guests||{};
+  nextId = d.nextId||1;
   lastSync = d.updatedAt||0;
-  selected = null;
+  if(selected && !guests[selected]) selected=null;
   saveLocal();
   render();
   applyingRemote=false;
@@ -238,8 +244,8 @@ async function syncFromServer(){
   try{
     const r=await fetch(API,{cache:'no-store'});
     const d=await r.json();
-    const serverCount = d&&d.assign ? Object.keys(d.assign).length : 0;
-    const localCount = Object.keys(assign).length;
+    const serverCount = d&&d.guests ? Object.keys(d.guests).length : 0;
+    const localCount = Object.keys(guests).length;
     if((!d||!d.updatedAt) && serverCount===0 && localCount>0){
       pushRemote();           // server empty but we have a local plan -> push it up
     } else if(d){
@@ -257,26 +263,29 @@ async function poll(){
   }catch(e){}
 }
 
-function resetAll(){ if(confirm('Clear all seat assignments?')){ assign={}; selected=null; save(); render(); } }
+function resetAll(){
+  if(confirm('Clear EVERYTHING — all guests and seats?')){
+    guests={}; nextId=1; selected=null; save(); render();
+  }
+}
 
 function exportText(){
   let out='BELLA & DAVID — SEATING\n\n';
   TABLES.forEach(t=>{
     out+=t.name+':\n';
     chairs.filter(c=>c.key.startsWith(t.id+'-')).forEach((c,idx)=>{
-      const g=assign[c.key];
-      out+=`  ${idx+1}. ${g!=null?GUESTS[g][0]:'—'}\n`;
+      const occ=Object.keys(guests).find(k=>guests[k].seat===c.key);
+      out+=`  ${idx+1}. ${occ?guests[occ].name:'—'}\n`;
     });
     out+='\n';
   });
-  const unseated=GUESTS.filter((g,i)=>!Object.values(assign).includes(i));
-  if(unseated.length){ out+='NOT SEATED:\n'+unseated.map(g=>'  '+g[0]).join('\n'); }
+  const unseated=Object.keys(guests).filter(id=>!guests[id].seat).map(id=>guests[id].name);
+  if(unseated.length){ out+='NOT SEATED:\n'+unseated.map(n=>'  '+n).join('\n'); }
   navigator.clipboard.writeText(out).then(()=>alert('Seating list copied to clipboard.'),()=>{
     prompt('Copy the list below:', out);
   });
 }
 
-document.getElementById('cTotal').textContent=GUESTS.length;
 buildChairs();
 loadLocal();
 render();
