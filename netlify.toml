@@ -100,3 +100,16 @@
   to = "/program-40-plus.html"
   status = 301
   force = true
+
+# ── Legal pages — the mobile app links to the extensionless URLs ─────────────
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/terms"
+  to = "/terms.html"
+  status = 301
+  force = true
