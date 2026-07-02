@@ -448,6 +448,88 @@ section{position:relative;z-index:2;}
 .offer-list li::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24' fill='none' stroke='%235DB4E5' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");}
 .offer-badge{background:radial-gradient(circle at 34% 28%,#F8D9A4,#D9A45E 78%);box-shadow:0 12px 30px -8px rgba(232,183,119,.65),0 0 0 4px var(--bg),inset 0 1px 0 rgba(255,255,255,.4);}
 .offer-halo{background:radial-gradient(60% 55% at 50% 0%,rgba(232,183,119,.30),transparent 70%),linear-gradient(180deg,rgba(232,183,119,.10),rgba(93,180,229,.18));opacity:.42;}
+/* ===== EVERGREEN SEASON CLOCK (offer card) ===== */
+.oc-sub{font-size:12px;line-height:1.55;color:#C7CCD5;text-align:center;margin-top:11px;}
+.oc-sub b{color:var(--warm);font-weight:600;}
+.offer-anchor{font-size:12.5px;line-height:1.6;color:var(--ink-2);margin:-12px 0 18px;}
+.offer-anchor b{color:var(--ink);font-weight:600;}
+.offer-guarantee b{color:var(--ink);font-weight:600;}
+.fp-anchor{font-size:12.5px;color:var(--ink-2);line-height:1.6;margin:-14px auto 24px;max-width:400px;}
+.fp-anchor b{color:var(--ink);font-weight:600;}
+
+/* ===== SEASON TIMELINE BAND ===== */
+.seasonband{position:relative;overflow:hidden;padding:76px 24px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--bg-2) 0%,var(--bg) 100%);}
+.sb-inner{max-width:960px;margin:0 auto;position:relative;z-index:2;}
+.sb-head{text-align:center;max-width:660px;margin:0 auto 52px;}
+.sb-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--ice);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px;}
+.sb-eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--ice);box-shadow:0 0 10px var(--ice);animation:dotPulse 2s infinite;}
+.sb-head .sec-title{margin-bottom:12px;}
+.sb-head .sec-lead{margin:0 auto;}
+.tl{position:relative;}
+.tl-track{position:absolute;top:4px;left:12.5%;right:12.5%;height:4px;background:var(--line-2);border-radius:100px;}
+.tl-fill{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:100px;background:linear-gradient(90deg,var(--ice),var(--warm));box-shadow:0 0 16px rgba(93,180,229,.45);transition:width 2.4s cubic-bezier(.25,.8,.25,1) .35s;}
+.tl-puck{position:absolute;top:50%;left:0;width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#8FCBEC,var(--ice));box-shadow:0 0 18px rgba(93,180,229,.8),0 2px 8px rgba(0,0,0,.6);transform:translate(-50%,-50%);transition:left 2.4s cubic-bezier(.25,.8,.25,1) .35s;z-index:3;}
+.tl.go .tl-fill{width:66.7%;}
+.tl.go .tl-puck{left:66.7%;}
+.tl-nodes{display:grid;grid-template-columns:repeat(4,1fr);position:relative;z-index:2;}
+.tl-node{display:flex;flex-direction:column;align-items:center;text-align:center;}
+.tl-dot{width:12px;height:12px;border-radius:50%;background:var(--bg-3);border:2px solid var(--ink-3);margin-bottom:16px;position:relative;z-index:2;transition:border-color .4s,background .4s,box-shadow .4s;}
+.tl.go .tl-dot{border-color:var(--ice);background:#0E2230;box-shadow:0 0 12px rgba(93,180,229,.4);}
+.tl-node.season .tl-dot{border-color:var(--ink-3);}
+.tl.go .tl-node.season .tl-dot{background:var(--warm);border-color:var(--warm);box-shadow:0 0 16px rgba(232,183,119,.7);animation:dotPulse 1.8s infinite;}
+.tl-node b{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:17px;letter-spacing:.06em;color:var(--ink);}
+.tl-node.season b{color:var(--warm);}
+.tl-date{font-size:12px;color:var(--ice);font-weight:600;margin-top:3px;}
+.tl-node.season .tl-date{color:var(--warm);}
+.tl-note{font-size:11px;color:var(--ink-3);margin-top:4px;line-height:1.4;max-width:120px;}
+.sb-cta{text-align:center;margin-top:46px;}
+.sb-fine{font-size:12px;color:var(--ink-3);margin-top:14px;text-align:center;}
+@media(max-width:560px){.tl-node b{font-size:14px;}.tl-date{font-size:10.5px;}.tl-note{display:none;}.tl-dot{width:10px;height:10px;margin-bottom:12px;}.tl-track{top:3px;}}
+@media(min-width:900px){.seasonband{padding:104px 40px;}}
+
+/* ===== SKILL GAIN BARS ===== */
+.skill-bars{margin-top:16px;display:flex;flex-direction:column;gap:7px;}
+.sbr{display:flex;align-items:center;gap:10px;}
+.sbr .lab{font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase;width:34px;flex-shrink:0;}
+.sbr .bar{flex:1;height:6px;background:var(--line);border-radius:100px;overflow:hidden;position:relative;}
+.sbr .bar i{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:100px;transition:width 1.3s cubic-bezier(.2,.8,.2,1) .3s;}
+.sbr.w1 .bar i{background:#3A3F4A;}
+.sbr.w8 .lab{color:var(--ice);}
+.sbr.w8 .bar i{background:linear-gradient(90deg,var(--ice),var(--green));transition-delay:.65s;box-shadow:0 0 10px rgba(93,180,229,.35);}
+.skill.reveal.in .sbr.w1 .bar i{width:var(--w1);}
+.skill.reveal.in .sbr.w8 .bar i{width:var(--w8);}
+
+/* ===== COACH BAND ===== */
+.coachband{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.coach-grid{display:grid;grid-template-columns:1fr;gap:40px;align-items:center;}
+.coach-photo{position:relative;max-width:420px;margin:0 auto;width:100%;}
+.coach-photo img{border-radius:20px;border:1px solid var(--line-2);box-shadow:0 40px 80px -30px rgba(0,0,0,.7);width:100%;}
+.coach-badge{position:absolute;bottom:14px;left:14px;right:14px;background:rgba(7,7,8,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line-2);border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:11px;}
+.coach-badge .cb-dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green);flex-shrink:0;}
+.coach-badge b{font-size:13px;color:var(--ink);display:block;}
+.coach-badge span{font-size:11px;color:var(--ink-2);display:block;margin-top:1px;}
+.coach-creds{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:22px;}
+.coach-creds li{display:flex;gap:11px;font-size:14px;color:#C8CCD3;align-items:flex-start;line-height:1.5;}
+.coach-creds li::before{content:'';width:15px;height:15px;flex-shrink:0;margin-top:3px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24' fill='none' stroke='%235DB4E5' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");background-position:center;background-repeat:no-repeat;}
+@media(min-width:900px){.coach-grid{grid-template-columns:.9fr 1.1fr;gap:72px;}}
+
+/* ===== FREE WEEK CAPTURE ===== */
+.freeweek{padding:0 24px 90px;}
+.fw-card{max-width:760px;margin:0 auto;background:linear-gradient(165deg,#0E1A24 0%,#0A0E13 100%);border:1px solid var(--ice-line);border-radius:22px;padding:42px 30px;text-align:center;position:relative;overflow:hidden;}
+.fw-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--ice),transparent);}
+.fw-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(30px,6vw,44px);line-height:1;margin-bottom:12px;}
+.fw-title em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--ice);}
+.fw-lead{color:#C8CCD3;font-size:14.5px;line-height:1.65;max-width:480px;margin:0 auto 26px;}
+.fw-form{display:flex;flex-direction:column;gap:10px;max-width:460px;margin:0 auto;}
+.fw-form input{background:rgba(0,0,0,.35);border:1px solid var(--line-2);border-radius:100px;padding:14px 20px;font-size:14px;color:var(--ink);font-family:inherit;outline:none;transition:border-color .25s;min-height:50px;}
+.fw-form input:focus{border-color:var(--ice);}
+.fw-form input::placeholder{color:var(--ink-3);}
+.fw-btn{background:var(--ice);color:#06141d;font-weight:700;font-size:14px;letter-spacing:.02em;border-radius:100px;padding:14px 24px;min-height:50px;white-space:nowrap;transition:transform .3s,box-shadow .3s;}
+.fw-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(93,180,229,.5);}
+.fw-btn:disabled{opacity:.6;transform:none;}
+.fw-note{font-size:11.5px;color:var(--ink-3);margin-top:14px;}
+.fw-done{font-size:15px;color:var(--green);font-weight:600;padding:14px 0 4px;}
+@media(min-width:640px){.fw-form{flex-direction:row;}.fw-form input{flex:1;}}
 </style>
 </head>
 <body>
@@ -483,6 +565,7 @@ section{position:relative;z-index:2;}
         <span class="rtxt">Loved by hockey families · <b>1,000+ athletes</b> coached worldwide</span>
       </div>
       <div class="hero-trust anim-up" style="animation-delay:.54s">
+        <span>Built by a national-team coach</span>
         <span>24 coach-built sessions</span>
         <span>Video for every move</span>
         <span>30-day money-back</span>
@@ -500,8 +583,9 @@ section{position:relative;z-index:2;}
           <span class="offer-save">Save $80</span>
         </div>
         <div class="offer-meta">One-time payment · yours forever</div>
+        <div class="offer-anchor">One private S&amp;C session costs more than this. You get <b>24 coached sessions — about $3.30 each</b>.</div>
         <div class="offer-countdown">
-          <div class="oc-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg>Start by Jul 1 to finish before the season</div>
+          <div class="oc-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg><span data-oc="label">The season starts in</span></div>
           <div class="oc-timer">
             <div class="oc-unit"><span class="oc-num" data-cd="d">00</span><span class="oc-tag">Days</span></div>
             <span class="oc-colon">:</span>
@@ -509,6 +593,7 @@ section{position:relative;z-index:2;}
             <span class="oc-colon">:</span>
             <div class="oc-unit"><span class="oc-num" data-cd="m">00</span><span class="oc-tag">Min</span></div>
           </div>
+          <div class="oc-sub" data-oc="sub">Start today and Week 8 lands <b data-oc="finish"></b> — ready for day one of the season.</div>
         </div>
         <!-- BUY BUTTON · wire href to your checkout when ready -->
         <a href="/buy?p=9-11" class="btn btn-buy">
@@ -524,7 +609,7 @@ section{position:relative;z-index:2;}
         </div>
         <div class="offer-guarantee">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 12l2 2 4-4M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
-          Backed by a 30-day money-back guarantee
+          <span><b>The First-Three-Strides Guarantee</b> — 30 days. If you don’t see cleaner, quicker movement, one email refunds you in full.</span>
         </div>
       </aside>
     </div>
@@ -555,6 +640,32 @@ section{position:relative;z-index:2;}
     <div class="reveal"><div class="stat-num display"><span data-count="30">0</span><span class="u">+</span></div><div class="stat-lab">Countries</div></div>
     <div class="reveal"><div class="stat-num display"><span data-count="24">0</span></div><div class="stat-lab">Coach-Built Sessions</div></div>
     <div class="reveal"><div class="stat-num display"><span data-count="8">0</span><span class="u">wk</span></div><div class="stat-lab">Complete System</div></div>
+  </div>
+</section>
+
+<!-- ===== SEASON CLOCK TIMELINE ===== -->
+<section class="seasonband">
+  <div class="sb-inner">
+    <div class="sb-head reveal">
+      <span class="sb-eyebrow">The Season Clock</span>
+      <h2 class="sec-title" data-sl-head>There’s still time — <em>if you start now.</em></h2>
+      <p class="sec-lead" data-sl-lead>Eight weeks fits between today and puck drop. Start this week and your young player walks into day one of the season faster, springier, and more confident — with the numbers to prove it.</p>
+    </div>
+    <div class="tl reveal" id="seasonline">
+      <div class="tl-track"><div class="tl-fill"></div><div class="tl-puck"></div></div>
+      <div class="tl-nodes">
+        <div class="tl-node"><span class="tl-dot"></span><b>Today</b><span class="tl-date" data-tl="start"></span><span class="tl-note">Week 1 begins</span></div>
+        <div class="tl-node"><span class="tl-dot"></span><b>Week 4</b><span class="tl-date" data-tl="mid"></span><span class="tl-note">Deload + re-test</span></div>
+        <div class="tl-node"><span class="tl-dot"></span><b>Week 8</b><span class="tl-date" data-tl="end"></span><span class="tl-note">Peak + final test</span></div>
+        <div class="tl-node season"><span class="tl-dot"></span><b>Season</b><span class="tl-date" data-tl="season"></span><span class="tl-note">Puck drop</span></div>
+      </div>
+    </div>
+    <div class="sb-cta reveal">
+      <a href="#buy" class="showcase-cta">Start Week 1 Today — $79
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <div class="sb-fine">Instant access — the first session can happen tonight.</div>
+    </div>
   </div>
 </section>
 
@@ -773,6 +884,27 @@ section{position:relative;z-index:2;}
   </div>
 </section>
 
+<!-- ===== COACH ===== -->
+<section class="sec coachband">
+  <div class="wrap coach-grid">
+    <div class="coach-photo reveal">
+      <img src="ehd_program_1_squat.jpg" loading="lazy" alt="Coach David Ciboch, M.Ed. Sport Science, performing a barbell squat" />
+      <div class="coach-badge"><span class="cb-dot"></span><span><b>Coach David Ciboch</b><span>M.Ed. Sport Science · National-Team S&amp;C</span></span></div>
+    </div>
+    <div class="coach-copy reveal">
+      <div class="sec-num serif">Who built this</div>
+      <h2 class="sec-title" style="margin-bottom:16px;">Coached at the <em>national-team level.</em></h2>
+      <p class="sec-lead" style="margin-bottom:6px;">FOUNDATIONS isn’t a template from the internet. Every session was built by <strong style="color:var(--ink);font-weight:600;">Coach David Ciboch</strong> — a decade of coaching from youth development to the UAE National Ice Hockey Team, applied to the exact age window your child is in right now.</p>
+      <ul class="coach-creds">
+        <li>Master’s Degree (M.Ed.) — PE &amp; Sport Science</li>
+        <li>Certified Strength &amp; Conditioning Coach</li>
+        <li>Former National Team Coach — UAE Ice Hockey</li>
+        <li>1,000+ athletes developed across 30+ countries</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <!-- ===== WHAT'S INSIDE ===== -->
 <section class="sec inside">
   <div class="wrap">
@@ -890,26 +1022,46 @@ section{position:relative;z-index:2;}
         <div class="skill-top"><span class="skill-n">01</span><span class="skill-gain">+5–10 cm</span></div>
         <h3>Broad Jump</h3>
         <div class="skill-q">Power · jump distance</div>
+        <div class="skill-bars" style="--w1:45%;--w8:82%">
+          <div class="sbr w1"><span class="lab">Wk 1</span><div class="bar"><i></i></div></div>
+          <div class="sbr w8"><span class="lab">Wk 8</span><div class="bar"><i></i></div></div>
+        </div>
       </div>
       <div class="skill reveal">
         <div class="skill-top"><span class="skill-n">02</span><span class="skill-gain">−0.1 to −0.3 s</span></div>
         <h3>20m Sprint</h3>
         <div class="skill-q">Acceleration &amp; speed</div>
+        <div class="skill-bars" style="--w1:40%;--w8:78%">
+          <div class="sbr w1"><span class="lab">Wk 1</span><div class="bar"><i></i></div></div>
+          <div class="sbr w8"><span class="lab">Wk 8</span><div class="bar"><i></i></div></div>
+        </div>
       </div>
       <div class="skill reveal">
         <div class="skill-top"><span class="skill-n">03</span><span class="skill-gain">−0.1 to −0.3 s</span></div>
         <h3>20m Flying Sprint</h3>
         <div class="skill-q">Top speed</div>
+        <div class="skill-bars" style="--w1:38%;--w8:76%">
+          <div class="sbr w1"><span class="lab">Wk 1</span><div class="bar"><i></i></div></div>
+          <div class="sbr w8"><span class="lab">Wk 8</span><div class="bar"><i></i></div></div>
+        </div>
       </div>
       <div class="skill reveal">
         <div class="skill-top"><span class="skill-n">04</span><span class="skill-gain">+15–30 s</span></div>
         <h3>Iso Wall Sit</h3>
         <div class="skill-q">Leg strength · max hold</div>
+        <div class="skill-bars" style="--w1:35%;--w8:80%">
+          <div class="sbr w1"><span class="lab">Wk 1</span><div class="bar"><i></i></div></div>
+          <div class="sbr w8"><span class="lab">Wk 8</span><div class="bar"><i></i></div></div>
+        </div>
       </div>
       <div class="skill reveal">
         <div class="skill-top"><span class="skill-n">05</span><span class="skill-gain">+10–20 s</span></div>
         <h3>SL Balance — Eyes Closed</h3>
         <div class="skill-q">Balance · max hold</div>
+        <div class="skill-bars" style="--w1:34%;--w8:76%">
+          <div class="sbr w1"><span class="lab">Wk 1</span><div class="bar"><i></i></div></div>
+          <div class="sbr w8"><span class="lab">Wk 8</span><div class="bar"><i></i></div></div>
+        </div>
       </div>
       <div class="skill accent reveal">
         <h3>Real numbers.<br>Real progress.</h3>
@@ -1018,6 +1170,10 @@ section{position:relative;z-index:2;}
         <div class="faq-a"><div class="faq-a-inner">Eight weeks won't turn a child into a powerhouse — and shouldn't. What it builds is better: softer landings, steadier balance, smoother sprinting, and a love of moving well. The five skill-check tests will show you the progress in real numbers.</div></div>
       </div>
       <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)"><span>Is it too late to start before the season?</span><span class="faq-ico"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">No — and waiting for a &quot;perfect&quot; start date is the real mistake. If a full 8 weeks fits before your season, your athlete arrives at day one at their peak. If the season starts sooner, the first weeks of movement, balance, and speed work still show up on the ice within a month — and the program runs fine alongside early-season practices (drop to two sessions in heavy game weeks). Every week you wait is a week of the season played without it.</div></div>
+      </div>
+      <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)"><span>What if it's not the right fit?</span><span class="faq-ico"></span></button>
         <div class="faq-a"><div class="faq-a-inner">You're covered by a 30-day money-back guarantee. Try it, run the first sessions, and if it isn't right for your young player, just email us and we'll refund you — no hassle.</div></div>
       </div>
@@ -1035,6 +1191,7 @@ section{position:relative;z-index:2;}
       <p class="final-sub">Eight weeks that build the speed, balance, and confidence great skating is made of — while keeping it fun.</p>
       <div class="final-price-row"><span class="fp-was">$159</span><span class="fp-now">$79</span></div>
       <div class="fp-meta">One-time · yours forever</div>
+      <div class="fp-anchor">24 coached sessions — <b>about $3.30 each</b>. A single private S&amp;C session costs more than the whole program.</div>
       <!-- BUY BUTTON · wire href to your checkout when ready -->
       <a href="/buy?p=9-11" class="btn btn-buy">
         <span class="lbl">Get FOUNDATIONS
@@ -1046,6 +1203,21 @@ section{position:relative;z-index:2;}
         <span>30-day money-back</span>
       </div>
       <div class="final-byline">Programmed by <b>Coach David Ciboch</b> — M.Ed. Sport Science · National-Team S&amp;C</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FREE WEEK CAPTURE (exit path) ===== -->
+<section class="freeweek">
+  <div class="wrap">
+    <div class="fw-card reveal">
+      <h2 class="fw-title">Not sure yet? <em>Start free.</em></h2>
+      <p class="fw-lead">Get the free off-ice starter program for ages 9–11 by email — real coach-built sessions with demo videos, the same system as FOUNDATIONS. See how your child takes to it, then decide.</p>
+      <form class="fw-form" id="fwForm" novalidate>
+        <input type="email" name="email" required autocomplete="email" placeholder="parent@email.com" aria-label="Email address" />
+        <button type="submit" class="fw-btn">Send the Free Program</button>
+      </form>
+      <p class="fw-note">Free forever · no spam · unsubscribe anytime</p>
     </div>
   </div>
 </section>
@@ -1136,19 +1308,36 @@ if(!reduce){
   });
 }
 
-/* countdown — real start-by deadline (start by Jul 1 to finish all 8 weeks before the season) */
+/* ===== EVERGREEN SEASON CLOCK — self-adjusting, never expires =====
+   Season assumed to start Sep 1 (typical tryouts/first practices).
+   Apr–Aug: live countdown to season start + honest finish-date math.
+   Sep–Mar: in-season message (off-ice work shows up by mid-season). */
+const SEASON = (function(){
+  const now = new Date(), y = now.getFullYear(), m = now.getMonth();
+  const start = now < new Date(y,8,1) ? new Date(y,8,1) : new Date(y+1,8,1);
+  const finish = new Date(now.getTime() + 56*864e5); // 8 weeks from today
+  const fmt = d => d.toLocaleDateString('en-US',{month:'short',day:'numeric'});
+  return { start, finish, fmt, inSeason: (m >= 8 || m <= 2), fits: finish <= start };
+})();
+
 (function(){
   const box = document.querySelector('.offer-countdown');
   if(!box) return;
-  const TARGET = new Date(2026, 6, 1, 23, 59, 59); // Jul 1 2026, local — bump this date to relaunch the start window
+  const fin = box.querySelector('[data-oc="finish"]');
+  if(fin) fin.textContent = SEASON.fmt(SEASON.finish);
+  if(SEASON.inSeason){
+    box.innerHTML = '<div class="oc-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg>The season is underway</div>'
+      + '<div class="oc-closed">Off-ice work now shows up by mid-season. Start today and Week 8 lands ' + SEASON.fmt(SEASON.finish) + ' — a different player for the stretch run.</div>';
+    return;
+  }
+  if(!SEASON.fits){
+    const sub = box.querySelector('[data-oc="sub"]');
+    if(sub) sub.innerHTML = 'A full 8 weeks no longer fits before puck drop — start this week and carry the strongest weeks into the season. Every week you wait is a week of the season without it.';
+  }
   const pad = n => String(n).padStart(2,'0');
   function render(){
-    let diff = Math.floor((TARGET - new Date()) / 1000);
-    if(diff <= 0){
-      box.innerHTML = '<div class="oc-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg>Start window closed</div>'
-        + '<div class="oc-closed">A new start-by date opens soon — your plan and price are still here.</div>';
-      return false;
-    }
+    let diff = Math.floor((SEASON.start - new Date()) / 1000);
+    if(diff <= 0) return false;
     const d = box.querySelector('[data-cd="d"]'),
           h = box.querySelector('[data-cd="h"]'),
           m = box.querySelector('[data-cd="m"]');
@@ -1162,6 +1351,53 @@ if(!reduce){
   if(render()){
     const timer = setInterval(function(){ if(!render()) clearInterval(timer); }, 1000);
   }
+})();
+
+/* season timeline — real dates, fill + puck animate on reveal */
+(function(){
+  const tl = document.getElementById('seasonline');
+  if(!tl) return;
+  const set = (k,v)=>{ const el = tl.querySelector('[data-tl="'+k+'"]'); if(el) el.textContent = v; };
+  const now = new Date(), wk4 = new Date(now.getTime()+28*864e5);
+  set('start', SEASON.fmt(now)); set('mid', SEASON.fmt(wk4));
+  set('end', SEASON.fmt(SEASON.finish)); set('season', SEASON.fmt(SEASON.start));
+  const head = document.querySelector('[data-sl-head]'), lead = document.querySelector('[data-sl-lead]');
+  if(SEASON.inSeason){
+    if(head) head.innerHTML = 'The season is on — <em>close the gap now.</em>';
+    if(lead) lead.textContent = 'The players pulling ahead this year are training off the ice right now. Start today, and by ' + SEASON.fmt(SEASON.finish) + ' your athlete is measurably faster, stronger, and harder to knock off the puck — with half the season still to play.';
+    const sn = tl.querySelector('.tl-node.season b'); if(sn) sn.textContent = 'Next Season';
+  } else if(!SEASON.fits){
+    if(head) head.innerHTML = 'The season won’t wait — <em>start anyway.</em>';
+    if(lead) lead.textContent = 'A full 8 weeks no longer fits before puck drop — which makes this week the most valuable one left. The movement, strength, and speed work of the first block shows up on the ice within a month.';
+  }
+  const io2 = new IntersectionObserver(es=>{
+    es.forEach(e=>{ if(e.isIntersecting){ tl.classList.add('go'); io2.unobserve(e.target); } });
+  },{threshold:.4});
+  io2.observe(tl);
+})();
+
+/* free-week capture → /api/subscribe (same MailerLite pipeline as /survey) */
+(function(){
+  const f = document.getElementById('fwForm');
+  if(!f) return;
+  f.addEventListener('submit', async function(e){
+    e.preventDefault();
+    const inp = f.querySelector('input[type="email"]'), btn = f.querySelector('button');
+    const email = (inp.value||'').trim();
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ inp.focus(); inp.style.borderColor = '#E58A8A'; return; }
+    btn.disabled = true; const orig = btn.textContent; btn.textContent = 'Sending…';
+    try{
+      const r = await fetch('/api/subscribe', {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ email, age:'9_11', source:'sales-9-11-free-week' })
+      });
+      if(!r.ok) throw new Error('subscribe failed');
+      f.outerHTML = '<div class="fw-done">✓ Done — check your inbox. The free program is on its way.</div>';
+    }catch(_){
+      btn.disabled = false; btn.textContent = orig;
+      inp.style.borderColor = '#E58A8A';
+    }
+  });
 })();
 
 function toggleFaq(btn){ btn.closest('.faq-item').classList.toggle('open'); }
