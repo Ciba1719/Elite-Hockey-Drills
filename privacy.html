@@ -13,7 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="theme-color" content="#070708" />
 <title>Privacy Policy | Elite Hockey Drills</title>
-<meta name="description" content="How Elite Hockey Drills handles your information: training data stays on your device, no data selling, no ads, and verifiable parental consent for players under 13." />
+<meta name="description" content="How Elite Hockey Drills handles your information: device-first storage, optional cloud backup, no data selling, no ads, and verified parental consent for players under 13." />
 <meta name="robots" content="noindex, follow" />
 <link rel="canonical" href="https://elitehockeydrills.com/privacy.html" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,7 +47,7 @@
   <div class="wrap art-hero-inner">
     <div class="eyebrow ice">Legal</div>
     <h1 id="legal-h1" class="display">Privacy <em class="serif">Policy.</em></h1>
-    <p><strong>Last updated: July 2, 2026</strong></p>
+    <p><strong>Last updated: July 4, 2026</strong></p>
   </div>
 </section>
 
@@ -58,10 +58,11 @@
 
 <h2>The short version</h2>
 <ul>
-  <li>The App is built to work <strong>on your device</strong>. Your training profile, program, baselines, and workout history are stored <strong>locally on your phone</strong>, not on our servers.</li>
+  <li>The App is built to work <strong>on your device</strong>. Your training profile, program, baselines, and workout history are stored <strong>locally on your phone</strong> by default.</li>
+  <li><strong>Cloud backup is optional and off by default.</strong> It only turns on if you add your email and verify it with a code; then your profile, program, and (as backup coverage expands) training history are stored with our cloud provider so you can restore them on a new device.</li>
   <li>We <strong>do not sell your data</strong> and we do not use it for third-party advertising.</li>
-  <li>You can <strong>delete everything</strong> at any time from <strong>Settings &rarr; Reset App &amp; Delete All Data</strong>.</li>
-  <li>The App has a <strong>Youth mode</strong> for younger players; for children under 13 we require <strong>verifiable parental/guardian consent</strong> before any setup.</li>
+  <li>You can <strong>delete everything</strong> at any time: <strong>Settings &rarr; Reset App &amp; Delete All Data</strong> wipes this device, and <strong>Settings &rarr; Delete Cloud Account</strong> deletes your account and everything we store for you on our servers.</li>
+  <li>The App has a <strong>Youth mode</strong> for younger players; for children under 13 we require <strong>verified parental/guardian consent</strong> — the parent or guardian confirms by entering a code we email them — before setup can be completed.</li>
 </ul>
 
 <h2>1. Information we collect</h2>
@@ -78,19 +79,20 @@
 <p>This information is stored <strong>locally on your device</strong>. We do not receive a copy of it unless and until you choose to use a cloud feature described below.</p>
 
 <h3>b) Optional email address</h3>
-<p>If you choose to provide an email address, it is currently stored <strong>on your device</strong>. When optional cloud backup launches (see &ldquo;Cloud backup&rdquo; below), your email will be used to back up and restore your program. Providing an email is always optional and the App works fully without one. <strong>We do not collect email addresses from users under 13.</strong></p>
+<p>If you choose to provide an email address, you can verify it with a 6-digit code to turn on optional cloud backup (see &ldquo;Cloud backup&rdquo; below). Your email is used to sign you in, to back up and restore your training data, and to key your subscription to your account. Providing an email is always optional and the App works fully without one. <strong>We never collect a child&rsquo;s own email address</strong> — for players under 13, the only email we hold is the parent/guardian&rsquo;s.</p>
 
-<h3>c) Cloud backup and account data — <em>when enabled</em></h3>
-<p>We plan to offer an optional account so your program can be backed up and restored across devices. <strong>When that feature is enabled</strong>, and only if you opt in, we will store your email and a copy of your profile/program with our cloud provider, <strong>Supabase</strong>. Until then, no such data leaves your device.</p>
+<h3>c) Cloud backup and account data</h3>
+<p>Cloud backup is <strong>optional and off by default</strong>. When you enable it — by adding your email and entering the verification code we send — we store your email and a copy of your <strong>profile and training program</strong> — and, as backup coverage expands, your training history (workout logs, personal records, and baseline results) — with our cloud provider, <strong>Supabase</strong>, so you can restore them on a new device. If you never sign in, none of this data leaves your device.</p>
 
 <h3>d) Usage and diagnostic data</h3>
-<p>To fix crashes and improve the App, we use <strong>PostHog</strong> (product analytics) and <strong>Sentry</strong> (crash reporting) to collect limited, largely de-identified information such as app events (e.g. screens viewed, features used), device model, OS version, and crash reports. You can turn this off at any time in the App under <strong>Settings &rarr; Share Anonymous Diagnostics</strong>. We do not use this data to build advertising profiles.</p>
+<p>To fix crashes and improve the App, we use <strong>PostHog</strong> (product analytics) and <strong>Sentry</strong> (crash reporting) to collect limited, largely de-identified information such as app events (e.g. screens viewed, features used), device model, OS version, and crash reports. Analytics events are keyed to a <strong>random anonymous identifier</strong>, not to your name or email. You can turn this off at any time in the App under <strong>Settings &rarr; Share Anonymous Diagnostics</strong>. For profiles of children <strong>under 13</strong>, analytics is <strong>disabled</strong> until a parent or guardian has completed verified consent. We do not use this data to build advertising profiles.</p>
 
 <h3>e) Purchase information</h3>
 <p>If you buy a subscription or other in-app purchase, the transaction is processed by <strong>Apple</strong> or <strong>Google</strong> (and our purchase manager, <strong>RevenueCat</strong>). We receive your purchase/subscription status (e.g. &ldquo;active&rdquo;), <strong>not</strong> your full payment-card details.</p>
 
 <h3>f) Notifications</h3>
-<p>The App uses <strong>local notifications</strong> (reminders scheduled on your device) for things like workout and game-day prompts. We ask your permission first, and you can turn them off in Settings or your OS. We do <strong>not</strong> operate a push-notification server, and notifications do not send your data to us.</p>
+<p>By default the App uses <strong>local notifications</strong> — reminders scheduled on your device — for things like workout and game-day prompts. We ask your permission first, and you can turn them off in Settings or your OS.</p>
+<p>If you have signed in to a cloud account and notifications are enabled, we also store a <strong>push token and a minimal training-state summary</strong> with Supabase — your first name, current streak, last training date, scheduled rest days, notification preferences (including quiet hours), and timezone offset — so our server can send you relevant reminders (for example, that your streak is at risk or a retest is due). We never use push notifications for advertising. Turning workout notifications off stops these server-sent messages, and this data is deleted when you delete your cloud account.</p>
 
 <h3>g) Permissions we do <strong>not</strong> use</h3>
 <p>The App does <strong>not</strong> request access to your location, camera, microphone, contacts, photos, or health/fitness platforms.</p>
@@ -113,10 +115,11 @@
 <h2>4. Children&rsquo;s privacy</h2>
 <p>The App offers a <strong>Youth mode</strong> designed for younger players, with age-appropriate programming.</p>
 <ul>
-  <li>For users <strong>under 13</strong>, the App requires <strong>verifiable parental or guardian consent</strong> before completing setup.</li>
-  <li>We collect only the limited information needed to provide age-appropriate training, and (today) it is stored <strong>on the child&rsquo;s device</strong>. We do not collect email addresses from children under 13, and their data is never synced to the cloud.</li>
+  <li>For users <strong>under 13</strong>, the App requires <strong>verified parental or guardian consent</strong> before setup can be completed: the parent or guardian provides their email address, we send a confirmation code to that address, and the child&rsquo;s setup finishes only after the code is entered.</li>
+  <li>We collect only the limited information needed to provide age-appropriate training — first name, age, sex, height and weight, position, training availability, injury history, and workout progress — and it is stored <strong>on the child&rsquo;s device</strong>. We never collect a child&rsquo;s own email address; the only email on file is the parent/guardian&rsquo;s, and any cloud backup of a youth profile is keyed to that verified guardian email.</li>
+  <li>Analytics is <strong>disabled</strong> for under-13 profiles until verified guardian consent is completed.</li>
   <li>We do <strong>not</strong> sell children&rsquo;s data, show behavioral advertising, or knowingly collect more than is necessary.</li>
-  <li>A parent or guardian can review the information by opening the App on the device and can delete all of it via <strong>Settings &rarr; Reset App &amp; Delete All Data</strong>, or by contacting us at <strong>coach@elitehockeydrills.com</strong>.</li>
+  <li>A parent or guardian can review the information by opening the App on the device and can delete all of it via <strong>Settings &rarr; Reset App &amp; Delete All Data</strong> (this device) and <strong>Settings &rarr; Delete Cloud Account</strong> (our servers), or by contacting us at <strong>coach@elitehockeydrills.com</strong>.</li>
 </ul>
 <p>This is intended to align with the U.S. Children&rsquo;s Online Privacy Protection Act (COPPA), Apple&rsquo;s and Google&rsquo;s kids/family policies, and UAE data-protection requirements. If you believe a child has provided information without the required consent, contact us and we will delete it.</p>
 
@@ -125,7 +128,8 @@
 <ul>
   <li>With <strong>Apple / Google / RevenueCat</strong> to process in-app purchases</li>
   <li>With <strong>PostHog / Sentry</strong> for analytics and crash diagnostics</li>
-  <li>With <strong>Supabase</strong> to provide optional cloud backup (when enabled)</li>
+  <li>With <strong>Supabase</strong> to provide optional cloud backup and, if you sign in with notifications on, server-sent reminders</li>
+  <li>With <strong>Expo&rsquo;s push service</strong> to deliver those notifications to your device</li>
   <li>When <strong>required by law</strong>, or to protect rights, safety, and security</li>
   <li>In connection with a <strong>business transfer</strong> (e.g. merger or acquisition), subject to this Policy</li>
 </ul>
@@ -134,7 +138,7 @@
 <h2>6. Data storage, security, and retention</h2>
 <ul>
   <li>Your training data is stored <strong>on your device</strong> and remains there until you delete it. Removing the App from your device deletes this local data.</li>
-  <li>Any cloud data (when that feature is enabled) is stored with <strong>Supabase</strong> and protected in transit using industry-standard encryption.</li>
+  <li>If you enable cloud backup, that data is stored with <strong>Supabase</strong> and protected in transit using industry-standard encryption. Deleting your cloud account removes it from our servers.</li>
   <li>We retain information only as long as needed for the purposes above or as required by law. You can delete your data at any time (see below).</li>
 </ul>
 
@@ -142,10 +146,11 @@
 <p>The App is operated from the United Arab Emirates. If a cloud or service provider processes data outside the UAE, we take steps to ensure an appropriate level of protection consistent with applicable law.</p>
 
 <h2>8. Your choices and rights</h2>
-<p>Depending on your location, you may have the right to <strong>access, correct, delete, or export</strong> your information, to <strong>withdraw consent</strong>, and to <strong>object to or restrict</strong> certain processing. Because your data is stored on your device, you can exercise most of these directly:</p>
+<p>Depending on your location, you may have the right to <strong>access, correct, delete, or export</strong> your information, to <strong>withdraw consent</strong>, and to <strong>object to or restrict</strong> certain processing. You can exercise most of these directly in the App:</p>
 <ul>
   <li><strong>Edit</strong> your details in the App&rsquo;s profile/settings screens</li>
-  <li><strong>Delete everything</strong> via <strong>Settings &rarr; Reset App &amp; Delete All Data</strong></li>
+  <li><strong>Delete everything on this device</strong> via <strong>Settings &rarr; Reset App &amp; Delete All Data</strong></li>
+  <li><strong>Delete your cloud account</strong> via <strong>Settings &rarr; Delete Cloud Account</strong> — this removes your account and every row we store for you on our servers (backup and notification data included)</li>
   <li><strong>Turn off</strong> notifications and anonymous diagnostics in Settings</li>
 </ul>
 <p>To make any other request, email <strong>coach@elitehockeydrills.com</strong>. We will respond as required by applicable law (including the UAE PDPL and, where it applies, the GDPR/CCPA).</p>
@@ -154,10 +159,10 @@
 <p>The App relies on the following third parties; their handling of data is governed by their own privacy policies:</p>
 <ul>
   <li><strong>Apple App Store / Google Play</strong> (distribution, purchases)</li>
-  <li><strong>Expo</strong> (app build and update tooling)</li>
+  <li><strong>Expo</strong> (app build and update tooling, push-notification delivery)</li>
   <li><strong>RevenueCat</strong> (purchase management)</li>
   <li><strong>PostHog</strong> (product analytics), <strong>Sentry</strong> (crash reporting)</li>
-  <li><strong>Supabase</strong> (optional cloud backup) — <em>when enabled</em></li>
+  <li><strong>Supabase</strong> (optional cloud backup, accounts, and notification state)</li>
 </ul>
 
 <h2>10. Changes to this Policy</h2>
