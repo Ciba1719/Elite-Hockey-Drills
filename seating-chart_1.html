@@ -31,7 +31,7 @@
   .chip.sel .x { color:#cdd6c9; }
   #floor { flex:1; overflow:auto; position:relative; }
   #stage { margin:20px auto; }
-  #canvas { position:relative; width:1560px; height:1120px; margin:0; transform-origin:top left; }
+  #canvas { position:relative; width:1560px; height:1440px; margin:0; transform-origin:top left; }
   .zoom button { font-family:inherit; font-size:15px; line-height:1; width:30px; padding:6px 0; }
   .zoom .fit { width:auto; padding:6px 10px; font-size:13px; }
   .table { position:absolute; border:2.5px solid #3d4a3d; border-radius:10px; background:#fbf7ee; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:600; color:#3d4a3d; text-align:center; }
@@ -90,10 +90,13 @@ const TABLES = [
  {id:'B',   name:'Table B',    x:1140, y:120, w:380, h:140, sides:{top:3,bottom:3}},
  {id:'1',   name:'Table 1',    x:470,  y:360, w:150, h:720, sides:{left:13,right:13}},
  {id:'2',   name:'Table 2',    x:960,  y:360, w:150, h:720, sides:{left:13,right:13}},
+ {id:'A2',   name:'Table A (back)',    x:40,   y:1200, w:380, h:140, sides:{top:3,bottom:3}},
+ {id:'head2',name:'Head Table (back)', x:470,  y:1210, w:620, h:120, sides:{top:6,bottom:6}},
+ {id:'B2',   name:'Table B (back)',    x:1140, y:1200, w:380, h:140, sides:{top:3,bottom:3}},
 ];
 
 const CS = 84, CH = 44, GAP = 6;
-const CANVAS_W = 1560, CANVAS_H = 1120;
+const CANVAS_W = 1560, CANVAS_H = 1440;
 let scale = 1, fitMode = false;
 let chairs = [];
 let guests = {};      // id -> { name, seat: chairKey | null }
