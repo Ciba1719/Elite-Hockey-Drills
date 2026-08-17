@@ -713,7 +713,9 @@ section{position:relative;z-index:2;}
 .app-section{
   padding:88px 24px;
   background:linear-gradient(180deg,var(--bg) 0%, #050810 50%, var(--bg) 100%);
-  position:relative;overflow:hidden;
+  position:relative;
+  /* No overflow:hidden here — it would break the sticky app-tour pin.
+     Horizontal glow bleed is clipped by body{overflow-x:hidden}. */
   border-top:1px solid var(--line);border-bottom:1px solid var(--line);
 }
 .app-bg-glow{
