@@ -766,6 +766,15 @@ section{position:relative;z-index:2;}
   background:#08080B;
   box-shadow:0 24px 48px -16px rgba(0,0,0,.55),0 0 40px -12px var(--ice-soft);
   aspect-ratio:9/18.5;
+  transition:transform .55s cubic-bezier(.2,.7,.2,1),border-color .55s ease,box-shadow .55s ease;
+}
+.app-shot:hover .app-shot-frame{
+  transform:translateY(-10px);
+  border-color:rgba(93,180,229,.4);
+  box-shadow:0 36px 64px -20px rgba(0,0,0,.7),0 0 70px -14px rgba(93,180,229,.35);
+}
+@media(prefers-reduced-motion:reduce){
+  .app-shot:hover .app-shot-frame{transform:none;}
 }
 .app-shot-frame img{width:100%;height:100%;object-fit:cover;object-position:center top;}
 .app-shot-cap{
@@ -815,25 +824,39 @@ section{position:relative;z-index:2;}
   object-fit:cover;object-position:center top;
   border-radius:30px;display:block;
 }
-.phone-floating{
-  position:absolute;
-  background:rgba(20,20,27,.95);backdrop-filter:blur(12px);
-  border:1px solid var(--ice-line);border-radius:12px;
-  padding:10px 14px;font-size:11px;color:var(--ink);
-  font-weight:500;display:flex;align-items:center;gap:8px;
-  box-shadow:0 8px 24px rgba(0,0,0,.4);
+/* ===== PREMIUM HERO MOTION =====
+   Cinematic staggered entrance + levitating phone + breathing glow.
+   All transform/opacity only (GPU-cheap), disabled under reduced motion. */
+@keyframes riseIn{from{opacity:0;transform:translateY(26px);}to{opacity:1;transform:translateY(0);}}
+.hero-badges{animation:riseIn .7s cubic-bezier(.2,.7,.2,1) .05s both;}
+.hero-h1 .line{animation:riseIn .85s cubic-bezier(.2,.7,.2,1) both;}
+.hero-h1 .line:nth-child(1){animation-delay:.14s;}
+.hero-h1 .line:nth-child(2){animation-delay:.26s;}
+.hero-sub{animation:riseIn .85s cubic-bezier(.2,.7,.2,1) .38s both;}
+.hero-ctas{animation:riseIn .85s cubic-bezier(.2,.7,.2,1) .48s both;}
+.hero-text .store-badges{animation:riseIn .85s cubic-bezier(.2,.7,.2,1) .56s both;}
+.hero-stats{animation:riseIn .95s cubic-bezier(.2,.7,.2,1) .68s both;}
+.hero-phone{animation:riseIn 1s cubic-bezier(.2,.7,.2,1) .4s both;}
+
+.hero-phone::before{
+  content:'';position:absolute;top:50%;left:50%;
+  width:min(480px,92%);aspect-ratio:1;border-radius:50%;
+  margin:0;transform:translate(-50%,-50%);
+  background:radial-gradient(closest-side,rgba(93,180,229,.18) 0%,transparent 70%);
+  filter:blur(30px);pointer-events:none;z-index:0;
+  animation:glowBreathe 7s ease-in-out infinite;
 }
-.phone-floating::before{
-  content:'';width:24px;height:24px;
-  background:var(--ice-soft);border-radius:50%;
-  flex-shrink:0;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%235DB4E5' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
-  background-position:center;background-repeat:no-repeat;
+.hero-phone .phone-mock{position:relative;z-index:1;animation:phoneFloat 7s ease-in-out infinite;}
+@keyframes phoneFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
+@keyframes glowBreathe{0%,100%{opacity:.5;}50%{opacity:1;}}
+
+.hero-glow{animation:heroDrift 24s ease-in-out infinite alternate;}
+@keyframes heroDrift{from{transform:translate(0,0);}to{transform:translate(-52px,36px);}}
+
+@media(prefers-reduced-motion:reduce){
+  .hero-badges,.hero-h1 .line,.hero-sub,.hero-ctas,.hero-text .store-badges,
+  .hero-stats,.hero-phone,.hero-phone .phone-mock,.hero-phone::before,.hero-glow{animation:none;}
 }
-.phone-float-1{top:10%;left:-30px;animation:float1 4s ease-in-out infinite;}
-.phone-float-2{bottom:18%;right:-30px;animation:float2 4.5s ease-in-out infinite;}
-@keyframes float1{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
-@keyframes float2{0%,100%{transform:translateY(0);}50%{transform:translateY(8px);}}
 
 @media(min-width:900px){
   .app-section{padding:140px 40px;}
@@ -1501,8 +1524,6 @@ section{position:relative;z-index:2;}
       <div class="hero-phone">
         <div class="phone-mock">
           <img class="phone-shot" src="assets/app/app-home.webp" alt="Elite Hockey Drills app — today's session on the home screen" width="640" height="1138" fetchpriority="high" />
-          <div class="phone-floating phone-float-1">Built around your season</div>
-          <div class="phone-floating phone-float-2">Video for every exercise</div>
         </div>
       </div>
     </div>
