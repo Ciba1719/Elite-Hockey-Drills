@@ -184,7 +184,7 @@ function navHTML(activePage = '') {
       <li><a href="${SITE_URL}#faq">FAQ</a></li>
     </ul>
   </nav>
-  <a href="${SITE_URL}#tiers" class="nav-cta btn btn-primary">Get Started</a>
+  <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="nav-cta btn btn-primary">Get the App</a>
 </header>`;
 }
 
@@ -199,9 +199,8 @@ function footerHTML() {
       <h4>Programs</h4>
       <ul>
         <li><a href="${SITE_URL}/survey.html">Free 5-Day PDF</a></li>
-        <li><a href="${SITE_URL}#tiers">12-Week Programs</a></li>
-        <li><a href="${SITE_URL}#tiers">Family Bundle</a></li>
-        <li><a href="${SITE_URL}#app">App Waitlist</a></li>
+        <li><a href="${SITE_URL}#tiers">8-Week Programs</a></li>
+        <li><a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275">The App — iOS</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -399,6 +398,7 @@ ${gaSnippet()}
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="theme-color" content="#070708" />
+<meta name="apple-itunes-app" content="app-id=6787257275" />
 <title>Exercise Library — Off-Ice Hockey Training | Elite Hockey Drills</title>
 <meta name="description" content="Browse ${totalEx} off-ice hockey exercises across ${totalCat} movement categories. Searchable, filterable, built by a sport scientist." />
 <meta property="og:title" content="Exercise Library | Elite Hockey Drills" />
@@ -579,6 +579,7 @@ ${gaSnippet()}
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="theme-color" content="#070708" />
+<meta name="apple-itunes-app" content="app-id=6787257275" />
 <title>${escHtml(ex.name)} — Off-Ice Hockey Training | Elite Hockey Drills</title>
 <meta name="description" content="${escHtml(descMeta)}" />
 <meta property="og:type" content="article" />
@@ -756,10 +757,10 @@ ${related.length ? `<section class="related-section">
   <div class="wrap ex-cta-inner reveal">
     <div class="eyebrow ice" style="margin-bottom:18px;">Ready to train?</div>
     <h2 class="display ex-cta-title">Put it to work<br><em class="serif">on the ice.</em></h2>
-    <p class="ex-cta-sub">This exercise is part of a fully periodized 12-week off-ice program — built by a sport scientist who coaches at the national level.</p>
+    <p class="ex-cta-sub">The Elite Hockey Drills app builds exercises like this into a personalized off-ice program — created by a sport scientist and former national-team coach. Your first week is free.</p>
     <div class="ex-cta-btns">
-      <a href="${SITE_URL}#tiers" class="btn btn-primary">
-        See the Programs
+      <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary">
+        Start Your Free Week
         <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
       <a href="${SITE_URL}/survey.html" class="btn btn-ghost">Get a Free Program</a>

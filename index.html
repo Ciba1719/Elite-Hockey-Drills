@@ -21,10 +21,11 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="manifest" href="site.webmanifest" />
-<title>Off-Ice Hockey Training Programs for All Ages | Elite Hockey Drills</title>
-<meta name="description" content="Science-backed off-ice &amp; dryland hockey training programs for ages 9 to 40+. Coach-built 8-week plans with a video for every exercise, done at home. Built by Coach David Ciboch, M.Ed." />
-<meta property="og:title" content="Elite Hockey Drills — Off-Ice Training, Engineered for Hockey" />
-<meta property="og:description" content="Science-backed off-ice training. Built by a sport scientist who coaches at the national level." />
+<title>Hockey Training App &amp; Off-Ice Programs for All Ages | Elite Hockey Drills</title>
+<meta name="description" content="The Elite Hockey Drills app builds your personalized off-ice training program — ages 9 to 40+, a demo video for every exercise, built around your season. 7-day free trial on iOS. By Coach David Ciboch, M.Ed." />
+<meta name="apple-itunes-app" content="app-id=6787257275" />
+<meta property="og:title" content="Elite Hockey Drills — The Off-Ice Training App for Hockey Players" />
+<meta property="og:description" content="Personalized off-ice training built around your season. 7-day free trial on the App Store. Built by a former national-team coach." />
 <meta property="og:url" content="https://elitehockeydrills.com" />
 <meta property="og:image" content="https://elitehockeydrills.com/ehd_hero_medball.jpg" />
 <meta property="og:image:width" content="1200" />
@@ -53,6 +54,21 @@
       "name": "Elite Hockey Drills",
       "url": "https://elitehockeydrills.com/",
       "publisher": { "@id": "https://elitehockeydrills.com/#organization" }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://elitehockeydrills.com/#app",
+      "name": "Elite Hockey Drills",
+      "operatingSystem": "iOS",
+      "applicationCategory": "HealthApplication",
+      "description": "Personalized off-ice hockey training built around your season — scaled to your age, level, position, and schedule, with a demo video for every exercise. 7-day free trial.",
+      "installUrl": "https://apps.apple.com/us/app/elite-hockey-drills/id6787257275",
+      "author": { "@id": "https://elitehockeydrills.com/#organization" },
+      "offers": [
+        { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free download with 7-day free trial" },
+        { "@type": "Offer", "price": "17.99", "priceCurrency": "USD", "description": "Premium Monthly subscription" },
+        { "@type": "Offer", "price": "99.90", "priceCurrency": "USD", "description": "Premium Annual subscription" }
+      ]
     }
   ]
 }
@@ -198,7 +214,6 @@ section{position:relative;z-index:2;}
   pointer-events:none;filter:blur(20px);z-index:0;
 }
 .hero-content{position:relative;z-index:2;max-width:900px;}
-.hero-photo-desktop{display:none;}
 
 @media(min-width:900px){
   .hero{
@@ -207,29 +222,6 @@ section{position:relative;z-index:2;}
   }
   .hero-bg{display:none;}
   .hero-content{max-width:none;width:100%;text-align:left;}
-  .hero-photo-desktop{
-    display:block;
-    position:absolute;
-    top:0;right:0;bottom:0;
-    width:45%;
-    z-index:1;
-    overflow:hidden;
-  }
-  .hero-photo-desktop img{
-    width:100%;height:100%;
-    object-fit:cover;
-    object-position:center center;
-  }
-  .hero-photo-desktop::after{
-    content:'';position:absolute;inset:0;
-    background:linear-gradient(90deg,var(--bg) 0%,transparent 30%,transparent 100%);
-    pointer-events:none;
-  }
-  .hero-photo-desktop::before{
-    content:'';position:absolute;inset:0;
-    background:radial-gradient(circle at 70% 50%,transparent 0%,rgba(7,7,8,.3) 100%);
-    pointer-events:none;z-index:1;
-  }
   .hero-grid-inner{
     max-width:1240px;margin:0 auto;
     display:grid;
@@ -731,15 +723,17 @@ section{position:relative;z-index:2;}
   background:radial-gradient(closest-side,var(--ice-soft) 0%,transparent 70%);
   filter:blur(40px);pointer-events:none;
 }
-.app-grid{position:relative;z-index:2;display:grid;gap:56px;align-items:center;}
-.app-content .eyebrow{margin-bottom:20px;}
-.app-content h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,11vw,96px);line-height:.92;margin-bottom:24px;}
-.app-content h2 em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ice);font-weight:400;}
-.app-content > p{color:var(--ink-2);font-size:16px;line-height:1.7;margin-bottom:32px;max-width:520px;}
+.app-features-wrap{max-width:760px;margin:56px auto 0;position:relative;z-index:2;}
+.app-offer{
+  max-width:760px;margin:44px auto 0;position:relative;z-index:2;
+  display:flex;flex-direction:column;align-items:center;gap:28px;
+}
+.app-trial-note{font-size:12.5px;color:var(--ink-3);text-align:center;}
 .app-features{
   list-style:none;display:grid;
-  grid-template-columns:repeat(2,1fr);gap:14px 20px;margin-bottom:36px;
+  grid-template-columns:repeat(2,1fr);gap:14px 20px;
 }
+@media(max-width:519px){.app-features{grid-template-columns:1fr;}}
 .app-features li{font-size:13px;color:var(--ink);padding-left:20px;position:relative;}
 .app-features li::before{
   content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);
@@ -747,16 +741,65 @@ section{position:relative;z-index:2;}
   box-shadow:0 0 8px var(--ice);
 }
 .app-pricing-row{
-  display:flex;flex-wrap:wrap;gap:24px;
+  display:flex;flex-wrap:wrap;gap:24px;width:100%;
   padding:24px;border:1px solid var(--ice-line);
-  background:rgba(93,180,229,.04);border-radius:14px;margin-bottom:32px;
+  background:rgba(93,180,229,.04);border-radius:14px;
 }
-.app-price-block{flex:1;min-width:120px;}
+.app-price-block{flex:1;min-width:120px;text-align:center;}
 .app-price-block .num{font-family:'Bebas Neue',sans-serif;font-size:36px;line-height:1;}
 .app-price-block .num span{color:var(--ice);font-size:.55em;}
 .app-price-block .lbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:6px;font-weight:600;}
 
-.app-visual{display:flex;justify-content:center;align-items:center;position:relative;min-height:520px;}
+/* Screenshot carousel — real app screens in slim phone frames */
+.app-shots{
+  display:flex;gap:18px;
+  overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:8px 24px 20px;margin:48px -24px 0;
+  -webkit-overflow-scrolling:touch;scrollbar-width:none;
+  position:relative;z-index:2;
+}
+.app-shots::-webkit-scrollbar{display:none;}
+.app-shot{flex:0 0 auto;width:min(220px,62vw);scroll-snap-align:center;}
+.app-shot-frame{
+  border-radius:26px;overflow:hidden;
+  border:1px solid var(--line-2);
+  background:#08080B;
+  box-shadow:0 24px 48px -16px rgba(0,0,0,.55),0 0 40px -12px var(--ice-soft);
+  aspect-ratio:9/18.5;
+}
+.app-shot-frame img{width:100%;height:100%;object-fit:cover;object-position:center top;}
+.app-shot-cap{
+  margin-top:14px;text-align:center;
+  font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-3);
+}
+@media(min-width:1240px){
+  .app-shots{justify-content:center;overflow:visible;margin:64px 0 0;padding:0;}
+  .app-shot{width:calc((100% - 72px)/5);}
+}
+
+/* Store badges — official Apple badge + Google Play teaser */
+.store-badges{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;}
+.store-badge{display:inline-flex;transition:transform .35s cubic-bezier(.2,.7,.2,1),opacity .35s;}
+.store-badge img{height:52px;width:auto;display:block;}
+.store-badge:hover{transform:translateY(-2px);opacity:.88;}
+.play-soon{
+  display:inline-flex;align-items:center;gap:9px;
+  height:52px;padding:0 18px;border-radius:9px;
+  border:1px solid var(--line-2);color:var(--ink-3);
+  font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  white-space:nowrap;
+}
+.play-soon svg{flex-shrink:0;opacity:.55;}
+
+/* Hero phone — real screenshot in the device frame (desktop only) */
+.hero-phone{display:none;}
+@media(min-width:900px){
+  .hero-phone{
+    display:flex;justify-content:center;align-items:center;
+    position:relative;
+  }
+}
 .phone-mock{
   width:260px;height:520px;
   background:linear-gradient(160deg,#1A1A22 0%,#0A0A0F 100%);
@@ -767,35 +810,11 @@ section{position:relative;z-index:2;}
     0 0 80px var(--ice-soft);
   position:relative;
 }
-.phone-screen{
+.phone-shot{
   width:100%;height:100%;
-  background:linear-gradient(180deg,#0A1420 0%,#040810 100%);
-  border-radius:30px;overflow:hidden;position:relative;
-  padding:32px 20px 20px;display:flex;flex-direction:column;
+  object-fit:cover;object-position:center top;
+  border-radius:30px;display:block;
 }
-.phone-notch{
-  position:absolute;top:8px;left:50%;transform:translateX(-50%);
-  width:80px;height:18px;background:#000;border-radius:100px;
-}
-.phone-status{
-  font-family:'Bebas Neue',sans-serif;font-size:13px;
-  color:var(--ink);letter-spacing:.14em;
-  margin-top:14px;margin-bottom:18px;
-  display:flex;justify-content:space-between;
-}
-.phone-status .ice-text{color:var(--ice);}
-.phone-card{
-  background:rgba(255,255,255,.04);
-  border:1px solid var(--line);border-radius:14px;
-  padding:14px;margin-bottom:10px;
-}
-.phone-card-tag{font-size:8px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ice);margin-bottom:6px;}
-.phone-card-title{font-size:13px;font-weight:600;color:var(--ink);line-height:1.3;margin-bottom:8px;}
-.phone-card-meta{display:flex;gap:12px;font-size:10px;color:var(--ink-3);}
-.phone-progress{margin-top:auto;padding-top:14px;border-top:1px solid var(--line);}
-.phone-progress-label{display:flex;justify-content:space-between;font-size:10px;color:var(--ink-3);letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px;}
-.phone-progress-bar{height:4px;background:var(--line);border-radius:100px;overflow:hidden;}
-.phone-progress-fill{height:100%;width:64%;background:linear-gradient(90deg,var(--ice),var(--warm));border-radius:100px;}
 .phone-floating{
   position:absolute;
   background:rgba(20,20,27,.95);backdrop-filter:blur(12px);
@@ -818,14 +837,11 @@ section{position:relative;z-index:2;}
 
 @media(min-width:900px){
   .app-section{padding:140px 40px;}
-  .app-grid{grid-template-columns:1.1fr .9fr;gap:80px;}
   .phone-mock{width:280px;height:560px;}
 }
 @media(min-width:1200px){
   .app-section{padding:160px 40px;}
-  .app-grid{gap:100px;}
   .phone-mock{width:300px;height:600px;}
-  .app-content h2{font-size:104px;}
 }
 
 /* RESULTS BAND */
@@ -1400,28 +1416,28 @@ section{position:relative;z-index:2;}
   <a href="#hero" class="nav-logo"><span class="dot"></span>ELITE HOCKEY DRILLS</a>
   <nav>
     <ul class="nav-links">
+      <li><a href="#app">The App</a></li>
       <li><a href="#about">Coach</a></li>
       <li><a href="#method">Method</a></li>
       <li><a href="#tiers">Programs</a></li>
       <li><a href="/library.html">Library</a></li>
       <li><a href="/articles.html">Articles</a></li>
-      <li><a href="#app">App</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
   </nav>
   <div class="nav-right">
-    <a href="#tiers" class="nav-cta">Get Started</a>
+    <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="nav-cta">Get the App</a>
     <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
       <span></span><span></span><span></span>
     </button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
+    <a href="#app">The App</a>
     <a href="#about">Coach</a>
     <a href="#method">Method</a>
     <a href="#tiers">Programs</a>
     <a href="/library.html">Library</a>
     <a href="/articles.html">Articles</a>
-    <a href="#app">App</a>
     <a href="#faq">FAQ</a>
     <a href="/api/restore">Restore Access</a>
   </div>
@@ -1430,18 +1446,14 @@ section{position:relative;z-index:2;}
 <section class="hero" id="hero">
   <div class="hero-bg"></div>
   <div class="hero-glow"></div>
-  <div class="hero-photo-desktop">
-    <img src="ehd_hero_medball.jpg" alt="Hockey player off-ice medicine ball training" />
-  </div>
   <div class="hero-content">
     <div class="hero-grid-inner">
       <div class="hero-text">
         <div class="hero-badges">
-          <div class="hero-status">Coach David Ciboch · M.Ed. Sport Science · National Team Coach</div>
+          <div class="hero-status">Now live on the App Store</div>
           <div class="hero-presale-pill">
             <span class="hero-presale-dot"></span>
-            <!-- Keep "Jul 1" in sync with the program-page countdown TARGET (e.g. program-9-11.html) when the start window moves. -->
-            Start by Jul 1 to finish before the season
+            Android — coming soon
           </div>
         </div>
         <h1 class="hero-h1 display">
@@ -1449,14 +1461,23 @@ section{position:relative;z-index:2;}
           <span class="line"><span class="accent serif">engineered</span> for <span class="ice">hockey.</span></span>
         </h1>
         <p class="hero-sub">
-          Faster. More explosive. Harder to play against. Off-ice training <strong>built around how hockey players actually move</strong> — not recycled gym workouts. In 8 weeks, you'll feel it in your first step and see it in your numbers.
+          The Elite Hockey Drills app builds your <strong>personalized off-ice program</strong> from your age, level, position, and schedule — then runs your whole season, with a demo video for every exercise. Built by a former national-team coach. <strong>Your first week is free.</strong>
         </p>
         <div class="hero-ctas">
-          <a href="#tiers" class="btn btn-primary">
-            Get Your Program — $79
+          <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary">
+            Start Your Free Week
             <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
-          <a href="survey.html" class="btn btn-ghost">Try Free Program First</a>
+          <a href="#app" class="btn btn-ghost">See Inside the App</a>
+        </div>
+        <div class="store-badges" style="justify-content:flex-start;margin:-40px 0 64px;">
+          <a class="store-badge" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" aria-label="Download Elite Hockey Drills on the App Store">
+            <img src="assets/app/app-store-badge.svg" alt="Download on the App Store" width="120" height="40" />
+          </a>
+          <span class="play-soon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3l14 9-14 9V3z"/></svg>
+            Google Play — coming soon
+          </span>
         </div>
         <div class="hero-stats">
           <div>
@@ -1472,11 +1493,90 @@ section{position:relative;z-index:2;}
             <div class="hero-stat-label">Pro Signings</div>
           </div>
           <div>
-            <div class="hero-stat-num display">30<span class="plus">+</span></div>
-            <div class="hero-stat-label">Countries</div>
+            <div class="hero-stat-num display">228<span class="plus">+</span></div>
+            <div class="hero-stat-label">Exercises in the App</div>
           </div>
         </div>
       </div>
+      <div class="hero-phone">
+        <div class="phone-mock">
+          <img class="phone-shot" src="assets/app/app-home.webp" alt="Elite Hockey Drills app — today's session on the home screen" width="640" height="1138" fetchpriority="high" />
+          <div class="phone-floating phone-float-1">Built around your season</div>
+          <div class="phone-floating phone-float-2">Video for every exercise</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="app-section" id="app">
+  <div class="app-bg-glow"></div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num serif">01 — The App</div>
+      <h2 class="sec-title">Built around <em>your season.</em></h2>
+      <p class="sec-sub">Answer a few questions and the app builds your off-ice program — scaled to your age, level, position, and schedule. Then it runs your season with you: pre-season, in-season, playoffs, game days.</p>
+    </div>
+
+    <div class="app-shots" aria-label="Screenshots from the Elite Hockey Drills app">
+      <div class="app-shot reveal">
+        <div class="app-shot-frame"><img src="assets/app/app-home.webp" width="640" height="1138" loading="lazy" alt="Home screen — today's session, streak, and season overview" /></div>
+        <div class="app-shot-cap">Today's Session</div>
+      </div>
+      <div class="app-shot reveal">
+        <div class="app-shot-frame"><img src="assets/app/app-program.webp" width="640" height="1387" loading="lazy" alt="My Program screen — periodized training blocks across the season" /></div>
+        <div class="app-shot-cap">Your Program</div>
+      </div>
+      <div class="app-shot reveal">
+        <div class="app-shot-frame"><img src="assets/app/app-training.webp" width="640" height="1138" loading="lazy" alt="Training screen — guided session with sets, reps, and demo videos" /></div>
+        <div class="app-shot-cap">Guided Training</div>
+      </div>
+      <div class="app-shot reveal">
+        <div class="app-shot-frame"><img src="assets/app/app-gameday.webp" width="640" height="1387" loading="lazy" alt="Game Day screen — pre-game activation and preparation protocol" /></div>
+        <div class="app-shot-cap">Game-Day Mode</div>
+      </div>
+      <div class="app-shot reveal">
+        <div class="app-shot-frame"><img src="assets/app/app-progress.webp" width="640" height="1138" loading="lazy" alt="Progress screen — history, trends, and personal records" /></div>
+        <div class="app-shot-cap">Progress &amp; PRs</div>
+      </div>
+    </div>
+
+    <div class="app-features-wrap reveal">
+      <ul class="app-features">
+        <li>Personalized program — built from your age, level &amp; position</li>
+        <li>Season-aware — adapts to missed sessions &amp; game days</li>
+        <li>Demo video for every exercise</li>
+        <li>Full periodization — strength, power &amp; peak blocks</li>
+        <li>Progress tracking, streaks &amp; personal records</li>
+        <li>Rebuild your program anytime your goals change</li>
+      </ul>
+    </div>
+
+    <div class="app-offer reveal">
+      <div class="app-pricing-row">
+        <div class="app-price-block">
+          <div class="num display">7 <span>days</span></div>
+          <div class="lbl">Free Trial</div>
+        </div>
+        <div class="app-price-block">
+          <div class="num display">$17.99<span>/mo</span></div>
+          <div class="lbl">Monthly</div>
+        </div>
+        <div class="app-price-block">
+          <div class="num display">$99.90<span>/yr</span></div>
+          <div class="lbl">Annual · Save 54%</div>
+        </div>
+      </div>
+      <div class="store-badges">
+        <a class="store-badge" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" aria-label="Download Elite Hockey Drills on the App Store">
+          <img src="assets/app/app-store-badge.svg" alt="Download on the App Store" width="120" height="40" />
+        </a>
+        <span class="play-soon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3l14 9-14 9V3z"/></svg>
+          Google Play — coming soon
+        </span>
+      </div>
+      <p class="app-trial-note">Free to download · One app for ages 9–11 through 40+ · Cancel anytime during the trial</p>
     </div>
   </div>
 </section>
@@ -1497,7 +1597,7 @@ section{position:relative;z-index:2;}
       </div>
 
       <div class="about-content reveal">
-        <div class="sec-num serif">01 — The Coach</div>
+        <div class="sec-num serif">02 — The Coach</div>
         <h2 class="about-name display">
           David Ciboch
           <em class="serif">M.Ed. Sport Science</em>
@@ -1527,7 +1627,7 @@ section{position:relative;z-index:2;}
 <section class="method" id="method">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-num serif">02 — The Method</div>
+      <div class="sec-num serif">03 — The Method</div>
       <h2 class="sec-title">Built on <em>science.</em><br>Tested by hockey.</h2>
       <p class="sec-sub">Most off-ice programs are recycled gym templates. Mine are designed from the ground up around how hockey players actually move, fatigue, and produce force.</p>
     </div>
@@ -1554,9 +1654,9 @@ section{position:relative;z-index:2;}
 <section class="tiers" id="tiers">
   <div class="wrap tiers-inner">
     <div class="sec-head reveal">
-      <div class="sec-num serif">03 — Programs</div>
+      <div class="sec-num serif">04 — Programs</div>
       <h2 class="sec-title">Built for your <em>age.</em></h2>
-      <p class="sec-sub">8-week off-ice programs designed for every stage of a hockey player's development. <strong style="color:var(--warm);">Founding launch pricing — $79 each, half off the $159 regular price.</strong></p>
+      <p class="sec-sub">Prefer a one-time purchase to a subscription? The classic 8-week off-ice programs are yours forever. <strong style="color:var(--warm);">$79 each, half off the $159 regular price.</strong></p>
       <p class="sec-sub" style="margin-top:14px;font-size:14px;">Already purchased? <a href="/api/restore" style="color:var(--ice);font-weight:600;border-bottom:1px solid var(--ice-line);">Restore your access &rarr;</a></p>
     </div>
 
@@ -1721,81 +1821,10 @@ section{position:relative;z-index:2;}
       <button class="tiers-dot" type="button" aria-label="Go to program 4"></button>
       <button class="tiers-dot" type="button" aria-label="Go to program 5"></button>
     </div>
-  </div>
-</section>
 
-<section class="app-section" id="app">
-  <div class="app-bg-glow"></div>
-  <div class="wrap">
-    <div class="app-grid">
-      <div class="app-content reveal">
-        <div class="eyebrow ice">04 — Coming Soon</div>
-        <h2 class="display">The <em>Elite</em><br>Hockey Drills App.</h2>
-        <p>The first off-ice training app built specifically for hockey players. <strong>228 exercises</strong> across <strong>15 categories</strong>. Full structured programs, progress tracking, weekly new content. All from a certified sport scientist who coaches hockey.</p>
-
-        <ul class="app-features">
-          <li>228+ hockey exercises</li>
-          <li>15 training categories</li>
-          <li>Structured programs</li>
-          <li>Progress tracking</li>
-          <li>Weekly new content</li>
-          <li>Video demos for every exercise</li>
-        </ul>
-
-        <div class="app-pricing-row">
-          <div class="app-price-block">
-            <div class="num display">$9.99<span>/mo</span></div>
-            <div class="lbl">Monthly</div>
-          </div>
-          <div class="app-price-block">
-            <div class="num display">$69<span>/yr</span></div>
-            <div class="lbl">Annual · Save 42%</div>
-          </div>
-          <div class="app-price-block">
-            <div class="num display">$49<span>/yr</span></div>
-            <div class="lbl">Founders · Limited</div>
-          </div>
-        </div>
-
-        <a href="#contact" class="btn btn-primary">
-          Join the Waitlist
-          <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <div class="app-visual reveal">
-        <div class="phone-mock">
-          <div class="phone-screen">
-            <div class="phone-notch"></div>
-            <div class="phone-status">
-              <span>WEEK 4</span>
-              <span class="ice-text">DAY 03</span>
-            </div>
-            <div class="phone-card">
-              <div class="phone-card-tag">Power Block</div>
-              <div class="phone-card-title">Banded Squat Jump</div>
-              <div class="phone-card-meta"><span>4 × 5</span><span>·</span><span>RPE 7</span></div>
-            </div>
-            <div class="phone-card">
-              <div class="phone-card-tag">Strength</div>
-              <div class="phone-card-title">Rear-Foot Elevated Split Squat</div>
-              <div class="phone-card-meta"><span>3 × 8</span><span>·</span><span>each side</span></div>
-            </div>
-            <div class="phone-card">
-              <div class="phone-card-tag">Rotational</div>
-              <div class="phone-card-title">Banded Chop &amp; Lift</div>
-              <div class="phone-card-meta"><span>3 × 10</span><span>·</span><span>each side</span></div>
-            </div>
-            <div class="phone-progress">
-              <div class="phone-progress-label"><span>Session</span><span>64%</span></div>
-              <div class="phone-progress-bar"><div class="phone-progress-fill"></div></div>
-            </div>
-          </div>
-          <div class="phone-floating phone-float-1">228 exercises</div>
-          <div class="phone-floating phone-float-2">15 categories</div>
-        </div>
-      </div>
-    </div>
+    <p class="sec-sub reveal" style="text-align:center;max-width:none;margin:40px auto 0;">
+      Want the whole season instead of one block? <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" style="color:var(--ice);font-weight:600;border-bottom:1px solid var(--ice-line);">Get the app — your first week is free &rarr;</a>
+    </p>
   </div>
 </section>
 
@@ -1873,45 +1902,52 @@ section{position:relative;z-index:2;}
     <div class="faq-list">
       <div class="faq-item">
         <button class="faq-q-btn" onclick="toggleFaq(this)">
-          <span>Who are these programs for?</span>
+          <span>How does the app's free trial work?</span>
           <span class="faq-icon"></span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">Any hockey player serious about getting better on the ice — from competitive youth players to adult amateurs and juniors. Programs include progressions so beginners and advanced players both benefit.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Download the app free from the App Store, answer a few questions, and your personalized program is ready. The 7-day free trial unlocks everything — the full periodized season, every demo video, progress tracking. Cancel anytime before the trial ends and you pay nothing. After that it's $17.99/month or $99.90/year (about $8.33/month).</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q-btn" onclick="toggleFaq(this)">
+          <span>App subscription or $79 program — which should I get?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">The app is the full experience: a program personalized to you, season-aware planning that adapts to missed sessions and game days, progress tracking, and it keeps going all year. The $79 programs are fixed 8-week blocks you buy once and keep forever — great if you want one focused block with no subscription. If you're unsure, start the app's free trial first; it costs nothing to see the difference.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q-btn" onclick="toggleFaq(this)">
+          <span>When is the Android version coming?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Soon — the Google Play version is in final preparation. Follow <a href="https://instagram.com/elite_hockey_drills" target="_blank" rel="noopener" style="color:var(--ice);">@elite_hockey_drills</a> to catch the launch, or grab the free 5-day program below and we'll email you when it drops.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q-btn" onclick="toggleFaq(this)">
+          <span>Who is this for?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Any hockey player serious about getting better on the ice — from competitive youth players to adult amateurs and juniors. One app covers every age band from 9–11 through 40+, and every exercise scales easier or harder to match your level.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q-btn" onclick="toggleFaq(this)">
           <span>Do I need a gym membership?</span>
           <span class="faq-icon"></span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">The free 5-day program is fully bodyweight. The paid 8-week programs use basic equipment that varies by age tier — most run on bands, a box, and bodyweight, with some tiers adding light dumbbells or a pull-up bar. No barbells or gym required. Each program lists its exact kit upfront.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">No. Training runs on bands, a box, and bodyweight, with light dumbbells or a pull-up bar in some age tiers. No barbells or gym required — everything is built to be done at home.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q-btn" onclick="toggleFaq(this)">
           <span>Is there a refund policy?</span>
           <span class="faq-icon"></span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">Yes — 30-day money-back guarantee on all paid programs. If you're not happy with it, just email and we'll sort it. No hassle.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q-btn" onclick="toggleFaq(this)">
-          <span>What format do programs come in?</span>
-          <span class="faq-icon"></span>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">A clean, interactive web program you open on any phone, tablet, or laptop — with a demo video built into every exercise, plus rep/set schemes and coaching notes for each session. No PDF to lose, no app to install. Buy once, it's yours forever.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q-btn" onclick="toggleFaq(this)">
-          <span>What is the Elite Hockey Drills App?</span>
-          <span class="faq-icon"></span>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">An off-ice training app built specifically for hockey players — 228+ exercises across 15 categories, full structured programs, and progress tracking. Launching soon. Join the waitlist for founders pricing.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">The app's 7-day free trial means you try everything before paying a cent, and subscriptions are managed and cancelable anytime through your App Store account. The one-time $79 programs come with a 30-day money-back guarantee — if you're not happy, just email and we'll sort it.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q-btn" onclick="toggleFaq(this)">
           <span>Do you offer 1-on-1 coaching?</span>
           <span class="faq-icon"></span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">Not currently — the programs and the upcoming app are the focus. They're built to deliver the same systematic approach used with national-level athletes, just in a scalable format.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Not currently — the app and the programs are the focus. They're built to deliver the same systematic approach used with national-level athletes, just in a scalable format.</div></div>
       </div>
     </div>
   </div>
@@ -1921,14 +1957,23 @@ section{position:relative;z-index:2;}
   <div class="final-glow"></div>
   <div class="final-content">
     <div class="reveal">
-      <div class="eyebrow ice" style="margin-bottom:18px;">Still on the fence?</div>
-      <h2 class="display">Try it <em>free</em><br>before you commit.</h2>
-      <p>Take the 60-second quiz. We'll build you a personalized 5-day off-ice program based on your age, level, and equipment. No card, no commitment — just a real taste of how we train.</p>
-      <a href="survey.html" class="btn btn-primary final-cta-btn">
-        Get Your Free Program
+      <div class="eyebrow ice" style="margin-bottom:18px;">Start tonight</div>
+      <h2 class="display">Your first week<br>is <em>free.</em></h2>
+      <p>Download the app, answer a few questions, and your personalized off-ice program is ready before your next practice. Cancel anytime during the trial — pay nothing.</p>
+      <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary final-cta-btn">
+        Start Your Free Week
         <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
-      <p class="final-note">Or email <a href="mailto:elitehockeydrills@gmail.com" style="color:var(--ice);">elitehockeydrills@gmail.com</a></p>
+      <div class="store-badges" style="margin-top:22px;">
+        <a class="store-badge" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" aria-label="Download Elite Hockey Drills on the App Store">
+          <img src="assets/app/app-store-badge.svg" alt="Download on the App Store" width="120" height="40" />
+        </a>
+        <span class="play-soon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3l14 9-14 9V3z"/></svg>
+          Google Play — coming soon
+        </span>
+      </div>
+      <p class="final-note" style="margin-top:24px;">Not ready for the app? <a href="survey.html" style="color:var(--ice);">Take the 60-second quiz</a> for a free 5-day program — no card needed.</p>
     </div>
   </div>
 </section>
@@ -1940,11 +1985,11 @@ section{position:relative;z-index:2;}
       <p>Science-backed off-ice training for hockey players. Built by a certified sport scientist and national team coach.</p>
     </div>
     <div class="footer-col">
-      <h4>Programs</h4>
+      <h4>Train</h4>
       <ul>
-        <li><a href="survey.html">Free 5-Day PDF</a></li>
+        <li><a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275">The App — iOS</a></li>
         <li><a href="#tiers">8-Week Programs</a></li>
-        <li><a href="#app">App Waitlist</a></li>
+        <li><a href="survey.html">Free 5-Day Program</a></li>
         <li><a href="/api/restore">Restore Access</a></li>
       </ul>
     </div>
@@ -1974,8 +2019,8 @@ section{position:relative;z-index:2;}
 </footer>
 
 <div class="mobile-bar" id="mobileBar">
-  <a href="#tiers" class="btn btn-primary">See Programs</a>
-  <a href="survey.html" class="btn btn-ghost mobile-bar-ghost">Free 5-Day Program</a>
+  <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary">Start Free Trial</a>
+  <a href="#tiers" class="btn btn-ghost mobile-bar-ghost">See Programs</a>
 </div>
 
 <script>
