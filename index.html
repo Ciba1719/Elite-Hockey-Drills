@@ -818,7 +818,17 @@ section{position:relative;z-index:2;}
     0 0 0 1px rgba(255,255,255,.03),
     0 0 80px var(--ice-soft);
   position:relative;
+  overflow:hidden;
 }
+/* Glass sheen — a light streak sweeps the phone every few seconds */
+.phone-mock::after{
+  content:'';position:absolute;top:-20%;bottom:-20%;left:0;width:55%;
+  background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.10) 50%,transparent 70%);
+  transform:translateX(-140%);
+  animation:phoneSheen 7.5s ease-in-out 2s infinite;
+  pointer-events:none;z-index:2;
+}
+@keyframes phoneSheen{0%,52%{transform:translateX(-140%);}68%,100%{transform:translateX(320%);}}
 .phone-shot{
   width:100%;height:100%;
   object-fit:cover;object-position:center top;
@@ -829,7 +839,7 @@ section{position:relative;z-index:2;}
    All transform/opacity only (GPU-cheap), disabled under reduced motion. */
 @keyframes riseIn{from{opacity:0;transform:translateY(26px);}to{opacity:1;transform:translateY(0);}}
 .hero-badges{animation:riseIn .7s cubic-bezier(.2,.7,.2,1) .05s both;}
-.hero-h1 .line{animation:riseIn .85s cubic-bezier(.2,.7,.2,1) both;}
+.hero-h1 .line{animation:riseBlur .95s cubic-bezier(.2,.7,.2,1) both;}
 .hero-h1 .line:nth-child(1){animation-delay:.14s;}
 .hero-h1 .line:nth-child(2){animation-delay:.26s;}
 .hero-sub{animation:riseIn .85s cubic-bezier(.2,.7,.2,1) .38s both;}
@@ -1431,9 +1441,123 @@ section{position:relative;z-index:2;}
 .tier-features li,.prog-list li,.faq-q{color:#C8CCD3;}
 .hero-h1,.sec-title,.hero-stat-num,.tier-headline,.testi-name{font-feature-settings:"ss01","kern","liga";}
 .serif,em{font-feature-settings:"liga","dlig","kern";}
+
+/* =========================================================
+   PREMIUM LAYER 2 — visible luxury motion
+   ========================================================= */
+
+/* Scroll progress hairline */
+.scroll-progress{
+  position:fixed;top:0;left:0;height:2px;width:0%;
+  background:linear-gradient(90deg,var(--warm),var(--ice));
+  z-index:120;pointer-events:none;
+}
+
+/* Blur-to-sharp rise for the hero headline */
+@keyframes riseBlur{
+  from{opacity:0;transform:translateY(34px);filter:blur(10px);}
+  to{opacity:1;transform:translateY(0);filter:blur(0);}
+}
+
+/* Shimmering ice gradient on "hockey." */
+@supports(-webkit-background-clip:text){
+  .hero-h1 .ice{
+    background:linear-gradient(100deg,#4FA8DE 0%,#A5DAFA 30%,#5DB4E5 55%,#CBEBFF 80%,#4FA8DE 100%);
+    background-size:220% 100%;
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;color:transparent;
+    animation:iceSheen 7s linear infinite;
+  }
+}
+@keyframes iceSheen{to{background-position:220% 0;}}
+
+/* Aurora orbs drifting through the hero */
+.hero-aurora{position:absolute;border-radius:50%;pointer-events:none;filter:blur(60px);z-index:0;}
+.hero-aurora-1{
+  width:520px;height:520px;left:-160px;bottom:-180px;
+  background:radial-gradient(closest-side,rgba(232,183,119,.10),transparent 70%);
+  animation:aurora1 26s ease-in-out infinite alternate;
+}
+.hero-aurora-2{
+  width:380px;height:380px;left:32%;top:-140px;
+  background:radial-gradient(closest-side,rgba(93,180,229,.12),transparent 70%);
+  animation:aurora2 30s ease-in-out infinite alternate;
+}
+@keyframes aurora1{to{transform:translate(70px,-40px);}}
+@keyframes aurora2{to{transform:translate(-60px,50px);}}
+
+/* Marquee ribbon */
+.marquee{
+  position:relative;z-index:2;overflow:hidden;
+  background:var(--bg-2);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:16px 0;
+}
+.marquee::before,.marquee::after{
+  content:'';position:absolute;top:0;bottom:0;width:90px;z-index:2;pointer-events:none;
+}
+.marquee::before{left:0;background:linear-gradient(90deg,var(--bg-2),transparent);}
+.marquee::after{right:0;background:linear-gradient(270deg,var(--bg-2),transparent);}
+.marquee-track{display:flex;width:max-content;animation:marqueeScroll 38s linear infinite;}
+.marquee:hover .marquee-track{animation-play-state:paused;}
+.marquee-seq{
+  display:flex;align-items:center;gap:30px;padding-right:30px;
+  font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--ink-2);white-space:nowrap;
+}
+.marquee-seq i{color:var(--warm);font-style:normal;font-size:10px;}
+@keyframes marqueeScroll{to{transform:translateX(-50%);}}
+
+/* Gold CTA breathing glow — the money button asks for the tap */
+@keyframes ctaBreath{
+  0%,100%{box-shadow:inset 0 1px 0 rgba(232,183,119,.08),inset 0 -1px 0 rgba(0,0,0,.4),0 1px 2px rgba(0,0,0,.5);}
+  50%{box-shadow:inset 0 1px 0 rgba(232,183,119,.14),inset 0 -1px 0 rgba(0,0,0,.4),0 1px 2px rgba(0,0,0,.5),0 0 46px -6px rgba(232,183,119,.42);}
+}
+.hero-ctas .btn-primary{animation:ctaBreath 5s ease-in-out 1.6s infinite;}
+.mobile-bar .btn-primary{animation:ctaBreath 5s ease-in-out infinite;}
+
+/* Section headers — staggered cascade with blur-sharpen on the title */
+.sec-head.reveal .sec-num{
+  opacity:0;transform:translateY(18px);
+  transition:opacity .7s cubic-bezier(.2,.7,.2,1) .05s,transform .7s cubic-bezier(.2,.7,.2,1) .05s;
+}
+.sec-head.reveal .sec-title{
+  opacity:0;transform:translateY(36px);filter:blur(7px);
+  transition:opacity .85s cubic-bezier(.2,.7,.2,1) .14s,transform .85s cubic-bezier(.2,.7,.2,1) .14s,filter .85s ease .14s;
+}
+.sec-head.reveal .sec-sub{
+  opacity:0;transform:translateY(22px);
+  transition:opacity .85s cubic-bezier(.2,.7,.2,1) .3s,transform .85s cubic-bezier(.2,.7,.2,1) .3s;
+}
+.sec-head.reveal.in .sec-num,
+.sec-head.reveal.in .sec-title,
+.sec-head.reveal.in .sec-sub{opacity:1;transform:none;filter:none;}
+
+/* App screenshot gallery — arced layout + independent idle float (desktop) */
+@media(min-width:1240px){
+  .app-shot:nth-child(1),.app-shot:nth-child(5){margin-top:30px;}
+  .app-shot:nth-child(2),.app-shot:nth-child(4){margin-top:12px;}
+  .app-shots .app-shot{animation:shotFloat 7s ease-in-out infinite;}
+  .app-shot:nth-child(2){animation-delay:.9s;}
+  .app-shot:nth-child(3){animation-delay:1.8s;}
+  .app-shot:nth-child(4){animation-delay:2.7s;}
+  .app-shot:nth-child(5){animation-delay:3.6s;}
+}
+@keyframes shotFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-9px);}}
+
+@media(prefers-reduced-motion:reduce){
+  .marquee-track,.phone-mock::after,.hero-ctas .btn-primary,.mobile-bar .btn-primary,
+  .hero-aurora-1,.hero-aurora-2,.app-shots .app-shot,.hero-h1 .ice{animation:none;}
+  .sec-head.reveal .sec-num,.sec-head.reveal .sec-title,.sec-head.reveal .sec-sub{
+    opacity:1;transform:none;filter:none;transition:none;
+  }
+  .scroll-progress{display:none;}
+}
 </style>
 </head>
 <body>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
 <header class="nav" id="nav">
   <a href="#hero" class="nav-logo"><span class="dot"></span>ELITE HOCKEY DRILLS</a>
@@ -1469,6 +1593,8 @@ section{position:relative;z-index:2;}
 <section class="hero" id="hero">
   <div class="hero-bg"></div>
   <div class="hero-glow"></div>
+  <div class="hero-aurora hero-aurora-1" aria-hidden="true"></div>
+  <div class="hero-aurora hero-aurora-2" aria-hidden="true"></div>
   <div class="hero-content">
     <div class="hero-grid-inner">
       <div class="hero-text">
@@ -1529,6 +1655,27 @@ section{position:relative;z-index:2;}
     </div>
   </div>
 </section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-seq">
+      <span>Personalized Program</span><i>✦</i>
+      <span>Built Around Your Season</span><i>✦</i>
+      <span>Video for Every Exercise</span><i>✦</i>
+      <span>Game-Day Mode</span><i>✦</i>
+      <span>Progress &amp; PRs</span><i>✦</i>
+      <span>7-Day Free Trial</span><i>✦</i>
+    </span>
+    <span class="marquee-seq">
+      <span>Personalized Program</span><i>✦</i>
+      <span>Built Around Your Season</span><i>✦</i>
+      <span>Video for Every Exercise</span><i>✦</i>
+      <span>Game-Day Mode</span><i>✦</i>
+      <span>Progress &amp; PRs</span><i>✦</i>
+      <span>7-Day Free Trial</span><i>✦</i>
+    </span>
+  </div>
+</div>
 
 <section class="app-section" id="app">
   <div class="app-bg-glow"></div>
@@ -2057,11 +2204,16 @@ function setMenu(open){
 }
 navToggle.addEventListener('click', ()=> setMenu(!mobileMenu.classList.contains('open')));
 mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=> setMenu(false)));
+const scrollProgress = document.getElementById('scrollProgress');
 window.addEventListener('scroll', ()=>{
   const y = window.scrollY;
   if(y > 24) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
   if(y > 600) mobileBar.classList.add('show'); else mobileBar.classList.remove('show');
-});
+  if(scrollProgress){
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    scrollProgress.style.width = (max > 0 ? (y / max) * 100 : 0) + '%';
+  }
+}, { passive: true });
 
 const io = new IntersectionObserver((entries)=>{
   entries.forEach((entry,i)=>{
