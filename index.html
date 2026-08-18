@@ -755,33 +755,89 @@ section{position:relative;z-index:2;}
 /* ===== SCROLL-DRIVEN APP TOUR — the phone pins, the app plays through it ===== */
 .tour{position:relative;height:480vh;z-index:2;}
 .tour-pin{position:sticky;top:0;height:100vh;display:flex;align-items:center;overflow:hidden;}
+.tour-pin::before{
+  content:'';position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 90% at 50% 50%,transparent 52%,rgba(0,0,0,.55) 100%);
+}
+.tour-pin::after{
+  content:'';position:absolute;inset:-40%;pointer-events:none;z-index:6;opacity:.045;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='240' height='240' filter='url(%23n)' opacity='.6'/></svg>");
+}
 .tour-inner{
+  position:relative;z-index:1;
   width:100%;max-width:1240px;margin:0 auto;padding:0 24px;
-  display:flex;flex-direction:column-reverse;align-items:center;gap:30px;
+  display:flex;flex-direction:column-reverse;align-items:center;gap:34px;
+  perspective:1200px;
+}
+/* — device stage: ambient light, ground glow, phone, floating UI — */
+.tour-stage{position:relative;flex-shrink:0;transform-style:preserve-3d;will-change:transform;}
+.tour-stage::before{
+  content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:190%;aspect-ratio:1/1.1;pointer-events:none;z-index:0;
+  background:radial-gradient(closest-side,rgba(93,180,229,.17),rgba(93,180,229,.05) 55%,transparent 75%);
+}
+.tour-amb{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:175%;aspect-ratio:1/1.15;pointer-events:none;z-index:0;
+  background:url('assets/app/tour-ambient.webp') center/cover no-repeat;
+  opacity:.65;
+  -webkit-mask-image:radial-gradient(closest-side,#000 28%,transparent 76%);
+  mask-image:radial-gradient(closest-side,#000 28%,transparent 76%);
+}
+.tour-ground{
+  position:absolute;left:50%;bottom:-46px;transform:translateX(-50%);
+  width:155%;height:120px;pointer-events:none;z-index:0;
+  background:radial-gradient(50% 100% at 50% 0%,rgba(93,180,229,.30),transparent 72%);
 }
 .tour-device{
-  position:relative;flex-shrink:0;
-  height:min(54vh,540px);aspect-ratio:9/19;
-  background:linear-gradient(160deg,#1A1A22 0%,#0A0A0F 100%);
-  border-radius:34px;border:1px solid var(--line-2);padding:7px;
+  position:relative;z-index:1;
+  height:min(58vh,560px);aspect-ratio:9/19.4;
+  background:linear-gradient(160deg,#25252E 0%,#0B0B10 52%,#191921 100%);
+  border-radius:46px;padding:10px;
+  border:1px solid rgba(255,255,255,.10);
   box-shadow:
-    0 40px 80px -20px rgba(0,0,0,.6),
-    0 0 0 1px rgba(255,255,255,.03),
-    0 0 90px var(--ice-soft);
+    inset 0 1px 0 rgba(255,255,255,.10),
+    inset 0 -1px 0 rgba(0,0,0,.65),
+    0 60px 120px -28px rgba(0,0,0,.78),
+    0 24px 48px -16px rgba(0,0,0,.6),
+    0 0 130px rgba(93,180,229,.10);
 }
+.tour-device::before,.tour-device::after{
+  content:'';position:absolute;width:3px;border-radius:2px;
+  background:linear-gradient(90deg,#2C2C36,#0F0F14);
+}
+.tour-device::before{right:-3px;top:21%;height:68px;}
+.tour-device::after{left:-3px;top:17%;height:112px;background:linear-gradient(270deg,#2C2C36,#0F0F14);}
 .tour-screen{
-  position:absolute;inset:7px;
-  width:calc(100% - 14px);height:calc(100% - 14px);
-  object-fit:contain;object-position:center;border-radius:27px;
+  position:absolute;inset:10px;
+  width:calc(100% - 20px);height:calc(100% - 20px);
+  object-fit:cover;object-position:center top;border-radius:36px;
+  outline:1px solid rgba(255,255,255,.05);outline-offset:-1px;
   opacity:0;transform:translateY(16px) scale(.98);
   transition:opacity .55s cubic-bezier(.2,.7,.2,1),transform .55s cubic-bezier(.2,.7,.2,1);
 }
 .tour-screen.on{opacity:1;transform:none;}
-.tour-copy{text-align:center;max-width:520px;}
-.tour-count{
-  font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:.3em;
-  color:var(--ice);margin-bottom:14px;
+/* real UI cards floating out of the phone */
+.tour-callout{
+  position:absolute;z-index:2;pointer-events:none;
+  border-radius:16px;overflow:hidden;
+  border:1px solid rgba(255,255,255,.10);
+  background:#101318;
+  box-shadow:0 30px 60px -16px rgba(0,0,0,.8),0 10px 26px rgba(0,0,0,.5),0 0 44px rgba(93,180,229,.08);
+  opacity:0;transform:translateY(20px) scale(.94);
+  transition:opacity .5s cubic-bezier(.2,.7,.2,1) .16s,transform .5s cubic-bezier(.2,.7,.2,1) .16s;
 }
+.tour-callout img{display:block;width:100%;height:auto;}
+.tour-callout.on{opacity:1;transform:none;}
+@keyframes calloutFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-9px);}}
+.tour-callout.on img{animation:calloutFloat 7s ease-in-out 1.2s infinite;}
+.tour-callout.c1{width:190px;right:-64px;bottom:9%;}
+.tour-callout.c2{width:296px;left:-96px;top:22%;}
+.tour-callout.c3{width:300px;right:-96px;top:16%;}
+.tour-callout.c4{width:312px;left:-104px;top:55%;}
+.tour-callout.c5{width:190px;left:-88px;top:13%;}
+/* — copy column — */
+.tour-copy{position:relative;z-index:1;text-align:center;max-width:520px;width:100%;}
 .tour-steps{display:grid;}
 .tour-step{
   grid-area:1/1;opacity:0;transform:translateY(18px);
@@ -789,24 +845,47 @@ section{position:relative;z-index:2;}
   pointer-events:none;
 }
 .tour-step.on{opacity:1;transform:none;}
-.tour-step h3{font-size:clamp(30px,6vw,46px);line-height:1;letter-spacing:.01em;margin-bottom:12px;}
-.tour-step h3 em{color:var(--ice);}
-.tour-step p{color:#C8CCD3;font-size:15.5px;line-height:1.65;max-width:440px;margin:0 auto;}
-.tour-rail{display:flex;justify-content:center;gap:8px;margin-top:24px;}
-.tour-tick{
-  width:34px;height:3px;border-radius:99px;background:var(--line-2);
-  transition:background .4s ease,box-shadow .4s ease;
+.tour-eyebrow{
+  font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--ice);
+  font-weight:700;margin-bottom:16px;
+  display:flex;align-items:center;gap:14px;justify-content:center;
 }
-.tour-tick.on{background:var(--ice);box-shadow:0 0 12px var(--ice-soft);}
+.tour-eyebrow::after{content:'';height:1px;width:46px;background:linear-gradient(90deg,var(--ice),transparent);}
+.tour-step h3{font-size:clamp(32px,4.8vw,52px);line-height:1;letter-spacing:.01em;margin-bottom:14px;}
+.tour-step h3 em{color:var(--ice);}
+.tour-step p{color:#C8CCD3;font-size:15.5px;line-height:1.65;max-width:460px;margin:0 auto;}
+.tour-specs{margin-top:28px;border-top:1px solid var(--line-2);text-align:left;max-width:460px;margin-left:auto;margin-right:auto;}
+.tour-spec{
+  display:flex;justify-content:space-between;gap:20px;align-items:baseline;
+  padding:12px 0;border-bottom:1px solid var(--line-2);
+}
+.tour-spec b{
+  font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);
+  font-weight:700;white-space:nowrap;
+}
+.tour-spec span{font-size:14.5px;color:var(--ink);text-align:right;line-height:1.45;}
+.tour-rail{display:flex;justify-content:center;gap:8px;margin-top:26px;}
+.tour-tick{
+  width:30px;height:3px;border-radius:99px;background:var(--line-2);
+  transition:background .4s ease,box-shadow .4s ease,width .4s ease;
+}
+.tour-tick.on{background:var(--ice);box-shadow:0 0 12px var(--ice-soft);width:44px;}
 @media(min-width:900px){
-  .tour-inner{flex-direction:row;justify-content:space-between;gap:60px;}
+  .tour-inner{flex-direction:row;justify-content:space-between;gap:80px;}
   .tour-copy{text-align:left;}
+  .tour-eyebrow{justify-content:flex-start;}
   .tour-step p{margin:0;}
+  .tour-specs{margin-left:0;margin-right:0;}
   .tour-rail{justify-content:flex-start;}
-  .tour-device{height:min(74vh,620px);}
+  .tour-device{height:min(80vh,690px);}
+}
+@media(max-width:899px){
+  .tour-callout{display:none;}
+  .tour-amb{opacity:.4;}
 }
 @media(prefers-reduced-motion:reduce){
-  .tour-screen,.tour-step{transition:none;}
+  .tour-screen,.tour-step,.tour-callout{transition:none;}
+  .tour-callout.on img{animation:none;}
 }
 
 /* ===== 3D TILT — hero phone tracks the cursor ===== */
@@ -1715,39 +1794,77 @@ section{position:relative;z-index:2;}
     <div class="tour-pin">
       <div class="tour-inner">
         <div class="tour-copy">
-          <div class="tour-count"><span id="tourNum">01</span> / 05</div>
           <div class="tour-steps">
             <div class="tour-step on">
+              <div class="tour-eyebrow">01 · Home</div>
               <h3 class="display">Today's session, <em class="serif">ready.</em></h3>
               <p>Open the app and the day's work is already chosen — matched to your age, level, position, and the week of your season.</p>
+              <div class="tour-specs">
+                <div class="tour-spec"><b>Session</b><span>45–60 min · built for the day you're in</span></div>
+                <div class="tour-spec"><b>Schedule</b><span>Planned around ice time and games</span></div>
+                <div class="tour-spec"><b>Streaks</b><span>Daily targets · weekly session tracker</span></div>
+              </div>
             </div>
             <div class="tour-step">
+              <div class="tour-eyebrow">02 · My Program</div>
               <h3 class="display">A season with <em class="serif">a plan.</em></h3>
               <p>Strength, power, peak — your whole year in periodized blocks. Every week exists for a reason.</p>
+              <div class="tour-specs">
+                <div class="tour-spec"><b>This week</b><span>Five sessions, planned in order</span></div>
+                <div class="tour-spec"><b>Blocks</b><span>Foundation → Strength → Power → Peak</span></div>
+                <div class="tour-spec"><b>Deload</b><span>Every fourth week, automatic</span></div>
+              </div>
             </div>
             <div class="tour-step">
+              <div class="tour-eyebrow">03 · Training</div>
               <h3 class="display">Coached, <em class="serif">rep by rep.</em></h3>
               <p>Sets, reps, tempo, rest — every session guided, with a demo video for every exercise.</p>
+              <div class="tour-specs">
+                <div class="tour-spec"><b>Targets</b><span>Sets × reps · tempo · rest · RPE</span></div>
+                <div class="tour-spec"><b>Video</b><span>A demo for every exercise</span></div>
+                <div class="tour-spec"><b>Logging</b><span>One tap per set — anchors your loads</span></div>
+              </div>
             </div>
             <div class="tour-step">
+              <div class="tour-eyebrow">04 · Game Day</div>
               <h3 class="display">Game day, <em class="serif">handled.</em></h3>
               <p>Game tomorrow? The app swaps in activation and prep — you show up primed, never heavy-legged.</p>
+              <div class="tour-specs">
+                <div class="tour-spec"><b>Pre-game</b><span>Meal → snack → activation → focus</span></div>
+                <div class="tour-spec"><b>Timing</b><span>Counts back from puck drop</span></div>
+                <div class="tour-spec"><b>Day after</b><span>Neural priming to reset fast</span></div>
+              </div>
             </div>
             <div class="tour-step">
+              <div class="tour-eyebrow">05 · Progress</div>
               <h3 class="display">Proof you're <em class="serif">faster.</em></h3>
               <p>Streaks, trends, and personal records — watch the work show up in numbers.</p>
+              <div class="tour-specs">
+                <div class="tour-spec"><b>Baselines</b><span>Six tests · the ones combines use</span></div>
+                <div class="tour-spec"><b>Records</b><span>PRs, streaks, session history</span></div>
+                <div class="tour-spec"><b>Trend</b><span>Workouts per week, volume over time</span></div>
+              </div>
             </div>
           </div>
           <div class="tour-rail" aria-hidden="true">
             <span class="tour-tick on"></span><span class="tour-tick"></span><span class="tour-tick"></span><span class="tour-tick"></span><span class="tour-tick"></span>
           </div>
         </div>
-        <div class="tour-device">
-          <img class="tour-screen on" src="assets/app/app-home.webp" alt="Home screen — today's session, streak, and season overview" />
-          <img class="tour-screen" src="assets/app/app-program.webp" loading="lazy" alt="My Program screen — periodized training blocks across the season" />
-          <img class="tour-screen" src="assets/app/app-training.webp" loading="lazy" alt="Training screen — guided session with sets, reps, and demo videos" />
-          <img class="tour-screen" src="assets/app/app-gameday.webp" loading="lazy" alt="Game Day screen — pre-game activation and preparation protocol" />
-          <img class="tour-screen" src="assets/app/app-progress.webp" loading="lazy" alt="Progress screen — history, trends, and personal records" />
+        <div class="tour-stage">
+          <div class="tour-amb" aria-hidden="true"></div>
+          <div class="tour-ground" aria-hidden="true"></div>
+          <div class="tour-device">
+            <img class="tour-screen on" src="assets/app/app-home.webp" alt="Home screen — today's session, streak, and season overview" />
+            <img class="tour-screen" src="assets/app/app-program.webp" loading="lazy" alt="My Program screen — periodized training blocks across the season" />
+            <img class="tour-screen" src="assets/app/app-training.webp" loading="lazy" alt="Training screen — guided session with sets, reps, and demo videos" />
+            <img class="tour-screen" src="assets/app/app-gameday.webp" loading="lazy" alt="Game Day screen — pre-game activation and preparation protocol" />
+            <img class="tour-screen" src="assets/app/app-progress.webp" loading="lazy" alt="Progress screen — history, trends, and personal records" />
+          </div>
+          <div class="tour-callout c1 on" aria-hidden="true"><img src="assets/app/callout-home.webp" alt="" width="346" height="224" loading="lazy" /></div>
+          <div class="tour-callout c2" aria-hidden="true"><img src="assets/app/callout-program.webp" alt="" width="679" height="164" loading="lazy" /></div>
+          <div class="tour-callout c3" aria-hidden="true"><img src="assets/app/callout-training.webp" alt="" width="722" height="136" loading="lazy" /></div>
+          <div class="tour-callout c4" aria-hidden="true"><img src="assets/app/callout-gameday.webp" alt="" width="774" height="148" loading="lazy" /></div>
+          <div class="tour-callout c5" aria-hidden="true"><img src="assets/app/callout-progress.webp" alt="" width="344" height="234" loading="lazy" /></div>
         </div>
       </div>
     </div>
@@ -2278,7 +2395,7 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   const screens = [...tour.querySelectorAll('.tour-screen')];
   const steps = [...tour.querySelectorAll('.tour-step')];
   const ticks = [...tour.querySelectorAll('.tour-tick')];
-  const num = document.getElementById('tourNum');
+  const callouts = [...tour.querySelectorAll('.tour-callout')];
   let idx = 0, ticking = false;
   function update(){
     ticking = false;
@@ -2291,11 +2408,36 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
       screens.forEach((s,k)=>s.classList.toggle('on', k === i));
       steps.forEach((s,k)=>s.classList.toggle('on', k === i));
       ticks.forEach((t,k)=>t.classList.toggle('on', k <= i));
-      if(num) num.textContent = String(i + 1).padStart(2, '0');
+      callouts.forEach((c,k)=>c.classList.toggle('on', k === i));
     }
   }
   window.addEventListener('scroll', ()=>{ if(!ticking){ ticking = true; requestAnimationFrame(update); } }, { passive:true });
   update();
+})();
+
+/* 3D tilt — tour phone stage follows the cursor (same guards as the hero tilt) */
+(function(){
+  const zone = document.querySelector('.tour-pin');
+  const card = document.querySelector('.tour-stage');
+  if(!zone || !card) return;
+  if(!window.matchMedia('(hover:hover) and (pointer:fine)').matches) return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  let tx = 0, ty = 0, cx = 0, cy = 0, raf = null;
+  function loop(){
+    cx += (tx - cx) * .08;
+    cy += (ty - cy) * .08;
+    card.style.transform = 'rotateY(' + cx.toFixed(2) + 'deg) rotateX(' + cy.toFixed(2) + 'deg)';
+    if(Math.abs(tx - cx) > .02 || Math.abs(ty - cy) > .02){ raf = requestAnimationFrame(loop); } else { raf = null; }
+  }
+  function kick(){ if(!raf) raf = requestAnimationFrame(loop); }
+  zone.addEventListener('mousemove', (e)=>{
+    const r = zone.getBoundingClientRect();
+    const px = (e.clientX - r.left) / r.width - .5;
+    const py = (e.clientY - r.top) / r.height - .5;
+    tx = px * 6; ty = -py * 5;
+    kick();
+  }, { passive:true });
+  zone.addEventListener('mouseleave', ()=>{ tx = 0; ty = 0; kick(); }, { passive:true });
 })();
 
 /* 3D tilt — hero phone follows the cursor (fine pointers only, respects reduced motion) */
