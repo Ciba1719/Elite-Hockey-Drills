@@ -836,6 +836,7 @@ section{position:relative;z-index:2;}
 .tour-callout.c3{width:300px;right:-96px;top:16%;}
 .tour-callout.c4{width:312px;left:-104px;top:55%;}
 .tour-callout.c5{width:190px;left:-88px;top:13%;}
+.tour-mini{display:none;}
 /* — copy column — */
 .tour-copy{position:relative;z-index:1;text-align:center;max-width:520px;width:100%;}
 .tour-steps{display:grid;}
@@ -880,8 +881,49 @@ section{position:relative;z-index:2;}
   .tour-device{height:min(80vh,690px);}
 }
 @media(max-width:899px){
-  .tour-callout{display:none;}
-  .tour-amb{opacity:.4;}
+  /* Unpin: one vertical editorial pass — every swipe reveals new content */
+  .tour{height:auto;}
+  .tour-pin{position:static;height:auto;display:block;overflow:visible;}
+  .tour-pin::before,.tour-pin::after{display:none;}
+  .tour-inner{flex-direction:column;gap:0;perspective:none;}
+  .tour-stage,.tour-rail{display:none;}
+  .tour-copy{max-width:100%;}
+  .tour-steps{display:block;}
+  .tour-step{
+    opacity:1;transform:none;pointer-events:auto;transition:none;
+    padding:46px 0 10px;border-top:1px solid var(--line-2);
+  }
+  .tour-step:first-child{border-top:0;padding-top:10px;}
+  /* per-step mini stage: framed device + ambient + floating card */
+  .tour-mini{display:block;position:relative;margin:28px auto 4px;width:min(64vw,264px);}
+  .tour-mini::before{
+    content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    width:180%;aspect-ratio:1/1;border-radius:50%;pointer-events:none;
+    background:radial-gradient(closest-side,rgba(93,180,229,.15),transparent 72%);
+  }
+  .tour-mini-device{
+    position:relative;aspect-ratio:9/19.4;border-radius:36px;padding:7px;
+    background:linear-gradient(160deg,#25252E 0%,#0B0B10 52%,#191921 100%);
+    border:1px solid rgba(255,255,255,.10);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.10),
+      0 30px 60px -18px rgba(0,0,0,.7),
+      0 12px 28px -10px rgba(0,0,0,.55),
+      0 0 70px rgba(93,180,229,.10);
+  }
+  .tour-mini-device img{
+    width:100%;height:100%;object-fit:cover;object-position:center top;
+    border-radius:29px;display:block;
+  }
+  .tour-mini-callout{
+    position:absolute;z-index:2;right:-30px;bottom:36px;width:56%;
+    border-radius:12px;overflow:hidden;
+    border:1px solid rgba(255,255,255,.10);background:#101318;
+    box-shadow:0 20px 40px -12px rgba(0,0,0,.8),0 6px 18px rgba(0,0,0,.5);
+  }
+  .tour-mini-callout.wide{width:82%;right:-18px;}
+  .tour-mini-callout img{display:block;width:100%;height:auto;}
+  .tour-specs{margin-top:24px;}
 }
 @media(prefers-reduced-motion:reduce){
   .tour-screen,.tour-step,.tour-callout{transition:none;}
@@ -1799,6 +1841,10 @@ section{position:relative;z-index:2;}
               <div class="tour-eyebrow">01 · Home</div>
               <h3 class="display">Today's session, <em class="serif">ready.</em></h3>
               <p>Open the app and the day's work is already chosen — matched to your age, level, position, and the week of your season.</p>
+              <div class="tour-mini" aria-hidden="true">
+                <div class="tour-mini-device"><img src="assets/app/app-home.webp" alt="" loading="lazy" /></div>
+                <div class="tour-mini-callout"><img src="assets/app/callout-home.webp" alt="" loading="lazy" /></div>
+              </div>
               <div class="tour-specs">
                 <div class="tour-spec"><b>Session</b><span>45–60 min · built for the day you're in</span></div>
                 <div class="tour-spec"><b>Schedule</b><span>Planned around ice time and games</span></div>
@@ -1809,6 +1855,10 @@ section{position:relative;z-index:2;}
               <div class="tour-eyebrow">02 · My Program</div>
               <h3 class="display">A season with <em class="serif">a plan.</em></h3>
               <p>Strength, power, peak — your whole year in periodized blocks. Every week exists for a reason.</p>
+              <div class="tour-mini" aria-hidden="true">
+                <div class="tour-mini-device"><img src="assets/app/app-program.webp" alt="" loading="lazy" /></div>
+                <div class="tour-mini-callout wide"><img src="assets/app/callout-program.webp" alt="" loading="lazy" /></div>
+              </div>
               <div class="tour-specs">
                 <div class="tour-spec"><b>This week</b><span>Five sessions, planned in order</span></div>
                 <div class="tour-spec"><b>Blocks</b><span>Foundation → Strength → Power → Peak</span></div>
@@ -1819,6 +1869,10 @@ section{position:relative;z-index:2;}
               <div class="tour-eyebrow">03 · Training</div>
               <h3 class="display">Coached, <em class="serif">rep by rep.</em></h3>
               <p>Sets, reps, tempo, rest — every session guided, with a demo video for every exercise.</p>
+              <div class="tour-mini" aria-hidden="true">
+                <div class="tour-mini-device"><img src="assets/app/app-training.webp" alt="" loading="lazy" /></div>
+                <div class="tour-mini-callout wide"><img src="assets/app/callout-training.webp" alt="" loading="lazy" /></div>
+              </div>
               <div class="tour-specs">
                 <div class="tour-spec"><b>Targets</b><span>Sets × reps · tempo · rest · RPE</span></div>
                 <div class="tour-spec"><b>Video</b><span>A demo for every exercise</span></div>
@@ -1829,6 +1883,10 @@ section{position:relative;z-index:2;}
               <div class="tour-eyebrow">04 · Game Day</div>
               <h3 class="display">Game day, <em class="serif">handled.</em></h3>
               <p>Game tomorrow? The app swaps in activation and prep — you show up primed, never heavy-legged.</p>
+              <div class="tour-mini" aria-hidden="true">
+                <div class="tour-mini-device"><img src="assets/app/app-gameday.webp" alt="" loading="lazy" /></div>
+                <div class="tour-mini-callout wide"><img src="assets/app/callout-gameday.webp" alt="" loading="lazy" /></div>
+              </div>
               <div class="tour-specs">
                 <div class="tour-spec"><b>Pre-game</b><span>Meal → snack → activation → focus</span></div>
                 <div class="tour-spec"><b>Timing</b><span>Counts back from puck drop</span></div>
@@ -1839,6 +1897,10 @@ section{position:relative;z-index:2;}
               <div class="tour-eyebrow">05 · Progress</div>
               <h3 class="display">Proof you're <em class="serif">faster.</em></h3>
               <p>Streaks, trends, and personal records — watch the work show up in numbers.</p>
+              <div class="tour-mini" aria-hidden="true">
+                <div class="tour-mini-device"><img src="assets/app/app-progress.webp" alt="" loading="lazy" /></div>
+                <div class="tour-mini-callout"><img src="assets/app/callout-progress.webp" alt="" loading="lazy" /></div>
+              </div>
               <div class="tour-specs">
                 <div class="tour-spec"><b>Baselines</b><span>Six tests · the ones combines use</span></div>
                 <div class="tour-spec"><b>Records</b><span>PRs, streaks, session history</span></div>
