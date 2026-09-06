@@ -496,12 +496,58 @@ function exerciseCard(ex) {
 </a>`;
 }
 
+// ─── 4b. SEO helpers for exercise pages ───────────────────────────────────────
+// GSC (Sep 2026): these pages get most of the site's impressions on bare
+// exercise-name queries ("lateral shuffle", "low pogo hops") but ~0 clicks.
+// Titles lead with the exact name + "How to Do It" + "Demo Video"; descriptions
+// are complete sentences under 160 chars (the old ones were cut mid-word).
+
+const stripTags = (s) => (s || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+
+// "<Name>: How to Do It + Demo Video (Hockey Off-Ice)" — longest suffix that keeps ≤63 chars.
+function exerciseTitle(ex) {
+  const base = `${ex.name}: How to Do It`;
+  const suffixes = ex.video
+    ? [' + Demo Video (Hockey Off-Ice)', ' + Demo Video', ' (Video)', '']
+    : [' (Hockey Off-Ice)', ''];
+  for (const s of suffixes) if ((base + s).length <= 63) return base + s;
+  return base;
+}
+
+function firstSentence(t) {
+  t = stripTags(t);
+  if (!t) return '';
+  const m = t.match(/^(.+?)[.;](\s|$)/);
+  return (m ? m[1] : t).trim().replace(/[\s,;:—-]+$/, '');
+}
+
+// "Glutes, adductors/abductors, quads, hamstrings" → "glutes, adductors/abductors and quads"
+function musclesPhrase(m) {
+  m = stripTags(m);
+  const na = m.match(/^n\/?a\b[^(]*\(([^)]*)\)/i);          // "N/A (mobility/recovery — a, b, c)"
+  if (na) m = na[1].replace(/^[^—:-]*[—:-]\s*/, '');
+  else if (/^n\/?a\b/i.test(m)) return '';
+  const parts = m.split(',').map(x => x.trim()).filter(Boolean).slice(0, 3);
+  if (!parts.length) return '';
+  return parts.length > 1 ? parts.slice(0, -1).join(', ') + ' and ' + parts[parts.length - 1] : parts[0];
+}
+
+// ≤160 chars, never truncated: head + (hockey-transfer sentence | "Works the …" | nothing).
+function exerciseDescription(ex) {
+  const head = `${ex.name} for hockey: how-to, coaching cues, mistakes${ex.video ? ' + demo video' : ''}.`;
+  const s = firstSentence(ex.transfer);
+  if (s && (head + ' ' + s + '.').length <= 160) return head + ' ' + s.charAt(0).toUpperCase() + s.slice(1) + '.';
+  const mus = musclesPhrase(ex.muscles);
+  if (mus && (head + ' Works the ' + mus + '.').length <= 160) return head + ' Works the ' + mus.charAt(0).toLowerCase() + mus.slice(1) + '.';
+  return head;
+}
+
 // ─── 5. Exercise detail page ──────────────────────────────────────────────────
 
 function buildExercisePage(ex, allInCat, prevEx, nextEx) {
-  const descMeta = ex.transfer
-    ? ex.transfer.replace(/<[^>]+>/g, '').substring(0, 155).trim()
-    : ex.execution.substring(0, 155).trim();
+  const seoTitle = exerciseTitle(ex);
+  const descMeta = exerciseDescription(ex);
+  const ogImage  = (ex.video && hasThumb(ex.slug)) ? thumbUrl(ex.slug) : '';
 
   const cueItems = ex.cues
     ? ex.cues.split('·').map(c => c.trim()).filter(Boolean)
@@ -581,15 +627,19 @@ ${gaSnippet()}
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="theme-color" content="#070708" />
 <meta name="apple-itunes-app" content="app-id=6787257275" />
-<title>${escHtml(ex.name)} — Off-Ice Hockey Training | Elite Hockey Drills</title>
+<title>${escHtml(seoTitle)}</title>
 <meta name="description" content="${escHtml(descMeta)}" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="${escHtml(ex.name)} | Elite Hockey Drills" />
+<meta property="og:title" content="${escHtml(seoTitle)}" />
 <meta property="og:description" content="${escHtml(descMeta)}" />
-<meta property="og:url" content="${SITE_URL}/exercises/${ex.slug}.html" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="${escHtml(ex.name)} | Elite Hockey Drills" />
-<meta name="twitter:description" content="${escHtml(descMeta)}" />
+<meta property="og:url" content="${SITE_URL}/exercises/${ex.slug}.html" />${ogImage ? `
+<meta property="og:image" content="${escHtml(ogImage)}" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="720" />` : ''}
+<meta name="twitter:card" content="${ogImage ? 'summary_large_image' : 'summary'}" />
+<meta name="twitter:title" content="${escHtml(seoTitle)}" />
+<meta name="twitter:description" content="${escHtml(descMeta)}" />${ogImage ? `
+<meta name="twitter:image" content="${escHtml(ogImage)}" />` : ''}
 <link rel="canonical" href="${SITE_URL}/exercises/${ex.slug}.html" />
 ${fontLink()}
 <link rel="stylesheet" href="/assets/library.css" />
@@ -1452,6 +1502,7 @@ function libraryJS() {
 // articles — otherwise they vanish from sitemap.xml on the next build.
 const STATIC_PAGES = [
   { loc: '/',                                                      freq: 'weekly',  pri: '1.0' },
+  { loc: '/hockey-training-app.html',                              freq: 'monthly', pri: '0.9' },
   { loc: '/program-9-11.html',                                     freq: 'monthly', pri: '0.9' },
   { loc: '/program-12-14.html',                                    freq: 'monthly', pri: '0.9' },
   { loc: '/program-15-18.html',                                    freq: 'monthly', pri: '0.9' },
@@ -1462,6 +1513,10 @@ const STATIC_PAGES = [
   { loc: '/how-to-skate-faster.html',                              freq: 'monthly', pri: '0.8' },
   { loc: '/dryland-training-youth-hockey.html',                    freq: 'monthly', pri: '0.8' },
   { loc: '/off-ice-training-mistakes.html',                        freq: 'monthly', pri: '0.8' },
+  { loc: '/how-to-shoot-harder.html',                              freq: 'monthly', pri: '0.8' },
+  { loc: '/hockey-conditioning.html',                              freq: 'monthly', pri: '0.8' },
+  { loc: '/hockey-injury-prevention.html',                         freq: 'monthly', pri: '0.8' },
+  { loc: '/hockey-warm-up.html',                                   freq: 'monthly', pri: '0.8' },
   { loc: '/articles/the-off-season-blueprint.html',                freq: 'monthly', pri: '0.7' },
   { loc: '/articles/off-season-nutrition-for-hockey-players.html', freq: 'monthly', pri: '0.7' },
   { loc: '/articles/sleep-and-recovery-for-hockey-players.html',   freq: 'monthly', pri: '0.7' },
@@ -1478,7 +1533,7 @@ function buildSitemap(exercises) {
     <video:video>
       <video:thumbnail_loc>${escHtml(thumbUrl(ex.slug))}</video:thumbnail_loc>
       <video:title>${escHtml(ex.name + ' — Off-Ice Hockey Demo')}</video:title>
-      <video:description>${escHtml('How to do the ' + ex.name + ' for hockey: technique, coaching cues, common mistakes, and a demo video.')}</video:description>
+      <video:description>${escHtml(exerciseDescription(ex))}</video:description>
       <video:content_loc>${escHtml(ex.video)}</video:content_loc>
     </video:video>
   ` : '';
