@@ -22,7 +22,7 @@ const FOOTER = between(idx, '<footer class="footer">', '</footer>')
   .replace('href="#tiers"', 'href="/#tiers"')
   .replace('href="#about"', 'href="/#about"')
   .replace('href="#method"', 'href="/#method"');
-const MOBILE_BAR = between(idx, '<div class="mobile-bar"', '</div>').replace('href="#tiers"', 'href="/#tiers"');
+const MOBILE_BAR = between(idx, '<div class="mobile-bar"', '</div>').replace('href="#trial"', 'href="#pricing"');
 const SCRIPT = idx.slice(idx.lastIndexOf('<script>'), idx.lastIndexOf('</script>') + '</script>'.length);
 
 const APP_URL = 'https://apps.apple.com/us/app/elite-hockey-drills/id6787257275';
@@ -389,7 +389,7 @@ ${MARQUEE}
       </ul>
     </div>
 
-    <div class="app-offer reveal">
+    <div class="app-offer reveal" id="pricing">
       <div class="app-pricing-row">
         <div class="app-price-block">
           <div class="num display">7 <span>days</span></div>

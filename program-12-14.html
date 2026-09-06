@@ -150,6 +150,13 @@ section{position:relative;z-index:2;}
 .offer-was{font-family:'Bebas Neue',sans-serif;font-size:30px;color:var(--ink-3);text-decoration:line-through;text-decoration-color:rgba(146,150,162,.5);}
 .offer-now{font-family:'Bebas Neue',sans-serif;font-size:72px;line-height:.85;color:var(--warm);}
 .offer-save{display:inline-block;margin-left:auto;align-self:center;background:rgba(79,179,113,.1);border:1px solid rgba(79,179,113,.35);color:var(--green);font-size:11px;font-weight:700;letter-spacing:.08em;padding:5px 10px;border-radius:6px;text-transform:uppercase;}
+.app-pill{display:inline-flex;align-items:center;gap:9px;padding:8px 14px;border-radius:100px;background:rgba(93,180,229,.07);border:1px solid rgba(93,180,229,.35);color:var(--ink);font-size:12.5px;font-weight:600;text-decoration:none;margin-bottom:16px;width:fit-content;transition:border-color .25s,transform .25s;}
+.app-pill:hover{border-color:var(--ice);transform:translateY(-1px);}
+.ap-dot{width:7px;height:7px;border-radius:50%;background:var(--ice);box-shadow:0 0 10px var(--ice);flex-shrink:0;}
+.ap-arr{color:var(--warm);}
+.offer-alt{font-size:12.5px;line-height:1.6;color:var(--ink-2);margin:-8px 0 16px;padding:10px 12px;border:1px dashed var(--ice-line);border-radius:10px;background:var(--ice-soft);}
+.offer-alt a{color:var(--ice);font-weight:600;text-decoration:none;}
+.offer-alt a:hover{text-decoration:underline;}
 .offer-meta{font-size:12.5px;color:var(--ink-3);letter-spacing:.04em;margin:8px 0 22px;text-transform:uppercase;font-weight:600;}
 .offer-list{list-style:none;display:flex;flex-direction:column;gap:11px;margin:22px 0;padding-top:22px;border-top:1px solid var(--line);}
 .offer-list li{display:flex;align-items:flex-start;gap:11px;font-size:13.5px;line-height:1.5;color:var(--ink);}
@@ -563,6 +570,7 @@ section{position:relative;z-index:2;}
   <div class="hero-glow warm"></div>
   <div class="wrap hero-inner">
     <div class="hero-copy">
+      <a class="app-pill anim-up" style="animation-delay:.02s" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" data-place="sales-hero" target="_blank" rel="noopener"><span class="ap-dot"></span>New: the app is live — your whole season, personalized. First week free <span class="ap-arr">→</span></a>
       <div class="hero-eyebrow anim-up" style="animation-delay:.05s">8-Week Off-Ice Program · Ages 12–14</div>
       <h1 class="hero-h1 anim-up" style="animation-delay:.15s">DEVELOP<span class="dot">.</span></h1>
       <p class="hero-tagline anim-up" style="animation-delay:.28s">Move well, get fast, compete hard — built for the growing years.</p>
@@ -590,6 +598,7 @@ section{position:relative;z-index:2;}
           <span class="offer-save">Save $80</span>
         </div>
         <div class="offer-meta">One-time payment · yours forever</div>
+        <div class="offer-alt">Want the whole season instead? <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" data-place="sales-offer" target="_blank" rel="noopener">Get the app — first week free</a>, then $17.99/mo or $99.90/yr.</div>
         <div class="offer-anchor">One private S&amp;C session costs more than this. You get <b>24 coached sessions — about $3.30 each</b>.</div>
         <div class="offer-countdown">
           <div class="oc-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg><span data-oc="label">The season starts in</span></div>
@@ -1426,6 +1435,10 @@ function toggleFaq(btn){ btn.closest('.faq-item').classList.toggle('open'); }
     if(!open){ const b = panel.querySelector('.ex-video'); if(b) b.innerHTML = ''; const ww = panel.querySelector('.ex-btn.watch'); if(ww) ww.innerHTML = '▶ Watch Video'; }
   });
 })();
+</script>
+<script>
+/* App Store click tracking → GA4 event "app_store_click" (mark it as a key event in GA) */
+document.addEventListener('click',function(e){var t=e.target;var a=t&&t.closest?t.closest('a[href*="apps.apple.com"]'):null;if(!a||typeof gtag!=='function')return;var s=a.closest('section[id],header,footer,nav,.mobile-bar,.buybar');gtag('event','app_store_click',{placement:a.getAttribute('data-place')||(s&&(s.id||String(s.className).split(' ')[0]))||'link',link_text:(a.textContent||'').replace(/[ \t\r\n]+/g,' ').trim().slice(0,60),page_path:location.pathname,transport_type:'beacon'});},true);
 </script>
 </body>
 </html>

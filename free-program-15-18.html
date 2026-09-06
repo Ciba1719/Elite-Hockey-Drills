@@ -302,6 +302,14 @@ a.ex .lk{font-size:.7em;vertical-align:super;margin-left:.18em;opacity:.7;}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1);}
 .reveal.in{opacity:1;transform:translateY(0);}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.001s !important;}.reveal{opacity:1;transform:none;transition:none;}html{scroll-behavior:auto;}}
+/* App banner (top of page) */
+.app-banner{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:34px 0 -12px;padding:16px 20px;background:rgba(93,180,229,.07);border:1px solid rgba(93,180,229,.28);border-radius:16px;color:var(--ink);text-decoration:none;transition:border-color .25s,transform .25s;}
+.app-banner:hover{border-color:var(--ice);transform:translateY(-2px);}
+.ab-dot{width:8px;height:8px;border-radius:50%;background:var(--ice);box-shadow:0 0 12px var(--ice);flex-shrink:0;}
+.ab-txt{flex:1 1 320px;font-size:14px;line-height:1.55;color:#C7CCD5;}
+.ab-txt b{color:var(--ink);font-weight:600;}
+.ab-go{font-weight:700;font-size:13.5px;color:var(--warm);white-space:nowrap;}
+.next-note{margin:16px 0 0;font-size:12px;color:#AEB3BD;line-height:1.5;}
 </style>
 </head>
 <body>
@@ -395,6 +403,15 @@ a.ex .lk{font-size:.7em;vertical-align:super;margin-left:.18em;opacity:.7;}
     </div>
   </div>
 </header>
+
+<!-- ===== APP BANNER ===== -->
+<div class="wrap">
+  <a class="app-banner" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" data-place="free-top" target="_blank" rel="noopener">
+    <span class="ab-dot"></span>
+    <span class="ab-txt"><b>This is Week 1.</b> The Elite Hockey Drills app builds the other 51 — personalized to your age, level, position and schedule, with a demo video for every exercise. Your first week is free.</span>
+    <span class="ab-go">Start your free week →</span>
+  </a>
+</div>
 
 <!-- ===== 01 THE METHOD ===== -->
 <section class="sec" id="method">
@@ -905,24 +922,25 @@ a.ex .lk{font-size:.7em;vertical-align:super;margin-left:.18em;opacity:.7;}
 <section class="sec" id="next">
   <div class="wrap">
     <div class="next-panel reveal">
-      <div class="next-eyebrow">Ready for more</div>
-      <h2 class="next-h2">The full <em>8-week plan.</em></h2>
-      <p class="next-sub">You've finished the first five days. <b>COMPETE</b> is the complete 8-week off-ice program for ages 15–18 — structured progression, periodization, and the depth this 5-day intro can't fit, with a demo video for every exercise. Built for players who want to take the work seriously.</p>
+      <div class="next-eyebrow">Ready for more · Live on the App Store</div>
+      <h2 class="next-h2">Your whole season, <em>in the app.</em></h2>
+      <p class="next-sub">You've finished the first five days. The Elite Hockey Drills app builds the rest of your season around your age, level, position, and schedule — every session chosen for you, a demo video for every exercise, game-day mode, and progress tracking. <b>Your first week is free.</b></p>
       <div class="next-actions">
-        <a class="btn btn-primary" href="program-15-18.html">See the 8-Week Plan
+        <a class="btn btn-primary" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" data-place="free-next" target="_blank" rel="noopener">Start Your Free Week
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         <a class="btn btn-ghost" href="library.html">Explore the Exercise Library</a>
       </div>
+      <p class="next-note">7-day free trial · then $17.99/mo or $99.90/yr · cancel anytime · Android coming soon</p>
     </div>
     <div class="app-strip reveal">
       <div class="app-copy">
-        <div class="app-kicker">New · Live on the App Store</div>
-        <h3 class="app-h">Want this personalized and <em>season-long?</em></h3>
-        <p class="app-p">The Elite Hockey Drills app builds your off-ice program around your age, level, position, and schedule — then adapts to missed sessions and game days, with a demo video for every exercise. First week free on iOS.</p>
+        <div class="app-kicker">Prefer a one-time purchase?</div>
+        <h3 class="app-h">The 8-week <em>COMPETE</em> program.</h3>
+        <p class="app-p">The classic 8-week off-ice program for ages 15–18, with a demo video for every exercise. $79 once, yours forever — 30-day money-back.</p>
       </div>
       <div class="app-cta">
-        <a class="btn btn-primary" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" target="_blank" rel="noopener">Get the App — First Week Free</a>
-        <span class="app-note">7-day free trial · then $17.99/mo or $99.90/yr · Android coming soon</span>
+        <a class="btn btn-ghost" href="program-15-18.html">See the 8-Week Plan</a>
+        <span class="app-note">One-time payment · no subscription</span>
       </div>
     </div>
   </div>
@@ -1022,6 +1040,10 @@ a.ex .lk{font-size:.7em;vertical-align:super;margin-left:.18em;opacity:.7;}
     if(!open){ var b=panel.querySelector('.ex-video'); if(b) b.innerHTML=''; var ww=panel.querySelector('.ex-btn.watch'); if(ww) ww.innerHTML='▶ Watch Video'; }
   });
 })();
+</script>
+<script>
+/* App Store click tracking → GA4 event "app_store_click" (mark it as a key event in GA) */
+document.addEventListener('click',function(e){var t=e.target;var a=t&&t.closest?t.closest('a[href*="apps.apple.com"]'):null;if(!a||typeof gtag!=='function')return;var s=a.closest('section[id],header,footer,nav,.mobile-bar,.buybar');gtag('event','app_store_click',{placement:a.getAttribute('data-place')||(s&&(s.id||String(s.className).split(' ')[0]))||'link',link_text:(a.textContent||'').replace(/[ \t\r\n]+/g,' ').trim().slice(0,60),page_path:location.pathname,transport_type:'beacon'});},true);
 </script>
 </body>
 </html>

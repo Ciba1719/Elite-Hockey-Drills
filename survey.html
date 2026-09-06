@@ -11,6 +11,7 @@
   </script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="apple-itunes-app" content="app-id=6787257275" />
 <meta name="theme-color" content="#070708" />
 <title>Build Your Free 5-Day Program — Elite Hockey Drills</title>
 <meta name="description" content="Answer a few quick questions and get a 5-day off-ice training program built for you. Free." />
@@ -258,6 +259,11 @@ body::after{
 .success-trust span::before{content:'✓';color:var(--ice);font-weight:800;font-size:12px;}
 .success-ig-link{display:inline-block;margin-top:22px;font-size:13px;color:var(--ice);font-weight:500;transition:opacity .2s;}
 .success-ig-link:hover{opacity:.75;text-decoration:underline;}
+.pcard-app{max-width:420px;border-color:rgba(93,180,229,.30);}
+.pcard-note{font-size:12px;color:#AEB3BD;line-height:1.5;max-width:380px;}
+.pcard-alt{margin-top:6px;font-size:13px;color:#AEB3BD;transition:color .2s;}
+.pcard-alt b{color:var(--ink);font-weight:600;}
+.pcard-alt:hover{color:var(--ink);}
 .success-footnote{font-size:12px;color:var(--ink-3);margin-top:18px;line-height:1.5;}
 @media(min-width:620px){
   .success-ctas.is-dual{flex-direction:row;align-items:stretch;max-width:660px;}
@@ -436,7 +442,7 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
     <p class="success-sub"><span id="successSubTail"></span></p>
     <div class="success-ctas" id="successCtas"></div>
     <div class="success-trust">
-      <span>30-day money-back</span>
+      <span>7-day free trial · cancel anytime</span>
       <span>UAE National Team coach</span>
       <span>No gym needed</span>
     </div>
@@ -605,22 +611,23 @@ function populateEmailScreen(){
    plan the survey delivers.
    ============================================================ */
 const PROGRAM_MATCH = {
-  '9_11':   [ { name:'Move & Play',      age:'9–11',  url:'/program-9-11.html',    desc:'Off-ice foundation — speed, balance & athletic movement.' } ],
-  '12_14':  [ { name:'Develop & Drive',  age:'12–14', url:'/program-12-14.html',   desc:'Growth-smart strength & speed for developing players.' } ],
-  '15_18':  [ { name:'Build & Compete',  age:'15–18', url:'/program-15-18.html',   desc:'Power & performance for serious junior players.' } ],
-  '19_39':  [ { name:'Power & Speed',    age:'19–39', url:'/program-19-39.html',   desc:'Explosive power, speed & conditioning for prime years.' } ],
-  '40plus': [ { name:'Strong & Durable', age:'40+',   url:'/program-40-plus.html', desc:'Joint-friendly strength & mobility that lasts.' } ]
+  '9_11':   [ { name:'FOUNDATIONS', age:'9–11',  url:'/program-9-11.html' } ],
+  '12_14':  [ { name:'DEVELOP',     age:'12–14', url:'/program-12-14.html' } ],
+  '15_18':  [ { name:'COMPETE',     age:'15–18', url:'/program-15-18.html' } ],
+  '19_39':  [ { name:'DOMINATE',    age:'19–39', url:'/program-19-39.html' } ],
+  '40plus': [ { name:'SUSTAIN',     age:'40+',   url:'/program-40-plus.html' } ]
 };
 
 const ARROW_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>';
 
-function buildCard(p){
-  return `<a class="pcard" href="${p.url}">`
-    + `<div class="pcard-top"><span class="pcard-badge">Ages ${p.age}</span>`
-    + `<span class="pcard-price"><b>$79</b><s>$159</s></span></div>`
-    + `<div class="pcard-name">${p.name}</div>`
-    + `<div class="pcard-desc">${p.desc}</div>`
-    + `<span class="pcard-go">See the program <span class="pcard-arrow">${ARROW_SVG}</span></span>`
+const APP_URL = 'https://apps.apple.com/us/app/elite-hockey-drills/id6787257275';
+function buildAppCard(age){
+  return `<a class="pcard pcard-app" href="${APP_URL}" data-place="survey-success" target="_blank" rel="noopener">`
+    + `<div class="pcard-top"><span class="pcard-badge">Ages ${age} · iOS</span>`
+    + `<span class="pcard-price"><b>7 days free</b></span></div>`
+    + `<div class="pcard-name">The Elite Hockey Drills App</div>`
+    + `<div class="pcard-desc">Your whole season, built around your age, level, position and schedule — a demo video for every exercise, game-day mode, and progress tracking. Then $17.99/mo or $99.90/yr. Cancel anytime.</div>`
+    + `<span class="pcard-go">Start your free week <span class="pcard-arrow">${ARROW_SVG}</span></span>`
     + `</a>`;
 }
 
@@ -629,8 +636,11 @@ function populateSuccessScreen(){
   const tail = document.getElementById('successSubTail');
   const wrap = document.getElementById('successCtas');
   if(!wrap) return;
-  if(tail) tail.innerHTML = `The real gains are in the full 8-week build — here's the one matched to you:`;
-  wrap.innerHTML = list.map(buildCard).join('');
+  const p = list[0];
+  if(tail) tail.innerHTML = `Your free 5 days are on the way. The app runs the other 51 weeks — personalized to a ${p.age} player. <strong>Your first week is free.</strong>`;
+  wrap.innerHTML = buildAppCard(p.age)
+    + `<span class="pcard-note">Android? The Google Play version is days away — your free 5 days work anywhere.</span>`
+    + `<a class="pcard-alt" href="${p.url}">Prefer a one-time 8-week program? <b>${p.name}</b> · $79 →</a>`;
 }
 
 /* All MailerLite API calls are server-side in netlify/functions/subscribe.mjs. */
@@ -696,6 +706,10 @@ emailForm.addEventListener('submit', async (e) => {
 });
 
 updateProgress(1);
+</script>
+<script>
+/* App Store click tracking → GA4 event "app_store_click" (mark it as a key event in GA) */
+document.addEventListener('click',function(e){var t=e.target;var a=t&&t.closest?t.closest('a[href*="apps.apple.com"]'):null;if(!a||typeof gtag!=='function')return;var s=a.closest('section[id],header,footer,nav,.mobile-bar,.buybar');gtag('event','app_store_click',{placement:a.getAttribute('data-place')||(s&&(s.id||String(s.className).split(' ')[0]))||'link',link_text:(a.textContent||'').replace(/[ \t\r\n]+/g,' ').trim().slice(0,60),page_path:location.pathname,transport_type:'beacon'});},true);
 </script>
 </body>
 </html>

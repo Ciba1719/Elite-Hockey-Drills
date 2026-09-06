@@ -1806,6 +1806,26 @@ section{position:relative;z-index:2;}
   }
   .scroll-progress{display:none;}
 }
+/* Trial strip (price up front) */
+.trial-strip{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:44px 0;}
+.trial-inner{display:grid;gap:26px;align-items:center;}
+@media(min-width:900px){.trial-inner{grid-template-columns:1.1fr 1.3fr auto;gap:40px;}}
+.trial-kicker{font-family:'Instrument Serif',serif;font-style:italic;font-size:14px;color:var(--ice);margin-bottom:8px;}
+.trial-h{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(36px,5vw,52px);line-height:.95;letter-spacing:.01em;margin:0 0 10px;}
+.trial-h em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--ice);}
+.trial-p{color:#C7CCD5;font-size:14.5px;line-height:1.6;max-width:420px;margin:0;}
+.trial-facts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+@media(min-width:600px){.trial-facts{grid-template-columns:repeat(4,1fr);}}
+@media(min-width:900px){.trial-facts{grid-template-columns:repeat(2,1fr);}}
+.trial-facts li{display:flex;flex-direction:column;gap:3px;padding:14px 16px;border:1px solid var(--line-2);border-radius:14px;background:var(--bg-3);}
+.trial-facts b{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:26px;line-height:1;color:var(--warm);letter-spacing:.02em;}
+.trial-facts span{font-size:12.5px;color:#AEB3BD;line-height:1.4;}
+.trial-cta{display:flex;flex-direction:column;align-items:flex-start;gap:16px;}
+.trial-qr{display:none;}
+@media(min-width:900px){
+  .trial-qr{display:flex;align-items:center;gap:12px;font-size:12px;line-height:1.45;color:var(--ink-2);}
+  .trial-qr img{width:84px;height:84px;padding:6px;background:#0A0A0E;border:1px solid var(--line-2);border-radius:12px;}
+}
 </style>
 <style>
 /* ── Hockey Training App landing page extras (reuses homepage tokens) ── */
@@ -1969,6 +1989,33 @@ section{position:relative;z-index:2;}
   </div>
 </div>
 
+<!-- ===== TRIAL STRIP — price up front, before the tour ===== -->
+<section class="trial-strip" id="trial" aria-label="Free trial and pricing">
+  <div class="wrap trial-inner">
+    <div class="trial-copy">
+      <div class="trial-kicker">Start tonight · iOS</div>
+      <h2 class="trial-h">Your first week is <em>free.</em></h2>
+      <p class="trial-p">Download, answer a few questions, and your personalized off-ice program is ready before your next practice.</p>
+    </div>
+    <ul class="trial-facts">
+      <li><b>7 days</b><span>free trial, everything unlocked</span></li>
+      <li><b>$17.99</b><span>per month after the trial</span></li>
+      <li><b>$99.90</b><span>per year · save 54%</span></li>
+      <li><b>Cancel</b><span>anytime in your App Store account</span></li>
+    </ul>
+    <div class="trial-cta">
+      <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary" data-place="home-trial">
+        Start Your Free Week
+        <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <div class="trial-qr">
+        <img src="assets/app/app-store-qr.svg" alt="QR code for Elite Hockey Drills on the App Store" width="84" height="84" loading="lazy" />
+        <span>On a computer?<br>Scan with your iPhone<br>to install.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="app-section" id="features">
   <div class="app-bg-glow"></div>
   <div class="wrap">
@@ -2085,7 +2132,7 @@ section{position:relative;z-index:2;}
       </ul>
     </div>
 
-    <div class="app-offer reveal">
+    <div class="app-offer reveal" id="pricing">
       <div class="app-pricing-row">
         <div class="app-price-block">
           <div class="num display">7 <span>days</span></div>
@@ -2352,7 +2399,7 @@ section{position:relative;z-index:2;}
 
 <div class="mobile-bar" id="mobileBar">
   <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary">Start Free Trial</a>
-  <a href="/#tiers" class="btn btn-ghost mobile-bar-ghost">See Programs</a>
+  <a href="#pricing" class="btn btn-ghost mobile-bar-ghost">See Pricing</a>
 </div>
 
 <script>
@@ -2584,6 +2631,8 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 function toggleFaq(btn){
   btn.closest('.faq-item').classList.toggle('open');
 }
+/* App Store click tracking → GA4 event "app_store_click" (mark it as a key event in GA) */
+document.addEventListener('click',function(e){var t=e.target;var a=t&&t.closest?t.closest('a[href*="apps.apple.com"]'):null;if(!a||typeof gtag!=='function')return;var s=a.closest('section[id],header,footer,nav,.mobile-bar,.buybar');gtag('event','app_store_click',{placement:a.getAttribute('data-place')||(s&&(s.id||String(s.className).split(' ')[0]))||'link',link_text:(a.textContent||'').replace(/[ \t\r\n]+/g,' ').trim().slice(0,60),page_path:location.pathname,transport_type:'beacon'});},true);
 </script>
 </body>
 </html>
