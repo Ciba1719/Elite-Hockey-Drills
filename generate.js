@@ -200,6 +200,7 @@ function footerHTML() {
       <ul>
         <li><a href="${SITE_URL}/survey.html">Free 5-Day PDF</a></li>
         <li><a href="${SITE_URL}#tiers">8-Week Programs</a></li>
+        <li><a href="/hockey-training-app.html">Hockey Training App</a></li>
         <li><a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275">The App — iOS</a></li>
       </ul>
     </div>
