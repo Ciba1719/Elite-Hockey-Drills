@@ -101,6 +101,12 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/hockey-training-app"
+  to = "/hockey-training-app.html"
+  status = 301
+  force = true
+
 # ── Legal pages — the mobile app links to the extensionless URLs ─────────────
 [[redirects]]
   from = "/privacy"
