@@ -690,6 +690,20 @@ ${suppressMedia ? '' : `<!-- MEDIA SLOT -->
   </div>
 </div>
 `}
+<!-- APP CARD (under video) -->
+<div class="ex-app-wrap" id="exAppCard">
+  <div class="wrap">
+    <div class="ex-app-card">
+      <img class="ex-app-icon" src="/apple-touch-icon.png" alt="Elite Hockey Drills app" width="56" height="56" loading="lazy" />
+      <div class="ex-app-text">
+        <div class="display ex-app-title">Don't just watch it. <em class="serif">Train it.</em></div>
+        <p class="ex-app-sub">The Elite Hockey Drills app builds drills like this into your personalized off-ice program, week by week. Your first week is free.</p>
+      </div>
+      <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary ex-app-btn" data-place="ex_under_video">Start My Free Week <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</div>
+
 <!-- CONTENT SECTIONS -->
 <div class="ex-body">
 
@@ -822,6 +836,14 @@ ${related.length ? `<section class="related-section">
   </div>
 </section>
 
+<!-- STICKY APP BAR -->
+<div class="ex-sticky" id="exStickyApp" role="complementary" aria-label="Get the app">
+  <img src="/apple-touch-icon.png" alt="" width="40" height="40" loading="lazy" />
+  <div class="ex-sticky-text"><strong>Train this drill in the app</strong><span>First week free · iPhone</span></div>
+  <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary" data-place="ex_sticky">Get the App</a>
+  <button type="button" class="ex-sticky-x" aria-label="Close">&times;</button>
+</div>
+
 </main>
 
 ${footerHTML()}
@@ -839,6 +861,25 @@ const io = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 /* App Store click tracking → GA4 event "app_store_click" (mark it as a key event in GA) */
 document.addEventListener('click',function(e){var t=e.target;var a=t&&t.closest?t.closest('a[href*="apps.apple.com"]'):null;if(!a||typeof gtag!=='function')return;var s=a.closest('section[id],header,footer,nav,.mobile-bar,.buybar');gtag('event','app_store_click',{placement:a.getAttribute('data-place')||(s&&(s.id||String(s.className).split(' ')[0]))||'link',link_text:(a.textContent||'').replace(/[ \\t\\r\\n]+/g,' ').trim().slice(0,60),page_path:location.pathname,transport_type:'beacon'});},true);
+/* App card + sticky bar (iPhone app; hidden on Android until the Play Store listing is live) */
+(function(){
+  var card=document.getElementById('exAppCard');
+  var bar=document.getElementById('exStickyApp');
+  if(/Android/i.test(navigator.userAgent||'')){if(card)card.remove();if(bar)bar.remove();return;}
+  if(!bar)return;
+  var closed=false;try{closed=sessionStorage.getItem('ehdStickyClosed')==='1';}catch(e){}
+  if(closed){bar.remove();return;}
+  var cta=document.querySelector('.ex-cta');
+  var cardIn=!!card,ctaIn=false,armed=false;
+  function upd(){var on=armed&&!cardIn&&!ctaIn;bar.classList.toggle('show',on);document.body.classList.toggle('ex-sticky-on',on);}
+  if('IntersectionObserver' in window){
+    var ob=new IntersectionObserver(function(es){es.forEach(function(e){if(e.target===card)cardIn=e.isIntersecting;else ctaIn=e.isIntersecting;});upd();});
+    if(card)ob.observe(card);if(cta)ob.observe(cta);
+  }else{cardIn=false;}
+  setTimeout(function(){armed=true;upd();},3500);
+  window.addEventListener('scroll',function(){if(window.scrollY>250&&!armed){armed=true;upd();}},{passive:true});
+  bar.querySelector('.ex-sticky-x').addEventListener('click',function(){bar.remove();document.body.classList.remove('ex-sticky-on');try{sessionStorage.setItem('ehdStickyClosed','1');}catch(e){}});
+})();
 </script>
 </body>
 </html>`;
@@ -1322,6 +1363,49 @@ function exerciseCSS() {
 .related-name{font-size:clamp(20px,3.5vw,26px);line-height:1;margin-bottom:8px;color:var(--ink);}
 .related-muscles{font-size:12px;color:var(--ink-3);}
 @media(min-width:900px){.related-section{padding:88px 40px;}}
+
+/* ── APP CARD (under video) ── */
+.ex-app-wrap{background:var(--bg);padding:0 24px 56px;margin-top:-24px;position:relative;z-index:2;}
+.ex-app-card{
+  max-width:1000px;margin:0 auto;
+  display:flex;align-items:center;gap:22px;
+  padding:22px 24px;border-radius:20px;
+  border:1px solid rgba(232,183,119,.28);
+  background:linear-gradient(135deg,rgba(232,183,119,.09) 0%,rgba(93,180,229,.05) 60%,rgba(255,255,255,.01) 100%);
+  box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+.ex-app-icon{width:56px;height:56px;border-radius:14px;flex:none;}
+.ex-app-text{flex:1;min-width:0;}
+.ex-app-title{font-size:clamp(28px,5vw,38px);color:var(--ink);margin-bottom:6px;}
+.ex-app-title .serif{color:var(--warm);font-style:italic;}
+.ex-app-sub{color:var(--ink-2);font-size:15px;line-height:1.55;}
+.ex-app-btn{flex:none;}
+@media(max-width:720px){
+  .ex-app-card{flex-direction:column;text-align:center;padding:24px 20px;gap:14px;}
+  .ex-app-btn{width:100%;}
+}
+@media(min-width:900px){.ex-app-wrap{padding:0 40px 72px;margin-top:-40px;}}
+
+/* ── STICKY APP BAR ── */
+.ex-sticky{
+  position:fixed;left:12px;right:12px;bottom:12px;z-index:90;
+  max-width:560px;margin:0 auto;
+  display:flex;align-items:center;gap:12px;
+  padding:10px 8px 10px 12px;border-radius:18px;
+  background:rgba(12,12,16,.95);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  border:1px solid rgba(232,183,119,.28);box-shadow:0 14px 44px rgba(0,0,0,.6);
+  transform:translateY(160%);transition:transform .5s cubic-bezier(.2,.7,.2,1);
+}
+.ex-sticky.show{transform:none;}
+.ex-sticky img{width:40px;height:40px;border-radius:10px;flex:none;}
+.ex-sticky-text{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.25;}
+.ex-sticky-text strong{font-size:14px;font-weight:600;color:var(--ink);}
+.ex-sticky-text span{font-size:12px;color:var(--ink-2);}
+.ex-sticky .btn{min-height:42px;padding:10px 16px;font-size:13px;flex:none;}
+.ex-sticky-x{background:none;border:0;color:var(--ink-3);font-size:22px;line-height:1;padding:4px 6px;cursor:pointer;flex:none;}
+.ex-sticky-x:hover{color:var(--ink);}
+body.ex-sticky-on{padding-bottom:84px;}
+@media(max-width:380px){.ex-sticky-text span{display:none;}}
 
 /* ── CTA BLOCK ── */
 .ex-cta{
