@@ -201,7 +201,8 @@ function footerHTML() {
         <li><a href="${SITE_URL}/survey.html">Free 5-Day PDF</a></li>
         <li><a href="${SITE_URL}#tiers">8-Week Programs</a></li>
         <li><a href="/hockey-training-app.html">Hockey Training App</a></li>
-        <li><a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275">The App — iOS</a></li>
+        <li><a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" data-store="ios">The App — iOS</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.elitehockeydrills.training">The App — Android</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -408,6 +409,7 @@ ${gaSnippet()}
 <link rel="canonical" href="${SITE_URL}/library.html" />
 ${fontLink()}
 <link rel="stylesheet" href="/assets/library.css" />
+<script src="/assets/store-links.js" defer></script>
 </head>
 <body>
 ${navHTML('library')}
@@ -648,6 +650,7 @@ ${fontLink()}
 <link rel="stylesheet" href="/assets/exercise.css" />
 <script type="application/ld+json">${jsonLd}</script>${videoJsonLd ? `
 <script type="application/ld+json">${videoJsonLd}</script>` : ''}
+<script src="/assets/store-links.js" defer></script>
 </head>
 <body>
 ${navHTML()}
@@ -839,7 +842,7 @@ ${related.length ? `<section class="related-section">
 <!-- STICKY APP BAR -->
 <div class="ex-sticky" id="exStickyApp" role="complementary" aria-label="Get the app">
   <img src="/apple-touch-icon.png" alt="" width="40" height="40" loading="lazy" />
-  <div class="ex-sticky-text"><strong>Train this drill in the app</strong><span>First week free · iPhone</span></div>
+  <div class="ex-sticky-text"><strong>Train this drill in the app</strong><span>First week free · iPhone &amp; Android</span></div>
   <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary" data-place="ex_sticky">Get the App</a>
   <button type="button" class="ex-sticky-x" aria-label="Close">&times;</button>
 </div>
@@ -861,11 +864,10 @@ const io = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 /* App Store click tracking → GA4 event "app_store_click" (mark it as a key event in GA) */
 document.addEventListener('click',function(e){var t=e.target;var a=t&&t.closest?t.closest('a[href*="apps.apple.com"]'):null;if(!a||typeof gtag!=='function')return;var s=a.closest('section[id],header,footer,nav,.mobile-bar,.buybar');gtag('event','app_store_click',{placement:a.getAttribute('data-place')||(s&&(s.id||String(s.className).split(' ')[0]))||'link',link_text:(a.textContent||'').replace(/[ \\t\\r\\n]+/g,' ').trim().slice(0,60),page_path:location.pathname,transport_type:'beacon'});},true);
-/* App card + sticky bar (iPhone app; hidden on Android until the Play Store listing is live) */
+/* App card + sticky bar */
 (function(){
   var card=document.getElementById('exAppCard');
   var bar=document.getElementById('exStickyApp');
-  if(/Android/i.test(navigator.userAgent||'')){if(card)card.remove();if(bar)bar.remove();return;}
   if(!bar)return;
   var closed=false;try{closed=sessionStorage.getItem('ehdStickyClosed')==='1';}catch(e){}
   if(closed){bar.remove();return;}

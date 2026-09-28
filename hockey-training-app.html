@@ -18,10 +18,10 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="manifest" href="site.webmanifest" />
 <title>Hockey Training App — Off-Ice Training for Ice Hockey Players | Elite Hockey Drills</title>
-<meta name="description" content="Elite Hockey Drills is the hockey training app that builds your personalized off-ice program from your age, level, position, and schedule, then runs your whole season. 228+ exercises with demo videos, game-day mode, progress tracking. 7-day free trial on iOS." />
+<meta name="description" content="Elite Hockey Drills is the hockey training app that builds your personalized off-ice program from your age, level, position, and schedule, then runs your whole season. 228+ exercises with demo videos, game-day mode, progress tracking. 7-day free trial on iPhone and Android." />
 <meta name="apple-itunes-app" content="app-id=6787257275" />
 <meta property="og:title" content="Hockey Training App — Off-Ice Training Built Around Your Season" />
-<meta property="og:description" content="The Elite Hockey Drills app builds your personalized off-ice hockey program and runs your whole season. 228+ exercises with demo videos. 7-day free trial on iOS." />
+<meta property="og:description" content="The Elite Hockey Drills app builds your personalized off-ice hockey program and runs your whole season. 228+ exercises with demo videos. 7-day free trial on iPhone and Android." />
 <meta property="og:url" content="https://elitehockeydrills.com/hockey-training-app.html" />
 <meta property="og:image" content="https://elitehockeydrills.com/ehd_hero_medball.jpg" />
 <meta property="og:image:width" content="1200" />
@@ -42,7 +42,8 @@
       "logo": "https://elitehockeydrills.com/apple-touch-icon.png",
       "sameAs": [
         "https://instagram.com/elite_hockey_drills",
-        "https://apps.apple.com/us/app/elite-hockey-drills/id6787257275"
+        "https://apps.apple.com/us/app/elite-hockey-drills/id6787257275",
+        "https://play.google.com/store/apps/details?id=com.elitehockeydrills.training"
       ]
     },
     {
@@ -50,7 +51,7 @@
       "@id": "https://elitehockeydrills.com/hockey-training-app.html#webpage",
       "url": "https://elitehockeydrills.com/hockey-training-app.html",
       "name": "Hockey Training App — Off-Ice Training for Ice Hockey Players",
-      "description": "Elite Hockey Drills is the hockey training app that builds your personalized off-ice program from your age, level, position, and schedule, then runs your whole season. 228+ exercises with demo videos, game-day mode, progress tracking. 7-day free trial on iOS.",
+      "description": "Elite Hockey Drills is the hockey training app that builds your personalized off-ice program from your age, level, position, and schedule, then runs your whole season. 228+ exercises with demo videos, game-day mode, progress tracking. 7-day free trial on iPhone and Android.",
       "isPartOf": {
         "@id": "https://elitehockeydrills.com/#website"
       },
@@ -85,12 +86,18 @@
       "name": "Elite Hockey Drills",
       "alternateName": "Elite Hockey Drills: Off-Ice Hockey Training App",
       "url": "https://elitehockeydrills.com/hockey-training-app.html",
-      "operatingSystem": "iOS",
+      "operatingSystem": "iOS, Android",
       "applicationCategory": "HealthApplication",
       "applicationSubCategory": "Sports training",
       "description": "Personalized off-ice hockey training built around your season. The app builds your program from your age, level, position, equipment, and schedule, coaches every session with a demo video for every exercise, adapts to game days and missed sessions, and tracks tests and personal records. Ages 9 to 40+. 7-day free trial.",
-      "installUrl": "https://apps.apple.com/us/app/elite-hockey-drills/id6787257275",
-      "downloadUrl": "https://apps.apple.com/us/app/elite-hockey-drills/id6787257275",
+      "installUrl": [
+        "https://apps.apple.com/us/app/elite-hockey-drills/id6787257275",
+        "https://play.google.com/store/apps/details?id=com.elitehockeydrills.training"
+      ],
+      "downloadUrl": [
+        "https://apps.apple.com/us/app/elite-hockey-drills/id6787257275",
+        "https://play.google.com/store/apps/details?id=com.elitehockeydrills.training"
+      ],
       "screenshot": [
         "https://elitehockeydrills.com/assets/app/app-home.webp",
         "https://elitehockeydrills.com/assets/app/app-program.webp",
@@ -158,7 +165,7 @@
           "name": "Is there an Android version?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The iOS app is live on the App Store now. The Android version is in final preparation and lands on Google Play in September 2026. Follow @elite_hockey_drills on Instagram or grab the free 5-day program from the homepage and we will email you the day it drops."
+            "text": "Yes. Elite Hockey Drills is live on Google Play for Android and on the App Store for iPhone. Both versions have the same personalized program, the same demo videos, and the same 7-day free trial."
           }
         },
         {
@@ -166,7 +173,7 @@
           "name": "How much does the hockey training app cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The download is free and every new account gets a 7-day free trial with everything unlocked: the full personalized program, every demo video, game-day mode, and progress tracking. After the trial it is $17.99 per month or $99.90 per year, which works out to about $8.33 a month. Cancel anytime through your App Store account."
+            "text": "The download is free and every new account gets a 7-day free trial with everything unlocked: the full personalized program, every demo video, game-day mode, and progress tracking. After the trial it is $17.99 per month or $99.90 per year, which works out to about $8.33 a month. Cancel anytime through your App Store or Google Play account."
           }
         },
         {
@@ -1052,19 +1059,11 @@ section{position:relative;z-index:2;}
 }
 .hero-phone:hover .phone-glare{opacity:1;}
 
-/* Store badges — official Apple badge + Google Play teaser */
+/* Store badges — official App Store + Google Play badges */
 .store-badges{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;}
 .store-badge{display:inline-flex;transition:transform .35s cubic-bezier(.2,.7,.2,1),opacity .35s;}
 .store-badge img{height:52px;width:auto;display:block;}
 .store-badge:hover{transform:translateY(-2px);opacity:.88;}
-.play-soon{
-  display:inline-flex;align-items:center;gap:9px;
-  height:52px;padding:0 18px;border-radius:9px;
-  border:1px solid var(--line-2);color:var(--ink-3);
-  font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
-  white-space:nowrap;
-}
-.play-soon svg{flex-shrink:0;opacity:.55;}
 
 /* Hero phone — real screenshot in the device frame (desktop only) */
 .hero-phone{display:none;}
@@ -1863,6 +1862,7 @@ section{position:relative;z-index:2;}
   .cmp .no::before{content:'— ' attr(data-col);}
 }
 </style>
+<script src="/assets/store-links.js" defer></script>
 </head>
 <body>
 
@@ -1909,10 +1909,10 @@ section{position:relative;z-index:2;}
       <div class="hero-text">
         <div class="hero-badges">
           <div class="hero-status">Now live on the App Store</div>
-          <div class="hero-presale-pill">
+          <a class="hero-presale-pill" href="https://play.google.com/store/apps/details?id=com.elitehockeydrills.training">
             <span class="hero-presale-dot"></span>
-            Android — coming soon
-          </div>
+            New — now on Google Play
+          </a>
         </div>
         <h1 class="hero-h1 display">
           <span class="line">The Hockey Training App</span>
@@ -1929,13 +1929,12 @@ section{position:relative;z-index:2;}
           <a href="#how" class="btn btn-ghost">See How It Works</a>
         </div>
         <div class="store-badges" style="justify-content:flex-start;margin:-40px 0 64px;">
-          <a class="store-badge" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" aria-label="Download Elite Hockey Drills on the App Store">
+          <a class="store-badge" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" data-store="ios" aria-label="Download Elite Hockey Drills on the App Store">
             <img src="assets/app/app-store-badge.svg" alt="Download on the App Store" width="120" height="40" />
           </a>
-          <span class="play-soon">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3l14 9-14 9V3z"/></svg>
-            Google Play — coming soon
-          </span>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.elitehockeydrills.training" aria-label="Get Elite Hockey Drills on Google Play">
+            <img src="assets/app/google-play-badge.png" alt="Get it on Google Play" width="134" height="40" />
+          </a>
         </div>
         <div class="hero-stats">
           <div>
@@ -1993,7 +1992,7 @@ section{position:relative;z-index:2;}
 <section class="trial-strip" id="trial" aria-label="Free trial and pricing">
   <div class="wrap trial-inner">
     <div class="trial-copy">
-      <div class="trial-kicker">Start tonight · iOS</div>
+      <div class="trial-kicker">Start tonight · iPhone &amp; Android</div>
       <h2 class="trial-h">Your first week is <em>free.</em></h2>
       <p class="trial-p">Download, answer a few questions, and your personalized off-ice program is ready before your next practice.</p>
     </div>
@@ -2001,7 +2000,7 @@ section{position:relative;z-index:2;}
       <li><b>7 days</b><span>free trial, everything unlocked</span></li>
       <li><b>$17.99</b><span>per month after the trial</span></li>
       <li><b>$99.90</b><span>per year · save 54%</span></li>
-      <li><b>Cancel</b><span>anytime in your App Store account</span></li>
+      <li><b>Cancel</b><span>anytime in the App Store or Google Play</span></li>
     </ul>
     <div class="trial-cta">
       <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary" data-place="home-trial">
@@ -2148,13 +2147,12 @@ section{position:relative;z-index:2;}
         </div>
       </div>
       <div class="store-badges">
-          <a class="store-badge" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" aria-label="Download Elite Hockey Drills on the App Store">
+          <a class="store-badge" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" data-store="ios" aria-label="Download Elite Hockey Drills on the App Store">
             <img src="assets/app/app-store-badge.svg" alt="Download on the App Store" width="120" height="40" />
           </a>
-          <span class="play-soon">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3l14 9-14 9V3z"/></svg>
-            Google Play — coming soon
-          </span>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.elitehockeydrills.training" aria-label="Get Elite Hockey Drills on Google Play">
+            <img src="assets/app/google-play-badge.png" alt="Get it on Google Play" width="134" height="40" />
+          </a>
         </div>
       <p class="app-trial-note">Free to download · One app for ages 9–11 through 40+ · Cancel anytime during the trial</p>
     </div>
@@ -2249,7 +2247,7 @@ section{position:relative;z-index:2;}
           <tr><td>Demo video for every exercise</td><td class="yes" data-col="App">Yes</td><td class="yes" data-col="8-Week Program">Yes</td></tr>
           <tr><td>Tests, personal records &amp; progress tracking</td><td class="yes" data-col="App">In the app</td><td class="no" data-col="8-Week Program">Tests included, tracked by hand</td></tr>
           <tr><td>Price</td><td class="yes" data-col="App">Free 7-day trial, then $17.99/mo or $99.90/yr</td><td class="no" data-col="8-Week Program">$79 once, yours forever</td></tr>
-          <tr><td>Where it runs</td><td class="yes" data-col="App">iOS App Store, Android coming soon</td><td class="no" data-col="8-Week Program">Any browser</td></tr>
+          <tr><td>Where it runs</td><td class="yes" data-col="App">iPhone and Android</td><td class="no" data-col="8-Week Program">Any browser</td></tr>
         </tbody>
       </table>
     </div>
@@ -2283,14 +2281,14 @@ section{position:relative;z-index:2;}
           <span>Is there an Android version?</span>
           <span class="faq-icon"></span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">The iOS app is live on the App Store now. The Android version is in final preparation and lands on Google Play in September 2026. Follow @elite_hockey_drills on Instagram or grab the free 5-day program from the homepage and we will email you the day it drops.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes. Elite Hockey Drills is live on Google Play for Android and on the App Store for iPhone. Both versions have the same personalized program, the same demo videos, and the same 7-day free trial.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q-btn" onclick="toggleFaq(this)">
           <span>How much does the hockey training app cost?</span>
           <span class="faq-icon"></span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">The download is free and every new account gets a 7-day free trial with everything unlocked: the full personalized program, every demo video, game-day mode, and progress tracking. After the trial it is $17.99 per month or $99.90 per year, which works out to about $8.33 a month. Cancel anytime through your App Store account.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">The download is free and every new account gets a 7-day free trial with everything unlocked: the full personalized program, every demo video, game-day mode, and progress tracking. After the trial it is $17.99 per month or $99.90 per year, which works out to about $8.33 a month. Cancel anytime through your App Store or Google Play account.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q-btn" onclick="toggleFaq(this)">
@@ -2343,13 +2341,12 @@ section{position:relative;z-index:2;}
         <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
       <div class="store-badges" style="margin-top:22px;">
-          <a class="store-badge" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" aria-label="Download Elite Hockey Drills on the App Store">
+          <a class="store-badge" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" data-store="ios" aria-label="Download Elite Hockey Drills on the App Store">
             <img src="assets/app/app-store-badge.svg" alt="Download on the App Store" width="120" height="40" />
           </a>
-          <span class="play-soon">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3l14 9-14 9V3z"/></svg>
-            Google Play — coming soon
-          </span>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.elitehockeydrills.training" aria-label="Get Elite Hockey Drills on Google Play">
+            <img src="assets/app/google-play-badge.png" alt="Get it on Google Play" width="134" height="40" />
+          </a>
         </div>
       <p class="final-note" style="margin-top:24px;">Not ready for the app? <a href="survey.html" style="color:var(--ice);">Take the 60-second quiz</a> for a free 5-day program. No card needed.</p>
     </div>
@@ -2366,7 +2363,8 @@ section{position:relative;z-index:2;}
       <h4>Train</h4>
       <ul>
         <li><a href="/hockey-training-app.html">Hockey Training App</a></li>
-        <li><a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275">The App — iOS</a></li>
+        <li><a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" data-store="ios">The App — iOS</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.elitehockeydrills.training">The App — Android</a></li>
         <li><a href="/#tiers">8-Week Programs</a></li>
         <li><a href="survey.html">Free 5-Day Program</a></li>
         <li><a href="/api/restore">Restore Access</a></li>

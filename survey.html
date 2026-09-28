@@ -261,6 +261,7 @@ body::after{
 .success-ig-link:hover{opacity:.75;text-decoration:underline;}
 .pcard-app{max-width:420px;border-color:rgba(93,180,229,.30);}
 .pcard-note{font-size:12px;color:#AEB3BD;line-height:1.5;max-width:380px;}
+.pcard-note a{color:var(--ice);}
 .pcard-alt{margin-top:6px;font-size:13px;color:#AEB3BD;transition:color .2s;}
 .pcard-alt b{color:var(--ink);font-weight:600;}
 .pcard-alt:hover{color:var(--ink);}
@@ -281,6 +282,7 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   .option{padding:20px 22px;font-size:15.5px;}
 }
 </style>
+<script src="/assets/store-links.js" defer></script>
 </head>
 
 <body>
@@ -620,10 +622,13 @@ const PROGRAM_MATCH = {
 
 const ARROW_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>';
 
-const APP_URL = 'https://apps.apple.com/us/app/elite-hockey-drills/id6787257275';
+const IOS_URL = 'https://apps.apple.com/us/app/elite-hockey-drills/id6787257275';
+const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.elitehockeydrills.training';
+const ON_ANDROID = /Android/i.test(navigator.userAgent || '');
+const APP_URL = ON_ANDROID ? PLAY_URL : IOS_URL;
 function buildAppCard(age){
   return `<a class="pcard pcard-app" href="${APP_URL}" data-place="survey-success" target="_blank" rel="noopener">`
-    + `<div class="pcard-top"><span class="pcard-badge">Ages ${age} · iOS</span>`
+    + `<div class="pcard-top"><span class="pcard-badge">Ages ${age} · ${ON_ANDROID ? 'Android' : 'iOS'}</span>`
     + `<span class="pcard-price"><b>7 days free</b></span></div>`
     + `<div class="pcard-name">The Elite Hockey Drills App</div>`
     + `<div class="pcard-desc">Your whole season, built around your age, level, position and schedule — a demo video for every exercise, game-day mode, and progress tracking. Then $17.99/mo or $99.90/yr. Cancel anytime.</div>`
@@ -639,7 +644,9 @@ function populateSuccessScreen(){
   const p = list[0];
   if(tail) tail.innerHTML = `Your free 5 days are on the way. The app runs the other 51 weeks — personalized to a ${p.age} player. <strong>Your first week is free.</strong>`;
   wrap.innerHTML = buildAppCard(p.age)
-    + `<span class="pcard-note">Android? The Google Play version is days away — your free 5 days work anywhere.</span>`
+    + (ON_ANDROID
+      ? `<span class="pcard-note">On iPhone? <a href="${IOS_URL}" data-store="ios" target="_blank" rel="noopener">Get it on the App Store</a>.</span>`
+      : `<span class="pcard-note">On Android? <a href="${PLAY_URL}" data-place="survey-success" target="_blank" rel="noopener">Get it on Google Play</a>.</span>`)
     + `<a class="pcard-alt" href="${p.url}">Prefer a one-time 8-week program? <b>${p.name}</b> · $79 →</a>`;
 }
 

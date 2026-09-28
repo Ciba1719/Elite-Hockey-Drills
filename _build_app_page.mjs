@@ -26,9 +26,10 @@ const MOBILE_BAR = between(idx, '<div class="mobile-bar"', '</div>').replace('hr
 const SCRIPT = idx.slice(idx.lastIndexOf('<script>'), idx.lastIndexOf('</script>') + '</script>'.length);
 
 const APP_URL = 'https://apps.apple.com/us/app/elite-hockey-drills/id6787257275';
+const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.elitehockeydrills.training';
 const PAGE_URL = 'https://elitehockeydrills.com/hockey-training-app.html';
 const TITLE = 'Hockey Training App — Off-Ice Training for Ice Hockey Players | Elite Hockey Drills';
-const DESC = 'Elite Hockey Drills is the hockey training app that builds your personalized off-ice program from your age, level, position, and schedule, then runs your whole season. 228+ exercises with demo videos, game-day mode, progress tracking. 7-day free trial on iOS.';
+const DESC = 'Elite Hockey Drills is the hockey training app that builds your personalized off-ice program from your age, level, position, and schedule, then runs your whole season. 228+ exercises with demo videos, game-day mode, progress tracking. 7-day free trial on iPhone and Android.';
 
 const faqs = [
   {
@@ -41,11 +42,11 @@ const faqs = [
   },
   {
     q: 'Is there an Android version?',
-    a: 'The iOS app is live on the App Store now. The Android version is in final preparation and lands on Google Play in September 2026. Follow @elite_hockey_drills on Instagram or grab the free 5-day program from the homepage and we will email you the day it drops.'
+    a: 'Yes. Elite Hockey Drills is live on Google Play for Android and on the App Store for iPhone. Both versions have the same personalized program, the same demo videos, and the same 7-day free trial.'
   },
   {
     q: 'How much does the hockey training app cost?',
-    a: 'The download is free and every new account gets a 7-day free trial with everything unlocked: the full personalized program, every demo video, game-day mode, and progress tracking. After the trial it is $17.99 per month or $99.90 per year, which works out to about $8.33 a month. Cancel anytime through your App Store account.'
+    a: 'The download is free and every new account gets a 7-day free trial with everything unlocked: the full personalized program, every demo video, game-day mode, and progress tracking. After the trial it is $17.99 per month or $99.90 per year, which works out to about $8.33 a month. Cancel anytime through your App Store or Google Play account.'
   },
   {
     q: 'What equipment do I need?',
@@ -87,7 +88,7 @@ const schema = {
       name: 'Elite Hockey Drills',
       url: 'https://elitehockeydrills.com/',
       logo: 'https://elitehockeydrills.com/apple-touch-icon.png',
-      sameAs: ['https://instagram.com/elite_hockey_drills', APP_URL]
+      sameAs: ['https://instagram.com/elite_hockey_drills', APP_URL, PLAY_URL]
     },
     {
       '@type': 'WebPage',
@@ -113,12 +114,12 @@ const schema = {
       name: 'Elite Hockey Drills',
       alternateName: 'Elite Hockey Drills: Off-Ice Hockey Training App',
       url: PAGE_URL,
-      operatingSystem: 'iOS',
+      operatingSystem: 'iOS, Android',
       applicationCategory: 'HealthApplication',
       applicationSubCategory: 'Sports training',
       description: 'Personalized off-ice hockey training built around your season. The app builds your program from your age, level, position, equipment, and schedule, coaches every session with a demo video for every exercise, adapts to game days and missed sessions, and tracks tests and personal records. Ages 9 to 40+. 7-day free trial.',
-      installUrl: APP_URL,
-      downloadUrl: APP_URL,
+      installUrl: [APP_URL, PLAY_URL],
+      downloadUrl: [APP_URL, PLAY_URL],
       screenshot: ['app-home', 'app-program', 'app-training', 'app-gameday', 'app-progress'].map(n => 'https://elitehockeydrills.com/assets/app/' + n + '.webp'),
       featureList: [
         'Personalized off-ice program from age, level, position, equipment and schedule',
@@ -145,13 +146,12 @@ const schema = {
 };
 
 const badges = (style = '') => `<div class="store-badges"${style ? ' style="' + style + '"' : ''}>
-          <a class="store-badge" href="${APP_URL}" aria-label="Download Elite Hockey Drills on the App Store">
+          <a class="store-badge" href="${APP_URL}" data-store="ios" aria-label="Download Elite Hockey Drills on the App Store">
             <img src="assets/app/app-store-badge.svg" alt="Download on the App Store" width="120" height="40" />
           </a>
-          <span class="play-soon">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3l14 9-14 9V3z"/></svg>
-            Google Play — coming soon
-          </span>
+          <a class="store-badge" href="${PLAY_URL}" aria-label="Get Elite Hockey Drills on Google Play">
+            <img src="assets/app/google-play-badge.png" alt="Get it on Google Play" width="134" height="40" />
+          </a>
         </div>`;
 
 const arrow = '<svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>';
@@ -178,7 +178,7 @@ const cmpRows = [
   ['Demo video for every exercise', ['yes', 'Yes'], ['yes', 'Yes']],
   ['Tests, personal records &amp; progress tracking', ['yes', 'In the app'], ['no', 'Tests included, tracked by hand']],
   ['Price', ['yes', 'Free 7-day trial, then $17.99/mo or $99.90/yr'], ['no', '$79 once, yours forever']],
-  ['Where it runs', ['yes', 'iOS App Store, Android coming soon'], ['no', 'Any browser']]
+  ['Where it runs', ['yes', 'iPhone and Android'], ['no', 'Any browser']]
 ];
 const cmpHtml = cmpRows.map(([label, [c1, t1], [c2, t2]]) =>
   `          <tr><td>${label}</td><td class="${c1}" data-col="App">${t1}</td><td class="${c2}" data-col="8-Week Program">${t2}</td></tr>`
@@ -244,7 +244,7 @@ const html = `<!DOCTYPE html>
 <meta name="description" content="${DESC}" />
 <meta name="apple-itunes-app" content="app-id=6787257275" />
 <meta property="og:title" content="Hockey Training App — Off-Ice Training Built Around Your Season" />
-<meta property="og:description" content="The Elite Hockey Drills app builds your personalized off-ice hockey program and runs your whole season. 228+ exercises with demo videos. 7-day free trial on iOS." />
+<meta property="og:description" content="The Elite Hockey Drills app builds your personalized off-ice hockey program and runs your whole season. 228+ exercises with demo videos. 7-day free trial on iPhone and Android." />
 <meta property="og:url" content="${PAGE_URL}" />
 <meta property="og:image" content="https://elitehockeydrills.com/ehd_hero_medball.jpg" />
 <meta property="og:image:width" content="1200" />
@@ -262,6 +262,7 @@ ${JSON.stringify(schema, null, 2)}
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 ${STYLE}
 ${EXTRA_CSS}
+<script src="/assets/store-links.js" defer></script>
 </head>
 <body>
 
@@ -308,10 +309,10 @@ ${EXTRA_CSS}
       <div class="hero-text">
         <div class="hero-badges">
           <div class="hero-status">Now live on the App Store</div>
-          <div class="hero-presale-pill">
+          <a class="hero-presale-pill" href="${PLAY_URL}">
             <span class="hero-presale-dot"></span>
-            Android — coming soon
-          </div>
+            New — now on Google Play
+          </a>
         </div>
         <h1 class="hero-h1 display">
           <span class="line">The Hockey Training App</span>
