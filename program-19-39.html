@@ -108,7 +108,7 @@ section{position:relative;z-index:2;}
 .hero-glow.warm{top:auto;bottom:-30%;left:-22%;right:auto;background:radial-gradient(closest-side,rgba(232,183,119,.11) 0%,transparent 70%);animation:drift2 19s ease-in-out infinite;}
 @keyframes drift1{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(-34px,26px) scale(1.08);}}
 @keyframes drift2{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(30px,-22px) scale(1.1);}}
-.hero-inner{position:relative;z-index:2;display:grid;gap:44px;}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr);gap:44px;} /* minmax(0,…): a wide item can't stretch the column past the gutters */
 .hero-eyebrow{display:inline-flex;align-items:center;gap:10px;padding:7px 14px 7px 12px;border:1px solid var(--ice-line);background:var(--ice-soft);border-radius:100px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ice);width:fit-content;margin-bottom:22px;}
 .hero-eyebrow::before{content:'';width:6px;height:6px;background:var(--ice);border-radius:50%;box-shadow:0 0 10px var(--ice);animation:dotPulse 2s infinite;flex-shrink:0;}
 .hero-h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(72px,16vw,124px);line-height:.88;letter-spacing:.01em;margin-bottom:20px;}
@@ -166,7 +166,7 @@ section{position:relative;z-index:2;}
 .offer-guarantee{display:flex;align-items:center;gap:9px;font-size:12.5px;color:var(--ink-2);margin-top:14px;}
 .offer-guarantee svg{flex-shrink:0;color:var(--green);}
 /* offer pop: halo + badge + countdown + payment trust */
-.offer-wrap{position:relative;}
+.offer-wrap{position:relative;min-width:min-content;} /* under 362px the card overhangs the column rather than clipping its price row */
 .offer-halo{position:absolute;inset:-8px;border-radius:28px;background:radial-gradient(60% 55% at 50% 0%,rgba(232,183,119,.5),transparent 72%),linear-gradient(180deg,rgba(232,183,119,.28),rgba(93,180,229,.12));filter:blur(24px);opacity:.5;z-index:0;pointer-events:none;animation:haloPulse 4.6s ease-in-out infinite;}
 @keyframes haloPulse{0%,100%{opacity:.36;transform:scale(.99);}50%{opacity:.72;transform:scale(1.015);}}
 .offer-card{position:relative;z-index:1;}
