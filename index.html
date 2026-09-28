@@ -190,6 +190,12 @@ section{position:relative;z-index:2;}
 }
 .mobile-menu a:last-child{border-bottom:none;}
 @media(min-width:900px){.nav-links{display:flex;}.nav{padding:18px 40px;}.nav-toggle,.mobile-menu{display:none;}}
+/* Small phones: logo + CTA + menu button need ~333px in one row — more than a 360–390px screen has */
+@media(max-width:400px){
+  .nav .nav-logo{letter-spacing:.08em;}
+  .nav-cta{padding:9px 12px;white-space:nowrap;}
+  .nav-right{gap:8px;}
+}
 
 /* HERO */
 .hero{
@@ -718,7 +724,9 @@ section{position:relative;z-index:2;}
   background:linear-gradient(180deg,var(--bg) 0%, #050810 50%, var(--bg) 100%);
   position:relative;
   /* No overflow:hidden here — it would break the sticky app-tour pin.
-     Horizontal glow bleed is clipped by body{overflow-x:hidden}. */
+     overflow-x:clip cuts the glow bleed without creating a scroll container.
+     body{overflow-x:hidden} only hid it: phones still widened the page, and the fixed nav with it. */
+  overflow-x:clip;
   border-top:1px solid var(--line);border-bottom:1px solid var(--line);
 }
 .app-bg-glow{
