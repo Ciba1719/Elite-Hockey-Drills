@@ -310,6 +310,10 @@ a.ex .lk{font-size:.7em;vertical-align:super;margin-left:.18em;opacity:.7;}
 .ab-txt b{color:var(--ink);font-weight:600;}
 .ab-go{font-weight:700;font-size:13.5px;color:var(--warm);white-space:nowrap;}
 .next-note{margin:16px 0 0;font-size:12px;color:#AEB3BD;line-height:1.5;}
+.store-badges{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:22px;}
+.store-badge{display:inline-flex;transition:transform .35s cubic-bezier(.2,.7,.2,1),opacity .35s;}
+.store-badge img{height:44px;width:auto;display:block;}
+.store-badge:hover{transform:translateY(-2px);opacity:.88;}
 </style>
 <script src="/assets/store-links.js" defer></script>
 </head>
@@ -860,6 +864,10 @@ a.ex .lk{font-size:.7em;vertical-align:super;margin-left:.18em;opacity:.7;}
         <a class="btn btn-primary" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" data-place="free-next" target="_blank" rel="noopener">Start Your Free Week
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         <a class="btn btn-ghost" href="library.html">Explore the Exercise Library</a>
+      </div>
+      <div class="store-badges">
+        <a class="store-badge" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" data-store="ios" data-place="free-next" target="_blank" rel="noopener" aria-label="Download Elite Hockey Drills on the App Store"><img src="assets/app/app-store-badge.svg" alt="Download on the App Store" width="120" height="40" loading="lazy" /></a>
+        <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.elitehockeydrills.training" data-place="free-next" target="_blank" rel="noopener" aria-label="Get Elite Hockey Drills on Google Play"><img src="assets/app/google-play-badge.png" alt="Get it on Google Play" width="134" height="40" loading="lazy" /></a>
       </div>
       <p class="next-note">7-day free trial · then $17.99/mo or $99.90/yr · cancel anytime · iPhone &amp; Android</p>
     </div>

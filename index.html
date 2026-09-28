@@ -1686,8 +1686,10 @@ section{position:relative;z-index:2;}
 .trial-cta{display:flex;flex-direction:column;align-items:flex-start;gap:16px;}
 .trial-qr{display:none;}
 @media(min-width:900px){
-  .trial-qr{display:flex;align-items:center;gap:12px;font-size:12px;line-height:1.45;color:var(--ink-2);}
+  .trial-qr{display:grid;grid-template-columns:repeat(2,84px);gap:10px 12px;font-size:12px;line-height:1.45;color:var(--ink-2);}
+  .trial-qr span{grid-column:1/-1;}
   .trial-qr img{width:84px;height:84px;padding:6px;background:#0A0A0E;border:1px solid var(--line-2);border-radius:12px;}
+  .trial-qr figcaption{margin-top:6px;text-align:center;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);}
 }
 </style>
 <script src="/assets/store-links.js" defer></script>
@@ -1836,8 +1838,15 @@ section{position:relative;z-index:2;}
         <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
       <div class="trial-qr">
-        <img src="assets/app/app-store-qr.svg" alt="QR code for Elite Hockey Drills on the App Store" width="84" height="84" loading="lazy" />
-        <span>On a computer?<br>Scan with your iPhone<br>to install.</span>
+        <span>On a computer? Scan with your phone to install.</span>
+        <figure>
+          <img src="assets/app/app-store-qr.svg" alt="QR code for Elite Hockey Drills on the App Store" width="84" height="84" loading="lazy" />
+          <figcaption>iPhone</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/app/google-play-qr.svg" alt="QR code for Elite Hockey Drills on Google Play" width="84" height="84" loading="lazy" />
+          <figcaption>Android</figcaption>
+        </figure>
       </div>
     </div>
   </div>
