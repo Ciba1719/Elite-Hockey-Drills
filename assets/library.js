@@ -24,7 +24,9 @@
     if (!ticking) {
       requestAnimationFrame(() => {
         const y = window.scrollY;
-        const heroBottom = document.getElementById('libHero').offsetHeight;
+        const hero = document.getElementById('libHero');
+        const heroBottom = hero ? hero.offsetHeight : 0;
+        if (!tabsWrap) { ticking = false; return; }
         if (y > heroBottom) {
           tabsWrap.classList.toggle('tabs-hidden', y > lastScrollY + 4);
         } else {
@@ -40,6 +42,7 @@
   // ── Search ──
   function onSearch(q) {
     searchQuery = q.trim().toLowerCase();
+    if (searchQuery && activeTab) setTab(''); // typing searches the whole library, not just the open category
     heroSearch.value = q;
     heroSearchClear.hidden = !q;
     debounce(render, 100);
@@ -49,7 +52,7 @@
   if (clearBtn) clearBtn.addEventListener('click', () => { onSearch(''); setTab(''); });
 
   // ── Sort ──
-  sortSelect.addEventListener('change', () => { sortMode = sortSelect.value; render(); });
+  if (sortSelect) sortSelect.addEventListener('change', () => { sortMode = sortSelect.value; render(); });
 
   // ── Category tabs ──
   function setTab(cat) {
@@ -66,6 +69,10 @@
       if (activeTab === cat && !searchQuery) return; // clicking active "All" does nothing
       setTab(cat);
       render();
+      if (cat && window.innerWidth < 900) {
+        const target = document.getElementById('resultsSection');
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   });
 
