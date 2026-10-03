@@ -254,6 +254,22 @@ section{position:relative}
 @keyframes marquee{to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.strip-track{animation:none}}
 
+/* ── Five questions row ─────────────────────────────────────── */
+.qrow{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 0 clamp(26px,4vw,40px);counter-reset:q}
+.qrow li{position:relative;display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:14px;background:rgba(93,180,229,.06);border:1px solid rgba(93,180,229,.22);font-size:14.5px;font-weight:500;color:var(--ink)}
+.qrow li span{font-family:var(--display);font-size:22px;letter-spacing:.04em;color:var(--ice);line-height:1;min-width:26px}
+.qrow li small{display:block;font-size:11.5px;color:var(--muted);font-weight:400;margin-top:1px}
+.qrow li:last-child{grid-column:1/-1}
+.qrow-note{font-size:13px;color:var(--muted);margin:-14px 0 clamp(26px,4vw,40px);display:flex;align-items:center;gap:8px}
+.qrow-note i{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold)}
+@media (min-width:820px){
+  .qrow{grid-template-columns:repeat(5,1fr);gap:12px}
+  .qrow li{flex-direction:column;align-items:flex-start;gap:10px;padding:18px 18px 16px}
+  .qrow li:last-child{grid-column:auto}
+  .qrow li::after{content:'';position:absolute;right:-12px;top:50%;width:12px;height:1px;background:rgba(93,180,229,.35)}
+  .qrow li:last-child::after{display:none}
+}
+
 /* ── How it works ───────────────────────────────────────────── */
 .how-grid{display:grid;gap:14px}
 .how-card{position:relative;padding:28px 24px 30px;border-radius:var(--r-lg);background:linear-gradient(180deg,var(--panel-2),var(--panel));border:1px solid var(--line);overflow:hidden}
@@ -561,11 +577,19 @@ section{position:relative}
       <h2 class="display">Five questions.<br>A whole <em>season.</em></h2>
       <p class="lede">No spreadsheet, no guessing, no recycled gym plan. The thinking is done before your first session.</p>
     </div>
+    <ol class="qrow reveal" aria-label="The five questions the app asks">
+      <li><span>01</span><div>Your age<small>9–11 through 40+</small></div></li>
+      <li><span>02</span><div>Your level<small>Rec, travel, junior, college, pro</small></div></li>
+      <li><span>03</span><div>Your position<small>Forward, D, goalie</small></div></li>
+      <li><span>04</span><div>Days you can train<small>2 to 5 per week</small></div></li>
+      <li><span>05</span><div>Where the season stands<small>Off-season, pre-season, in-season</small></div></li>
+    </ol>
+    <p class="qrow-note reveal"><i></i>Thirty seconds. Then this happens:</p>
     <div class="how-grid">
       <article class="how-card reveal">
         <div class="how-num">01</div>
         <h3>Tell it <em>about you</em></h3>
-        <p>Age, level, position, how many days you can train, and where the season stands. Thirty seconds, no account needed to look around.</p>
+        <p>Five taps, no typing, no account needed to look around. The app reads your answers the way a coach would — a 13-year-old in a growth spurt and a 35-year-old beer-leaguer do not get the same plan.</p>
         <span class="tag">30 seconds</span>
       </article>
       <article class="how-card reveal d1">
