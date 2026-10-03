@@ -29,7 +29,7 @@ const APP_URL = 'https://apps.apple.com/us/app/elite-hockey-drills/id6787257275'
 const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.elitehockeydrills.training';
 const PAGE_URL = 'https://elitehockeydrills.com/hockey-training-app.html';
 const TITLE = 'Hockey Training App — Off-Ice Training for Ice Hockey Players | Elite Hockey Drills';
-const DESC = 'Elite Hockey Drills is the hockey training app that builds your personalized off-ice program from your age, level, position, and schedule, then runs your whole season. 228+ exercises with demo videos, game-day mode, progress tracking. 7-day free trial on iPhone and Android.';
+const DESC = 'Elite Hockey Drills is the hockey training app that builds your personalized off-ice program from your age, level, position, and schedule, then runs your whole season. 390+ exercises with demo videos, game-day mode, progress tracking. 7-day free trial on iPhone and Android.';
 
 const faqs = [
   {
@@ -123,7 +123,7 @@ const schema = {
       screenshot: ['app-home', 'app-program', 'app-training', 'app-gameday', 'app-progress'].map(n => 'https://elitehockeydrills.com/assets/app/' + n + '.webp'),
       featureList: [
         'Personalized off-ice program from age, level, position, equipment and schedule',
-        '228+ hockey-specific exercises, each with a demo video',
+        '390+ hockey-specific exercises, each with a demo video',
         'Season-aware periodization: foundation, strength, power, peak and deload blocks',
         'Game-day mode with activation, timing and next-day reset',
         'Adapts to missed sessions instead of punishing them',
@@ -244,7 +244,7 @@ const html = `<!DOCTYPE html>
 <meta name="description" content="${DESC}" />
 <meta name="apple-itunes-app" content="app-id=6787257275" />
 <meta property="og:title" content="Hockey Training App — Off-Ice Training Built Around Your Season" />
-<meta property="og:description" content="The Elite Hockey Drills app builds your personalized off-ice hockey program and runs your whole season. 228+ exercises with demo videos. 7-day free trial on iPhone and Android." />
+<meta property="og:description" content="The Elite Hockey Drills app builds your personalized off-ice hockey program and runs your whole season. 390+ exercises with demo videos. 7-day free trial on iPhone and Android." />
 <meta property="og:url" content="${PAGE_URL}" />
 <meta property="og:image" content="https://elitehockeydrills.com/ehd_hero_medball.jpg" />
 <meta property="og:image:width" content="1200" />
@@ -379,7 +379,7 @@ ${MARQUEE}
 
     <div class="app-features-wrap reveal">
       <ul class="app-features">
-        <li>228+ off-ice hockey exercises, each with a coach-filmed demo video</li>
+        <li>390+ off-ice hockey exercises, each with a coach-filmed demo video</li>
         <li>Personalized program from your age, level, position &amp; equipment</li>
         <li>Season-aware: pre-season, in-season, playoffs &amp; game days</li>
         <li>Periodized blocks: foundation, strength, power, peak &amp; deload</li>

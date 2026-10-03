@@ -193,7 +193,7 @@ function footerHTML() {
   <div class="footer-inner">
     <div class="footer-brand">
       <a class="nav-logo" href="${SITE_URL}"><span class="dot"></span>ELITE HOCKEY DRILLS</a>
-      <p>Science-backed off-ice training for hockey players. Built by a certified sport scientist and national team coach.</p>
+      <p>Science-backed off-ice training for hockey players. Built by a certified sport scientist and former national-team coach.</p>
     </div>
     <div class="footer-col">
       <h4>Programs</h4>
@@ -224,7 +224,7 @@ function footerHTML() {
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2025 Elite Hockey Drills. All rights reserved.</span>
+    <span>© 2026 Elite Hockey Drills. All rights reserved.</span>
     <a class="footer-ig" href="https://instagram.com/elite_hockey_drills" target="_blank" rel="noopener">@elite_hockey_drills</a>
   </div>
 </footer>`;
