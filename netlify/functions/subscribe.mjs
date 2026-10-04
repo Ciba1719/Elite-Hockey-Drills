@@ -70,7 +70,7 @@ export default async (req) => {
     level: String(body.level || ''),
     goal: String(body.goal || ''),
     source,
-    language: ['cs', 'sv'].includes(body.lang) ? body.lang : 'en',
+    language: ['cs', 'sv', 'de'].includes(body.lang) ? body.lang : 'en',
   };
   if (name) fields.name = name;
 
@@ -86,11 +86,11 @@ export default async (req) => {
     let groupIds = [];
     if (body.age) {
       const groupName = pickGroupName(body.age);
-      // Translated sites send lang ('cs' from /cs/survey.html, 'sv' from /sv/survey.html).
+      // Translated sites send lang ('cs', 'sv', 'de' from /cs/, /sv/, /de/survey.html).
       // Those leads go to the matching "<group>-<lang>" group (e.g. "teen-program-sv")
       // once it exists in MailerLite; until then they fall back to the English group
       // so no lead is ever lost.
-      const lang = ['cs', 'sv'].includes(body.lang) ? body.lang : null;
+      const lang = ['cs', 'sv', 'de'].includes(body.lang) ? body.lang : null;
       const langGroup = lang ? groups.find((g) => g.name === `${groupName}-${lang}`) : null;
       const group = langGroup || groups.find((g) => g.name === groupName);
       if (!group) {

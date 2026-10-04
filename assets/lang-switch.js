@@ -1,4 +1,4 @@
-/* Elite Hockey Drills — language switcher (EN / CZ / SV)
+/* Elite Hockey Drills — language switcher (EN / CZ / SV / DE)
    One file for every page. Each page has a placeholder
      <div class="lang-dd" data-cur="en|cs|sv"></div>
    in its nav. This script turns it into a flag dropdown that links to the SAME
@@ -9,20 +9,23 @@
     { code: 'en', label: 'EN', name: 'English', prefix: '' },
     { code: 'cs', label: 'CZ', name: 'Čeština', prefix: '/cs' },
     { code: 'sv', label: 'SV', name: 'Svenska', prefix: '/sv' },
+    { code: 'de', label: 'DE', name: 'Deutsch', prefix: '/de' },
   ];
   var HINT = {
     cs: { text: 'Tahle stránka je i v češtině.', btn: 'Česky', close: 'Zavřít' },
     sv: { text: 'Den här sidan finns även på svenska.', btn: 'Svenska', close: 'Stäng' },
+    de: { text: 'Diese Seite gibt es auch auf Deutsch.', btn: 'Deutsch', close: 'Schließen' },
   };
   // Inline SVG flags (Windows does not render flag emoji).
   var FLAG = {
     en: '<svg viewBox="0 0 19 10" aria-hidden="true"><rect width="19" height="10" fill="#B22234"/><path d="M0 1.15h19M0 2.69h19M0 4.23h19M0 5.77h19M0 7.31h19M0 8.85h19" stroke="#fff" stroke-width=".77"/><rect width="7.6" height="5.38" fill="#3C3B6E"/><g fill="#fff"><circle cx="1.1" cy="1" r=".32"/><circle cx="2.6" cy="1" r=".32"/><circle cx="4.1" cy="1" r=".32"/><circle cx="5.6" cy="1" r=".32"/><circle cx="1.85" cy="2" r=".32"/><circle cx="3.35" cy="2" r=".32"/><circle cx="4.85" cy="2" r=".32"/><circle cx="6.35" cy="2" r=".32"/><circle cx="1.1" cy="3" r=".32"/><circle cx="2.6" cy="3" r=".32"/><circle cx="4.1" cy="3" r=".32"/><circle cx="5.6" cy="3" r=".32"/><circle cx="1.85" cy="4" r=".32"/><circle cx="3.35" cy="4" r=".32"/><circle cx="4.85" cy="4" r=".32"/><circle cx="6.35" cy="4" r=".32"/></g></svg>',
     cs: '<svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="10" fill="#fff"/><rect y="10" width="30" height="10" fill="#D7141A"/><path d="M0 0l15 10L0 20z" fill="#11457E"/></svg>',
     sv: '<svg viewBox="0 0 16 10" aria-hidden="true"><rect width="16" height="10" fill="#006AA7"/><path d="M5 0h2v10H5zM0 4h16v2H0z" fill="#FECC00"/></svg>',
+    de: '<svg viewBox="0 0 5 3" aria-hidden="true"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCE00"/></svg>',
   };
 
   var path = location.pathname;
-  var m = path.match(/^\/(cs|sv)(?=\/|$)/);
+  var m = path.match(/^\/(cs|sv|de)(?=\/|$)/);
   var cur = m ? m[1] : 'en';
   var base = m ? path.slice(m[0].length) : path;
   if (base === '' || base === '/index.html') base = '/';
@@ -124,7 +127,7 @@
     if (cur === 'en') {
       var stored = null; try { stored = localStorage.getItem('ehd_lang'); } catch (e) {}
       var langs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || '']).join(',').toLowerCase();
-      var want = /(^|,)(cs|sk)\b/.test(langs) ? 'cs' : (/(^|,)sv\b/.test(langs) ? 'sv' : null);
+      var want = /(^|,)(cs|sk)\b/.test(langs) ? 'cs' : (/(^|,)sv\b/.test(langs) ? 'sv' : (/(^|,)de\b/.test(langs) ? 'de' : null));
       if (want && !stored) {
         var t = HINT[want];
         var bar = document.createElement('div');

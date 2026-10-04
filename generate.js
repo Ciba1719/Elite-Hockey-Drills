@@ -17,11 +17,11 @@ const LIMIT      = limitArg ? parseInt(limitArg.split('=')[1], 10) : null;
 const SITE_URL   = 'https://elitehockeydrills.com';
 const TODAY      = new Date().toISOString().slice(0, 10);
 const GA_TAG     = 'G-JH623WRMN8';
-// Languages. English pages are built here; /cs/ and /sv/ mirrors by generate-i18n.js
+// Languages. English pages are built here; /cs/, /sv/ and /de/ mirrors by generate-i18n.js
 // (it re-uses these templates and swaps PAGE_LANG / OG_LOCALE + the strings).
 const PAGE_LANG  = 'en';
 const OG_LOCALE  = 'en_US';
-const SITE_LANGS = [['en', ''], ['cs', '/cs'], ['sv', '/sv']];
+const SITE_LANGS = [['en', ''], ['cs', '/cs'], ['sv', '/sv'], ['de', '/de']];
 // hreflang alternates for a page path (same block on every language version).
 function altLinks(p) {
   return SITE_LANGS.map(([code, pre]) => `<link rel="alternate" hreflang="${code}" href="${SITE_URL}${pre}${p}" />`).join('\n')
