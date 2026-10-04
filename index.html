@@ -36,6 +36,9 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://elitehockeydrills.com/assets/video/hero-poster.jpg" />
   <link rel="canonical" href="https://elitehockeydrills.com/" />
+  <link rel="alternate" hreflang="en" href="https://elitehockeydrills.com/" />
+  <link rel="alternate" hreflang="cs" href="https://elitehockeydrills.com/cs/" />
+  <link rel="alternate" hreflang="x-default" href="https://elitehockeydrills.com/" />
 
   <script type="application/ld+json">
   {
@@ -466,6 +469,19 @@ section{position:relative}
   .hero-phone .tilt{transition:none}
   html{scroll-behavior:auto}
 }
+/* Language switcher */
+.lang-switch{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--muted);padding:9px 11px;border:1px solid var(--line);border-radius:999px;line-height:1;white-space:nowrap;transition:color .2s,border-color .2s}
+.lang-switch:hover{color:var(--ink);border-color:var(--ice)}
+@media (max-width:560px){.nav-right .lang-switch{display:none}}
+.mobile-menu .mm-lang{display:flex;gap:10px;padding:18px 0 4px;border:0}
+.mobile-menu .mm-lang a{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.14em;padding:10px 14px;border:1px solid var(--line);border-radius:999px;color:var(--muted);flex:none}
+.mobile-menu .mm-lang a[aria-current]{color:var(--ink);border-color:var(--ice)}
+.lang-hint{position:fixed;left:12px;right:12px;bottom:calc(84px + env(safe-area-inset-bottom));z-index:1001;display:none;align-items:center;gap:12px;padding:12px 14px 12px 16px;background:rgba(14,14,19,.96);border:1px solid var(--line);border-radius:16px;box-shadow:0 18px 40px rgba(0,0,0,.45);font-size:14px;color:var(--ink);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.lang-hint.show{display:flex}
+.lang-hint span{flex:1;line-height:1.35}
+.lang-hint a{font-weight:600;color:#070708;background:var(--ice);padding:9px 14px;border-radius:999px;white-space:nowrap}
+.lang-hint button{background:none;border:0;color:var(--muted);font-size:20px;line-height:1;padding:4px 6px;cursor:pointer}
+@media (min-width:720px){.lang-hint{left:auto;right:20px;bottom:20px;max-width:380px}}
 </style>
 </head>
 <body>
@@ -487,6 +503,7 @@ section{position:relative}
     </ul>
   </nav>
   <div class="nav-right">
+    <a href="/cs/" class="lang-switch" hreflang="cs" lang="cs" data-lang="cs" title="Česká verze">CZ</a>
     <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary nav-cta" data-place="nav">Start free week</a>
     <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
   </div>
@@ -504,6 +521,7 @@ section{position:relative}
     <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary" data-place="mobile_menu">Start your free week</a>
     <a href="/api/restore" class="btn btn-ghost">Restore access</a>
   </div>
+  <div class="mm-lang"><a href="/" lang="en" aria-current="true">EN · English</a><a href="/cs/" lang="cs" hreflang="cs" data-lang="cs">CZ · Čeština</a></div>
 </div>
 
 <!-- ═══════════════ HERO ═══════════════ -->
@@ -915,6 +933,7 @@ section{position:relative}
           <li><a href="https://instagram.com/elite_hockey_drills" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://wa.me/420770149067" target="_blank" rel="noopener">WhatsApp</a></li>
           <li><a href="mailto:elitehockeydrills@gmail.com">Email</a></li>
+          <li><a href="/cs/" lang="cs" hreflang="cs" data-lang="cs">Česky</a></li>
         </ul>
       </div>
     </div>
@@ -924,6 +943,8 @@ section{position:relative}
     </div>
   </div>
 </footer>
+
+<div class="lang-hint" id="langHint" lang="cs" role="dialog" aria-label="Česká verze"><span>Tahle stránka je i v češtině.</span><a href="/cs/" data-lang="cs">Česky</a><button type="button" aria-label="Zavřít" id="langHintX">×</button></div>
 
 <div class="mobile-bar" id="mobileBar">
   <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary" data-place="mobile_bar">Start free week</a>
@@ -1053,6 +1074,19 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
       card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
     }, { passive:true });
   });
+})();
+
+/* ── Language choice + Czech-browser hint ───────────────────── */
+(function(){
+  function save(v){ try{ localStorage.setItem('ehd_lang', v); }catch(e){} }
+  document.querySelectorAll('a[data-lang]').forEach(function(a){ a.addEventListener('click', function(){ save(a.getAttribute('data-lang')); }); });
+  var stored = null; try{ stored = localStorage.getItem('ehd_lang'); }catch(e){}
+  var langs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || '']).join(',').toLowerCase();
+  var wantsCs = /(^|,)(cs|sk)\b/.test(langs);
+  var hint = document.getElementById('langHint');
+  if(!hint || stored || !wantsCs) return;
+  setTimeout(function(){ hint.classList.add('show'); }, 1200);
+  document.getElementById('langHintX').addEventListener('click', function(){ hint.classList.remove('show'); save('en'); });
 })();
 
 /* ── FAQ ───────────────────────────────────────────────────── */

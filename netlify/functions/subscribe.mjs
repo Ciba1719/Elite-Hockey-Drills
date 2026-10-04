@@ -70,6 +70,7 @@ export default async (req) => {
     level: String(body.level || ''),
     goal: String(body.goal || ''),
     source,
+    language: body.lang === 'cs' ? 'cs' : 'en',
   };
   if (name) fields.name = name;
 
@@ -85,7 +86,11 @@ export default async (req) => {
     let groupIds = [];
     if (body.age) {
       const groupName = pickGroupName(body.age);
-      const group = groups.find((g) => g.name === groupName);
+      // Czech site (/cs/survey.html) sends lang:'cs'. Czech leads go to the matching
+      // "<group>-cs" group (e.g. "teen-program-cs") once it exists in MailerLite;
+      // until then they fall back to the English group so no lead is ever lost.
+      const csGroup = body.lang === 'cs' ? groups.find((g) => g.name === `${groupName}-cs`) : null;
+      const group = csGroup || groups.find((g) => g.name === groupName);
       if (!group) {
         console.error(`[subscribe] MailerLite group "${groupName}" not found`);
         return json({ error: 'group_not_found' }, 500);

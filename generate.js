@@ -17,6 +17,9 @@ const LIMIT      = limitArg ? parseInt(limitArg.split('=')[1], 10) : null;
 const SITE_URL   = 'https://elitehockeydrills.com';
 const TODAY      = new Date().toISOString().slice(0, 10);
 const GA_TAG     = 'G-JH623WRMN8';
+// Czech mirror of the current page (footer "Česky" link). Set per page below;
+// the Czech pages themselves are built by generate-cs.js.
+let CS_URL = '/cs/';
 
 // ─── Video SEO ──────────────────────────────────────────────────────────────
 // Demo-video thumbnails live at assets/video-thumbs/<slug>.jpg (one per video,
@@ -220,6 +223,7 @@ function footerHTML() {
         <li><a href="https://instagram.com/elite_hockey_drills" target="_blank" rel="noopener">Instagram</a></li>
         <li><a href="https://wa.me/420770149067" target="_blank" rel="noopener">WhatsApp</a></li>
         <li><a href="mailto:elitehockeydrills@gmail.com">Email</a></li>
+        <li><a href="${CS_URL}" lang="cs" hreflang="cs">Česky</a></li>
       </ul>
     </div>
   </div>
@@ -362,6 +366,7 @@ section{position:relative;z-index:2;}
 // ─── 4. library.html ──────────────────────────────────────────────────────────
 
 function buildLibraryPage(exercises, categories) {
+  CS_URL = '/cs/library.html';
   const totalEx  = exercises.length;
   const totalCat = categories.length;
 
@@ -549,6 +554,7 @@ function exerciseDescription(ex) {
 // ─── 5. Exercise detail page ──────────────────────────────────────────────────
 
 function buildExercisePage(ex, allInCat, prevEx, nextEx) {
+  CS_URL = '/cs/exercises/' + ex.slug + '.html';
   const seoTitle = exerciseTitle(ex);
   const descMeta = exerciseDescription(ex);
   const ogImage  = (ex.video && hasThumb(ex.slug)) ? thumbUrl(ex.slug) : '';
@@ -1486,7 +1492,8 @@ function libraryJS() {
     if (!ticking) {
       requestAnimationFrame(() => {
         const y = window.scrollY;
-        const heroBottom = document.getElementById('libHero').offsetHeight;
+        const hero = document.getElementById('libHero');
+        const heroBottom = hero ? hero.offsetHeight : 0;
         if (y > heroBottom) {
           tabsWrap.classList.toggle('tabs-hidden', y > lastScrollY + 4);
         } else {
@@ -1614,10 +1621,19 @@ const STATIC_PAGES = [
 ];
 
 function buildSitemap(exercises) {
-  const staticUrls = STATIC_PAGES.map(p =>
-    `  <url><loc>${SITE_URL}${p.loc}</loc><lastmod>${TODAY}</lastmod><changefreq>${p.freq}</changefreq><priority>${p.pri}</priority></url>`
-  );
-  const exerciseUrls = exercises.map(ex => {
+  // Every page has a Czech mirror under /cs/ — list both and pair them with
+  // hreflang so Google serves the right language.
+  const csLoc = (loc) => (loc === '/' ? '/cs/' : '/cs' + loc);
+  const alt = (enLoc) => `
+    <xhtml:link rel="alternate" hreflang="en" href="${SITE_URL}${enLoc}"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="${SITE_URL}${csLoc(enLoc)}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${enLoc}"/>
+  `;
+  const staticUrls = STATIC_PAGES.flatMap(p => [
+    `  <url><loc>${SITE_URL}${p.loc}</loc><lastmod>${TODAY}</lastmod><changefreq>${p.freq}</changefreq><priority>${p.pri}</priority>${alt(p.loc)}</url>`,
+    `  <url><loc>${SITE_URL}${csLoc(p.loc)}</loc><lastmod>${TODAY}</lastmod><changefreq>${p.freq}</changefreq><priority>${p.pri}</priority>${alt(p.loc)}</url>`,
+  ]);
+  const exerciseUrls = exercises.flatMap(ex => {
     // Video extension — only when a thumbnail exists (video:thumbnail_loc is required).
     const videoBlock = (ex.video && hasThumb(ex.slug)) ? `
     <video:video>
@@ -1627,11 +1643,15 @@ function buildSitemap(exercises) {
       <video:content_loc>${escHtml(ex.video)}</video:content_loc>
     </video:video>
   ` : '';
-    return `  <url><loc>${SITE_URL}/exercises/${ex.slug}.html</loc><lastmod>${TODAY}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>${videoBlock}</url>`;
+    const loc = `/exercises/${ex.slug}.html`;
+    return [
+      `  <url><loc>${SITE_URL}${loc}</loc><lastmod>${TODAY}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>${alt(loc)}${videoBlock}</url>`,
+      `  <url><loc>${SITE_URL}${csLoc(loc)}</loc><lastmod>${TODAY}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>${alt(loc)}</url>`,
+    ];
   });
   const urls = [...staticUrls, ...exerciseUrls];
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${urls.join('\n')}
 </urlset>`;
 }
@@ -1704,7 +1724,8 @@ function main() {
   // Write CSS
   write(path.join(OUT_DIR, 'assets/library.css'),  libraryCSS());
   write(path.join(OUT_DIR, 'assets/exercise.css'), exerciseCSS());
-  write(path.join(OUT_DIR, 'assets/library.js'),   libraryJS());
+  // assets/library.js is hand-maintained now (mobile fixes live only there) — never overwrite it.
+  if (!fs.existsSync(path.join(OUT_DIR, 'assets/library.js'))) write(path.join(OUT_DIR, 'assets/library.js'), libraryJS());
 
   // Write exercises.json (full exercises even in test mode for the JSON, but limited in HTML)
   write(path.join(OUT_DIR, 'exercises.json'), JSON.stringify(exercises, null, 2));
@@ -1753,6 +1774,11 @@ function main() {
   }
 
   console.log(`\nDone — ${exercises.length} exercise page(s), 1 library page.\n`);
+
+  // Czech mirror (cs/library.html + cs/exercises/*) from the same templates.
+  if (!TEST_MODE && !LIMIT && fs.existsSync(path.resolve('generate-cs.js'))) {
+    require('child_process').execFileSync(process.execPath, [path.resolve('generate-cs.js')], { stdio: 'inherit' });
+  }
 }
 
 main();

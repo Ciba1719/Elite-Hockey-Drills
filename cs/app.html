@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JH623WRMN8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JH623WRMN8');
+  </script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#070708" />
+<meta name="robots" content="noindex" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<title>Stáhni si aplikaci — Elite Hockey Drills</title>
+<meta name="description" content="Hokejová aplikace na suchou přípravu, která ti postaví celou sezónu. První týden zdarma na iPhonu i Androidu." />
+<meta property="og:title" content="Elite Hockey Drills — aplikace na suchou přípravu, která ti postaví sezónu" />
+<meta property="og:description" content="Suchá příprava na míru podle tvého věku, úrovně, pozice a rozvrhu. První týden zdarma na iPhonu i Androidu." />
+<meta property="og:image" content="https://elitehockeydrills.com/ehd_hero_medball.jpg" />
+<meta property="og:url" content="https://elitehockeydrills.com/cs/app.html" />
+<meta property="og:locale" content="cs_CZ" />
+<meta property="og:locale:alternate" content="en_US" />
+<link rel="canonical" href="https://elitehockeydrills.com/cs/app.html" />
+<link rel="alternate" hreflang="en" href="https://elitehockeydrills.com/app" />
+<link rel="alternate" hreflang="cs" href="https://elitehockeydrills.com/cs/app.html" />
+<link rel="alternate" hreflang="x-default" href="https://elitehockeydrills.com/app" />
+<style>
+  :root { --bg:#070708; --fg:#f2f5f9; --mut:#a6acb4; --gold:#eeb158; --blue:#5aabec; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; background:var(--bg); color:var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif; }
+  main { max-width:520px; margin:0 auto; padding:56px 16px 40px; text-align:center; }
+  .brand { font-size:13px; letter-spacing:.18em; text-transform:uppercase; color:var(--mut); }
+  h1 { font-size:34px; line-height:1.05; text-transform:uppercase; margin:18px 0 10px; font-weight:900; }
+  .rule { width:120px; height:5px; background:var(--gold); margin:0 auto 18px; }
+  p { color:var(--mut); font-size:17px; line-height:1.5; margin:0 0 28px; }
+  .btn { display:block; width:100%; padding:17px 18px; margin:0 0 12px; border-radius:12px;
+    font-size:17px; font-weight:700; text-decoration:none; }
+  .ios { background:var(--fg); color:#000; }
+  .android { background:transparent; color:var(--fg); border:2px solid var(--fg); }
+  .status { font-size:15px; color:var(--blue); min-height:22px; margin-bottom:18px; }
+  .small { font-size:13px; color:var(--mut); margin-top:22px; }
+  .small a { color:var(--mut); }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">Elite Hockey Drills · Trenér David Ciboch</div>
+  <h1>Celá tvoje sezóna,<br>naplánovaná za 30&nbsp;sekund</h1>
+  <div class="rule"></div>
+  <p>Suchá příprava postavená podle tvého věku, úrovně, pozice a&nbsp;rozvrhu. Přizpůsobí se zápasovým dnům. První týden zdarma.</p>
+  <div class="status" id="status"></div>
+  <a class="btn ios" id="ios" href="https://apps.apple.com/cz/app/elite-hockey-drills/id6787257275">Stáhnout pro iPhone</a>
+  <a class="btn android" id="android" href="https://play.google.com/store/apps/details?id=com.elitehockeydrills.training&amp;hl=cs">Stáhnout pro Android</a>
+  <div class="small"><a href="/cs/hockey-training-app.html">Podívej se, co v&nbsp;aplikaci najdeš →</a></div>
+  <div class="small" style="margin-top:12px"><a href="/app" lang="en" hreflang="en" data-lang="en">English version</a></div>
+</main>
+<script>
+(function () {
+  // ?src=ig_bio | ig_story | ig_dm | email | wa | coach | qr ... (defaults to "direct")
+  var qs = new URLSearchParams(location.search);
+  var src = (qs.get('src') || qs.get('utm_source') || 'direct').replace(/[^a-z0-9_\-]/gi, '').slice(0, 40) || 'direct';
+
+  var IOS = 'https://apps.apple.com/cz/app/elite-hockey-drills/id6787257275?ct=' + encodeURIComponent(src);
+  var ANDROID = 'https://play.google.com/store/apps/details?id=com.elitehockeydrills.training&hl=cs&referrer=' +
+    encodeURIComponent('utm_source=' + src + '&utm_medium=smartlink&utm_campaign=app');
+
+  document.getElementById('ios').href = IOS;
+  document.getElementById('android').href = ANDROID;
+
+  var ua = navigator.userAgent || '';
+  var isAndroid = /Android/i.test(ua);
+  var isIOS = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  var target = isAndroid ? ANDROID : (isIOS ? IOS : null);
+  var platform = isAndroid ? 'android' : (isIOS ? 'ios' : 'desktop');
+
+  function track(name, cb) {
+    var done = false;
+    function go() { if (!done) { done = true; cb && cb(); } }
+    try {
+      gtag('event', name, { platform: platform, link_source: src, event_callback: go, event_timeout: 700 });
+    } catch (e) {}
+    setTimeout(go, 800);
+  }
+
+  // Count manual taps too (desktop, or if auto-redirect is blocked)
+  ['ios', 'android'].forEach(function (id) {
+    document.getElementById(id).addEventListener('click', function () {
+      try { gtag('event', 'store_click', { platform: id, link_source: src }); } catch (e) {}
+    });
+  });
+
+  if (target) {
+    document.getElementById('status').textContent = 'Otevírám ' + (isAndroid ? 'Google Play' : 'App Store') + '…';
+    track('store_redirect', function () { location.replace(target); });
+  } else {
+    track('smartlink_desktop');
+  }
+})();
+</script>
+</body>
+</html>
