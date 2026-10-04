@@ -1,4 +1,4 @@
-/* Elite Hockey Drills — language switcher (EN / CZ / SV / DE)
+/* Elite Hockey Drills — language switcher (EN / CZ / SV / DE / FI)
    One file for every page. Each page has a placeholder
      <div class="lang-dd" data-cur="en|cs|sv"></div>
    in its nav. This script turns it into a flag dropdown that links to the SAME
@@ -10,11 +10,13 @@
     { code: 'cs', label: 'CZ', name: 'Čeština', prefix: '/cs' },
     { code: 'sv', label: 'SV', name: 'Svenska', prefix: '/sv' },
     { code: 'de', label: 'DE', name: 'Deutsch', prefix: '/de' },
+    { code: 'fi', label: 'FI', name: 'Suomi', prefix: '/fi' },
   ];
   var HINT = {
     cs: { text: 'Tahle stránka je i v češtině.', btn: 'Česky', close: 'Zavřít' },
     sv: { text: 'Den här sidan finns även på svenska.', btn: 'Svenska', close: 'Stäng' },
     de: { text: 'Diese Seite gibt es auch auf Deutsch.', btn: 'Deutsch', close: 'Schließen' },
+    fi: { text: 'Tämä sivu on myös suomeksi.', btn: 'Suomeksi', close: 'Sulje' },
   };
   // Inline SVG flags (Windows does not render flag emoji).
   var FLAG = {
@@ -22,10 +24,11 @@
     cs: '<svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="10" fill="#fff"/><rect y="10" width="30" height="10" fill="#D7141A"/><path d="M0 0l15 10L0 20z" fill="#11457E"/></svg>',
     sv: '<svg viewBox="0 0 16 10" aria-hidden="true"><rect width="16" height="10" fill="#006AA7"/><path d="M5 0h2v10H5zM0 4h16v2H0z" fill="#FECC00"/></svg>',
     de: '<svg viewBox="0 0 5 3" aria-hidden="true"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCE00"/></svg>',
+    fi: '<svg viewBox="0 0 18 11" aria-hidden="true"><rect width="18" height="11" fill="#fff"/><path d="M5 0h3v11H5zM0 4h18v3H0z" fill="#002F6C"/></svg>',
   };
 
   var path = location.pathname;
-  var m = path.match(/^\/(cs|sv|de)(?=\/|$)/);
+  var m = path.match(/^\/(cs|sv|de|fi)(?=\/|$)/);
   var cur = m ? m[1] : 'en';
   var base = m ? path.slice(m[0].length) : path;
   if (base === '' || base === '/index.html') base = '/';
@@ -127,7 +130,7 @@
     if (cur === 'en') {
       var stored = null; try { stored = localStorage.getItem('ehd_lang'); } catch (e) {}
       var langs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || '']).join(',').toLowerCase();
-      var want = /(^|,)(cs|sk)\b/.test(langs) ? 'cs' : (/(^|,)sv\b/.test(langs) ? 'sv' : (/(^|,)de\b/.test(langs) ? 'de' : null));
+      var want = /(^|,)(cs|sk)\b/.test(langs) ? 'cs' : (/(^|,)sv\b/.test(langs) ? 'sv' : (/(^|,)de\b/.test(langs) ? 'de' : (/(^|,)fi\b/.test(langs) ? 'fi' : null)));
       if (want && !stored) {
         var t = HINT[want];
         var bar = document.createElement('div');

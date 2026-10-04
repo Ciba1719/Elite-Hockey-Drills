@@ -2,7 +2,7 @@
    Links marked data-store="ios" (the App Store badge, "The App — iOS") keep pointing at the App Store.
    Google Play click tracking → GA4 event "play_store_click" (mark it as a key event in GA). */
 (function(){
-  var PLAY='https://play.google.com/store/apps/details?id=com.elitehockeydrills.training'+((location.pathname.match(/^\/(cs|sv|de)(?=\/|$)/)||[])[1]?'&hl='+location.pathname.match(/^\/(cs|sv|de)(?=\/|$)/)[1]:'');
+  var PLAY='https://play.google.com/store/apps/details?id=com.elitehockeydrills.training'+((location.pathname.match(/^\/(cs|sv|de|fi)(?=\/|$)/)||[])[1]?'&hl='+location.pathname.match(/^\/(cs|sv|de|fi)(?=\/|$)/)[1]:'');
   if(/Android/i.test(navigator.userAgent||'')){
     document.querySelectorAll('a[href*="apps.apple.com"]:not([data-store])').forEach(function(a){a.href=PLAY;});
   }
