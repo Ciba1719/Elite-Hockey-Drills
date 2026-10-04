@@ -1,4 +1,4 @@
-function czPlural(n, one, few, many) { return n === 1 ? one : (n >= 2 && n <= 4 ? few : many); }
+function i18nPlural(n, w) { return n === 1 ? w[0] : (n >= 2 && n <= 4 ? w[1] : w[2]); }
 /* Elite Hockey Drills — Library JS */
 (function(){
   const heroSearch    = document.getElementById('heroSearch');
@@ -119,8 +119,8 @@ function czPlural(n, one, few, many) { return n === 1 ? one : (n >= 2 && n <= 4 
       return EXERCISES.indexOf(a) - EXERCISES.indexOf(b);
     });
     const label = activeTab && !searchQuery
-      ? sorted.length + ' ' + czPlural(sorted.length, 'cvik', 'cviky', 'cviků')
-      : sorted.length + ' ' + czPlural(sorted.length, 'výsledek', 'výsledky', 'výsledků');
+      ? sorted.length + ' ' + i18nPlural(sorted.length, ['cvik','cviky','cviků'])
+      : sorted.length + ' ' + i18nPlural(sorted.length, ['výsledek','výsledky','výsledků']);
     resultCount.textContent = label;
     emptyState.hidden = sorted.length > 0;
     resultsGrid.innerHTML = sorted.length ? sorted.map(cardHTML).join('') : '';

@@ -38,6 +38,7 @@
   <link rel="canonical" href="https://elitehockeydrills.com/" />
   <link rel="alternate" hreflang="en" href="https://elitehockeydrills.com/" />
   <link rel="alternate" hreflang="cs" href="https://elitehockeydrills.com/cs/" />
+  <link rel="alternate" hreflang="sv" href="https://elitehockeydrills.com/sv/" />
   <link rel="alternate" hreflang="x-default" href="https://elitehockeydrills.com/" />
 
   <script type="application/ld+json">
@@ -483,6 +484,7 @@ section{position:relative}
 .lang-hint button{background:none;border:0;color:var(--muted);font-size:20px;line-height:1;padding:4px 6px;cursor:pointer}
 @media (min-width:720px){.lang-hint{left:auto;right:20px;bottom:20px;max-width:380px}}
 </style>
+<script src="/assets/lang-switch.js" defer></script>
 </head>
 <body>
 
@@ -503,7 +505,7 @@ section{position:relative}
     </ul>
   </nav>
   <div class="nav-right">
-    <a href="/cs/" class="lang-switch" hreflang="cs" lang="cs" data-lang="cs" title="Česká verze">CZ</a>
+    <div class="lang-dd" data-cur="en"></div>
     <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary nav-cta" data-place="nav">Start free week</a>
     <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
   </div>
@@ -521,7 +523,6 @@ section{position:relative}
     <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary" data-place="mobile_menu">Start your free week</a>
     <a href="/api/restore" class="btn btn-ghost">Restore access</a>
   </div>
-  <div class="mm-lang"><a href="/" lang="en" aria-current="true">EN · English</a><a href="/cs/" lang="cs" hreflang="cs" data-lang="cs">CZ · Čeština</a></div>
 </div>
 
 <!-- ═══════════════ HERO ═══════════════ -->
@@ -933,7 +934,6 @@ section{position:relative}
           <li><a href="https://instagram.com/elite_hockey_drills" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://wa.me/420770149067" target="_blank" rel="noopener">WhatsApp</a></li>
           <li><a href="mailto:elitehockeydrills@gmail.com">Email</a></li>
-          <li><a href="/cs/" lang="cs" hreflang="cs" data-lang="cs">Česky</a></li>
         </ul>
       </div>
     </div>
@@ -944,7 +944,6 @@ section{position:relative}
   </div>
 </footer>
 
-<div class="lang-hint" id="langHint" lang="cs" role="dialog" aria-label="Česká verze"><span>Tahle stránka je i v češtině.</span><a href="/cs/" data-lang="cs">Česky</a><button type="button" aria-label="Zavřít" id="langHintX">×</button></div>
 
 <div class="mobile-bar" id="mobileBar">
   <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary" data-place="mobile_bar">Start free week</a>

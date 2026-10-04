@@ -17,9 +17,16 @@ const LIMIT      = limitArg ? parseInt(limitArg.split('=')[1], 10) : null;
 const SITE_URL   = 'https://elitehockeydrills.com';
 const TODAY      = new Date().toISOString().slice(0, 10);
 const GA_TAG     = 'G-JH623WRMN8';
-// Czech mirror of the current page (footer "Česky" link). Set per page below;
-// the Czech pages themselves are built by generate-cs.js.
-let CS_URL = '/cs/';
+// Languages. English pages are built here; /cs/ and /sv/ mirrors by generate-i18n.js
+// (it re-uses these templates and swaps PAGE_LANG / OG_LOCALE + the strings).
+const PAGE_LANG  = 'en';
+const OG_LOCALE  = 'en_US';
+const SITE_LANGS = [['en', ''], ['cs', '/cs'], ['sv', '/sv']];
+// hreflang alternates for a page path (same block on every language version).
+function altLinks(p) {
+  return SITE_LANGS.map(([code, pre]) => `<link rel="alternate" hreflang="${code}" href="${SITE_URL}${pre}${p}" />`).join('\n')
+    + `\n<link rel="alternate" hreflang="x-default" href="${SITE_URL}${p}" />`;
+}
 
 // ─── Video SEO ──────────────────────────────────────────────────────────────
 // Demo-video thumbnails live at assets/video-thumbs/<slug>.jpg (one per video,
@@ -187,7 +194,8 @@ function navHTML(activePage = '') {
       <li><a href="${SITE_URL}#faq">FAQ</a></li>
     </ul>
   </nav>
-  <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="nav-cta btn btn-primary">Get the App</a>
+  <div class="nav-right" style="display:flex;align-items:center;gap:10px"><div class="lang-dd" data-cur="${PAGE_LANG}"></div>
+  <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="nav-cta btn btn-primary">Get the App</a></div>
 </header>`;
 }
 
@@ -223,7 +231,6 @@ function footerHTML() {
         <li><a href="https://instagram.com/elite_hockey_drills" target="_blank" rel="noopener">Instagram</a></li>
         <li><a href="https://wa.me/420770149067" target="_blank" rel="noopener">WhatsApp</a></li>
         <li><a href="mailto:elitehockeydrills@gmail.com">Email</a></li>
-        <li><a href="${CS_URL}" lang="cs" hreflang="cs">Česky</a></li>
       </ul>
     </div>
   </div>
@@ -366,7 +373,6 @@ section{position:relative;z-index:2;}
 // ─── 4. library.html ──────────────────────────────────────────────────────────
 
 function buildLibraryPage(exercises, categories) {
-  CS_URL = '/cs/library.html';
   const totalEx  = exercises.length;
   const totalCat = categories.length;
 
@@ -412,9 +418,12 @@ ${gaSnippet()}
 <meta property="og:description" content="${totalEx} exercises · ${totalCat} movement patterns. Science-backed off-ice hockey training." />
 <meta property="og:url" content="${SITE_URL}/library.html" />
 <link rel="canonical" href="${SITE_URL}/library.html" />
+<meta property="og:locale" content="${OG_LOCALE}" />
+${altLinks('/library.html')}
 ${fontLink()}
 <link rel="stylesheet" href="/assets/library.css" />
 <script src="/assets/store-links.js" defer></script>
+<script src="/assets/lang-switch.js" defer></script>
 </head>
 <body>
 ${navHTML('library')}
@@ -554,7 +563,6 @@ function exerciseDescription(ex) {
 // ─── 5. Exercise detail page ──────────────────────────────────────────────────
 
 function buildExercisePage(ex, allInCat, prevEx, nextEx) {
-  CS_URL = '/cs/exercises/' + ex.slug + '.html';
   const seoTitle = exerciseTitle(ex);
   const descMeta = exerciseDescription(ex);
   const ogImage  = (ex.video && hasThumb(ex.slug)) ? thumbUrl(ex.slug) : '';
@@ -651,12 +659,15 @@ ${gaSnippet()}
 <meta name="twitter:description" content="${escHtml(descMeta)}" />${ogImage ? `
 <meta name="twitter:image" content="${escHtml(ogImage)}" />` : ''}
 <link rel="canonical" href="${SITE_URL}/exercises/${ex.slug}.html" />
+<meta property="og:locale" content="${OG_LOCALE}" />
+${altLinks('/exercises/' + ex.slug + '.html')}
 ${fontLink()}
 <link rel="stylesheet" href="/assets/library.css" />
 <link rel="stylesheet" href="/assets/exercise.css" />
 <script type="application/ld+json">${jsonLd}</script>${videoJsonLd ? `
 <script type="application/ld+json">${videoJsonLd}</script>` : ''}
 <script src="/assets/store-links.js" defer></script>
+<script src="/assets/lang-switch.js" defer></script>
 </head>
 <body>
 ${navHTML()}
@@ -1621,18 +1632,13 @@ const STATIC_PAGES = [
 ];
 
 function buildSitemap(exercises) {
-  // Every page has a Czech mirror under /cs/ — list both and pair them with
-  // hreflang so Google serves the right language.
-  const csLoc = (loc) => (loc === '/' ? '/cs/' : '/cs' + loc);
-  const alt = (enLoc) => `
-    <xhtml:link rel="alternate" hreflang="en" href="${SITE_URL}${enLoc}"/>
-    <xhtml:link rel="alternate" hreflang="cs" href="${SITE_URL}${csLoc(enLoc)}"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${enLoc}"/>
-  `;
-  const staticUrls = STATIC_PAGES.flatMap(p => [
-    `  <url><loc>${SITE_URL}${p.loc}</loc><lastmod>${TODAY}</lastmod><changefreq>${p.freq}</changefreq><priority>${p.pri}</priority>${alt(p.loc)}</url>`,
-    `  <url><loc>${SITE_URL}${csLoc(p.loc)}</loc><lastmod>${TODAY}</lastmod><changefreq>${p.freq}</changefreq><priority>${p.pri}</priority>${alt(p.loc)}</url>`,
-  ]);
+  // Every page exists in every language (/, /cs/, /sv/) — list all and pair them with hreflang.
+  const locFor = (pre, loc) => (loc === '/' ? (pre || '') + '/' : pre + loc);
+  const alt = (enLoc) => '\n' + SITE_LANGS.map(([code, pre]) =>
+    `    <xhtml:link rel="alternate" hreflang="${code}" href="${SITE_URL}${locFor(pre, enLoc)}"/>`).join('\n')
+    + `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${enLoc}"/>\n  `;
+  const staticUrls = STATIC_PAGES.flatMap(p => SITE_LANGS.map(([, pre]) =>
+    `  <url><loc>${SITE_URL}${locFor(pre, p.loc)}</loc><lastmod>${TODAY}</lastmod><changefreq>${p.freq}</changefreq><priority>${p.pri}</priority>${alt(p.loc)}</url>`));
   const exerciseUrls = exercises.flatMap(ex => {
     // Video extension — only when a thumbnail exists (video:thumbnail_loc is required).
     const videoBlock = (ex.video && hasThumb(ex.slug)) ? `
@@ -1644,10 +1650,8 @@ function buildSitemap(exercises) {
     </video:video>
   ` : '';
     const loc = `/exercises/${ex.slug}.html`;
-    return [
-      `  <url><loc>${SITE_URL}${loc}</loc><lastmod>${TODAY}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>${alt(loc)}${videoBlock}</url>`,
-      `  <url><loc>${SITE_URL}${csLoc(loc)}</loc><lastmod>${TODAY}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>${alt(loc)}</url>`,
-    ];
+    return SITE_LANGS.map(([code, pre]) =>
+      `  <url><loc>${SITE_URL}${pre}${loc}</loc><lastmod>${TODAY}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>${alt(loc)}${code === 'en' ? videoBlock : ''}</url>`);
   });
   const urls = [...staticUrls, ...exerciseUrls];
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -1775,9 +1779,9 @@ function main() {
 
   console.log(`\nDone — ${exercises.length} exercise page(s), 1 library page.\n`);
 
-  // Czech mirror (cs/library.html + cs/exercises/*) from the same templates.
-  if (!TEST_MODE && !LIMIT && fs.existsSync(path.resolve('generate-cs.js'))) {
-    require('child_process').execFileSync(process.execPath, [path.resolve('generate-cs.js')], { stdio: 'inherit' });
+  // Translated mirrors (cs/, sv/ library + exercise pages) from the same templates.
+  if (!TEST_MODE && !LIMIT && fs.existsSync(path.resolve('generate-i18n.js'))) {
+    require('child_process').execFileSync(process.execPath, [path.resolve('generate-i18n.js')], { stdio: 'inherit' });
   }
 }
 
