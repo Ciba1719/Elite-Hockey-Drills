@@ -13,11 +13,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="apple-itunes-app" content="app-id=6787257275" />
 <meta name="theme-color" content="#070708" />
-<title>Build Your Free 5-Day Program — Elite Hockey Drills</title>
-<meta name="description" content="Answer a few quick questions and get a 5-day off-ice training program built for you. Free." />
+<title>Get Your Free Hockey Program — Elite Hockey Drills</title>
+<meta name="description" content="Answer four quick questions and get a free off-ice hockey program matched to your age." />
 <meta name="robots" content="noindex,nofollow" />
-<meta property="og:title" content="Build Your Free 5-Day Program — Elite Hockey Drills" />
-<meta property="og:description" content="Answer a few quick questions and get a 5-day off-ice training program built for you. Free." />
+<meta property="og:title" content="Get Your Free Hockey Program — Elite Hockey Drills" />
+<meta property="og:description" content="Answer four quick questions and get a free off-ice hockey program matched to your age." />
 <meta property="og:url" content="https://elitehockeydrills.com/survey" />
 <meta property="og:image" content="https://elitehockeydrills.com/ehd_hero_medball.jpg" />
 <meta property="og:image:width" content="800" />
@@ -314,7 +314,7 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   <section class="screen active slide-in-right" data-screen="1">
     <div class="q-eyebrow">Question 01</div>
     <h2 class="q-title display">What's your <em>age?</em></h2>
-    <p class="q-sub">This is the most important question — your program is built around your stage of development.</p>
+    <p class="q-sub">This is the most important question — your program is built around your stage of development. <strong>Parents:</strong> pick your player's age.</p>
     <div class="options">
       <button class="option" data-value="9_11" data-label="9–11">
         <span>9–11<span class="option-sub">Youth foundation stage</span></span>
@@ -427,7 +427,7 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
     <h2 class="q-title display">Your <em>free</em><br>program is ready.</h2>
     <div class="summary-pills" id="summaryPills"></div>
     <p class="q-sub" id="emailSubhead">
-      Enter your email to receive your custom 5-day off-ice program — built specifically for you.
+      Enter your email to receive your free program.
     </p>
     <form class="email-form" id="emailForm" novalidate>
       <input type="email" required placeholder="your@email.com" class="email-input" id="emailInput" autocomplete="email" inputmode="email" />
@@ -445,10 +445,10 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   <section class="screen success-screen" data-screen="success">
     <div class="success-confirm">
       <span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-      <span>Your free 5-day plan is on its way to <strong id="successEmail">your inbox</strong> — check it in 60 seconds.</span>
+      <span>Your <span id="successProduct">free program</span> is on its way to <strong id="successEmail">your inbox</strong> — check it in 60 seconds.</span>
     </div>
     <div class="success-eyebrow">Your matched program</div>
-    <h2 class="success-title display">Your 5 days are just the <em>warm-up</em>.</h2>
+    <h2 class="success-title display" id="successTitle">Your 5 days are just the <em>warm-up</em>.</h2>
     <p class="success-sub"><span id="successSubTail"></span></p>
     <div class="success-ctas" id="successCtas"></div>
     <div class="success-trust">
@@ -596,6 +596,16 @@ bindSingleSelect(getScreen(4), 'goal');
 
 /* Age -> MailerLite group routing now happens server-side in subscribe.mjs. */
 
+// The free program each age group is emailed — keep in sync with the MailerLite "Send … PDF" automations
+const FREE_PROGRAM = {
+  '9_11':   'free 5-Day Youth Off-Ice Program',
+  '12_14':  'free 5-Day Youth Off-Ice Program',
+  '15_18':  'free 5-day off-ice program',
+  '19_39':  'free 30-Minute Hockey Power Plan',
+  '40plus': 'free 30-Minute Hockey Power Plan'
+};
+const isAdultAge = (age) => age === '19_39' || age === '40plus';
+
 function populateEmailScreen(){
   const pillsEl = document.getElementById('summaryPills');
   const pills = [
@@ -608,10 +618,11 @@ function populateEmailScreen(){
 
   const sub = document.getElementById('emailSubhead');
   // The free program is matched by age only, so the copy promises exactly that
-  sub.innerHTML = `Enter your email to receive your free 5-day off-ice program for <strong>${answers.ageLabel}</strong> players.`;
+  const free = FREE_PROGRAM[answers.age] || 'free program';
+  sub.innerHTML = `Enter your email to receive your ${free} for <strong>${answers.ageLabel}</strong> players.`;
   // Youth (9–14): the program and any follow-up go to a parent or guardian, not to the child
   const youth = answers.age === '9_11' || answers.age === '12_14';
-  if (youth) sub.innerHTML = `<strong>Parents:</strong> enter <em>your</em> email and we'll send the free 5-day program for your <strong>${answers.ageLabel}</strong> player — with a parent's guide to running it safely.`;
+  if (youth) sub.innerHTML = `<strong>Parents:</strong> enter <em>your</em> email and we'll send the ${free} for your <strong>${answers.ageLabel}</strong> player — with a parent's guide to running it safely.`;
   const input = document.getElementById('emailInput');
   if (input) input.placeholder = youth ? 'parent@email.com' : 'your@email.com';
 }
@@ -652,7 +663,14 @@ function populateSuccessScreen(){
   const wrap = document.getElementById('successCtas');
   if(!wrap) return;
   const p = list[0];
-  if(tail) tail.innerHTML = `Your free 5 days are on the way. The app runs the other 51 weeks — personalized to a ${p.age} player. <strong>Your first week is free.</strong>`;
+  const adult = isAdultAge(answers.age);
+  const product = document.getElementById('successProduct');
+  if(product) product.textContent = FREE_PROGRAM[answers.age] || 'free program';
+  const title = document.getElementById('successTitle');
+  if(title && adult) title.innerHTML = 'Your free plan is just the <em>warm-up</em>.';
+  if(tail) tail.innerHTML = adult
+    ? `Your free plan is on the way. The app runs the rest of your season — personalized to a ${p.age} player. <strong>Your first week is free.</strong>`
+    : `Your free 5 days are on the way. The app runs the other 51 weeks — personalized to a ${p.age} player. <strong>Your first week is free.</strong>`;
   wrap.innerHTML = buildAppCard(p.age)
     + (ON_ANDROID
       ? `<span class="pcard-note">On iPhone? <a href="${IOS_URL}" data-store="ios" target="_blank" rel="noopener">Get it on the App Store</a>.</span>`
