@@ -424,7 +424,7 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   <!-- EMAIL -->
   <section class="screen email-screen" data-screen="email">
     <div class="q-eyebrow" style="color:var(--warm);">Final Step</div>
-    <h2 class="q-title display">Your <em>personalized</em><br>program is ready.</h2>
+    <h2 class="q-title display">Your <em>free</em><br>program is ready.</h2>
     <div class="summary-pills" id="summaryPills"></div>
     <p class="q-sub" id="emailSubhead">
       Enter your email to receive your custom 5-day off-ice program — built specifically for you.
@@ -607,11 +607,13 @@ function populateEmailScreen(){
   pillsEl.innerHTML = pills.map(p => `<span class="summary-pill">${p}</span>`).join('');
 
   const sub = document.getElementById('emailSubhead');
-  const posLabel = (answers.positionLabel || '').toLowerCase();
-  const audienceWord = answers.position === 'goalie' ? 'goalies' : `${posLabel} players`;
-  const audience = `${answers.ageLabel} ${audienceWord}`;
-  const goalText = (answers.goalShort || answers.goalLabel || 'off-ice training').toLowerCase();
-  sub.innerHTML = `Enter your email to receive your custom 5-day off-ice program — built specifically for <strong>${audience}</strong> focused on <strong>${goalText}</strong>.`;
+  // The free program is matched by age only, so the copy promises exactly that
+  sub.innerHTML = `Enter your email to receive your free 5-day off-ice program for <strong>${answers.ageLabel}</strong> players.`;
+  // Youth (9–14): the program and any follow-up go to a parent or guardian, not to the child
+  const youth = answers.age === '9_11' || answers.age === '12_14';
+  if (youth) sub.innerHTML = `<strong>Parents:</strong> enter <em>your</em> email and we'll send the free 5-day program for your <strong>${answers.ageLabel}</strong> player — with a parent's guide to running it safely.`;
+  const input = document.getElementById('emailInput');
+  if (input) input.placeholder = youth ? 'parent@email.com' : 'your@email.com';
 }
 
 /* ============================================================

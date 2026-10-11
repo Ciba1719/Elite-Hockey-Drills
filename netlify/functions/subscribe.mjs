@@ -70,6 +70,7 @@ export default async (req) => {
     level: String(body.level || ''),
     goal: String(body.goal || ''),
     source,
+    lead_source: source.replace(/[^\w-]/g, '').slice(0, 40), // "source" is reserved in MailerLite; this is the field that is stored
     language: ['cs', 'sv', 'de', 'fi'].includes(body.lang) ? body.lang : 'en',
   };
   if (name) fields.name = name;
