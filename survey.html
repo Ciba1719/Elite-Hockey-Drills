@@ -703,7 +703,9 @@ emailForm.addEventListener('submit', async (e) => {
         age:      answers.age,
         position: answers.position,
         level:    answers.level,
-        goal:     answers.goal
+        goal:     answers.goal,
+        // where the lead came from (e.g. ?src=ig_hockey from the Instagram "comment HOCKEY" DM)
+        source:   (new URLSearchParams(location.search).get('src') || 'survey').replace(/[^\w-]/g, '').slice(0, 40)
       })
     });
     if(!res.ok) throw new Error('Subscribe failed (' + res.status + ')');
