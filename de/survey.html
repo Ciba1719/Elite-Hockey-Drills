@@ -223,60 +223,65 @@ body::after{
   background:var(--card);border:1px solid var(--line-2);color:var(--ink-2);
 }
 
-.success-screen{text-align:center;align-items:center;justify-content:center;padding:20px 0;}
-.success-confirm{
-  display:inline-flex;align-items:center;gap:11px;
-  margin:0 auto 30px;max-width:480px;padding:10px 18px 10px 12px;
-  border-radius:100px;background:rgba(79,179,113,.08);border:1px solid rgba(79,179,113,.30);
-  font-size:13.5px;line-height:1.4;color:var(--ink-2);text-align:left;
-}
-.success-confirm strong{color:var(--ink);font-weight:600;}
-.success-confirm .sc-check{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--green);display:grid;place-items:center;}
-.success-confirm .sc-check svg{width:13px;height:13px;color:#06140C;}
-.success-eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ice);margin-bottom:13px;}
-.success-eyebrow::before,.success-eyebrow::after{content:'';display:inline-block;width:22px;height:1px;background:rgba(93,180,229,.5);vertical-align:middle;margin:0 10px 3px;}
-.success-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,9vw,62px);line-height:.96;letter-spacing:.005em;margin-bottom:14px;}
-.success-title em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ice);font-weight:400;}
-.success-sub{color:#C7CCD5;font-size:15.5px;line-height:1.6;margin:0 auto 28px;max-width:470px;}
-.success-sub strong{color:var(--ink);font-weight:600;}
-.success-ctas{display:flex;flex-direction:column;align-items:center;gap:12px;width:100%;}
-.pcard{
-  position:relative;overflow:hidden;display:flex;flex-direction:column;text-align:left;
-  width:100%;max-width:380px;padding:18px 20px;color:var(--ink);
-  background:linear-gradient(160deg,#16161D,#0C0C11);
-  border:1px solid rgba(255,255,255,.10);border-radius:18px;
-  box-shadow:0 16px 38px -24px rgba(0,0,0,.95);
-  transition:transform .25s, border-color .25s, box-shadow .25s;
-}
-.pcard::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(93,180,229,.55),transparent);}
-.pcard:hover{transform:translateY(-3px);border-color:rgba(93,180,229,.50);box-shadow:0 24px 46px -22px rgba(93,180,229,.28);}
-.pcard:active{transform:translateY(-1px);}
-.pcard-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:11px;}
-.pcard-badge{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ice);background:rgba(93,180,229,.10);border:1px solid rgba(93,180,229,.32);border-radius:100px;padding:5px 11px;}
-.pcard-price{display:flex;align-items:baseline;gap:7px;}
-.pcard-price b{font-size:19px;font-weight:800;background:linear-gradient(135deg,#FBE6BC,#E8B777,#C99A56);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:#E8B777;}
-.pcard-price s{font-size:13px;color:var(--ink-3);}
-.pcard-name{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:28px;line-height:1;letter-spacing:.01em;margin-bottom:7px;}
-.pcard-desc{font-size:13px;color:#AEB3BD;line-height:1.45;margin-bottom:15px;}
-.pcard-go{margin-top:auto;display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:700;color:var(--warm);letter-spacing:.01em;}
-.pcard-arrow{width:27px;height:27px;border-radius:50%;background:var(--warm);display:grid;place-items:center;transition:transform .25s;}
-.pcard-arrow svg{width:14px;height:14px;color:#1A0F00;}
-.pcard:hover .pcard-arrow{transform:translateX(4px);}
+/* ── success: the free program first (open it right here; the email is the copy), then the app ── */
+.success-screen{align-items:center;text-align:center;padding:6px 0 10px;}
+.ok-pill{display:inline-flex;align-items:center;gap:9px;margin:0 auto 16px;padding:7px 15px 7px 8px;border-radius:100px;background:rgba(79,179,113,.10);border:1px solid rgba(79,179,113,.35);font-size:13px;font-weight:600;color:#BFE8CC;}
+.ok-pill .sc-check{flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--green);display:grid;place-items:center;}
+.ok-pill .sc-check svg{width:12px;height:12px;color:#06140C;}
+.ok-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(46px,12vw,74px);line-height:.9;letter-spacing:.005em;margin-bottom:10px;}
+.ok-title em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ice);font-weight:400;}
+.ok-lead{color:#C7CCD5;font-size:15.5px;line-height:1.55;max-width:440px;margin:0 auto 22px;}
+.gift{position:relative;width:100%;max-width:460px;margin:0 auto;padding:20px;border-radius:22px;text-align:left;
+  background:radial-gradient(120% 90% at 0% 0%,rgba(93,180,229,.16),transparent 60%),linear-gradient(160deg,#17171F,#0C0C11);
+  border:1px solid rgba(93,180,229,.38);box-shadow:0 30px 60px -30px rgba(0,0,0,.9);}
+.gift-row{display:flex;gap:18px;align-items:center;margin-bottom:18px;}
+.gift-cover{width:112px;height:auto;flex-shrink:0;aspect-ratio:480/854;object-fit:cover;border-radius:10px;transform:rotate(-3deg);
+  box-shadow:0 18px 30px -12px rgba(0,0,0,.85),0 0 0 1px rgba(255,255,255,.08);}
+.gift-cover.is-badge{width:96px;height:96px;aspect-ratio:1;transform:none;border-radius:18px;display:grid;place-items:center;font-family:'Bebas Neue',sans-serif;font-size:30px;line-height:.9;text-align:center;color:var(--ink);background:linear-gradient(150deg,#1E2A36,#0E1218);border:1px solid rgba(93,180,229,.4);}
+.gift-kicker{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:6px;}
+.gift-name{font-family:'Bebas Neue',sans-serif;font-size:34px;line-height:.95;margin-bottom:8px;}
+.gift-meta{font-size:13px;color:#AEB3BD;line-height:1.45;}
+.gift-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:17px 18px;border-radius:14px;
+  background:linear-gradient(135deg,#FBE6BC,#E8B777 55%,#D9A25E);color:#1A0F00;font-weight:800;font-size:16.5px;letter-spacing:.01em;
+  box-shadow:0 14px 30px -12px rgba(232,183,119,.55);transition:transform .2s,box-shadow .2s;}
+.gift-btn svg{width:20px;height:20px;flex-shrink:0;}
+.gift-btn:hover{transform:translateY(-2px);box-shadow:0 18px 34px -12px rgba(232,183,119,.7);}
+.gift-mail{margin-top:12px;font-size:12.5px;color:#9AA0AB;text-align:center;line-height:1.5;}
+.gift-mail strong{color:var(--ink);font-weight:600;overflow-wrap:anywhere;}
+.steps{width:100%;max-width:460px;margin:22px auto 0;text-align:left;}
+.steps-title{font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ice);margin:0 0 10px 2px;}
+.steps ol{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.steps li{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:14px;background:var(--card);border:1px solid var(--line-2);font-size:14px;line-height:1.45;color:#C7CCD5;}
+.steps li .n{flex-shrink:0;width:24px;height:24px;margin-top:-1px;border-radius:50%;background:rgba(93,180,229,.14);border:1px solid rgba(93,180,229,.4);color:var(--ice);display:grid;place-items:center;font-size:12px;font-weight:800;}
+.steps li strong{color:var(--ink);font-weight:600;}
+.next-divider{width:100%;max-width:460px;margin:34px auto 16px;display:flex;align-items:center;gap:12px;font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--warm);white-space:nowrap;}
+.next-divider::before,.next-divider::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(232,183,119,.45),transparent);}
+.appblock{width:100%;max-width:460px;margin:0 auto;display:grid;grid-template-columns:118px 1fr;gap:18px;align-items:center;padding:18px;border-radius:22px;text-align:left;
+  background:linear-gradient(160deg,#16161D,#0C0C11);border:1px solid rgba(255,255,255,.10);}
+.app-shot{border-radius:18px;overflow:hidden;border:3px solid #2A2A33;aspect-ratio:640/1290;background:#000;box-shadow:0 20px 34px -16px rgba(0,0,0,.9);}
+.app-shot img{width:100%;height:100%;object-fit:cover;object-position:center bottom;}
+.app-badge{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ice);background:rgba(93,180,229,.10);border:1px solid rgba(93,180,229,.32);border-radius:100px;padding:4px 10px;margin-bottom:8px;}
+.app-name{font-family:'Bebas Neue',sans-serif;font-size:27px;line-height:.98;margin-bottom:8px;}
+.app-points{list-style:none;display:flex;flex-direction:column;gap:5px;}
+.app-points li{font-size:12.5px;color:#AEB3BD;line-height:1.4;padding-left:15px;position:relative;}
+.app-points li::before{content:'';position:absolute;left:0;top:6px;width:6px;height:6px;border-radius:50%;background:var(--ice);}
+.app-btn{grid-column:1 / -1;display:flex;align-items:center;justify-content:center;gap:9px;width:100%;padding:14px 16px;border-radius:13px;background:var(--ice);color:#04121C;font-weight:800;font-size:15px;transition:transform .2s;}
+.app-btn svg{width:16px;height:16px;flex-shrink:0;}
+.app-btn:hover{transform:translateY(-2px);}
+.app-fine{grid-column:1 / -1;margin-top:-6px;font-size:11.5px;color:#7D828D;line-height:1.5;text-align:center;}
+.app-fine a{color:var(--ice);}
+.pcard-alt{display:inline-block;margin-top:14px;font-size:13px;color:#AEB3BD;transition:color .2s;}
+.pcard-alt b{color:var(--ink);font-weight:600;}
+.pcard-alt:hover{color:var(--ink);}
 .success-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:9px 18px;margin:26px auto 0;max-width:520px;}
 .success-trust span{font-size:12.5px;color:#AEB3BD;display:inline-flex;align-items:center;gap:6px;}
 .success-trust span::before{content:'✓';color:var(--ice);font-weight:800;font-size:12px;}
-.success-ig-link{display:inline-block;margin-top:22px;font-size:13px;color:var(--ice);font-weight:500;transition:opacity .2s;}
+.success-ig-link{display:inline-block;margin-top:18px;font-size:13px;color:var(--ice);font-weight:500;transition:opacity .2s;}
 .success-ig-link:hover{opacity:.75;text-decoration:underline;}
-.pcard-app{max-width:420px;border-color:rgba(93,180,229,.30);}
-.pcard-note{font-size:12px;color:#AEB3BD;line-height:1.5;max-width:380px;}
-.pcard-note a{color:var(--ice);}
-.pcard-alt{margin-top:6px;font-size:13px;color:#AEB3BD;transition:color .2s;}
-.pcard-alt b{color:var(--ink);font-weight:600;}
-.pcard-alt:hover{color:var(--ink);}
-.success-footnote{font-size:12px;color:var(--ink-3);margin-top:18px;line-height:1.5;}
-@media(min-width:620px){
-  .success-ctas.is-dual{flex-direction:row;align-items:stretch;max-width:660px;}
-  .success-ctas.is-dual .pcard{max-width:none;flex:1;}
+.success-footnote{font-size:12px;color:var(--ink-3);margin-top:14px;line-height:1.5;}
+@media(max-width:380px){
+  .gift{padding:16px;} .gift-cover{width:94px;} .gift-name{font-size:30px;}
+  .appblock{grid-template-columns:92px 1fr;gap:14px;padding:15px;} .app-name{font-size:24px;}
 }
 
 body.success-mode .topbar,body.success-mode .progress-track{display:none;}
@@ -443,23 +448,43 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
     </form>
   </section>
 
-  <!-- SUCCESS -->
+  <!-- SUCCESS: the free program first (open it right here; the email is the copy), a 3-step start, then the app -->
   <section class="screen success-screen" data-screen="success">
-    <div class="success-confirm">
-      <span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-      <span><span id="successProduct">Dein kostenloses Programm</span> ist unterwegs an <strong id="successEmail">dein Postfach</strong> – schau in 60&nbsp;Sekunden nach.</span>
+    <div class="ok-pill"><span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>Du bist dabei</span></div>
+    <h2 class="ok-title display">Dein Gratisprogramm<br>ist <em>bereit</em>.</h2>
+    <p class="ok-lead" id="okLead">Öffne es jetzt und speichere es auf deinem Handy.</p>
+
+    <div class="gift">
+      <div class="gift-row">
+        <img class="gift-cover" id="giftCover" src="/free/cover-youth-5-foundations.jpg" alt="" width="480" height="854" />
+        <div>
+          <div class="gift-kicker" id="giftKicker"></div>
+          <div class="gift-name" id="giftName"></div>
+          <div class="gift-meta" id="giftMeta"></div>
+        </div>
+      </div>
+      <a class="gift-btn" id="giftBtn" href="/free/EHD-5-Day-Youth-Off-Ice-Program-Ages-9-14.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+        <span>Mein Gratisprogramm öffnen</span>
+      </a>
+      <p class="gift-mail" id="giftMail"><strong id="successEmail"></strong></p>
     </div>
-    <div class="success-eyebrow">Das passende Programm für dich</div>
-    <h2 class="success-title display" id="successTitle">Deine 5&nbsp;Tage sind nur das <em>Aufwärmen</em>.</h2>
-    <p class="success-sub"><span id="successSubTail"></span></p>
-    <div class="success-ctas" id="successCtas"></div>
+
+    <div class="steps">
+      <div class="steps-title">Heute starten</div>
+      <ol id="okSteps"></ol>
+    </div>
+
+    <div class="next-divider" id="nextDivider">Die anderen 51 Wochen</div>
+    <div class="appblock" id="appBlock"></div>
+    <a class="pcard-alt" id="programAlt" href="#"></a>
+
     <div class="success-trust">
-      <span>7&nbsp;Tage kostenlos · jederzeit kündbar</span>
+      <span>Coach David Ciboch · M.Ed. Sport Science</span>
       <span>Ehemaliger Nationaltrainer (VAE)</span>
-      <span>Kein Fitnessstudio nötig</span>
     </div>
-    <a class="success-ig-link" href="https://instagram.com/elite_hockey_drills" target="_blank" rel="noopener">Erst mal nur den Gratisplan? Folge @elite_hockey_drills →</a>
-    <p class="success-footnote">Keine E-Mail bekommen? Schau im Spam- oder Werbeordner nach. Oder schreib an <a href="mailto:elitehockeydrills@gmail.com" style="color:var(--ice);">elitehockeydrills@gmail.com</a></p>
+    <a class="success-ig-link" href="https://instagram.com/elite_hockey_drills" target="_blank" rel="noopener">Folge @elite_hockey_drills für neue Drills jede Woche →</a>
+    <p class="success-footnote">Fragen? Schreib an <a href="mailto:elitehockeydrills@gmail.com" style="color:var(--ice);">elitehockeydrills@gmail.com</a>. Coach David liest jede Nachricht.</p>
   </section>
 
 </main>
@@ -631,11 +656,47 @@ function populateEmailScreen(){
 }
 
 /* ============================================================
-   MATCHED PROGRAM (success screen)
+   SUCCESS SCREEN — the free program first, then the app
    ============================================================
-   Five age buckets, one paid program each — 1:1 with the free
-   plan the survey delivers.
+   Same layout as /survey.html. The program opens right on this page
+   (the email is the copy). The PDFs and the teen page are in English.
    ============================================================ */
+const PDF_YOUTH = '/free/EHD-5-Day-Youth-Off-Ice-Program-Ages-9-14.pdf';
+const PDF_ADULT = '/free/EHD-30-Minute-Hockey-Power-Plan.pdf';
+const GIFT = {
+  '9_11':   { kicker:"Gratis · 9–11 Jahre", name:'The 5 Foundations', meta:"5-Tage-Off-Ice-Programm · ohne Geräte · 20–35 Minuten pro Einheit · auf Englisch", url:PDF_YOUTH, cover:'/free/cover-youth-5-foundations.jpg' },
+  '12_14':  { kicker:"Gratis · 12–14 Jahre", name:'The 5 Foundations', meta:"5-Tage-Off-Ice-Programm · ohne Geräte · 20–35 Minuten pro Einheit · auf Englisch", url:PDF_YOUTH, cover:'/free/cover-youth-5-foundations.jpg' },
+  '15_18':  { kicker:"Gratis · 15–18 Jahre", name:'5-Day Off-Ice Program', meta:"35–45 Minuten pro Einheit · Demovideo zu jeder Übung · auf Englisch", url:'/free-program-15-18.html', badge:'5<br>DAYS' },
+  '19_39':  { kicker:"Gratis · Erwachsene", name:'The 30-Minute Hockey Power Plan', meta:"Drei 30-Minuten-Einheiten pro Woche · zu Hause, mit Kurzhanteln oder im Gym · auf Englisch", url:PDF_ADULT, cover:'/free/cover-adult-30-minute-plan.jpg' },
+  '40plus': { kicker:"Gratis · 40+", name:'The 30-Minute Hockey Power Plan', meta:"Drei 30-Minuten-Einheiten pro Woche · zu Hause, mit Kurzhanteln oder im Gym · auf Englisch", url:PDF_ADULT, cover:'/free/cover-adult-30-minute-plan.jpg' }
+};
+const START_STEPS = {
+  "9_11": [
+    "Eltern: Lest zuerst die Seiten <strong>Safety</strong> und <strong>With hockey</strong>.",
+    "Nimm <strong>Track A</strong>, die Dosierung für 9–11 Jahre.",
+    "Tag 1 beginnt mit dem <strong>5-Foundation Check</strong>. Filmt ihn: In Woche 4 wird er wiederholt."
+  ],
+  "12_14": [
+    "Eltern: Lest zuerst die Seiten <strong>Safety</strong> und <strong>With hockey</strong>.",
+    "Nimm <strong>Track B</strong>, die Dosierung für 12–14 Jahre. Neu im Off-Ice-Training? Starte Woche 1 mit Track A.",
+    "Tag 1 beginnt mit dem <strong>5-Foundation Check</strong>. Filmt ihn: In Woche 4 wird er wiederholt."
+  ],
+  "15_18": [
+    "Jede Einheit dauert 35–45 Minuten <strong>inklusive Aufwärmen</strong>. Lass es nie aus.",
+    "Tag 1 ist <strong>Lower Power + Strength</strong>, Tag 2 ist <strong>Speed Day</strong>.",
+    "Tippe auf einen blauen Übungsnamen für das <strong>Demovideo</strong> und die Schritt-für-Schritt-Anleitung."
+  ],
+  "19_39": [
+    "Wähle auf Seite 3 dein Level: <strong>Rebuild</strong> oder <strong>Experienced</strong>.",
+    "Wähle dein Equipment. Jede Übung gibt es für <strong>zu Hause</strong>, mit <strong>Kurzhanteln</strong> und im <strong>Gym</strong>.",
+    "Mach Session A und B mindestens <strong>48 Stunden</strong> vor deinem Spiel."
+  ],
+  "40plus": [
+    "Wähle auf Seite 3 dein Level. Über 40: Starte zwei Wochen mit <strong>Rebuild</strong> und mach das Aufwärmen doppelt (Seite 7).",
+    "Wähle dein Equipment. Jede Übung gibt es für <strong>zu Hause</strong>, mit <strong>Kurzhanteln</strong> und im <strong>Gym</strong>.",
+    "Mach Session A und B mindestens <strong>48 Stunden</strong> vor deinem Spiel."
+  ]
+};
 const PROGRAM_MATCH = {
   '9_11':   [ { name:'FUNDAMENT',   age:'9–11',  url:'/de/program-9-11.html' } ],
   '12_14':  [ { name:'ENTWICKLUNG', age:'12–14', url:'/de/program-12-14.html' } ],
@@ -645,40 +706,57 @@ const PROGRAM_MATCH = {
 };
 
 const ARROW_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>';
-
 const IOS_URL = 'https://apps.apple.com/de/app/elite-hockey-drills/id6787257275';
 const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.elitehockeydrills.training&hl=de';
 const ON_ANDROID = /Android/i.test(navigator.userAgent || '');
 const APP_URL = ON_ANDROID ? PLAY_URL : IOS_URL;
-function buildAppCard(age){
-  return `<a class="pcard pcard-app" href="${APP_URL}" data-place="survey-success" target="_blank" rel="noopener">`
-    + `<div class="pcard-top"><span class="pcard-badge">Alter ${age} · ${ON_ANDROID ? 'Android' : 'iOS'}</span>`
-    + `<span class="pcard-price"><b>7&nbsp;Tage gratis</b></span></div>`
-    + `<div class="pcard-name">Die Elite Hockey Drills App</div>`
-    + `<div class="pcard-desc">Deine ganze Saison, geplant nach Alter, Niveau, Position und Trainingsplan – ein Demovideo zu jeder Übung, Spieltag-Modus und Fortschritts-Tracking. Danach 19,99&nbsp;€/Monat oder 99,90&nbsp;€/Jahr. Jederzeit kündbar.</div>`
-    + `<span class="pcard-go">Starte deine Gratiswoche <span class="pcard-arrow">${ARROW_SVG}</span></span>`
-    + `</a>`;
+
+function buildAppBlock(age, youth){
+  const other = ON_ANDROID
+    ? "Du hast ein iPhone?" + ` <a href="${IOS_URL}" data-store="ios" target="_blank" rel="noopener">App Store</a>`
+    : "Du hast Android?" + ` <a href="${PLAY_URL}" data-place="survey-success" target="_blank" rel="noopener">Google Play</a>`;
+  const points = youth ? ["Die ganze Saison deines Kindes, geplant nach Alter, Niveau, Position und Trainingsplan","Ein Demovideo zu jeder Übung","Spieltag-Modus und Fortschritts-Tracking"] : ["Deine ganze Saison, geplant nach Alter, Niveau, Position und Trainingsplan","Ein Demovideo zu jeder Übung","Spieltag-Modus und Fortschritts-Tracking"];
+  return `<div class="app-shot"><img src="/assets/app/app-home.webp" alt="Elite Hockey Drills" width="640" height="1380" loading="lazy" /></div>`
+    + '<div><span class="app-badge">' + "Alter AGE · 7 Tage gratis".replace('AGE', age) + '</span>'
+    + `<div class="app-name">Die Elite Hockey Drills App</div>`
+    + '<ul class="app-points">' + points.map((p) => `<li>${p}</li>`).join('') + '</ul></div>'
+    + `<a class="app-btn" href="${APP_URL}" data-place="survey-success" target="_blank" rel="noopener">Starte deine Gratiswoche ${ARROW_SVG}</a>`
+    + `<div class="app-fine">Danach 19,99&nbsp;€/Monat oder 99,90&nbsp;€/Jahr. Jederzeit kündbar.<br>${other}</div>`;
 }
 
 function populateSuccessScreen(){
-  const list = PROGRAM_MATCH[answers.age] || PROGRAM_MATCH['19_39'];
-  const tail = document.getElementById('successSubTail');
-  const wrap = document.getElementById('successCtas');
-  if(!wrap) return;
-  const p = list[0];
-  const adult = isAdultAge(answers.age);
-  const product = document.getElementById('successProduct');
-  if(product) product.textContent = (FREE_PROGRAM[answers.age] || FREE_PROGRAM['19_39']).nom;
-  const title = document.getElementById('successTitle');
-  if(title && adult) title.innerHTML = 'Dein Gratisplan ist nur das <em>Aufwärmen</em>.';
-  if(tail) tail.innerHTML = adult
-    ? `Dein Gratisplan ist unterwegs. Die App übernimmt den Rest deiner Saison – zugeschnitten auf Spieler im&nbsp;Alter von ${p.age}. <strong>Deine erste Woche ist gratis.</strong>`
-    : `Deine 5&nbsp;Gratistage sind unterwegs. Die App übernimmt die restlichen 51&nbsp;Wochen – zugeschnitten auf Spieler im&nbsp;Alter von ${p.age}. <strong>Deine erste Woche ist gratis.</strong>`;
-  wrap.innerHTML = buildAppCard(p.age)
-    + (ON_ANDROID
-      ? `<span class="pcard-note">Du hast ein iPhone? <a href="${IOS_URL}" data-store="ios" target="_blank" rel="noopener">Hol sie dir im App Store</a>.</span>`
-      : `<span class="pcard-note">Du hast Android? <a href="${PLAY_URL}" data-place="survey-success" target="_blank" rel="noopener">Hol sie dir bei Google Play</a>.</span>`)
-    + `<a class="pcard-alt" href="${p.url}">Lieber ein 8-Wochen-Programm mit Einmalzahlung? <b>${p.name}</b> · 79&nbsp;USD →</a>`;
+  const age = GIFT[answers.age] ? answers.age : '19_39';
+  const g = GIFT[age];
+  const adult = isAdultAge(age);
+  const youth = age === '9_11' || age === '12_14';
+  const cover = document.getElementById('giftCover');
+  if (g.cover) {
+    cover.outerHTML = `<img class="gift-cover" id="giftCover" src="${g.cover}" alt="${g.name}" width="480" height="854" />`;
+  } else {
+    cover.outerHTML = `<div class="gift-cover is-badge" id="giftCover" aria-hidden="true">${g.badge}</div>`;
+  }
+  document.getElementById('giftKicker').textContent = g.kicker;
+  document.getElementById('giftName').textContent = g.name;
+  document.getElementById('giftMeta').textContent = g.meta;
+  const btn = document.getElementById('giftBtn');
+  btn.href = g.url;
+  btn.onclick = () => { if (typeof gtag === 'function') gtag('event', 'free_program_open', { age, placement:'survey-success', lang:'de', transport_type:'beacon' }); };
+  document.getElementById('okLead').textContent = youth ? "Öffne es jetzt und speichere es auf deinem Handy. Eine Einheit dauert 20–35 Minuten." : "Öffne es jetzt und speichere es auf deinem Handy.";
+  document.getElementById('okSteps').innerHTML = START_STEPS[age]
+    .map((s, i) => `<li><span class="n">${i + 1}</span><span>${s}</span></li>`).join('');
+  const p = PROGRAM_MATCH[age][0];
+  document.getElementById('nextDivider').textContent = adult ? "Der Rest deiner Saison" : "Die anderen 51 Wochen";
+  document.getElementById('appBlock').innerHTML = buildAppBlock(p.age, youth);
+  const alt = document.getElementById('programAlt');
+  alt.href = p.url;
+  alt.innerHTML = "Lieber ein 8-Wochen-Programm mit Einmalzahlung? <b>NAME</b> · 79&nbsp;USD →".replace('NAME', p.name);
+}
+
+// emailed: false when a returning subscriber already had the program emailed recently (see subscribe.mjs)
+function setMailNote(email, emailed){
+  const note = document.getElementById('giftMail');
+  note.innerHTML = emailed ? "Wir haben es dir auch an <strong id=\"successEmail\"></strong> geschickt. Nach 2 Minuten nicht im Posteingang? Schau unter „Werbung“ oder im Spam nach." : "Du findest es auch in der E-Mail, die wir dir an <strong id=\"successEmail\"></strong> geschickt haben.";
+  document.getElementById('successEmail').textContent = email;
 }
 
 /* All MailerLite API calls are server-side in netlify/functions/subscribe.mjs. */
@@ -733,8 +811,9 @@ emailForm.addEventListener('submit', async (e) => {
       })
     });
     if(!res.ok) throw new Error('Subscribe failed (' + res.status + ')');
+    const out = await res.json().catch(() => ({}));
 
-    document.getElementById('successEmail').textContent = email;
+    setMailNote(email, out.emailed !== false);
     history.push('success');
     showScreen('success', 'forward');
 
