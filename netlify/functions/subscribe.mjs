@@ -46,6 +46,24 @@ function ml(path, init = {}) {
   });
 }
 
+// Is this email still inside the group's "[FOLLOW-UP] <group>" automation? (e.g. "[FOLLOW-UP] youth-program (12–14)")
+// When MailerLite can't answer, say yes: better to skip a re-send than to cut someone's sequence short.
+async function inFollowUp(groupName, email) {
+  try {
+    const base = groupName.replace(/-(cs|sv|de|fi)$/, '');
+    const aRes = await ml('/automations?filter[enabled]=true&limit=50');
+    if (!aRes.ok) throw new Error(`automations lookup failed (${aRes.status})`);
+    const auto = ((await aRes.json()).data || []).find((a) => a.enabled && String(a.name || '').startsWith(`[FOLLOW-UP] ${base}`));
+    if (!auto) return false; // no follow-up sequence for this group: nothing to cut short
+    const r = await ml(`/automations/${auto.id}/activity?filter[status]=active&filter[search]=${encodeURIComponent(email)}&limit=1`);
+    if (!r.ok) throw new Error(`activity lookup failed (${r.status})`);
+    return ((await r.json()).data || []).length > 0;
+  } catch (e) {
+    console.error(`[subscribe] follow-up check: ${e?.message || e}`);
+    return true;
+  }
+}
+
 export default async (req) => {
   if (req.method !== 'POST') return json({ error: 'method_not_allowed' }, 405);
 
@@ -104,7 +122,15 @@ export default async (req) => {
       if (nl) groupIds = [nl.id];
     }
 
-    // 2) Upsert the subscriber into the resolved group(s).
+    // 2) Is this person already in that group? The group's "Send … PDF" automation fires only when
+    //    someone *joins* the group, so a returning subscriber who picks the same age again would get no
+    //    email at all (found 2026-10-12 with a subscriber from May).
+    const target = groupIds[0] || null;
+    const before = await ml(`/subscribers/${encodeURIComponent(email)}`);
+    const existing = before.ok ? (await before.json()).data : null;
+    const alreadyIn = !!(target && existing && (existing.groups || []).some((g) => String(g.id) === String(target)));
+
+    // 3) Upsert the subscriber into the resolved group(s).
     const sRes = await ml('/subscribers', {
       method: 'POST',
       body: JSON.stringify({ email, groups: groupIds, fields, status: 'active' }),
@@ -113,8 +139,26 @@ export default async (req) => {
       console.error(`[subscribe] MailerLite subscribe failed (${sRes.status}): ${await sRes.text().catch(() => '')}`);
       return json({ error: 'subscribe_failed' }, 502);
     }
+    const saved = (await sRes.json().catch(() => ({}))).data;
 
-    return json({ ok: true });
+    // 4) Returning subscriber: take them out of the group and put them back, so "Send … PDF" (repeatable
+    //    after 1 day) emails the program again. Not while they are still inside the group's [FOLLOW-UP]
+    //    sequence: leaving the group would end it, and they were sent the program days ago (the success
+    //    page links the program directly anyway).
+    let emailed = !alreadyIn;
+    if (alreadyIn && saved?.id && body.age) {
+      const groupName = (groups.find((g) => String(g.id) === String(target)) || {}).name || '';
+      if (await inFollowUp(groupName, email)) {
+        console.log(`[subscribe] ${groupName}: returning subscriber is mid-sequence, PDF not re-sent`);
+      } else {
+        await ml(`/subscribers/${saved.id}/groups/${target}`, { method: 'DELETE' });
+        const add = await ml(`/subscribers/${saved.id}/groups/${target}`, { method: 'POST' });
+        emailed = add.ok;
+        if (!add.ok) console.error(`[subscribe] re-adding to ${groupName} failed (${add.status}): ${await add.text().catch(() => '')}`);
+      }
+    }
+
+    return json({ ok: true, emailed });
   } catch (e) {
     console.error(`[subscribe] error: ${e?.message || e}`);
     return json({ error: 'subscribe_failed' }, 502);
