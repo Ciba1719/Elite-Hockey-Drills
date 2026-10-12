@@ -13,11 +13,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="apple-itunes-app" content="app-id=6787257275" />
 <meta name="theme-color" content="#070708" />
-<title>Sestav si 5denní program zdarma — Elite Hockey Drills</title>
-<meta name="description" content="Odpověz na pár rychlých otázek a získej 5denní program suché přípravy sestavený přímo pro tebe. Zdarma." />
+<title>Tvůj hokejový program zdarma — Elite Hockey Drills</title>
+<meta name="description" content="Odpověz na čtyři rychlé otázky a získej zdarma program suché přípravy pro hokej podle svého věku." />
 <meta name="robots" content="noindex,nofollow" />
-<meta property="og:title" content="Sestav si 5denní program zdarma — Elite Hockey Drills" />
-<meta property="og:description" content="Odpověz na pár rychlých otázek a získej 5denní program suché přípravy sestavený přímo pro tebe. Zdarma." />
+<meta property="og:title" content="Tvůj hokejový program zdarma — Elite Hockey Drills" />
+<meta property="og:description" content="Odpověz na čtyři rychlé otázky a získej zdarma program suché přípravy pro hokej podle svého věku." />
 <meta property="og:url" content="https://elitehockeydrills.com/cs/survey.html" />
 <meta property="og:locale" content="cs_CZ" />
 <meta property="og:locale:alternate" content="en_US" />
@@ -320,7 +320,7 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   <section class="screen active slide-in-right" data-screen="1">
     <div class="q-eyebrow">Otázka 01</div>
     <h2 class="q-title display">Kolik ti je <em>let?</em></h2>
-    <p class="q-sub">Tohle je nejdůležitější otázka — program se staví podle toho, v&nbsp;jaké fázi vývoje právě jsi.</p>
+    <p class="q-sub">Tohle je nejdůležitější otázka — program se staví podle toho, v&nbsp;jaké fázi vývoje právě jsi. <strong>Rodiče:</strong> vyberte věk svého hráče.</p>
     <div class="options">
       <button class="option" data-value="9_11" data-label="9–11">
         <span>9–11<span class="option-sub">Dětská fáze — pohybové základy</span></span>
@@ -431,10 +431,10 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   <!-- EMAIL -->
   <section class="screen email-screen" data-screen="email">
     <div class="q-eyebrow" style="color:var(--warm);">Poslední krok</div>
-    <h2 class="q-title display">Tvůj program <em>na míru</em><br>je připravený.</h2>
+    <h2 class="q-title display">Tvůj program <em>zdarma</em><br>je připravený.</h2>
     <div class="summary-pills" id="summaryPills"></div>
     <p class="q-sub" id="emailSubhead">
-      Zadej svůj e-mail a&nbsp;pošleme ti 5denní program suché přípravy na míru — sestavený přímo pro tebe.
+      Zadej svůj e-mail a&nbsp;pošleme ti program zdarma.
     </p>
     <form class="email-form" id="emailForm" novalidate>
       <input type="email" required placeholder="tvuj@email.cz" class="email-input" id="emailInput" autocomplete="email" inputmode="email" />
@@ -452,10 +452,10 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   <section class="screen success-screen" data-screen="success">
     <div class="success-confirm">
       <span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-      <span>Tvůj 5denní plán zdarma už letí do <strong id="successEmail">tvé schránky</strong> — mrkni tam za 60&nbsp;sekund.</span>
+      <span><span id="successProduct">Tvůj program zdarma</span> už letí do <strong id="successEmail">tvé schránky</strong> — mrkni tam za 60&nbsp;sekund.</span>
     </div>
     <div class="success-eyebrow">Program přesně pro tebe</div>
-    <h2 class="success-title display">Tvých 5&nbsp;dní je jen <em>rozcvička</em>.</h2>
+    <h2 class="success-title display" id="successTitle">Tvých 5&nbsp;dní je jen <em>rozcvička</em>.</h2>
     <p class="success-sub"><span id="successSubTail"></span></p>
     <div class="success-ctas" id="successCtas"></div>
     <div class="success-trust">
@@ -603,6 +603,17 @@ bindSingleSelect(getScreen(4), 'goal');
 
 /* Age -> MailerLite group routing now happens server-side in subscribe.mjs. */
 
+// The free program each age group is emailed (the emails and PDFs are in English) — keep in sync with the
+// MailerLite "Send … PDF" automations
+const FREE_PROGRAM = {
+  '9_11':   { acc: "5denní program suché přípravy pro mládež zdarma („The 5 Foundations“, v angličtině)", nom: "Tvůj 5denní program suché přípravy zdarma" },
+  '12_14':  { acc: "5denní program suché přípravy pro mládež zdarma („The 5 Foundations“, v angličtině)", nom: "Tvůj 5denní program suché přípravy zdarma" },
+  '15_18':  { acc: "5denní program suché přípravy zdarma (v angličtině)", nom: "Tvůj 5denní program zdarma" },
+  '19_39':  { acc: "plán „30-Minute Hockey Power Plan“ zdarma (v angličtině)", nom: "Tvůj plán „30-Minute Hockey Power Plan“ zdarma" },
+  '40plus': { acc: "plán „30-Minute Hockey Power Plan“ zdarma (v angličtině)", nom: "Tvůj plán „30-Minute Hockey Power Plan“ zdarma" }
+};
+const isAdultAge = (age) => age === '19_39' || age === '40plus';
+
 function populateEmailScreen(){
   const pillsEl = document.getElementById('summaryPills');
   const pills = [
@@ -614,11 +625,14 @@ function populateEmailScreen(){
   pillsEl.innerHTML = pills.map(p => `<span class="summary-pill">${p}</span>`).join('');
 
   const sub = document.getElementById('emailSubhead');
-  const posLabel = (answers.positionLabel || '').toLowerCase();
-  const audienceWord = answers.position === 'goalie' ? 'brankáře' : (answers.position === 'defense' ? 'obránce' : (answers.position === 'forward' ? 'útočníky' : (posLabel || 'hráče')));
-  const audience = `${audienceWord} ve&nbsp;věku ${answers.ageLabel}`;
-  const goalText = (answers.goalShort || answers.goalLabel || 'suchá příprava').toLowerCase();
-  sub.innerHTML = `Zadej svůj e-mail a&nbsp;pošleme ti 5denní program suché přípravy na míru — sestavený přímo pro <strong>${audience}</strong>, s&nbsp;hlavním cílem: <strong>${goalText}</strong>.`;
+  // The free program is matched by age only, so the copy promises exactly that
+  const free = FREE_PROGRAM[answers.age] || FREE_PROGRAM['19_39'];
+  sub.innerHTML = `Zadej svůj e-mail a&nbsp;získej ${free.acc} pro hráče ve&nbsp;věku <strong>${answers.ageLabel}</strong>.`;
+  // Youth (9–14): the program and any follow-up go to a parent or guardian, not to the child
+  const youth = answers.age === '9_11' || answers.age === '12_14';
+  if (youth) sub.innerHTML = `<strong>Rodiče:</strong> zadejte <em>svůj</em> e-mail a&nbsp;pošleme vám 5denní program zdarma pro vašeho hráče (${answers.ageLabel}&nbsp;let) – s&nbsp;průvodcem pro rodiče, jak ho bezpečně zvládnout. Program je v&nbsp;angličtině.`;
+  const input = document.getElementById('emailInput');
+  if (input) input.placeholder = youth ? 'rodic@email.cz' : 'tvuj@email.cz';
 }
 
 /* ============================================================
@@ -657,7 +671,14 @@ function populateSuccessScreen(){
   const wrap = document.getElementById('successCtas');
   if(!wrap) return;
   const p = list[0];
-  if(tail) tail.innerHTML = `Tvých 5&nbsp;dní zdarma je na cestě. Zbylých 51&nbsp;týdnů povede aplikace — na míru hráči ve&nbsp;věku ${p.age}. <strong>První týden máš zdarma.</strong>`;
+  const adult = isAdultAge(answers.age);
+  const product = document.getElementById('successProduct');
+  if(product) product.textContent = (FREE_PROGRAM[answers.age] || FREE_PROGRAM['19_39']).nom;
+  const title = document.getElementById('successTitle');
+  if(title && adult) title.innerHTML = 'Tvůj plán zdarma je jen <em>rozcvička</em>.';
+  if(tail) tail.innerHTML = adult
+    ? `Tvůj plán zdarma je na cestě. Zbytek sezóny povede aplikace — na míru hráči ve&nbsp;věku ${p.age}. <strong>První týden máš zdarma.</strong>`
+    : `Tvých 5&nbsp;dní zdarma je na cestě. Zbylých 51&nbsp;týdnů povede aplikace — na míru hráči ve&nbsp;věku ${p.age}. <strong>První týden máš zdarma.</strong>`;
   wrap.innerHTML = buildAppCard(p.age)
     + (ON_ANDROID
       ? `<span class="pcard-note">Máš iPhone? <a href="${IOS_URL}" data-store="ios" target="_blank" rel="noopener">Stáhni si ji v&nbsp;App Store</a>.</span>`
@@ -711,6 +732,8 @@ emailForm.addEventListener('submit', async (e) => {
         position: answers.position,
         level:    answers.level,
         goal:     answers.goal,
+        // where the lead came from (e.g. ?src=ig_hockey from the Instagram "comment HOCKEY" DM)
+        source:   (new URLSearchParams(location.search).get('src') || 'survey').replace(/[^\w-]/g, '').slice(0, 40),
         lang:     'cs'
       })
     });

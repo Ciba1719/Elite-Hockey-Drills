@@ -13,11 +13,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="apple-itunes-app" content="app-id=6787257275" />
 <meta name="theme-color" content="#070708" />
-<title>Dein kostenloses 5-Tage-Programm — Elite Hockey Drills</title>
-<meta name="description" content="Beantworte ein paar kurze Fragen und hol dir ein 5-Tage-Off-Ice-Programm, das genau zu dir passt. Kostenlos." />
+<title>Dein kostenloses Hockey-Programm — Elite Hockey Drills</title>
+<meta name="description" content="Beantworte vier kurze Fragen und hol dir ein kostenloses Off-Ice-Hockeyprogramm, passend zu deinem Alter." />
 <meta name="robots" content="noindex,nofollow" />
-<meta property="og:title" content="Dein kostenloses 5-Tage-Programm — Elite Hockey Drills" />
-<meta property="og:description" content="Beantworte ein paar kurze Fragen und hol dir ein 5-Tage-Off-Ice-Programm, das genau zu dir passt. Kostenlos." />
+<meta property="og:title" content="Dein kostenloses Hockey-Programm — Elite Hockey Drills" />
+<meta property="og:description" content="Beantworte vier kurze Fragen und hol dir ein kostenloses Off-Ice-Hockeyprogramm, passend zu deinem Alter." />
 <meta property="og:url" content="https://elitehockeydrills.com/de/survey.html" />
 <meta property="og:locale" content="de_DE" />
 <link rel="canonical" href="https://elitehockeydrills.com/de/survey.html" />
@@ -316,7 +316,7 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   <section class="screen active slide-in-right" data-screen="1">
     <div class="q-eyebrow">Frage 01</div>
     <h2 class="q-title display">Wie <em>alt</em> bist du?</h2>
-    <p class="q-sub">Die wichtigste Frage überhaupt – dein Programm richtet sich nach deiner Entwicklungsstufe.</p>
+    <p class="q-sub">Die wichtigste Frage überhaupt – dein Programm richtet sich nach deiner Entwicklungsstufe. <strong>Eltern:</strong> Wähle das Alter deines Kindes.</p>
     <div class="options">
       <button class="option" data-value="9_11" data-label="9–11">
         <span>9–11<span class="option-sub">Kinder – Grundlagenphase</span></span>
@@ -426,10 +426,10 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   <!-- EMAIL -->
   <section class="screen email-screen" data-screen="email">
     <div class="q-eyebrow" style="color:var(--warm);">Letzter Schritt</div>
-    <h2 class="q-title display">Dein <em>persönliches</em><br>Programm ist fertig.</h2>
+    <h2 class="q-title display">Dein <em>kostenloses</em><br>Programm ist fertig.</h2>
     <div class="summary-pills" id="summaryPills"></div>
     <p class="q-sub" id="emailSubhead">
-      Gib deine E-Mail-Adresse ein und erhalte dein persönliches 5-Tage-Off-Ice-Programm – speziell für dich erstellt.
+      Gib deine E-Mail-Adresse ein und erhalte dein kostenloses Programm.
     </p>
     <form class="email-form" id="emailForm" novalidate>
       <input type="email" required placeholder="deine@email.de" class="email-input" id="emailInput" autocomplete="email" inputmode="email" />
@@ -447,10 +447,10 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   <section class="screen success-screen" data-screen="success">
     <div class="success-confirm">
       <span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-      <span>Dein kostenloser 5-Tage-Plan ist unterwegs an <strong id="successEmail">dein Postfach</strong> – schau in 60&nbsp;Sekunden nach.</span>
+      <span><span id="successProduct">Dein kostenloses Programm</span> ist unterwegs an <strong id="successEmail">dein Postfach</strong> – schau in 60&nbsp;Sekunden nach.</span>
     </div>
     <div class="success-eyebrow">Das passende Programm für dich</div>
-    <h2 class="success-title display">Deine 5&nbsp;Tage sind nur das <em>Aufwärmen</em>.</h2>
+    <h2 class="success-title display" id="successTitle">Deine 5&nbsp;Tage sind nur das <em>Aufwärmen</em>.</h2>
     <p class="success-sub"><span id="successSubTail"></span></p>
     <div class="success-ctas" id="successCtas"></div>
     <div class="success-trust">
@@ -598,6 +598,17 @@ bindSingleSelect(getScreen(4), 'goal');
 
 /* Age -> MailerLite group routing now happens server-side in subscribe.mjs. */
 
+// The free program each age group is emailed (the emails and PDFs are in English) — keep in sync with the
+// MailerLite "Send … PDF" automations
+const FREE_PROGRAM = {
+  '9_11':   { acc: "das kostenlose 5-Tage-Off-Ice-Programm für Jugendliche („The 5 Foundations“, auf Englisch)", nom: "Dein kostenloses 5-Tage-Off-Ice-Programm" },
+  '12_14':  { acc: "das kostenlose 5-Tage-Off-Ice-Programm für Jugendliche („The 5 Foundations“, auf Englisch)", nom: "Dein kostenloses 5-Tage-Off-Ice-Programm" },
+  '15_18':  { acc: "das kostenlose 5-Tage-Off-Ice-Programm (auf Englisch)", nom: "Dein kostenloses 5-Tage-Off-Ice-Programm" },
+  '19_39':  { acc: "den kostenlosen „30-Minute Hockey Power Plan“ (auf Englisch)", nom: "Dein kostenloser „30-Minute Hockey Power Plan“" },
+  '40plus': { acc: "den kostenlosen „30-Minute Hockey Power Plan“ (auf Englisch)", nom: "Dein kostenloser „30-Minute Hockey Power Plan“" }
+};
+const isAdultAge = (age) => age === '19_39' || age === '40plus';
+
 function populateEmailScreen(){
   const pillsEl = document.getElementById('summaryPills');
   const pills = [
@@ -609,11 +620,14 @@ function populateEmailScreen(){
   pillsEl.innerHTML = pills.map(p => `<span class="summary-pill">${p}</span>`).join('');
 
   const sub = document.getElementById('emailSubhead');
-  const posLabel = (answers.positionLabel || '').toLowerCase();
-  const audienceWord = answers.position === 'goalie' ? 'Torhüter' : (answers.positionLabel || 'Spieler');
-  const audience = `${audienceWord} im&nbsp;Alter von ${answers.ageLabel}`;
-  const goalText = (answers.goalShort || answers.goalLabel || 'Off-Ice-Training');
-  sub.innerHTML = `Gib deine E-Mail-Adresse ein und erhalte dein persönliches 5-Tage-Off-Ice-Programm – speziell für <strong>${audience}</strong> mit Fokus auf <strong>${goalText}</strong>.`;
+  // The free program is matched by age only, so the copy promises exactly that
+  const free = FREE_PROGRAM[answers.age] || FREE_PROGRAM['19_39'];
+  sub.innerHTML = `Gib deine E-Mail-Adresse ein und erhalte ${free.acc} für Spieler im&nbsp;Alter von <strong>${answers.ageLabel}</strong>.`;
+  // Youth (9–14): the program and any follow-up go to a parent or guardian, not to the child
+  const youth = answers.age === '9_11' || answers.age === '12_14';
+  if (youth) sub.innerHTML = `<strong>Eltern:</strong> Gib <em>deine</em> E-Mail-Adresse ein – wir schicken dir das kostenlose 5-Tage-Programm für dein Kind (${answers.ageLabel}&nbsp;Jahre), mit einem Leitfaden für Eltern, wie es sicher klappt. Das Programm ist auf Englisch.`;
+  const input = document.getElementById('emailInput');
+  if (input) input.placeholder = youth ? 'eltern@email.de' : 'deine@email.de';
 }
 
 /* ============================================================
@@ -652,7 +666,14 @@ function populateSuccessScreen(){
   const wrap = document.getElementById('successCtas');
   if(!wrap) return;
   const p = list[0];
-  if(tail) tail.innerHTML = `Deine 5&nbsp;Gratistage sind unterwegs. Die App übernimmt die restlichen 51&nbsp;Wochen – zugeschnitten auf Spieler im&nbsp;Alter von ${p.age}. <strong>Deine erste Woche ist gratis.</strong>`;
+  const adult = isAdultAge(answers.age);
+  const product = document.getElementById('successProduct');
+  if(product) product.textContent = (FREE_PROGRAM[answers.age] || FREE_PROGRAM['19_39']).nom;
+  const title = document.getElementById('successTitle');
+  if(title && adult) title.innerHTML = 'Dein Gratisplan ist nur das <em>Aufwärmen</em>.';
+  if(tail) tail.innerHTML = adult
+    ? `Dein Gratisplan ist unterwegs. Die App übernimmt den Rest deiner Saison – zugeschnitten auf Spieler im&nbsp;Alter von ${p.age}. <strong>Deine erste Woche ist gratis.</strong>`
+    : `Deine 5&nbsp;Gratistage sind unterwegs. Die App übernimmt die restlichen 51&nbsp;Wochen – zugeschnitten auf Spieler im&nbsp;Alter von ${p.age}. <strong>Deine erste Woche ist gratis.</strong>`;
   wrap.innerHTML = buildAppCard(p.age)
     + (ON_ANDROID
       ? `<span class="pcard-note">Du hast ein iPhone? <a href="${IOS_URL}" data-store="ios" target="_blank" rel="noopener">Hol sie dir im App Store</a>.</span>`
@@ -706,6 +727,8 @@ emailForm.addEventListener('submit', async (e) => {
         position: answers.position,
         level:    answers.level,
         goal:     answers.goal,
+        // where the lead came from (e.g. ?src=ig_hockey from the Instagram "comment HOCKEY" DM)
+        source:   (new URLSearchParams(location.search).get('src') || 'survey').replace(/[^\w-]/g, '').slice(0, 40),
         lang:     'de'
       })
     });

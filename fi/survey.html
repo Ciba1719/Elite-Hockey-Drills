@@ -13,11 +13,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="apple-itunes-app" content="app-id=6787257275" />
 <meta name="theme-color" content="#070708" />
-<title>Ilmainen 5 päivän ohjelmasi — Elite Hockey Drills</title>
-<meta name="description" content="Vastaa muutamaan nopeaan kysymykseen ja saat juuri sinulle tehdyn 5 päivän oheistreeniohjelman. Ilmaiseksi." />
+<title>Ilmainen jääkiekko-ohjelmasi — Elite Hockey Drills</title>
+<meta name="description" content="Vastaa neljään nopeaan kysymykseen ja saat ikääsi sopivan ilmaisen jääkiekon oheistreeniohjelman." />
 <meta name="robots" content="noindex,nofollow" />
-<meta property="og:title" content="Ilmainen 5 päivän ohjelmasi — Elite Hockey Drills" />
-<meta property="og:description" content="Vastaa muutamaan nopeaan kysymykseen ja saat juuri sinulle tehdyn 5 päivän oheistreeniohjelman. Ilmaiseksi." />
+<meta property="og:title" content="Ilmainen jääkiekko-ohjelmasi — Elite Hockey Drills" />
+<meta property="og:description" content="Vastaa neljään nopeaan kysymykseen ja saat ikääsi sopivan ilmaisen jääkiekon oheistreeniohjelman." />
 <meta property="og:url" content="https://elitehockeydrills.com/fi/survey.html" />
 <meta property="og:locale" content="fi_FI" />
 <link rel="canonical" href="https://elitehockeydrills.com/fi/survey.html" />
@@ -316,7 +316,7 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   <section class="screen active slide-in-right" data-screen="1">
     <div class="q-eyebrow">Kysymys 01</div>
     <h2 class="q-title display">Kuinka <em>vanha</em> olet?</h2>
-    <p class="q-sub">Tämä on tärkein kysymys – ohjelmasi rakentuu kehitysvaiheesi mukaan.</p>
+    <p class="q-sub">Tämä on tärkein kysymys – ohjelmasi rakentuu kehitysvaiheesi mukaan. <strong>Vanhemmat:</strong> valitse pelaajan ikä.</p>
     <div class="options">
       <button class="option" data-value="9_11" data-label="9–11">
         <span>9–11<span class="option-sub">Lasten perusvaihe</span></span>
@@ -426,10 +426,10 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   <!-- EMAIL -->
   <section class="screen email-screen" data-screen="email">
     <div class="q-eyebrow" style="color:var(--warm);">Viimeinen vaihe</div>
-    <h2 class="q-title display"><em>Henkilökohtainen</em><br>ohjelmasi on valmis.</h2>
+    <h2 class="q-title display"><em>Ilmainen</em><br>ohjelmasi on valmis.</h2>
     <div class="summary-pills" id="summaryPills"></div>
     <p class="q-sub" id="emailSubhead">
-      Anna sähköpostiosoitteesi, niin saat henkilökohtaisen 5&nbsp;päivän oheistreeniohjelman – tehty juuri sinulle.
+      Anna sähköpostiosoitteesi, niin saat ilmaisen ohjelmasi.
     </p>
     <form class="email-form" id="emailForm" novalidate>
       <input type="email" required placeholder="sinun@sahkoposti.fi" class="email-input" id="emailInput" autocomplete="email" inputmode="email" />
@@ -447,10 +447,10 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   <section class="screen success-screen" data-screen="success">
     <div class="success-confirm">
       <span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-      <span>Ilmainen 5&nbsp;päivän ohjelmasi on matkalla osoitteeseen <strong id="successEmail">antamaasi</strong> – tarkista posti 60&nbsp;sekunnin päästä.</span>
+      <span><span id="successProduct">Ilmainen ohjelmasi</span> on matkalla osoitteeseen <strong id="successEmail">antamaasi</strong> – tarkista posti 60&nbsp;sekunnin päästä.</span>
     </div>
     <div class="success-eyebrow">Sinulle sopiva ohjelma</div>
-    <h2 class="success-title display">5&nbsp;päivää on vasta <em>alkulämmittely</em>.</h2>
+    <h2 class="success-title display" id="successTitle">5&nbsp;päivää on vasta <em>alkulämmittely</em>.</h2>
     <p class="success-sub"><span id="successSubTail"></span></p>
     <div class="success-ctas" id="successCtas"></div>
     <div class="success-trust">
@@ -598,6 +598,17 @@ bindSingleSelect(getScreen(4), 'goal');
 
 /* Age -> MailerLite group routing now happens server-side in subscribe.mjs. */
 
+// The free program each age group is emailed (the emails and PDFs are in English) — keep in sync with the
+// MailerLite "Send … PDF" automations
+const FREE_PROGRAM = {
+  '9_11':   { name: "5 päivän oheistreeniohjelma nuorille (The 5 Foundations)", nom: "Ilmainen 5 päivän oheistreeniohjelmasi" },
+  '12_14':  { name: "5 päivän oheistreeniohjelma nuorille (The 5 Foundations)", nom: "Ilmainen 5 päivän oheistreeniohjelmasi" },
+  '15_18':  { name: "5 päivän oheistreeniohjelma", nom: "Ilmainen 5 päivän ohjelmasi" },
+  '19_39':  { name: "30-Minute Hockey Power Plan", nom: "Ilmainen 30-Minute Hockey Power Plan -ohjelmasi" },
+  '40plus': { name: "30-Minute Hockey Power Plan", nom: "Ilmainen 30-Minute Hockey Power Plan -ohjelmasi" }
+};
+const isAdultAge = (age) => age === '19_39' || age === '40plus';
+
 function populateEmailScreen(){
   const pillsEl = document.getElementById('summaryPills');
   const pills = [
@@ -609,11 +620,16 @@ function populateEmailScreen(){
   pillsEl.innerHTML = pills.map(p => `<span class="summary-pill">${p}</span>`).join('');
 
   const sub = document.getElementById('emailSubhead');
+  // The free program is matched by age only, so the copy promises exactly that
+  const free = FREE_PROGRAM[answers.age] || FREE_PROGRAM['19_39'];
   const AGE_FOR = { '9_11':'9–11-vuotiaille', '12_14':'12–14-vuotiaille', '15_18':'15–18-vuotiaille', '19_39':'19–39-vuotiaille', '40plus':'yli 40-vuotiaille' };
-  const POS_FOR = { forward:'hyökkääjille', defense:'puolustajille', goalie:'maalivahdeille' };
-  const audience = [AGE_FOR[answers.age], POS_FOR[answers.position] || 'pelaajille'].filter(Boolean).join(' ');
-  const goalText = (answers.goalShort || answers.goalLabel || 'oheistreeni');
-  sub.innerHTML = `Anna sähköpostiosoitteesi, niin saat henkilökohtaisen 5&nbsp;päivän oheistreeniohjelman – tehty juuri <strong>${audience}</strong>, painopisteenä <strong>${goalText}</strong>.`;
+  const ageFor = AGE_FOR[answers.age] || 'kaikenikäisille';
+  sub.innerHTML = `Anna sähköpostiosoitteesi, niin saat ilmaisen ohjelman ${ageFor} pelaajille: <strong>${free.name}</strong> (englanniksi).`;
+  // Youth (9–14): the program and any follow-up go to a parent or guardian, not to the child
+  const youth = answers.age === '9_11' || answers.age === '12_14';
+  if (youth) sub.innerHTML = `<strong>Vanhemmat:</strong> anna <em>oma</em> sähköpostiosoitteesi, niin lähetämme ilmaisen 5&nbsp;päivän ohjelman ${ageFor.replace('vuotiaille', 'vuotiaalle')} pelaajallesi – mukana ohjeet vanhemmille turvalliseen harjoitteluun. Ohjelma on englanniksi.`;
+  const input = document.getElementById('emailInput');
+  if (input) input.placeholder = youth ? 'vanhempi@sahkoposti.fi' : 'sinun@sahkoposti.fi';
 }
 
 /* ============================================================
@@ -653,7 +669,14 @@ function populateSuccessScreen(){
   if(!wrap) return;
   const p = list[0];
   const ageFor = answers.age === '40plus' ? 'yli 40-vuotiaalle' : `${p.age}-vuotiaalle`;
-  if(tail) tail.innerHTML = `Sovellus hoitaa vuoden muut 51&nbsp;viikkoa – räätälöitynä ${ageFor} pelaajalle. <strong>Ensimmäinen viikko on ilmainen.</strong>`;
+  const adult = isAdultAge(answers.age);
+  const product = document.getElementById('successProduct');
+  if(product) product.textContent = (FREE_PROGRAM[answers.age] || FREE_PROGRAM['19_39']).nom;
+  const title = document.getElementById('successTitle');
+  if(title && adult) title.innerHTML = 'Ilmainen ohjelma on vasta <em>alkulämmittely</em>.';
+  if(tail) tail.innerHTML = adult
+    ? `Ilmainen ohjelmasi on matkalla. Sovellus hoitaa loppukauden – räätälöitynä ${ageFor} pelaajalle. <strong>Ensimmäinen viikko on ilmainen.</strong>`
+    : `Sovellus hoitaa vuoden muut 51&nbsp;viikkoa – räätälöitynä ${ageFor} pelaajalle. <strong>Ensimmäinen viikko on ilmainen.</strong>`;
   wrap.innerHTML = buildAppCard(p.age)
     + (ON_ANDROID
       ? `<span class="pcard-note">iPhone käytössä? <a href="${IOS_URL}" data-store="ios" target="_blank" rel="noopener">Lataa App Storesta</a>.</span>`
@@ -707,6 +730,8 @@ emailForm.addEventListener('submit', async (e) => {
         position: answers.position,
         level:    answers.level,
         goal:     answers.goal,
+        // where the lead came from (e.g. ?src=ig_hockey from the Instagram "comment HOCKEY" DM)
+        source:   (new URLSearchParams(location.search).get('src') || 'survey').replace(/[^\w-]/g, '').slice(0, 40),
         lang:     'fi'
       })
     });

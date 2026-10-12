@@ -13,11 +13,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="apple-itunes-app" content="app-id=6787257275" />
 <meta name="theme-color" content="#070708" />
-<title>Bygg ditt gratis 5-dagarsprogram — Elite Hockey Drills</title>
-<meta name="description" content="Svara på några snabba frågor och få ett 5-dagars barmarksprogram byggt för dig. Gratis." />
+<title>Ditt gratis hockeyprogram — Elite Hockey Drills</title>
+<meta name="description" content="Svara på fyra snabba frågor och få ett gratis barmarksprogram för hockey, anpassat efter din ålder." />
 <meta name="robots" content="noindex,nofollow" />
-<meta property="og:title" content="Bygg ditt gratis 5-dagarsprogram — Elite Hockey Drills" />
-<meta property="og:description" content="Svara på några snabba frågor och få ett 5-dagars barmarksprogram byggt för dig. Gratis." />
+<meta property="og:title" content="Ditt gratis hockeyprogram — Elite Hockey Drills" />
+<meta property="og:description" content="Svara på fyra snabba frågor och få ett gratis barmarksprogram för hockey, anpassat efter din ålder." />
 <meta property="og:url" content="https://elitehockeydrills.com/sv/survey.html" />
 <meta property="og:locale" content="sv_SE" />
 <link rel="canonical" href="https://elitehockeydrills.com/sv/survey.html" />
@@ -316,7 +316,7 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   <section class="screen active slide-in-right" data-screen="1">
     <div class="q-eyebrow">Fråga 01</div>
     <h2 class="q-title display">Hur <em>gammal</em> är du?</h2>
-    <p class="q-sub">Det här är den viktigaste frågan – programmet byggs utifrån var du befinner dig i din utveckling.</p>
+    <p class="q-sub">Det här är den viktigaste frågan – programmet byggs utifrån var du befinner dig i din utveckling. <strong>Föräldrar:</strong> välj spelarens ålder.</p>
     <div class="options">
       <button class="option" data-value="9_11" data-label="9–11">
         <span>9–11<span class="option-sub">Barn – grundläggande rörelseträning</span></span>
@@ -426,10 +426,10 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   <!-- EMAIL -->
   <section class="screen email-screen" data-screen="email">
     <div class="q-eyebrow" style="color:var(--warm);">Sista steget</div>
-    <h2 class="q-title display">Ditt <em>personliga</em><br>program är klart.</h2>
+    <h2 class="q-title display">Ditt <em>gratis</em><br>program är klart.</h2>
     <div class="summary-pills" id="summaryPills"></div>
     <p class="q-sub" id="emailSubhead">
-      Fyll i din e-post så skickar vi ditt skräddarsydda 5-dagars barmarksprogram – byggt just för dig.
+      Fyll i din e-post så skickar vi ditt gratisprogram.
     </p>
     <form class="email-form" id="emailForm" novalidate>
       <input type="email" required placeholder="din@epost.se" class="email-input" id="emailInput" autocomplete="email" inputmode="email" />
@@ -447,10 +447,10 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   <section class="screen success-screen" data-screen="success">
     <div class="success-confirm">
       <span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-      <span>Din gratis 5-dagarsplan är på väg till <strong id="successEmail">din inkorg</strong> – kolla om 60&nbsp;sekunder.</span>
+      <span><span id="successProduct">Ditt gratisprogram</span> är på väg till <strong id="successEmail">din inkorg</strong> – kolla om 60&nbsp;sekunder.</span>
     </div>
     <div class="success-eyebrow">Programmet som passar dig</div>
-    <h2 class="success-title display">Dina 5&nbsp;dagar är bara <em>uppvärmningen</em>.</h2>
+    <h2 class="success-title display" id="successTitle">Dina 5&nbsp;dagar är bara <em>uppvärmningen</em>.</h2>
     <p class="success-sub"><span id="successSubTail"></span></p>
     <div class="success-ctas" id="successCtas"></div>
     <div class="success-trust">
@@ -598,6 +598,17 @@ bindSingleSelect(getScreen(4), 'goal');
 
 /* Age -> MailerLite group routing now happens server-side in subscribe.mjs. */
 
+// The free program each age group is emailed (the emails and PDFs are in English) — keep in sync with the
+// MailerLite "Send … PDF" automations
+const FREE_PROGRAM = {
+  '9_11':   { acc: "det kostnadsfria 5-dagars barmarksprogrammet för unga (”The 5 Foundations”, på engelska)", nom: "Ditt kostnadsfria 5-dagars barmarksprogram" },
+  '12_14':  { acc: "det kostnadsfria 5-dagars barmarksprogrammet för unga (”The 5 Foundations”, på engelska)", nom: "Ditt kostnadsfria 5-dagars barmarksprogram" },
+  '15_18':  { acc: "det kostnadsfria 5-dagars barmarksprogrammet (på engelska)", nom: "Ditt kostnadsfria 5-dagarsprogram" },
+  '19_39':  { acc: "den kostnadsfria planen ”30-Minute Hockey Power Plan” (på engelska)", nom: "Din kostnadsfria ”30-Minute Hockey Power Plan”" },
+  '40plus': { acc: "den kostnadsfria planen ”30-Minute Hockey Power Plan” (på engelska)", nom: "Din kostnadsfria ”30-Minute Hockey Power Plan”" }
+};
+const isAdultAge = (age) => age === '19_39' || age === '40plus';
+
 function populateEmailScreen(){
   const pillsEl = document.getElementById('summaryPills');
   const pills = [
@@ -609,11 +620,14 @@ function populateEmailScreen(){
   pillsEl.innerHTML = pills.map(p => `<span class="summary-pill">${p}</span>`).join('');
 
   const sub = document.getElementById('emailSubhead');
-  const posLabel = (answers.positionLabel || '').toLowerCase();
-  const audienceWord = answers.position === 'goalie' ? 'målvakter' : (answers.position === 'defense' ? 'backar' : (answers.position === 'forward' ? 'forwards' : (posLabel || 'spelare')));
-  const audience = `${audienceWord} i&nbsp;åldern ${answers.ageLabel}`;
-  const goalText = (answers.goalShort || answers.goalLabel || 'barmarksträning').toLowerCase();
-  sub.innerHTML = `Fyll i din e-post så skickar vi ditt skräddarsydda 5-dagars barmarksprogram – byggt just för <strong>${audience}</strong> med fokus på <strong>${goalText}</strong>.`;
+  // The free program is matched by age only, so the copy promises exactly that
+  const free = FREE_PROGRAM[answers.age] || FREE_PROGRAM['19_39'];
+  sub.innerHTML = `Fyll i din e-post och få ${free.acc} för spelare i&nbsp;åldern <strong>${answers.ageLabel}</strong>.`;
+  // Youth (9–14): the program and any follow-up go to a parent or guardian, not to the child
+  const youth = answers.age === '9_11' || answers.age === '12_14';
+  if (youth) sub.innerHTML = `<strong>Föräldrar:</strong> fyll i <em>din</em> e-post så skickar vi det kostnadsfria 5-dagarsprogrammet för ditt barn (${answers.ageLabel}&nbsp;år) – med en guide för föräldrar om hur ni gör det säkert. Programmet är på engelska.`;
+  const input = document.getElementById('emailInput');
+  if (input) input.placeholder = youth ? 'foralder@epost.se' : 'din@epost.se';
 }
 
 /* ============================================================
@@ -652,7 +666,14 @@ function populateSuccessScreen(){
   const wrap = document.getElementById('successCtas');
   if(!wrap) return;
   const p = list[0];
-  if(tail) tail.innerHTML = `Dina 5&nbsp;gratisdagar är på väg. Appen tar hand om de andra 51&nbsp;veckorna – anpassad för en spelare i&nbsp;åldern ${p.age}. <strong>Första veckan är gratis.</strong>`;
+  const adult = isAdultAge(answers.age);
+  const product = document.getElementById('successProduct');
+  if(product) product.textContent = (FREE_PROGRAM[answers.age] || FREE_PROGRAM['19_39']).nom;
+  const title = document.getElementById('successTitle');
+  if(title && adult) title.innerHTML = 'Din gratisplan är bara <em>uppvärmningen</em>.';
+  if(tail) tail.innerHTML = adult
+    ? `Din gratisplan är på väg. Appen tar hand om resten av säsongen – anpassad för en spelare i&nbsp;åldern ${p.age}. <strong>Första veckan är gratis.</strong>`
+    : `Dina 5&nbsp;gratisdagar är på väg. Appen tar hand om de andra 51&nbsp;veckorna – anpassad för en spelare i&nbsp;åldern ${p.age}. <strong>Första veckan är gratis.</strong>`;
   wrap.innerHTML = buildAppCard(p.age)
     + (ON_ANDROID
       ? `<span class="pcard-note">Har du iPhone? <a href="${IOS_URL}" data-store="ios" target="_blank" rel="noopener">Ladda ner den på App Store</a>.</span>`
@@ -706,6 +727,8 @@ emailForm.addEventListener('submit', async (e) => {
         position: answers.position,
         level:    answers.level,
         goal:     answers.goal,
+        // where the lead came from (e.g. ?src=ig_hockey from the Instagram "comment HOCKEY" DM)
+        source:   (new URLSearchParams(location.search).get('src') || 'survey').replace(/[^\w-]/g, '').slice(0, 40),
         lang:     'sv'
       })
     });
