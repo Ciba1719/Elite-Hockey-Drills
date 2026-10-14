@@ -718,7 +718,7 @@ function buildAppBlock(age, youth){
     ? "iPhone käytössä?" + ` <a href="${IOS_URL}" data-store="ios" target="_blank" rel="noopener">App Store</a>`
     : "Android käytössä?" + ` <a href="${PLAY_URL}" data-place="survey-success" target="_blank" rel="noopener">Google Play</a>`;
   const points = youth ? ["Pelaajasi koko kausi iän, tason, pelipaikan ja aikataulun mukaan","Demovideo jokaisesta liikkeestä","Pelipäivätila ja kehityksen seuranta"] : ["Koko kautesi iän, tason, pelipaikan ja aikataulun mukaan","Demovideo jokaisesta liikkeestä","Pelipäivätila ja kehityksen seuranta"];
-  return `<div class="app-shot"><img src="/assets/app/app-home.webp" alt="Elite Hockey Drills" width="640" height="1380" loading="lazy" /></div>`
+  return `<div class="app-shot"><img src="/assets/app/app-home-fi.webp" alt="Elite Hockey Drills" width="640" height="1380" loading="lazy" /></div>`
     + '<div><span class="app-badge">' + "Ikä AGE · 7 päivää ilmaiseksi".replace('AGE', age) + '</span>'
     + `<div class="app-name">Elite Hockey Drills -sovellus</div>`
     + '<ul class="app-points">' + points.map((p) => `<li>${p}</li>`).join('') + '</ul></div>'

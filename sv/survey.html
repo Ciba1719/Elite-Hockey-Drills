@@ -716,7 +716,7 @@ function buildAppBlock(age, youth){
     ? "Har du iPhone?" + ` <a href="${IOS_URL}" data-store="ios" target="_blank" rel="noopener">App Store</a>`
     : "Har du Android?" + ` <a href="${PLAY_URL}" data-place="survey-success" target="_blank" rel="noopener">Google Play</a>`;
   const points = youth ? ["Hela säsongen för ditt barn, byggd efter ålder, nivå, position och schema","Demovideo till varje övning","Matchdagsläge och koll på utvecklingen"] : ["Hela din säsong, byggd efter ålder, nivå, position och schema","Demovideo till varje övning","Matchdagsläge och koll på utvecklingen"];
-  return `<div class="app-shot"><img src="/assets/app/app-home.webp" alt="Elite Hockey Drills" width="640" height="1380" loading="lazy" /></div>`
+  return `<div class="app-shot"><img src="/assets/app/app-home-sv.webp" alt="Elite Hockey Drills" width="640" height="1380" loading="lazy" /></div>`
     + '<div><span class="app-badge">' + "Ålder AGE · 7 dagar gratis".replace('AGE', age) + '</span>'
     + `<div class="app-name">Elite Hockey Drills-appen</div>`
     + '<ul class="app-points">' + points.map((p) => `<li>${p}</li>`).join('') + '</ul></div>'
