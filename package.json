@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "node-html-parser": "^9.0.5",
     "xlsx": "^0.18.5"
   },
   "dependencies": {

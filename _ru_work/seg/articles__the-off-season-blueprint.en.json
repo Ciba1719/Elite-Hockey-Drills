@@ -1,0 +1,1070 @@
+{
+ "page": "articles/the-off-season-blueprint.html",
+ "segments": [
+  {
+   "id": "t0",
+   "kind": "title",
+   "en": "The Off-Season Blueprint: How to Structure Your Summer for Hockey | Elite Hockey Drills"
+  },
+  {
+   "id": "m1",
+   "kind": "meta",
+   "en": "A science-based blueprint for the hockey off-season: how to periodize your summer week by week to arrive faster, stronger, and harder to play against. By Coach David Ciboch, M.Ed. Sport Science."
+  },
+  {
+   "id": "m2",
+   "kind": "meta",
+   "en": "The Off-Season Blueprint | Elite Hockey Drills"
+  },
+  {
+   "id": "m3",
+   "kind": "meta",
+   "en": "How to structure your summer week by week so you arrive at tryouts faster and stronger than everyone else."
+  },
+  {
+   "id": "l4",
+   "kind": "ld",
+   "en": "The Off-Season Blueprint: How to Structure Your Summer for Hockey"
+  },
+  {
+   "id": "l5",
+   "kind": "ld",
+   "en": "A science-based blueprint for periodizing the hockey off-season to arrive faster, stronger, and harder to play against."
+  },
+  {
+   "id": "l6",
+   "kind": "ld",
+   "en": "David Ciboch"
+  },
+  {
+   "id": "l7",
+   "kind": "ld",
+   "en": "Sport Scientist and National Team Coach"
+  },
+  {
+   "id": "l8",
+   "kind": "ld",
+   "en": "Elite Hockey Drills"
+  },
+  {
+   "id": "h9",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "a10",
+   "kind": "attr:aria-label",
+   "en": "Main navigation"
+  },
+  {
+   "id": "h11",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">Coach</a>"
+  },
+  {
+   "id": "h12",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h13",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">Programs</a>"
+  },
+  {
+   "id": "h14",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Library</a>"
+  },
+  {
+   "id": "h15",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h16",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h17",
+   "kind": "html",
+   "en": "Get the App"
+  },
+  {
+   "id": "a18",
+   "kind": "attr:aria-label",
+   "en": "Breadcrumb"
+  },
+  {
+   "id": "h19",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com\">Home</a>"
+  },
+  {
+   "id": "h20",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h21",
+   "kind": "html",
+   "en": "The Off-Season Blueprint"
+  },
+  {
+   "id": "h22",
+   "kind": "html",
+   "en": "Training"
+  },
+  {
+   "id": "h23",
+   "kind": "html",
+   "en": "The off-season <span class=\"serif\">blueprint.</span>"
+  },
+  {
+   "id": "h24",
+   "kind": "html",
+   "en": "The season is won in the summer. Here is how to structure the next few months so you show up to tryouts <em>faster, stronger, and harder to play against</em>, instead of just hoping you kept your edge."
+  },
+  {
+   "id": "a25",
+   "kind": "attr:alt",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h26",
+   "kind": "html",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h27",
+   "kind": "html",
+   "en": "M.Ed. Sport Science · National Team Coach"
+  },
+  {
+   "id": "h28",
+   "kind": "html",
+   "en": "11 min read"
+  },
+  {
+   "id": "t29",
+   "kind": "text",
+   "en": "Science-based"
+  },
+  {
+   "id": "t30",
+   "kind": "text",
+   "en": "The 30-second version"
+  },
+  {
+   "id": "h31",
+   "kind": "html",
+   "en": "<strong>A plan beats hard work.</strong> Periodized training, which builds in a deliberate order, tends to produce greater strength gains than random workouts. Over 90 percent of NHL strength coaches periodize."
+  },
+  {
+   "id": "h32",
+   "kind": "html",
+   "en": "<strong>Doing nothing has a price.</strong> Aerobic fitness can start dropping within about two weeks of stopping. Your summer either builds you or it erodes you."
+  },
+  {
+   "id": "h33",
+   "kind": "html",
+   "en": "<strong>Build in the right order.</strong> Base and muscle first, then maximal strength, then power and speed, then a short sharpening phase into the season."
+  },
+  {
+   "id": "h34",
+   "kind": "html",
+   "en": "<strong>Off-ice power shows up on the ice.</strong> Combined strength and jump training measurably improves on-ice sprint speed."
+  },
+  {
+   "id": "h35",
+   "kind": "html",
+   "en": "<strong>Bulletproof while you build.</strong> Ten to fifteen minutes of the right prep work, two to three times a week, cuts injury risk substantially."
+  },
+  {
+   "id": "a36",
+   "kind": "attr:aria-label",
+   "en": "In this guide"
+  },
+  {
+   "id": "h37",
+   "kind": "html",
+   "en": "In this guide"
+  },
+  {
+   "id": "h38",
+   "kind": "html",
+   "en": "<a href=\"#why-plan\">Why a plan beats just working out</a>"
+  },
+  {
+   "id": "h39",
+   "kind": "html",
+   "en": "<a href=\"#cost\">The hidden cost of doing nothing</a>"
+  },
+  {
+   "id": "h40",
+   "kind": "html",
+   "en": "<a href=\"#shape\">The shape of a great off-season</a>"
+  },
+  {
+   "id": "h41",
+   "kind": "html",
+   "en": "<a href=\"#phases\">The four phases, explained</a>"
+  },
+  {
+   "id": "h42",
+   "kind": "html",
+   "en": "<a href=\"#engine\">Building the engine for hockey</a>"
+  },
+  {
+   "id": "h43",
+   "kind": "html",
+   "en": "<a href=\"#bulletproof\">Bulletproofing: train so you can keep training</a>"
+  },
+  {
+   "id": "h44",
+   "kind": "html",
+   "en": "<a href=\"#age\">How this changes by age</a>"
+  },
+  {
+   "id": "h45",
+   "kind": "html",
+   "en": "<a href=\"#bottom-line\">The bottom line</a>"
+  },
+  {
+   "id": "h46",
+   "kind": "html",
+   "en": "Every summer, two players start with the same goal: come back better. One of them shows up to the gym whenever they feel like it, does whatever looks good that day, and skates a bit. The other follows a plan that changes on purpose from week to week. By tryouts, those two players are not close anymore. The difference was never effort. It was structure."
+  },
+  {
+   "id": "h47",
+   "kind": "html",
+   "en": "The off-season is the only stretch of the year where you can actually build. During the season, you are managing fatigue, traveling, and trying to hold your level. In the summer, with no games to recover from, you can ask your body for real change: more muscle, more strength, more power, a bigger engine. But only if you go after those qualities in the right order. That order has a name in sport science. It is called periodization, and it is the backbone of this blueprint."
+  },
+  {
+   "id": "h48",
+   "kind": "html",
+   "en": "Why a plan beats just working out"
+  },
+  {
+   "id": "h49",
+   "kind": "html",
+   "en": "Periodization simply means organizing your training into phases, each with a specific job, that build on each other over time. It is not a fad. Research shows that <a href=\"https://pubmed.ncbi.nlm.nih.gov/15673040/\" target=\"_blank\" rel=\"noopener\">periodized strength training tends to produce greater gains than non-periodized training</a>. The exact size of that advantage is debated, and a varied, well-run program will always beat a random one, but the principle is sound and it is how the best in the world train. In a survey of NHL strength and conditioning coaches, <a href=\"https://pubmed.ncbi.nlm.nih.gov/15574099/\" target=\"_blank\" rel=\"noopener\">more than 90 percent used a periodization model</a>. The pros do not wing it, and neither should you."
+  },
+  {
+   "id": "h50",
+   "kind": "html",
+   "en": "In periodization terms, the off-season is the <a href=\"https://www.nsca.com/education/articles/kinetic-select/preparatory-period/\" target=\"_blank\" rel=\"noopener\">preparatory period</a>: the time with no competition, when you build the base of conditioning and muscle that lets you handle harder, more specific training later. Get this phase right and everything downstream, the strength, the speed, the in-season durability, gets easier."
+  },
+  {
+   "id": "h51",
+   "kind": "html",
+   "en": "The hidden cost of doing nothing"
+  },
+  {
+   "id": "h52",
+   "kind": "html",
+   "en": "Here is the part most players underestimate. A summer off is not neutral. It goes backwards. Research on detraining shows that <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9398774/\" target=\"_blank\" rel=\"noopener\">maximal oxygen uptake, your aerobic fitness, drops by roughly 4 percent with under a month of inactivity and close to 9 or 10 percent over longer layoffs</a>. Some of that aerobic loss is measurable within about two weeks of stopping."
+  },
+  {
+   "id": "h53",
+   "kind": "html",
+   "en": "The good news is that strength is more stubborn. In trained adolescent athletes, <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7241623/\" target=\"_blank\" rel=\"noopener\">three weeks of complete rest did not meaningfully reduce muscle size, strength, or jump and sprint performance</a>. The lesson is practical: a short, planned break after the season is healthy and smart. A whole summer of nothing is how you arrive in the fall slower than you left."
+  },
+  {
+   "id": "h54",
+   "kind": "html",
+   "en": "A summer off is not neutral. It goes <span>backwards.</span> The only question is whether you spend those months building or eroding."
+  },
+  {
+   "id": "h55",
+   "kind": "html",
+   "en": "The shape of a great off-season"
+  },
+  {
+   "id": "h56",
+   "kind": "html",
+   "en": "A typical hockey off-season runs about 12 to 16 weeks. The exact length and the week-by-week split are coaching conventions rather than hard science, so treat the calendar below as a proven template, not a law. What is well supported is the <em>sequence</em>: you build general fitness and muscle first, convert it to maximal strength, then convert that strength into power and speed, and finally sharpen and back off slightly as the season approaches."
+  },
+  {
+   "id": "h57",
+   "kind": "html",
+   "en": "Think of it as a pyramid. You cannot express power you do not have, and you cannot build much strength on a body that has no base. Each phase earns the next."
+  },
+  {
+   "id": "v0",
+   "kind": "svg",
+   "en": "Off-season periodization curve"
+  },
+  {
+   "id": "v1",
+   "kind": "svg",
+   "en": "Across the off-season, training volume starts high and decreases while intensity starts low and increases, through four phases: reset, strength, power and speed, and a final taper."
+  },
+  {
+   "id": "v2",
+   "kind": "svg",
+   "en": "Volume"
+  },
+  {
+   "id": "v3",
+   "kind": "svg",
+   "en": "Intensity"
+  },
+  {
+   "id": "v4",
+   "kind": "svg",
+   "en": "RESET"
+  },
+  {
+   "id": "v5",
+   "kind": "svg",
+   "en": "WKS 1-4"
+  },
+  {
+   "id": "v6",
+   "kind": "svg",
+   "en": "STRENGTH"
+  },
+  {
+   "id": "v7",
+   "kind": "svg",
+   "en": "WKS 4-9"
+  },
+  {
+   "id": "v8",
+   "kind": "svg",
+   "en": "POWER &amp; SPEED"
+  },
+  {
+   "id": "v9",
+   "kind": "svg",
+   "en": "WKS 9-13"
+  },
+  {
+   "id": "v10",
+   "kind": "svg",
+   "en": "SHARPEN"
+  },
+  {
+   "id": "v11",
+   "kind": "svg",
+   "en": "WKS 13-16"
+  },
+  {
+   "id": "v12",
+   "kind": "svg",
+   "en": "Off-season periodization phases"
+  },
+  {
+   "id": "v13",
+   "kind": "svg",
+   "en": "Four phases over the off-season: reset, strength, power and speed, then a taper. Volume falls and intensity rises as you progress."
+  },
+  {
+   "id": "v14",
+   "kind": "svg",
+   "en": "VOLUME FALLS, INTENSITY RISES"
+  },
+  {
+   "id": "v15",
+   "kind": "svg",
+   "en": "RESET"
+  },
+  {
+   "id": "v16",
+   "kind": "svg",
+   "en": "WEEKS 1-4"
+  },
+  {
+   "id": "v17",
+   "kind": "svg",
+   "en": "Rebuild base, add muscle"
+  },
+  {
+   "id": "v18",
+   "kind": "svg",
+   "en": "STRENGTH"
+  },
+  {
+   "id": "v19",
+   "kind": "svg",
+   "en": "WEEKS 4-9"
+  },
+  {
+   "id": "v20",
+   "kind": "svg",
+   "en": "Heavy loads, get strong"
+  },
+  {
+   "id": "v21",
+   "kind": "svg",
+   "en": "POWER &amp; SPEED"
+  },
+  {
+   "id": "v22",
+   "kind": "svg",
+   "en": "WEEKS 9-13"
+  },
+  {
+   "id": "v23",
+   "kind": "svg",
+   "en": "Turn strength into speed"
+  },
+  {
+   "id": "v24",
+   "kind": "svg",
+   "en": "SHARPEN"
+  },
+  {
+   "id": "v25",
+   "kind": "svg",
+   "en": "WEEKS 13-16"
+  },
+  {
+   "id": "v26",
+   "kind": "svg",
+   "en": "Taper, peak, arrive fresh"
+  },
+  {
+   "id": "h58",
+   "kind": "html",
+   "en": "Volume starts high and tapers as intensity climbs. Each phase builds on the one before, so you peak right as the season approaches."
+  },
+  {
+   "id": "h59",
+   "kind": "html",
+   "en": "A typical off-season structure (common practice)"
+  },
+  {
+   "id": "h60",
+   "kind": "html",
+   "en": "Phase"
+  },
+  {
+   "id": "h61",
+   "kind": "html",
+   "en": "Rough timing"
+  },
+  {
+   "id": "h62",
+   "kind": "html",
+   "en": "Main goal"
+  },
+  {
+   "id": "h63",
+   "kind": "html",
+   "en": "1. Reset &amp; rebuild"
+  },
+  {
+   "id": "h64",
+   "kind": "html",
+   "en": "Weeks 1 to 4"
+  },
+  {
+   "id": "h65",
+   "kind": "html",
+   "en": "Recover, fix weak links, build a base and muscle"
+  },
+  {
+   "id": "h66",
+   "kind": "html",
+   "en": "2. Strength"
+  },
+  {
+   "id": "h67",
+   "kind": "html",
+   "en": "Weeks 4 to 9"
+  },
+  {
+   "id": "h68",
+   "kind": "html",
+   "en": "Get strong with heavier loads, lower reps"
+  },
+  {
+   "id": "h69",
+   "kind": "html",
+   "en": "3. Power &amp; speed"
+  },
+  {
+   "id": "h70",
+   "kind": "html",
+   "en": "Weeks 9 to 13"
+  },
+  {
+   "id": "h71",
+   "kind": "html",
+   "en": "Turn strength into explosive, fast movement"
+  },
+  {
+   "id": "h72",
+   "kind": "html",
+   "en": "4. Sharpen &amp; taper"
+  },
+  {
+   "id": "h73",
+   "kind": "html",
+   "en": "Final 1 to 2 weeks"
+  },
+  {
+   "id": "h74",
+   "kind": "html",
+   "en": "Peak, reduce volume, return to the ice fresh"
+  },
+  {
+   "id": "h75",
+   "kind": "html",
+   "en": "The four phases, explained"
+  },
+  {
+   "id": "h76",
+   "kind": "html",
+   "en": "Phase 1: Reset and rebuild"
+  },
+  {
+   "id": "h77",
+   "kind": "html",
+   "en": "Start by taking a real break after the season, then rebuild the base. This phase is higher in volume and lower in intensity. You are restoring movement quality, addressing the weak links and imbalances the season created, and adding muscle. Muscle matters here because muscle is the raw material for later strength and power, and because building it is mostly about <a href=\"https://pubmed.ncbi.nlm.nih.gov/27433992/\" target=\"_blank\" rel=\"noopener\">total weekly volume</a>. A practical target is around 10 or more hard sets per muscle group per week, spread across the week however your schedule allows. Frequency is just a tool to reach that volume, so <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6081873/\" target=\"_blank\" rel=\"noopener\">training a muscle twice a week is not magic</a>; hitting your weekly volume is what counts."
+  },
+  {
+   "id": "h78",
+   "kind": "html",
+   "en": "Phase 2: Strength"
+  },
+  {
+   "id": "h79",
+   "kind": "html",
+   "en": "Now you take the muscle you built and teach it to produce force. Loads go up, reps come down. This is the heavy lifting phase, built on the big patterns: squat, hinge, push, pull, and single-leg work. Strength is the quality that sits underneath everything else in hockey, from winning battles along the boards to driving a powerful stride. It is also the foundation that makes the next phase possible, because power is just strength expressed quickly."
+  },
+  {
+   "id": "h80",
+   "kind": "html",
+   "en": "Phase 3: Power and speed"
+  },
+  {
+   "id": "h81",
+   "kind": "html",
+   "en": "This is where the off-season pays off on the ice. You convert your new strength into fast, explosive movement with jumps, throws, and sprints. The evidence here is strong. Plyometric training reliably <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7931718/\" target=\"_blank\" rel=\"noopener\">improves vertical jump and sprint performance</a>, and it works best when it is programmed seriously, over more than ten weeks with enough quality jumps per session rather than a handful tacked onto a workout."
+  },
+  {
+   "id": "h82",
+   "kind": "html",
+   "en": "Most importantly, this transfers to skating. In high-level players, a program combining plyometrics with strength training produced <a href=\"https://pubmed.ncbi.nlm.nih.gov/27918670/\" target=\"_blank\" rel=\"noopener\">greater improvement in on-ice sprint speed than strength training alone</a>. In young elite players, a structured strength program improved 15-metre and 30-metre skating sprint times and agility. The first step you build in July is the first step you keep in October."
+  },
+  {
+   "id": "h83",
+   "kind": "html",
+   "en": "Phase 4: Sharpen and taper"
+  },
+  {
+   "id": "h84",
+   "kind": "html",
+   "en": "In the final week or two before camp, you do not cram. You taper. Research on team-sport athletes shows that a <a href=\"https://pubmed.ncbi.nlm.nih.gov/32172680/\" target=\"_blank\" rel=\"noopener\">planned taper improves power, aerobic fitness, repeated-sprint ability, and change-of-direction speed</a>. The recipe is simple: cut your training volume noticeably while keeping the intensity high, so you arrive sharp and rested instead of beaten down. This is the opposite of the panic week most players do, and it is one reason prepared athletes look fresh at tryouts while others look fried."
+  },
+  {
+   "id": "h85",
+   "kind": "html",
+   "en": "Don't want to build the plan yourself?"
+  },
+  {
+   "id": "h86",
+   "kind": "html",
+   "en": "Our 8-week off-ice programs are already periodized through every phase, with the exact sets, reps, and progressions mapped out for you."
+  },
+  {
+   "id": "t87",
+   "kind": "text",
+   "en": "See the Programs"
+  },
+  {
+   "id": "h88",
+   "kind": "html",
+   "en": "Building the engine for hockey"
+  },
+  {
+   "id": "h89",
+   "kind": "html",
+   "en": "Strength and power win battles, but conditioning lets you win them in the third period. Hockey is a repeat-sprint sport. Research on game demands shows <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9679183/\" target=\"_blank\" rel=\"noopener\">shifts lasting roughly 30 to 80 seconds, with two to three minutes of recovery between them, at around 85 percent of maximal heart rate</a>. That profile has two parts, and you need to train both."
+  },
+  {
+   "id": "h90",
+   "kind": "html",
+   "en": "The first is the ability to produce repeated, high-intensity bursts. The second is a strong aerobic base, which is what lets you recover between shifts and hold your speed late in the game rather than fading. The most efficient way to build both is interval and repeat-sprint conditioning, not long, slow distance runs. Slow jogging does little for a sport played in explosive bursts. Off-season conditioning should look like the game: hard efforts, real recovery, repeat. For the full science of building that engine, read our guide to <a href=\"/hockey-conditioning.html\">hockey conditioning</a>."
+  },
+  {
+   "id": "h91",
+   "kind": "html",
+   "en": "Bulletproofing: train so you can keep training"
+  },
+  {
+   "id": "h92",
+   "kind": "html",
+   "en": "The best program in the world does nothing for you if you are hurt. The single most cost-effective thing you can add is structured injury-prevention work, and the return is enormous. Neuromuscular training programs cut <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC5694483/\" target=\"_blank\" rel=\"noopener\">lower-limb injuries in youth athletes by roughly 42 percent</a>, and they take only about 10 to 15 minutes, two to three times a week. Targeted programs reduce <a href=\"https://pubmed.ncbi.nlm.nih.gov/39529589/\" target=\"_blank\" rel=\"noopener\">ACL injury risk by around 64 percent</a>."
+  },
+  {
+   "id": "h93",
+   "kind": "html",
+   "en": "This is not separate from training. It is built into a good warm-up: landing mechanics, single-leg control, hip and groin strength, and core stability. For a sport with the cutting, pivoting, and collision demands of hockey, this work is not optional. It is what keeps you on the ice."
+  },
+  {
+   "id": "h94",
+   "kind": "html",
+   "en": "How this changes by age"
+  },
+  {
+   "id": "h95",
+   "kind": "html",
+   "en": "The phases stay the same. The emphasis and the loading change with training age and maturity."
+  },
+  {
+   "id": "h96",
+   "kind": "html",
+   "en": "Youth · 9 to 12"
+  },
+  {
+   "id": "h97",
+   "kind": "html",
+   "en": "Focus on movement skill, coordination, and bodyweight strength through fun, varied training. Resistance training is safe and beneficial when supervised and taught well. Avoid year-round single-sport specialization."
+  },
+  {
+   "id": "h98",
+   "kind": "html",
+   "en": "Teens · 13 to 18"
+  },
+  {
+   "id": "h99",
+   "kind": "html",
+   "en": "The window where real strength and power are built. Progress to structured lifting with good coaching. This is where the off-season blueprint pays the biggest long-term dividends."
+  },
+  {
+   "id": "h100",
+   "kind": "html",
+   "en": "Adults · 19+"
+  },
+  {
+   "id": "h101",
+   "kind": "html",
+   "en": "The same phases, with more attention to recovery and joint health. Strength keeps you fast and durable. Consistency across the whole summer beats a few heroic weeks."
+  },
+  {
+   "id": "h102",
+   "kind": "html",
+   "en": "For parents: the growth-plate myth"
+  },
+  {
+   "id": "h103",
+   "kind": "html",
+   "en": "The old belief that lifting weights stunts a child's growth has been discredited. Peer-reviewed reviews conclude that, when properly designed and supervised, <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC5532191/\" target=\"_blank\" rel=\"noopener\">resistance training is safe and beneficial for children and adolescents</a>, and the American Academy of Pediatrics now endorses supervised strength training for young athletes. The real risk is poor coaching and maximal lifts without supervision, not the act of training itself."
+  },
+  {
+   "id": "h104",
+   "kind": "html",
+   "en": "The bottom line"
+  },
+  {
+   "id": "h105",
+   "kind": "html",
+   "en": "You do not rise to the level of your effort in the summer. You rise to the level of your structure. A real off-season has a shape: rebuild the base, get strong, get explosive, then sharpen and arrive fresh, with conditioning and injury-prevention woven through all of it. Do that, and you will not be hoping you kept your edge when camp opens. You will know you sharpened it."
+  },
+  {
+   "id": "a106",
+   "kind": "attr:aria-label",
+   "en": "References"
+  },
+  {
+   "id": "h107",
+   "kind": "html",
+   "en": "References"
+  },
+  {
+   "id": "h108",
+   "kind": "html",
+   "en": "Every claim above is drawn from peer-reviewed research or recognized strength-and-conditioning sources. Where week-by-week scheduling reflects common coaching practice rather than direct research, that is stated in the text."
+  },
+  {
+   "id": "h109",
+   "kind": "html",
+   "en": "Rhea MR, Alderman BL. A meta-analysis of periodized versus nonperiodized strength and power training programs. <em>Research Quarterly for Exercise and Sport</em>. 2004. <a href=\"https://pubmed.ncbi.nlm.nih.gov/15673040/\" target=\"_blank\" rel=\"noopener\">PubMed 15673040</a>"
+  },
+  {
+   "id": "h110",
+   "kind": "html",
+   "en": "Ebben WP, Carroll RM, Simenz CJ. Strength and conditioning practices of National Hockey League strength and conditioning coaches. <em>Journal of Strength and Conditioning Research</em>. 2004. <a href=\"https://pubmed.ncbi.nlm.nih.gov/15574099/\" target=\"_blank\" rel=\"noopener\">PubMed 15574099</a>"
+  },
+  {
+   "id": "h111",
+   "kind": "html",
+   "en": "National Strength and Conditioning Association. The Preparatory Period (from Essentials of Strength Training and Conditioning). 2020. <a href=\"https://www.nsca.com/education/articles/kinetic-select/preparatory-period/\" target=\"_blank\" rel=\"noopener\">nsca.com</a>"
+  },
+  {
+   "id": "h112",
+   "kind": "html",
+   "en": "Zheng K, et al. Effects of short- and long-term detraining on maximal oxygen uptake in athletes: a systematic review and meta-analysis. <em>BioMed Research International</em>. 2022. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9398774/\" target=\"_blank\" rel=\"noopener\">PMC9398774</a>"
+  },
+  {
+   "id": "h113",
+   "kind": "html",
+   "en": "Pareja-Blanco F, et al. Three weeks of detraining does not decrease muscle thickness, strength or sport performance in adolescent athletes. <em>International Journal of Exercise Science</em>. 2020. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7241623/\" target=\"_blank\" rel=\"noopener\">PMC7241623</a>"
+  },
+  {
+   "id": "h114",
+   "kind": "html",
+   "en": "Schoenfeld BJ, Ogborn D, Krieger JW. Dose-response relationship between weekly resistance training volume and increases in muscle mass: a systematic review and meta-analysis. <em>Journal of Sports Sciences</em>. 2017. <a href=\"https://pubmed.ncbi.nlm.nih.gov/27433992/\" target=\"_blank\" rel=\"noopener\">PubMed 27433992</a>"
+  },
+  {
+   "id": "h115",
+   "kind": "html",
+   "en": "Ralston GW, et al. Weekly training frequency effects on strength gain: a meta-analysis. <em>Sports Medicine - Open</em>. 2018. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6081873/\" target=\"_blank\" rel=\"noopener\">PMC6081873</a>"
+  },
+  {
+   "id": "h116",
+   "kind": "html",
+   "en": "Ramirez-Campillo R, et al. Plyometric jump training effects on the physical fitness of individual-sport athletes: a systematic review with meta-analysis. <em>PeerJ</em>. 2021. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7931718/\" target=\"_blank\" rel=\"noopener\">PMC7931718</a>"
+  },
+  {
+   "id": "h117",
+   "kind": "html",
+   "en": "Dæhlin TE, et al. Improvement of ice hockey players' on-ice sprint with combined plyometric and strength training. <em>International Journal of Sports Physiology and Performance</em>. 2017. <a href=\"https://pubmed.ncbi.nlm.nih.gov/27918670/\" target=\"_blank\" rel=\"noopener\">PubMed 27918670</a>"
+  },
+  {
+   "id": "h118",
+   "kind": "html",
+   "en": "Functional strength training and on-ice speed and agility in young elite ice hockey players. <em>Frontiers in Physiology</em>. 2025. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11936901/\" target=\"_blank\" rel=\"noopener\">PMC11936901</a>"
+  },
+  {
+   "id": "h119",
+   "kind": "html",
+   "en": "Rago V, et al. Game demands of a professional ice hockey team with special emphasis on fatigue development and playing position. <em>Journal of Human Kinetics</em>. 2022. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9679183/\" target=\"_blank\" rel=\"noopener\">PMC9679183</a>"
+  },
+  {
+   "id": "h120",
+   "kind": "html",
+   "en": "Clar D, et al. Reducing ACL injury risk: a meta-analysis of prevention programme effectiveness. <em>Knee Surgery, Sports Traumatology, Arthroscopy</em>. 2025. <a href=\"https://pubmed.ncbi.nlm.nih.gov/39529589/\" target=\"_blank\" rel=\"noopener\">PubMed 39529589</a>"
+  },
+  {
+   "id": "h121",
+   "kind": "html",
+   "en": "Steib S, Rahlf AL, Pfeifer K, Zech A. Dose-response relationship of neuromuscular training for injury prevention in youth athletes: a meta-analysis. <em>Frontiers in Physiology</em>. 2017. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC5694483/\" target=\"_blank\" rel=\"noopener\">PMC5694483</a>"
+  },
+  {
+   "id": "h122",
+   "kind": "html",
+   "en": "Myers AM, Beam NW, Fakhoury JD. Resistance training for children and adolescents. <em>Translational Pediatrics</em>. 2017. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC5532191/\" target=\"_blank\" rel=\"noopener\">PMC5532191</a>"
+  },
+  {
+   "id": "h123",
+   "kind": "html",
+   "en": "Vachon A, et al. Effects of tapering on neuromuscular and metabolic fitness in team-sport athletes: a systematic review and meta-analysis. <em>European Journal of Sport Science</em>. 2021. <a href=\"https://pubmed.ncbi.nlm.nih.gov/32172680/\" target=\"_blank\" rel=\"noopener\">PubMed 32172680</a>"
+  },
+  {
+   "id": "a124",
+   "kind": "attr:alt",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h125",
+   "kind": "html",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h126",
+   "kind": "html",
+   "en": "M.Ed. Sport Science · National Team Coach"
+  },
+  {
+   "id": "h127",
+   "kind": "html",
+   "en": "David builds science-based off-ice training for hockey players at every level, from first-year youth skaters to adult and masters players. Elite Hockey Drills exists to put real sport science in the hands of players who want to train smarter, not just harder."
+  },
+  {
+   "id": "h128",
+   "kind": "html",
+   "en": "The inside track"
+  },
+  {
+   "id": "h129",
+   "kind": "html",
+   "en": "Get the next one <em class=\"serif\">first.</em>"
+  },
+  {
+   "id": "h130",
+   "kind": "html",
+   "en": "New science-backed guides on training, nutrition, and recovery, sent straight to your inbox. No fluff, no spam, just what makes you harder to play against."
+  },
+  {
+   "id": "a131",
+   "kind": "attr:aria-label",
+   "en": "First name"
+  },
+  {
+   "id": "a132",
+   "kind": "attr:placeholder",
+   "en": "First name"
+  },
+  {
+   "id": "a133",
+   "kind": "attr:aria-label",
+   "en": "Email address"
+  },
+  {
+   "id": "a134",
+   "kind": "attr:placeholder",
+   "en": "your@email.com"
+  },
+  {
+   "id": "h135",
+   "kind": "html",
+   "en": "<span class=\"btn-label\">Send me the guides</span>\n          <span class=\"news-spinner\" aria-hidden=\"true\"></span>"
+  },
+  {
+   "id": "h136",
+   "kind": "html",
+   "en": "No spam. Unsubscribe anytime. By subscribing you agree to receive training emails from Elite Hockey Drills."
+  },
+  {
+   "id": "h137",
+   "kind": "html",
+   "en": "You're in."
+  },
+  {
+   "id": "h138",
+   "kind": "html",
+   "en": "Welcome to the inside track. Your first guide is already on its way to your inbox."
+  },
+  {
+   "id": "h139",
+   "kind": "html",
+   "en": "Stop guessing"
+  },
+  {
+   "id": "h140",
+   "kind": "html",
+   "en": "The blueprint,<br><em class=\"serif\">done for you.</em>"
+  },
+  {
+   "id": "h141",
+   "kind": "html",
+   "en": "You just read the theory. The Elite Hockey Drills app turns this blueprint into a personalized off-ice program, built from your age, level, position, and schedule. First week free on iPhone and Android."
+  },
+  {
+   "id": "t142",
+   "kind": "text",
+   "en": "Get the App"
+  },
+  {
+   "id": "h143",
+   "kind": "html",
+   "en": "See the Programs"
+  },
+  {
+   "id": "h144",
+   "kind": "html",
+   "en": "Get a Free Program"
+  },
+  {
+   "id": "h145",
+   "kind": "html",
+   "en": "7-day free trial, then $17.99/month or $99.90/year. Billed via the App Store or Google Play, cancel anytime."
+  },
+  {
+   "id": "h146",
+   "kind": "html",
+   "en": "← Back to all articles"
+  },
+  {
+   "id": "h147",
+   "kind": "html",
+   "en": "Keep reading"
+  },
+  {
+   "id": "h148",
+   "kind": "html",
+   "en": "More off-season guides"
+  },
+  {
+   "id": "h149",
+   "kind": "html",
+   "en": "Training"
+  },
+  {
+   "id": "h150",
+   "kind": "html",
+   "en": "Off-Ice Hockey Training: The Complete Guide"
+  },
+  {
+   "id": "h151",
+   "kind": "html",
+   "en": "The full picture: what to train, how often, what gear you need, and age-by-age programs you can run at home."
+  },
+  {
+   "id": "h152",
+   "kind": "html",
+   "en": "14 min read"
+  },
+  {
+   "id": "h153",
+   "kind": "html",
+   "en": "Nutrition"
+  },
+  {
+   "id": "h154",
+   "kind": "html",
+   "en": "Off-Season Nutrition for Hockey Players"
+  },
+  {
+   "id": "h155",
+   "kind": "html",
+   "en": "How much protein you really need, how to build muscle without losing your edge, and the meal structure that fuels real results."
+  },
+  {
+   "id": "h156",
+   "kind": "html",
+   "en": "12 min read"
+  },
+  {
+   "id": "h157",
+   "kind": "html",
+   "en": "Recovery"
+  },
+  {
+   "id": "h158",
+   "kind": "html",
+   "en": "Sleep &amp; Recovery: The Off-Season Multiplier"
+  },
+  {
+   "id": "h159",
+   "kind": "html",
+   "en": "The most underrated training tool you own is free. How sleep makes you faster, sharper, and far less likely to get hurt."
+  },
+  {
+   "id": "h160",
+   "kind": "html",
+   "en": "10 min read"
+  },
+  {
+   "id": "h161",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "h162",
+   "kind": "html",
+   "en": "Science-backed off-ice training for hockey players. Built by a certified sport scientist and national team coach."
+  },
+  {
+   "id": "h163",
+   "kind": "html",
+   "en": "Programs"
+  },
+  {
+   "id": "h164",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com/survey.html\">Free 5-Day PDF</a>"
+  },
+  {
+   "id": "h165",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">8-Week Programs</a>"
+  },
+  {
+   "id": "h166",
+   "kind": "html",
+   "en": "<a href=\"/hockey-training-app.html\">Hockey Training App</a>"
+  },
+  {
+   "id": "h167",
+   "kind": "html",
+   "en": "<a href=\"https://apps.apple.com/us/app/elite-hockey-drills/id6787257275\" data-store=\"ios\">The App — iOS</a>"
+  },
+  {
+   "id": "h168",
+   "kind": "html",
+   "en": "<a href=\"https://play.google.com/store/apps/details?id=com.elitehockeydrills.training\">The App — Android</a>"
+  },
+  {
+   "id": "h169",
+   "kind": "html",
+   "en": "Navigate"
+  },
+  {
+   "id": "h170",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">About</a>"
+  },
+  {
+   "id": "h171",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h172",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Exercise Library</a>"
+  },
+  {
+   "id": "h173",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h174",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h175",
+   "kind": "html",
+   "en": "Connect"
+  },
+  {
+   "id": "h176",
+   "kind": "html",
+   "en": "<a href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">Instagram</a>"
+  },
+  {
+   "id": "h177",
+   "kind": "html",
+   "en": "<a href=\"https://wa.me/420770149067\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>"
+  },
+  {
+   "id": "h178",
+   "kind": "html",
+   "en": "<a href=\"mailto:elitehockeydrills@gmail.com\">Email</a>"
+  },
+  {
+   "id": "h179",
+   "kind": "html",
+   "en": "<span>© 2025 Elite Hockey Drills. All rights reserved.</span>\n    <a class=\"footer-ig\" href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">@elite_hockey_drills</a>"
+  },
+  {
+   "id": "j180",
+   "kind": "js",
+   "en": "Please enter a valid email address."
+  },
+  {
+   "id": "j181",
+   "kind": "js",
+   "en": "art-news-msg err"
+  },
+  {
+   "id": "j182",
+   "kind": "js",
+   "en": "Something went wrong. Please try again in a moment."
+  },
+  {
+   "id": "j183",
+   "kind": "js",
+   "en": "art-news-msg err"
+  },
+  {
+   "id": "j184",
+   "kind": "js",
+   "en": "Network error. Please check your connection and try again."
+  },
+  {
+   "id": "j185",
+   "kind": "js",
+   "en": "art-news-msg err"
+  }
+ ]
+}

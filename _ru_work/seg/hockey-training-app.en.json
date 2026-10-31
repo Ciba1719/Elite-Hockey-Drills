@@ -1,0 +1,1230 @@
+{
+ "page": "hockey-training-app.html",
+ "segments": [
+  {
+   "id": "t0",
+   "kind": "title",
+   "en": "Hockey Training App — Off-Ice Training for Ice Hockey Players | Elite Hockey Drills"
+  },
+  {
+   "id": "m1",
+   "kind": "meta",
+   "en": "Elite Hockey Drills is the hockey training app that builds your personalized off-ice program from your age, level, position, and schedule, then runs your whole season. 390+ exercises with demo videos, game-day mode, progress tracking. 7-day free trial on iPhone and Android."
+  },
+  {
+   "id": "m2",
+   "kind": "meta",
+   "en": "Hockey Training App — Off-Ice Training Built Around Your Season"
+  },
+  {
+   "id": "m3",
+   "kind": "meta",
+   "en": "The Elite Hockey Drills app builds your personalized off-ice hockey program and runs your whole season. 390+ exercises with demo videos. 7-day free trial on iPhone and Android."
+  },
+  {
+   "id": "l4",
+   "kind": "ld",
+   "en": "Elite Hockey Drills"
+  },
+  {
+   "id": "l5",
+   "kind": "ld",
+   "en": "Hockey Training App — Off-Ice Training for Ice Hockey Players"
+  },
+  {
+   "id": "l6",
+   "kind": "ld",
+   "en": "Elite Hockey Drills is the hockey training app that builds your personalized off-ice program from your age, level, position, and schedule, then runs your whole season. 390+ exercises with demo videos, game-day mode, progress tracking. 7-day free trial on iPhone and Android."
+  },
+  {
+   "id": "l7",
+   "kind": "ld",
+   "en": "Home"
+  },
+  {
+   "id": "l8",
+   "kind": "ld",
+   "en": "Hockey Training App"
+  },
+  {
+   "id": "l9",
+   "kind": "ld",
+   "en": "Elite Hockey Drills"
+  },
+  {
+   "id": "l10",
+   "kind": "ld",
+   "en": "Elite Hockey Drills: Off-Ice Hockey Training App"
+  },
+  {
+   "id": "l11",
+   "kind": "ld",
+   "en": "Personalized off-ice hockey training built around your season. The app builds your program from your age, level, position, equipment, and schedule, coaches every session with a demo video for every exercise, adapts to game days and missed sessions, and tracks tests and personal records. Ages 9 to 40+. 7-day free trial."
+  },
+  {
+   "id": "l12",
+   "kind": "ld",
+   "en": "Free download with 7-day free trial"
+  },
+  {
+   "id": "l13",
+   "kind": "ld",
+   "en": "Premium Monthly subscription"
+  },
+  {
+   "id": "l14",
+   "kind": "ld",
+   "en": "Premium Annual subscription"
+  },
+  {
+   "id": "l15",
+   "kind": "ld",
+   "en": "Is Elite Hockey Drills an on-ice or off-ice hockey training app?"
+  },
+  {
+   "id": "l16",
+   "kind": "ld",
+   "en": "Off-ice. The app programs the strength, speed, power, and conditioning work you do away from the rink, which is where most of a hockey player's physical development actually happens. It is built to sit around your ice time, not replace it: tell the app which days you skate and play, and it plans your off-ice sessions so you show up to practice and games fresh."
+  },
+  {
+   "id": "l17",
+   "kind": "ld",
+   "en": "What ages does the app cover?"
+  },
+  {
+   "id": "l18",
+   "kind": "ld",
+   "en": "Five age bands in one app: 9 to 11, 12 to 14, 15 to 18, 19 to 39, and 40+. Each band gets its own programming logic. Younger players get movement quality and coordination first, teens get growth-spurt-aware strength and power, adults get maximal strength and repeat-sprint conditioning, and masters players get durability-first training that still keeps them fast."
+  },
+  {
+   "id": "l19",
+   "kind": "ld",
+   "en": "Is there an Android version?"
+  },
+  {
+   "id": "l20",
+   "kind": "ld",
+   "en": "Yes. Elite Hockey Drills is live on Google Play for Android and on the App Store for iPhone. Both versions have the same personalized program, the same demo videos, and the same 7-day free trial."
+  },
+  {
+   "id": "l21",
+   "kind": "ld",
+   "en": "How much does the hockey training app cost?"
+  },
+  {
+   "id": "l22",
+   "kind": "ld",
+   "en": "The download is free and every new account gets a 7-day free trial with everything unlocked: the full personalized program, every demo video, game-day mode, and progress tracking. After the trial it is $17.99 per month or $99.90 per year, which works out to about $8.33 a month. Cancel anytime through your App Store or Google Play account."
+  },
+  {
+   "id": "l23",
+   "kind": "ld",
+   "en": "What equipment do I need?"
+  },
+  {
+   "id": "l24",
+   "kind": "ld",
+   "en": "Whatever you have. You tell the app your equipment — nothing at all, a band and a box, dumbbells and a pull-up bar, or a full gym — and every session is built from that kit. A full gym means barbells, trap bar and sled work show up; a hotel room means bodyweight and a band. Change your equipment any time and the program re-plans around it."
+  },
+  {
+   "id": "l25",
+   "kind": "ld",
+   "en": "How long are the sessions and how many per week?"
+  },
+  {
+   "id": "l26",
+   "kind": "ld",
+   "en": "Most sessions run 45 to 60 minutes. The number per week depends on your ice schedule: the app typically plans three to five off-ice sessions around your practices and games, with lighter weeks built in automatically every fourth week so you recover instead of accumulating fatigue."
+  },
+  {
+   "id": "l27",
+   "kind": "ld",
+   "en": "Does it work during the season, not just in the summer?"
+  },
+  {
+   "id": "l28",
+   "kind": "ld",
+   "en": "Yes, that is the point of it. Pre-season, in-season, playoffs, and off-season each get a different structure. In-season the app keeps you strong and explosive with lower volume, and game-day mode swaps a normal session for activation and preparation when you have a game tomorrow, then a neural reset the day after."
+  },
+  {
+   "id": "l29",
+   "kind": "ld",
+   "en": "How is this different from a PDF program or YouTube workouts?"
+  },
+  {
+   "id": "l30",
+   "kind": "ld",
+   "en": "A PDF is the same for everyone and never changes. YouTube gives you a workout, not a plan. The app builds a program for you specifically, sequences it across weeks and blocks, adapts when you miss a day or have a game, coaches every set with targets and a demo video, and tracks your tests and personal records so you can see the work turning into speed."
+  },
+  {
+   "id": "l31",
+   "kind": "ld",
+   "en": "Who built the app?"
+  },
+  {
+   "id": "l32",
+   "kind": "ld",
+   "en": "Coach David Ciboch, M.Ed. in PE and Sport Science, a former national-team hockey coach with over a decade of coaching from youth development to the national level, more than 1,000 athletes trained, and 60+ players signed to professional contracts. The app programs the way he programs his own athletes."
+  },
+  {
+   "id": "h33",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "h34",
+   "kind": "html",
+   "en": "<a href=\"#features\">Inside the App</a>"
+  },
+  {
+   "id": "h35",
+   "kind": "html",
+   "en": "<a href=\"#how\">How It Works</a>"
+  },
+  {
+   "id": "h36",
+   "kind": "html",
+   "en": "<a href=\"/#about\">Coach</a>"
+  },
+  {
+   "id": "h37",
+   "kind": "html",
+   "en": "<a href=\"/#tiers\">Programs</a>"
+  },
+  {
+   "id": "h38",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Library</a>"
+  },
+  {
+   "id": "h39",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h40",
+   "kind": "html",
+   "en": "<a href=\"#faq\">FAQ</a>"
+  },
+  {
+   "id": "h41",
+   "kind": "html",
+   "en": "Get the App"
+  },
+  {
+   "id": "a42",
+   "kind": "attr:aria-label",
+   "en": "Open menu"
+  },
+  {
+   "id": "h43",
+   "kind": "html",
+   "en": "<a href=\"#features\">Inside the App</a>\n    <a href=\"#how\">How It Works</a>\n    <a href=\"/#about\">Coach</a>\n    <a href=\"/#tiers\">Programs</a>\n    <a href=\"/library.html\">Library</a>\n    <a href=\"/articles.html\">Articles</a>\n    <a href=\"#faq\">FAQ</a>\n    <a href=\"/api/restore\">Restore Access</a>"
+  },
+  {
+   "id": "h44",
+   "kind": "html",
+   "en": "Now live on the App Store"
+  },
+  {
+   "id": "h45",
+   "kind": "html",
+   "en": "<span class=\"hero-presale-dot\"></span>\n            New — now on Google Play"
+  },
+  {
+   "id": "h46",
+   "kind": "html",
+   "en": "<span class=\"line\">The Hockey Training App</span>\n          <span class=\"line\"><span class=\"accent serif\">built</span> around your <span class=\"ice\">season.</span></span>"
+  },
+  {
+   "id": "h47",
+   "kind": "html",
+   "en": "Elite Hockey Drills is an <strong>ice hockey training app for the off-ice side of the game</strong>: the strength, speed, and conditioning work that decides who is still fast in the third period. Answer a few questions and it builds a personalized off-ice program from your age, level, position, and schedule, then coaches you through every session with a demo video for every exercise. <strong>Your first week is free.</strong>"
+  },
+  {
+   "id": "t48",
+   "kind": "text",
+   "en": "Start Your Free Week"
+  },
+  {
+   "id": "h49",
+   "kind": "html",
+   "en": "See How It Works"
+  },
+  {
+   "id": "a50",
+   "kind": "attr:aria-label",
+   "en": "Download Elite Hockey Drills on the App Store"
+  },
+  {
+   "id": "a51",
+   "kind": "attr:alt",
+   "en": "Download on the App Store"
+  },
+  {
+   "id": "a52",
+   "kind": "attr:aria-label",
+   "en": "Get Elite Hockey Drills on Google Play"
+  },
+  {
+   "id": "a53",
+   "kind": "attr:alt",
+   "en": "Get it on Google Play"
+  },
+  {
+   "id": "h54",
+   "kind": "html",
+   "en": "Exercises With Video"
+  },
+  {
+   "id": "h55",
+   "kind": "html",
+   "en": "Age Bands, 9 to 40+"
+  },
+  {
+   "id": "h56",
+   "kind": "html",
+   "en": "Day Free Trial"
+  },
+  {
+   "id": "h57",
+   "kind": "html",
+   "en": "Athletes Trained"
+  },
+  {
+   "id": "a58",
+   "kind": "attr:alt",
+   "en": "Elite Hockey Drills hockey training app — today's off-ice session on the home screen"
+  },
+  {
+   "id": "h59",
+   "kind": "html",
+   "en": "<span class=\"marquee-seq\">\n      <span>Personalized Program</span><i>✦</i>\n      <span>Built Around Your Season</span><i>✦</i>\n      <span>Video for Every Exercise</span><i>✦</i>\n      <span>Game-Day Mode</span><i>✦</i>\n      <span>Progress &amp; PRs</span><i>✦</i>\n      <span>7-Day Free Trial</span><i>✦</i>\n    </span>\n    <span class=\"marquee-seq\">\n      <span>Personalized Program</span><i>✦</i>\n      <span>Built Around Your Season</span><i>✦</i>\n      <span>Video for Every Exercise</span><i>✦</i>\n      <span>Game-Day Mode</span><i>✦</i>\n      <span>Progress &amp; PRs</span><i>✦</i>\n      <span>7-Day Free Trial</span><i>✦</i>\n    </span>"
+  },
+  {
+   "id": "a60",
+   "kind": "attr:aria-label",
+   "en": "Free trial and pricing"
+  },
+  {
+   "id": "h61",
+   "kind": "html",
+   "en": "Start tonight · iPhone &amp; Android"
+  },
+  {
+   "id": "h62",
+   "kind": "html",
+   "en": "Your first week is <em>free.</em>"
+  },
+  {
+   "id": "h63",
+   "kind": "html",
+   "en": "Download, answer a few questions, and your personalized off-ice program is ready before your next practice."
+  },
+  {
+   "id": "h64",
+   "kind": "html",
+   "en": "<b>7 days</b><span>free trial, everything unlocked</span>"
+  },
+  {
+   "id": "h65",
+   "kind": "html",
+   "en": "<b>$17.99</b><span>per month after the trial</span>"
+  },
+  {
+   "id": "h66",
+   "kind": "html",
+   "en": "<b>$99.90</b><span>per year · save 54%</span>"
+  },
+  {
+   "id": "h67",
+   "kind": "html",
+   "en": "<b>Cancel</b><span>anytime in the App Store or Google Play</span>"
+  },
+  {
+   "id": "t68",
+   "kind": "text",
+   "en": "Start Your Free Week"
+  },
+  {
+   "id": "h69",
+   "kind": "html",
+   "en": "On a computer? Scan with your phone to install."
+  },
+  {
+   "id": "a70",
+   "kind": "attr:alt",
+   "en": "QR code for Elite Hockey Drills on the App Store"
+  },
+  {
+   "id": "h71",
+   "kind": "html",
+   "en": "iPhone"
+  },
+  {
+   "id": "a72",
+   "kind": "attr:alt",
+   "en": "QR code for Elite Hockey Drills on Google Play"
+  },
+  {
+   "id": "h73",
+   "kind": "html",
+   "en": "Android"
+  },
+  {
+   "id": "h74",
+   "kind": "html",
+   "en": "01 — Inside the App"
+  },
+  {
+   "id": "h75",
+   "kind": "html",
+   "en": "Five screens. <em>One season.</em>"
+  },
+  {
+   "id": "h76",
+   "kind": "html",
+   "en": "Most hockey training apps hand you a list of workouts and leave the planning to you. This one does the planning. Every screen exists to answer one question: what should I do today to be faster on the ice?"
+  },
+  {
+   "id": "a77",
+   "kind": "attr:aria-label",
+   "en": "A guided tour through the app's screens"
+  },
+  {
+   "id": "h78",
+   "kind": "html",
+   "en": "01 · Home"
+  },
+  {
+   "id": "h79",
+   "kind": "html",
+   "en": "Today's session, <em class=\"serif\">ready.</em>"
+  },
+  {
+   "id": "h80",
+   "kind": "html",
+   "en": "Open the app and the day's work is already chosen — matched to your age, level, position, and the week of your season."
+  },
+  {
+   "id": "h81",
+   "kind": "html",
+   "en": "<b>Session</b><span>45–60 min · built for the day you're in</span>"
+  },
+  {
+   "id": "h82",
+   "kind": "html",
+   "en": "<b>Schedule</b><span>Planned around ice time and games</span>"
+  },
+  {
+   "id": "h83",
+   "kind": "html",
+   "en": "<b>Streaks</b><span>Daily targets · weekly session tracker</span>"
+  },
+  {
+   "id": "h84",
+   "kind": "html",
+   "en": "02 · My Program"
+  },
+  {
+   "id": "h85",
+   "kind": "html",
+   "en": "A season with <em class=\"serif\">a plan.</em>"
+  },
+  {
+   "id": "h86",
+   "kind": "html",
+   "en": "Strength, power, peak — your whole year in periodized blocks. Every week exists for a reason."
+  },
+  {
+   "id": "h87",
+   "kind": "html",
+   "en": "<b>This week</b><span>Five sessions, planned in order</span>"
+  },
+  {
+   "id": "h88",
+   "kind": "html",
+   "en": "<b>Blocks</b><span>Foundation → Strength → Power → Peak</span>"
+  },
+  {
+   "id": "h89",
+   "kind": "html",
+   "en": "<b>Deload</b><span>Every fourth week, automatic</span>"
+  },
+  {
+   "id": "h90",
+   "kind": "html",
+   "en": "03 · Training"
+  },
+  {
+   "id": "h91",
+   "kind": "html",
+   "en": "Coached, <em class=\"serif\">rep by rep.</em>"
+  },
+  {
+   "id": "h92",
+   "kind": "html",
+   "en": "Sets, reps, tempo, rest — every session guided, with a demo video for every exercise."
+  },
+  {
+   "id": "h93",
+   "kind": "html",
+   "en": "<b>Targets</b><span>Sets × reps · tempo · rest · RPE</span>"
+  },
+  {
+   "id": "h94",
+   "kind": "html",
+   "en": "<b>Video</b><span>A demo for every exercise</span>"
+  },
+  {
+   "id": "h95",
+   "kind": "html",
+   "en": "<b>Logging</b><span>One tap per set — anchors your loads</span>"
+  },
+  {
+   "id": "h96",
+   "kind": "html",
+   "en": "04 · Game Day"
+  },
+  {
+   "id": "h97",
+   "kind": "html",
+   "en": "Game day, <em class=\"serif\">handled.</em>"
+  },
+  {
+   "id": "h98",
+   "kind": "html",
+   "en": "Game tomorrow? The app swaps in activation and prep — you show up primed, never heavy-legged."
+  },
+  {
+   "id": "h99",
+   "kind": "html",
+   "en": "<b>Pre-game</b><span>Meal → snack → activation → focus</span>"
+  },
+  {
+   "id": "h100",
+   "kind": "html",
+   "en": "<b>Timing</b><span>Counts back from puck drop</span>"
+  },
+  {
+   "id": "h101",
+   "kind": "html",
+   "en": "<b>Day after</b><span>Neural priming to reset fast</span>"
+  },
+  {
+   "id": "h102",
+   "kind": "html",
+   "en": "05 · Progress"
+  },
+  {
+   "id": "h103",
+   "kind": "html",
+   "en": "Proof you're <em class=\"serif\">faster.</em>"
+  },
+  {
+   "id": "h104",
+   "kind": "html",
+   "en": "Streaks, trends, and personal records — watch the work show up in numbers."
+  },
+  {
+   "id": "h105",
+   "kind": "html",
+   "en": "<b>Baselines</b><span>Six tests · the ones combines use</span>"
+  },
+  {
+   "id": "h106",
+   "kind": "html",
+   "en": "<b>Records</b><span>PRs, streaks, session history</span>"
+  },
+  {
+   "id": "h107",
+   "kind": "html",
+   "en": "<b>Trend</b><span>Workouts per week, volume over time</span>"
+  },
+  {
+   "id": "a108",
+   "kind": "attr:alt",
+   "en": "Home screen — today's session, streak, and season overview"
+  },
+  {
+   "id": "a109",
+   "kind": "attr:alt",
+   "en": "My Program screen — periodized training blocks across the season"
+  },
+  {
+   "id": "a110",
+   "kind": "attr:alt",
+   "en": "Training screen — guided session with sets, reps, and demo videos"
+  },
+  {
+   "id": "a111",
+   "kind": "attr:alt",
+   "en": "Game Day screen — pre-game activation and preparation protocol"
+  },
+  {
+   "id": "a112",
+   "kind": "attr:alt",
+   "en": "Progress screen — history, trends, and personal records"
+  },
+  {
+   "id": "h113",
+   "kind": "html",
+   "en": "390+ off-ice hockey exercises, each with a coach-filmed demo video"
+  },
+  {
+   "id": "h114",
+   "kind": "html",
+   "en": "Personalized program from your age, level, position &amp; equipment"
+  },
+  {
+   "id": "h115",
+   "kind": "html",
+   "en": "Season-aware: pre-season, in-season, playoffs &amp; game days"
+  },
+  {
+   "id": "h116",
+   "kind": "html",
+   "en": "Periodized blocks: foundation, strength, power, peak &amp; deload"
+  },
+  {
+   "id": "h117",
+   "kind": "html",
+   "en": "Game-day mode with activation, timing &amp; next-day reset"
+  },
+  {
+   "id": "h118",
+   "kind": "html",
+   "en": "Six baseline tests, personal records, streaks &amp; history"
+  },
+  {
+   "id": "h119",
+   "kind": "html",
+   "en": "Adapts when you miss a day instead of punishing you"
+  },
+  {
+   "id": "h120",
+   "kind": "html",
+   "en": "Rebuild your program anytime your schedule or goals change"
+  },
+  {
+   "id": "h121",
+   "kind": "html",
+   "en": "7 <span>days</span>"
+  },
+  {
+   "id": "h122",
+   "kind": "html",
+   "en": "Free Trial"
+  },
+  {
+   "id": "h123",
+   "kind": "html",
+   "en": "$17.99<span>/mo</span>"
+  },
+  {
+   "id": "h124",
+   "kind": "html",
+   "en": "Monthly"
+  },
+  {
+   "id": "h125",
+   "kind": "html",
+   "en": "$99.90<span>/yr</span>"
+  },
+  {
+   "id": "h126",
+   "kind": "html",
+   "en": "Annual · Save 54%"
+  },
+  {
+   "id": "a127",
+   "kind": "attr:aria-label",
+   "en": "Download Elite Hockey Drills on the App Store"
+  },
+  {
+   "id": "a128",
+   "kind": "attr:alt",
+   "en": "Download on the App Store"
+  },
+  {
+   "id": "a129",
+   "kind": "attr:aria-label",
+   "en": "Get Elite Hockey Drills on Google Play"
+  },
+  {
+   "id": "a130",
+   "kind": "attr:alt",
+   "en": "Get it on Google Play"
+  },
+  {
+   "id": "h131",
+   "kind": "html",
+   "en": "Free to download · One app for ages 9–11 through 40+ · Cancel anytime during the trial"
+  },
+  {
+   "id": "h132",
+   "kind": "html",
+   "en": "02 — How It Works"
+  },
+  {
+   "id": "h133",
+   "kind": "html",
+   "en": "Three minutes to <em>your program.</em>"
+  },
+  {
+   "id": "h134",
+   "kind": "html",
+   "en": "No templates and no generic gym plan with a hockey logo on it. The app was built by <a href=\"/#about\">Coach David Ciboch, M.Ed. Sport Science</a>, a former national-team coach, and it programs the way he programs his own athletes."
+  },
+  {
+   "id": "h135",
+   "kind": "html",
+   "en": "i."
+  },
+  {
+   "id": "h136",
+   "kind": "html",
+   "en": "Tell It About You"
+  },
+  {
+   "id": "h137",
+   "kind": "html",
+   "en": "Your age band, playing level, position, the equipment you have at home, which days you skate, and when you play. That is everything the app needs to know."
+  },
+  {
+   "id": "h138",
+   "kind": "html",
+   "en": "ii."
+  },
+  {
+   "id": "h139",
+   "kind": "html",
+   "en": "Get Your Program"
+  },
+  {
+   "id": "h140",
+   "kind": "html",
+   "en": "The app builds a periodized multi-week block around your real week: three to five sessions of 45 to 60 minutes, explosive work when you are fresh, strength when it fits, recovery when your body needs it."
+  },
+  {
+   "id": "h141",
+   "kind": "html",
+   "en": "iii."
+  },
+  {
+   "id": "h142",
+   "kind": "html",
+   "en": "Train With a Coach in Your Pocket"
+  },
+  {
+   "id": "h143",
+   "kind": "html",
+   "en": "Every session is guided rep by rep: sets, reps, tempo, rest, and a demo video for every exercise. Log a set with one tap. Game tomorrow? The session swaps to activation and prep automatically."
+  },
+  {
+   "id": "h144",
+   "kind": "html",
+   "en": "03 — Who It's For"
+  },
+  {
+   "id": "h145",
+   "kind": "html",
+   "en": "One app. <em>Every age.</em>"
+  },
+  {
+   "id": "h146",
+   "kind": "html",
+   "en": "The same hockey training app serves a nine-year-old learning to move and a forty-year-old still playing on Sunday nights, because every exercise scales and every program is built for the age band it belongs to."
+  },
+  {
+   "id": "h147",
+   "kind": "html",
+   "en": "Ages 9–11"
+  },
+  {
+   "id": "h148",
+   "kind": "html",
+   "en": "Foundations"
+  },
+  {
+   "id": "h149",
+   "kind": "html",
+   "en": "Coordination, balance, and bodyweight strength in short, fun sessions. The app teaches the movement before it ever loads it."
+  },
+  {
+   "id": "h150",
+   "kind": "html",
+   "en": "One-time 8-week program for 9–11"
+  },
+  {
+   "id": "h151",
+   "kind": "html",
+   "en": "Ages 12–14"
+  },
+  {
+   "id": "h152",
+   "kind": "html",
+   "en": "Develop"
+  },
+  {
+   "id": "h153",
+   "kind": "html",
+   "en": "Growth-spurt aware. Technique and control come first, and strength is added as the body is ready for it, not before."
+  },
+  {
+   "id": "h154",
+   "kind": "html",
+   "en": "One-time 8-week program for 12–14"
+  },
+  {
+   "id": "h155",
+   "kind": "html",
+   "en": "Ages 15–18"
+  },
+  {
+   "id": "h156",
+   "kind": "html",
+   "en": "Compete"
+  },
+  {
+   "id": "h157",
+   "kind": "html",
+   "en": "Strength, power, and repeat-sprint speed built for tryouts, junior hockey, and a season that does not let up."
+  },
+  {
+   "id": "h158",
+   "kind": "html",
+   "en": "One-time 8-week program for 15–18"
+  },
+  {
+   "id": "h159",
+   "kind": "html",
+   "en": "Ages 19–39"
+  },
+  {
+   "id": "h160",
+   "kind": "html",
+   "en": "Dominate"
+  },
+  {
+   "id": "h161",
+   "kind": "html",
+   "en": "Beer league to pro. Maximal strength, explosive power, and the conditioning to still be the fastest player in the third period."
+  },
+  {
+   "id": "h162",
+   "kind": "html",
+   "en": "One-time 8-week program for 19–39"
+  },
+  {
+   "id": "h163",
+   "kind": "html",
+   "en": "Ages 40+"
+  },
+  {
+   "id": "h164",
+   "kind": "html",
+   "en": "Sustain"
+  },
+  {
+   "id": "h165",
+   "kind": "html",
+   "en": "Joint-friendly strength, mobility, and just enough speed work to stay dangerous without paying for it the next morning."
+  },
+  {
+   "id": "h166",
+   "kind": "html",
+   "en": "One-time 8-week program for 40+"
+  },
+  {
+   "id": "h167",
+   "kind": "html",
+   "en": "04 — App or Program?"
+  },
+  {
+   "id": "h168",
+   "kind": "html",
+   "en": "Subscription <em>or one-time?</em>"
+  },
+  {
+   "id": "h169",
+   "kind": "html",
+   "en": "Both are built by the same coach on the same method. The app is the living version that runs your season. The 8-week programs are fixed blocks you buy once and keep forever."
+  },
+  {
+   "id": "h170",
+   "kind": "html",
+   "en": "What you get"
+  },
+  {
+   "id": "h171",
+   "kind": "html",
+   "en": "The App"
+  },
+  {
+   "id": "h172",
+   "kind": "html",
+   "en": "8-Week Program"
+  },
+  {
+   "id": "h173",
+   "kind": "html",
+   "en": "Personalized to your age, level, position &amp; schedule"
+  },
+  {
+   "id": "h174",
+   "kind": "html",
+   "en": "Built for you"
+  },
+  {
+   "id": "h175",
+   "kind": "html",
+   "en": "Fixed per age band"
+  },
+  {
+   "id": "h176",
+   "kind": "html",
+   "en": "Adapts to game days &amp; missed sessions"
+  },
+  {
+   "id": "h177",
+   "kind": "html",
+   "en": "Automatically"
+  },
+  {
+   "id": "h178",
+   "kind": "html",
+   "en": "No"
+  },
+  {
+   "id": "h179",
+   "kind": "html",
+   "en": "Runs your whole season, block after block"
+  },
+  {
+   "id": "h180",
+   "kind": "html",
+   "en": "All year"
+  },
+  {
+   "id": "h181",
+   "kind": "html",
+   "en": "8 weeks"
+  },
+  {
+   "id": "h182",
+   "kind": "html",
+   "en": "Demo video for every exercise"
+  },
+  {
+   "id": "h183",
+   "kind": "html",
+   "en": "Yes"
+  },
+  {
+   "id": "h184",
+   "kind": "html",
+   "en": "Yes"
+  },
+  {
+   "id": "h185",
+   "kind": "html",
+   "en": "Tests, personal records &amp; progress tracking"
+  },
+  {
+   "id": "h186",
+   "kind": "html",
+   "en": "In the app"
+  },
+  {
+   "id": "h187",
+   "kind": "html",
+   "en": "Tests included, tracked by hand"
+  },
+  {
+   "id": "h188",
+   "kind": "html",
+   "en": "Price"
+  },
+  {
+   "id": "h189",
+   "kind": "html",
+   "en": "Free 7-day trial, then $17.99/mo or $99.90/yr"
+  },
+  {
+   "id": "h190",
+   "kind": "html",
+   "en": "$79 once, yours forever"
+  },
+  {
+   "id": "h191",
+   "kind": "html",
+   "en": "Where it runs"
+  },
+  {
+   "id": "h192",
+   "kind": "html",
+   "en": "iPhone and Android"
+  },
+  {
+   "id": "h193",
+   "kind": "html",
+   "en": "Any browser"
+  },
+  {
+   "id": "h194",
+   "kind": "html",
+   "en": "Prefer the one-time route? <a href=\"/#tiers\">See the five 8-week programs</a>. Not sure? Start the app's free trial first. It costs nothing to see the difference."
+  },
+  {
+   "id": "h195",
+   "kind": "html",
+   "en": "05 — Questions"
+  },
+  {
+   "id": "h196",
+   "kind": "html",
+   "en": "Frequently <em>asked.</em>"
+  },
+  {
+   "id": "h197",
+   "kind": "html",
+   "en": "<span>Is Elite Hockey Drills an on-ice or off-ice hockey training app?</span>\n          <span class=\"faq-icon\"></span>"
+  },
+  {
+   "id": "h198",
+   "kind": "html",
+   "en": "Off-ice. The app programs the strength, speed, power, and conditioning work you do away from the rink, which is where most of a hockey player's physical development actually happens. It is built to sit around your ice time, not replace it: tell the app which days you skate and play, and it plans your off-ice sessions so you show up to practice and games fresh."
+  },
+  {
+   "id": "h199",
+   "kind": "html",
+   "en": "<span>What ages does the app cover?</span>\n          <span class=\"faq-icon\"></span>"
+  },
+  {
+   "id": "h200",
+   "kind": "html",
+   "en": "Five age bands in one app: 9 to 11, 12 to 14, 15 to 18, 19 to 39, and 40+. Each band gets its own programming logic. Younger players get movement quality and coordination first, teens get growth-spurt-aware strength and power, adults get maximal strength and repeat-sprint conditioning, and masters players get durability-first training that still keeps them fast."
+  },
+  {
+   "id": "h201",
+   "kind": "html",
+   "en": "<span>Is there an Android version?</span>\n          <span class=\"faq-icon\"></span>"
+  },
+  {
+   "id": "h202",
+   "kind": "html",
+   "en": "Yes. Elite Hockey Drills is live on Google Play for Android and on the App Store for iPhone. Both versions have the same personalized program, the same demo videos, and the same 7-day free trial."
+  },
+  {
+   "id": "h203",
+   "kind": "html",
+   "en": "<span>How much does the hockey training app cost?</span>\n          <span class=\"faq-icon\"></span>"
+  },
+  {
+   "id": "h204",
+   "kind": "html",
+   "en": "The download is free and every new account gets a 7-day free trial with everything unlocked: the full personalized program, every demo video, game-day mode, and progress tracking. After the trial it is $17.99 per month or $99.90 per year, which works out to about $8.33 a month. Cancel anytime through your App Store or Google Play account."
+  },
+  {
+   "id": "h205",
+   "kind": "html",
+   "en": "<span>What equipment do I need?</span>\n          <span class=\"faq-icon\"></span>"
+  },
+  {
+   "id": "h206",
+   "kind": "html",
+   "en": "Whatever you have. You tell the app your equipment — nothing at all, a band and a box, dumbbells and a pull-up bar, or a full gym — and every session is built from that kit. A full gym means barbells, trap bar and sled work show up; a hotel room means bodyweight and a band. Change your equipment any time and the program re-plans around it."
+  },
+  {
+   "id": "h207",
+   "kind": "html",
+   "en": "<span>How long are the sessions and how many per week?</span>\n          <span class=\"faq-icon\"></span>"
+  },
+  {
+   "id": "h208",
+   "kind": "html",
+   "en": "Most sessions run 45 to 60 minutes. The number per week depends on your ice schedule: the app typically plans three to five off-ice sessions around your practices and games, with lighter weeks built in automatically every fourth week so you recover instead of accumulating fatigue."
+  },
+  {
+   "id": "h209",
+   "kind": "html",
+   "en": "<span>Does it work during the season, not just in the summer?</span>\n          <span class=\"faq-icon\"></span>"
+  },
+  {
+   "id": "h210",
+   "kind": "html",
+   "en": "Yes, that is the point of it. Pre-season, in-season, playoffs, and off-season each get a different structure. In-season the app keeps you strong and explosive with lower volume, and game-day mode swaps a normal session for activation and preparation when you have a game tomorrow, then a neural reset the day after."
+  },
+  {
+   "id": "h211",
+   "kind": "html",
+   "en": "<span>How is this different from a PDF program or YouTube workouts?</span>\n          <span class=\"faq-icon\"></span>"
+  },
+  {
+   "id": "h212",
+   "kind": "html",
+   "en": "A PDF is the same for everyone and never changes. YouTube gives you a workout, not a plan. The app builds a program for you specifically, sequences it across weeks and blocks, adapts when you miss a day or have a game, coaches every set with targets and a demo video, and tracks your tests and personal records so you can see the work turning into speed."
+  },
+  {
+   "id": "h213",
+   "kind": "html",
+   "en": "<span>Who built the app?</span>\n          <span class=\"faq-icon\"></span>"
+  },
+  {
+   "id": "h214",
+   "kind": "html",
+   "en": "Coach David Ciboch, M.Ed. in PE and Sport Science, a former national-team hockey coach with over a decade of coaching from youth development to the national level, more than 1,000 athletes trained, and 60+ players signed to professional contracts. The app programs the way he programs his own athletes."
+  },
+  {
+   "id": "h215",
+   "kind": "html",
+   "en": "Start tonight"
+  },
+  {
+   "id": "h216",
+   "kind": "html",
+   "en": "Your first week<br>is <em>free.</em>"
+  },
+  {
+   "id": "h217",
+   "kind": "html",
+   "en": "Download the app, answer a few questions, and your personalized off-ice hockey program is ready before your next practice. Cancel anytime during the trial and pay nothing."
+  },
+  {
+   "id": "t218",
+   "kind": "text",
+   "en": "Start Your Free Week"
+  },
+  {
+   "id": "a219",
+   "kind": "attr:aria-label",
+   "en": "Download Elite Hockey Drills on the App Store"
+  },
+  {
+   "id": "a220",
+   "kind": "attr:alt",
+   "en": "Download on the App Store"
+  },
+  {
+   "id": "a221",
+   "kind": "attr:aria-label",
+   "en": "Get Elite Hockey Drills on Google Play"
+  },
+  {
+   "id": "a222",
+   "kind": "attr:alt",
+   "en": "Get it on Google Play"
+  },
+  {
+   "id": "h223",
+   "kind": "html",
+   "en": "Not ready for the app? <a href=\"survey.html\" style=\"color:var(--ice);\">Take the 60-second quiz</a> for a free 5-day program. No card needed."
+  },
+  {
+   "id": "h224",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "h225",
+   "kind": "html",
+   "en": "Science-backed off-ice training for hockey players. Built by a certified sport scientist and former national-team coach."
+  },
+  {
+   "id": "h226",
+   "kind": "html",
+   "en": "Train"
+  },
+  {
+   "id": "h227",
+   "kind": "html",
+   "en": "<a href=\"/hockey-training-app.html\">Hockey Training App</a>"
+  },
+  {
+   "id": "h228",
+   "kind": "html",
+   "en": "<a href=\"https://apps.apple.com/us/app/elite-hockey-drills/id6787257275\" data-store=\"ios\">The App — iOS</a>"
+  },
+  {
+   "id": "h229",
+   "kind": "html",
+   "en": "<a href=\"https://play.google.com/store/apps/details?id=com.elitehockeydrills.training\">The App — Android</a>"
+  },
+  {
+   "id": "h230",
+   "kind": "html",
+   "en": "<a href=\"/#tiers\">8-Week Programs</a>"
+  },
+  {
+   "id": "h231",
+   "kind": "html",
+   "en": "<a href=\"survey.html\">Free 5-Day Program</a>"
+  },
+  {
+   "id": "h232",
+   "kind": "html",
+   "en": "<a href=\"/api/restore\">Restore Access</a>"
+  },
+  {
+   "id": "h233",
+   "kind": "html",
+   "en": "Navigate"
+  },
+  {
+   "id": "h234",
+   "kind": "html",
+   "en": "<a href=\"/#about\">About</a>"
+  },
+  {
+   "id": "h235",
+   "kind": "html",
+   "en": "<a href=\"/#method\">Method</a>"
+  },
+  {
+   "id": "h236",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Exercise Library</a>"
+  },
+  {
+   "id": "h237",
+   "kind": "html",
+   "en": "<a href=\"#faq\">FAQ</a>"
+  },
+  {
+   "id": "h238",
+   "kind": "html",
+   "en": "<a href=\"#contact\">Contact</a>"
+  },
+  {
+   "id": "h239",
+   "kind": "html",
+   "en": "Connect"
+  },
+  {
+   "id": "h240",
+   "kind": "html",
+   "en": "<a href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">Instagram</a>"
+  },
+  {
+   "id": "h241",
+   "kind": "html",
+   "en": "<a href=\"https://wa.me/420770149067\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>"
+  },
+  {
+   "id": "h242",
+   "kind": "html",
+   "en": "<a href=\"mailto:elitehockeydrills@gmail.com\">Email</a>"
+  },
+  {
+   "id": "h243",
+   "kind": "html",
+   "en": "<span>© 2026 Elite Hockey Drills. All rights reserved. · <a href=\"/privacy.html\" style=\"color:inherit;\">Privacy Policy</a> · <a href=\"/terms.html\" style=\"color:inherit;\">Terms of Service</a></span>\n    <a class=\"footer-ig\" href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">@elite_hockey_drills</a>"
+  },
+  {
+   "id": "h244",
+   "kind": "html",
+   "en": "<a href=\"https://apps.apple.com/us/app/elite-hockey-drills/id6787257275\" class=\"btn btn-primary\">Start Free Trial</a>\n  <a href=\"#pricing\" class=\"btn btn-ghost mobile-bar-ghost\">See Pricing</a>"
+  }
+ ]
+}

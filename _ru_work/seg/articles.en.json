@@ -1,0 +1,465 @@
+{
+ "page": "articles.html",
+ "segments": [
+  {
+   "id": "t0",
+   "kind": "title",
+   "en": "Articles &amp; Guides for Hockey Players | Elite Hockey Drills"
+  },
+  {
+   "id": "m1",
+   "kind": "meta",
+   "en": "Science-based hockey training guides on off-season nutrition, programming, and recovery. Written by Coach David Ciboch, M.Ed. Sport Science and former national-team coach."
+  },
+  {
+   "id": "m2",
+   "kind": "meta",
+   "en": "Articles & Guides | Elite Hockey Drills"
+  },
+  {
+   "id": "m3",
+   "kind": "meta",
+   "en": "Science-based guides on training, nutrition, and recovery, written to make you harder to play against."
+  },
+  {
+   "id": "h4",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "a5",
+   "kind": "attr:aria-label",
+   "en": "Main navigation"
+  },
+  {
+   "id": "h6",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">Coach</a>"
+  },
+  {
+   "id": "h7",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h8",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">Programs</a>"
+  },
+  {
+   "id": "h9",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Library</a>"
+  },
+  {
+   "id": "h10",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\" aria-current=\"page\">Articles</a>"
+  },
+  {
+   "id": "h11",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h12",
+   "kind": "html",
+   "en": "Get the App"
+  },
+  {
+   "id": "h13",
+   "kind": "html",
+   "en": "Articles &amp; Guides"
+  },
+  {
+   "id": "h14",
+   "kind": "html",
+   "en": "<span class=\"reveal-line\"><span class=\"reveal-inner\">The</span></span><span class=\"reveal-line\"><span class=\"reveal-inner serif\">Playbook.</span></span>"
+  },
+  {
+   "id": "h15",
+   "kind": "html",
+   "en": "Science-based guides on training, nutrition, and recovery, written to make you faster, more durable, and harder to play against. No fluff, no fads, no recycled gym advice."
+  },
+  {
+   "id": "a16",
+   "kind": "attr:aria-label",
+   "en": "All articles"
+  },
+  {
+   "id": "h17",
+   "kind": "html",
+   "en": "Training"
+  },
+  {
+   "id": "h18",
+   "kind": "html",
+   "en": "Off-Ice Hockey Training: The Complete Guide"
+  },
+  {
+   "id": "h19",
+   "kind": "html",
+   "en": "The complete, science-based guide to off-ice and dryland training for hockey. What to train, how often, what gear you actually need, the most common mistakes, and how it changes from a nine-year-old to a forty-year-old, with a ready-built program for every age."
+  },
+  {
+   "id": "h20",
+   "kind": "html",
+   "en": "14 min read · Science-based"
+  },
+  {
+   "id": "h21",
+   "kind": "html",
+   "en": "Shooting"
+  },
+  {
+   "id": "h22",
+   "kind": "html",
+   "en": "How to Shoot Harder"
+  },
+  {
+   "id": "h23",
+   "kind": "html",
+   "en": "The hardest shooters are not the strongest-armed. How the kinetic chain builds a heavier shot from the ice up, what the hockey research shows, and the off-ice training that adds real speed to yours."
+  },
+  {
+   "id": "h24",
+   "kind": "html",
+   "en": "12 min read · Science-based"
+  },
+  {
+   "id": "h25",
+   "kind": "html",
+   "en": "Durability"
+  },
+  {
+   "id": "h26",
+   "kind": "html",
+   "en": "Injury-Proof Your Hockey Season"
+  },
+  {
+   "id": "h27",
+   "kind": "html",
+   "en": "Hockey's signature injuries, the groin, the hip, the knee, are largely preventable. The strength warning sign that predicts a groin strain, the programs that work, and why strength beats stretching for staying on the ice."
+  },
+  {
+   "id": "h28",
+   "kind": "html",
+   "en": "12 min read · Science-based"
+  },
+  {
+   "id": "h29",
+   "kind": "html",
+   "en": "Warm-Up"
+  },
+  {
+   "id": "h30",
+   "kind": "html",
+   "en": "The Perfect Hockey Warm-Up"
+  },
+  {
+   "id": "h31",
+   "kind": "html",
+   "en": "It is the cheapest performance gain in hockey, and most players waste it. Why static stretching before you play backfires, and the RAMP warm-up that has you firing from the first shift."
+  },
+  {
+   "id": "h32",
+   "kind": "html",
+   "en": "11 min read · Science-based"
+  },
+  {
+   "id": "h33",
+   "kind": "html",
+   "en": "Speed"
+  },
+  {
+   "id": "h34",
+   "kind": "html",
+   "en": "How to Skate Faster"
+  },
+  {
+   "id": "h35",
+   "kind": "html",
+   "en": "Speed is built off the ice. The three drivers of skating speed, the dryland work that develops each, and the exercises and weekly plan to put it together."
+  },
+  {
+   "id": "h36",
+   "kind": "html",
+   "en": "12 min read · Science-based"
+  },
+  {
+   "id": "h37",
+   "kind": "html",
+   "en": "Youth"
+  },
+  {
+   "id": "h38",
+   "kind": "html",
+   "en": "Dryland Training for Youth Hockey"
+  },
+  {
+   "id": "h39",
+   "kind": "html",
+   "en": "A parent's guide: what off-ice training should be at each age, whether it is safe, how often, and the best activities for young players."
+  },
+  {
+   "id": "h40",
+   "kind": "html",
+   "en": "11 min read · Science-based"
+  },
+  {
+   "id": "h41",
+   "kind": "html",
+   "en": "Training"
+  },
+  {
+   "id": "h42",
+   "kind": "html",
+   "en": "Common Off-Ice Training Mistakes to Avoid"
+  },
+  {
+   "id": "h43",
+   "kind": "html",
+   "en": "Eight off-ice training mistakes that quietly hold hockey players back, from random workouts to skipping the warm-up, and the simple, science-based fix for each one."
+  },
+  {
+   "id": "h44",
+   "kind": "html",
+   "en": "12 min read · Science-based"
+  },
+  {
+   "id": "h45",
+   "kind": "html",
+   "en": "Nutrition"
+  },
+  {
+   "id": "h46",
+   "kind": "html",
+   "en": "Off-Season Nutrition for Hockey Players"
+  },
+  {
+   "id": "h47",
+   "kind": "html",
+   "en": "The complete, science-based guide to eating in the off-season. How much protein you actually need, how to build muscle without losing your edge, what to feed a growing youth player, and the meal structure that turns hard training into real results. Everything is grounded in peer-reviewed sport-nutrition research."
+  },
+  {
+   "id": "h48",
+   "kind": "html",
+   "en": "12 min read · Science-based"
+  },
+  {
+   "id": "h49",
+   "kind": "html",
+   "en": "Training"
+  },
+  {
+   "id": "h50",
+   "kind": "html",
+   "en": "The Off-Season Blueprint"
+  },
+  {
+   "id": "h51",
+   "kind": "html",
+   "en": "How to structure your summer week by week so you arrive at tryouts faster and stronger than everyone else. The science of periodization, what to build and when, and why doing nothing costs you more than you think."
+  },
+  {
+   "id": "h52",
+   "kind": "html",
+   "en": "11 min read · Science-based"
+  },
+  {
+   "id": "h53",
+   "kind": "html",
+   "en": "Conditioning"
+  },
+  {
+   "id": "h54",
+   "kind": "html",
+   "en": "Hockey Conditioning: The Third-Period Engine"
+  },
+  {
+   "id": "h55",
+   "kind": "html",
+   "en": "Hockey is a repeat-sprint sport. Why your aerobic base is the secret weapon that recovers you between shifts, and the off-ice intervals that keep you flying when everyone else fades."
+  },
+  {
+   "id": "h56",
+   "kind": "html",
+   "en": "12 min read · Science-based"
+  },
+  {
+   "id": "h57",
+   "kind": "html",
+   "en": "Recovery"
+  },
+  {
+   "id": "h58",
+   "kind": "html",
+   "en": "Sleep &amp; Recovery: The Off-Season Multiplier"
+  },
+  {
+   "id": "h59",
+   "kind": "html",
+   "en": "The most underrated training tool you own is free. How sleep makes you faster, sharper, and far less likely to get hurt, plus the recovery habits that turn your hard work into adaptation instead of burnout."
+  },
+  {
+   "id": "h60",
+   "kind": "html",
+   "en": "10 min read · Science-based"
+  },
+  {
+   "id": "h61",
+   "kind": "html",
+   "en": "Live on the App Store &amp; Google Play"
+  },
+  {
+   "id": "h62",
+   "kind": "html",
+   "en": "The playbook, <em class=\"serif\">now an app.</em>"
+  },
+  {
+   "id": "h63",
+   "kind": "html",
+   "en": "The Elite Hockey Drills app builds a personalized off-ice program from your age, level, position, and schedule, with a demo video for every exercise and progress tracking built in. One app covers ages 9 to 11 through 40+. First week free on iPhone and Android."
+  },
+  {
+   "id": "h64",
+   "kind": "html",
+   "en": "7-day free trial, then $17.99/month or $99.90/year. Billed via the App Store or Google Play, cancel anytime."
+  },
+  {
+   "id": "t65",
+   "kind": "text",
+   "en": "Get the App"
+  },
+  {
+   "id": "a66",
+   "kind": "attr:alt",
+   "en": "Download on the App Store"
+  },
+  {
+   "id": "a67",
+   "kind": "attr:alt",
+   "en": "Get it on Google Play"
+  },
+  {
+   "id": "h68",
+   "kind": "html",
+   "en": "Ready to train?"
+  },
+  {
+   "id": "h69",
+   "kind": "html",
+   "en": "Reading is step one.<br><em class=\"serif\">Training is the edge.</em>"
+  },
+  {
+   "id": "h70",
+   "kind": "html",
+   "en": "Every guide here is built on the same science as our programs: fully periodized, 8-week off-ice training engineered around how hockey players actually move."
+  },
+  {
+   "id": "t71",
+   "kind": "text",
+   "en": "See the Programs"
+  },
+  {
+   "id": "h72",
+   "kind": "html",
+   "en": "Get a Free Program"
+  },
+  {
+   "id": "h73",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "h74",
+   "kind": "html",
+   "en": "Science-backed off-ice training for hockey players. Built by a certified sport scientist and former national-team coach."
+  },
+  {
+   "id": "h75",
+   "kind": "html",
+   "en": "Programs"
+  },
+  {
+   "id": "h76",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com/survey.html\">Free 5-Day PDF</a>"
+  },
+  {
+   "id": "h77",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">8-Week Programs</a>"
+  },
+  {
+   "id": "h78",
+   "kind": "html",
+   "en": "<a href=\"/hockey-training-app.html\">Hockey Training App</a>"
+  },
+  {
+   "id": "h79",
+   "kind": "html",
+   "en": "<a href=\"https://apps.apple.com/us/app/elite-hockey-drills/id6787257275\" data-store=\"ios\">The App — iOS</a>"
+  },
+  {
+   "id": "h80",
+   "kind": "html",
+   "en": "<a href=\"https://play.google.com/store/apps/details?id=com.elitehockeydrills.training\">The App — Android</a>"
+  },
+  {
+   "id": "h81",
+   "kind": "html",
+   "en": "Navigate"
+  },
+  {
+   "id": "h82",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">About</a>"
+  },
+  {
+   "id": "h83",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h84",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Exercise Library</a>"
+  },
+  {
+   "id": "h85",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h86",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h87",
+   "kind": "html",
+   "en": "Connect"
+  },
+  {
+   "id": "h88",
+   "kind": "html",
+   "en": "<a href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">Instagram</a>"
+  },
+  {
+   "id": "h89",
+   "kind": "html",
+   "en": "<a href=\"https://wa.me/420770149067\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>"
+  },
+  {
+   "id": "h90",
+   "kind": "html",
+   "en": "<a href=\"mailto:elitehockeydrills@gmail.com\">Email</a>"
+  },
+  {
+   "id": "h91",
+   "kind": "html",
+   "en": "<span>© 2026 Elite Hockey Drills. All rights reserved.</span>\n    <a class=\"footer-ig\" href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">@elite_hockey_drills</a>"
+  }
+ ]
+}

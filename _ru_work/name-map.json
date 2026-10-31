@@ -1,0 +1,1532 @@
+{
+ "spider-lunge-with-rotation": {
+  "en": "Spider Lunge with Rotation",
+  "ru": "Выпад «паук» с ротацией",
+  "appId": "spider_lunge_with_rotation"
+ },
+ "inchworm-to-push-up": {
+  "en": "Inchworm to Push-Up",
+  "ru": "Гусеница с отжиманием",
+  "appId": "inchworm_to_push_up"
+ },
+ "lateral-squat-shift": {
+  "en": "Lateral Squat Shift",
+  "ru": "Перекаты в боковом приседе",
+  "appId": "lateral_squat_shift"
+ },
+ "a-skip-in-place": {
+  "en": "A-Skip in Place",
+  "ru": "A-скип на месте",
+  "appId": "a_skip_in_place"
+ },
+ "90-90-hip-switch": {
+  "en": "90/90 Hip Switch",
+  "ru": "Переключение 90/90",
+  "appId": "90_90_hip_switch"
+ },
+ "jumping-jacks": {
+  "en": "Jumping Jacks",
+  "ru": "Джампинг-джек",
+  "appId": "jumping_jacks"
+ },
+ "high-knees": {
+  "en": "High Knees",
+  "ru": "Бег с высоким подниманием бедра",
+  "appId": "high_knees"
+ },
+ "butt-kicks": {
+  "en": "Butt Kicks",
+  "ru": "Захлёст голени",
+  "appId": "butt_kicks"
+ },
+ "banded-clamshell": {
+  "en": "Banded Clamshell",
+  "ru": "Ракушка с резинкой",
+  "appId": "banded_clamshell"
+ },
+ "banded-lateral-walk": {
+  "en": "Banded Lateral Walk",
+  "ru": "Боковая ходьба с резинкой",
+  "appId": "banded_lateral_walk"
+ },
+ "t-spine-rotation": {
+  "en": "T-Spine Rotation",
+  "ru": "Ротация грудного отдела",
+  "appId": "t_spine_rotation"
+ },
+ "adductor-rocker": {
+  "en": "Adductor Rocker",
+  "ru": "Перекаты для приводящих",
+  "appId": "adductor_rocker"
+ },
+ "ankle-dorsiflexion-wall": {
+  "en": "Ankle Dorsiflexion (Wall)",
+  "ru": "Дорсифлексия голеностопа (у стены)",
+  "appId": "ankle_dorsiflexion_wall"
+ },
+ "banded-monster-walk": {
+  "en": "Banded Monster Walk",
+  "ru": "Походка монстра с резинкой",
+  "appId": "banded_monster_walk"
+ },
+ "bodyweight-squat": {
+  "en": "Bodyweight Squat",
+  "ru": "Присед с собственным весом",
+  "appId": "bodyweight_squat"
+ },
+ "cossack-squat": {
+  "en": "Cossack Squat",
+  "ru": "Казачий присед",
+  "appId": "cossack_squat"
+ },
+ "banded-front-squat": {
+  "en": "Banded Front Squat",
+  "ru": "Фронтальный присед с эспандером",
+  "appId": "banded_front_squat"
+ },
+ "iso-wall-sit": {
+  "en": "Iso Wall Sit",
+  "ru": "Изометрический стульчик у стены",
+  "appId": "iso_wall_sit"
+ },
+ "banded-squat": {
+  "en": "Banded Squat",
+  "ru": "Присед с эспандером",
+  "appId": "banded_squat"
+ },
+ "deep-squat-hold": {
+  "en": "Deep Squat Hold",
+  "ru": "Удержание глубокого приседа",
+  "appId": "deep_squat_hold"
+ },
+ "glute-bridge": {
+  "en": "Glute Bridge",
+  "ru": "Ягодичный мост",
+  "appId": "glute_bridge"
+ },
+ "band-glute-bridge": {
+  "en": "Band Glute Bridge",
+  "ru": "Ягодичный мост с резинкой",
+  "appId": "band_glute_bridge"
+ },
+ "sl-glute-bridge-band": {
+  "en": "SL Glute Bridge (Band)",
+  "ru": "Ягодичный мост на одной ноге (резинка)",
+  "appId": "sl_glute_bridge_band"
+ },
+ "db-rdl": {
+  "en": "DB RDL",
+  "ru": "Румынская тяга с гантелями",
+  "appId": "db_rdl"
+ },
+ "sl-db-rdl": {
+  "en": "SL DB RDL",
+  "ru": "Румынская тяга на одной ноге с гантелью",
+  "appId": "sl_db_rdl"
+ },
+ "banded-rdl": {
+  "en": "Banded RDL",
+  "ru": "Румынская тяга с эспандером",
+  "appId": "banded_rdl"
+ },
+ "sl-rdl-banded": {
+  "en": "SL RDL (Banded)",
+  "ru": "Румынская тяга на одной ноге (эспандер)",
+  "appId": "sl_rdl_banded"
+ },
+ "banded-hamstring-slides": {
+  "en": "Banded Hamstring Slides",
+  "ru": "Сгибание ног со скольжением с эспандером",
+  "appId": "banded_hamstring_slides"
+ },
+ "bulgarian-split-squat": {
+  "en": "Bulgarian Split Squat",
+  "ru": "Болгарский сплит-присед",
+  "appId": "bulgarian_split_squat"
+ },
+ "db-goblet-lateral-lunge": {
+  "en": "DB Goblet Lateral Lunge",
+  "ru": "Боковой выпад с гантелью (гоблет)",
+  "appId": "db_goblet_lateral_lunge"
+ },
+ "box-step-up-dbs": {
+  "en": "Box Step-Up (DBs)",
+  "ru": "Зашагивание на тумбу (гантели)",
+  "appId": "box_step_up_dbs"
+ },
+ "sl-box-step-down": {
+  "en": "SL Box Step-Down",
+  "ru": "Сход с тумбы на одной ноге",
+  "appId": "sl_box_step_down"
+ },
+ "banded-standing-adduction": {
+  "en": "Banded Standing Adduction",
+  "ru": "Приведение бедра стоя с резинкой",
+  "appId": "banded_standing_adduction"
+ },
+ "split-squat": {
+  "en": "Split Squat",
+  "ru": "Сплит-присед",
+  "appId": "split_squat"
+ },
+ "banded-lateral-lunge": {
+  "en": "Banded Lateral Lunge",
+  "ru": "Боковой выпад с резинкой",
+  "appId": "banded_lateral_lunge"
+ },
+ "sl-balance-eyes-closed": {
+  "en": "SL Balance — Eyes Closed",
+  "ru": "Баланс на одной ноге — глаза закрыты",
+  "appId": "sl_balance_eyes_closed"
+ },
+ "push-up": {
+  "en": "Push-Up",
+  "ru": "Отжимание",
+  "appId": "push_up"
+ },
+ "db-floor-press": {
+  "en": "DB Floor Press",
+  "ru": "Жим гантелей с пола",
+  "appId": "db_floor_press"
+ },
+ "half-kneeling-db-press": {
+  "en": "Half-Kneeling DB Press",
+  "ru": "Жим гантели стоя на одном колене",
+  "appId": "half_kneeling_db_press"
+ },
+ "db-push-up-to-row": {
+  "en": "DB Push-Up to Row",
+  "ru": "Отжимание с тягой гантели",
+  "appId": "db_push_up_to_row"
+ },
+ "plank-to-push-up": {
+  "en": "Plank to Push-Up",
+  "ru": "Переход планка — отжимание",
+  "appId": "plank_to_push_up"
+ },
+ "deficit-push-up": {
+  "en": "Deficit Push-Up",
+  "ru": "Отжимание с дефицитом",
+  "appId": "deficit_push_up"
+ },
+ "archer-push-up": {
+  "en": "Archer Push-Up",
+  "ru": "Отжимание «лучник»",
+  "appId": "archer_push_up"
+ },
+ "banded-chest-press": {
+  "en": "Banded Chest Press",
+  "ru": "Жим от груди с эспандером",
+  "appId": "banded_chest_press"
+ },
+ "push-up-to-reach": {
+  "en": "Push-Up to Reach",
+  "ru": "Отжимание с вытягиванием руки",
+  "appId": "push_up_to_reach"
+ },
+ "explosive-push-up": {
+  "en": "Explosive Push-Up",
+  "ru": "Взрывное отжимание",
+  "appId": "explosive_push_up"
+ },
+ "band-chest-pass": {
+  "en": "Band Chest Pass",
+  "ru": "Пас от груди с эспандером",
+  "appId": "band_chest_pass"
+ },
+ "db-push-press": {
+  "en": "DB Push Press",
+  "ru": "Жим гантелей толчком",
+  "appId": "db_push_press"
+ },
+ "band-pull-apart": {
+  "en": "Band Pull-Apart",
+  "ru": "Разведение эспандера",
+  "appId": "band_pull_apart"
+ },
+ "band-pull-apart-speed": {
+  "en": "Band Pull-Apart Speed",
+  "ru": "Разведение эспандера в темпе",
+  "appId": "band_pull_apart_speed"
+ },
+ "band-row": {
+  "en": "Band Row",
+  "ru": "Тяга эспандера",
+  "appId": "band_row"
+ },
+ "hanging-bar-hold": {
+  "en": "Hanging / Bar Hold",
+  "ru": "Вис / удержание на перекладине",
+  "appId": "hanging_bar_hold"
+ },
+ "band-face-pull": {
+  "en": "Band Face Pull",
+  "ru": "Тяга к лицу с эспандером",
+  "appId": "band_face_pull"
+ },
+ "banded-y-t-w": {
+  "en": "Banded Y-T-W",
+  "ru": "Y-T-W с эспандером",
+  "appId": "banded_y_t_w"
+ },
+ "banded-wrist-work": {
+  "en": "Banded Wrist Work",
+  "ru": "Работа на запястья с эспандером",
+  "appId": "banded_wrist_work"
+ },
+ "banded-shoulder-cuff-rotation": {
+  "en": "Banded Shoulder Cuff Rotation",
+  "ru": "Ротация плеча с эспандером (манжета)",
+  "appId": "banded_shoulder_cuff_rotation"
+ },
+ "renegade-row": {
+  "en": "Renegade Row",
+  "ru": "Тяга ренегата",
+  "appId": "renegade_row"
+ },
+ "dead-bug": {
+  "en": "Dead Bug",
+  "ru": "Мёртвый жук",
+  "appId": "dead_bug"
+ },
+ "dead-bug-with-db": {
+  "en": "Dead Bug with DB",
+  "ru": "Мёртвый жук с гантелью",
+  "appId": "dead_bug_with_db"
+ },
+ "side-plank": {
+  "en": "Side Plank",
+  "ru": "Боковая планка",
+  "appId": "side_plank"
+ },
+ "side-plank-with-reach": {
+  "en": "Side Plank with Reach",
+  "ru": "Боковая планка с протягиванием руки",
+  "appId": "side_plank_with_reach"
+ },
+ "hollow-rock": {
+  "en": "Hollow Rock",
+  "ru": "Качалка в лодочке",
+  "appId": "hollow_rock"
+ },
+ "pallof-press": {
+  "en": "Pallof Press",
+  "ru": "Жим Паллофа",
+  "appId": "pallof_press"
+ },
+ "tall-plank-db-drag": {
+  "en": "Tall Plank DB Drag",
+  "ru": "Протяжка гантели в планке на прямых руках",
+  "appId": "tall_plank_db_drag"
+ },
+ "bear-crawl": {
+  "en": "Bear Crawl",
+  "ru": "Медвежья походка",
+  "appId": "bear_crawl"
+ },
+ "bear-crawl-variations": {
+  "en": "Bear Crawl Variations",
+  "ru": "Медвежья походка (варианты)",
+  "appId": "bear_crawl_variations"
+ },
+ "copenhagen-plank-long": {
+  "en": "Copenhagen Plank — Long",
+  "ru": "Копенгагенская планка — длинный рычаг",
+  "appId": "copenhagen_plank_long"
+ },
+ "banded-chop-lift": {
+  "en": "Banded Chop / Lift",
+  "ru": "Чоп и лифт с эспандером",
+  "appId": "banded_chop_lift"
+ },
+ "hanging-knee-raise": {
+  "en": "Hanging Knee Raise",
+  "ru": "Подъём коленей в висе",
+  "appId": "hanging_knee_raise"
+ },
+ "dragon-flag-negatives": {
+  "en": "Dragon Flag Negatives",
+  "ru": "Флаг дракона — негативы",
+  "appId": "dragon_flag_negatives"
+ },
+ "pallof-march": {
+  "en": "Pallof March",
+  "ru": "Марш Паллофа",
+  "appId": "pallof_march"
+ },
+ "hanging-straight-leg-raise": {
+  "en": "Hanging Straight-Leg Raise",
+  "ru": "Подъём прямых ног в висе",
+  "appId": "hanging_straight_leg_raise"
+ },
+ "plank-shoulder-tap": {
+  "en": "Plank Shoulder Tap",
+  "ru": "Касания плеч в планке",
+  "appId": "plank_shoulder_tap"
+ },
+ "bear-crawl-with-dbs": {
+  "en": "Bear Crawl with DBs",
+  "ru": "Медвежья походка с гантелями",
+  "appId": "bear_crawl_with_dbs"
+ },
+ "skater-hop-stick-it": {
+  "en": "Skater Hop — Stick It",
+  "ru": "Прыжок «конькобежец» с фиксацией",
+  "appId": "skater_hop_stick_it"
+ },
+ "broad-jump": {
+  "en": "Broad Jump",
+  "ru": "Прыжок в длину с места",
+  "appId": "broad_jump"
+ },
+ "squat-to-tuck-jump": {
+  "en": "Squat to Tuck Jump",
+  "ru": "Выпрыгивание из приседа с группировкой",
+  "appId": "squat_to_tuck_jump"
+ },
+ "broad-jump-sprint-10m": {
+  "en": "Broad Jump → Sprint 10m",
+  "ru": "Прыжок в длину с места → спринт 10 м",
+  "appId": "broad_jump_sprint_10m"
+ },
+ "lateral-skater-bound": {
+  "en": "Lateral Skater Bound",
+  "ru": "Боковой многоскок «конькобежец»",
+  "appId": "lateral_skater_bound"
+ },
+ "skater-hop-complex": {
+  "en": "Skater Hop Complex",
+  "ru": "Комплекс прыжков «конькобежец»",
+  "appId": "skater_hop_complex"
+ },
+ "multi-direction-bound": {
+  "en": "Multi-Direction Bound",
+  "ru": "Многоскок в разных направлениях",
+  "appId": "multi_direction_bound"
+ },
+ "ankle-hop-stick": {
+  "en": "Ankle Hop Stick",
+  "ru": "Прыжок на стопах с фиксацией",
+  "appId": "ankle_hop_stick"
+ },
+ "single-leg-pogo-hops": {
+  "en": "Single-Leg Pogo Hops",
+  "ru": "Прыжки «пого» на одной ноге",
+  "appId": "single_leg_pogo_hops"
+ },
+ "high-low-pogo-combo": {
+  "en": "High-Low Pogo Combo",
+  "ru": "Прыжки «пого» высокие-низкие",
+  "appId": "high_low_pogo_combo"
+ },
+ "drop-squat": {
+  "en": "Drop Squat",
+  "ru": "Дроп-присед",
+  "appId": "drop_squat"
+ },
+ "depth-drop-low-box": {
+  "en": "Depth Drop (Low Box)",
+  "ru": "Соскок в глубину (низкая тумба)",
+  "appId": "depth_drop_low_box"
+ },
+ "banded-squat-jump": {
+  "en": "Banded Squat Jump",
+  "ru": "Выпрыгивание из приседа с эспандером",
+  "appId": "banded_squat_jump"
+ },
+ "contrast-jump": {
+  "en": "Contrast Jump",
+  "ru": "Контрастный прыжок",
+  "appId": "contrast_jump"
+ },
+ "squat-to-broad-jump": {
+  "en": "Squat to Broad Jump",
+  "ru": "Прыжок в длину из приседа",
+  "appId": "squat_to_broad_jump"
+ },
+ "continuous-lateral-bound": {
+  "en": "Continuous Lateral Bound",
+  "ru": "Непрерывный боковой многоскок",
+  "appId": "continuous_lateral_bound"
+ },
+ "crossover-step-bound": {
+  "en": "Crossover Step Bound",
+  "ru": "Многоскок скрестным шагом",
+  "appId": "crossover_step_bound"
+ },
+ "lateral-depth-drop-to-bound": {
+  "en": "Lateral Depth Drop to Bound",
+  "ru": "Боковой соскок в многоскок",
+  "appId": "lateral_depth_drop_to_bound"
+ },
+ "low-box-hop-up-stick": {
+  "en": "Low Box Hop-Up — Stick",
+  "ru": "Прыжок на низкую тумбу — фиксация",
+  "appId": "low_box_hop_up_stick"
+ },
+ "sl-cmj-stick": {
+  "en": "SL CMJ Stick",
+  "ru": "Прыжок с подседом на одной ноге — фиксация",
+  "appId": "sl_cmj_stick"
+ },
+ "hurdle-hops-continuous": {
+  "en": "Hurdle Hops — Continuous",
+  "ru": "Прыжки через барьеры — серией",
+  "appId": "hurdle_hops_continuous"
+ },
+ "wall-drive-hold": {
+  "en": "Wall Drive Hold",
+  "ru": "Удержание бега у стены",
+  "appId": "wall_drive_hold"
+ },
+ "a-skip-moving": {
+  "en": "A-Skip Moving",
+  "ru": "A-скип в движении",
+  "appId": "a_skip_moving"
+ },
+ "reactive-5m-sprint": {
+  "en": "Reactive 5m Sprint",
+  "ru": "Спринт 5 м по сигналу",
+  "appId": "reactive_5m_sprint"
+ },
+ "a-skip-march-combo": {
+  "en": "A-Skip + March Combo",
+  "ru": "A-скип + A-марш",
+  "appId": "a_skip_march_combo"
+ },
+ "band-resisted-start": {
+  "en": "Band-Resisted Start",
+  "ru": "Старт с эспандером",
+  "appId": "band_resisted_start"
+ },
+ "falling-start-sprint": {
+  "en": "Falling Start Sprint",
+  "ru": "Старт из падения",
+  "appId": "falling_start"
+ },
+ "crossover-step": {
+  "en": "Crossover Step",
+  "ru": "Скрестный шаг",
+  "appId": "crossover_step"
+ },
+ "reactive-mirror-sprint": {
+  "en": "Reactive Mirror Sprint",
+  "ru": "Зеркальный спринт",
+  "appId": "reactive_mirror_sprint"
+ },
+ "resisted-free-sprint": {
+  "en": "Resisted → Free Sprint",
+  "ru": "Спринт с сопротивлением → свободный",
+  "appId": "resisted_free_sprint"
+ },
+ "mirror-sprint-game": {
+  "en": "Mirror Sprint Game",
+  "ru": "Игра «зеркало» в спринте",
+  "appId": "mirror_sprint_game"
+ },
+ "fast-feet-ladder-equiv": {
+  "en": "Fast Feet / Ladder Equiv",
+  "ru": "Быстрые ноги / замена лестницы",
+  "appId": "fast_feet_ladder_equiv"
+ },
+ "a-skip-b-skip": {
+  "en": "A-Skip + B-Skip",
+  "ru": "A-скип + B-скип",
+  "appId": "a_skip_b_skip"
+ },
+ "reactive-lateral-start": {
+  "en": "Reactive Lateral Start",
+  "ru": "Боковой старт по сигналу",
+  "appId": "reactive_lateral_start"
+ },
+ "30m-fly-sprint": {
+  "en": "30m Fly Sprint",
+  "ru": "Спринт с ходу 30 м",
+  "appId": "30m_fly_sprint"
+ },
+ "5-10-5-pro-agility": {
+  "en": "5-10-5 Pro-Agility",
+  "ru": "Челночный бег 5-10-5",
+  "appId": "pro_agility_505"
+ },
+ "reactive-4-cone": {
+  "en": "Reactive 4-Cone",
+  "ru": "4 конуса по сигналу",
+  "appId": "reactive_4_cone"
+ },
+ "hill-stride": {
+  "en": "Hill Stride",
+  "ru": "Пробежка в горку",
+  "appId": "hill_stride"
+ },
+ "flying-10m-sprint": {
+  "en": "Flying 10m Sprint",
+  "ru": "Спринт с ходу 10 м",
+  "appId": "flying_10m_sprint"
+ },
+ "crossover-step-to-sprint": {
+  "en": "Crossover Step to Sprint",
+  "ru": "Скрестный шаг в спринт",
+  "appId": "crossover_step_to_sprint"
+ },
+ "hill-sprint": {
+  "en": "Hill Sprint",
+  "ru": "Спринт в горку",
+  "appId": "hill_sprint"
+ },
+ "a-skip-resisted": {
+  "en": "A-Skip Resisted",
+  "ru": "A-скип с сопротивлением",
+  "appId": "a_skip_resisted"
+ },
+ "30-sec-shuttle": {
+  "en": "30-Sec Shuttle",
+  "ru": "Челнок 30 с",
+  "appId": "30_sec_shuttle"
+ },
+ "farmer-carry": {
+  "en": "Farmer Carry",
+  "ru": "Прогулка фермера",
+  "appId": "farmer_carry"
+ },
+ "db-suitcase-carry": {
+  "en": "DB Suitcase Carry",
+  "ru": "Переноска «чемодан» с гантелью",
+  "appId": "db_suitcase_carry"
+ },
+ "farmer-suitcase-complex": {
+  "en": "Farmer + Suitcase Complex",
+  "ru": "Комплекс: фермер + «чемодан»",
+  "appId": "farmer_suitcase_complex"
+ },
+ "suitcase-get-up": {
+  "en": "Suitcase Get-Up",
+  "ru": "Подъём с пола «чемодан»",
+  "appId": "suitcase_get_up"
+ },
+ "farmer-carry-banded": {
+  "en": "Farmer Carry (Banded)",
+  "ru": "Прогулка фермера (с эспандером)",
+  "appId": "farmer_carry_banded"
+ },
+ "carry-complex-farmer-suitcase-overhead": {
+  "en": "Carry Complex (Farmer + Suitcase + Overhead)",
+  "ru": "Комплекс переносок (фермер + «чемодан» + над головой)",
+  "appId": "carry_complex_farmer_suitcase_overhead"
+ },
+ "rotational-med-ball-toss": {
+  "en": "Rotational Med Ball Toss",
+  "ru": "Ротационный бросок медбола",
+  "appId": "rotational_med_ball_toss"
+ },
+ "rotational-med-ball-side-toss": {
+  "en": "Rotational Med Ball Side Toss",
+  "ru": "Боковой ротационный бросок медбола",
+  "appId": "rotational_med_ball_side_toss"
+ },
+ "banded-rotational-press": {
+  "en": "Banded Rotational Press",
+  "ru": "Ротационный жим с эспандером",
+  "appId": "banded_rotational_press"
+ },
+ "banded-rotational-throw-wall": {
+  "en": "Banded Rotational Throw (Wall)",
+  "ru": "Ротационный бросок с эспандером (стена)",
+  "appId": "banded_rotational_throw_wall"
+ },
+ "band-rotational-scoop-toss": {
+  "en": "Band Rotational Scoop Toss",
+  "ru": "Ротационный бросок снизу с эспандером",
+  "appId": "band_rotational_scoop_toss"
+ },
+ "db-thruster": {
+  "en": "DB Thruster",
+  "ru": "Трастер с гантелями",
+  "appId": "db_thruster"
+ },
+ "db-complex": {
+  "en": "DB Complex",
+  "ru": "Комплекс с гантелями",
+  "appId": "db_complex"
+ },
+ "combine-circuit": {
+  "en": "Combine Circuit",
+  "ru": "Круг «комбайн»",
+  "appId": "combine_circuit"
+ },
+ "jump-rope-intervals": {
+  "en": "Jump Rope — Intervals",
+  "ru": "Скакалка — интервалы",
+  "appId": "jump_rope_intervals"
+ },
+ "jump-rope-speed": {
+  "en": "Jump Rope — Speed",
+  "ru": "Скакалка — скорость",
+  "appId": "jump_rope_speed"
+ },
+ "tempo-bw-circuit": {
+  "en": "Tempo BW Circuit",
+  "ru": "Темповый круг с собственным весом",
+  "appId": "tempo_bw_circuit"
+ },
+ "repeat-tempo-intervals": {
+  "en": "Repeat Tempo Intervals",
+  "ru": "Повторные темповые интервалы",
+  "appId": "repeat_tempo_intervals"
+ },
+ "sprint-intervals-15s": {
+  "en": "Sprint Intervals 15s",
+  "ru": "Спринт-интервалы 15 с",
+  "appId": "sprint_intervals_15s"
+ },
+ "repeat-sprint-ability": {
+  "en": "Repeat Sprint Ability",
+  "ru": "Повторные спринты",
+  "appId": "repeat_sprint_ability"
+ },
+ "aerobic-circuit-zone-2": {
+  "en": "Aerobic Circuit (Zone 2)",
+  "ru": "Аэробный круг (зона 2)",
+  "appId": "aerobic_circuit_zone_2"
+ },
+ "repeat-efforts-shift-simulation": {
+  "en": "Repeat Efforts — Shift Simulation",
+  "ru": "Повторные усилия — имитация смены",
+  "appId": "repeat_efforts_shift_simulation"
+ },
+ "mirror-game-free-play": {
+  "en": "Mirror Game / Free Play",
+  "ru": "Игра «зеркало» / свободная игра",
+  "appId": "mirror_game_free_play"
+ },
+ "free-play-1v1-game": {
+  "en": "Free Play / 1v1 Game",
+  "ru": "Свободная игра / 1 на 1",
+  "appId": "free_play_1v1_game"
+ },
+ "battle-game-1v1": {
+  "en": "Battle Game / 1v1",
+  "ru": "Игра в борьбу / 1 на 1",
+  "appId": "battle_game_1v1"
+ },
+ "free-play-with-intent": {
+  "en": "Free Play with Intent",
+  "ru": "Свободная игра с задачей",
+  "appId": "free_play_with_intent"
+ },
+ "slow-walk-with-nose-breathing": {
+  "en": "Slow Walk with Nose Breathing",
+  "ru": "Медленная ходьба с носовым дыханием",
+  "appId": "slow_walk_with_nose_breathing"
+ },
+ "figure-4-stretch": {
+  "en": "Figure-4 Stretch",
+  "ru": "Растяжка «фигура 4»",
+  "appId": "figure_4_stretch"
+ },
+ "cat-cow": {
+  "en": "Cat-Cow",
+  "ru": "Кошка-корова",
+  "appId": "cat_cow"
+ },
+ "supine-spinal-twist": {
+  "en": "Supine Spinal Twist",
+  "ru": "Скручивание лёжа на спине",
+  "appId": "supine_spinal_twist"
+ },
+ "hip-groin-flow": {
+  "en": "Hip / Groin Flow",
+  "ru": "Связка для таза и паха",
+  "appId": "hip_groin_flow"
+ },
+ "20m-sprint": {
+  "en": "20m Sprint",
+  "ru": "Спринт 20 м",
+  "appId": "20m_sprint"
+ },
+ "20m-flying-sprint": {
+  "en": "20m Flying Sprint",
+  "ru": "Спринт с хода 20 м",
+  "appId": "sprint_fly_20m"
+ },
+ "groin-adductor-slide": {
+  "en": "Groin Adductor Slide",
+  "ru": "Скольжение для приводящих",
+  "appId": "groin_adductor_slide"
+ },
+ "inchworm-walk": {
+  "en": "Inchworm Walk",
+  "ru": "Гусеница",
+  "appId": "inchworm_walk"
+ },
+ "barbell-back-squat": {
+  "en": "Barbell Back Squat",
+  "ru": "Присед со штангой",
+  "appId": "back_squat"
+ },
+ "calf-raise-iso-hold": {
+  "en": "Calf Raise Iso Hold",
+  "ru": "Удержание подъёма на носки",
+  "appId": "calf_raise_iso"
+ },
+ "front-squat": {
+  "en": "Front Squat",
+  "ru": "Фронтальный присед",
+  "appId": "front_squat"
+ },
+ "hang-power-clean": {
+  "en": "Hang Power Clean",
+  "ru": "Взятие штанги на грудь из виса",
+  "appId": "hang_power_clean"
+ },
+ "hip-airplane-hold": {
+  "en": "Hip Airplane Hold",
+  "ru": "Удержание «самолёт»",
+  "appId": "hip_airplane_hold"
+ },
+ "leg-extension-machine": {
+  "en": "Leg Extension (Machine)",
+  "ru": "Разгибание ног (тренажёр)",
+  "appId": "leg_extension"
+ },
+ "leg-press": {
+  "en": "Leg Press",
+  "ru": "Жим ногами",
+  "appId": "leg_press"
+ },
+ "pause-squat": {
+  "en": "Pause Squat",
+  "ru": "Присед с паузой",
+  "appId": "pause_squat"
+ },
+ "spanish-squat-isometric": {
+  "en": "Spanish Squat (Isometric)",
+  "ru": "Испанский присед (изометрия)",
+  "appId": "spanish_squat"
+ },
+ "standing-calf-raise-dbs": {
+  "en": "Standing Calf Raise (DBs)",
+  "ru": "Подъём на носки стоя (с гантелями)",
+  "appId": "calf_raise"
+ },
+ "tempo-squat-3-1-1": {
+  "en": "Tempo Squat (3-1-1)",
+  "ru": "Темповый присед (3-1-1)",
+  "appId": "tempo_squat"
+ },
+ "barbell-hip-thrust": {
+  "en": "Barbell Hip Thrust",
+  "ru": "Ягодичный мост со штангой",
+  "appId": "hip_thrust"
+ },
+ "conventional-deadlift": {
+  "en": "Conventional Deadlift",
+  "ru": "Классическая становая тяга",
+  "appId": "conventional_deadlift"
+ },
+ "hamstring-walkout": {
+  "en": "Hamstring Walkout",
+  "ru": "Выходы на пятках из моста",
+  "appId": "hamstring_walkout"
+ },
+ "leg-curl-machine": {
+  "en": "Leg Curl (Machine)",
+  "ru": "Сгибание ног (тренажёр)",
+  "appId": "leg_curl"
+ },
+ "nordic-hamstring-curl": {
+  "en": "Nordic Hamstring Curl",
+  "ru": "Нордические сгибания",
+  "appId": "nordic_curl"
+ },
+ "reverse-nordic-hold": {
+  "en": "Reverse Nordic Hold",
+  "ru": "Удержание обратных нордических",
+  "appId": "reverse_nordic_hold"
+ },
+ "romanian-deadlift-rdl": {
+  "en": "Romanian Deadlift (RDL)",
+  "ru": "Румынская тяга (RDL)",
+  "appId": "romanian_deadlift"
+ },
+ "russian-kettlebell-swing": {
+  "en": "Russian Kettlebell Swing",
+  "ru": "Русские махи гирей",
+  "appId": "kettlebell_swing"
+ },
+ "single-leg-glute-bridge": {
+  "en": "Single-Leg Glute Bridge",
+  "ru": "Ягодичный мост на одной ноге",
+  "appId": "glute_bridge_single_leg"
+ },
+ "single-leg-glute-bridge-hold": {
+  "en": "Single-Leg Glute Bridge Hold",
+  "ru": "Удержание ягодичного моста на одной ноге",
+  "appId": "single_leg_glute_bridge_hold"
+ },
+ "single-leg-rdl": {
+  "en": "Single-Leg RDL",
+  "ru": "Румынская тяга на одной ноге",
+  "appId": "single_leg_rdl"
+ },
+ "single-leg-rdl-hold": {
+  "en": "Single-Leg RDL Hold",
+  "ru": "Удержание румынской тяги на одной ноге",
+  "appId": "single_leg_rdl_hold"
+ },
+ "sumo-deadlift": {
+  "en": "Sumo Deadlift",
+  "ru": "Становая тяга сумо",
+  "appId": "sumo_deadlift"
+ },
+ "trap-bar-deadlift": {
+  "en": "Trap Bar Deadlift",
+  "ru": "Становая тяга с трэп-грифом",
+  "appId": "trap_bar_deadlift"
+ },
+ "cossack-squat-hold": {
+  "en": "Cossack Squat Hold",
+  "ru": "Удержание казачьего приседа",
+  "appId": "cossack_squat_hold"
+ },
+ "crossover-lunge-dbs": {
+  "en": "Crossover Lunge (DBs)",
+  "ru": "Перекрёстный выпад (с гантелями)",
+  "appId": "crossover_lunge"
+ },
+ "dumbbell-step-up": {
+  "en": "Dumbbell Step-Up",
+  "ru": "Зашагивание с гантелями",
+  "appId": "step_up"
+ },
+ "lateral-step-up": {
+  "en": "Lateral Step-Up",
+  "ru": "Боковое зашагивание",
+  "appId": "lateral_step_up"
+ },
+ "paused-split-squat-isometric": {
+  "en": "Paused Split Squat (Isometric)",
+  "ru": "Сплит-присед с паузой (изометрия)",
+  "appId": "pause_split_squat"
+ },
+ "poliquin-step-up-dbs": {
+  "en": "Poliquin Step-Up (DBs)",
+  "ru": "Зашагивание Поликвина (с гантелями)",
+  "appId": "poliquin_step_up"
+ },
+ "single-leg-press": {
+  "en": "Single-Leg Press",
+  "ru": "Жим одной ногой",
+  "appId": "single_leg_press"
+ },
+ "single-leg-wall-sit": {
+  "en": "Single-Leg Wall Sit",
+  "ru": "Стульчик у стены на одной ноге",
+  "appId": "single_leg_wall_sit"
+ },
+ "skater-squat": {
+  "en": "Skater Squat",
+  "ru": "Присед «конькобежец»",
+  "appId": "skater_squat"
+ },
+ "skater-squat-bottom-hold": {
+  "en": "Skater Squat Bottom Hold",
+  "ru": "Удержание в приседе «конькобежец»",
+  "appId": "skater_squat_hold"
+ },
+ "band-external-rotation": {
+  "en": "Band External Rotation",
+  "ru": "Наружная ротация с эспандером",
+  "appId": "external_rotation_band"
+ },
+ "barbell-bench-press": {
+  "en": "Barbell Bench Press",
+  "ru": "Жим штанги лёжа",
+  "appId": "bench_press"
+ },
+ "dead-hang": {
+  "en": "Dead Hang",
+  "ru": "Вис на перекладине",
+  "appId": "dead_hang"
+ },
+ "dumbbell-shoulder-press": {
+  "en": "Dumbbell Shoulder Press",
+  "ru": "Жим гантелей над головой",
+  "appId": "dumbbell_shoulder_press"
+ },
+ "incline-push-up": {
+  "en": "Incline Push-Up",
+  "ru": "Отжимание с руками на возвышении",
+  "appId": "incline_push_up"
+ },
+ "overhead-press": {
+  "en": "Overhead Press",
+  "ru": "Жим над головой",
+  "appId": "overhead_press"
+ },
+ "plate-pinch": {
+  "en": "Plate Pinch",
+  "ru": "Щипковый хват блинов",
+  "appId": "plate_pinch"
+ },
+ "push-up-challenge-60s": {
+  "en": "Push-Up Challenge (60s)",
+  "ru": "Челлендж отжиманий (60 с)",
+  "appId": "push_up_challenge"
+ },
+ "push-up-hold-isometric": {
+  "en": "Push-Up Hold (Isometric)",
+  "ru": "Удержание в отжимании (изометрия)",
+  "appId": "push_up_hold"
+ },
+ "tricep-dip": {
+  "en": "Tricep Dip",
+  "ru": "Обратные отжимания от скамьи",
+  "appId": "tricep_dip"
+ },
+ "wall-slide": {
+  "en": "Wall Slide",
+  "ru": "Скольжение по стене",
+  "appId": "wall_slide"
+ },
+ "band-assisted-pull-up": {
+  "en": "Band-Assisted Pull-Up",
+  "ru": "Подтягивание с эспандером",
+  "appId": "band_assisted_pull_up"
+ },
+ "barbell-bent-over-row": {
+  "en": "Barbell Bent-Over Row",
+  "ru": "Тяга штанги в наклоне",
+  "appId": "barbell_row"
+ },
+ "barbell-bicep-curl": {
+  "en": "Barbell Bicep Curl",
+  "ru": "Сгибание рук со штангой",
+  "appId": "bicep_curl"
+ },
+ "chest-supported-dumbbell-row": {
+  "en": "Chest-Supported Dumbbell Row",
+  "ru": "Тяга гантелей с упором грудью",
+  "appId": "chest_supported_row"
+ },
+ "chin-up": {
+  "en": "Chin-Up",
+  "ru": "Подтягивание обратным хватом",
+  "appId": "chin_up"
+ },
+ "dumbbell-row": {
+  "en": "Dumbbell Row",
+  "ru": "Тяга гантели",
+  "appId": "dumbbell_row"
+ },
+ "hammer-curl": {
+  "en": "Hammer Curl",
+  "ru": "Сгибание рук «молот»",
+  "appId": "hammer_curl"
+ },
+ "inverted-row": {
+  "en": "Inverted Row",
+  "ru": "Горизонтальные подтягивания",
+  "appId": "inverted_row"
+ },
+ "lat-pulldown": {
+  "en": "Lat Pulldown",
+  "ru": "Тяга верхнего блока",
+  "appId": "lat_pulldown"
+ },
+ "pull-up": {
+  "en": "Pull-Up",
+  "ru": "Подтягивание",
+  "appId": "pull_up"
+ },
+ "ring-row-inverted-row": {
+  "en": "Ring Row / Inverted Row",
+  "ru": "Тяга на кольцах / горизонтальные подтягивания",
+  "appId": "ring_row"
+ },
+ "scapular-pull-up": {
+  "en": "Scapular Pull-Up",
+  "ru": "Лопаточное подтягивание",
+  "appId": "scapular_pull_up"
+ },
+ "seated-cable-row": {
+  "en": "Seated Cable Row",
+  "ru": "Тяга нижнего блока сидя",
+  "appId": "cable_row"
+ },
+ "towel-pull-up-hold": {
+  "en": "Towel Pull-Up Hold",
+  "ru": "Удержание в подтягивании на полотенцах",
+  "appId": "towel_pull_up_hold"
+ },
+ "wrist-roller": {
+  "en": "Wrist Roller",
+  "ru": "Кистевой ролик",
+  "appId": "wrist_roller"
+ },
+ "ab-wheel-rollout": {
+  "en": "Ab Wheel Rollout",
+  "ru": "Ролик для пресса",
+  "appId": "ab_wheel_rollout"
+ },
+ "bird-dog": {
+  "en": "Bird Dog",
+  "ru": "Птица-собака",
+  "appId": "bird_dog"
+ },
+ "dragon-flag": {
+  "en": "Dragon Flag",
+  "ru": "Флаг дракона",
+  "appId": "dragon_flag"
+ },
+ "l-sit-hold": {
+  "en": "L-Sit Hold",
+  "ru": "Удержание «уголок»",
+  "appId": "l_sit"
+ },
+ "lateral-bear-crawl": {
+  "en": "Lateral Bear Crawl",
+  "ru": "Боковая медвежья походка",
+  "appId": "lateral_bear_crawl"
+ },
+ "plank-challenge-max-hold": {
+  "en": "Plank Challenge — Max Hold",
+  "ru": "Челлендж планки — макс. удержание",
+  "appId": "plank_challenge"
+ },
+ "russian-twist": {
+  "en": "Russian Twist",
+  "ru": "Русский твист",
+  "appId": "russian_twist"
+ },
+ "stir-the-pot-swiss-ball": {
+  "en": "Stir the Pot (Swiss Ball)",
+  "ru": "Помешивание на фитболе",
+  "appId": "stir_the_pot"
+ },
+ "toes-to-bar": {
+  "en": "Toes-to-Bar",
+  "ru": "Носки к перекладине",
+  "appId": "toes_to_bar"
+ },
+ "v-up": {
+  "en": "V-Up",
+  "ru": "Складка (V-up)",
+  "appId": "v_up"
+ },
+ "wrist-curl": {
+  "en": "Wrist Curl",
+  "ru": "Сгибание запястий",
+  "appId": "wrist_curl"
+ },
+ "ankle-hops": {
+  "en": "Ankle Hops",
+  "ru": "Прыжки на стопах",
+  "appId": "ankle_hops"
+ },
+ "box-jump": {
+  "en": "Box Jump",
+  "ru": "Прыжок на тумбу",
+  "appId": "box_jump"
+ },
+ "explosive-step-up-jump": {
+  "en": "Explosive Step-Up Jump",
+  "ru": "Взрывное зашагивание с прыжком",
+  "appId": "explosive_step_up"
+ },
+ "trap-bar-jump": {
+  "en": "Trap Bar Jump",
+  "ru": "Прыжок с трэп-грифом",
+  "appId": "trap_bar_jump"
+ },
+ "vertical-jump": {
+  "en": "Vertical Jump",
+  "ru": "Прыжок вверх",
+  "appId": "vertical_jump"
+ },
+ "10m-acceleration-sprint": {
+  "en": "10m Acceleration Sprint",
+  "ru": "Ускорение 10 м",
+  "appId": "acceleration_drill_10m"
+ },
+ "3-point-start-sprint": {
+  "en": "3-Point Start Sprint",
+  "ru": "Спринт со старта с 3 точек",
+  "appId": "three_point_start"
+ },
+ "40m-sprint-intervals": {
+  "en": "40m Sprint Intervals",
+  "ru": "Спринт-интервалы 40 м",
+  "appId": "sprint_intervals_40m"
+ },
+ "agility-ladder-high-knees": {
+  "en": "Agility Ladder — High Knees",
+  "ru": "Координационная лестница — высокое бедро",
+  "appId": "ladder_high_knees"
+ },
+ "carioca": {
+  "en": "Carioca",
+  "ru": "Кариока",
+  "appId": "carioca"
+ },
+ "curved-sprint": {
+  "en": "Curved Sprint",
+  "ru": "Спринт по дуге",
+  "appId": "curved_sprint"
+ },
+ "l-drill": {
+  "en": "L-Drill",
+  "ru": "L-тест",
+  "appId": "l_drill"
+ },
+ "reactive-agility-drill": {
+  "en": "Reactive Agility Drill",
+  "ru": "Реактивная ловкость",
+  "appId": "reactive_agility"
+ },
+ "resisted-sprint": {
+  "en": "Resisted Sprint",
+  "ru": "Спринт с сопротивлением",
+  "appId": "resisted_sprint"
+ },
+ "sled-push": {
+  "en": "Sled Push",
+  "ru": "Толкание саней",
+  "appId": "sled_push"
+ },
+ "stair-sprints": {
+  "en": "Stair Sprints",
+  "ru": "Спринты по лестнице",
+  "appId": "stair_sprints"
+ },
+ "t-drill": {
+  "en": "T-Drill",
+  "ru": "Т-тест",
+  "appId": "cone_t_drill"
+ },
+ "agility-ladder-crossover-step": {
+  "en": "Agility Ladder — Crossover Step",
+  "ru": "Координационная лестница — перекрёстный шаг",
+  "appId": "ladder_crossover_step"
+ },
+ "agility-ladder-ickey-shuffle": {
+  "en": "Agility Ladder — Ickey Shuffle",
+  "ru": "Координационная лестница — айки-шаффл",
+  "appId": "ladder_ickey_shuffle"
+ },
+ "agility-ladder-lateral-in-out": {
+  "en": "Agility Ladder — Lateral In-Out",
+  "ru": "Координационная лестница — боком внутрь-наружу",
+  "appId": "ladder_lateral_in_out"
+ },
+ "backcheck-simulation-sprint": {
+  "en": "Backcheck Simulation Sprint",
+  "ru": "Спринт «возврат в оборону»",
+  "appId": "backcheck_sprint"
+ },
+ "backward-skater-squat": {
+  "en": "Backward Skater Squat",
+  "ru": "Присед «конькобежец» назад",
+  "appId": "backward_skater_squat"
+ },
+ "faceoff-stance-explosive-start": {
+  "en": "Faceoff Stance Explosive Start",
+  "ru": "Взрывной старт из стойки на вбрасывании",
+  "appId": "faceoff_explosive_start"
+ },
+ "forward-stride-simulation-with-band": {
+  "en": "Forward Stride Simulation with Band",
+  "ru": "Имитация шага вперёд с эспандером",
+  "appId": "forward_stride_band"
+ },
+ "lateral-crossover-step-up": {
+  "en": "Lateral Crossover Step-Up",
+  "ru": "Боковое перекрёстное зашагивание",
+  "appId": "lateral_crossover_step_up"
+ },
+ "mini-band-lateral-walk": {
+  "en": "Mini-Band Lateral Walk",
+  "ru": "Боковая ходьба с фитнес-резинкой",
+  "appId": "mini_band_lateral_walk"
+ },
+ "mirror-drill": {
+  "en": "Mirror Drill",
+  "ru": "Зеркало",
+  "appId": "mirror_drill"
+ },
+ "reaction-ball-drop": {
+  "en": "Reaction Ball Drop",
+  "ru": "Сброс реакционного мяча",
+  "appId": "reaction_ball_drop"
+ },
+ "resisted-lateral-shuffle": {
+  "en": "Resisted Lateral Shuffle",
+  "ru": "Приставной шаг с сопротивлением",
+  "appId": "resisted_lateral_shuffle"
+ },
+ "slide-board-crossover-simulation": {
+  "en": "Slide Board — Crossover Simulation",
+  "ru": "Слайд-борд — имитация перебежки",
+  "appId": "slide_board_crossover"
+ },
+ "slide-board-lateral-stride": {
+  "en": "Slide Board — Lateral Stride",
+  "ru": "Слайд-борд — боковое отталкивание",
+  "appId": "slide_board_stride"
+ },
+ "stickhandling-tennis-ball": {
+  "en": "Stickhandling — Tennis Ball",
+  "ru": "Владение клюшкой — теннисный мяч",
+  "appId": "stickhandling_tennis_ball"
+ },
+ "stride-lunge-with-reach": {
+  "en": "Stride Lunge with Reach",
+  "ru": "Шаговый выпад с дотягиванием",
+  "appId": "stride_lunge_reach"
+ },
+ "tight-turn-simulation": {
+  "en": "Tight Turn Simulation",
+  "ru": "Имитация крутого поворота",
+  "appId": "tight_turn_simulation"
+ },
+ "w-cone-drill": {
+  "en": "W-Cone Drill",
+  "ru": "Конусы «W»",
+  "appId": "cone_w_drill"
+ },
+ "wall-ball-toss": {
+  "en": "Wall Ball Toss",
+  "ru": "Броски мяча в стену",
+  "appId": "wall_ball_toss"
+ },
+ "crab-walk": {
+  "en": "Crab Walk",
+  "ru": "Крабья походка",
+  "appId": "crab_walk"
+ },
+ "cable-chop": {
+  "en": "Cable Chop",
+  "ru": "Дровосек на блоке",
+  "appId": "cable_chop"
+ },
+ "cable-woodchop-explosive": {
+  "en": "Cable Woodchop (Explosive)",
+  "ru": "Дровосек на блоке (взрывной)",
+  "appId": "cable_woodchop_explosive"
+ },
+ "landmine-rotation": {
+  "en": "Landmine Rotation",
+  "ru": "Ротация лендмайн",
+  "appId": "landmine_rotation"
+ },
+ "landmine-rotational-press": {
+  "en": "Landmine Rotational Press",
+  "ru": "Ротационный жим лендмайн",
+  "appId": "landmine_rotational_press"
+ },
+ "med-ball-scoop-throw": {
+  "en": "Med Ball Scoop Throw",
+  "ru": "Бросок медбола снизу",
+  "appId": "med_ball_scoop_throw"
+ },
+ "med-ball-shot-simulation": {
+  "en": "Med Ball Shot Simulation",
+  "ru": "Имитация броска с медболом",
+  "appId": "med_ball_shot_simulation"
+ },
+ "med-ball-slam": {
+  "en": "Med Ball Slam",
+  "ru": "Бросок медбола в пол",
+  "appId": "med_ball_slam"
+ },
+ "300-yard-shuttle-run": {
+  "en": "300-Yard Shuttle Run",
+  "ru": "Челночный бег 300 ярдов",
+  "appId": "shuttle_run_300"
+ },
+ "battle-rope-intervals": {
+  "en": "Battle Rope Intervals",
+  "ru": "Интервалы с канатами",
+  "appId": "battle_rope_intervals"
+ },
+ "burpee": {
+  "en": "Burpee",
+  "ru": "Берпи",
+  "appId": "burpee"
+ },
+ "jump-rope-max-consecutive": {
+  "en": "Jump Rope — Max Consecutive",
+  "ru": "Скакалка — макс. подряд",
+  "appId": "jump_rope_challenge"
+ },
+ "jump-rope-hiit": {
+  "en": "Jump Rope HIIT",
+  "ru": "Скакалка HIIT",
+  "appId": "jump_rope_hiit"
+ },
+ "mountain-climber": {
+  "en": "Mountain Climber",
+  "ru": "Скалолаз",
+  "appId": "mountain_climber"
+ },
+ "repeat-sprint-set-10-20m": {
+  "en": "Repeat Sprint Set (10×20m)",
+  "ru": "Серия повторных спринтов (10×20 м)",
+  "appId": "repeat_sprint_set"
+ },
+ "shift-simulation-intervals": {
+  "en": "Shift Simulation Intervals",
+  "ru": "Интервалы — имитация смены",
+  "appId": "shift_simulation_intervals"
+ },
+ "skater-jump-intervals-hockey-tabata": {
+  "en": "Skater Jump Intervals (Hockey Tabata)",
+  "ru": "Интервалы прыжков «конькобежец» (хоккейная табата)",
+  "appId": "skater_jump_intervals"
+ },
+ "slide-board-intervals": {
+  "en": "Slide Board Intervals",
+  "ru": "Интервалы на слайд-борде",
+  "appId": "slide_board_intervals"
+ },
+ "ankle-alphabet": {
+  "en": "Ankle Alphabet",
+  "ru": "Алфавит стопой",
+  "appId": "ankle_alphabet"
+ },
+ "fire-hydrant": {
+  "en": "Fire Hydrant",
+  "ru": "Гидрант (махи на четвереньках)",
+  "appId": "fire_hydrant"
+ },
+ "hip-flexor-activation": {
+  "en": "Hip Flexor Activation",
+  "ru": "Активация сгибателей бедра",
+  "appId": "hip_flexor_activation"
+ },
+ "neck-isometric-extension": {
+  "en": "Neck Isometric — Extension",
+  "ru": "Изометрия шеи — разгибание",
+  "appId": "neck_iso_extension"
+ },
+ "neck-isometric-flexion": {
+  "en": "Neck Isometric — Flexion",
+  "ru": "Изометрия шеи — сгибание",
+  "appId": "neck_iso_flexion"
+ },
+ "neck-isometric-lateral": {
+  "en": "Neck Isometric — Lateral",
+  "ru": "Изометрия шеи — вбок",
+  "appId": "neck_isometric_lateral"
+ },
+ "prone-hip-extension": {
+  "en": "Prone Hip Extension",
+  "ru": "Разгибание бедра лёжа на животе",
+  "appId": "prone_hip_extension"
+ },
+ "reverse-nordic-curl": {
+  "en": "Reverse Nordic Curl",
+  "ru": "Обратные нордические",
+  "appId": "reverse_nordic"
+ },
+ "serratus-anterior-push-up": {
+  "en": "Serratus Anterior Push-Up",
+  "ru": "Отжимание на переднюю зубчатую",
+  "appId": "serratus_pushup"
+ },
+ "single-leg-balance-reach": {
+  "en": "Single-Leg Balance Reach",
+  "ru": "Баланс на одной ноге с касаниями",
+  "appId": "single_leg_balance_reach"
+ },
+ "terminal-knee-extension-tke": {
+  "en": "Terminal Knee Extension (TKE)",
+  "ru": "Терминальное разгибание колена (TKE)",
+  "appId": "tke"
+ },
+ "wrist-pronation-supination": {
+  "en": "Wrist Pronation/Supination",
+  "ru": "Пронация/супинация запястья",
+  "appId": "wrist_pronation_supination"
+ },
+ "90-90-hip-stretch": {
+  "en": "90/90 Hip Stretch",
+  "ru": "Растяжка бёдер 90/90",
+  "appId": "hip_90_90"
+ },
+ "butterfly-stretch": {
+  "en": "Butterfly Stretch",
+  "ru": "Бабочка",
+  "appId": "butterfly_stretch"
+ },
+ "calf-wall-stretch": {
+  "en": "Calf Wall Stretch",
+  "ru": "Растяжка икр у стены",
+  "appId": "calf_wall_stretch"
+ },
+ "couch-stretch": {
+  "en": "Couch Stretch",
+  "ru": "Растяжка сгибателей бедра у стены",
+  "appId": "couch_stretch"
+ },
+ "cross-body-shoulder-stretch": {
+  "en": "Cross-Body Shoulder Stretch",
+  "ru": "Растяжка плеча через грудь",
+  "appId": "cross_body_shoulder_stretch"
+ },
+ "foam-roll-it-band": {
+  "en": "Foam Roll — IT Band",
+  "ru": "Прокатка на ролле — ИТ-тракт",
+  "appId": "foam_roll_it_band"
+ },
+ "foam-roll-quads": {
+  "en": "Foam Roll — Quads",
+  "ru": "Прокатка на ролле — квадрицепсы",
+  "appId": "foam_roll_quads"
+ },
+ "foam-roll-thoracic-spine": {
+  "en": "Foam Roll — Thoracic Spine",
+  "ru": "Прокатка на ролле — грудной отдел",
+  "appId": "foam_roll_thoracic"
+ },
+ "joint-circles-full-body": {
+  "en": "Joint Circles — Full Body",
+  "ru": "Круговые вращения в суставах — всё тело",
+  "appId": "joint_circles"
+ },
+ "kneeling-hip-flexor-stretch": {
+  "en": "Kneeling Hip Flexor Stretch",
+  "ru": "Растяжка сгибателей бедра с колена",
+  "appId": "hip_flexor_kneeling"
+ },
+ "lat-overhead-stretch": {
+  "en": "Lat Overhead Stretch",
+  "ru": "Растяжка широчайших над головой",
+  "appId": "lat_overhead_stretch"
+ },
+ "overhead-tricep-stretch": {
+  "en": "Overhead Tricep Stretch",
+  "ru": "Растяжка трицепса над головой",
+  "appId": "tricep_overhead_stretch"
+ },
+ "pancake-stretch": {
+  "en": "Pancake Stretch",
+  "ru": "Растяжка «панкейк»",
+  "appId": "pancake_stretch"
+ },
+ "scorpion-stretch": {
+  "en": "Scorpion Stretch",
+  "ru": "Скорпион",
+  "appId": "scorpion_stretch"
+ },
+ "seated-hamstring-stretch": {
+  "en": "Seated Hamstring Stretch",
+  "ru": "Растяжка задней поверхности бедра сидя",
+  "appId": "seated_hamstring_stretch"
+ },
+ "standing-quad-stretch": {
+  "en": "Standing Quad Stretch",
+  "ru": "Растяжка квадрицепса стоя",
+  "appId": "standing_quad_stretch"
+ }
+}

@@ -1,0 +1,486 @@
+{
+ "swaps": [
+  {
+   "key": "<nav aria-label=\"Main navigation\">",
+   "fi": "<nav aria-label=\"Päävalikko\">",
+   "de": "<nav aria-label=\"Hauptnavigation\">"
+  },
+  {
+   "key": "#about\">Coach</a></li>",
+   "fi": "#about\">Valmentaja</a></li>",
+   "de": "#about\">Trainer</a></li>"
+  },
+  {
+   "key": "#method\">Method</a></li>",
+   "fi": "#method\">Menetelmä</a></li>",
+   "de": "#method\">Methode</a></li>"
+  },
+  {
+   "key": "#tiers\">Programs</a></li>",
+   "fi": "#tiers\">Ohjelmat</a></li>",
+   "de": "#tiers\">Programme</a></li>"
+  },
+  {
+   "key": "' aria-current=\"page\"' : ''}>Library</a></li>",
+   "fi": "' aria-current=\"page\"' : ''}>Kirjasto</a></li>",
+   "de": "' aria-current=\"page\"' : ''}>Bibliothek</a></li>"
+  },
+  {
+   "key": "      <li><a href=\"${SITE_URL}/__L__/#faq\">FAQ</a></li>\\n    </ul>\\n  </nav>",
+   "fi": "      <li><a href=\"${SITE_URL}/__L__/#faq\">UKK</a></li>\\n    </ul>\\n  </nav>",
+   "de": "      <li><a href=\"${SITE_URL}/__L__/#faq\">Fragen</a></li>\\n    </ul>\\n  </nav>"
+  },
+  {
+   "key": "class=\"nav-cta btn btn-primary\">Get the App</a></div>",
+   "fi": "class=\"nav-cta btn btn-primary\">Ilmainen viikko</a></div>",
+   "de": "class=\"nav-cta btn btn-primary\">Gratiswoche</a></div>"
+  },
+  {
+   "key": "<p>Science-backed off-ice training for hockey players. Built by a certified sport scientist and former national-team coach.</p>",
+   "fi": "<p>Tieteeseen perustuvaa oheisharjoittelua jääkiekkoilijoille. Laatinut sertifioitu urheilutieteilijä ja entinen maajoukkuevalmentaja.</p>",
+   "de": "<p>Wissenschaftlich fundiertes Off-Ice-Training für Eishockeyspieler. Entwickelt von einem zertifizierten Sportwissenschaftler und ehemaligen Nationaltrainer.</p>"
+  },
+  {
+   "key": "<h4>Programs</h4>",
+   "fi": "<h4>Ohjelmat</h4>",
+   "de": "<h4>Programme</h4>"
+  },
+  {
+   "key": ">Free 5-Day PDF</a>",
+   "fi": ">Ilmainen 5 päivän ohjelma</a>",
+   "de": ">Gratis 5-Tage-Programm</a>"
+  },
+  {
+   "key": "#tiers\">8-Week Programs</a>",
+   "fi": "#tiers\">8 viikon ohjelmat</a>",
+   "de": "#tiers\">8-Wochen-Programme</a>"
+  },
+  {
+   "key": ">Hockey Training App</a>",
+   "fi": ">Jääkiekon treenisovellus</a>",
+   "de": ">Eishockey-Trainings-App</a>"
+  },
+  {
+   "key": "data-store=\"ios\">The App — iOS</a>",
+   "fi": "data-store=\"ios\">Sovellus — iOS</a>",
+   "de": "data-store=\"ios\">Die App — iOS</a>"
+  },
+  {
+   "key": ">The App — Android</a>",
+   "fi": ">Sovellus — Android</a>",
+   "de": ">Die App — Android</a>"
+  },
+  {
+   "key": "<h4>Navigate</h4>",
+   "fi": "<h4>Sivusto</h4>",
+   "de": "<h4>Navigation</h4>"
+  },
+  {
+   "key": "#about\">About</a></li>",
+   "fi": "#about\">Valmentajasta</a></li>",
+   "de": "#about\">Über den Trainer</a></li>"
+  },
+  {
+   "key": "<li><a href=\"/__L__/library.html\">Exercise Library</a></li>",
+   "fi": "<li><a href=\"/__L__/library.html\">Harjoituspankki</a></li>",
+   "de": "<li><a href=\"/__L__/library.html\">Übungsbibliothek</a></li>"
+  },
+  {
+   "key": "        <li><a href=\"${SITE_URL}/__L__/#faq\">FAQ</a></li>\\n      </ul>",
+   "fi": "        <li><a href=\"${SITE_URL}/__L__/#faq\">Usein kysyttyä</a></li>\\n      </ul>",
+   "de": "        <li><a href=\"${SITE_URL}/__L__/#faq\">Häufige Fragen</a></li>\\n      </ul>"
+  },
+  {
+   "key": "<h4>Connect</h4>",
+   "fi": "<h4>Ota yhteyttä</h4>",
+   "de": "<h4>Kontakt</h4>"
+  },
+  {
+   "key": "<li><a href=\"mailto:elitehockeydrills@gmail.com\">Email</a></li>",
+   "fi": "<li><a href=\"mailto:elitehockeydrills@gmail.com\">Sähköposti</a></li>",
+   "de": "<li><a href=\"mailto:elitehockeydrills@gmail.com\">E-Mail</a></li>"
+  },
+  {
+   "key": "<span>© 2026 Elite Hockey Drills. All rights reserved.</span>",
+   "fi": "<span>© 2026 Elite Hockey Drills. Kaikki oikeudet pidätetään.</span>",
+   "de": "<span>© 2026 Elite Hockey Drills. Alle Rechte vorbehalten.</span>"
+  },
+  {
+   "key": "<title>Exercise Library — Off-Ice Hockey Training | Elite Hockey Drills</title>",
+   "fi": "<title>Harjoituspankki — jääkiekon oheisharjoittelu | Elite Hockey Drills</title>",
+   "de": "<title>Übungsbibliothek — Off-Ice-Training für Eishockey | Elite Hockey Drills</title>"
+  },
+  {
+   "key": "content=\"Browse ${totalEx} off-ice hockey exercises across ${totalCat} movement categories. Searchable, filterable, built by a sport scientist.\"",
+   "fi": "content=\"Selaa ${totalEx} jääkiekon oheisharjoitusta ${totalCat} liikekategoriassa. Haettava, suodatettava ja urheilutieteilijän laatima.\"",
+   "de": "content=\"Entdecke ${totalEx} Off-Ice-Übungen für Eishockey in ${totalCat} Bewegungskategorien. Durchsuchbar, filterbar, von einem Sportwissenschaftler entwickelt.\""
+  },
+  {
+   "key": "content=\"Exercise Library | Elite Hockey Drills\"",
+   "fi": "content=\"Harjoituspankki | Elite Hockey Drills\"",
+   "de": "content=\"Übungsbibliothek | Elite Hockey Drills\""
+  },
+  {
+   "key": "content=\"${totalEx} exercises · ${totalCat} movement patterns. Science-backed off-ice hockey training.\"",
+   "fi": "content=\"${totalEx} harjoitusta · ${totalCat} liikemallia. Tieteeseen perustuvaa jääkiekon oheisharjoittelua.\"",
+   "de": "content=\"${totalEx} Übungen · ${totalCat} Bewegungsmuster. Wissenschaftlich fundiertes Off-Ice-Training für Eishockey.\""
+  },
+  {
+   "key": "<div class=\"eyebrow ice lib-eyebrow\">Exercise Library</div>",
+   "fi": "<div class=\"eyebrow ice lib-eyebrow\">Harjoituspankki</div>",
+   "de": "<div class=\"eyebrow ice lib-eyebrow\">Übungsbibliothek</div>"
+  },
+  {
+   "key": "<h1 id=\"lib-h1\" class=\"display lib-title\">The Full<br><em class=\"serif\">Exercise Arsenal.</em></h1>",
+   "fi": "<h1 id=\"lib-h1\" class=\"display lib-title\">Koko<br><em class=\"serif\">harjoitusarsenaali.</em></h1>",
+   "de": "<h1 id=\"lib-h1\" class=\"display lib-title\">Das komplette<br><em class=\"serif\">Übungsarsenal.</em></h1>"
+  },
+  {
+   "key": "<p class=\"lib-subtitle\">${totalEx} exercises &nbsp;·&nbsp; ${totalCat} movement patterns</p>",
+   "fi": "<p class=\"lib-subtitle\">${totalEx} harjoitusta &nbsp;·&nbsp; ${totalCat} liikemallia</p>",
+   "de": "<p class=\"lib-subtitle\">${totalEx} Übungen &nbsp;·&nbsp; ${totalCat} Bewegungsmuster</p>"
+  },
+  {
+   "key": "placeholder=\"Search ${totalEx} exercises…\" aria-label=\"Search exercises\"",
+   "fi": "placeholder=\"Hae ${totalEx} harjoituksesta…\" aria-label=\"Hae harjoituksia\"",
+   "de": "placeholder=\"${totalEx} Übungen durchsuchen…\" aria-label=\"Übungen durchsuchen\""
+  },
+  {
+   "key": "aria-label=\"Clear search\" hidden",
+   "fi": "aria-label=\"Tyhjennä haku\" hidden",
+   "de": "aria-label=\"Suche löschen\" hidden"
+  },
+  {
+   "key": "aria-label=\"Filter by category\"",
+   "fi": "aria-label=\"Suodata kategorian mukaan\"",
+   "de": "aria-label=\"Nach Kategorie filtern\""
+  },
+  {
+   "key": "aria-pressed=\"true\">All <span class=\"cat-tab-count\">",
+   "fi": "aria-pressed=\"true\">Kaikki <span class=\"cat-tab-count\">",
+   "de": "aria-pressed=\"true\">Alle <span class=\"cat-tab-count\">"
+  },
+  {
+   "key": "aria-label=\"Filtered exercises\"",
+   "fi": "aria-label=\"Suodatetut harjoitukset\"",
+   "de": "aria-label=\"Gefilterte Übungen\""
+  },
+  {
+   "key": "<p class=\"display empty-headline\">No results.</p>",
+   "fi": "<p class=\"display empty-headline\">Ei tuloksia.</p>",
+   "de": "<p class=\"display empty-headline\">Keine Treffer.</p>"
+  },
+  {
+   "key": "<p class=\"empty-sub\">Try a different search or pick another category.</p>",
+   "fi": "<p class=\"empty-sub\">Kokeile toista hakua tai valitse toinen kategoria.</p>",
+   "de": "<p class=\"empty-sub\">Versuch eine andere Suche oder wähl eine andere Kategorie.</p>"
+  },
+  {
+   "key": "<button class=\"btn btn-ghost\" id=\"clearBtn\">Clear search</button>",
+   "fi": "<button class=\"btn btn-ghost\" id=\"clearBtn\">Tyhjennä haku</button>",
+   "de": "<button class=\"btn btn-ghost\" id=\"clearBtn\">Suche löschen</button>"
+  },
+  {
+   "key": "aria-label=\"Exercises by category\"",
+   "fi": "aria-label=\"Harjoitukset kategorioittain\"",
+   "de": "aria-label=\"Übungen nach Kategorie\""
+  },
+  {
+   "key": "const base = `${ex.name}: How to Do It`;",
+   "fi": "const base = `${ex.name}: näin teet sen`;",
+   "de": "const base = `${ex.name}: so geht\\'s`;"
+  },
+  {
+   "key": "? [' + Demo Video (Hockey Off-Ice)', ' + Demo Video', ' (Video)', '']\\n    : [' (Hockey Off-Ice)', ''];",
+   "fi": "? [' + video (jääkiekon oheisharjoittelu)', ' + videodemo', ' (video)', '']\\n    : [' (jääkiekon oheisharjoittelu)', ''];",
+   "de": "? [' + Video (Off-Ice-Training Eishockey)', ' + Video', ' (Video)', '']\\n    : [' (Off-Ice-Training Eishockey)', ''];"
+  },
+  {
+   "key": "return parts.length > 1 ? parts.slice(0, -1).join(', ') + ' and ' + parts[parts.length - 1] : parts[0];",
+   "fi": "return parts.length > 1 ? parts.slice(0, -1).join(', ') + ' ja ' + parts[parts.length - 1] : parts[0];",
+   "de": "return parts.length > 1 ? parts.slice(0, -1).join(', ') + ' und ' + parts[parts.length - 1] : parts[0];"
+  },
+  {
+   "key": "const head = `${ex.name} for hockey: how-to, coaching cues, mistakes${ex.video ? ' + demo video' : ''}.`;",
+   "fi": "const head = `${ex.name} jääkiekkoon: suoritus, valmennusvihjeet, virheet${ex.video ? ' + video' : ''}.`;",
+   "de": "const head = `${ex.name} für Eishockey: Ausführung, Coaching-Cues, Fehler${ex.video ? ' + Video' : ''}.`;"
+  },
+  {
+   "key": "if (mus && (head + ' Works the ' + mus + '.').length <= 160) return head + ' Works the ' + mus.charAt(0).toLowerCase() + mus.slice(1) + '.';",
+   "fi": "if (mus && (head + ' Kuormittaa: ' + mus + '.').length <= 160) return head + ' Kuormittaa: ' + mus.charAt(0).toLowerCase() + mus.slice(1) + '.';",
+   "de": "if (mus && (head + ' Trainiert: ' + mus + '.').length <= 160) return head + ' Trainiert: ' + mus.charAt(0).toUpperCase() + mus.slice(1) + '.';"
+  },
+  {
+   "key": "\"name\":\\${JSON.stringify(ex.name + ' — Off-Ice Hockey Exercise')},",
+   "fi": "\"name\":\\${JSON.stringify(ex.name + ' — jääkiekon oheisharjoitus')},\\n    \"inLanguage\":\"fi\",",
+   "de": "\"name\":\\${JSON.stringify(ex.name + ' — Off-Ice-Übung für Eishockey')},\\n    \"inLanguage\":\"de\","
+  },
+  {
+   "key": "\"name\":\\${JSON.stringify(ex.name + ' — Off-Ice Hockey Exercise Demo')},",
+   "fi": "\"name\":\\${JSON.stringify(ex.name + ' — jääkiekkoharjoituksen videodemo')},\\n    \"inLanguage\":\"fi\",",
+   "de": "\"name\":\\${JSON.stringify(ex.name + ' — Video-Demo einer Eishockey-Übung')},\\n    \"inLanguage\":\"de\","
+  },
+  {
+   "key": "<span class=\"pn-name\">First exercise</span>",
+   "fi": "<span class=\"pn-name\">Ensimmäinen harjoitus</span>",
+   "de": "<span class=\"pn-name\">Erste Übung</span>"
+  },
+  {
+   "key": "<span class=\"pn-name\">Last exercise</span>",
+   "fi": "<span class=\"pn-name\">Viimeinen harjoitus</span>",
+   "de": "<span class=\"pn-name\">Letzte Übung</span>"
+  },
+  {
+   "key": "<nav aria-label=\"Breadcrumb\">",
+   "fi": "<nav aria-label=\"Murupolku\">",
+   "de": "<nav aria-label=\"Brotkrümelnavigation\">"
+  },
+  {
+   "key": "<li><a href=\"${SITE_URL}\">Home</a></li>",
+   "fi": "<li><a href=\"${SITE_URL}/__L__/\">Etusivu</a></li>",
+   "de": "<li><a href=\"${SITE_URL}/__L__/\">Start</a></li>"
+  },
+  {
+   "key": ">Library</a></li>\\n        <li><a href=\"/__L__/library.html#cat-",
+   "fi": ">Kirjasto</a></li>\\n        <li><a href=\"/__L__/library.html#cat-",
+   "de": ">Bibliothek</a></li>\\n        <li><a href=\"/__L__/library.html#cat-"
+  },
+  {
+   "key": "alt=\"Elite Hockey Drills app\"",
+   "fi": "alt=\"Elite Hockey Drills -sovellus\"",
+   "de": "alt=\"Elite Hockey Drills App\""
+  },
+  {
+   "key": "<div class=\"display ex-app-title\">Don't just watch it. <em class=\"serif\">Train it.</em></div>",
+   "fi": "<div class=\"display ex-app-title\">Älä vain katso. <em class=\"serif\">Treenaa.</em></div>",
+   "de": "<div class=\"display ex-app-title\">Nicht nur anschauen. <em class=\"serif\">Trainieren.</em></div>"
+  },
+  {
+   "key": "<p class=\"ex-app-sub\">The Elite Hockey Drills app builds drills like this into your personalized off-ice program, week by week. Your first week is free.</p>",
+   "fi": "<p class=\"ex-app-sub\">Elite Hockey Drills -sovellus rakentaa tällaiset harjoitukset henkilökohtaiseen oheisharjoitteluohjelmaasi viikko viikolta. Ensimmäinen viikko on ilmainen.</p>",
+   "de": "<p class=\"ex-app-sub\">Die Elite Hockey Drills App baut Übungen wie diese Woche für Woche in dein persönliches Off-Ice-Programm ein. Deine erste Woche ist kostenlos.</p>"
+  },
+  {
+   "key": "data-place=\"ex_under_video\">Start My Free Week",
+   "fi": "data-place=\"ex_under_video\">Aloita ilmainen viikko",
+   "de": "data-place=\"ex_under_video\">Starte deine Gratiswoche"
+  },
+  {
+   "key": "<h2 class=\"ex-section-title\">How to Do It</h2>",
+   "fi": "<h2 class=\"ex-section-title\">Näin teet sen</h2>",
+   "de": "<h2 class=\"ex-section-title\">So geht\\'s</h2>"
+  },
+  {
+   "key": "<h2 class=\"ex-section-title\">Why It Works</h2>",
+   "fi": "<h2 class=\"ex-section-title\">Miksi se toimii</h2>",
+   "de": "<h2 class=\"ex-section-title\">Warum es wirkt</h2>"
+  },
+  {
+   "key": "<h2 class=\"ex-section-title\">Hockey Transfer</h2>",
+   "fi": "<h2 class=\"ex-section-title\">Siirtovaikutus jäälle</h2>",
+   "de": "<h2 class=\"ex-section-title\">Transfer aufs Eis</h2>"
+  },
+  {
+   "key": "<h2 class=\"ex-section-title\">Coaching Cues</h2>",
+   "fi": "<h2 class=\"ex-section-title\">Valmennusvihjeet</h2>",
+   "de": "<h2 class=\"ex-section-title\">Coaching-Cues</h2>"
+  },
+  {
+   "key": "<h2 class=\"ex-section-title\">Common Mistakes</h2>",
+   "fi": "<h2 class=\"ex-section-title\">Yleiset virheet</h2>",
+   "de": "<h2 class=\"ex-section-title\">Häufige Fehler</h2>"
+  },
+  {
+   "key": "<h2 class=\"ex-section-title\">Progression / Regression</h2>",
+   "fi": "<h2 class=\"ex-section-title\">Progressio / regressio</h2>",
+   "de": "<h2 class=\"ex-section-title\">Progression / Regression</h2>"
+  },
+  {
+   "key": "<span class=\"prog-label prog\">Progression</span>",
+   "fi": "<span class=\"prog-label prog\">Progressio</span>",
+   "de": "<span class=\"prog-label prog\">Progression</span>"
+  },
+  {
+   "key": "<span class=\"prog-label reg\">Regression</span>",
+   "fi": "<span class=\"prog-label reg\">Regressio</span>",
+   "de": "<span class=\"prog-label reg\">Regression</span>"
+  },
+  {
+   "key": "<h2 class=\"ex-section-title\">Primary Muscles</h2>",
+   "fi": "<h2 class=\"ex-section-title\">Päälihakset</h2>",
+   "de": "<h2 class=\"ex-section-title\">Hauptmuskeln</h2>"
+  },
+  {
+   "key": "<h2 class=\"ex-section-title\">Energy System</h2>",
+   "fi": "<h2 class=\"ex-section-title\">Energiajärjestelmä</h2>",
+   "de": "<h2 class=\"ex-section-title\">Energiesystem</h2>"
+  },
+  {
+   "key": "aria-label=\"Navigate exercises in ${escHtml(ex.category)}\"",
+   "fi": "aria-label=\"Lisää harjoituksia: ${escHtml(ex.category)}\"",
+   "de": "aria-label=\"Weitere Übungen in ${escHtml(ex.category)}\""
+  },
+  {
+   "key": "<div class=\"eyebrow ice\">More from this category</div>",
+   "fi": "<div class=\"eyebrow ice\">Lisää tästä kategoriasta</div>",
+   "de": "<div class=\"eyebrow ice\">Mehr aus dieser Kategorie</div>"
+  },
+  {
+   "key": "<div class=\"eyebrow ice\" style=\"margin-bottom:18px;\">Ready to train?</div>",
+   "fi": "<div class=\"eyebrow ice\" style=\"margin-bottom:18px;\">Valmis treenaamaan?</div>",
+   "de": "<div class=\"eyebrow ice\" style=\"margin-bottom:18px;\">Bereit fürs Training?</div>"
+  },
+  {
+   "key": "<h2 class=\"display ex-cta-title\">Put it to work<br><em class=\"serif\">on the ice.</em></h2>",
+   "fi": "<h2 class=\"display ex-cta-title\">Vie se<br><em class=\"serif\">jäälle.</em></h2>",
+   "de": "<h2 class=\"display ex-cta-title\">Bring es<br><em class=\"serif\">aufs Eis.</em></h2>"
+  },
+  {
+   "key": "<p class=\"ex-cta-sub\">The Elite Hockey Drills app builds exercises like this into a personalized off-ice program — created by a sport scientist and former national-team coach. Your first week is free.</p>",
+   "fi": "<p class=\"ex-cta-sub\">Elite Hockey Drills -sovellus rakentaa tällaiset harjoitukset henkilökohtaiseen oheisharjoitteluohjelmaan – laatinut urheilutieteilijä ja entinen maajoukkuevalmentaja. Ensimmäinen viikko on ilmainen.</p>",
+   "de": "<p class=\"ex-cta-sub\">Die Elite Hockey Drills App baut Übungen wie diese in ein persönliches Off-Ice-Programm ein – entwickelt von einem Sportwissenschaftler und ehemaligen Nationaltrainer. Deine erste Woche ist kostenlos.</p>"
+  },
+  {
+   "key": "        Start Your Free Week\\n",
+   "fi": "        Aloita ilmainen viikko\\n",
+   "de": "        Starte deine Gratiswoche\\n"
+  },
+  {
+   "key": "class=\"btn btn-ghost\">Get a Free Program</a>",
+   "fi": "class=\"btn btn-ghost\">Ilmainen ohjelma</a>",
+   "de": "class=\"btn btn-ghost\">Gratis-Programm</a>"
+  },
+  {
+   "key": "class=\"back-link\">← Back to Exercise Library</a>",
+   "fi": "class=\"back-link\">← Takaisin harjoituspankkiin</a>",
+   "de": "class=\"back-link\">← Zurück zur Übungsbibliothek</a>"
+  },
+  {
+   "key": "aria-label=\"Get the app\">",
+   "fi": "aria-label=\"Lataa sovellus\">",
+   "de": "aria-label=\"App holen\">"
+  },
+  {
+   "key": "<div class=\"ex-sticky-text\"><strong>Train this drill in the app</strong><span>First week free · iPhone &amp; Android</span></div>",
+   "fi": "<div class=\"ex-sticky-text\"><strong>Treenaa tämä harjoitus sovelluksessa</strong><span>Ensimmäinen viikko ilmaiseksi · iPhone &amp; Android</span></div>",
+   "de": "<div class=\"ex-sticky-text\"><strong>Trainier diese Übung in der App</strong><span>Erste Woche gratis · iPhone &amp; Android</span></div>"
+  },
+  {
+   "key": "data-place=\"ex_sticky\">Get the App</a>",
+   "fi": "data-place=\"ex_sticky\">Ilmainen viikko</a>",
+   "de": "data-place=\"ex_sticky\">Gratiswoche</a>"
+  },
+  {
+   "key": "<button type=\"button\" class=\"ex-sticky-x\" aria-label=\"Close\">",
+   "fi": "<button type=\"button\" class=\"ex-sticky-x\" aria-label=\"Sulje\">",
+   "de": "<button type=\"button\" class=\"ex-sticky-x\" aria-label=\"Schließen\">"
+  },
+  {
+   "key": "title=\"Exercise demo\"",
+   "fi": "title=\"Harjoituksen demo\"",
+   "de": "title=\"Übungs-Demo\""
+  },
+  {
+   "key": "aria-label=\"Demo video coming soon\"",
+   "fi": "aria-label=\"Videodemo tulossa pian\"",
+   "de": "aria-label=\"Video-Demo folgt in Kürze\""
+  },
+  {
+   "key": "<p>Demo video coming soon</p>",
+   "fi": "<p>Videodemo tulossa pian</p>",
+   "de": "<p>Video-Demo folgt in Kürze</p>"
+  }
+ ],
+ "cat": [
+  {
+   "key": "Competitive Play",
+   "fi": "Kilpailulliset pelit",
+   "de": "Wettkampfspiele"
+  },
+  {
+   "key": "Conditioning / Jump Rope",
+   "fi": "Kestävyys / hyppynaru",
+   "de": "Kondition / Seilspringen"
+  },
+  {
+   "key": "Cool-down / Recovery",
+   "fi": "Loppuverryttely / palautuminen",
+   "de": "Cool-down / Regeneration"
+  },
+  {
+   "key": "Core & Anti-rotation",
+   "fi": "Keskivartalo & kiertoa vastustavat",
+   "de": "Rumpf & Anti-Rotation"
+  },
+  {
+   "key": "Energy Systems / Intervals",
+   "fi": "Energiajärjestelmät / intervallit",
+   "de": "Energiesysteme / Intervalle"
+  },
+  {
+   "key": "Full-body & Complexes",
+   "fi": "Koko keho & kompleksit",
+   "de": "Ganzkörper & Komplexe"
+  },
+  {
+   "key": "Hinge / Posterior Chain",
+   "fi": "Lonkkasaranat / takaketju",
+   "de": "Hüftbeuge / hintere Kette"
+  },
+  {
+   "key": "Hockey-Specific Dryland",
+   "fi": "Jääkiekkospesifi oheisharjoittelu",
+   "de": "Eishockey-spezifisches Athletiktraining"
+  },
+  {
+   "key": "Jump & Plyometric",
+   "fi": "Hypyt & plyometria",
+   "de": "Sprünge & Plyometrie"
+  },
+  {
+   "key": "Loaded Carries",
+   "fi": "Kantoliikkeet",
+   "de": "Loaded Carries / Tragen"
+  },
+  {
+   "key": "Lunge & Single-leg",
+   "fi": "Askelkyykyt & yhden jalan liikkeet",
+   "de": "Ausfallschritte & einbeinig"
+  },
+  {
+   "key": "Prehab / Injury Prevention",
+   "fi": "Prehab / vammojen ennaltaehkäisy",
+   "de": "Prehab / Verletzungsprävention"
+  },
+  {
+   "key": "Rotational Power",
+   "fi": "Rotaatioräjähtävyys",
+   "de": "Rotationskraft"
+  },
+  {
+   "key": "Speed, Sprint & Agility",
+   "fi": "Nopeus, sprintti & ketteryys",
+   "de": "Speed, Sprint & Agilität"
+  },
+  {
+   "key": "Squat / Knee-dominant",
+   "fi": "Kyykky / polvidominantit",
+   "de": "Kniebeuge / kniedominant"
+  },
+  {
+   "key": "Upper Body / Pull",
+   "fi": "Ylävartalo / vedot",
+   "de": "Oberkörper / Ziehen"
+  },
+  {
+   "key": "Upper Body / Push",
+   "fi": "Ylävartalo / työnnöt",
+   "de": "Oberkörper / Drücken"
+  },
+  {
+   "key": "Warm-up / Mobility",
+   "fi": "Alkulämmittely / liikkuvuus",
+   "de": "Aufwärmen / Mobilität"
+  }
+ ]
+}

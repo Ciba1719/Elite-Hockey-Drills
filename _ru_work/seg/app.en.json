@@ -1,0 +1,70 @@
+{
+ "page": "app.html",
+ "segments": [
+  {
+   "id": "t0",
+   "kind": "title",
+   "en": "Get the App — Elite Hockey Drills"
+  },
+  {
+   "id": "m1",
+   "kind": "meta",
+   "en": "The off-ice hockey app that builds your whole season. First week free on iPhone and Android."
+  },
+  {
+   "id": "m2",
+   "kind": "meta",
+   "en": "Elite Hockey Drills — the off-ice app that builds your season"
+  },
+  {
+   "id": "m3",
+   "kind": "meta",
+   "en": "Personalized off-ice program from your age, level, position and schedule. First week free on iPhone and Android."
+  },
+  {
+   "id": "h4",
+   "kind": "html",
+   "en": "Elite Hockey Drills · Coach David Ciboch"
+  },
+  {
+   "id": "h5",
+   "kind": "html",
+   "en": "Your whole season,<br>planned in 30 seconds"
+  },
+  {
+   "id": "h6",
+   "kind": "html",
+   "en": "Off-ice training built from your age, level, position and schedule. Adapts around game days. First week free."
+  },
+  {
+   "id": "h7",
+   "kind": "html",
+   "en": "Download on iPhone"
+  },
+  {
+   "id": "h8",
+   "kind": "html",
+   "en": "Get it on Android"
+  },
+  {
+   "id": "h9",
+   "kind": "html",
+   "en": "<a href=\"/hockey-training-app.html\">See what's inside the app →</a>"
+  },
+  {
+   "id": "j10",
+   "kind": "js",
+   "en": "Opening the "
+  },
+  {
+   "id": "j11",
+   "kind": "js",
+   "en": "Play Store"
+  },
+  {
+   "id": "j12",
+   "kind": "js",
+   "en": "App Store"
+  }
+ ]
+}

@@ -1,0 +1,1135 @@
+{
+ "page": "hockey-conditioning.html",
+ "segments": [
+  {
+   "id": "t0",
+   "kind": "title",
+   "en": "Hockey Conditioning: How to Build a Third-Period Engine | Elite Hockey Drills"
+  },
+  {
+   "id": "m1",
+   "kind": "meta",
+   "en": "A science-based guide to hockey conditioning: what a game really demands, the two engines that fuel a shift, and how to train so you are still flying in the third period. By Coach David Ciboch, M.Ed. Sport Science."
+  },
+  {
+   "id": "m2",
+   "kind": "meta",
+   "en": "Hockey Conditioning: How to Build a Third-Period Engine | Elite Hockey Drills"
+  },
+  {
+   "id": "m3",
+   "kind": "meta",
+   "en": "Why hockey is a repeat-sprint sport, how your aerobic engine recovers you between shifts, and the off-ice conditioning that keeps you fast when the game is on the line."
+  },
+  {
+   "id": "l4",
+   "kind": "ld",
+   "en": "Hockey Conditioning: How to Build a Third-Period Engine"
+  },
+  {
+   "id": "l5",
+   "kind": "ld",
+   "en": "What a hockey game really demands, the two energy systems that fuel a shift, and the off-ice conditioning that keeps you fast late in the game."
+  },
+  {
+   "id": "l6",
+   "kind": "ld",
+   "en": "David Ciboch"
+  },
+  {
+   "id": "l7",
+   "kind": "ld",
+   "en": "Sport Scientist and National Team Coach"
+  },
+  {
+   "id": "l8",
+   "kind": "ld",
+   "en": "Elite Hockey Drills"
+  },
+  {
+   "id": "l9",
+   "kind": "ld",
+   "en": "Home"
+  },
+  {
+   "id": "l10",
+   "kind": "ld",
+   "en": "Articles"
+  },
+  {
+   "id": "l11",
+   "kind": "ld",
+   "en": "Hockey Conditioning"
+  },
+  {
+   "id": "h12",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "a13",
+   "kind": "attr:aria-label",
+   "en": "Main navigation"
+  },
+  {
+   "id": "h14",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">Coach</a>"
+  },
+  {
+   "id": "h15",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h16",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">Programs</a>"
+  },
+  {
+   "id": "h17",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Library</a>"
+  },
+  {
+   "id": "h18",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h19",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h20",
+   "kind": "html",
+   "en": "Get the App"
+  },
+  {
+   "id": "a21",
+   "kind": "attr:aria-label",
+   "en": "Breadcrumb"
+  },
+  {
+   "id": "h22",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com\">Home</a>"
+  },
+  {
+   "id": "h23",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h24",
+   "kind": "html",
+   "en": "Hockey Conditioning"
+  },
+  {
+   "id": "h25",
+   "kind": "html",
+   "en": "Conditioning"
+  },
+  {
+   "id": "h26",
+   "kind": "html",
+   "en": "The third-period <span class=\"serif\">engine.</span>"
+  },
+  {
+   "id": "h27",
+   "kind": "html",
+   "en": "Hockey is decided in the minutes when everyone is tired. Here is the science of conditioning for hockey, and how to build an engine that keeps you <em>fast, sharp, and dangerous</em> long after the other team has started to fade."
+  },
+  {
+   "id": "a28",
+   "kind": "attr:alt",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h29",
+   "kind": "html",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h30",
+   "kind": "html",
+   "en": "M.Ed. Sport Science · National Team Coach"
+  },
+  {
+   "id": "h31",
+   "kind": "html",
+   "en": "12 min read"
+  },
+  {
+   "id": "t32",
+   "kind": "text",
+   "en": "Science-based"
+  },
+  {
+   "id": "t33",
+   "kind": "text",
+   "en": "The 30-second version"
+  },
+  {
+   "id": "h34",
+   "kind": "html",
+   "en": "<strong>Hockey is a repeat-sprint sport.</strong> Short, near-maximal shifts of roughly 30 to 80 seconds at about 85 percent of max heart rate, with two to three minutes on the bench, over and over for 60 minutes."
+  },
+  {
+   "id": "h35",
+   "kind": "html",
+   "en": "<strong>You run two engines.</strong> An anaerobic engine fuels the burst, and an aerobic engine recovers you between shifts. The third period belongs to the player who trained both."
+  },
+  {
+   "id": "h36",
+   "kind": "html",
+   "en": "<strong>Your aerobic base is the secret weapon.</strong> By the second hard sprint, close to half the energy is supplied aerobically, because recovering for the next burst is an aerobic job."
+  },
+  {
+   "id": "h37",
+   "kind": "html",
+   "en": "<strong>Train like the game, not like a marathon.</strong> Intervals and repeat sprints build the engine. Long, slow jogging does little for hockey and can even dull your speed."
+  },
+  {
+   "id": "h38",
+   "kind": "html",
+   "en": "<strong>It is time-efficient.</strong> A real engine can be built in a few focused interval sessions a week, not hours of cardio."
+  },
+  {
+   "id": "a39",
+   "kind": "attr:aria-label",
+   "en": "In this guide"
+  },
+  {
+   "id": "h40",
+   "kind": "html",
+   "en": "In this guide"
+  },
+  {
+   "id": "h41",
+   "kind": "html",
+   "en": "<a href=\"#third-period\">Why the third period separates players</a>"
+  },
+  {
+   "id": "h42",
+   "kind": "html",
+   "en": "<a href=\"#demands\">What a hockey game actually demands</a>"
+  },
+  {
+   "id": "h43",
+   "kind": "html",
+   "en": "<a href=\"#two-engines\">Your two engines</a>"
+  },
+  {
+   "id": "h44",
+   "kind": "html",
+   "en": "<a href=\"#aerobic\">Why the aerobic base is the secret weapon</a>"
+  },
+  {
+   "id": "h45",
+   "kind": "html",
+   "en": "<a href=\"#build\">How to build it: train like the game</a>"
+  },
+  {
+   "id": "h46",
+   "kind": "html",
+   "en": "<a href=\"#mistake\">The mistake that quietly kills your speed</a>"
+  },
+  {
+   "id": "h47",
+   "kind": "html",
+   "en": "<a href=\"#age\">How this changes by age</a>"
+  },
+  {
+   "id": "h48",
+   "kind": "html",
+   "en": "<a href=\"#bottom-line\">The bottom line</a>"
+  },
+  {
+   "id": "h49",
+   "kind": "html",
+   "en": "The third period is where hockey is decided, and it is also where most players quietly fall apart. The score is tied, four minutes left, and one player is still flying: first step sharp, finishing the check, winning the race to the puck. Another, just as skilled in the first period, is bent over at the bench hoping the buzzer comes before his next shift. The talent gap between them might be nothing. The conditioning gap is everything."
+  },
+  {
+   "id": "h50",
+   "kind": "html",
+   "en": "Conditioning is the quality that lets all your other qualities survive to the end of the game. Your shot, your hands, your hockey sense, your top speed: none of it matters if it disappears when you get tired. And here is the part most players get wrong. They train their engine the way a runner would, with long, steady cardio, when hockey asks for something completely different. This guide covers what the sport actually demands, the two energy systems that fuel a shift, and the off-ice conditioning that builds an engine made for hockey."
+  },
+  {
+   "id": "h51",
+   "kind": "html",
+   "en": "Why the third period separates players"
+  },
+  {
+   "id": "h52",
+   "kind": "html",
+   "en": "Fatigue does not just make you tired. It makes you worse at hockey. As you fatigue, your skating speed drops, your first step slows, and your decisions get a beat late. The better-conditioned player is not only working harder in the third period, he is skating faster and thinking more clearly than the opponent who is running on empty. That is a competitive advantage you build in the summer and cash in all season."
+  },
+  {
+   "id": "h53",
+   "kind": "html",
+   "en": "It also shows up in who gets picked. When researchers compared players selected to elite ice hockey teams against those who were not, the selected players had <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC4786585/\" target=\"_blank\" rel=\"noopener\">significantly higher aerobic capacity</a>, among other qualities. The engine is not the only thing that separates levels, but it is one of the things, and unlike your height, it is something you can change."
+  },
+  {
+   "id": "h54",
+   "kind": "html",
+   "en": "What a hockey game actually demands"
+  },
+  {
+   "id": "h55",
+   "kind": "html",
+   "en": "To train your engine well, you have to understand the shape of the work. Hockey is not continuous like a long run, and it is not a single explosive effort like a 100-metre dash. It is intermittent: repeated short bursts at very high intensity, separated by incomplete recovery, stretched across an hour. Game-tracking research on professional players found <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9679183/\" target=\"_blank\" rel=\"noopener\">shifts lasting roughly 30 to 80 seconds, with about two to three minutes of recovery between them, performed at around 85 percent of maximal heart rate</a>, with peaks pushing past 90 percent. This is the classic <a href=\"https://pubmed.ncbi.nlm.nih.gov/3281210/\" target=\"_blank\" rel=\"noopener\">repeat-sprint profile of ice hockey</a>."
+  },
+  {
+   "id": "v0",
+   "kind": "svg",
+   "en": "The shape of a hockey shift"
+  },
+  {
+   "id": "v1",
+   "kind": "svg",
+   "en": "Heart rate spikes during each short shift and only partly recovers on the bench, staying high all game. Shifts last about 45 seconds, bench recovery about two minutes."
+  },
+  {
+   "id": "v2",
+   "kind": "svg",
+   "en": "HEART RATE ACROSS THREE SHIFTS"
+  },
+  {
+   "id": "v3",
+   "kind": "svg",
+   "en": "~85% HR max"
+  },
+  {
+   "id": "v4",
+   "kind": "svg",
+   "en": "SHIFT"
+  },
+  {
+   "id": "v5",
+   "kind": "svg",
+   "en": "~45 s"
+  },
+  {
+   "id": "v6",
+   "kind": "svg",
+   "en": "BENCH"
+  },
+  {
+   "id": "v7",
+   "kind": "svg",
+   "en": "~2 min"
+  },
+  {
+   "id": "v8",
+   "kind": "svg",
+   "en": "SHIFT"
+  },
+  {
+   "id": "v9",
+   "kind": "svg",
+   "en": "BENCH"
+  },
+  {
+   "id": "v10",
+   "kind": "svg",
+   "en": "SHIFT"
+  },
+  {
+   "id": "v11",
+   "kind": "svg",
+   "en": "The shape of a hockey shift"
+  },
+  {
+   "id": "v12",
+   "kind": "svg",
+   "en": "Heart rate spikes during each short shift and only partly recovers on the bench, staying high all game."
+  },
+  {
+   "id": "v13",
+   "kind": "svg",
+   "en": "HEART RATE, SHIFT TO SHIFT"
+  },
+  {
+   "id": "v14",
+   "kind": "svg",
+   "en": "~85% HR max"
+  },
+  {
+   "id": "v15",
+   "kind": "svg",
+   "en": "SHIFT"
+  },
+  {
+   "id": "v16",
+   "kind": "svg",
+   "en": "~45 s"
+  },
+  {
+   "id": "v17",
+   "kind": "svg",
+   "en": "BENCH"
+  },
+  {
+   "id": "v18",
+   "kind": "svg",
+   "en": "~2 min"
+  },
+  {
+   "id": "v19",
+   "kind": "svg",
+   "en": "SHIFT"
+  },
+  {
+   "id": "h56",
+   "kind": "html",
+   "en": "Each shift is a near-maximal burst. The bench only refills your tank part way, so your heart rate rides high all night. Hockey is forty short sprints with a short rest between each one."
+  },
+  {
+   "id": "h57",
+   "kind": "html",
+   "en": "That shape has two consequences. First, every shift draws heavily on fast, powerful energy. Second, your performance on the next shift depends entirely on how well you recovered during the last two minutes on the bench. A modern review of the sport puts it plainly: in hockey, <a href=\"https://onlinelibrary.wiley.com/doi/10.1111/sms.14284\" target=\"_blank\" rel=\"noopener\">both the aerobic and anaerobic systems are heavily taxed</a>, with the heart rate climbing toward maximum on every shift and a heavy reliance on both stored phosphagens and glycolysis. Train one engine and ignore the other, and you have only solved half the problem."
+  },
+  {
+   "id": "h58",
+   "kind": "html",
+   "en": "Your two engines"
+  },
+  {
+   "id": "h59",
+   "kind": "html",
+   "en": "Your body makes energy two ways, and hockey leans on both inside a single shift."
+  },
+  {
+   "id": "h60",
+   "kind": "html",
+   "en": "The <strong>anaerobic engine</strong> is your sprint engine. It uses stored fuel in the muscle (a compound called phosphocreatine) plus the fast breakdown of carbohydrate to produce huge amounts of power for short stretches. It is what fires your first three strides, your hardest battle along the boards, the explosive jump to a loose puck. It is enormously powerful and it empties fast."
+  },
+  {
+   "id": "h61",
+   "kind": "html",
+   "en": "The <strong>aerobic engine</strong> uses oxygen to produce energy more slowly but almost without limit. During the game it helps power the back half of a long shift, and just as importantly, it is the system that recharges you between shifts. Refilling that phosphocreatine tank, clearing the byproducts of hard work, and getting your heart rate back down are all aerobic jobs. Your aerobic engine is, in a real sense, your recovery engine."
+  },
+  {
+   "id": "h62",
+   "kind": "html",
+   "en": "Your anaerobic engine wins the shift. Your aerobic engine <span>wins the rematch</span> two minutes later, and the one after that."
+  },
+  {
+   "id": "h63",
+   "kind": "html",
+   "en": "Why the aerobic base is the secret weapon"
+  },
+  {
+   "id": "h64",
+   "kind": "html",
+   "en": "Most players think conditioning is all about the burst. The burst matters, but the burst is not where games are lost. Games are lost in the recovery, on the bench and in the second half of a long shift, when the player who cannot refill the tank starts showing up a half-step slow. This is why your aerobic base is the most underrated weapon you have."
+  },
+  {
+   "id": "h65",
+   "kind": "html",
+   "en": "The clearest evidence comes from the lab. In a classic study of repeated all-out 30-second sprints, scientists measured exactly where the energy came from. On the first sprint, the work was overwhelmingly anaerobic. But on the second sprint, after a short recovery, the anaerobic contribution had dropped by about 41 percent, and yet <a href=\"https://pubmed.ncbi.nlm.nih.gov/8964751/\" target=\"_blank\" rel=\"noopener\">total work output fell by only around 18 percent, because the aerobic system stepped in to supply close to half of the energy</a>. The same study found that how much power a player got back was tightly linked to how fast their phosphocreatine tank refilled, which is an aerobic process."
+  },
+  {
+   "id": "v20",
+   "kind": "svg",
+   "en": "The aerobic takeover across repeated sprints"
+  },
+  {
+   "id": "v21",
+   "kind": "svg",
+   "en": "From the first all-out sprint to the second, anaerobic energy fell 41 percent but total work output dropped only 18 percent, because the aerobic system supplied about 49 percent of the second sprint."
+  },
+  {
+   "id": "v22",
+   "kind": "svg",
+   "en": "FIRST ALL-OUT SPRINT TO THE SECOND"
+  },
+  {
+   "id": "v23",
+   "kind": "svg",
+   "en": "of the 2nd sprint,"
+  },
+  {
+   "id": "v24",
+   "kind": "svg",
+   "en": "fueled aerobically"
+  },
+  {
+   "id": "v25",
+   "kind": "svg",
+   "en": "Anaerobic energy supplied"
+  },
+  {
+   "id": "v26",
+   "kind": "svg",
+   "en": "Total work output"
+  },
+  {
+   "id": "v27",
+   "kind": "svg",
+   "en": "Dashed line = first-sprint level (100%)"
+  },
+  {
+   "id": "v28",
+   "kind": "svg",
+   "en": "The aerobic takeover across repeated sprints"
+  },
+  {
+   "id": "v29",
+   "kind": "svg",
+   "en": "Anaerobic energy fell 41 percent from the first to the second sprint, but total work dropped only 18 percent, because the aerobic system supplied about 49 percent of the second sprint."
+  },
+  {
+   "id": "v30",
+   "kind": "svg",
+   "en": "of the 2nd sprint is fueled aerobically"
+  },
+  {
+   "id": "v31",
+   "kind": "svg",
+   "en": "Anaerobic energy supplied"
+  },
+  {
+   "id": "v32",
+   "kind": "svg",
+   "en": "Total work output"
+  },
+  {
+   "id": "v33",
+   "kind": "svg",
+   "en": "Anaerobic power collapsed, but the"
+  },
+  {
+   "id": "v34",
+   "kind": "svg",
+   "en": "aerobic engine kept the work going."
+  },
+  {
+   "id": "h66",
+   "kind": "html",
+   "en": "Anaerobic power crashed from the first sprint to the second, but total work barely budged, because the aerobic engine quietly took over. The bigger your aerobic base, the better you repeat."
+  },
+  {
+   "id": "h67",
+   "kind": "html",
+   "en": "This is why aerobic fitness is so valuable for a sport that looks anaerobic. A stronger aerobic engine <a href=\"https://link.springer.com/article/10.2165/11590560-000000000-00000\" target=\"_blank\" rel=\"noopener\">speeds up phosphocreatine resynthesis, improves how fast your muscles re-oxygenate, and raises your buffering capacity</a>, all of which help you recover faster between bursts and repeat your best efforts more often. In hockey players specifically, higher aerobic capacity is associated with <a href=\"https://doi.org/10.3390/app151910310\" target=\"_blank\" rel=\"noopener\">faster lactate clearance and quicker heart-rate recovery</a>, which is exactly what you want happening on the bench. Elite players typically carry a <a href=\"https://onlinelibrary.wiley.com/doi/10.1111/sms.14284\" target=\"_blank\" rel=\"noopener\">VO2max in the range of about 55 to 60 ml/kg/min</a>, comparable to athletes in sports we think of as pure endurance."
+  },
+  {
+   "id": "h68",
+   "kind": "html",
+   "en": "One honest caveat, because the science is not perfectly tidy: at least one hockey study found that the ability to recover from high-intensity intermittent skating was <a href=\"https://pubmed.ncbi.nlm.nih.gov/17685680/\" target=\"_blank\" rel=\"noopener\">not strongly tied to VO2max</a>, which tells us aerobic fitness is a big lever, not the only lever. Repeat-sprint ability also depends on strength, technique, and your anaerobic qualities. The takeaway is balance: build a serious aerobic base, but build it alongside power and speed, not instead of them."
+  },
+  {
+   "id": "h69",
+   "kind": "html",
+   "en": "How to build it: train like the game"
+  },
+  {
+   "id": "h70",
+   "kind": "html",
+   "en": "Here is the good news. The best way to build a hockey engine is also the most time-efficient. You do not need long, grinding cardio sessions. You need intervals: repeated hard efforts with planned recovery, which train the burst and the recovery at the same time. A large network meta-analysis of athletes found that <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC12218014/\" target=\"_blank\" rel=\"noopener\">repeat-sprint training, high-intensity intervals, and sprint intervals all improve VO2max</a>, and in elite athletes specifically, interval training <a href=\"https://pubmed.ncbi.nlm.nih.gov/37346345/\" target=\"_blank\" rel=\"noopener\">raises VO2max more than steady, conventional training</a>. Even short, low-volume interval work delivers <a href=\"https://pubmed.ncbi.nlm.nih.gov/22289907/\" target=\"_blank\" rel=\"noopener\">endurance-style adaptations in a fraction of the time</a>."
+  },
+  {
+   "id": "h71",
+   "kind": "html",
+   "en": "The key is to train each layer of the engine on purpose. Think of it as three jobs: reproduce the burst, raise your ceiling, and build the deep base that recovers you. The table below is a practical menu. You can run all of this off the ice with a bike, a hill, a track, or open space."
+  },
+  {
+   "id": "h72",
+   "kind": "html",
+   "en": "A conditioning menu for hockey (off-ice)"
+  },
+  {
+   "id": "h73",
+   "kind": "html",
+   "en": "Quality"
+  },
+  {
+   "id": "h74",
+   "kind": "html",
+   "en": "What it does"
+  },
+  {
+   "id": "h75",
+   "kind": "html",
+   "en": "How to train it"
+  },
+  {
+   "id": "h76",
+   "kind": "html",
+   "en": "Example session"
+  },
+  {
+   "id": "h77",
+   "kind": "html",
+   "en": "Repeat-sprint ability"
+  },
+  {
+   "id": "h78",
+   "kind": "html",
+   "en": "Reproduce the burst and recover for the next one"
+  },
+  {
+   "id": "h79",
+   "kind": "html",
+   "en": "Short all-out sprints, short rest"
+  },
+  {
+   "id": "h80",
+   "kind": "html",
+   "en": "8 to 10 × 10 to 15 s sprints, 60 to 90 s easy between"
+  },
+  {
+   "id": "h81",
+   "kind": "html",
+   "en": "Anaerobic capacity"
+  },
+  {
+   "id": "h82",
+   "kind": "html",
+   "en": "Tolerate and clear the burn of a long shift"
+  },
+  {
+   "id": "h83",
+   "kind": "html",
+   "en": "Hard intervals at roughly a 1:2 to 1:3 work-to-rest ratio"
+  },
+  {
+   "id": "h84",
+   "kind": "html",
+   "en": "6 to 8 × 40 s hard, 80 s easy"
+  },
+  {
+   "id": "h85",
+   "kind": "html",
+   "en": "Aerobic power (VO2max)"
+  },
+  {
+   "id": "h86",
+   "kind": "html",
+   "en": "Raise your ceiling so high efforts feel easier"
+  },
+  {
+   "id": "h87",
+   "kind": "html",
+   "en": "Longer intervals near your max"
+  },
+  {
+   "id": "h88",
+   "kind": "html",
+   "en": "4 to 5 × 3 min hard, 2 to 3 min easy"
+  },
+  {
+   "id": "h89",
+   "kind": "html",
+   "en": "Aerobic base"
+  },
+  {
+   "id": "h90",
+   "kind": "html",
+   "en": "Build the engine that recovers you all game"
+  },
+  {
+   "id": "h91",
+   "kind": "html",
+   "en": "Easy continuous work or short, snappy intervals"
+  },
+  {
+   "id": "h92",
+   "kind": "html",
+   "en": "25 to 35 min easy, or 15 s on / 15 s off for 8 to 10 min"
+  },
+  {
+   "id": "h93",
+   "kind": "html",
+   "en": "You do not do all four every week at full volume. Like any good plan, conditioning is periodized: earlier in the off-season you build the aerobic base and general work capacity, and as the season approaches you shift toward the short, sharp, repeat-sprint work that looks most like a real shift. If you want the full week-by-week logic of how this fits with strength and power, read <a href=\"/articles/the-off-season-blueprint.html\">the off-season blueprint</a>."
+  },
+  {
+   "id": "h94",
+   "kind": "html",
+   "en": "Want the engine built into your training?"
+  },
+  {
+   "id": "h95",
+   "kind": "html",
+   "en": "Our 8-week off-ice programs weave hockey-specific conditioning through every phase, so you build strength, speed, and a third-period engine at the same time."
+  },
+  {
+   "id": "t96",
+   "kind": "text",
+   "en": "See the Programs"
+  },
+  {
+   "id": "h97",
+   "kind": "html",
+   "en": "The mistake that quietly kills your speed"
+  },
+  {
+   "id": "h98",
+   "kind": "html",
+   "en": "The most common conditioning mistake in hockey is going for long, slow runs. It feels productive, it makes you sweat, and it is almost the wrong tool for the job. Hockey is never a 40-minute steady effort, so training that way does little to prepare you for the actual demands of a shift. Worse, piling on too much slow endurance work can blunt the very qualities hockey is built on."
+  },
+  {
+   "id": "h99",
+   "kind": "html",
+   "en": "When you train heavy endurance and strength or power at the same time in large amounts, the endurance work can interfere with your gains. A meta-analysis of concurrent training found that <a href=\"https://pubmed.ncbi.nlm.nih.gov/22002517/\" target=\"_blank\" rel=\"noopener\">power is the quality most blunted by high volumes of endurance training</a>, and power is precisely what makes a hockey player dangerous. The same research is reassuring, though: a moderate dose of conditioning, on the order of two to three focused sessions a week, caused little or no interference. The lesson is not to avoid conditioning. It is to keep it specific and to keep it in proportion, so your engine grows without dragging down your first step."
+  },
+  {
+   "id": "h100",
+   "kind": "html",
+   "en": "Hockey is not a 10k. It is a stack of sprints, so <span>train it like sprints.</span>"
+  },
+  {
+   "id": "h101",
+   "kind": "html",
+   "en": "How this changes by age"
+  },
+  {
+   "id": "h102",
+   "kind": "html",
+   "en": "The principles hold at every age. The intensity, structure, and how much it should look like formal training change with maturity."
+  },
+  {
+   "id": "h103",
+   "kind": "html",
+   "en": "Youth · 9 to 12"
+  },
+  {
+   "id": "h104",
+   "kind": "html",
+   "en": "Build the engine through play, not stopwatch intervals. Games of tag, small-sided games, and active sport develop a big aerobic base while keeping it fun. Interval-style efforts are safe and effective for kids, but they should feel like play, not a workout."
+  },
+  {
+   "id": "h105",
+   "kind": "html",
+   "en": "Teens · 13 to 18"
+  },
+  {
+   "id": "h106",
+   "kind": "html",
+   "en": "The window to build a serious engine. Teens can handle structured intervals and repeat-sprint work. Pair it with the strength and power they are developing, and protect speed by keeping slow cardio in check."
+  },
+  {
+   "id": "h107",
+   "kind": "html",
+   "en": "Adults · 19+"
+  },
+  {
+   "id": "h108",
+   "kind": "html",
+   "en": "Conditioning protects both performance and health. Keep the intensity, but respect recovery more than you did at 17. A strong aerobic base is what keeps the beer-league or masters player flying in the third when everyone else fades."
+  },
+  {
+   "id": "h109",
+   "kind": "html",
+   "en": "Myth: more cardio is always better"
+  },
+  {
+   "id": "h110",
+   "kind": "html",
+   "en": "Long, slow distance running feels like the responsible thing to do, but it trains the wrong engine for hockey and, in large doses, can dull your explosiveness. For young athletes especially, high-intensity interval work is both safe and effective: a review of <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10174557/\" target=\"_blank\" rel=\"noopener\">47 studies in children and adolescents</a> found that interval training reliably improves cardiorespiratory fitness. Quality and specificity beat sheer volume."
+  },
+  {
+   "id": "h111",
+   "kind": "html",
+   "en": "The bottom line"
+  },
+  {
+   "id": "h112",
+   "kind": "html",
+   "en": "The third period does not care how skilled you were in the first. It rewards the player who can still skate, still think, and still explode when everyone else is gassed. That player built two engines on purpose: an anaerobic engine for the burst, and an aerobic engine that refills the tank between every shift. Train like the game, with intervals and repeat sprints instead of endless slow miles, keep it specific and in proportion, and your conditioning becomes the thing that lets all your other skills show up when the game is on the line. Build the engine, and the third period becomes yours."
+  },
+  {
+   "id": "a113",
+   "kind": "attr:aria-label",
+   "en": "References"
+  },
+  {
+   "id": "h114",
+   "kind": "html",
+   "en": "References"
+  },
+  {
+   "id": "h115",
+   "kind": "html",
+   "en": "Every claim above is drawn from peer-reviewed research or recognized sport-science sources. Where session structures reflect common coaching practice rather than a single study, that is stated in the text."
+  },
+  {
+   "id": "h116",
+   "kind": "html",
+   "en": "Rago V, et al. Game demands of a professional ice hockey team with special emphasis on fatigue development and playing position. <em>Journal of Human Kinetics</em>. 2022. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9679183/\" target=\"_blank\" rel=\"noopener\">PMC9679183</a>"
+  },
+  {
+   "id": "h117",
+   "kind": "html",
+   "en": "Montgomery DL. Physiology of ice hockey. <em>Sports Medicine</em>. 1988. <a href=\"https://pubmed.ncbi.nlm.nih.gov/3281210/\" target=\"_blank\" rel=\"noopener\">PubMed 3281210</a>"
+  },
+  {
+   "id": "h118",
+   "kind": "html",
+   "en": "Vigh-Larsen JF, Mohr M. The physiology of ice hockey performance: an update. <em>Scandinavian Journal of Medicine &amp; Science in Sports</em>. 2024. <a href=\"https://onlinelibrary.wiley.com/doi/10.1111/sms.14284\" target=\"_blank\" rel=\"noopener\">doi:10.1111/sms.14284</a>"
+  },
+  {
+   "id": "h119",
+   "kind": "html",
+   "en": "Bogdanis GC, Nevill ME, Boobis LH, Lakomy HKA. Contribution of phosphocreatine and aerobic metabolism to energy supply during repeated sprint exercise. <em>Journal of Applied Physiology</em>. 1996. <a href=\"https://pubmed.ncbi.nlm.nih.gov/8964751/\" target=\"_blank\" rel=\"noopener\">PubMed 8964751</a>"
+  },
+  {
+   "id": "h120",
+   "kind": "html",
+   "en": "Bishop D, Girard O, Mendez-Villanueva A. Repeated-sprint ability part II: recommendations for training. <em>Sports Medicine</em>. 2011. <a href=\"https://link.springer.com/article/10.2165/11590560-000000000-00000\" target=\"_blank\" rel=\"noopener\">Springer (doi:10.2165/11590560)</a>"
+  },
+  {
+   "id": "h121",
+   "kind": "html",
+   "en": "Carey DG, Drake MM, Pliego GJ, Raymond RL. Do hockey players need aerobic fitness? Relation between VO2max and fatigue during high-intensity intermittent ice skating. <em>Journal of Strength and Conditioning Research</em>. 2007. <a href=\"https://pubmed.ncbi.nlm.nih.gov/17685680/\" target=\"_blank\" rel=\"noopener\">PubMed 17685680</a>"
+  },
+  {
+   "id": "h122",
+   "kind": "html",
+   "en": "Roczniok R, et al. Physiological, physical and on-ice performance criteria for selection of elite ice hockey teams. <em>Biology of Sport</em>. 2016. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC4786585/\" target=\"_blank\" rel=\"noopener\">PMC4786585</a>"
+  },
+  {
+   "id": "h123",
+   "kind": "html",
+   "en": "VO2max in elite athletes under high-intensity interval training: a meta-analysis. <em>Heliyon</em>. 2023. <a href=\"https://pubmed.ncbi.nlm.nih.gov/37346345/\" target=\"_blank\" rel=\"noopener\">PubMed 37346345</a>"
+  },
+  {
+   "id": "h124",
+   "kind": "html",
+   "en": "Comparison of different interval training methods on athletes' oxygen uptake: a systematic review with network meta-analysis. <em>BMC Sports Science, Medicine and Rehabilitation</em>. 2025. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC12218014/\" target=\"_blank\" rel=\"noopener\">PMC12218014</a>"
+  },
+  {
+   "id": "h125",
+   "kind": "html",
+   "en": "Gibala MJ, Little JP, MacDonald MJ, Hawley JA. Physiological adaptations to low-volume, high-intensity interval training in health and disease. <em>The Journal of Physiology</em>. 2012. <a href=\"https://pubmed.ncbi.nlm.nih.gov/22289907/\" target=\"_blank\" rel=\"noopener\">PubMed 22289907</a>"
+  },
+  {
+   "id": "h126",
+   "kind": "html",
+   "en": "Wilson JM, et al. Concurrent training: a meta-analysis examining interference of aerobic and resistance exercises. <em>Journal of Strength and Conditioning Research</em>. 2012. <a href=\"https://pubmed.ncbi.nlm.nih.gov/22002517/\" target=\"_blank\" rel=\"noopener\">PubMed 22002517</a>"
+  },
+  {
+   "id": "h127",
+   "kind": "html",
+   "en": "Effects of high-intensity interval training on cardiorespiratory fitness in children and adolescents: a systematic review and meta-analysis. <em>PLOS One</em>. 2022. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10174557/\" target=\"_blank\" rel=\"noopener\">PMC10174557</a>"
+  },
+  {
+   "id": "h128",
+   "kind": "html",
+   "en": "The relationship between aerobic capacity, lactate clearance, and heart rate recovery in ice hockey players. <em>Applied Sciences</em>. 2025. <a href=\"https://doi.org/10.3390/app151910310\" target=\"_blank\" rel=\"noopener\">doi:10.3390/app151910310</a>"
+  },
+  {
+   "id": "a129",
+   "kind": "attr:alt",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h130",
+   "kind": "html",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h131",
+   "kind": "html",
+   "en": "M.Ed. Sport Science · National Team Coach"
+  },
+  {
+   "id": "h132",
+   "kind": "html",
+   "en": "David builds science-based off-ice training for hockey players at every level, from first-year youth skaters to adult and masters players. Elite Hockey Drills exists to put real sport science in the hands of players who want to train smarter, not just harder."
+  },
+  {
+   "id": "h133",
+   "kind": "html",
+   "en": "The inside track"
+  },
+  {
+   "id": "h134",
+   "kind": "html",
+   "en": "Get the next one <em class=\"serif\">first.</em>"
+  },
+  {
+   "id": "h135",
+   "kind": "html",
+   "en": "New science-backed guides on training, nutrition, and recovery, sent straight to your inbox. No fluff, no spam, just what makes you harder to play against."
+  },
+  {
+   "id": "a136",
+   "kind": "attr:aria-label",
+   "en": "First name"
+  },
+  {
+   "id": "a137",
+   "kind": "attr:placeholder",
+   "en": "First name"
+  },
+  {
+   "id": "a138",
+   "kind": "attr:aria-label",
+   "en": "Email address"
+  },
+  {
+   "id": "a139",
+   "kind": "attr:placeholder",
+   "en": "your@email.com"
+  },
+  {
+   "id": "h140",
+   "kind": "html",
+   "en": "<span class=\"btn-label\">Send me the guides</span>\n          <span class=\"news-spinner\" aria-hidden=\"true\"></span>"
+  },
+  {
+   "id": "h141",
+   "kind": "html",
+   "en": "No spam. Unsubscribe anytime. By subscribing you agree to receive training emails from Elite Hockey Drills."
+  },
+  {
+   "id": "h142",
+   "kind": "html",
+   "en": "You're in."
+  },
+  {
+   "id": "h143",
+   "kind": "html",
+   "en": "Welcome to the inside track. Your first guide is already on its way to your inbox."
+  },
+  {
+   "id": "h144",
+   "kind": "html",
+   "en": "Stop fading"
+  },
+  {
+   "id": "h145",
+   "kind": "html",
+   "en": "Build the engine,<br><em class=\"serif\">own the third.</em>"
+  },
+  {
+   "id": "h146",
+   "kind": "html",
+   "en": "You just read the science. The new Elite Hockey Drills app is the execution: a personalized off-ice program built from your age, level, position, and schedule, with hockey-specific conditioning woven through every phase and a demo video for every exercise. Try it free for 7 days, or start with a classic 8-week program."
+  },
+  {
+   "id": "t147",
+   "kind": "text",
+   "en": "Try the App Free"
+  },
+  {
+   "id": "h148",
+   "kind": "html",
+   "en": "See the Programs"
+  },
+  {
+   "id": "h149",
+   "kind": "html",
+   "en": "Get a Free Program"
+  },
+  {
+   "id": "h150",
+   "kind": "html",
+   "en": "7-day free trial, then $17.99/month or $99.90/year (about $8.33/mo). Billed through the App Store or Google Play, cancel anytime. Available on iPhone and Android."
+  },
+  {
+   "id": "h151",
+   "kind": "html",
+   "en": "← Back to all articles"
+  },
+  {
+   "id": "h152",
+   "kind": "html",
+   "en": "Keep reading"
+  },
+  {
+   "id": "h153",
+   "kind": "html",
+   "en": "More training guides"
+  },
+  {
+   "id": "h154",
+   "kind": "html",
+   "en": "Training"
+  },
+  {
+   "id": "h155",
+   "kind": "html",
+   "en": "The Off-Season Blueprint"
+  },
+  {
+   "id": "h156",
+   "kind": "html",
+   "en": "How to structure your summer week by week, the science of periodization, and where conditioning fits alongside strength and speed."
+  },
+  {
+   "id": "h157",
+   "kind": "html",
+   "en": "11 min read"
+  },
+  {
+   "id": "h158",
+   "kind": "html",
+   "en": "Speed"
+  },
+  {
+   "id": "h159",
+   "kind": "html",
+   "en": "How to Skate Faster"
+  },
+  {
+   "id": "h160",
+   "kind": "html",
+   "en": "Speed is built off the ice. The three drivers of skating speed, the dryland work that develops each, and a weekly plan to put it together."
+  },
+  {
+   "id": "h161",
+   "kind": "html",
+   "en": "12 min read"
+  },
+  {
+   "id": "h162",
+   "kind": "html",
+   "en": "Recovery"
+  },
+  {
+   "id": "h163",
+   "kind": "html",
+   "en": "Sleep &amp; Recovery: The Off-Season Multiplier"
+  },
+  {
+   "id": "h164",
+   "kind": "html",
+   "en": "The most underrated training tool you own is free. How sleep makes you faster, sharper, and far less likely to get hurt."
+  },
+  {
+   "id": "h165",
+   "kind": "html",
+   "en": "10 min read"
+  },
+  {
+   "id": "h166",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "h167",
+   "kind": "html",
+   "en": "Science-backed off-ice training for hockey players. Built by a certified sport scientist and national team coach."
+  },
+  {
+   "id": "h168",
+   "kind": "html",
+   "en": "Programs"
+  },
+  {
+   "id": "h169",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com/survey.html\">Free 5-Day PDF</a>"
+  },
+  {
+   "id": "h170",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">8-Week Programs</a>"
+  },
+  {
+   "id": "h171",
+   "kind": "html",
+   "en": "<a href=\"/hockey-training-app.html\">Hockey Training App</a>"
+  },
+  {
+   "id": "h172",
+   "kind": "html",
+   "en": "<a href=\"https://apps.apple.com/us/app/elite-hockey-drills/id6787257275\" data-store=\"ios\">The App — iOS</a>"
+  },
+  {
+   "id": "h173",
+   "kind": "html",
+   "en": "<a href=\"https://play.google.com/store/apps/details?id=com.elitehockeydrills.training\">The App — Android</a>"
+  },
+  {
+   "id": "h174",
+   "kind": "html",
+   "en": "Navigate"
+  },
+  {
+   "id": "h175",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">About</a>"
+  },
+  {
+   "id": "h176",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h177",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Exercise Library</a>"
+  },
+  {
+   "id": "h178",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h179",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h180",
+   "kind": "html",
+   "en": "Connect"
+  },
+  {
+   "id": "h181",
+   "kind": "html",
+   "en": "<a href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">Instagram</a>"
+  },
+  {
+   "id": "h182",
+   "kind": "html",
+   "en": "<a href=\"https://wa.me/420770149067\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>"
+  },
+  {
+   "id": "h183",
+   "kind": "html",
+   "en": "<a href=\"mailto:elitehockeydrills@gmail.com\">Email</a>"
+  },
+  {
+   "id": "h184",
+   "kind": "html",
+   "en": "<span>© 2025 Elite Hockey Drills. All rights reserved.</span>\n    <a class=\"footer-ig\" href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">@elite_hockey_drills</a>"
+  },
+  {
+   "id": "j185",
+   "kind": "js",
+   "en": "Please enter a valid email address."
+  },
+  {
+   "id": "j186",
+   "kind": "js",
+   "en": "art-news-msg err"
+  },
+  {
+   "id": "j187",
+   "kind": "js",
+   "en": "Something went wrong. Please try again in a moment."
+  },
+  {
+   "id": "j188",
+   "kind": "js",
+   "en": "art-news-msg err"
+  },
+  {
+   "id": "j189",
+   "kind": "js",
+   "en": "Network error. Please check your connection and try again."
+  },
+  {
+   "id": "j190",
+   "kind": "js",
+   "en": "art-news-msg err"
+  }
+ ]
+}

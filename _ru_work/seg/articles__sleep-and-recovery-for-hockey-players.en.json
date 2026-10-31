@@ -1,0 +1,1080 @@
+{
+ "page": "articles/sleep-and-recovery-for-hockey-players.html",
+ "segments": [
+  {
+   "id": "t0",
+   "kind": "title",
+   "en": "Sleep &amp; Recovery for Hockey Players: The Off-Season Multiplier | Elite Hockey Drills"
+  },
+  {
+   "id": "m1",
+   "kind": "meta",
+   "en": "Sleep is the most underrated training tool in hockey. The science of how sleep makes you faster, sharper, and less injury-prone, plus a recovery playbook for every age. By Coach David Ciboch, M.Ed. Sport Science."
+  },
+  {
+   "id": "m2",
+   "kind": "meta",
+   "en": "Sleep & Recovery: The Off-Season Multiplier | Elite Hockey Drills"
+  },
+  {
+   "id": "m3",
+   "kind": "meta",
+   "en": "How sleep makes you faster, sharper, and far less likely to get hurt, plus the recovery habits that turn hard work into adaptation."
+  },
+  {
+   "id": "l4",
+   "kind": "ld",
+   "en": "Sleep and Recovery: The Off-Season Multiplier"
+  },
+  {
+   "id": "l5",
+   "kind": "ld",
+   "en": "The science of how sleep makes hockey players faster, sharper, and less injury-prone, plus a recovery playbook for every age."
+  },
+  {
+   "id": "l6",
+   "kind": "ld",
+   "en": "David Ciboch"
+  },
+  {
+   "id": "l7",
+   "kind": "ld",
+   "en": "Sport Scientist and National Team Coach"
+  },
+  {
+   "id": "l8",
+   "kind": "ld",
+   "en": "Elite Hockey Drills"
+  },
+  {
+   "id": "h9",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "a10",
+   "kind": "attr:aria-label",
+   "en": "Main navigation"
+  },
+  {
+   "id": "h11",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">Coach</a>"
+  },
+  {
+   "id": "h12",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h13",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">Programs</a>"
+  },
+  {
+   "id": "h14",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Library</a>"
+  },
+  {
+   "id": "h15",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h16",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h17",
+   "kind": "html",
+   "en": "Get the App"
+  },
+  {
+   "id": "a18",
+   "kind": "attr:aria-label",
+   "en": "Breadcrumb"
+  },
+  {
+   "id": "h19",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com\">Home</a>"
+  },
+  {
+   "id": "h20",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h21",
+   "kind": "html",
+   "en": "Sleep &amp; Recovery"
+  },
+  {
+   "id": "h22",
+   "kind": "html",
+   "en": "Recovery"
+  },
+  {
+   "id": "h23",
+   "kind": "html",
+   "en": "Sleep &amp; Recovery: <span class=\"serif\">the off-season multiplier.</span>"
+  },
+  {
+   "id": "h24",
+   "kind": "html",
+   "en": "You do not get faster during training. You get faster while you <em>recover</em> from it. Here is the free, science backed tool that decides how much of your summer work actually sticks, for players of every age."
+  },
+  {
+   "id": "a25",
+   "kind": "attr:alt",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h26",
+   "kind": "html",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h27",
+   "kind": "html",
+   "en": "M.Ed. Sport Science · National Team Coach"
+  },
+  {
+   "id": "h28",
+   "kind": "html",
+   "en": "10 min read"
+  },
+  {
+   "id": "t29",
+   "kind": "text",
+   "en": "Science-based"
+  },
+  {
+   "id": "t30",
+   "kind": "text",
+   "en": "The 30-second version"
+  },
+  {
+   "id": "h31",
+   "kind": "html",
+   "en": "<strong>Sleep is a performance enhancer.</strong> When college athletes extended their sleep, sprint times, shooting accuracy, and reaction speed all improved measurably."
+  },
+  {
+   "id": "h32",
+   "kind": "html",
+   "en": "<strong>Most players are under-slept.</strong> Teens need 8 to 10 hours and adults 7 to 9. Athletes in hard training often need more, not less."
+  },
+  {
+   "id": "h33",
+   "kind": "html",
+   "en": "<strong>Short sleep gets you hurt.</strong> Youth athletes who slept under 8 hours were about 1.7 times more likely to be injured."
+  },
+  {
+   "id": "h34",
+   "kind": "html",
+   "en": "<strong>Your body rebuilds at night.</strong> Most of your daily growth hormone is released during deep sleep, which is when muscle actually repairs."
+  },
+  {
+   "id": "h35",
+   "kind": "html",
+   "en": "<strong>The off-season is the place to fix this.</strong> No road trips, no late games. Build the sleep and recovery habits now and carry them into the season."
+  },
+  {
+   "id": "a36",
+   "kind": "attr:aria-label",
+   "en": "In this guide"
+  },
+  {
+   "id": "h37",
+   "kind": "html",
+   "en": "In this guide"
+  },
+  {
+   "id": "h38",
+   "kind": "html",
+   "en": "<a href=\"#won-in-bed\">Why the off-season is won in your sleep</a>"
+  },
+  {
+   "id": "h39",
+   "kind": "html",
+   "en": "<a href=\"#how-much\">How much sleep you actually need</a>"
+  },
+  {
+   "id": "h40",
+   "kind": "html",
+   "en": "<a href=\"#performance\">What more sleep does to your game</a>"
+  },
+  {
+   "id": "h41",
+   "kind": "html",
+   "en": "<a href=\"#injury\">Sleep, injuries, and the youth athlete</a>"
+  },
+  {
+   "id": "h42",
+   "kind": "html",
+   "en": "<a href=\"#engine\">What actually happens while you sleep</a>"
+  },
+  {
+   "id": "h43",
+   "kind": "html",
+   "en": "<a href=\"#playbook\">Your sleep playbook</a>"
+  },
+  {
+   "id": "h44",
+   "kind": "html",
+   "en": "<a href=\"#beyond\">Naps and recovery beyond sleep</a>"
+  },
+  {
+   "id": "h45",
+   "kind": "html",
+   "en": "<a href=\"#bottom-line\">The bottom line</a>"
+  },
+  {
+   "id": "h46",
+   "kind": "html",
+   "en": "Ask most hockey players what they did to get better last summer and they will tell you about the lifting, the sprints, the skates, the shooting. Almost nobody mentions the eight or nine hours they spent unconscious every night. That is a mistake, because that is the window where the work turns into results."
+  },
+  {
+   "id": "h47",
+   "kind": "html",
+   "en": "Training is the stimulus. It is the signal that tells your body to adapt. But the adaptation itself, the new muscle, the faster nervous system, the rebuilt tissue, happens later, mostly while you sleep. Skip the recovery and you keep sending the signal without ever letting the body answer it. In the off-season, when you finally control your own schedule, sleep is the single highest return habit you can build. It is also free."
+  },
+  {
+   "id": "h48",
+   "kind": "html",
+   "en": "Why the off-season is won in your sleep"
+  },
+  {
+   "id": "h49",
+   "kind": "html",
+   "en": "During the season, sleep is the first thing that gets sacrificed. Late games, long bus rides, early-morning ice, school, work, travel across time zones. Players survive on whatever they can get. The off-season removes almost all of those obstacles, which makes it the one stretch of the year where you can sleep like the adaptation actually matters."
+  },
+  {
+   "id": "h50",
+   "kind": "html",
+   "en": "That timing is not a small detail. The off-season is when you are asking your body for the biggest changes: more muscle, more power, a bigger aerobic engine. Every one of those adaptations is built during recovery. If you train hard all summer but treat sleep as optional, you are leaving a large part of your progress on the table."
+  },
+  {
+   "id": "h51",
+   "kind": "html",
+   "en": "How much sleep you actually need"
+  },
+  {
+   "id": "h52",
+   "kind": "html",
+   "en": "The numbers are clearer than most people think. The National Sleep Foundation's expert review recommends <a href=\"https://www.sleephealthjournal.org/article/S2352-7218(15)00015-7/fulltext\" target=\"_blank\" rel=\"noopener\">7 to 9 hours for adults and 8 to 10 hours for teenagers</a>, with school-age children needing even more. The American Academy of Sleep Medicine's pediatric consensus lands in the same place: <a href=\"https://aasm.org/recharge-with-sleep-pediatric-sleep-recommendations-promoting-optimal-health/\" target=\"_blank\" rel=\"noopener\">9 to 12 hours for ages 6 to 12, and 8 to 10 hours for ages 13 to 18</a>."
+  },
+  {
+   "id": "h53",
+   "kind": "html",
+   "en": "Here is the part that matters for athletes. Those ranges are general health recommendations. A 2021 expert consensus on sleep and the athlete, published in the British Journal of Sports Medicine, points out that athletes are actually <a href=\"https://experts.arizona.edu/en/publications/sleep-and-the-athlete-narrative-review-and-2021-expert-consensus-/\" target=\"_blank\" rel=\"noopener\">more prone to poor and broken sleep</a> than the general population, and that a single fixed number is unlikely to be ideal for everyone. The practical reading: if you are training hard, aim for the top of your age range, and add a bit more during heavy weeks rather than less."
+  },
+  {
+   "id": "v0",
+   "kind": "svg",
+   "en": "Recommended sleep by age"
+  },
+  {
+   "id": "v1",
+   "kind": "svg",
+   "en": "Children aged 9 to 12 need 9 to 12 hours, teenagers 13 to 18 need 8 to 10 hours, and adults need 7 to 9 hours of sleep per night."
+  },
+  {
+   "id": "v2",
+   "kind": "svg",
+   "en": "KIDS"
+  },
+  {
+   "id": "v3",
+   "kind": "svg",
+   "en": "TEENS"
+  },
+  {
+   "id": "v4",
+   "kind": "svg",
+   "en": "ADULTS"
+  },
+  {
+   "id": "v5",
+   "kind": "svg",
+   "en": "9 to 12 hrs"
+  },
+  {
+   "id": "v6",
+   "kind": "svg",
+   "en": "8 to 10 hrs"
+  },
+  {
+   "id": "v7",
+   "kind": "svg",
+   "en": "7 to 9 hrs"
+  },
+  {
+   "id": "v8",
+   "kind": "svg",
+   "en": "3h"
+  },
+  {
+   "id": "v9",
+   "kind": "svg",
+   "en": "6h"
+  },
+  {
+   "id": "v10",
+   "kind": "svg",
+   "en": "9h"
+  },
+  {
+   "id": "v11",
+   "kind": "svg",
+   "en": "12h"
+  },
+  {
+   "id": "v12",
+   "kind": "svg",
+   "en": "Recommended sleep by age"
+  },
+  {
+   "id": "v13",
+   "kind": "svg",
+   "en": "Kids 9 to 12 hours, teens 8 to 10 hours, adults 7 to 9 hours per night."
+  },
+  {
+   "id": "v14",
+   "kind": "svg",
+   "en": "KIDS"
+  },
+  {
+   "id": "v15",
+   "kind": "svg",
+   "en": "9-12 HRS"
+  },
+  {
+   "id": "v16",
+   "kind": "svg",
+   "en": "TEENS"
+  },
+  {
+   "id": "v17",
+   "kind": "svg",
+   "en": "8-10 HRS"
+  },
+  {
+   "id": "v18",
+   "kind": "svg",
+   "en": "ADULTS"
+  },
+  {
+   "id": "v19",
+   "kind": "svg",
+   "en": "7-9 HRS"
+  },
+  {
+   "id": "h54",
+   "kind": "html",
+   "en": "How much sleep each age really needs. Most players, especially teens, fall short, and the off-season is the time to fix it."
+  },
+  {
+   "id": "h55",
+   "kind": "html",
+   "en": "Youth · 9 to 12"
+  },
+  {
+   "id": "h56",
+   "kind": "html",
+   "en": "9 to 12 hours, every night. Growth, learning, and training all compete for the same recovery. Protect a consistent bedtime above almost everything else."
+  },
+  {
+   "id": "h57",
+   "kind": "html",
+   "en": "Teens · 13 to 18"
+  },
+  {
+   "id": "h58",
+   "kind": "html",
+   "en": "8 to 10 hours. This is the hardest group to hit it, and the one that benefits most. School start times and screens are the usual thieves."
+  },
+  {
+   "id": "h59",
+   "kind": "html",
+   "en": "Adults · 19+"
+  },
+  {
+   "id": "h60",
+   "kind": "html",
+   "en": "7 to 9 hours. Busy lives make this tough, but recovery demand does not drop just because you have a job. Guard your sleep window like a training session."
+  },
+  {
+   "id": "h61",
+   "kind": "html",
+   "en": "What more sleep does to your game"
+  },
+  {
+   "id": "h62",
+   "kind": "html",
+   "en": "The most quoted study in this whole area is a landmark project from Stanford. Researchers had collegiate basketball players <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3119836/\" target=\"_blank\" rel=\"noopener\">extend their time in bed toward 10 hours a night</a> for five to seven weeks, which pushed their actual sleep from about 6.7 hours up to roughly 8.5. The results were striking. Sprint times dropped, free-throw accuracy climbed about 9 percent, three-point accuracy climbed a similar amount, reaction time got faster, and the players reported better mood and far less daytime fatigue."
+  },
+  {
+   "id": "h63",
+   "kind": "html",
+   "en": "It is worth being honest about that study: it was small, with no control group, so treat it as a powerful illustration rather than the final word. The more robust evidence comes from pooling many studies. A 2025 systematic review and meta-analysis found that <a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11996801/\" target=\"_blank\" rel=\"noopener\">sleep deprivation meaningfully hurts athletic performance</a> across the board: endurance, speed, and explosive power all decline, and, just as important, the same workload starts to <em>feel</em> harder. When effort feels harder, you train worse and quit sooner without even realizing why."
+  },
+  {
+   "id": "h64",
+   "kind": "html",
+   "en": "You see the same thing in skill sports. When performance tennis players were restricted to around five hours of sleep, their <a href=\"https://www.sciencedirect.com/science/article/abs/pii/S0031938413002370\" target=\"_blank\" rel=\"noopener\">serving accuracy dropped sharply</a>, and caffeine did not rescue it. For a hockey player, think about what that means for a hard pass, a quick read, or a clean release under pressure. Tired brains are slow brains."
+  },
+  {
+   "id": "h65",
+   "kind": "html",
+   "en": "A tired athlete is not just weaker. The same workout <span>feels harder</span>, so they train worse and never know why."
+  },
+  {
+   "id": "h66",
+   "kind": "html",
+   "en": "Sleep, injuries, and the youth athlete"
+  },
+  {
+   "id": "h67",
+   "kind": "html",
+   "en": "If performance does not get your attention, this should. In a study of adolescent athletes, those who slept on average <a href=\"https://pubmed.ncbi.nlm.nih.gov/25028798/\" target=\"_blank\" rel=\"noopener\">less than 8 hours a night were about 1.7 times more likely to get injured</a> than those who slept more. For a young player chasing a roster spot, missed time to a preventable injury is one of the most expensive things that can happen, and short sleep quietly raises that risk."
+  },
+  {
+   "id": "h68",
+   "kind": "html",
+   "en": "This is also where the youth conversation gets important. Growing bodies are already spending enormous resources on development. Pile hard training on top of chronic short sleep and you are asking for trouble. For parents, the highest leverage move in the entire off-season is not a fancier program or more reps. It is a protected, consistent bedtime."
+  },
+  {
+   "id": "h69",
+   "kind": "html",
+   "en": "For parents of youth players"
+  },
+  {
+   "id": "h70",
+   "kind": "html",
+   "en": "Before you add another camp, another clinic, or another private lesson, audit the bedtime. A 10-year-old getting 9 hours and a calm, screen-free wind-down will out-recover, out-adapt, and out-last a 10-year-old getting 7 hours and scrolling until midnight. Sleep is the cheapest performance upgrade you will ever buy."
+  },
+  {
+   "id": "h71",
+   "kind": "html",
+   "en": "What actually happens while you sleep"
+  },
+  {
+   "id": "h72",
+   "kind": "html",
+   "en": "Sleep is not passive. It is when the body runs its repair crew. In men, <a href=\"https://academic.oup.com/sleep/article-pdf/21/6/553/8564987/sleep-21-6-553.pdf\" target=\"_blank\" rel=\"noopener\">most of the day's growth hormone is released during deep, slow-wave sleep</a>, and the amount of deep sleep tracks closely with how much is released. Growth hormone is central to tissue repair and recovery, which is the physiological reason \"deep sleep rebuilds you\" is more than a slogan."
+  },
+  {
+   "id": "h73",
+   "kind": "html",
+   "en": "Sleep also protects the part of you that has to show up to train every day: your immune system. In one well-known experiment, healthy adults who slept <a href=\"https://pubmed.ncbi.nlm.nih.gov/26118561/\" target=\"_blank\" rel=\"noopener\">under 6 hours were roughly four times more likely to catch a cold</a> when exposed to a virus, compared with those sleeping more than seven. A summer derailed by getting sick every few weeks is a summer of lost training. Sleep is part of how you stay available."
+  },
+  {
+   "id": "h74",
+   "kind": "html",
+   "en": "Your sleep playbook"
+  },
+  {
+   "id": "h75",
+   "kind": "html",
+   "en": "Knowing you need sleep is easy. Actually getting it is the hard part. These are the habits with the best evidence behind them, in rough order of impact."
+  },
+  {
+   "id": "h76",
+   "kind": "html",
+   "en": "Keep the schedule boringly consistent"
+  },
+  {
+   "id": "h77",
+   "kind": "html",
+   "en": "Same bedtime, same wake time, including weekends. A regular schedule is the foundation everything else sits on, and the off-season is the ideal time to lock it in because nothing is forcing you off it."
+  },
+  {
+   "id": "h78",
+   "kind": "html",
+   "en": "Cut caffeine earlier than you think"
+  },
+  {
+   "id": "h79",
+   "kind": "html",
+   "en": "Caffeine lingers. In a controlled study, a <a href=\"https://pubmed.ncbi.nlm.nih.gov/24235903/\" target=\"_blank\" rel=\"noopener\">400 mg dose taken 6 hours before bed cut measured sleep by more than an hour</a>, and the people in the study did not even notice the damage. Caffeine's half-life averages around 5 to 6 hours but varies a lot between people. A safe default is to stop caffeine by early afternoon."
+  },
+  {
+   "id": "h80",
+   "kind": "html",
+   "en": "Be honest about alcohol"
+  },
+  {
+   "id": "h81",
+   "kind": "html",
+   "en": "Relevant mostly to adult and men's-league players: a drink might help you fall asleep, but alcohol <a href=\"https://onlinelibrary.wiley.com/doi/abs/10.1111/acer.12006\" target=\"_blank\" rel=\"noopener\">suppresses REM sleep and fragments the second half of the night</a>. You wake up having slept without actually recovering. If you are serious about a training block, treat alcohol as a recovery cost."
+  },
+  {
+   "id": "h82",
+   "kind": "html",
+   "en": "Make the room dark, cool, and screen-free"
+  },
+  {
+   "id": "h83",
+   "kind": "html",
+   "en": "A cool, dark room and a wind-down without bright screens in the last 30 to 60 minutes help your brain shift into sleep. None of this is exotic. It just has to actually happen, every night, until it is automatic."
+  },
+  {
+   "id": "h84",
+   "kind": "html",
+   "en": "Train hard enough to need the recovery"
+  },
+  {
+   "id": "h85",
+   "kind": "html",
+   "en": "Our 8-week off-ice programs give you a stimulus worth sleeping on, fully periodized so you build instead of burn out."
+  },
+  {
+   "id": "t86",
+   "kind": "text",
+   "en": "See the Programs"
+  },
+  {
+   "id": "h87",
+   "kind": "html",
+   "en": "Naps and recovery beyond sleep"
+  },
+  {
+   "id": "h88",
+   "kind": "html",
+   "en": "Night sleep is the main event, but a few other tools genuinely help."
+  },
+  {
+   "id": "h89",
+   "kind": "html",
+   "en": "Naps"
+  },
+  {
+   "id": "h90",
+   "kind": "html",
+   "en": "If you are short on night sleep or training twice a day, a nap is a legitimate recovery tool. A review of napping in athletes found benefits from <a href=\"https://www.tandfonline.com/doi/full/10.2147/NSS.S315556\" target=\"_blank\" rel=\"noopener\">naps of roughly 20 to 90 minutes, taken in the early afternoon</a>. If you have to perform soon after, keep it short, around 20 to 30 minutes, and give yourself about half an hour afterward to shake off the grogginess before you train."
+  },
+  {
+   "id": "h91",
+   "kind": "html",
+   "en": "The ice-bath nuance"
+  },
+  {
+   "id": "h92",
+   "kind": "html",
+   "en": "Cold-water immersion is everywhere, and the picture is more complicated than the highlight reels suggest. Research shows that regularly jumping in an ice bath right after lifting can actually <a href=\"https://physoc.onlinelibrary.wiley.com/doi/abs/10.1113/JP270570\" target=\"_blank\" rel=\"noopener\">blunt the muscle and strength gains you are training for</a>. In the off-season, when the whole point is to build, do not routinely ice-bath right after your strength sessions. Cold plunges still have a place for acute recovery around competition during the season, just not as a daily habit when you are trying to grow."
+  },
+  {
+   "id": "h93",
+   "kind": "html",
+   "en": "Reading your recovery"
+  },
+  {
+   "id": "h94",
+   "kind": "html",
+   "en": "Wearables now put heart-rate variability and sleep scores on your wrist. These can be useful as a personal trend, comparing you to your own baseline over time. Just do not over-read a single number. Heart-rate variability is genuinely debated as a fatigue marker, so use it as one input alongside the obvious ones: how you feel, how heavy the bar feels, your mood, and your motivation."
+  },
+  {
+   "id": "h95",
+   "kind": "html",
+   "en": "For adult and masters players"
+  },
+  {
+   "id": "h96",
+   "kind": "html",
+   "en": "Recovery capacity does change with age, but the fix is not to train less. It is to recover smarter. Protect your sleep window, keep caffeine and alcohol in check, and respect the rest days in your program. Consistency over years beats heroics over weekends."
+  },
+  {
+   "id": "h97",
+   "kind": "html",
+   "en": "The bottom line"
+  },
+  {
+   "id": "h98",
+   "kind": "html",
+   "en": "You can buy the best program, eat perfectly, and train with everything you have, and still cap your results by under-sleeping. Sleep is not the reward you get after the work. It is part of the work. In the off-season, when the schedule is finally yours, treat your sleep window with the same seriousness as a training session, and you will arrive at tryouts faster, sharper, and more durable than the version of you that just trained harder and slept less."
+  },
+  {
+   "id": "h99",
+   "kind": "html",
+   "en": "Off-season recovery, at a glance"
+  },
+  {
+   "id": "h100",
+   "kind": "html",
+   "en": "Habit"
+  },
+  {
+   "id": "h101",
+   "kind": "html",
+   "en": "Target"
+  },
+  {
+   "id": "h102",
+   "kind": "html",
+   "en": "Why it matters"
+  },
+  {
+   "id": "h103",
+   "kind": "html",
+   "en": "Nightly sleep"
+  },
+  {
+   "id": "h104",
+   "kind": "html",
+   "en": "Teens 8 to 10 h · Adults 7 to 9 h"
+  },
+  {
+   "id": "h105",
+   "kind": "html",
+   "en": "The window where training becomes adaptation"
+  },
+  {
+   "id": "h106",
+   "kind": "html",
+   "en": "Consistent schedule"
+  },
+  {
+   "id": "h107",
+   "kind": "html",
+   "en": "Same times, 7 days"
+  },
+  {
+   "id": "h108",
+   "kind": "html",
+   "en": "The foundation that makes the rest work"
+  },
+  {
+   "id": "h109",
+   "kind": "html",
+   "en": "Caffeine cutoff"
+  },
+  {
+   "id": "h110",
+   "kind": "html",
+   "en": "By early afternoon"
+  },
+  {
+   "id": "h111",
+   "kind": "html",
+   "en": "Protects deep, unbroken sleep"
+  },
+  {
+   "id": "h112",
+   "kind": "html",
+   "en": "Naps (optional)"
+  },
+  {
+   "id": "h113",
+   "kind": "html",
+   "en": "20 to 30 min, early afternoon"
+  },
+  {
+   "id": "h114",
+   "kind": "html",
+   "en": "Tops up short night sleep without inertia"
+  },
+  {
+   "id": "h115",
+   "kind": "html",
+   "en": "Ice baths after lifting"
+  },
+  {
+   "id": "h116",
+   "kind": "html",
+   "en": "Avoid routinely in off-season"
+  },
+  {
+   "id": "h117",
+   "kind": "html",
+   "en": "Can blunt the muscle gains you are building"
+  },
+  {
+   "id": "a118",
+   "kind": "attr:aria-label",
+   "en": "References"
+  },
+  {
+   "id": "h119",
+   "kind": "html",
+   "en": "References"
+  },
+  {
+   "id": "h120",
+   "kind": "html",
+   "en": "Every claim above is drawn from peer-reviewed research and expert consensus. Sources are listed below so you can read them yourself."
+  },
+  {
+   "id": "h121",
+   "kind": "html",
+   "en": "Hirshkowitz M, et al. National Sleep Foundation's sleep time duration recommendations: methodology and results summary. <em>Sleep Health</em>. 2015. <a href=\"https://www.sleephealthjournal.org/article/S2352-7218(15)00015-7/fulltext\" target=\"_blank\" rel=\"noopener\">sleephealthjournal.org</a>"
+  },
+  {
+   "id": "h122",
+   "kind": "html",
+   "en": "Paruthi S, et al. Recommended amount of sleep for pediatric populations (American Academy of Sleep Medicine consensus). <em>Journal of Clinical Sleep Medicine</em>. 2016. <a href=\"https://aasm.org/recharge-with-sleep-pediatric-sleep-recommendations-promoting-optimal-health/\" target=\"_blank\" rel=\"noopener\">aasm.org</a>"
+  },
+  {
+   "id": "h123",
+   "kind": "html",
+   "en": "Mah CD, Mah KE, Kezirian EJ, Dement WC. The effects of sleep extension on the athletic performance of collegiate basketball players. <em>Sleep</em>. 2011. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3119836/\" target=\"_blank\" rel=\"noopener\">PMC3119836</a>"
+  },
+  {
+   "id": "h124",
+   "kind": "html",
+   "en": "Walsh NP, et al. Sleep and the athlete: narrative review and 2021 expert consensus recommendations. <em>British Journal of Sports Medicine</em>. 2021. <a href=\"https://experts.arizona.edu/en/publications/sleep-and-the-athlete-narrative-review-and-2021-expert-consensus-/\" target=\"_blank\" rel=\"noopener\">view study</a>"
+  },
+  {
+   "id": "h125",
+   "kind": "html",
+   "en": "Kong M, et al. Effects of sleep deprivation on sports performance and perceived exertion in athletes and non-athletes: a systematic review and meta-analysis. <em>Frontiers in Physiology</em>. 2025. <a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11996801/\" target=\"_blank\" rel=\"noopener\">PMC11996801</a>"
+  },
+  {
+   "id": "h126",
+   "kind": "html",
+   "en": "Milewski MD, et al. Chronic lack of sleep is associated with increased sports injuries in adolescent athletes. <em>Journal of Pediatric Orthopaedics</em>. 2014. <a href=\"https://pubmed.ncbi.nlm.nih.gov/25028798/\" target=\"_blank\" rel=\"noopener\">PubMed 25028798</a>"
+  },
+  {
+   "id": "h127",
+   "kind": "html",
+   "en": "Van Cauter E, Plat L, Copinschi G. Interrelations between sleep and the somatotropic axis. <em>Sleep</em>. 1998. <a href=\"https://academic.oup.com/sleep/article-pdf/21/6/553/8564987/sleep-21-6-553.pdf\" target=\"_blank\" rel=\"noopener\">academic.oup.com</a>"
+  },
+  {
+   "id": "h128",
+   "kind": "html",
+   "en": "Prather AA, Janicki-Deverts D, Hall MH, Cohen S. Behaviorally assessed sleep and susceptibility to the common cold. <em>Sleep</em>. 2015. <a href=\"https://pubmed.ncbi.nlm.nih.gov/26118561/\" target=\"_blank\" rel=\"noopener\">PubMed 26118561</a>"
+  },
+  {
+   "id": "h129",
+   "kind": "html",
+   "en": "Drake C, Roehrs T, Shambroom J, Roth T. Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed. <em>Journal of Clinical Sleep Medicine</em>. 2013. <a href=\"https://pubmed.ncbi.nlm.nih.gov/24235903/\" target=\"_blank\" rel=\"noopener\">PubMed 24235903</a>"
+  },
+  {
+   "id": "h130",
+   "kind": "html",
+   "en": "Ebrahim IO, Shapiro CM, Williams AJ, Fenwick PB. Alcohol and sleep I: effects on normal sleep. <em>Alcoholism: Clinical and Experimental Research</em>. 2013. <a href=\"https://onlinelibrary.wiley.com/doi/abs/10.1111/acer.12006\" target=\"_blank\" rel=\"noopener\">Wiley Online Library</a>"
+  },
+  {
+   "id": "h131",
+   "kind": "html",
+   "en": "Lastella M, et al. To nap or not to nap? A systematic review evaluating napping behavior in athletes. <em>Nature and Science of Sleep</em>. 2021. <a href=\"https://www.tandfonline.com/doi/full/10.2147/NSS.S315556\" target=\"_blank\" rel=\"noopener\">tandfonline.com</a>"
+  },
+  {
+   "id": "h132",
+   "kind": "html",
+   "en": "Roberts LA, et al. Post-exercise cold water immersion attenuates acute anabolic signalling and long-term adaptations in muscle to strength training. <em>The Journal of Physiology</em>. 2015. <a href=\"https://physoc.onlinelibrary.wiley.com/doi/abs/10.1113/JP270570\" target=\"_blank\" rel=\"noopener\">physoc.onlinelibrary.wiley.com</a>"
+  },
+  {
+   "id": "a133",
+   "kind": "attr:alt",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h134",
+   "kind": "html",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h135",
+   "kind": "html",
+   "en": "M.Ed. Sport Science · National Team Coach"
+  },
+  {
+   "id": "h136",
+   "kind": "html",
+   "en": "David builds science-based off-ice training for hockey players at every level, from first-year youth skaters to adult and masters players. Elite Hockey Drills exists to put real sport science in the hands of players who want to train smarter, not just harder."
+  },
+  {
+   "id": "h137",
+   "kind": "html",
+   "en": "The inside track"
+  },
+  {
+   "id": "h138",
+   "kind": "html",
+   "en": "Get the next one <em class=\"serif\">first.</em>"
+  },
+  {
+   "id": "h139",
+   "kind": "html",
+   "en": "New science-backed guides on training, nutrition, and recovery, sent straight to your inbox. No fluff, no spam, just what makes you harder to play against."
+  },
+  {
+   "id": "a140",
+   "kind": "attr:aria-label",
+   "en": "First name"
+  },
+  {
+   "id": "a141",
+   "kind": "attr:placeholder",
+   "en": "First name"
+  },
+  {
+   "id": "a142",
+   "kind": "attr:aria-label",
+   "en": "Email address"
+  },
+  {
+   "id": "a143",
+   "kind": "attr:placeholder",
+   "en": "your@email.com"
+  },
+  {
+   "id": "h144",
+   "kind": "html",
+   "en": "<span class=\"btn-label\">Send me the guides</span>\n          <span class=\"news-spinner\" aria-hidden=\"true\"></span>"
+  },
+  {
+   "id": "h145",
+   "kind": "html",
+   "en": "No spam. Unsubscribe anytime. By subscribing you agree to receive training emails from Elite Hockey Drills."
+  },
+  {
+   "id": "h146",
+   "kind": "html",
+   "en": "You're in."
+  },
+  {
+   "id": "h147",
+   "kind": "html",
+   "en": "Welcome to the inside track. Your first guide is already on its way to your inbox."
+  },
+  {
+   "id": "h148",
+   "kind": "html",
+   "en": "Make the summer count"
+  },
+  {
+   "id": "h149",
+   "kind": "html",
+   "en": "Give your body<br><em class=\"serif\">something to recover from.</em>"
+  },
+  {
+   "id": "h150",
+   "kind": "html",
+   "en": "The Elite Hockey Drills app turns this into a personalized off-ice program that adapts to missed sessions and game days, with a demo video for every exercise. First week free on iPhone and Android."
+  },
+  {
+   "id": "t151",
+   "kind": "text",
+   "en": "Get the App"
+  },
+  {
+   "id": "h152",
+   "kind": "html",
+   "en": "See the Programs"
+  },
+  {
+   "id": "h153",
+   "kind": "html",
+   "en": "Get a Free Program"
+  },
+  {
+   "id": "h154",
+   "kind": "html",
+   "en": "7-day free trial, then $17.99/month or $99.90/year. Billed via the App Store or Google Play, cancel anytime."
+  },
+  {
+   "id": "h155",
+   "kind": "html",
+   "en": "← Back to all articles"
+  },
+  {
+   "id": "h156",
+   "kind": "html",
+   "en": "Keep reading"
+  },
+  {
+   "id": "h157",
+   "kind": "html",
+   "en": "More off-season guides"
+  },
+  {
+   "id": "h158",
+   "kind": "html",
+   "en": "Training"
+  },
+  {
+   "id": "h159",
+   "kind": "html",
+   "en": "Off-Ice Hockey Training: The Complete Guide"
+  },
+  {
+   "id": "h160",
+   "kind": "html",
+   "en": "The full picture: what to train, how often, what gear you need, and age-by-age programs you can run at home."
+  },
+  {
+   "id": "h161",
+   "kind": "html",
+   "en": "14 min read"
+  },
+  {
+   "id": "h162",
+   "kind": "html",
+   "en": "Speed"
+  },
+  {
+   "id": "h163",
+   "kind": "html",
+   "en": "How to Skate Faster"
+  },
+  {
+   "id": "h164",
+   "kind": "html",
+   "en": "What actually makes a skater fast, and the off-ice training that builds every piece of it."
+  },
+  {
+   "id": "h165",
+   "kind": "html",
+   "en": "12 min read"
+  },
+  {
+   "id": "h166",
+   "kind": "html",
+   "en": "Nutrition"
+  },
+  {
+   "id": "h167",
+   "kind": "html",
+   "en": "Off-Season Nutrition for Hockey Players"
+  },
+  {
+   "id": "h168",
+   "kind": "html",
+   "en": "How much protein you really need, how to build muscle without losing your edge, and the meal structure that fuels real results."
+  },
+  {
+   "id": "h169",
+   "kind": "html",
+   "en": "12 min read"
+  },
+  {
+   "id": "h170",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "h171",
+   "kind": "html",
+   "en": "Science-backed off-ice training for hockey players. Built by a certified sport scientist and national team coach."
+  },
+  {
+   "id": "h172",
+   "kind": "html",
+   "en": "Programs"
+  },
+  {
+   "id": "h173",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com/survey.html\">Free 5-Day PDF</a>"
+  },
+  {
+   "id": "h174",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">8-Week Programs</a>"
+  },
+  {
+   "id": "h175",
+   "kind": "html",
+   "en": "<a href=\"/hockey-training-app.html\">Hockey Training App</a>"
+  },
+  {
+   "id": "h176",
+   "kind": "html",
+   "en": "<a href=\"https://apps.apple.com/us/app/elite-hockey-drills/id6787257275\" data-store=\"ios\">The App — iOS</a>"
+  },
+  {
+   "id": "h177",
+   "kind": "html",
+   "en": "<a href=\"https://play.google.com/store/apps/details?id=com.elitehockeydrills.training\">The App — Android</a>"
+  },
+  {
+   "id": "h178",
+   "kind": "html",
+   "en": "Navigate"
+  },
+  {
+   "id": "h179",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">About</a>"
+  },
+  {
+   "id": "h180",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h181",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Exercise Library</a>"
+  },
+  {
+   "id": "h182",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h183",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h184",
+   "kind": "html",
+   "en": "Connect"
+  },
+  {
+   "id": "h185",
+   "kind": "html",
+   "en": "<a href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">Instagram</a>"
+  },
+  {
+   "id": "h186",
+   "kind": "html",
+   "en": "<a href=\"https://wa.me/420770149067\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>"
+  },
+  {
+   "id": "h187",
+   "kind": "html",
+   "en": "<a href=\"mailto:elitehockeydrills@gmail.com\">Email</a>"
+  },
+  {
+   "id": "h188",
+   "kind": "html",
+   "en": "<span>© 2025 Elite Hockey Drills. All rights reserved.</span>\n    <a class=\"footer-ig\" href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">@elite_hockey_drills</a>"
+  },
+  {
+   "id": "j189",
+   "kind": "js",
+   "en": "Please enter a valid email address."
+  },
+  {
+   "id": "j190",
+   "kind": "js",
+   "en": "art-news-msg err"
+  },
+  {
+   "id": "j191",
+   "kind": "js",
+   "en": "Something went wrong. Please try again in a moment."
+  },
+  {
+   "id": "j192",
+   "kind": "js",
+   "en": "art-news-msg err"
+  },
+  {
+   "id": "j193",
+   "kind": "js",
+   "en": "Network error. Please check your connection and try again."
+  },
+  {
+   "id": "j194",
+   "kind": "js",
+   "en": "art-news-msg err"
+  }
+ ]
+}

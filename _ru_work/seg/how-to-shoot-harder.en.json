@@ -1,0 +1,1200 @@
+{
+ "page": "how-to-shoot-harder.html",
+ "segments": [
+  {
+   "id": "t0",
+   "kind": "title",
+   "en": "How to Shoot Harder: The Off-Ice Science of a Heavier Shot | Elite Hockey Drills"
+  },
+  {
+   "id": "m1",
+   "kind": "meta",
+   "en": "A science-based guide to a harder hockey shot. Why shot power is built from the ice up through the kinetic chain, what the research really shows, and the off-ice training that adds real speed to your shot. By Coach David Ciboch, M.Ed. Sport Science."
+  },
+  {
+   "id": "m2",
+   "kind": "meta",
+   "en": "How to Shoot Harder: The Off-Ice Science of a Heavier Shot | Elite Hockey Drills"
+  },
+  {
+   "id": "m3",
+   "kind": "meta",
+   "en": "The hardest shooters are not the strongest-armed. How the kinetic chain builds a heavier shot, and the off-ice work that adds real speed to yours."
+  },
+  {
+   "id": "l4",
+   "kind": "ld",
+   "en": "How to Shoot Harder: The Off-Ice Science of a Heavier Shot"
+  },
+  {
+   "id": "l5",
+   "kind": "ld",
+   "en": "Why shot power is built from the ice up through the kinetic chain, what the hockey research shows, and the off-ice training that adds real speed to your shot."
+  },
+  {
+   "id": "l6",
+   "kind": "ld",
+   "en": "David Ciboch"
+  },
+  {
+   "id": "l7",
+   "kind": "ld",
+   "en": "Sport Scientist and National Team Coach"
+  },
+  {
+   "id": "l8",
+   "kind": "ld",
+   "en": "Elite Hockey Drills"
+  },
+  {
+   "id": "l9",
+   "kind": "ld",
+   "en": "Home"
+  },
+  {
+   "id": "l10",
+   "kind": "ld",
+   "en": "Articles"
+  },
+  {
+   "id": "l11",
+   "kind": "ld",
+   "en": "How to Shoot Harder"
+  },
+  {
+   "id": "h12",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "a13",
+   "kind": "attr:aria-label",
+   "en": "Main navigation"
+  },
+  {
+   "id": "h14",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">Coach</a>"
+  },
+  {
+   "id": "h15",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h16",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">Programs</a>"
+  },
+  {
+   "id": "h17",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Library</a>"
+  },
+  {
+   "id": "h18",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h19",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h20",
+   "kind": "html",
+   "en": "Get the App"
+  },
+  {
+   "id": "a21",
+   "kind": "attr:aria-label",
+   "en": "Breadcrumb"
+  },
+  {
+   "id": "h22",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com\">Home</a>"
+  },
+  {
+   "id": "h23",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h24",
+   "kind": "html",
+   "en": "How to Shoot Harder"
+  },
+  {
+   "id": "h25",
+   "kind": "html",
+   "en": "Shooting"
+  },
+  {
+   "id": "h26",
+   "kind": "html",
+   "en": "How to shoot <span class=\"serif\">harder.</span>"
+  },
+  {
+   "id": "h27",
+   "kind": "html",
+   "en": "The hardest shooters are not the strongest-armed. They are the best at moving force from the ice, through the body, into the puck. Here is the science of a <em>heavier shot</em>, and the off-ice work that adds real speed to yours."
+  },
+  {
+   "id": "a28",
+   "kind": "attr:alt",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h29",
+   "kind": "html",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h30",
+   "kind": "html",
+   "en": "M.Ed. Sport Science · National Team Coach"
+  },
+  {
+   "id": "h31",
+   "kind": "html",
+   "en": "12 min read"
+  },
+  {
+   "id": "t32",
+   "kind": "text",
+   "en": "Science-based"
+  },
+  {
+   "id": "t33",
+   "kind": "text",
+   "en": "The 30-second version"
+  },
+  {
+   "id": "h34",
+   "kind": "html",
+   "en": "<strong>Shot power is a whole-body skill.</strong> It is built from the ice up, and most of it is built off the ice. The arm only delivers what the body produces."
+  },
+  {
+   "id": "h35",
+   "kind": "html",
+   "en": "<strong>The legs and trunk are the engine.</strong> In the striking sports where this has been measured, the legs and trunk supply over half the force, and the elbow and wrist only about a quarter."
+  },
+  {
+   "id": "h36",
+   "kind": "html",
+   "en": "<strong>A shot is a wave, not a punch.</strong> Force starts in the legs, flows through hip and trunk rotation, and arrives at the stick last. Better players time that sequence better."
+  },
+  {
+   "id": "h37",
+   "kind": "html",
+   "en": "<strong>The hockey research agrees.</strong> Players who rotate the trunk more shoot faster, and skilled players drive more force into the ice. Puck speed tracks skill and body strength, not how stiff your stick is."
+  },
+  {
+   "id": "h38",
+   "kind": "html",
+   "en": "<strong>You can train it off the ice.</strong> Twelve weeks of off-ice overload work raised shot speed by up to 13 percent in young players, and in kids, off-ice sprint speed alone predicted on-ice shot speed."
+  },
+  {
+   "id": "a39",
+   "kind": "attr:aria-label",
+   "en": "In this guide"
+  },
+  {
+   "id": "h40",
+   "kind": "html",
+   "en": "In this guide"
+  },
+  {
+   "id": "h41",
+   "kind": "html",
+   "en": "<a href=\"#myth\">Why the hardest shooters are not the strongest-armed</a>"
+  },
+  {
+   "id": "h42",
+   "kind": "html",
+   "en": "<a href=\"#chain\">The kinetic chain: where a shot really comes from</a>"
+  },
+  {
+   "id": "h43",
+   "kind": "html",
+   "en": "<a href=\"#research\">What the hockey research shows</a>"
+  },
+  {
+   "id": "h44",
+   "kind": "html",
+   "en": "<a href=\"#engines\">The three engines of a heavy shot</a>"
+  },
+  {
+   "id": "h45",
+   "kind": "html",
+   "en": "<a href=\"#build\">How to build it off the ice</a>"
+  },
+  {
+   "id": "h46",
+   "kind": "html",
+   "en": "<a href=\"#mistake\">The mistake that caps your shot</a>"
+  },
+  {
+   "id": "h47",
+   "kind": "html",
+   "en": "<a href=\"#age\">How this changes by age</a>"
+  },
+  {
+   "id": "h48",
+   "kind": "html",
+   "en": "<a href=\"#bottom-line\">The bottom line</a>"
+  },
+  {
+   "id": "h49",
+   "kind": "html",
+   "en": "The puck leaves Zdeno Chara's stick at <a href=\"https://www.nhl.com/news/chara-sets-record-while-keeping-hardest-shot-title/c-614163\" target=\"_blank\" rel=\"noopener\">108.8 miles per hour</a>, the hardest shot ever recorded at the NHL All-Star Skills. The easy explanation is that he is huge and strong, so he must have powerful arms. The easy explanation is wrong. The hardest shooters in the world are not the players with the biggest arms. They are the players who are best at one thing: gathering force from the ice and routing it, link by link, into the puck."
+  },
+  {
+   "id": "h50",
+   "kind": "html",
+   "en": "That is good news, because it means a harder shot is something you can build, and most of the building happens off the ice. This guide breaks down where shot power actually comes from, what the hockey biomechanics research shows, and the specific off-ice training that adds real, measurable speed to your shot at any age."
+  },
+  {
+   "id": "h51",
+   "kind": "html",
+   "en": "Why the hardest shooters are not the strongest-armed"
+  },
+  {
+   "id": "h52",
+   "kind": "html",
+   "en": "Watch a player with a genuinely heavy shot and the arms look almost quiet. The violence is happening lower down: a hard push into the ice, the hips firing open, the chest turning through the puck. The stick is the last thing to move, and by then the work is already done. The arm is not the source of the power. It is the delivery system for power created everywhere else."
+  },
+  {
+   "id": "h53",
+   "kind": "html",
+   "en": "This is why you have seen strong, gym-built players with surprisingly soft shots, and lighter players who somehow bury it from the top of the circle. The difference is rarely arm strength. It is how well each player connects the ground to the puck. Coaches call that connection the kinetic chain, and it is the single most important idea in shooting harder."
+  },
+  {
+   "id": "h54",
+   "kind": "html",
+   "en": "The kinetic chain: where a shot really comes from"
+  },
+  {
+   "id": "h55",
+   "kind": "html",
+   "en": "Every powerful athletic movement, a throw, a punch, a golf drive, a slap shot, is built the same way. Force is generated in the big muscles closest to the ground and passed outward through the body to the smaller, faster segments at the end. Scientists call this proximal-to-distal sequencing, and it is the consistent signature of skilled throwers and strikers across sports. A <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6162978/\" target=\"_blank\" rel=\"noopener\">meta-analysis of throwing</a> found the same expert order every time: the pelvis rotates, then the trunk, then the arm fires last."
+  },
+  {
+   "id": "h56",
+   "kind": "html",
+   "en": "The numbers behind this are striking. In a detailed breakdown of the overhead athlete, researchers attributed roughly <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7174497/\" target=\"_blank\" rel=\"noopener\">half of the total energy of the motion to the hips and trunk</a>, with the legs and trunk together producing about 54 percent of the force and the elbow and wrist contributing only around 25 percent. The same work makes the cost of a weak chain concrete: a 20 percent drop in the energy delivered from the hips and trunk forces the shoulder to spin about 34 percent faster just to produce the same speed at the hand. In other words, when the body does not do its job, the arm has to work much harder for a worse result."
+  },
+  {
+   "id": "v0",
+   "kind": "svg",
+   "en": "Where a powerful shot comes from"
+  },
+  {
+   "id": "v1",
+   "kind": "svg",
+   "en": "In the striking sports where it has been measured, the legs and trunk produce about 54 percent of the force, the shoulder and upper arm about 21 percent, and the elbow and wrist only about 25 percent."
+  },
+  {
+   "id": "v2",
+   "kind": "svg",
+   "en": "WHERE THE FORCE IN A SHOT IS PRODUCED"
+  },
+  {
+   "id": "v3",
+   "kind": "svg",
+   "en": "from the legs"
+  },
+  {
+   "id": "v4",
+   "kind": "svg",
+   "en": "and the trunk"
+  },
+  {
+   "id": "v5",
+   "kind": "svg",
+   "en": "Legs &amp; trunk"
+  },
+  {
+   "id": "v6",
+   "kind": "svg",
+   "en": "Shoulder &amp; upper arm"
+  },
+  {
+   "id": "v7",
+   "kind": "svg",
+   "en": "Elbow &amp; wrist"
+  },
+  {
+   "id": "v8",
+   "kind": "svg",
+   "en": "(the part most players train)"
+  },
+  {
+   "id": "v9",
+   "kind": "svg",
+   "en": "Where a powerful shot comes from"
+  },
+  {
+   "id": "v10",
+   "kind": "svg",
+   "en": "The legs and trunk produce about 54 percent of the force, the shoulder and upper arm about 21 percent, and the elbow and wrist only about 25 percent."
+  },
+  {
+   "id": "v11",
+   "kind": "svg",
+   "en": "of the force comes from the legs and trunk"
+  },
+  {
+   "id": "v12",
+   "kind": "svg",
+   "en": "Legs &amp; trunk"
+  },
+  {
+   "id": "v13",
+   "kind": "svg",
+   "en": "Shoulder &amp; upper arm"
+  },
+  {
+   "id": "v14",
+   "kind": "svg",
+   "en": "Elbow &amp; wrist (most players' focus)"
+  },
+  {
+   "id": "h57",
+   "kind": "html",
+   "en": "A kinetic-chain breakdown from the striking sports where force has been measured directly. The legs and trunk are the engine. The arm, the part most players spend their time on, is the smallest contributor. (Model from Ellenbecker &amp; Aoki, 2020.)"
+  },
+  {
+   "id": "h58",
+   "kind": "html",
+   "en": "These exact percentages come from studies of overhead athletes such as throwers and tennis servers, not from a hockey lab, so treat them as the governing principle rather than a hockey measurement. But the principle holds for any movement that whips a tool through space, and a slap shot is exactly that. The lesson is blunt: if you want a harder shot, the biggest gains are hiding in the parts of the chain almost nobody trains for shooting, the legs, the hips, and the core."
+  },
+  {
+   "id": "h59",
+   "kind": "html",
+   "en": "What the hockey research shows"
+  },
+  {
+   "id": "h60",
+   "kind": "html",
+   "en": "You do not have to take the cross-sport analogy on faith, because hockey has its own biomechanics labs, and they tell the same story. Researchers at McGill University put elite and recreational players on real ice under motion-capture cameras and measured what actually drives puck speed. They found that <a href=\"https://pubmed.ncbi.nlm.nih.gov/33295255/\" target=\"_blank\" rel=\"noopener\">greater trunk rotation away from the net was significantly related to faster puck and blade speeds</a> on wrist shots, whether the player was skating or standing still. Turn the chest more, and the puck leaves faster."
+  },
+  {
+   "id": "h61",
+   "kind": "html",
+   "en": "It is not only how much you rotate, but when. In a follow-up study of slap shots, the same group found that <a href=\"https://link.springer.com/article/10.1007/s12283-023-00441-5\" target=\"_blank\" rel=\"noopener\">elite players reached peak trunk speed earlier relative to their shoulder than recreational players did</a>. That is proximal-to-distal sequencing in the flesh: the better players let the big trunk fire first and the arm follow, exactly the wave the kinetic chain predicts. And going all the way down to the ice, an earlier McGill force-plate study found that <a href=\"https://link.springer.com/article/10.1007/BF02844158\" target=\"_blank\" rel=\"noopener\">skilled shooters generated greater vertical force into the ground, and that puck velocity was determined by player skill and body strength, not by the construction of the stick</a>."
+  },
+  {
+   "id": "v15",
+   "kind": "svg",
+   "en": "A shot is a wave, not a punch"
+  },
+  {
+   "id": "v16",
+   "kind": "svg",
+   "en": "Force builds in sequence from the ground outward: legs fire first, then hips, then trunk, then shoulder, and the stick releases last. Each segment peaks a moment after the one before it."
+  },
+  {
+   "id": "v17",
+   "kind": "svg",
+   "en": "HOW FORCE TRAVELS THROUGH A SHOT, GROUND TO PUCK"
+  },
+  {
+   "id": "v18",
+   "kind": "svg",
+   "en": "LEGS"
+  },
+  {
+   "id": "v19",
+   "kind": "svg",
+   "en": "HIPS"
+  },
+  {
+   "id": "v20",
+   "kind": "svg",
+   "en": "TRUNK"
+  },
+  {
+   "id": "v21",
+   "kind": "svg",
+   "en": "SHOULDER"
+  },
+  {
+   "id": "v22",
+   "kind": "svg",
+   "en": "STICK"
+  },
+  {
+   "id": "v23",
+   "kind": "svg",
+   "en": "each link fires a beat after the one before it, and the speed adds up"
+  },
+  {
+   "id": "v24",
+   "kind": "svg",
+   "en": "A shot is a wave, not a punch"
+  },
+  {
+   "id": "v25",
+   "kind": "svg",
+   "en": "Force builds in sequence from the ground up: legs, then hips, then trunk, then shoulder, then the stick releases last, each peaking a moment after the one before."
+  },
+  {
+   "id": "v26",
+   "kind": "svg",
+   "en": "FORCE TRAVELS GROUND TO PUCK"
+  },
+  {
+   "id": "v27",
+   "kind": "svg",
+   "en": "&nbsp;LEGS"
+  },
+  {
+   "id": "v28",
+   "kind": "svg",
+   "en": "&nbsp;HIPS"
+  },
+  {
+   "id": "v29",
+   "kind": "svg",
+   "en": "&nbsp;TRUNK"
+  },
+  {
+   "id": "v30",
+   "kind": "svg",
+   "en": "&nbsp;SHOULDER"
+  },
+  {
+   "id": "v31",
+   "kind": "svg",
+   "en": "&nbsp;STICK&nbsp;&#8594;"
+  },
+  {
+   "id": "h62",
+   "kind": "html",
+   "en": "A hard shot is a wave that builds from the ground up. Elite players time it so the trunk fires before the arm, letting each link add its speed to the last. Train the arm alone and you are trying to make a wave with one ripple."
+  },
+  {
+   "id": "h63",
+   "kind": "html",
+   "en": "The arm does not create the shot. It <span>delivers</span> what the legs, hips, and trunk already built."
+  },
+  {
+   "id": "h64",
+   "kind": "html",
+   "en": "The three engines of a heavy shot"
+  },
+  {
+   "id": "h65",
+   "kind": "html",
+   "en": "If the chain is the system, here are the three engines that feed it, in the order force travels."
+  },
+  {
+   "id": "h66",
+   "kind": "html",
+   "en": "<strong>1. Force into the ice.</strong> Everything starts with how hard you can push the ground away. A shot is loaded by driving down and out through the legs, and the players who do that best put more force into the ice, which is exactly what the McGill force-plate work found. Stronger, more explosive legs give the whole chain more to work with."
+  },
+  {
+   "id": "h67",
+   "kind": "html",
+   "en": "<strong>2. Hip and trunk rotation.</strong> This is the biggest single source of speed and the one most players underuse. The hips open and the trunk turns through the puck, and the more you rotate, and the faster, the harder the shot. This is the segment the hockey studies tie most directly to puck speed."
+  },
+  {
+   "id": "h68",
+   "kind": "html",
+   "en": "<strong>3. Weight transfer.</strong> A hard shot moves your mass from the back leg to the front leg as you release, pouring body weight into the puck. Plant the lead leg, transfer onto it, and let the stored energy of that shift unload through the rotation. Stand straight up and shoot off the back foot, and you have unplugged the two biggest engines you own."
+  },
+  {
+   "id": "h69",
+   "kind": "html",
+   "en": "How to build it off the ice"
+  },
+  {
+   "id": "h70",
+   "kind": "html",
+   "en": "Here is the part that should change how you train. Because shot power lives in the legs, hips, and trunk, you can build a meaningfully harder shot without ever touching the ice. The research backs this up directly. When researchers had teenage players train for twelve weeks with a <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9465741/\" target=\"_blank\" rel=\"noopener\">heavier-than-normal puck, their wrist-shot speed rose by about 13 percent and their snap shots by roughly 8 percent</a>, and the heavier puck beat a normal-weight puck head to head. Overload the movement, and the body adapts."
+  },
+  {
+   "id": "h71",
+   "kind": "html",
+   "en": "It goes deeper than skill work. In a study of young players, plain off-ice athleticism predicted shot speed: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11358090/\" target=\"_blank\" rel=\"noopener\">a 30 metre sprint time was the single best off-ice predictor of on-ice shot velocity</a>, explaining well over half the difference between players. The faster, more powerful athlete shot the puck harder, full stop. And in adult men, <a href=\"https://www.gymnica.upol.cz/artkey/gym-201702-0004_Upper_body_strength_and_power_are_associated_with_shot_speed_in_men_s_ice_hockey.php\" target=\"_blank\" rel=\"noopener\">pressing power was clearly linked to shot speed while grip strength was not</a>, which tells you the lever that matters is whole-body power, not crushing the stick harder."
+  },
+  {
+   "id": "v32",
+   "kind": "svg",
+   "en": "You can build a harder shot off the ice"
+  },
+  {
+   "id": "v33",
+   "kind": "svg",
+   "en": "After twelve weeks of off-ice overload training with a heavier puck, wrist-shot speed rose about 13 percent, the short-grip snap shot about 8.5 percent, and the long-grip snap shot about 7.4 percent."
+  },
+  {
+   "id": "v34",
+   "kind": "svg",
+   "en": "SHOT-SPEED GAIN AFTER 12 WEEKS OF OFF-ICE OVERLOAD WORK"
+  },
+  {
+   "id": "v35",
+   "kind": "svg",
+   "en": "faster wrist shot,"
+  },
+  {
+   "id": "v36",
+   "kind": "svg",
+   "en": "off the ice"
+  },
+  {
+   "id": "v37",
+   "kind": "svg",
+   "en": "Wrist shot"
+  },
+  {
+   "id": "v38",
+   "kind": "svg",
+   "en": "Snap shot (short grip)"
+  },
+  {
+   "id": "v39",
+   "kind": "svg",
+   "en": "Snap shot (long grip)"
+  },
+  {
+   "id": "v40",
+   "kind": "svg",
+   "en": "16 midget players, 12-week heavy-puck program (Novak et al., 2022)"
+  },
+  {
+   "id": "v41",
+   "kind": "svg",
+   "en": "You can build a harder shot off the ice"
+  },
+  {
+   "id": "v42",
+   "kind": "svg",
+   "en": "After twelve weeks of heavy-puck training, wrist-shot speed rose about 13 percent, the short-grip snap shot about 8.5 percent, the long-grip snap shot about 7.4 percent."
+  },
+  {
+   "id": "v43",
+   "kind": "svg",
+   "en": "faster wrist shot after 12 weeks off the ice"
+  },
+  {
+   "id": "v44",
+   "kind": "svg",
+   "en": "Wrist shot"
+  },
+  {
+   "id": "v45",
+   "kind": "svg",
+   "en": "Snap shot (short grip)"
+  },
+  {
+   "id": "v46",
+   "kind": "svg",
+   "en": "Snap shot (long grip)"
+  },
+  {
+   "id": "h72",
+   "kind": "html",
+   "en": "Twelve weeks of off-ice overload work raised shot speed across every shot type. The puck never knows whether your power was built in the rink or in the driveway."
+  },
+  {
+   "id": "h73",
+   "kind": "html",
+   "en": "So what should you actually do? Train the chain, in roughly the order force travels through it. The menu below is the off-ice work that builds a heavier shot, and it pairs naturally with the same lower-body and rotational training that makes you faster and harder to knock off the puck."
+  },
+  {
+   "id": "h74",
+   "kind": "html",
+   "en": "The off-ice menu for a heavier shot"
+  },
+  {
+   "id": "h75",
+   "kind": "html",
+   "en": "Engine"
+  },
+  {
+   "id": "h76",
+   "kind": "html",
+   "en": "Why it matters"
+  },
+  {
+   "id": "h77",
+   "kind": "html",
+   "en": "How to train it"
+  },
+  {
+   "id": "h78",
+   "kind": "html",
+   "en": "Example"
+  },
+  {
+   "id": "h79",
+   "kind": "html",
+   "en": "Lower-body force"
+  },
+  {
+   "id": "h80",
+   "kind": "html",
+   "en": "More force into the ice gives the whole chain more to send"
+  },
+  {
+   "id": "h81",
+   "kind": "html",
+   "en": "Heavy, full-range strength on both legs and one leg"
+  },
+  {
+   "id": "h82",
+   "kind": "html",
+   "en": "Squat, split squat, hinge: 3 to 4 sets of 4 to 6 reps"
+  },
+  {
+   "id": "h83",
+   "kind": "html",
+   "en": "Rotational power"
+  },
+  {
+   "id": "h84",
+   "kind": "html",
+   "en": "Hip and trunk rotation is the biggest source of shot speed"
+  },
+  {
+   "id": "h85",
+   "kind": "html",
+   "en": "Explosive med-ball throws that turn the hips and chest"
+  },
+  {
+   "id": "h86",
+   "kind": "html",
+   "en": "Rotational and shot-put med-ball throws: 4 to 5 sets of 3 to 5 per side"
+  },
+  {
+   "id": "h87",
+   "kind": "html",
+   "en": "Triple extension"
+  },
+  {
+   "id": "h88",
+   "kind": "html",
+   "en": "Teaches the legs and hips to fire fast and together"
+  },
+  {
+   "id": "h89",
+   "kind": "html",
+   "en": "Jumps and Olympic-style pulls, low reps, full effort"
+  },
+  {
+   "id": "h90",
+   "kind": "html",
+   "en": "Broad jumps, box jumps: 4 to 5 sets of 3, fully rested"
+  },
+  {
+   "id": "h91",
+   "kind": "html",
+   "en": "Anti-rotation core"
+  },
+  {
+   "id": "h92",
+   "kind": "html",
+   "en": "A stiff trunk transfers leg and hip power instead of leaking it"
+  },
+  {
+   "id": "h93",
+   "kind": "html",
+   "en": "Bracing that resists twisting and bending"
+  },
+  {
+   "id": "h94",
+   "kind": "html",
+   "en": "Pallof press, plank variations, carries"
+  },
+  {
+   "id": "h95",
+   "kind": "html",
+   "en": "Overload shooting"
+  },
+  {
+   "id": "h96",
+   "kind": "html",
+   "en": "Grooves the pattern and adds speed to the movement itself"
+  },
+  {
+   "id": "h97",
+   "kind": "html",
+   "en": "Weighted-puck and resisted shooting, then snap back to normal"
+  },
+  {
+   "id": "h98",
+   "kind": "html",
+   "en": "Heavy-puck sets, then game-weight pucks for speed"
+  },
+  {
+   "id": "h99",
+   "kind": "html",
+   "en": "Want this built into a real plan?"
+  },
+  {
+   "id": "h100",
+   "kind": "html",
+   "en": "Our 8-week off-ice programs develop the exact qualities behind a heavier shot, lower-body force, rotational power, and a stiff, transferring core, all periodized so it carries onto the ice."
+  },
+  {
+   "id": "t101",
+   "kind": "text",
+   "en": "See the Programs"
+  },
+  {
+   "id": "h102",
+   "kind": "html",
+   "en": "The mistake that caps your shot"
+  },
+  {
+   "id": "h103",
+   "kind": "html",
+   "en": "The most common way players try to shoot harder is to muscle the stick: grip it tighter, swing the arms harder, or buy a stiffer stick and hope the flex does the work. All three quietly cap your shot, because all three skip the engines that actually matter. Grip strength showed no link to shot speed in the research, and the McGill lab found that puck velocity was set by the player, not the stick."
+  },
+  {
+   "id": "h104",
+   "kind": "html",
+   "en": "A stiffer stick does not add power on its own. The stick can only return the energy you load into it, and you load it by bending it with your body, through the push into the ice and the rotation of the trunk. Put a high-flex pro stick in the hands of a player who shoots off the back foot with quiet hips, and it stays a soft shot. The fix is not in your hands. It is in the ground, the legs, and the turn."
+  },
+  {
+   "id": "h105",
+   "kind": "html",
+   "en": "Myth: a stiffer stick gives you a harder shot"
+  },
+  {
+   "id": "h106",
+   "kind": "html",
+   "en": "It is tempting to think the gear is the gap. But when McGill researchers tested shots with different stick constructions, they found <a href=\"https://link.springer.com/article/10.1007/BF02844158\" target=\"_blank\" rel=\"noopener\">puck speed was determined by the player's skill and body strength, not by the stick</a>. A stick can only give back the energy you bend into it, and you bend it with your legs and trunk. Build the engine first. The right flex helps a good shooter, but it will not rescue a soft one."
+  },
+  {
+   "id": "h107",
+   "kind": "html",
+   "en": "How this changes by age"
+  },
+  {
+   "id": "h108",
+   "kind": "html",
+   "en": "The kinetic chain is the same at every age. What changes is how much you load it and how much it should look like training versus play."
+  },
+  {
+   "id": "h109",
+   "kind": "html",
+   "en": "Youth · 9 to 12"
+  },
+  {
+   "id": "h110",
+   "kind": "html",
+   "en": "Build the engine through athleticism and reps, not heavy weights. Throwing, jumping, sprinting, and lots of shooting at home all develop the chain. Coach the basics of weight transfer and turning the chest through the puck. The power will come as they grow."
+  },
+  {
+   "id": "h111",
+   "kind": "html",
+   "en": "Teens · 13 to 18"
+  },
+  {
+   "id": "h112",
+   "kind": "html",
+   "en": "The window to add real strength and power. Structured lower-body strength, rotational med-ball work, and overload shooting pay off fast here, just as the research on teenage players showed. This is where a hard shot is made."
+  },
+  {
+   "id": "h113",
+   "kind": "html",
+   "en": "Adults · 19+"
+  },
+  {
+   "id": "h114",
+   "kind": "html",
+   "en": "Power is trainable for life. Keep lifting for lower-body force and keep rotational work in your week to protect the speed you have. A few focused sessions hold and even build your shot well into the masters years."
+  },
+  {
+   "id": "h115",
+   "kind": "html",
+   "en": "The bottom line"
+  },
+  {
+   "id": "h116",
+   "kind": "html",
+   "en": "A harder shot is not a gift handed to big-armed players. It is a chain you can build, link by link, starting at the ice. Push hard into the ground, fire the hips and trunk, transfer your weight onto the front leg, and let the arm and stick deliver what the body produced. Most of that is built off the ice, with heavy legs, explosive rotation, a stiff core, and smart overload on the shot itself. Train the engine instead of the arm, and the next time the puck leaves your blade, it will leave a lot faster."
+  },
+  {
+   "id": "a117",
+   "kind": "attr:aria-label",
+   "en": "References"
+  },
+  {
+   "id": "h118",
+   "kind": "html",
+   "en": "References"
+  },
+  {
+   "id": "h119",
+   "kind": "html",
+   "en": "Every claim above is drawn from peer-reviewed research or recognized sport-science sources. The kinetic-chain percentages come from striking sports where force has been measured directly; where that is the case, it is stated in the text. Top-end shot speeds are competition records, not laboratory studies."
+  },
+  {
+   "id": "h120",
+   "kind": "html",
+   "en": "Ellenbecker TS, Aoki R. Step by step guide to understanding the kinetic chain concept in the overhead athlete. <em>Current Reviews in Musculoskeletal Medicine</em>. 2020. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7174497/\" target=\"_blank\" rel=\"noopener\">PMC7174497</a>"
+  },
+  {
+   "id": "h121",
+   "kind": "html",
+   "en": "Serrien B, Baeyens JP. Systematic review and meta-analysis on proximal-to-distal sequencing in team handball. <em>Journal of Human Kinetics</em>. 2018. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6162978/\" target=\"_blank\" rel=\"noopener\">PMC6162978</a>"
+  },
+  {
+   "id": "h122",
+   "kind": "html",
+   "en": "Robbins SM, Renaud PJ, MacInnis N, Pearsall DJ. The relationship between trunk rotation and shot speed when performing ice hockey wrist shots. <em>Journal of Sports Sciences</em>. 2021. <a href=\"https://pubmed.ncbi.nlm.nih.gov/33295255/\" target=\"_blank\" rel=\"noopener\">PubMed 33295255</a>"
+  },
+  {
+   "id": "h123",
+   "kind": "html",
+   "en": "Robbins SM, Renaud PJ, MacInnis N, Pearsall DJ. Differences in trunk-shoulder inter-joint coordination and sequencing between elite and recreational ice hockey players during slap shots. <em>Sports Engineering</em>. 2023. <a href=\"https://link.springer.com/article/10.1007/s12283-023-00441-5\" target=\"_blank\" rel=\"noopener\">doi:10.1007/s12283-023-00441-5</a>"
+  },
+  {
+   "id": "h124",
+   "kind": "html",
+   "en": "Wu TC, Pearsall DJ, Hodges A, Turcotte R, Lefebvre R, Montgomery D, Bateni H. The performance of the ice hockey slap and wrist shots: the effects of stick construction and player skill. <em>Sports Engineering</em>. 2003. <a href=\"https://link.springer.com/article/10.1007/BF02844158\" target=\"_blank\" rel=\"noopener\">doi:10.1007/BF02844158</a>"
+  },
+  {
+   "id": "h125",
+   "kind": "html",
+   "en": "Novak D, Loskot J, Roczniok R, Opath L, Stastny P. Training with a heavy puck elicits a higher increase of shooting speed than unloaded training in midget ice hockey players. <em>Journal of Human Kinetics</em>. 2022. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9465741/\" target=\"_blank\" rel=\"noopener\">PMC9465741</a>"
+  },
+  {
+   "id": "h126",
+   "kind": "html",
+   "en": "Rice MS, et al. The relationship between off-ice testing and on-ice performance in male youth ice hockey players. <em>Frontiers in Sports and Active Living</em>. 2024. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11358090/\" target=\"_blank\" rel=\"noopener\">PMC11358090</a>"
+  },
+  {
+   "id": "h127",
+   "kind": "html",
+   "en": "Bežák J, Přidal V. Upper body strength and power are associated with shot speed in men's ice hockey. <em>Acta Gymnica</em>. 2017. <a href=\"https://www.gymnica.upol.cz/artkey/gym-201702-0004_Upper_body_strength_and_power_are_associated_with_shot_speed_in_men_s_ice_hockey.php\" target=\"_blank\" rel=\"noopener\">doi:10.5507/ag.2017.007</a>"
+  },
+  {
+   "id": "h128",
+   "kind": "html",
+   "en": "NHL All-Star Skills Competition, Hardest Shot record (Zdeno Chara, 108.8 mph, 2012). <em>National Hockey League</em>. <a href=\"https://www.nhl.com/news/chara-sets-record-while-keeping-hardest-shot-title/c-614163\" target=\"_blank\" rel=\"noopener\">NHL.com</a>"
+  },
+  {
+   "id": "a129",
+   "kind": "attr:alt",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h130",
+   "kind": "html",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h131",
+   "kind": "html",
+   "en": "M.Ed. Sport Science · National Team Coach"
+  },
+  {
+   "id": "h132",
+   "kind": "html",
+   "en": "David builds science-based off-ice training for hockey players at every level, from first-year youth skaters to adult and masters players. Elite Hockey Drills exists to put real sport science in the hands of players who want to train smarter, not just harder."
+  },
+  {
+   "id": "h133",
+   "kind": "html",
+   "en": "The inside track"
+  },
+  {
+   "id": "h134",
+   "kind": "html",
+   "en": "Get the next one <em class=\"serif\">first.</em>"
+  },
+  {
+   "id": "h135",
+   "kind": "html",
+   "en": "New science-backed guides on training, nutrition, and recovery, sent straight to your inbox. No fluff, no spam, just what makes you harder to play against."
+  },
+  {
+   "id": "a136",
+   "kind": "attr:aria-label",
+   "en": "First name"
+  },
+  {
+   "id": "a137",
+   "kind": "attr:placeholder",
+   "en": "First name"
+  },
+  {
+   "id": "a138",
+   "kind": "attr:aria-label",
+   "en": "Email address"
+  },
+  {
+   "id": "a139",
+   "kind": "attr:placeholder",
+   "en": "your@email.com"
+  },
+  {
+   "id": "h140",
+   "kind": "html",
+   "en": "<span class=\"btn-label\">Send me the guides</span>\n          <span class=\"news-spinner\" aria-hidden=\"true\"></span>"
+  },
+  {
+   "id": "h141",
+   "kind": "html",
+   "en": "No spam. Unsubscribe anytime. By subscribing you agree to receive training emails from Elite Hockey Drills."
+  },
+  {
+   "id": "h142",
+   "kind": "html",
+   "en": "You're in."
+  },
+  {
+   "id": "h143",
+   "kind": "html",
+   "en": "Welcome to the inside track. Your first guide is already on its way to your inbox."
+  },
+  {
+   "id": "h144",
+   "kind": "html",
+   "en": "Build the engine"
+  },
+  {
+   "id": "h145",
+   "kind": "html",
+   "en": "Train the chain,<br><em class=\"serif\">bury the shot.</em>"
+  },
+  {
+   "id": "h146",
+   "kind": "html",
+   "en": "You just read where shot power comes from. Our 8-week off-ice programs are the execution: lower-body force, rotational power, and a transferring core, periodized to carry straight onto the ice."
+  },
+  {
+   "id": "h147",
+   "kind": "html",
+   "en": "The fastest way to start: the <strong>Elite Hockey Drills app</strong>, live now on the App Store and Google Play, builds a personalized off-ice program from your age, level, position, and schedule, adapts through your season, and includes a demo video for every exercise. Try everything free for 7 days."
+  },
+  {
+   "id": "t148",
+   "kind": "text",
+   "en": "Try the App Free for 7 Days"
+  },
+  {
+   "id": "h149",
+   "kind": "html",
+   "en": "See the Programs"
+  },
+  {
+   "id": "h150",
+   "kind": "html",
+   "en": "Get a Free Program"
+  },
+  {
+   "id": "h151",
+   "kind": "html",
+   "en": "7-day free trial, then $17.99/month or $99.90/year (about $8.33 per month). Billed through the App Store or Google Play, cancel anytime."
+  },
+  {
+   "id": "h152",
+   "kind": "html",
+   "en": "← Back to all articles"
+  },
+  {
+   "id": "h153",
+   "kind": "html",
+   "en": "Keep reading"
+  },
+  {
+   "id": "h154",
+   "kind": "html",
+   "en": "More training guides"
+  },
+  {
+   "id": "h155",
+   "kind": "html",
+   "en": "Speed"
+  },
+  {
+   "id": "h156",
+   "kind": "html",
+   "en": "How to Skate Faster"
+  },
+  {
+   "id": "h157",
+   "kind": "html",
+   "en": "Speed is built off the ice. The three drivers of skating speed, the dryland work that develops each, and a weekly plan to put it together."
+  },
+  {
+   "id": "h158",
+   "kind": "html",
+   "en": "12 min read"
+  },
+  {
+   "id": "h159",
+   "kind": "html",
+   "en": "Training"
+  },
+  {
+   "id": "h160",
+   "kind": "html",
+   "en": "Off-Ice Hockey Training: The Complete Guide"
+  },
+  {
+   "id": "h161",
+   "kind": "html",
+   "en": "The complete, science-based guide to off-ice and dryland training for hockey: what to train, how often, and how it changes by age."
+  },
+  {
+   "id": "h162",
+   "kind": "html",
+   "en": "14 min read"
+  },
+  {
+   "id": "h163",
+   "kind": "html",
+   "en": "Conditioning"
+  },
+  {
+   "id": "h164",
+   "kind": "html",
+   "en": "Hockey Conditioning: The Third-Period Engine"
+  },
+  {
+   "id": "h165",
+   "kind": "html",
+   "en": "Hockey is a repeat-sprint sport. Why your aerobic base is the secret weapon, and the off-ice intervals that keep you flying when everyone else fades."
+  },
+  {
+   "id": "h166",
+   "kind": "html",
+   "en": "12 min read"
+  },
+  {
+   "id": "h167",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "h168",
+   "kind": "html",
+   "en": "Science-backed off-ice training for hockey players. Built by a certified sport scientist and national team coach."
+  },
+  {
+   "id": "h169",
+   "kind": "html",
+   "en": "Programs"
+  },
+  {
+   "id": "h170",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com/survey.html\">Free 5-Day PDF</a>"
+  },
+  {
+   "id": "h171",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">8-Week Programs</a>"
+  },
+  {
+   "id": "h172",
+   "kind": "html",
+   "en": "<a href=\"/hockey-training-app.html\">Hockey Training App</a>"
+  },
+  {
+   "id": "h173",
+   "kind": "html",
+   "en": "<a href=\"https://apps.apple.com/us/app/elite-hockey-drills/id6787257275\" data-store=\"ios\">The App — iOS</a>"
+  },
+  {
+   "id": "h174",
+   "kind": "html",
+   "en": "<a href=\"https://play.google.com/store/apps/details?id=com.elitehockeydrills.training\">The App — Android</a>"
+  },
+  {
+   "id": "h175",
+   "kind": "html",
+   "en": "Navigate"
+  },
+  {
+   "id": "h176",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">About</a>"
+  },
+  {
+   "id": "h177",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h178",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Exercise Library</a>"
+  },
+  {
+   "id": "h179",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h180",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h181",
+   "kind": "html",
+   "en": "Connect"
+  },
+  {
+   "id": "h182",
+   "kind": "html",
+   "en": "<a href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">Instagram</a>"
+  },
+  {
+   "id": "h183",
+   "kind": "html",
+   "en": "<a href=\"https://wa.me/420770149067\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>"
+  },
+  {
+   "id": "h184",
+   "kind": "html",
+   "en": "<a href=\"mailto:elitehockeydrills@gmail.com\">Email</a>"
+  },
+  {
+   "id": "h185",
+   "kind": "html",
+   "en": "<span>© 2025 Elite Hockey Drills. All rights reserved.</span>\n    <a class=\"footer-ig\" href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">@elite_hockey_drills</a>"
+  },
+  {
+   "id": "j186",
+   "kind": "js",
+   "en": "Please enter a valid email address."
+  },
+  {
+   "id": "j187",
+   "kind": "js",
+   "en": "art-news-msg err"
+  },
+  {
+   "id": "j188",
+   "kind": "js",
+   "en": "Something went wrong. Please try again in a moment."
+  },
+  {
+   "id": "j189",
+   "kind": "js",
+   "en": "art-news-msg err"
+  },
+  {
+   "id": "j190",
+   "kind": "js",
+   "en": "Network error. Please check your connection and try again."
+  },
+  {
+   "id": "j191",
+   "kind": "js",
+   "en": "art-news-msg err"
+  }
+ ]
+}

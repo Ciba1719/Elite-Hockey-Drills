@@ -1,0 +1,79 @@
+/* /ru/ only — Bebas Neue (the site's display face) has no Cyrillic glyphs, so Russian
+   ALL-CAPS headings and chart labels would fall back to a wide generic sans-serif.
+   This face carries the SAME family name and only the Cyrillic range: browsers take
+   Latin glyphs from Google's Bebas Neue and Cyrillic glyphs from this condensed
+   Oswald 500 (OFL, self-hosted), so every existing rule and inline SVG style keeps
+   working unchanged. */
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/oswald-500-cyrillic.woff2') format('woff2');
+  unicode-range: U+0400-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* Bebas Neue is a capitals-only face: English text set in it always shows as caps. Oswald has
+   lowercase, so Russian text in the same slots is uppercased to keep the look. */
+html[lang="ru"] .art-prose h2,
+html[lang="ru"] .art-prose ol li::before,
+html[lang="ru"] .art-toc a::before,
+html[lang="ru"] .age-card h4,
+html[lang="ru"] .art-inline-cta h4,
+html[lang="ru"] .references h2,
+html[lang="ru"] .references li::before,
+html[lang="ru"] .ex-section-title,
+html[lang="ru"] .display,
+html[lang="ru"] .nav-logo,
+html[lang="ru"] .mobile-menu a,
+html[lang="ru"] .hero-stat-num,
+html[lang="ru"] .sec-title,
+html[lang="ru"] .about-name,
+html[lang="ru"] .method-card h3,
+html[lang="ru"] .prog-name,
+html[lang="ru"] .prog-price,
+html[lang="ru"] .tier-age,
+html[lang="ru"] .tier-headline,
+html[lang="ru"] .tier-price-old,
+html[lang="ru"] .tier-price,
+html[lang="ru"] .app-price-block .num,
+html[lang="ru"] .result-num,
+html[lang="ru"] .testi-avatar,
+html[lang="ru"] .final h2,
+html[lang="ru"] .marquee-seq,
+html[lang="ru"] .trial-h,
+html[lang="ru"] .trial-facts b,
+html[lang="ru"] .cmp th,
+html[lang="ru"] .brand-mark,
+html[lang="ru"] .q-title,
+html[lang="ru"] .ok-title,
+html[lang="ru"] .gift-cover.is-badge,
+html[lang="ru"] .gift-name,
+html[lang="ru"] .app-name,
+html[lang="ru"] .hero-h1,
+html[lang="ru"] .showcase-title,
+html[lang="ru"] .offer-was,
+html[lang="ru"] .offer-now,
+html[lang="ru"] .offer-badge b,
+html[lang="ru"] .oc-num,
+html[lang="ru"] .oc-colon,
+html[lang="ru"] .stat-num,
+html[lang="ru"] .inside-card h3,
+html[lang="ru"] .jb-weeks,
+html[lang="ru"] .jb h3,
+html[lang="ru"] .ms-wk,
+html[lang="ru"] .rday h3,
+html[lang="ru"] .skill-n,
+html[lang="ru"] .skill h3,
+html[lang="ru"] .tcard-avatar,
+html[lang="ru"] .rule-n,
+html[lang="ru"] .fp-was,
+html[lang="ru"] .fp-now,
+html[lang="ru"] .footer-brand,
+html[lang="ru"] .buybar-price b,
+html[lang="ru"] .peek .bg-num,
+html[lang="ru"] .peek .ex-idx,
+html[lang="ru"] .tl-node b,
+html[lang="ru"] .fw-title {
+  text-transform: uppercase;
+}

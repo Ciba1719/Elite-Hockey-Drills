@@ -1,0 +1,145 @@
+{
+ "page": "survey.html",
+ "segments": [
+  {
+   "id": "x0",
+   "kind": "xattr:data-label",
+   "en": "Forward"
+  },
+  {
+   "id": "x1",
+   "kind": "xattr:data-label",
+   "en": "Defense"
+  },
+  {
+   "id": "x2",
+   "kind": "xattr:data-label",
+   "en": "Goalie"
+  },
+  {
+   "id": "x3",
+   "kind": "xattr:data-label",
+   "en": "Beginner / Recreational"
+  },
+  {
+   "id": "x4",
+   "kind": "xattr:data-label",
+   "en": "Competitive / Elite"
+  },
+  {
+   "id": "x5",
+   "kind": "xattr:data-label",
+   "en": "Build explosive power & speed"
+  },
+  {
+   "id": "x6",
+   "kind": "xattr:data-short",
+   "en": "explosive power & speed"
+  },
+  {
+   "id": "x7",
+   "kind": "xattr:data-label",
+   "en": "Get stronger overall"
+  },
+  {
+   "id": "x8",
+   "kind": "xattr:data-short",
+   "en": "overall strength"
+  },
+  {
+   "id": "x9",
+   "kind": "xattr:data-label",
+   "en": "Improve conditioning & endurance"
+  },
+  {
+   "id": "x10",
+   "kind": "xattr:data-short",
+   "en": "conditioning & endurance"
+  },
+  {
+   "id": "x11",
+   "kind": "xattr:data-label",
+   "en": "Recover from / prevent injury"
+  },
+  {
+   "id": "x12",
+   "kind": "xattr:data-short",
+   "en": "injury prevention & recovery"
+  },
+  {
+   "id": "x13",
+   "kind": "xattr:data-label",
+   "en": "Off-season development"
+  },
+  {
+   "id": "x14",
+   "kind": "xattr:data-short",
+   "en": "off-season development"
+  },
+  {
+   "id": "x15",
+   "kind": "tpl",
+   "en": "<span class=\"summary-pill\">${p}</span>"
+  },
+  {
+   "id": "x16",
+   "kind": "tpl",
+   "en": "Enter your email to receive your ${free} for <strong>${answers.ageLabel}</strong> players."
+  },
+  {
+   "id": "x17",
+   "kind": "tpl",
+   "en": "<strong>Parents:</strong> enter <em>your</em> email and we'll send the ${free} for your <strong>${answers.ageLabel}</strong> player — with a parent's guide to running it safely."
+  },
+  {
+   "id": "x18",
+   "kind": "tpl",
+   "en": "On iPhone? <a href=\"${IOS_URL}\" data-store=\"ios\" target=\"_blank\" rel=\"noopener\">App Store</a>"
+  },
+  {
+   "id": "x19",
+   "kind": "tpl",
+   "en": "On Android? <a href=\"${PLAY_URL}\" data-place=\"survey-success\" target=\"_blank\" rel=\"noopener\">Google Play</a>"
+  },
+  {
+   "id": "x20",
+   "kind": "tpl",
+   "en": "<div><span class=\"app-badge\">Ages ${age} · 7 days free</span>"
+  },
+  {
+   "id": "x21",
+   "kind": "tpl",
+   "en": "<ul class=\"app-points\"><li>${youth ? \"Your player's\" : 'Your'} whole season, built around age, level, position and schedule</li><li>A demo video for every exercise</li><li>Game-day mode and progress tracking</li></ul></div>"
+  },
+  {
+   "id": "x22",
+   "kind": "tpl",
+   "en": "<a class=\"app-btn\" href=\"${APP_URL}\" data-place=\"survey-success\" target=\"_blank\" rel=\"noopener\">Start your free week ${ARROW_SVG}</a>"
+  },
+  {
+   "id": "x23",
+   "kind": "tpl",
+   "en": "<div class=\"app-fine\">Then $17.99/mo or $99.90/yr. Cancel anytime.<br>${other}</div>"
+  },
+  {
+   "id": "x24",
+   "kind": "tpl",
+   "en": "<img class=\"gift-cover\" id=\"giftCover\" src=\"${g.cover}\" alt=\"Cover: ${g.name}\" width=\"480\" height=\"854\" />"
+  },
+  {
+   "id": "x25",
+   "kind": "tpl",
+   "en": "<div class=\"gift-cover is-badge\" id=\"giftCover\" aria-hidden=\"true\">${g.badge}</div>"
+  },
+  {
+   "id": "x26",
+   "kind": "tpl",
+   "en": "<li><span class=\"n\">${i + 1}</span><span>${s}</span></li>"
+  },
+  {
+   "id": "x27",
+   "kind": "tpl",
+   "en": "Prefer a one-time 8-week program? <b>${p.name}</b> · $79 →"
+  }
+ ]
+}

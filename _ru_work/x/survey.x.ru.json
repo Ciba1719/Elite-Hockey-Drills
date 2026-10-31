@@ -1,0 +1,32 @@
+{
+ "segments": [
+  { "id": "x0", "ru": "Нападающий" },
+  { "id": "x1", "ru": "Защитник" },
+  { "id": "x2", "ru": "Вратарь" },
+  { "id": "x3", "ru": "Новичок / любитель" },
+  { "id": "x4", "ru": "Соревновательный / элитный" },
+  { "id": "x5", "ru": "Развить взрывную мощность и скорость" },
+  { "id": "x6", "ru": "взрывная мощность и скорость" },
+  { "id": "x7", "ru": "Стать сильнее в целом" },
+  { "id": "x8", "ru": "общая сила" },
+  { "id": "x9", "ru": "Улучшить кондиции и выносливость" },
+  { "id": "x10", "ru": "кондиции и выносливость" },
+  { "id": "x11", "ru": "Восстановиться после травмы / избежать травм" },
+  { "id": "x12", "ru": "профилактика травм и восстановление" },
+  { "id": "x13", "ru": "Развитие в межсезонье" },
+  { "id": "x14", "ru": "развитие в межсезонье" },
+  { "id": "x15", "ru": "<span class=\"summary-pill\">${p}</span>" },
+  { "id": "x16", "ru": "Введите вашу эл. почту, чтобы получить ${free} для игроков <strong>${answers.ageLabel}</strong> лет." },
+  { "id": "x17", "ru": "<strong>Родители:</strong> укажите <em>свою</em> эл. почту — мы отправим ${free} для вашего игрока <strong>${answers.ageLabel}</strong> лет вместе с руководством для родителей, как безопасно её проводить." },
+  { "id": "x18", "ru": "У вас iPhone? <a href=\"${IOS_URL}\" data-store=\"ios\" target=\"_blank\" rel=\"noopener\">App Store</a>" },
+  { "id": "x19", "ru": "У вас Android? <a href=\"${PLAY_URL}\" data-place=\"survey-success\" target=\"_blank\" rel=\"noopener\">Google Play</a>" },
+  { "id": "x20", "ru": "<div><span class=\"app-badge\">Возраст ${age} · 7 дней бесплатно</span>" },
+  { "id": "x21", "ru": "<ul class=\"app-points\"><li>${youth ? \"Your player's\" : 'Your'} весь сезон, выстроенный под возраст, уровень, позицию и расписание</li><li>Демо-видео к каждому упражнению</li><li>Режим игрового дня и отслеживание прогресса</li></ul></div>" },
+  { "id": "x22", "ru": "<a class=\"app-btn\" href=\"${APP_URL}\" data-place=\"survey-success\" target=\"_blank\" rel=\"noopener\">Начать бесплатную неделю ${ARROW_SVG}</a>" },
+  { "id": "x23", "ru": "<div class=\"app-fine\">Затем $17.99/мес или $99.90/год. Отмена в любой момент.<br>${other}</div>" },
+  { "id": "x24", "ru": "<img class=\"gift-cover\" id=\"giftCover\" src=\"${g.cover}\" alt=\"Обложка: ${g.name}\" width=\"480\" height=\"854\" />" },
+  { "id": "x25", "ru": "<div class=\"gift-cover is-badge\" id=\"giftCover\" aria-hidden=\"true\">${g.badge}</div>" },
+  { "id": "x26", "ru": "<li><span class=\"n\">${i + 1}</span><span>${s}</span></li>" },
+  { "id": "x27", "ru": "Предпочитаете разовую 8-недельную программу? <b>${p.name}</b> · $79 →" }
+ ]
+}

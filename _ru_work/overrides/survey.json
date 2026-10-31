@@ -1,0 +1,38 @@
+[
+ [
+  "Free · ages 9–11",
+  "Бесплатно · 9–11 лет"
+ ],
+ [
+  "Free · ages 12–14",
+  "Бесплатно · 12–14 лет"
+ ],
+ [
+  "Free · ages 15–18",
+  "Бесплатно · 15–18 лет"
+ ],
+ [
+  "Free · 40+ players",
+  "Бесплатно · игроки 40+"
+ ],
+ [
+  "5<br>DAYS",
+  "5<br>ДНЕЙ"
+ ],
+ [
+  "Use <strong>Track A</strong>, the 9–11 doses.",
+  "Используйте <strong>Track A</strong> — дозировки для 9–11 лет."
+ ],
+ [
+  "parent@email.com",
+  "roditel@example.com"
+ ],
+ [
+  "your@email.com",
+  "ivan@example.com"
+ ],
+ [
+  "${youth ? \"Your player's\" : 'Your'} весь сезон",
+  "${youth ? \"Для вашего игрока:\" : 'Для вас:'} весь сезон"
+ ]
+]

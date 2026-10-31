@@ -1,0 +1,385 @@
+{
+ "page": "terms.html",
+ "segments": [
+  {
+   "id": "t0",
+   "kind": "title",
+   "en": "Terms of Service | Elite Hockey Drills"
+  },
+  {
+   "id": "m1",
+   "kind": "meta",
+   "en": "Terms of Service for the Elite Hockey Drills mobile app: health and safety disclaimer, subscriptions, licence, and your rights."
+  },
+  {
+   "id": "h2",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "a3",
+   "kind": "attr:aria-label",
+   "en": "Main navigation"
+  },
+  {
+   "id": "h4",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">Coach</a>"
+  },
+  {
+   "id": "h5",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h6",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">Programs</a>"
+  },
+  {
+   "id": "h7",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Library</a>"
+  },
+  {
+   "id": "h8",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h9",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h10",
+   "kind": "html",
+   "en": "Get Started"
+  },
+  {
+   "id": "h11",
+   "kind": "html",
+   "en": "Legal"
+  },
+  {
+   "id": "h12",
+   "kind": "html",
+   "en": "Terms of <em class=\"serif\">Service.</em>"
+  },
+  {
+   "id": "h13",
+   "kind": "html",
+   "en": "<strong>Last updated: July 4, 2026</strong>"
+  },
+  {
+   "id": "h14",
+   "kind": "html",
+   "en": "These Terms of Service (&ldquo;Terms&rdquo;) govern your use of the <strong>Elite Hockey Drills</strong> mobile application (the &ldquo;App&rdquo;), provided by <strong>BELLOSAURUS FOR ONLINE SELLING</strong>, a sole establishment licensed in the Emirate of Dubai, United Arab Emirates (commercial licence no. 1629119) (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;)."
+  },
+  {
+   "id": "h15",
+   "kind": "html",
+   "en": "By downloading or using the App, you agree to these Terms. If you do not agree, do not use the App."
+  },
+  {
+   "id": "h16",
+   "kind": "html",
+   "en": "1. Health &amp; safety disclaimer — please read"
+  },
+  {
+   "id": "h17",
+   "kind": "html",
+   "en": "<strong>The App provides general fitness and training information, not medical advice.</strong> It is not a substitute for professional medical, physiotherapy, or coaching advice, diagnosis, or treatment."
+  },
+  {
+   "id": "h18",
+   "kind": "html",
+   "en": "<strong>Consult a qualified physician</strong> before starting this or any exercise program, particularly if you have a medical condition, are injured, are pregnant, or have any concern about your ability to exercise safely."
+  },
+  {
+   "id": "h19",
+   "kind": "html",
+   "en": "<strong>Exercise carries inherent risks</strong>, including the risk of serious injury. By using the App you acknowledge and <strong>voluntarily assume those risks</strong>."
+  },
+  {
+   "id": "h20",
+   "kind": "html",
+   "en": "<strong>Stop immediately</strong> and seek medical attention if you feel pain, dizziness, shortness of breath, or any other symptom."
+  },
+  {
+   "id": "h21",
+   "kind": "html",
+   "en": "The training content (including exercises, prescriptions, baselines, and videos) is <strong>general guidance</strong>, automatically generated from the information you provide. It is <strong>not</strong> individualized medical or rehabilitation advice and may not be appropriate for you."
+  },
+  {
+   "id": "h22",
+   "kind": "html",
+   "en": "<strong>For minors:</strong> a parent or guardian is responsible for determining whether the program is appropriate and must <strong>supervise youth training</strong>, confirm the athlete is <strong>healthy enough to train</strong>, and <strong>stop any exercise that causes pain</strong>. The App surfaces these reminders in-session, but supervision remains the parent/guardian&rsquo;s responsibility."
+  },
+  {
+   "id": "h23",
+   "kind": "html",
+   "en": "You are solely responsible for exercising within your own limits and for using proper technique and equipment."
+  },
+  {
+   "id": "h24",
+   "kind": "html",
+   "en": "2. Eligibility and accounts"
+  },
+  {
+   "id": "h25",
+   "kind": "html",
+   "en": "The App may be used by younger athletes through its Youth mode. <strong>Users under 13 require verified parental or guardian consent</strong> — confirmed by a code we email to the parent/guardian (see our <a href=\"/privacy.html\">Privacy Policy</a>) — and a parent/guardian must agree to these Terms on the child&rsquo;s behalf."
+  },
+  {
+   "id": "h26",
+   "kind": "html",
+   "en": "You are responsible for the accuracy of the information you enter and for any activity that occurs in the App on your device."
+  },
+  {
+   "id": "h27",
+   "kind": "html",
+   "en": "3. Licence to use the App"
+  },
+  {
+   "id": "h28",
+   "kind": "html",
+   "en": "We grant you a personal, limited, non-exclusive, non-transferable, revocable licence to use the App for your own non-commercial training. You may not copy, modify, distribute, sell, reverse-engineer, or create derivative works from the App or its content, except as permitted by law."
+  },
+  {
+   "id": "h29",
+   "kind": "html",
+   "en": "4. Subscriptions and purchases"
+  },
+  {
+   "id": "h30",
+   "kind": "html",
+   "en": "Some features may require a paid subscription or one-time purchase."
+  },
+  {
+   "id": "h31",
+   "kind": "html",
+   "en": "<strong>Billing.</strong> Purchases are processed by the <strong>Apple App Store</strong> or <strong>Google Play</strong> under their terms; we do not handle your payment-card details."
+  },
+  {
+   "id": "h32",
+   "kind": "html",
+   "en": "<strong>Auto-renewal.</strong> Subscriptions renew automatically for the chosen period unless cancelled at least 24 hours before the end of the current period. Your store account is charged for renewal within 24 hours before the period ends."
+  },
+  {
+   "id": "h33",
+   "kind": "html",
+   "en": "<strong>Managing/cancelling.</strong> You manage and cancel subscriptions in your Apple or Google account settings. Uninstalling the App does not cancel a subscription."
+  },
+  {
+   "id": "h34",
+   "kind": "html",
+   "en": "<strong>Free trials.</strong> If a free trial is offered, any unused portion is forfeited when you purchase a subscription, where applicable."
+  },
+  {
+   "id": "h35",
+   "kind": "html",
+   "en": "<strong>Refunds.</strong> Refunds are handled by Apple or Google according to their policies; we generally cannot issue store refunds directly."
+  },
+  {
+   "id": "h36",
+   "kind": "html",
+   "en": "<strong>Price changes.</strong> We may change prices prospectively; changes do not affect a billing period already paid for, and material changes will be notified as required by the stores and applicable law."
+  },
+  {
+   "id": "h37",
+   "kind": "html",
+   "en": "5. Your data"
+  },
+  {
+   "id": "h38",
+   "kind": "html",
+   "en": "Your use of the App is also governed by our <a href=\"/privacy.html\">Privacy Policy</a>, which explains that your training data is stored on your device by default, how optional cloud backup works if you create an account, and how to delete both. You are responsible for backing up your data; uninstalling the App or resetting it deletes locally stored data, and deleting your cloud account removes the data we store on our servers."
+  },
+  {
+   "id": "h39",
+   "kind": "html",
+   "en": "6. Acceptable use"
+  },
+  {
+   "id": "h40",
+   "kind": "html",
+   "en": "You agree not to misuse the App, including by attempting to disrupt or compromise it, accessing it through unauthorized means, or using it in violation of any applicable law."
+  },
+  {
+   "id": "h41",
+   "kind": "html",
+   "en": "7. Intellectual property"
+  },
+  {
+   "id": "h42",
+   "kind": "html",
+   "en": "The App and its content — including the training methodology, exercise descriptions, text, graphics, videos, and the <strong>Elite Hockey Drills</strong> name and logos — are owned by BELLOSAURUS FOR ONLINE SELLING or its licensors and are protected by intellectual-property laws. All rights not expressly granted are reserved."
+  },
+  {
+   "id": "h43",
+   "kind": "html",
+   "en": "8. Disclaimers"
+  },
+  {
+   "id": "h44",
+   "kind": "html",
+   "en": "The App is provided <strong>&ldquo;as is&rdquo; and &ldquo;as available&rdquo;</strong> without warranties of any kind, whether express or implied, including fitness for a particular purpose, merchantability, accuracy, and non-infringement. We do not warrant that the App will be uninterrupted, error-free, or that results described will be achieved."
+  },
+  {
+   "id": "h45",
+   "kind": "html",
+   "en": "9. Limitation of liability"
+  },
+  {
+   "id": "h46",
+   "kind": "html",
+   "en": "To the maximum extent permitted by law, <strong>BELLOSAURUS FOR ONLINE SELLING</strong> and its owners, employees, and suppliers will not be liable for any indirect, incidental, special, consequential, or punitive damages, or for any loss of data, profits, or for <strong>personal injury</strong> arising out of or relating to your use of (or inability to use) the App. To the maximum extent permitted by law, our total liability for any claim relating to the App will not exceed the greater of the amount you paid us for the App in the 12 months before the claim, or AED 200."
+  },
+  {
+   "id": "h47",
+   "kind": "html",
+   "en": "Nothing in these Terms excludes liability that cannot be excluded under applicable law."
+  },
+  {
+   "id": "h48",
+   "kind": "html",
+   "en": "10. Indemnification"
+  },
+  {
+   "id": "h49",
+   "kind": "html",
+   "en": "You agree to indemnify and hold harmless BELLOSAURUS FOR ONLINE SELLING from any claims, damages, or expenses arising out of your misuse of the App or violation of these Terms."
+  },
+  {
+   "id": "h50",
+   "kind": "html",
+   "en": "11. Governing law and disputes"
+  },
+  {
+   "id": "h51",
+   "kind": "html",
+   "en": "These Terms are governed by the laws of the <strong>United Arab Emirates</strong> (as applicable in Dubai), without regard to conflict-of-laws rules. The courts of Dubai, UAE will have jurisdiction over any dispute, subject to any mandatory consumer-protection rights you may have."
+  },
+  {
+   "id": "h52",
+   "kind": "html",
+   "en": "12. Changes to these Terms"
+  },
+  {
+   "id": "h53",
+   "kind": "html",
+   "en": "We may update these Terms from time to time. We will revise the &ldquo;Last updated&rdquo; date and, for material changes, provide notice in the App where appropriate. Continued use after changes take effect means you accept the updated Terms."
+  },
+  {
+   "id": "h54",
+   "kind": "html",
+   "en": "13. Contact us"
+  },
+  {
+   "id": "h55",
+   "kind": "html",
+   "en": "<strong>BELLOSAURUS FOR ONLINE SELLING</strong><br>\nAl Quoz Industrial Area 1, 203, Dubai, United Arab Emirates<br>\nEmail: <strong><a href=\"mailto:coach@elitehockeydrills.com\">coach@elitehockeydrills.com</a></strong>"
+  },
+  {
+   "id": "h56",
+   "kind": "html",
+   "en": "See also our <a href=\"/privacy.html\">Privacy Policy</a>."
+  },
+  {
+   "id": "h57",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "h58",
+   "kind": "html",
+   "en": "Science-backed off-ice training for hockey players. Built by a certified sport scientist and national team coach."
+  },
+  {
+   "id": "h59",
+   "kind": "html",
+   "en": "Programs"
+  },
+  {
+   "id": "h60",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com/survey.html\">Free 5-Day PDF</a>"
+  },
+  {
+   "id": "h61",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">8-Week Programs</a>"
+  },
+  {
+   "id": "h62",
+   "kind": "html",
+   "en": "<a href=\"/hockey-training-app.html\">Hockey Training App</a>"
+  },
+  {
+   "id": "h63",
+   "kind": "html",
+   "en": "<a href=\"https://apps.apple.com/us/app/elite-hockey-drills/id6787257275\" data-store=\"ios\">The App — iOS</a>"
+  },
+  {
+   "id": "h64",
+   "kind": "html",
+   "en": "<a href=\"https://play.google.com/store/apps/details?id=com.elitehockeydrills.training\">The App — Android</a>"
+  },
+  {
+   "id": "h65",
+   "kind": "html",
+   "en": "Navigate"
+  },
+  {
+   "id": "h66",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">About</a>"
+  },
+  {
+   "id": "h67",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h68",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Exercise Library</a>"
+  },
+  {
+   "id": "h69",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h70",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h71",
+   "kind": "html",
+   "en": "Legal"
+  },
+  {
+   "id": "h72",
+   "kind": "html",
+   "en": "<a href=\"/privacy.html\">Privacy Policy</a>"
+  },
+  {
+   "id": "h73",
+   "kind": "html",
+   "en": "<a href=\"/terms.html\">Terms of Service</a>"
+  },
+  {
+   "id": "h74",
+   "kind": "html",
+   "en": "<a href=\"mailto:coach@elitehockeydrills.com\">Contact</a>"
+  },
+  {
+   "id": "h75",
+   "kind": "html",
+   "en": "<span>© 2026 Elite Hockey Drills. All rights reserved.</span>\n    <a class=\"footer-ig\" href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">@elite_hockey_drills</a>"
+  }
+ ]
+}

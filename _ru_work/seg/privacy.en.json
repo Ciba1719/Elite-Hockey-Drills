@@ -1,0 +1,645 @@
+{
+ "page": "privacy.html",
+ "segments": [
+  {
+   "id": "t0",
+   "kind": "title",
+   "en": "Privacy Policy | Elite Hockey Drills"
+  },
+  {
+   "id": "m1",
+   "kind": "meta",
+   "en": "How Elite Hockey Drills handles your information: device-first storage, optional cloud backup, no data selling, no ads, and verified parental consent for players under 13."
+  },
+  {
+   "id": "h2",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "a3",
+   "kind": "attr:aria-label",
+   "en": "Main navigation"
+  },
+  {
+   "id": "h4",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">Coach</a>"
+  },
+  {
+   "id": "h5",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h6",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">Programs</a>"
+  },
+  {
+   "id": "h7",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Library</a>"
+  },
+  {
+   "id": "h8",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h9",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h10",
+   "kind": "html",
+   "en": "Get Started"
+  },
+  {
+   "id": "h11",
+   "kind": "html",
+   "en": "Legal"
+  },
+  {
+   "id": "h12",
+   "kind": "html",
+   "en": "Privacy <em class=\"serif\">Policy.</em>"
+  },
+  {
+   "id": "h13",
+   "kind": "html",
+   "en": "<strong>Last updated: October 31, 2026</strong>"
+  },
+  {
+   "id": "h14",
+   "kind": "html",
+   "en": "This Privacy Policy explains how <strong>BELLOSAURUS FOR ONLINE SELLING</strong>, a sole establishment licensed in the Emirate of Dubai, United Arab Emirates (commercial licence no. 1629119) (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;), handles information in connection with the <strong>Elite Hockey Drills</strong> mobile application (the &ldquo;App&rdquo;)."
+  },
+  {
+   "id": "h15",
+   "kind": "html",
+   "en": "If you have any questions, contact us at <strong><a href=\"mailto:coach@elitehockeydrills.com\">coach@elitehockeydrills.com</a></strong>."
+  },
+  {
+   "id": "h16",
+   "kind": "html",
+   "en": "The short version"
+  },
+  {
+   "id": "h17",
+   "kind": "html",
+   "en": "The App is built to work <strong>on your device</strong>. Your training profile, program, baselines, and workout history are stored <strong>locally on your phone</strong> by default."
+  },
+  {
+   "id": "h18",
+   "kind": "html",
+   "en": "<strong>Cloud backup is optional and off by default.</strong> It only turns on if you add your email and verify it with a code; then your profile, program, and (as backup coverage expands) training history are stored with our cloud provider so you can restore them on a new device."
+  },
+  {
+   "id": "h19",
+   "kind": "html",
+   "en": "We <strong>do not sell your data</strong> and we do not use it for third-party advertising."
+  },
+  {
+   "id": "h20",
+   "kind": "html",
+   "en": "You can <strong>delete everything</strong> at any time: <strong>Settings &rarr; Reset App &amp; Delete All Data</strong> wipes this device, and <strong>Settings &rarr; Delete Cloud Account</strong> deletes your account and everything we store for you on our servers."
+  },
+  {
+   "id": "h21",
+   "kind": "html",
+   "en": "The App has a <strong>Youth mode</strong> for younger players; for children under 13 we require <strong>verified parental/guardian consent</strong> — the parent or guardian confirms by entering a code we email them — before setup can be completed."
+  },
+  {
+   "id": "h22",
+   "kind": "html",
+   "en": "If you&rsquo;re a verified parent or guardian, you can opt in to three emails about a player&rsquo;s free trial. <strong>Off by default.</strong>"
+  },
+  {
+   "id": "h23",
+   "kind": "html",
+   "en": "1. Information we collect"
+  },
+  {
+   "id": "h24",
+   "kind": "html",
+   "en": "a) Information you provide during setup and use"
+  },
+  {
+   "id": "h25",
+   "kind": "html",
+   "en": "To build and adjust your training program, the App asks you for information such as:"
+  },
+  {
+   "id": "h26",
+   "kind": "html",
+   "en": "Optional first name or nickname"
+  },
+  {
+   "id": "h27",
+   "kind": "html",
+   "en": "Age / date-of-birth bracket, and (for the Youth flow) guardian-consent status"
+  },
+  {
+   "id": "h28",
+   "kind": "html",
+   "en": "Body metrics you choose to enter (e.g. height, weight)"
+  },
+  {
+   "id": "h29",
+   "kind": "html",
+   "en": "Hockey background, position, goals, available equipment, and training schedule"
+  },
+  {
+   "id": "h30",
+   "kind": "html",
+   "en": "Self-assessments, baseline test results, workout logs, and game logs you record"
+  },
+  {
+   "id": "h31",
+   "kind": "html",
+   "en": "This information is stored <strong>locally on your device</strong>. We do not receive a copy of it unless and until you choose to use a cloud feature described below."
+  },
+  {
+   "id": "h32",
+   "kind": "html",
+   "en": "b) Optional email address"
+  },
+  {
+   "id": "h33",
+   "kind": "html",
+   "en": "If you choose to provide an email address, you can verify it with a 6-digit code to turn on optional cloud backup (see &ldquo;Cloud backup&rdquo; below). Your email is used to sign you in, to back up and restore your training data, and to key your subscription to your account. Providing an email is always optional and the App works fully without one. <strong>We never collect a child&rsquo;s own email address</strong> — for players under 13, the only email we hold is the parent/guardian&rsquo;s."
+  },
+  {
+   "id": "h34",
+   "kind": "html",
+   "en": "c) Cloud backup and account data"
+  },
+  {
+   "id": "h35",
+   "kind": "html",
+   "en": "Cloud backup is <strong>optional and off by default</strong>. When you enable it — by adding your email and entering the verification code we send — we store your email and a copy of your <strong>profile and training program</strong> — and, as backup coverage expands, your training history (workout logs, personal records, and baseline results) — with our cloud provider, <strong>Supabase</strong>, so you can restore them on a new device. If you never sign in, none of this data leaves your device."
+  },
+  {
+   "id": "h36",
+   "kind": "html",
+   "en": "d) Usage and diagnostic data"
+  },
+  {
+   "id": "h37",
+   "kind": "html",
+   "en": "To fix crashes and improve the App, we use <strong>PostHog</strong> (product analytics) and <strong>Sentry</strong> (crash reporting) to collect limited, largely de-identified information such as app events (e.g. screens viewed, features used), device model, OS version, and crash reports. Analytics events are keyed to a <strong>random anonymous identifier</strong>, not to your name or email. You can turn this off at any time in the App under <strong>Settings &rarr; Share Anonymous Diagnostics</strong>. For profiles of children <strong>under 13</strong>, analytics is <strong>disabled</strong> until a parent or guardian has completed verified consent. We do not use this data to build advertising profiles."
+  },
+  {
+   "id": "h38",
+   "kind": "html",
+   "en": "e) Purchase information"
+  },
+  {
+   "id": "h39",
+   "kind": "html",
+   "en": "If you buy a subscription or other in-app purchase, the transaction is processed by <strong>Apple</strong> or <strong>Google</strong> (and our purchase manager, <strong>RevenueCat</strong>). We receive your purchase/subscription status (e.g. &ldquo;active&rdquo;), <strong>not</strong> your full payment-card details."
+  },
+  {
+   "id": "h40",
+   "kind": "html",
+   "en": "f) Notifications"
+  },
+  {
+   "id": "h41",
+   "kind": "html",
+   "en": "By default the App uses <strong>local notifications</strong> — reminders scheduled on your device — for things like workout and game-day prompts. We ask your permission first, and you can turn them off in Settings or your OS."
+  },
+  {
+   "id": "h42",
+   "kind": "html",
+   "en": "If you have signed in to a cloud account and notifications are enabled, we also store a <strong>push token and a minimal training-state summary</strong> with Supabase — your first name, current streak, last training date, scheduled rest days, notification preferences (including quiet hours), and timezone offset — so our server can send you relevant reminders (for example, that your streak is at risk or a retest is due). We never use push notifications for advertising. Turning workout notifications off stops these server-sent messages, and this data is deleted when you delete your cloud account."
+  },
+  {
+   "id": "h43",
+   "kind": "html",
+   "en": "g) Permissions we do <strong>not</strong> use"
+  },
+  {
+   "id": "h44",
+   "kind": "html",
+   "en": "The App does <strong>not</strong> request access to your location, camera, microphone, contacts, photos, or health/fitness platforms."
+  },
+  {
+   "id": "h45",
+   "kind": "html",
+   "en": "h) Parent updates (optional)"
+  },
+  {
+   "id": "h46",
+   "kind": "html",
+   "en": "If you are the verified parent or guardian of a Youth-mode player, you can choose to get three short emails about their training during the free trial (around day 1, day 3 and day 6, including a reminder before it ends). This is off unless you tick the box when you verify your email, or turn it on later in <strong>Settings &rarr; Parent updates</strong>."
+  },
+  {
+   "id": "h47",
+   "kind": "html",
+   "en": "<strong>What is sent:</strong> your email address, the player&rsquo;s first name, the app language, the trial&rsquo;s start and end dates, the number of sessions and minutes completed, and the dates of the last and next session. We never send age, date of birth, injury or concussion answers, body measurements or test results."
+  },
+  {
+   "id": "h48",
+   "kind": "html",
+   "en": "<strong>To whom:</strong> this is stored with <strong>Supabase</strong> and passed to <strong>MailerLite</strong>, our email service provider, which sends the emails for us."
+  },
+  {
+   "id": "h49",
+   "kind": "html",
+   "en": "<strong>Why:</strong> to keep you informed about the player&rsquo;s training, based on your consent."
+  },
+  {
+   "id": "h50",
+   "kind": "html",
+   "en": "<strong>How to stop:</strong> use the unsubscribe link in any email, or <strong>Settings &rarr; Parent updates</strong>. <strong>Settings &rarr; Reset App &amp; Delete All Data</strong> also deletes this data from our systems and asks MailerLite to erase it, which it completes within 30 days. If you do nothing, we delete it 30 days after the trial ends, or 30 days after you opted in if no trial started."
+  },
+  {
+   "id": "h51",
+   "kind": "html",
+   "en": "2. How we use information"
+  },
+  {
+   "id": "h52",
+   "kind": "html",
+   "en": "We use the information above to:"
+  },
+  {
+   "id": "h53",
+   "kind": "html",
+   "en": "Generate and continually adjust your personalized training program"
+  },
+  {
+   "id": "h54",
+   "kind": "html",
+   "en": "Show your progress, baselines, streaks, and history"
+  },
+  {
+   "id": "h55",
+   "kind": "html",
+   "en": "Schedule the local reminders you opt into"
+  },
+  {
+   "id": "h56",
+   "kind": "html",
+   "en": "Process and validate in-app purchases"
+  },
+  {
+   "id": "h57",
+   "kind": "html",
+   "en": "Diagnose crashes and improve the App"
+  },
+  {
+   "id": "h58",
+   "kind": "html",
+   "en": "Respond to your support requests"
+  },
+  {
+   "id": "h59",
+   "kind": "html",
+   "en": "Comply with legal obligations"
+  },
+  {
+   "id": "h60",
+   "kind": "html",
+   "en": "3. Legal bases (UAE PDPL / GDPR where applicable)"
+  },
+  {
+   "id": "h61",
+   "kind": "html",
+   "en": "Where required, we rely on: your <strong>consent</strong> (e.g. optional email, notifications, analytics, children&rsquo;s data); <strong>performance of a contract</strong> (providing the App and any purchases); and our <strong>legitimate interests</strong> (keeping the App secure and working). You can withdraw consent at any time (see &ldquo;Your choices&rdquo;)."
+  },
+  {
+   "id": "h62",
+   "kind": "html",
+   "en": "4. Children&rsquo;s privacy"
+  },
+  {
+   "id": "h63",
+   "kind": "html",
+   "en": "The App offers a <strong>Youth mode</strong> designed for younger players, with age-appropriate programming."
+  },
+  {
+   "id": "h64",
+   "kind": "html",
+   "en": "For users <strong>under 13</strong>, the App requires <strong>verified parental or guardian consent</strong> before setup can be completed: the parent or guardian provides their email address, we send a confirmation code to that address, and the child&rsquo;s setup finishes only after the code is entered."
+  },
+  {
+   "id": "h65",
+   "kind": "html",
+   "en": "We collect only the limited information needed to provide age-appropriate training — first name, age, sex, height and weight, position, training availability, injury history, and workout progress — and it is stored <strong>on the child&rsquo;s device</strong>. We never collect a child&rsquo;s own email address; the only email on file is the parent/guardian&rsquo;s, and any cloud backup of a youth profile is keyed to that verified guardian email."
+  },
+  {
+   "id": "h66",
+   "kind": "html",
+   "en": "Analytics is <strong>disabled</strong> for under-13 profiles until verified guardian consent is completed."
+  },
+  {
+   "id": "h67",
+   "kind": "html",
+   "en": "We do <strong>not</strong> sell children&rsquo;s data, show behavioral advertising, or knowingly collect more than is necessary."
+  },
+  {
+   "id": "h68",
+   "kind": "html",
+   "en": "A parent or guardian can review the information by opening the App on the device and can delete all of it via <strong>Settings &rarr; Reset App &amp; Delete All Data</strong> (this device) and <strong>Settings &rarr; Delete Cloud Account</strong> (our servers), or by contacting us at <strong>coach@elitehockeydrills.com</strong>."
+  },
+  {
+   "id": "h69",
+   "kind": "html",
+   "en": "A parent or guardian&rsquo;s email is held with Supabase once a code has been sent to it, so we can verify them. It may stay there after setup; to have it removed, email <strong>coach@elitehockeydrills.com</strong>."
+  },
+  {
+   "id": "h70",
+   "kind": "html",
+   "en": "Parent updates are described in section 1(h) and are off unless a verified guardian opts in."
+  },
+  {
+   "id": "h71",
+   "kind": "html",
+   "en": "This is intended to align with the U.S. Children&rsquo;s Online Privacy Protection Act (COPPA), Apple&rsquo;s and Google&rsquo;s kids/family policies, and UAE data-protection requirements. If you believe a child has provided information without the required consent, contact us and we will delete it."
+  },
+  {
+   "id": "h72",
+   "kind": "html",
+   "en": "5. How information is shared"
+  },
+  {
+   "id": "h73",
+   "kind": "html",
+   "en": "We <strong>do not sell</strong> your personal information. We share information only:"
+  },
+  {
+   "id": "h74",
+   "kind": "html",
+   "en": "With <strong>Apple / Google / RevenueCat</strong> to process in-app purchases"
+  },
+  {
+   "id": "h75",
+   "kind": "html",
+   "en": "With <strong>PostHog / Sentry</strong> for analytics and crash diagnostics"
+  },
+  {
+   "id": "h76",
+   "kind": "html",
+   "en": "With <strong>Supabase</strong> to provide optional cloud backup and, if you sign in with notifications on, server-sent reminders"
+  },
+  {
+   "id": "h77",
+   "kind": "html",
+   "en": "With <strong>Expo&rsquo;s push service</strong> to deliver those notifications to your device"
+  },
+  {
+   "id": "h78",
+   "kind": "html",
+   "en": "With <strong>MailerLite</strong>, only if a verified parent or guardian opts in to parent updates"
+  },
+  {
+   "id": "h79",
+   "kind": "html",
+   "en": "When <strong>required by law</strong>, or to protect rights, safety, and security"
+  },
+  {
+   "id": "h80",
+   "kind": "html",
+   "en": "In connection with a <strong>business transfer</strong> (e.g. merger or acquisition), subject to this Policy"
+  },
+  {
+   "id": "h81",
+   "kind": "html",
+   "en": "We do not share your information with advertising networks or data brokers."
+  },
+  {
+   "id": "h82",
+   "kind": "html",
+   "en": "6. Data storage, security, and retention"
+  },
+  {
+   "id": "h83",
+   "kind": "html",
+   "en": "Your training data is stored <strong>on your device</strong> and remains there until you delete it. Removing the App from your device deletes this local data."
+  },
+  {
+   "id": "h84",
+   "kind": "html",
+   "en": "If you enable cloud backup, that data is stored with <strong>Supabase</strong> and protected in transit using industry-standard encryption. Deleting your cloud account removes it from our servers."
+  },
+  {
+   "id": "h85",
+   "kind": "html",
+   "en": "We retain information only as long as needed for the purposes above or as required by law. You can delete your data at any time (see below)."
+  },
+  {
+   "id": "h86",
+   "kind": "html",
+   "en": "7. International transfers"
+  },
+  {
+   "id": "h87",
+   "kind": "html",
+   "en": "The App is operated from the United Arab Emirates. If a cloud or service provider processes data outside the UAE, we take steps to ensure an appropriate level of protection consistent with applicable law."
+  },
+  {
+   "id": "h88",
+   "kind": "html",
+   "en": "8. Your choices and rights"
+  },
+  {
+   "id": "h89",
+   "kind": "html",
+   "en": "Depending on your location, you may have the right to <strong>access, correct, delete, or export</strong> your information, to <strong>withdraw consent</strong>, and to <strong>object to or restrict</strong> certain processing. You can exercise most of these directly in the App:"
+  },
+  {
+   "id": "h90",
+   "kind": "html",
+   "en": "<strong>Edit</strong> your details in the App&rsquo;s profile/settings screens"
+  },
+  {
+   "id": "h91",
+   "kind": "html",
+   "en": "<strong>Delete everything on this device</strong> via <strong>Settings &rarr; Reset App &amp; Delete All Data</strong>"
+  },
+  {
+   "id": "h92",
+   "kind": "html",
+   "en": "<strong>Delete your cloud account</strong> via <strong>Settings &rarr; Delete Cloud Account</strong> — this removes your account and every row we store for you on our servers (backup and notification data included)"
+  },
+  {
+   "id": "h93",
+   "kind": "html",
+   "en": "<strong>Turn off</strong> notifications and anonymous diagnostics in Settings"
+  },
+  {
+   "id": "h94",
+   "kind": "html",
+   "en": "<strong>Turn off</strong> parent updates in Settings or by unsubscribing from any email"
+  },
+  {
+   "id": "h95",
+   "kind": "html",
+   "en": "To make any other request, email <strong>coach@elitehockeydrills.com</strong>. We will respond as required by applicable law (including the UAE PDPL and, where it applies, the GDPR/CCPA)."
+  },
+  {
+   "id": "h96",
+   "kind": "html",
+   "en": "9. Third-party services"
+  },
+  {
+   "id": "h97",
+   "kind": "html",
+   "en": "The App relies on the following third parties; their handling of data is governed by their own privacy policies:"
+  },
+  {
+   "id": "h98",
+   "kind": "html",
+   "en": "<strong>Apple App Store / Google Play</strong> (distribution, purchases)"
+  },
+  {
+   "id": "h99",
+   "kind": "html",
+   "en": "<strong>Expo</strong> (app build and update tooling, push-notification delivery)"
+  },
+  {
+   "id": "h100",
+   "kind": "html",
+   "en": "<strong>RevenueCat</strong> (purchase management)"
+  },
+  {
+   "id": "h101",
+   "kind": "html",
+   "en": "<strong>PostHog</strong> (product analytics), <strong>Sentry</strong> (crash reporting)"
+  },
+  {
+   "id": "h102",
+   "kind": "html",
+   "en": "<strong>Supabase</strong> (optional cloud backup, accounts, and notification state)"
+  },
+  {
+   "id": "h103",
+   "kind": "html",
+   "en": "<strong>MailerLite</strong> (parent update emails, only with opt-in)"
+  },
+  {
+   "id": "h104",
+   "kind": "html",
+   "en": "10. Changes to this Policy"
+  },
+  {
+   "id": "h105",
+   "kind": "html",
+   "en": "We may update this Policy from time to time. We will revise the &ldquo;Last updated&rdquo; date above and, for material changes, provide notice in the App where appropriate."
+  },
+  {
+   "id": "h106",
+   "kind": "html",
+   "en": "11. Contact us"
+  },
+  {
+   "id": "h107",
+   "kind": "html",
+   "en": "<strong>BELLOSAURUS FOR ONLINE SELLING</strong><br>\nAl Quoz Industrial Area 1, 203, Dubai, United Arab Emirates<br>\nEmail: <strong><a href=\"mailto:coach@elitehockeydrills.com\">coach@elitehockeydrills.com</a></strong>"
+  },
+  {
+   "id": "h108",
+   "kind": "html",
+   "en": "See also our <a href=\"/terms.html\">Terms of Service</a>."
+  },
+  {
+   "id": "h109",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "h110",
+   "kind": "html",
+   "en": "Science-backed off-ice training for hockey players. Built by a certified sport scientist and national team coach."
+  },
+  {
+   "id": "h111",
+   "kind": "html",
+   "en": "Programs"
+  },
+  {
+   "id": "h112",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com/survey.html\">Free 5-Day PDF</a>"
+  },
+  {
+   "id": "h113",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">8-Week Programs</a>"
+  },
+  {
+   "id": "h114",
+   "kind": "html",
+   "en": "<a href=\"/hockey-training-app.html\">Hockey Training App</a>"
+  },
+  {
+   "id": "h115",
+   "kind": "html",
+   "en": "<a href=\"https://apps.apple.com/us/app/elite-hockey-drills/id6787257275\" data-store=\"ios\">The App — iOS</a>"
+  },
+  {
+   "id": "h116",
+   "kind": "html",
+   "en": "<a href=\"https://play.google.com/store/apps/details?id=com.elitehockeydrills.training\">The App — Android</a>"
+  },
+  {
+   "id": "h117",
+   "kind": "html",
+   "en": "Navigate"
+  },
+  {
+   "id": "h118",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">About</a>"
+  },
+  {
+   "id": "h119",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h120",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Exercise Library</a>"
+  },
+  {
+   "id": "h121",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h122",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h123",
+   "kind": "html",
+   "en": "Legal"
+  },
+  {
+   "id": "h124",
+   "kind": "html",
+   "en": "<a href=\"/privacy.html\">Privacy Policy</a>"
+  },
+  {
+   "id": "h125",
+   "kind": "html",
+   "en": "<a href=\"/terms.html\">Terms of Service</a>"
+  },
+  {
+   "id": "h126",
+   "kind": "html",
+   "en": "<a href=\"mailto:coach@elitehockeydrills.com\">Contact</a>"
+  },
+  {
+   "id": "h127",
+   "kind": "html",
+   "en": "<span>© 2026 Elite Hockey Drills. All rights reserved.</span>\n    <a class=\"footer-ig\" href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">@elite_hockey_drills</a>"
+  }
+ ]
+}

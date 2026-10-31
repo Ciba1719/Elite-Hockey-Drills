@@ -1,0 +1,1230 @@
+{
+ "page": "hockey-warm-up.html",
+ "segments": [
+  {
+   "id": "t0",
+   "kind": "title",
+   "en": "The Perfect Hockey Warm-Up: What the Science Says | Elite Hockey Drills"
+  },
+  {
+   "id": "m1",
+   "kind": "meta",
+   "en": "A science-based guide to the perfect hockey warm-up. Why static stretching before you play backfires, what a warm-up really does, and the RAMP method that primes you to perform. By Coach David Ciboch, M.Ed. Sport Science."
+  },
+  {
+   "id": "m2",
+   "kind": "meta",
+   "en": "The Perfect Hockey Warm-Up: What the Science Says | Elite Hockey Drills"
+  },
+  {
+   "id": "m3",
+   "kind": "meta",
+   "en": "The warm-up is free performance and injury insurance. Why static stretching dulls your power, and the RAMP warm-up that gets you firing from the first shift."
+  },
+  {
+   "id": "l4",
+   "kind": "ld",
+   "en": "The Perfect Hockey Warm-Up: What the Science Says"
+  },
+  {
+   "id": "l5",
+   "kind": "ld",
+   "en": "Why static stretching before you play backfires, what a warm-up actually does to your body, and the RAMP method that primes a hockey player to perform."
+  },
+  {
+   "id": "l6",
+   "kind": "ld",
+   "en": "David Ciboch"
+  },
+  {
+   "id": "l7",
+   "kind": "ld",
+   "en": "Sport Scientist and National Team Coach"
+  },
+  {
+   "id": "l8",
+   "kind": "ld",
+   "en": "Elite Hockey Drills"
+  },
+  {
+   "id": "l9",
+   "kind": "ld",
+   "en": "Home"
+  },
+  {
+   "id": "l10",
+   "kind": "ld",
+   "en": "Articles"
+  },
+  {
+   "id": "l11",
+   "kind": "ld",
+   "en": "The Perfect Warm-Up"
+  },
+  {
+   "id": "h12",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "a13",
+   "kind": "attr:aria-label",
+   "en": "Main navigation"
+  },
+  {
+   "id": "h14",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">Coach</a>"
+  },
+  {
+   "id": "h15",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h16",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">Programs</a>"
+  },
+  {
+   "id": "h17",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Library</a>"
+  },
+  {
+   "id": "h18",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h19",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h20",
+   "kind": "html",
+   "en": "Get the App"
+  },
+  {
+   "id": "a21",
+   "kind": "attr:aria-label",
+   "en": "Breadcrumb"
+  },
+  {
+   "id": "h22",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com\">Home</a>"
+  },
+  {
+   "id": "h23",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h24",
+   "kind": "html",
+   "en": "The Perfect Warm-Up"
+  },
+  {
+   "id": "h25",
+   "kind": "html",
+   "en": "Warm-Up"
+  },
+  {
+   "id": "h26",
+   "kind": "html",
+   "en": "The perfect <span class=\"serif\">warm-up.</span>"
+  },
+  {
+   "id": "h27",
+   "kind": "html",
+   "en": "It is the cheapest performance gain in hockey, and most players waste it. Why the old static stretches quietly <em>slow you down</em>, and the warm-up that has you firing from the very first shift."
+  },
+  {
+   "id": "a28",
+   "kind": "attr:alt",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h29",
+   "kind": "html",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h30",
+   "kind": "html",
+   "en": "M.Ed. Sport Science · National Team Coach"
+  },
+  {
+   "id": "h31",
+   "kind": "html",
+   "en": "11 min read"
+  },
+  {
+   "id": "t32",
+   "kind": "text",
+   "en": "Science-based"
+  },
+  {
+   "id": "t33",
+   "kind": "text",
+   "en": "The 30-second version"
+  },
+  {
+   "id": "h34",
+   "kind": "html",
+   "en": "<strong>A real warm-up is free performance.</strong> Across the research, warming up improved performance in about 79 percent of measured outcomes."
+  },
+  {
+   "id": "h35",
+   "kind": "html",
+   "en": "<strong>Long static stretching before you play backfires.</strong> Held as your main warm-up, it cuts strength by roughly 5 percent and dulls power and explosiveness."
+  },
+  {
+   "id": "h36",
+   "kind": "html",
+   "en": "<strong>Keep static holds short, or save them for after.</strong> Under about 45 seconds is harmless. The performance loss shows up once you hold for 60 seconds or more."
+  },
+  {
+   "id": "h37",
+   "kind": "html",
+   "en": "<strong>Warm up with the RAMP method.</strong> Raise, Activate, Mobilise, Potentiate: a rising arc of movement that ends at game speed, not on the floor in a stretch."
+  },
+  {
+   "id": "h38",
+   "kind": "html",
+   "en": "<strong>It protects you too.</strong> Structured active warm-ups have cut injury rates by roughly a third to 40 percent in large trials."
+  },
+  {
+   "id": "a39",
+   "kind": "attr:aria-label",
+   "en": "In this guide"
+  },
+  {
+   "id": "h40",
+   "kind": "html",
+   "en": "In this guide"
+  },
+  {
+   "id": "h41",
+   "kind": "html",
+   "en": "<a href=\"#cheapest\">The cheapest performance gain in hockey</a>"
+  },
+  {
+   "id": "h42",
+   "kind": "html",
+   "en": "<a href=\"#physiology\">What a warm-up actually does to your body</a>"
+  },
+  {
+   "id": "h43",
+   "kind": "html",
+   "en": "<a href=\"#trap\">The static stretching trap</a>"
+  },
+  {
+   "id": "h44",
+   "kind": "html",
+   "en": "<a href=\"#duration\">How long is too long</a>"
+  },
+  {
+   "id": "h45",
+   "kind": "html",
+   "en": "<a href=\"#ramp\">The RAMP method</a>"
+  },
+  {
+   "id": "h46",
+   "kind": "html",
+   "en": "<a href=\"#primer\">The primer that makes you faster</a>"
+  },
+  {
+   "id": "h47",
+   "kind": "html",
+   "en": "<a href=\"#age\">How this changes by age</a>"
+  },
+  {
+   "id": "h48",
+   "kind": "html",
+   "en": "<a href=\"#bottom-line\">The bottom line</a>"
+  },
+  {
+   "id": "h49",
+   "kind": "html",
+   "en": "Picture two players before a big game. One is in the corner of the room, folded over, holding a long hamstring stretch and scrolling his phone. The other is moving: easy skips, leg swings, a few build-up sprints, a couple of hard, sharp efforts to finish. They both think they are warming up. Only one of them actually is. The warm-up is the single cheapest way to play better, and it is also the one most players either skip or do in a way that quietly works against them."
+  },
+  {
+   "id": "h50",
+   "kind": "html",
+   "en": "This is one of the most studied and most misunderstood corners of sport science. The good news is that the answers are clear and easy to use. This guide covers what a warm-up actually does, why the static stretching you grew up with can cost you speed and power, and the simple, proven structure that has you ready to be your best from the opening face-off."
+  },
+  {
+   "id": "h51",
+   "kind": "html",
+   "en": "The cheapest performance gain in hockey"
+  },
+  {
+   "id": "h52",
+   "kind": "html",
+   "en": "Start with the headline, because it is genuinely surprising how reliable this is. When researchers pooled the studies on warming up, they found that <a href=\"https://pubmed.ncbi.nlm.nih.gov/19996770/\" target=\"_blank\" rel=\"noopener\">performance improved in about 79 percent of the outcomes measured</a>, with very little evidence that a proper warm-up ever hurt. Jump higher, sprint faster, produce more power: again and again, the warmed-up athlete did more. No supplement, no gadget, and no extra training session can claim a hit rate like that for free."
+  },
+  {
+   "id": "h53",
+   "kind": "html",
+   "en": "And it is not only about performance. Comprehensive active warm-ups are one of the most effective injury-prevention tools we have. A structured warm-up program tested in thousands of young athletes <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2600961/\" target=\"_blank\" rel=\"noopener\">cut overall injuries by about a third</a>, and a later pooled analysis of similar programs found <a href=\"https://pubmed.ncbi.nlm.nih.gov/28087568/\" target=\"_blank\" rel=\"noopener\">injuries fell by 39 percent</a>. Faster and harder to hurt, from ten minutes you were going to spend anyway. The only question is whether you spend those ten minutes well."
+  },
+  {
+   "id": "v0",
+   "kind": "svg",
+   "en": "What a proper warm-up gives you"
+  },
+  {
+   "id": "v1",
+   "kind": "svg",
+   "en": "Warming up improved performance in about 79 percent of measured outcomes, and structured active warm-ups have cut injuries by about 39 percent."
+  },
+  {
+   "id": "v2",
+   "kind": "svg",
+   "en": "THE TWO PAYOFFS OF WARMING UP PROPERLY"
+  },
+  {
+   "id": "v3",
+   "kind": "svg",
+   "en": "of measured performance"
+  },
+  {
+   "id": "v4",
+   "kind": "svg",
+   "en": "outcomes improved"
+  },
+  {
+   "id": "v5",
+   "kind": "svg",
+   "en": "Fradkin et al., 2010"
+  },
+  {
+   "id": "v6",
+   "kind": "svg",
+   "en": "fewer injuries with a"
+  },
+  {
+   "id": "v7",
+   "kind": "svg",
+   "en": "structured warm-up"
+  },
+  {
+   "id": "v8",
+   "kind": "svg",
+   "en": "Thorborg et al., 2017"
+  },
+  {
+   "id": "v9",
+   "kind": "svg",
+   "en": "What a proper warm-up gives you"
+  },
+  {
+   "id": "v10",
+   "kind": "svg",
+   "en": "Warming up improved performance in about 79 percent of outcomes, and structured warm-ups cut injuries about 39 percent."
+  },
+  {
+   "id": "v11",
+   "kind": "svg",
+   "en": "of performance outcomes improved"
+  },
+  {
+   "id": "v12",
+   "kind": "svg",
+   "en": "fewer injuries with a structured warm-up"
+  },
+  {
+   "id": "h54",
+   "kind": "html",
+   "en": "Two payoffs, one habit. A proper active warm-up is among the most reliable performance boosters and injury reducers in all of sport science, and it costs you nothing but the time you were already there."
+  },
+  {
+   "id": "h55",
+   "kind": "html",
+   "en": "What a warm-up actually does to your body"
+  },
+  {
+   "id": "h56",
+   "kind": "html",
+   "en": "The name is literal. Most of a warm-up's benefit comes down to raising the temperature of your muscles, and warmer muscle is simply better muscle. As temperature rises, <a href=\"https://pubmed.ncbi.nlm.nih.gov/12744717/\" target=\"_blank\" rel=\"noopener\">muscles become less stiff, nerve signals travel faster, and energy is released more quickly</a>. Blood vessels open and deliver more oxygen to the working muscles, and the whole system shifts from idle into ready."
+  },
+  {
+   "id": "h57",
+   "kind": "html",
+   "en": "For a hockey player, that translates into things you can feel: a quicker first step, a sharper change of direction, a harder shot, and reactions that arrive on time instead of a beat late. It also means a nervous system that is switched on, primed to recruit muscle fast and hard. A cold body is a slow body. The point of a warm-up is to make sure that when the puck drops, you are not still waking up."
+  },
+  {
+   "id": "h58",
+   "kind": "html",
+   "en": "The static stretching trap"
+  },
+  {
+   "id": "h59",
+   "kind": "html",
+   "en": "Here is where tradition leads players astray. For decades, warming up meant static stretching: reach, hold, and wait, thirty or sixty seconds at a time. It feels like preparation. But when scientists actually measured what long static stretches do to performance right afterward, they found the opposite of what everyone assumed. A meta-analysis of the research found that static stretching as the main warm-up <a href=\"https://pubmed.ncbi.nlm.nih.gov/22316148/\" target=\"_blank\" rel=\"noopener\">reduced muscular strength by about 5.4 percent and cut power and explosive performance as well</a>. You stretch to get ready, and you walk onto the ice slightly weaker and slightly slower than you started."
+  },
+  {
+   "id": "v13",
+   "kind": "svg",
+   "en": "What static stretching costs your performance"
+  },
+  {
+   "id": "v14",
+   "kind": "svg",
+   "en": "Used as the main warm-up, static stretching reduced maximal strength by about 5.4 percent, power by about 1.9 percent, and explosive performance by about 2.0 percent."
+  },
+  {
+   "id": "v15",
+   "kind": "svg",
+   "en": "PERFORMANCE LOST TO STATIC STRETCHING AS A WARM-UP"
+  },
+  {
+   "id": "v16",
+   "kind": "svg",
+   "en": "maximal strength,"
+  },
+  {
+   "id": "v17",
+   "kind": "svg",
+   "en": "from stretching alone"
+  },
+  {
+   "id": "v18",
+   "kind": "svg",
+   "en": "Maximal strength"
+  },
+  {
+   "id": "v19",
+   "kind": "svg",
+   "en": "Power"
+  },
+  {
+   "id": "v20",
+   "kind": "svg",
+   "en": "Explosive performance"
+  },
+  {
+   "id": "v21",
+   "kind": "svg",
+   "en": "Pooled meta-analysis (Simic et al., 2013)"
+  },
+  {
+   "id": "v22",
+   "kind": "svg",
+   "en": "What static stretching costs your performance"
+  },
+  {
+   "id": "v23",
+   "kind": "svg",
+   "en": "Static stretching as the main warm-up cut strength about 5.4 percent, power about 1.9 percent, and explosive performance about 2.0 percent."
+  },
+  {
+   "id": "v24",
+   "kind": "svg",
+   "en": "strength lost from stretching alone"
+  },
+  {
+   "id": "v25",
+   "kind": "svg",
+   "en": "Maximal strength"
+  },
+  {
+   "id": "v26",
+   "kind": "svg",
+   "en": "Power"
+  },
+  {
+   "id": "v27",
+   "kind": "svg",
+   "en": "Explosive performance"
+  },
+  {
+   "id": "h60",
+   "kind": "html",
+   "en": "Long static holds before you play leave you measurably weaker and less explosive. For a sport decided by first steps and quick bursts, that is exactly the wrong trade. (Simic et al., 2013.)"
+  },
+  {
+   "id": "h61",
+   "kind": "html",
+   "en": "This does not make stretching evil. Flexibility work has real value for mobility and long-term movement quality, and it is genuinely useful after training or on its own day. The mistake is doing it as your warm-up, in the minutes right before you need to be powerful. In a head-to-head test, athletes who warmed up with dynamic movement produced <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7126248/\" target=\"_blank\" rel=\"noopener\">about 3.3 percent more sprint power than when they used static stretching</a>. Same time spent, better result, just by moving instead of holding."
+  },
+  {
+   "id": "h62",
+   "kind": "html",
+   "en": "You stretch to get ready, and you step on the ice slightly <span>weaker and slower</span> than you started."
+  },
+  {
+   "id": "h63",
+   "kind": "html",
+   "en": "How long is too long"
+  },
+  {
+   "id": "h64",
+   "kind": "html",
+   "en": "There is an important nuance that saves static stretching from the doghouse entirely. The damage depends on how long you hold. A large review found that short stretches are essentially harmless: <a href=\"https://pubmed.ncbi.nlm.nih.gov/21659901/\" target=\"_blank\" rel=\"noopener\">holds under about 30 seconds had no meaningful effect on performance, and even 30 to 45 seconds was fine</a>. The losses appeared mainly once a stretch was held for 60 seconds or more on a single muscle."
+  },
+  {
+   "id": "h65",
+   "kind": "html",
+   "en": "So if you love a quick stretch to settle into a position, you are not ruining anything, as long as you keep it brief and then keep moving. The rule of thumb is simple: before you play, keep any static stretch short, under roughly 30 to 45 seconds, and follow it with active movement. Save the long, relaxing holds for after the game or for a separate mobility session, where their downside disappears and their upside remains."
+  },
+  {
+   "id": "h66",
+   "kind": "html",
+   "en": "The RAMP method"
+  },
+  {
+   "id": "h67",
+   "kind": "html",
+   "en": "If not long stretches, then what? The best framework in modern sport science is called <a href=\"https://pure.southwales.ac.uk/en/publications/warmup-revisited(4ecab951-7b8e-4790-ad56-278c5bc32dac).html\" target=\"_blank\" rel=\"noopener\">RAMP</a>, and it organizes a warm-up into four rising stages: Raise, Activate, Mobilise, and Potentiate. The whole idea is a gradual climb from easy to game-speed, so you arrive at the first shift fully switched on rather than stiff or sleepy."
+  },
+  {
+   "id": "v28",
+   "kind": "svg",
+   "en": "The RAMP warm-up"
+  },
+  {
+   "id": "v29",
+   "kind": "svg",
+   "en": "A warm-up climbs through four phases of rising intensity: Raise, Activate, Mobilise, and Potentiate, ending at game speed."
+  },
+  {
+   "id": "v30",
+   "kind": "svg",
+   "en": "INTENSITY RISES THROUGH FOUR PHASES"
+  },
+  {
+   "id": "v31",
+   "kind": "svg",
+   "en": "INTENSITY"
+  },
+  {
+   "id": "v32",
+   "kind": "svg",
+   "en": "R"
+  },
+  {
+   "id": "v33",
+   "kind": "svg",
+   "en": "A"
+  },
+  {
+   "id": "v34",
+   "kind": "svg",
+   "en": "M"
+  },
+  {
+   "id": "v35",
+   "kind": "svg",
+   "en": "P"
+  },
+  {
+   "id": "v36",
+   "kind": "svg",
+   "en": "RAISE"
+  },
+  {
+   "id": "v37",
+   "kind": "svg",
+   "en": "heart rate &amp; temp"
+  },
+  {
+   "id": "v38",
+   "kind": "svg",
+   "en": "ACTIVATE"
+  },
+  {
+   "id": "v39",
+   "kind": "svg",
+   "en": "key muscles"
+  },
+  {
+   "id": "v40",
+   "kind": "svg",
+   "en": "MOBILISE"
+  },
+  {
+   "id": "v41",
+   "kind": "svg",
+   "en": "joints &amp; ranges"
+  },
+  {
+   "id": "v42",
+   "kind": "svg",
+   "en": "POTENTIATE"
+  },
+  {
+   "id": "v43",
+   "kind": "svg",
+   "en": "game-speed bursts"
+  },
+  {
+   "id": "v44",
+   "kind": "svg",
+   "en": "The RAMP warm-up"
+  },
+  {
+   "id": "v45",
+   "kind": "svg",
+   "en": "Four rising phases: Raise, Activate, Mobilise, Potentiate, climbing from easy movement to game-speed bursts."
+  },
+  {
+   "id": "v46",
+   "kind": "svg",
+   "en": "FOUR PHASES, RISING INTENSITY"
+  },
+  {
+   "id": "v47",
+   "kind": "svg",
+   "en": "R"
+  },
+  {
+   "id": "v48",
+   "kind": "svg",
+   "en": "RAISE"
+  },
+  {
+   "id": "v49",
+   "kind": "svg",
+   "en": "heart rate &amp; temp"
+  },
+  {
+   "id": "v50",
+   "kind": "svg",
+   "en": "A"
+  },
+  {
+   "id": "v51",
+   "kind": "svg",
+   "en": "ACTIVATE"
+  },
+  {
+   "id": "v52",
+   "kind": "svg",
+   "en": "wake key muscles"
+  },
+  {
+   "id": "v53",
+   "kind": "svg",
+   "en": "M"
+  },
+  {
+   "id": "v54",
+   "kind": "svg",
+   "en": "MOBILISE"
+  },
+  {
+   "id": "v55",
+   "kind": "svg",
+   "en": "joints &amp; ranges"
+  },
+  {
+   "id": "v56",
+   "kind": "svg",
+   "en": "P"
+  },
+  {
+   "id": "v57",
+   "kind": "svg",
+   "en": "POTENTIATE"
+  },
+  {
+   "id": "v58",
+   "kind": "svg",
+   "en": "game-speed bursts"
+  },
+  {
+   "id": "v59",
+   "kind": "svg",
+   "en": "easy at the top, game speed at the bottom &#8594;"
+  },
+  {
+   "id": "h68",
+   "kind": "html",
+   "en": "The RAMP warm-up climbs from gentle to game speed. You start by raising your temperature, wake up the key muscles, take your joints through their ranges, and finish with sharp, fast efforts that leave you primed. (Framework: Jeffreys, 2007.)"
+  },
+  {
+   "id": "h69",
+   "kind": "html",
+   "en": "The beauty of RAMP is that it works on or off the ice, before a practice or a game, and scales to whatever time you have. Here is how each phase looks for a hockey player."
+  },
+  {
+   "id": "h70",
+   "kind": "html",
+   "en": "The RAMP warm-up for hockey"
+  },
+  {
+   "id": "h71",
+   "kind": "html",
+   "en": "Phase"
+  },
+  {
+   "id": "h72",
+   "kind": "html",
+   "en": "Goal"
+  },
+  {
+   "id": "h73",
+   "kind": "html",
+   "en": "Off the ice"
+  },
+  {
+   "id": "h74",
+   "kind": "html",
+   "en": "On the ice"
+  },
+  {
+   "id": "h75",
+   "kind": "html",
+   "en": "Raise"
+  },
+  {
+   "id": "h76",
+   "kind": "html",
+   "en": "Lift heart rate, temperature, and blood flow"
+  },
+  {
+   "id": "h77",
+   "kind": "html",
+   "en": "Easy bike, jog, or skips for 3 to 5 minutes"
+  },
+  {
+   "id": "h78",
+   "kind": "html",
+   "en": "Relaxed laps and edge work, building pace"
+  },
+  {
+   "id": "h79",
+   "kind": "html",
+   "en": "Activate"
+  },
+  {
+   "id": "h80",
+   "kind": "html",
+   "en": "Switch on the key muscles for hockey"
+  },
+  {
+   "id": "h81",
+   "kind": "html",
+   "en": "Glute bridges, banded walks, core bracing"
+  },
+  {
+   "id": "h82",
+   "kind": "html",
+   "en": "Tight turns, crossovers, low-stance starts"
+  },
+  {
+   "id": "h83",
+   "kind": "html",
+   "en": "Mobilise"
+  },
+  {
+   "id": "h84",
+   "kind": "html",
+   "en": "Move the main joints through full range"
+  },
+  {
+   "id": "h85",
+   "kind": "html",
+   "en": "Leg swings, lunges with rotation, hip openers"
+  },
+  {
+   "id": "h86",
+   "kind": "html",
+   "en": "Wide strides, deep knee bend, big edges"
+  },
+  {
+   "id": "h87",
+   "kind": "html",
+   "en": "Potentiate"
+  },
+  {
+   "id": "h88",
+   "kind": "html",
+   "en": "Finish at game speed to prime the system"
+  },
+  {
+   "id": "h89",
+   "kind": "html",
+   "en": "A few build-up sprints and hard jumps"
+  },
+  {
+   "id": "h90",
+   "kind": "html",
+   "en": "Full-speed sprints, hard stops, quick shots"
+  },
+  {
+   "id": "h91",
+   "kind": "html",
+   "en": "Every session, warmed up right."
+  },
+  {
+   "id": "h92",
+   "kind": "html",
+   "en": "Our 8-week off-ice programs open every training day with a built-in dynamic warm-up, so you learn the habit and walk into each session already primed to get the most from it."
+  },
+  {
+   "id": "t93",
+   "kind": "text",
+   "en": "See the Programs"
+  },
+  {
+   "id": "h94",
+   "kind": "html",
+   "en": "The primer that makes you faster"
+  },
+  {
+   "id": "h95",
+   "kind": "html",
+   "en": "That final P, Potentiate, is the part most players skip, and it might be the most valuable. There is a phenomenon called post-activation potentiation: a brief, hard effort can leave your muscles temporarily more powerful for the few minutes that follow. A review across dozens of studies found that a prior conditioning effort gave a <a href=\"https://pubmed.ncbi.nlm.nih.gov/26508319/\" target=\"_blank\" rel=\"noopener\">meaningful boost to sprint performance and a smaller lift to jumps and throws</a>. In plain terms, doing something explosive primes you to be explosive."
+  },
+  {
+   "id": "h96",
+   "kind": "html",
+   "en": "And this is not just lab theory. When researchers tested it on the ice, a single hard, resisted skating sprint made the players' next <a href=\"https://pubmed.ncbi.nlm.nih.gov/20940636/\" target=\"_blank\" rel=\"noopener\">25 metre sprint about 2.6 percent faster</a>. That is the difference between winning a race to a loose puck and losing it. So do not end your warm-up with the easy stuff. End it with a few full-speed efforts, a hard stop, a quick shot, something that tells your nervous system the game is about to start. Then go take the first shift already at full song."
+  },
+  {
+   "id": "h97",
+   "kind": "html",
+   "en": "Myth: a few static stretches is a warm-up"
+  },
+  {
+   "id": "h98",
+   "kind": "html",
+   "en": "Touching your toes and holding it does not prepare you to play. As a standalone warm-up it can <a href=\"https://pubmed.ncbi.nlm.nih.gov/22316148/\" target=\"_blank\" rel=\"noopener\">leave you weaker and less explosive</a>, and on its own it does little for performance. A real warm-up is active and rising: it raises your temperature, wakes your muscles, moves your joints, and finishes fast. Keep the long stretches for after the game, where they belong."
+  },
+  {
+   "id": "h99",
+   "kind": "html",
+   "en": "How this changes by age"
+  },
+  {
+   "id": "h100",
+   "kind": "html",
+   "en": "Everyone benefits from the same RAMP structure. What changes is the emphasis and how it is coached."
+  },
+  {
+   "id": "h101",
+   "kind": "html",
+   "en": "Youth · 9 to 12"
+  },
+  {
+   "id": "h102",
+   "kind": "html",
+   "en": "Make it a game. Tag, races, animal movements, and fun dynamic drills check every box of a good warm-up while keeping kids engaged. The real win here is building the lifelong habit of moving before you play, not the precise drills."
+  },
+  {
+   "id": "h103",
+   "kind": "html",
+   "en": "Teens · 13 to 18"
+  },
+  {
+   "id": "h104",
+   "kind": "html",
+   "en": "Learn the full RAMP method and own it. This is the age to take the warm-up seriously, including the potentiation phase, and to drop the long static stretches that may still be a team habit. A sharp warm-up is a real competitive edge."
+  },
+  {
+   "id": "h105",
+   "kind": "html",
+   "en": "Adults · 19+"
+  },
+  {
+   "id": "h106",
+   "kind": "html",
+   "en": "The warm-up matters more, not less, with age. Tissues are stiffer and take longer to come up to temperature, so give the Raise and Mobilise phases extra time. Skipping it is where a lot of adult tweaks and pulls begin."
+  },
+  {
+   "id": "h107",
+   "kind": "html",
+   "en": "The bottom line"
+  },
+  {
+   "id": "h108",
+   "kind": "html",
+   "en": "The warm-up is the rare thing in hockey that is both free and proven. Spend it well and you get a quicker first step, a sharper shot, a body that absorbs the game better, and a real cut in your injury risk. Spend it folded over in a long static stretch and you walk on slightly weaker than you sat down. The fix is to move instead of hold: raise your temperature, wake the muscles, mobilise the joints, and finish with a few fast, hard efforts that leave you primed. Ten minutes, done right, and you take the opening face-off as the most ready player on the ice."
+  },
+  {
+   "id": "a109",
+   "kind": "attr:aria-label",
+   "en": "References"
+  },
+  {
+   "id": "h110",
+   "kind": "html",
+   "en": "References"
+  },
+  {
+   "id": "h111",
+   "kind": "html",
+   "en": "Every claim above is drawn from peer-reviewed research or, in the case of the RAMP framework, a recognized strength-and-conditioning coaching reference. Stretching effects are the acute, short-term effects measured immediately after stretching, which is what matters for a pre-game warm-up."
+  },
+  {
+   "id": "h112",
+   "kind": "html",
+   "en": "Simic L, Sarabon N, Markovic G. Does pre-exercise static stretching inhibit maximal muscular performance? A meta-analytical review. <em>Scandinavian Journal of Medicine &amp; Science in Sports</em>. 2013. <a href=\"https://pubmed.ncbi.nlm.nih.gov/22316148/\" target=\"_blank\" rel=\"noopener\">PubMed 22316148</a>"
+  },
+  {
+   "id": "h113",
+   "kind": "html",
+   "en": "Behm DG, Chaouachi A. A review of the acute effects of static and dynamic stretching on performance. <em>European Journal of Applied Physiology</em>. 2011. <a href=\"https://pubmed.ncbi.nlm.nih.gov/21373870/\" target=\"_blank\" rel=\"noopener\">PubMed 21373870</a>"
+  },
+  {
+   "id": "h114",
+   "kind": "html",
+   "en": "Kay AD, Blazevich AJ. Effect of acute static stretch on maximal muscle performance: a systematic review. <em>Medicine &amp; Science in Sports &amp; Exercise</em>. 2012. <a href=\"https://pubmed.ncbi.nlm.nih.gov/21659901/\" target=\"_blank\" rel=\"noopener\">PubMed 21659901</a>"
+  },
+  {
+   "id": "h115",
+   "kind": "html",
+   "en": "Fradkin AJ, Zazryn TR, Smoliga JM. Effects of warming-up on physical performance: a systematic review with meta-analysis. <em>Journal of Strength and Conditioning Research</em>. 2010. <a href=\"https://pubmed.ncbi.nlm.nih.gov/19996770/\" target=\"_blank\" rel=\"noopener\">PubMed 19996770</a>"
+  },
+  {
+   "id": "h116",
+   "kind": "html",
+   "en": "Bishop D. Warm up I: potential mechanisms and the effects of passive warm up on exercise performance. <em>Sports Medicine</em>. 2003. <a href=\"https://pubmed.ncbi.nlm.nih.gov/12744717/\" target=\"_blank\" rel=\"noopener\">PubMed 12744717</a>"
+  },
+  {
+   "id": "h117",
+   "kind": "html",
+   "en": "Soligard T, et al. Comprehensive warm-up programme to prevent injuries in young female footballers: cluster randomised controlled trial. <em>BMJ</em>. 2008. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2600961/\" target=\"_blank\" rel=\"noopener\">PMC2600961</a>"
+  },
+  {
+   "id": "h118",
+   "kind": "html",
+   "en": "Thorborg K, et al. Effect of specific exercise-based football injury prevention programmes on the overall injury rate: a systematic review and meta-analysis of the FIFA 11 and 11+ programmes. <em>British Journal of Sports Medicine</em>. 2017. <a href=\"https://pubmed.ncbi.nlm.nih.gov/28087568/\" target=\"_blank\" rel=\"noopener\">PubMed 28087568</a>"
+  },
+  {
+   "id": "h119",
+   "kind": "html",
+   "en": "Jeffreys I. Warm-up revisited: the RAMP method of optimising performance preparation. <em>Professional Strength &amp; Conditioning (UKSCA)</em>. 2007. <a href=\"https://pure.southwales.ac.uk/en/publications/warmup-revisited(4ecab951-7b8e-4790-ad56-278c5bc32dac).html\" target=\"_blank\" rel=\"noopener\">University of South Wales record</a>"
+  },
+  {
+   "id": "h120",
+   "kind": "html",
+   "en": "Seitz LB, Haff GG. Factors modulating post-activation potentiation of jump, sprint, throw, and upper-body ballistic performances: a systematic review with meta-analysis. <em>Sports Medicine</em>. 2016. <a href=\"https://pubmed.ncbi.nlm.nih.gov/26508319/\" target=\"_blank\" rel=\"noopener\">PubMed 26508319</a>"
+  },
+  {
+   "id": "h121",
+   "kind": "html",
+   "en": "Matthews MJ, Comfort P, Crebin R. Complex training in ice hockey: the effects of a heavy resisted sprint on subsequent ice-hockey sprint performance. <em>Journal of Strength and Conditioning Research</em>. 2010. <a href=\"https://pubmed.ncbi.nlm.nih.gov/20940636/\" target=\"_blank\" rel=\"noopener\">PubMed 20940636</a>"
+  },
+  {
+   "id": "h122",
+   "kind": "html",
+   "en": "Zmijewski P, et al. Acute effects of a static vs a dynamic stretching warm-up on repeated-sprint performance. <em>Journal of Human Kinetics</em>. 2020. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7126248/\" target=\"_blank\" rel=\"noopener\">PMC7126248</a>"
+  },
+  {
+   "id": "a123",
+   "kind": "attr:alt",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h124",
+   "kind": "html",
+   "en": "Coach David Ciboch"
+  },
+  {
+   "id": "h125",
+   "kind": "html",
+   "en": "M.Ed. Sport Science · National Team Coach"
+  },
+  {
+   "id": "h126",
+   "kind": "html",
+   "en": "David builds science-based off-ice training for hockey players at every level, from first-year youth skaters to adult and masters players. Elite Hockey Drills exists to put real sport science in the hands of players who want to train smarter, not just harder."
+  },
+  {
+   "id": "h127",
+   "kind": "html",
+   "en": "The inside track"
+  },
+  {
+   "id": "h128",
+   "kind": "html",
+   "en": "Get the next one <em class=\"serif\">first.</em>"
+  },
+  {
+   "id": "h129",
+   "kind": "html",
+   "en": "New science-backed guides on training, nutrition, and recovery, sent straight to your inbox. No fluff, no spam, just what makes you harder to play against."
+  },
+  {
+   "id": "a130",
+   "kind": "attr:aria-label",
+   "en": "First name"
+  },
+  {
+   "id": "a131",
+   "kind": "attr:placeholder",
+   "en": "First name"
+  },
+  {
+   "id": "a132",
+   "kind": "attr:aria-label",
+   "en": "Email address"
+  },
+  {
+   "id": "a133",
+   "kind": "attr:placeholder",
+   "en": "your@email.com"
+  },
+  {
+   "id": "h134",
+   "kind": "html",
+   "en": "<span class=\"btn-label\">Send me the guides</span>\n          <span class=\"news-spinner\" aria-hidden=\"true\"></span>"
+  },
+  {
+   "id": "h135",
+   "kind": "html",
+   "en": "No spam. Unsubscribe anytime. By subscribing you agree to receive training emails from Elite Hockey Drills."
+  },
+  {
+   "id": "h136",
+   "kind": "html",
+   "en": "You're in."
+  },
+  {
+   "id": "h137",
+   "kind": "html",
+   "en": "Welcome to the inside track. Your first guide is already on its way to your inbox."
+  },
+  {
+   "id": "h138",
+   "kind": "html",
+   "en": "Prime the engine"
+  },
+  {
+   "id": "h139",
+   "kind": "html",
+   "en": "Warm up right,<br><em class=\"serif\">play your best.</em>"
+  },
+  {
+   "id": "h140",
+   "kind": "html",
+   "en": "You just read the science of being ready. The new Elite Hockey Drills app builds the warm-up into every session of a personalized program, and its game-day preparation mode primes you before puck drop. Try it free for 7 days, or start with an 8-week program."
+  },
+  {
+   "id": "t141",
+   "kind": "text",
+   "en": "Try the App Free"
+  },
+  {
+   "id": "h142",
+   "kind": "html",
+   "en": "See the Programs"
+  },
+  {
+   "id": "h143",
+   "kind": "html",
+   "en": "Get a Free Program"
+  },
+  {
+   "id": "h144",
+   "kind": "html",
+   "en": "7-day free trial, then $17.99/month or $99.90/year (about $8.33/mo). Billed through the App Store or Google Play, cancel anytime. Available on iPhone and Android."
+  },
+  {
+   "id": "h145",
+   "kind": "html",
+   "en": "← Back to all articles"
+  },
+  {
+   "id": "h146",
+   "kind": "html",
+   "en": "Keep reading"
+  },
+  {
+   "id": "h147",
+   "kind": "html",
+   "en": "More training guides"
+  },
+  {
+   "id": "h148",
+   "kind": "html",
+   "en": "Durability"
+  },
+  {
+   "id": "h149",
+   "kind": "html",
+   "en": "Injury-Proof Your Hockey Season"
+  },
+  {
+   "id": "h150",
+   "kind": "html",
+   "en": "Hockey's most common injuries are largely preventable. The groin-strain warning sign, the programs that work, and why strength beats stretching."
+  },
+  {
+   "id": "h151",
+   "kind": "html",
+   "en": "12 min read"
+  },
+  {
+   "id": "h152",
+   "kind": "html",
+   "en": "Speed"
+  },
+  {
+   "id": "h153",
+   "kind": "html",
+   "en": "How to Skate Faster"
+  },
+  {
+   "id": "h154",
+   "kind": "html",
+   "en": "Speed is built off the ice. The three drivers of skating speed, the dryland work that develops each, and a weekly plan to put it together."
+  },
+  {
+   "id": "h155",
+   "kind": "html",
+   "en": "12 min read"
+  },
+  {
+   "id": "h156",
+   "kind": "html",
+   "en": "Shooting"
+  },
+  {
+   "id": "h157",
+   "kind": "html",
+   "en": "How to Shoot Harder"
+  },
+  {
+   "id": "h158",
+   "kind": "html",
+   "en": "The hardest shooters are not the strongest-armed. How the kinetic chain builds a heavier shot, and the off-ice work that adds real speed to yours."
+  },
+  {
+   "id": "h159",
+   "kind": "html",
+   "en": "12 min read"
+  },
+  {
+   "id": "h160",
+   "kind": "html",
+   "en": "<span class=\"dot\"></span>ELITE HOCKEY DRILLS"
+  },
+  {
+   "id": "h161",
+   "kind": "html",
+   "en": "Science-backed off-ice training for hockey players. Built by a certified sport scientist and national team coach."
+  },
+  {
+   "id": "h162",
+   "kind": "html",
+   "en": "Programs"
+  },
+  {
+   "id": "h163",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com/survey.html\">Free 5-Day PDF</a>"
+  },
+  {
+   "id": "h164",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#tiers\">8-Week Programs</a>"
+  },
+  {
+   "id": "h165",
+   "kind": "html",
+   "en": "<a href=\"/hockey-training-app.html\">Hockey Training App</a>"
+  },
+  {
+   "id": "h166",
+   "kind": "html",
+   "en": "<a href=\"https://apps.apple.com/us/app/elite-hockey-drills/id6787257275\" data-store=\"ios\">The App — iOS</a>"
+  },
+  {
+   "id": "h167",
+   "kind": "html",
+   "en": "<a href=\"https://play.google.com/store/apps/details?id=com.elitehockeydrills.training\">The App — Android</a>"
+  },
+  {
+   "id": "h168",
+   "kind": "html",
+   "en": "Navigate"
+  },
+  {
+   "id": "h169",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#about\">About</a>"
+  },
+  {
+   "id": "h170",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#method\">Method</a>"
+  },
+  {
+   "id": "h171",
+   "kind": "html",
+   "en": "<a href=\"/library.html\">Exercise Library</a>"
+  },
+  {
+   "id": "h172",
+   "kind": "html",
+   "en": "<a href=\"/articles.html\">Articles</a>"
+  },
+  {
+   "id": "h173",
+   "kind": "html",
+   "en": "<a href=\"https://elitehockeydrills.com#faq\">FAQ</a>"
+  },
+  {
+   "id": "h174",
+   "kind": "html",
+   "en": "Connect"
+  },
+  {
+   "id": "h175",
+   "kind": "html",
+   "en": "<a href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">Instagram</a>"
+  },
+  {
+   "id": "h176",
+   "kind": "html",
+   "en": "<a href=\"https://wa.me/420770149067\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>"
+  },
+  {
+   "id": "h177",
+   "kind": "html",
+   "en": "<a href=\"mailto:elitehockeydrills@gmail.com\">Email</a>"
+  },
+  {
+   "id": "h178",
+   "kind": "html",
+   "en": "<span>© 2025 Elite Hockey Drills. All rights reserved.</span>\n    <a class=\"footer-ig\" href=\"https://instagram.com/elite_hockey_drills\" target=\"_blank\" rel=\"noopener\">@elite_hockey_drills</a>"
+  },
+  {
+   "id": "j179",
+   "kind": "js",
+   "en": "Please enter a valid email address."
+  },
+  {
+   "id": "j180",
+   "kind": "js",
+   "en": "art-news-msg err"
+  },
+  {
+   "id": "j181",
+   "kind": "js",
+   "en": "Something went wrong. Please try again in a moment."
+  },
+  {
+   "id": "j182",
+   "kind": "js",
+   "en": "art-news-msg err"
+  },
+  {
+   "id": "j183",
+   "kind": "js",
+   "en": "Network error. Please check your connection and try again."
+  },
+  {
+   "id": "j184",
+   "kind": "js",
+   "en": "art-news-msg err"
+  }
+ ]
+}
