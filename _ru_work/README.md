@@ -41,6 +41,9 @@ The exercise library comes from `exercises.ru.json` through the normal generator
 
 ## Known limits
 
+- `ru/*.html` was edited directly on 2026-11-01 (annual-only free week wording, root-absolute file
+  paths). Re-injecting from `seg/` would undo both unless the segments are updated too.
+
 - Dates inserted by page scripts (`toLocaleDateString('en-US')` in the program pages' season
   clock) still render as English short dates.
 - Localised app screenshots / reel / store badges (`assets/app/*-ru.*`) do not exist yet; the
