@@ -29,7 +29,7 @@ const APP_URL = 'https://apps.apple.com/us/app/elite-hockey-drills/id6787257275'
 const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.elitehockeydrills.training';
 const PAGE_URL = 'https://elitehockeydrills.com/hockey-training-app.html';
 const TITLE = 'Hockey Training App — Off-Ice Training for Ice Hockey Players | Elite Hockey Drills';
-const DESC = 'Elite Hockey Drills is the hockey training app that builds your personalized off-ice program from your age, level, position, and schedule, then runs your whole season. 390+ exercises with demo videos, game-day mode, progress tracking. 7-day free trial on iPhone and Android.';
+const DESC = 'Elite Hockey Drills is the hockey training app that builds your personalized off-ice program from your age, level, position, and schedule, then runs your whole season. 390+ exercises with demo videos, game-day mode, progress tracking. 7-day free trial on iOS and Android.';
 
 const faqs = [
   {
@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     q: 'Is there an Android version?',
-    a: 'Yes. Elite Hockey Drills is live on Google Play for Android and on the App Store for iPhone. Both versions have the same personalized program, the same demo videos, and the same 7-day free trial.'
+    a: 'Yes. Elite Hockey Drills is live on Google Play for Android and on the App Store for iOS. Both versions have the same personalized program, the same demo videos, and the same 7-day free trial.'
   },
   {
     q: 'How much does the hockey training app cost?',
@@ -178,7 +178,7 @@ const cmpRows = [
   ['Demo video for every exercise', ['yes', 'Yes'], ['yes', 'Yes']],
   ['Tests, personal records &amp; progress tracking', ['yes', 'In the app'], ['no', 'Tests included, tracked by hand']],
   ['Price', ['yes', 'Free 7-day trial, then $17.99/mo or $99.90/yr'], ['no', '$79 once, yours forever']],
-  ['Where it runs', ['yes', 'iPhone and Android'], ['no', 'Any browser']]
+  ['Where it runs', ['yes', 'iOS and Android'], ['no', 'Any browser']]
 ];
 const cmpHtml = cmpRows.map(([label, [c1, t1], [c2, t2]]) =>
   `          <tr><td>${label}</td><td class="${c1}" data-col="App">${t1}</td><td class="${c2}" data-col="8-Week Program">${t2}</td></tr>`
@@ -244,7 +244,7 @@ const html = `<!DOCTYPE html>
 <meta name="description" content="${DESC}" />
 <meta name="apple-itunes-app" content="app-id=6787257275" />
 <meta property="og:title" content="Hockey Training App — Off-Ice Training Built Around Your Season" />
-<meta property="og:description" content="The Elite Hockey Drills app builds your personalized off-ice hockey program and runs your whole season. 390+ exercises with demo videos. 7-day free trial on iPhone and Android." />
+<meta property="og:description" content="The Elite Hockey Drills app builds your personalized off-ice hockey program and runs your whole season. 390+ exercises with demo videos. 7-day free trial on iOS and Android." />
 <meta property="og:url" content="${PAGE_URL}" />
 <meta property="og:image" content="https://elitehockeydrills.com/ehd_hero_medball.jpg" />
 <meta property="og:image:width" content="1200" />

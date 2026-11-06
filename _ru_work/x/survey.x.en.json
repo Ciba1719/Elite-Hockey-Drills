@@ -94,7 +94,7 @@
   {
    "id": "x18",
    "kind": "tpl",
-   "en": "On iPhone? <a href=\"${IOS_URL}\" data-store=\"ios\" target=\"_blank\" rel=\"noopener\">App Store</a>"
+   "en": "On iOS? <a href=\"${IOS_URL}\" data-store=\"ios\" target=\"_blank\" rel=\"noopener\">App Store</a>"
   },
   {
    "id": "x19",

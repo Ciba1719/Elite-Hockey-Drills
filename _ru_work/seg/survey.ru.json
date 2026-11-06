@@ -450,7 +450,7 @@
   },
   {
    "id": "x18",
-   "ru": "У вас iPhone? <a href=\"${IOS_URL}\" data-store=\"ios\" target=\"_blank\" rel=\"noopener\">App Store</a>"
+   "ru": "На iOS? <a href=\"${IOS_URL}\" data-store=\"ios\" target=\"_blank\" rel=\"noopener\">App Store</a>"
   },
   {
    "id": "x19",

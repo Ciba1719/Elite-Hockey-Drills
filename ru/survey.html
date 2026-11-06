@@ -705,7 +705,7 @@ const APP_URL = ON_ANDROID ? PLAY_URL : IOS_URL;
 
 function buildAppBlock(age, youth){
   const other = ON_ANDROID
-    ? `У вас iPhone? <a href="${IOS_URL}" data-store="ios" target="_blank" rel="noopener">App Store</a>`
+    ? `На iOS? <a href="${IOS_URL}" data-store="ios" target="_blank" rel="noopener">App Store</a>`
     : `У вас Android? <a href="${PLAY_URL}" data-place="survey-success" target="_blank" rel="noopener">Google Play</a>`;
   return `<div class="app-shot"><img src="/assets/app/app-home.webp" alt="Приложение Elite Hockey Drills: сегодняшняя тренировка" width="640" height="1380" loading="lazy" /></div>`
     + `<div><span class="app-badge">Возраст ${age} · 7 дней бесплатно</span>`

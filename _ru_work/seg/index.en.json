@@ -14,7 +14,7 @@
   {
    "id": "m2",
    "kind": "meta",
-   "en": "The off-ice hockey training app built by a former national-team coach. A personalized program from your age, position and game schedule — 390+ exercises on video, ages 9 to 40+. 7-day free trial on iPhone and Android."
+   "en": "The off-ice hockey training app built by a former national-team coach. A personalized program from your age, position and game schedule — 390+ exercises on video, ages 9 to 40+. 7-day free trial on iOS and Android."
   },
   {
    "id": "m3",
@@ -24,7 +24,7 @@
   {
    "id": "m4",
    "kind": "meta",
-   "en": "The off-ice training app built around your season by a former national-team coach. 390+ video drills, ages 9 to 40+. First week free on iPhone and Android."
+   "en": "The off-ice training app built around your season by a former national-team coach. 390+ video drills, ages 9 to 40+. First week free on iOS and Android."
   },
   {
    "id": "l5",
@@ -184,7 +184,7 @@
   {
    "id": "h36",
    "kind": "html",
-   "en": "<span class=\"pill\"><i></i>iPhone &amp; Android</span>\n          <span class=\"pill gold\"><i></i>7-day free trial</span>"
+   "en": "<span class=\"pill\"><i></i>iOS &amp; Android</span>\n          <span class=\"pill gold\"><i></i>7-day free trial</span>"
   },
   {
    "id": "h37",
@@ -639,7 +639,7 @@
   {
    "id": "h127",
    "kind": "html",
-   "en": "<b>iPhone</b>Scan to open the App Store"
+   "en": "<b>iOS</b>Scan to open the App Store"
   },
   {
    "id": "a128",
@@ -969,7 +969,7 @@
   {
    "id": "h193",
    "kind": "html",
-   "en": "Yes. The app is live on Google Play with the same personalized program, demo videos and 7-day free trial as on iPhone. <a href=\"https://play.google.com/store/apps/details?id=com.elitehockeydrills.training\">Get it on Google Play →</a>"
+   "en": "Yes. The app is live on Google Play with the same personalized program, demo videos and 7-day free trial as on iOS. <a href=\"https://play.google.com/store/apps/details?id=com.elitehockeydrills.training\">Get it on Google Play →</a>"
   },
   {
    "id": "t194",

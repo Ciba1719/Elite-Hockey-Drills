@@ -361,9 +361,9 @@
    "de": "aria-label=\"App holen\">"
   },
   {
-   "key": "<div class=\"ex-sticky-text\"><strong>Train this drill in the app</strong><span>First week free · iPhone &amp; Android</span></div>",
-   "fi": "<div class=\"ex-sticky-text\"><strong>Treenaa tämä harjoitus sovelluksessa</strong><span>Ensimmäinen viikko ilmaiseksi · iPhone &amp; Android</span></div>",
-   "de": "<div class=\"ex-sticky-text\"><strong>Trainier diese Übung in der App</strong><span>Erste Woche gratis · iPhone &amp; Android</span></div>"
+   "key": "<div class=\"ex-sticky-text\"><strong>Train this drill in the app</strong><span>First week free · iOS &amp; Android</span></div>",
+   "fi": "<div class=\"ex-sticky-text\"><strong>Treenaa tämä harjoitus sovelluksessa</strong><span>Ensimmäinen viikko ilmaiseksi · iOS &amp; Android</span></div>",
+   "de": "<div class=\"ex-sticky-text\"><strong>Trainier diese Übung in der App</strong><span>Erste Woche gratis · iOS &amp; Android</span></div>"
   },
   {
    "key": "data-place=\"ex_sticky\">Get the App</a>",
