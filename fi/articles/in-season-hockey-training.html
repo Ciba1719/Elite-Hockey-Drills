@@ -54,10 +54,12 @@
 }
 
 /* In-season article: visuals */
-.ph-fig,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-fig,.ph-pair,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-pair .ph-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ph-pair img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--bg-3)}
 .ph-fig img,.vid-fig video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;border:1px solid var(--line);background:var(--bg-3)}
 .ph-fig a,.vid-fig a{border-bottom:none!important;display:block}
-.ph-fig figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13px;color:var(--ink-3);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
+.ph-fig figcaption,.ph-pair figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13.5px;color:var(--ink-2);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
 .ph-fig figcaption strong,.vid-fig figcaption strong{color:var(--ink-2);font-weight:600}
 .app-shots .app-row{display:flex;justify-content:center;align-items:flex-start;gap:18px;padding:28px 16px;background:radial-gradient(circle at 50% 0%,var(--ice-soft),transparent 70%),var(--card);border:1px solid var(--line);border-radius:18px}
 .app-shots img{width:44%;max-width:230px;height:auto;aspect-ratio:640/1418;object-fit:cover;object-position:top;border-radius:24px;border:1px solid var(--line-2);box-shadow:0 18px 40px rgba(0,0,0,.45)}
@@ -198,7 +200,7 @@
 <p>Se lasku ei ole huonoa tuuria. Se on sitä, mitä pitkä kausi tekee keholle, joka lakkaa saamasta voimaärsykettä. Hyvä uutinen on, että sen pysäyttäminen vaatii paljon vähemmän työtä kuin kunnon rakentaminen. Et tarvitse kesäohjelmaa keskellä talvea. Tarvitset oikean pienen annoksen oikeassa kohdassa viikkoa.</p>
 <h2 id="slower">Miksi pelaajat hidastuvat kauden aikana</h2>
 <p>Jääkiekko näyttää lajilta, jonka pitäisi pitää sinut kunnossa itsestään. Olet jäällä neljä tai viisi kertaa viikossa, luistelet kovaa ja hikoilet varusteiden läpi. Mutta jääharjoitus ei ole voimaärsyke, ja pitkä kausi kasaa väsymystä nopeammin kuin harjoittelu ehtii rakentaa mitään.</p>
-<figure class="ph-fig reveal"><img src="/assets/articles/training.jpg" alt="Jalkojen räjähtävyys on ensimmäinen asia, jonka pitkä kausi vie. Sen ylläpitäminen on myös halvinta." loading="lazy" width="1600" height="900"><figcaption>Jalkojen räjähtävyys on ensimmäinen asia, jonka pitkä kausi vie. Sen ylläpitäminen on myös halvinta.</figcaption></figure>
+<figure class="ph-pair reveal"><div class="ph-row"><img src="/assets/articles/photos/rink-a.webp" alt="Jalkojen räjähtävyys on ensimmäinen asia, jonka pitkä kausi vie. Sen ylläpitäminen on myös halvinta." loading="lazy" decoding="async" width="720" height="900"><img src="/assets/articles/photos/rink-b.webp" alt="" loading="lazy" decoding="async" width="720" height="900"></div><figcaption>Jalkojen räjähtävyys on ensimmäinen asia, jonka pitkä kausi vie. Sen ylläpitäminen on myös halvinta.</figcaption></figure>
 <p>Tutkimus on tässä hämmästyttävän yksimielistä. NHL-joukkue, joka testasi pelaajiaan kevennyshypyllä joka viikko, havaitsi, että <a href="https://pubmed.ncbi.nlm.nih.gov/33651739/" rel="noopener" target="_blank">hyppykorkeus ja -nopeus laskivat kauden aikana</a>, ja väsymyksen vaikutus oli suurin kauden lopulla. Tutkimus NCAA Division I -joukkueesta 18&nbsp;viikon kauden ajalta osoitti, että <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" rel="noopener" target="_blank">jalkojen teho heikkeni koko vuoden</a>, jyrkimmin pisimpien matkojen jälkeen. Toinen yliopistojoukkue <a href="https://pubmed.ncbi.nlm.nih.gov/24910956/" rel="noopener" target="_blank">tuotti toistetuissa sprinteissä vähemmän tehoa kauden jälkeen kuin ennen sitä</a>, ja samat sprintit tuntuivat raskaammilta.</p>
 <p>Vuonna 2021&nbsp;julkaistu systemaattinen katsaus, joka kokosi vuosikymmenten jääkiekkotutkimukset koko kauden ajalta, päätyi samaan: uudempi tutkimus viittaa <a href="https://pubmed.ncbi.nlm.nih.gov/34387221/" rel="noopener" target="_blank">aerobisen kunnon heikkenemiseen ja kasvavaan väsymykseen kauden edetessä</a>, ja kirjoittajat peräänkuuluttavat keinoja rajoittaa näitä menetyksiä vuoden loppupuolella.</p>
 <p>Lue se uudestaan pudotuspelit mielessä. Pelaajat ovat heikoimmillaan juuri silloin, kun otteluilla on eniten merkitystä.</p>
@@ -263,7 +265,7 @@
 <li><strong>Ottelua edeltävä päivä:</strong> vain liikkuvuutta. Ei mitään raskasta, ei mitään uutta.</li>
 <li><strong>Ottelun jälkeinen päivä:</strong> kevyttä liikettä ja liikkuvuutta. Ensimmäinen raskas treeni tulee vasta sen jälkeen.</li>
 </ul>
-<figure class="ph-fig reveal"><img src="/assets/articles/skating-speed.jpg" alt="Ottelupäivä on pelaamista varten. Raskas työ tehtiin vähintään 48 tuntia aiemmin." loading="lazy" width="2000" height="1116"><figcaption>Ottelupäivä on pelaamista varten. Raskas työ tehtiin vähintään 48&nbsp;tuntia aiemmin.</figcaption></figure>
+<figure class="ph-pair reveal"><div class="ph-row"><img src="/assets/articles/photos/sled-push-d.webp" alt="Ottelupäivä on pelaamista varten. Raskas työ tehtiin vähintään 48 tuntia aiemmin." loading="lazy" decoding="async" width="720" height="900"><img src="/assets/articles/photos/deadlift-b.webp" alt="" loading="lazy" decoding="async" width="720" height="900"></div><figcaption>Ottelupäivä on pelaamista varten. Raskas työ tehtiin vähintään 48&nbsp;tuntia aiemmin.</figcaption></figure>
 <p>Miksi ei mitään uutta? Uusi liike aiheuttaa lihaskipua kevyilläkin painoilla, koska lihaksesi eivät ole vielä tottuneet siihen. Kauden aikana pysyt liikkeissä, jotka osaat hyvin. Säästä kokeilut kesään.</p>
 <h3>Entä harjoittelu ottelupäivänä?</h3>
 <p>Jotkin ammattilaisjoukkueet tekevät ottelupäivän aamuna lyhyen ”primerin”: muutaman hypyn tai kaksi kolme melko raskasta toistoa. Vuoden 2019&nbsp;katsaus havaitsi, että pieni määrä intensiivistä voimaharjoittelua <a href="https://pubmed.ncbi.nlm.nih.gov/31203499/" rel="noopener" target="_blank">voi parantaa suoritusta jopa 48&nbsp;tunnin ajan</a>, mutta vasteet vaihtelevat paljon urheilijoiden välillä. Jos haluat kokeilla, pidä se pienenä ja testaa ottelussa, jolla ei ole merkitystä. Ottelua edeltävä lämmittely on silti pääasia, ja sen käymme läpi artikkelissa <a href="/fi/hockey-warm-up.html">täydellinen jääkiekkolämmittely</a>.</p>
@@ -365,7 +367,7 @@
 <figure class="ph-fig reveal"><a href="/fi/exercises/copenhagen-plank-short.html"><img src="/assets/articles/in-season/copenhagen-plank-short-lg.webp" alt="Kööpenhamina-lankku — lyhyt" loading="lazy" width="960" height="540"></a><figcaption><strong>Kööpenhamina-lankku — lyhyt</strong> · 2&nbsp;× 20&nbsp;s per puoli · Valmentaja Davidin demo</figcaption></figure>
 <p>Kerran viikossa on kauden annos, ja se vie kaksi minuuttia. Pidä <a href="/fi/exercises/copenhagen-plank-short.html">Kööpenhamina-lankku</a> päätreenissäsi äläkä jätä sitä pois, kun kalenteri täyttyy. Juuri silloin tarvitset sitä. Koko läpikäynti, mukaan lukien voimatesti, joka ennustaa nivusrevähdyksiä, löytyy oppaastamme <a href="/fi/hockey-injury-prevention.html">vammat kuriin jääkiekkokaudella</a>.</p>
 <h2 id="ages">Mikä muuttuu iän mukaan</h2>
-<figure class="ph-fig reveal"><img src="/assets/articles/youth-dryland.jpg" alt="Nuorille pelaajille kausi on iso osa kehitystä. Pidä heidän oheisharjoittelunsa lyhyenä ja leikinomaisena." loading="lazy" width="2000" height="1125"><figcaption>Nuorille pelaajille kausi on iso osa kehitystä. Pidä heidän oheisharjoittelunsa lyhyenä ja leikinomaisena.</figcaption></figure>
+<figure class="ph-pair reveal"><div class="ph-row"><img src="/assets/articles/photos/ladder-bound-c.webp" alt="Nuorille pelaajille kausi on iso osa kehitystä. Pidä heidän oheisharjoittelunsa lyhyenä ja leikinomaisena." loading="lazy" decoding="async" width="720" height="900"><img src="/assets/articles/photos/stickhandling-track-b.webp" alt="" loading="lazy" decoding="async" width="720" height="900"></div><figcaption>Nuorille pelaajille kausi on iso osa kehitystä. Pidä heidän oheisharjoittelunsa lyhyenä ja leikinomaisena.</figcaption></figure>
 
 <div class="age-grid cols-3 reveal">
 <div class="age-card is-youth">

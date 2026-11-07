@@ -55,10 +55,12 @@
 }
 
 /* In-season article: visuals */
-.ph-fig,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-fig,.ph-pair,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-pair .ph-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ph-pair img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--bg-3)}
 .ph-fig img,.vid-fig video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;border:1px solid var(--line);background:var(--bg-3)}
 .ph-fig a,.vid-fig a{border-bottom:none!important;display:block}
-.ph-fig figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13px;color:var(--ink-3);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
+.ph-fig figcaption,.ph-pair figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13.5px;color:var(--ink-2);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
 .ph-fig figcaption strong,.vid-fig figcaption strong{color:var(--ink-2);font-weight:600}
 .app-shots .app-row{display:flex;justify-content:center;align-items:flex-start;gap:18px;padding:28px 16px;background:radial-gradient(circle at 50% 0%,var(--ice-soft),transparent 70%),var(--card);border:1px solid var(--line);border-radius:18px}
 .app-shots img{width:44%;max-width:230px;height:auto;aspect-ratio:640/1418;object-fit:cover;object-position:top;border-radius:24px;border:1px solid var(--line-2);box-shadow:0 18px 40px rgba(0,0,0,.45)}
@@ -205,7 +207,7 @@
 <p>Ten pokles není smůla. Je to to, co dlouhá sezóna udělá s&nbsp;tělem, které přestane dostávat silový podnět. Dobrá zpráva je, že ho zastavit stojí mnohem méně práce než formu vybudovat. Uprostřed zimy nepotřebuješ letní program. Potřebuješ správnou malou dávku na správném místě v&nbsp;týdnu.</p>
 <h2 id="slower">Proč hráči během sezóny zpomalují</h2>
 <p>Hokej vypadá, že by tě měl udržet ve formě sám od sebe. Jsi na ledě čtyřikrát nebo pětkrát týdně, bruslíš naplno a&nbsp;propotíš výstroj. Jenže trénink na ledě není silový podnět a&nbsp;dlouhá sezóna nabaluje únavu rychleji, než ji tréninky stihnou vyrovnat.</p>
-<figure class="ph-fig reveal"><img src="/assets/articles/training.jpg" alt="Výbušnost nohou je první, o co tě dlouhá sezóna připraví. Udržet ji přitom stojí nejmíň práce." loading="lazy" width="1600" height="900"><figcaption>Výbušnost nohou je první, o&nbsp;co tě dlouhá sezóna připraví. Udržet ji přitom stojí nejmíň práce.</figcaption></figure>
+<figure class="ph-pair reveal"><div class="ph-row"><img src="/assets/articles/photos/rink-a.webp" alt="Výbušnost nohou je první, o co tě dlouhá sezóna připraví. Udržet ji přitom stojí nejmíň práce." loading="lazy" decoding="async" width="720" height="900"><img src="/assets/articles/photos/rink-b.webp" alt="" loading="lazy" decoding="async" width="720" height="900"></div><figcaption>Výbušnost nohou je první, o&nbsp;co tě dlouhá sezóna připraví. Udržet ji přitom stojí nejmíň práce.</figcaption></figure>
 <p>Výzkum je tu nápadně jednotný. Tým NHL, který své hráče každý týden testoval výskokem z&nbsp;podřepu (countermovement jump), zjistil, že <a href="https://pubmed.ncbi.nlm.nih.gov/33651739/" rel="noopener" target="_blank">výška a&nbsp;rychlost výskoku během sezóny klesaly</a> a&nbsp;únava se nejvíc projevila na jejím konci. Studie týmu NCAA Division I&nbsp;během 18týdenní sezóny ukázala, že <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" rel="noopener" target="_blank">výbušnost dolních končetin klesala celý rok</a>, nejprudčeji po nejdelších výjezdech. Další univerzitní tým podával <a href="https://pubmed.ncbi.nlm.nih.gov/24910956/" rel="noopener" target="_blank">v&nbsp;opakovaných sprintech po sezóně menší výkon než před ní</a> a&nbsp;stejné sprinty mu připadaly těžší.</p>
 <p>Systematický přehled z&nbsp;roku 2021, který shrnul desítky let hokejových studií sledujících celou sezónu, došel ke stejnému závěru: novější výzkum ukazuje na <a href="https://pubmed.ncbi.nlm.nih.gov/34387221/" rel="noopener" target="_blank">pokles aerobní kondice a&nbsp;narůstající únavu v&nbsp;průběhu sezóny</a> a&nbsp;autoři volají po tom, aby se tyto ztráty v&nbsp;závěru roku víc řešily.</p>
 <p>Přečti si to znovu s&nbsp;play-off na mysli. Hráči jsou nejslabší přesně ve chvíli, kdy na zápasech záleží nejvíc.</p>
@@ -270,7 +272,7 @@
 <li><strong>Den před zápasem:</strong> jen mobilita. Nic těžkého, nic nového.</li>
 <li><strong>Den po zápase:</strong> lehký pohyb a&nbsp;mobilita. První těžký trénink přijde až potom.</li>
 </ul>
-<figure class="ph-fig reveal"><img src="/assets/articles/skating-speed.jpg" alt="Den zápasu je na hraní. Těžká práce proběhla nejméně o 48 hodin dřív." loading="lazy" width="2000" height="1116"><figcaption>Den zápasu je na hraní. Těžká práce proběhla nejméně o&nbsp;48&nbsp;hodin dřív.</figcaption></figure>
+<figure class="ph-pair reveal"><div class="ph-row"><img src="/assets/articles/photos/sled-push-d.webp" alt="Den zápasu je na hraní. Těžká práce proběhla nejméně o 48 hodin dřív." loading="lazy" decoding="async" width="720" height="900"><img src="/assets/articles/photos/deadlift-b.webp" alt="" loading="lazy" decoding="async" width="720" height="900"></div><figcaption>Den zápasu je na hraní. Těžká práce proběhla nejméně o&nbsp;48&nbsp;hodin dřív.</figcaption></figure>
 <p>Proč nic nového? Nový cvik tě rozbolí i&nbsp;s lehkou zátěží, protože si na něj svaly ještě nezvykly. V&nbsp;sezóně se drž pohybů, které dobře znáš. Experimenty si nech na léto.</p>
 <h3>A&nbsp;co trénink v&nbsp;den zápasu?</h3>
 <p>Některé profesionální týmy dělají ráno v&nbsp;den zápasu krátký „primer“: pár skoků nebo dvě tři docela těžká opakování. Přehled z&nbsp;roku 2019&nbsp;zjistil, že silový trénink s&nbsp;malým objemem a&nbsp;vysokou intenzitou <a href="https://pubmed.ncbi.nlm.nih.gov/31203499/" rel="noopener" target="_blank">může zlepšit výkon až na 48&nbsp;hodin</a>, reakce se ale mezi sportovci hodně liší. Pokud to chceš zkusit, udělej to opravdu malé a&nbsp;vyzkoušej to v&nbsp;zápase, na kterém nezáleží. Hlavní je pořád rozcvička před zápasem, kterou rozebíráme v&nbsp;článku <a href="/cs/hockey-warm-up.html">dokonalá hokejová rozcvička</a>.</p>
@@ -372,7 +374,7 @@
 <figure class="ph-fig reveal"><a href="/cs/exercises/copenhagen-plank-short.html"><img src="/assets/articles/in-season/copenhagen-plank-short-lg.webp" alt="Kodaňské prkno — krátká páka" loading="lazy" width="960" height="540"></a><figcaption><strong>Kodaňské prkno — krátká páka</strong> · 2&nbsp;× 20&nbsp;s na stranu · Ukázka trenéra Davida</figcaption></figure>
 <p>Jednou týdně je dávka pro sezónu a&nbsp;zabere dvě minuty. Měj <a href="/cs/exercises/copenhagen-plank-short.html">kodaňské prkno</a> v&nbsp;hlavním tréninku a&nbsp;nevypouštěj ho, ani když se rozvrh zaplní. Právě tehdy ho potřebuješ nejvíc. Celý rozbor, včetně silového testu, který natažení třísel předpovídá, najdeš v&nbsp;našem průvodci <a href="/cs/hockey-injury-prevention.html">jak se v&nbsp;sezóně vyhnout zraněním</a>.</p>
 <h2 id="ages">Co se mění s&nbsp;věkem</h2>
-<figure class="ph-fig reveal"><img src="/assets/articles/youth-dryland.jpg" alt="Pro mladé hráče je sezóna velká část rozvoje. Suchou přípravu jim drž krátkou a hravou." loading="lazy" width="2000" height="1125"><figcaption>Pro mladé hráče je sezóna velká část rozvoje. Suchou přípravu jim drž krátkou a&nbsp;hravou.</figcaption></figure>
+<figure class="ph-pair reveal"><div class="ph-row"><img src="/assets/articles/photos/ladder-bound-c.webp" alt="Pro mladé hráče je sezóna velká část rozvoje. Suchou přípravu jim drž krátkou a hravou." loading="lazy" decoding="async" width="720" height="900"><img src="/assets/articles/photos/stickhandling-track-b.webp" alt="" loading="lazy" decoding="async" width="720" height="900"></div><figcaption>Pro mladé hráče je sezóna velká část rozvoje. Suchou přípravu jim drž krátkou a&nbsp;hravou.</figcaption></figure>
 
 <div class="age-grid cols-3 reveal">
 <div class="age-card is-youth">

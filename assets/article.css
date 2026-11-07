@@ -523,3 +523,18 @@
 @media(prefers-reduced-motion:reduce){
   .art-card{transition:border-color .35s,box-shadow .35s!important;}
 }
+
+
+/* ============================================================
+   ARTICLE PHOTOS (real frames from Coach David's training clips)
+   ============================================================ */
+.ph-fig,.ph-pair{max-width:var(--art-measure);margin:34px auto 38px;}
+.ph-fig img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;border:1px solid var(--line);background:var(--bg-3);}
+.ph-pair .ph-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.ph-pair img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--bg-3);}
+.ph-fig figcaption,.ph-pair figcaption{font-size:13.5px;color:var(--ink-2);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0;}
+@media(max-width:600px){
+  .ph-fig,.ph-pair{margin:28px auto 32px;}
+  .ph-pair .ph-row{gap:8px;}
+  .ph-pair img,.ph-fig img{border-radius:12px;}
+}

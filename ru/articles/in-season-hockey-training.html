@@ -55,10 +55,12 @@
 }
 
 /* In-season article: visuals */
-.ph-fig,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-fig,.ph-pair,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-pair .ph-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ph-pair img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--bg-3)}
 .ph-fig img,.vid-fig video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;border:1px solid var(--line);background:var(--bg-3)}
 .ph-fig a,.vid-fig a{border-bottom:none!important;display:block}
-.ph-fig figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13px;color:var(--ink-3);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
+.ph-fig figcaption,.ph-pair figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13.5px;color:var(--ink-2);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
 .ph-fig figcaption strong,.vid-fig figcaption strong{color:var(--ink-2);font-weight:600}
 .app-shots .app-row{display:flex;justify-content:center;align-items:flex-start;gap:18px;padding:28px 16px;background:radial-gradient(circle at 50% 0%,var(--ice-soft),transparent 70%),var(--card);border:1px solid var(--line);border-radius:18px}
 .app-shots img{width:44%;max-width:230px;height:auto;aspect-ratio:640/1418;object-fit:cover;object-position:top;border-radius:24px;border:1px solid var(--line-2);box-shadow:0 18px 40px rgba(0,0,0,.45)}
@@ -194,7 +196,7 @@
 <p>Этот спад — не невезение. Это то, что длинный сезон делает с телом, которое перестаёт получать силовой стимул. Хорошая новость: остановить его гораздо проще, чем было набрать форму. Посреди зимы тебе не нужна летняя программа. Нужна правильная маленькая доза в правильном месте недели.</p>
 <h2 id="slower">Почему игроки медленнеют по ходу сезона</h2>
 <p>Кажется, что хоккей сам по себе должен держать тебя в форме. Ты на льду четыре-пять раз в неделю, катаешься на полную и промокаешь насквозь. Но тренировка на льду — не силовой стимул, а длинный сезон копит усталость быстрее, чем тренировки успевают что-то построить.</p>
-<figure class="ph-fig reveal"><img src="/assets/articles/training.jpg" alt="Взрывная сила ног — первое, что забирает длинный сезон. И сохранить её проще всего." loading="lazy" width="1600" height="900"><figcaption>Взрывная сила ног — первое, что забирает длинный сезон. И сохранить её проще всего.</figcaption></figure>
+<figure class="ph-pair reveal"><div class="ph-row"><img src="/assets/articles/photos/rink-a.webp" alt="Взрывная сила ног — первое, что забирает длинный сезон. И сохранить её проще всего." loading="lazy" decoding="async" width="720" height="900"><img src="/assets/articles/photos/rink-b.webp" alt="" loading="lazy" decoding="async" width="720" height="900"></div><figcaption>Взрывная сила ног — первое, что забирает длинный сезон. И сохранить её проще всего.</figcaption></figure>
 <p>Исследования здесь на удивление единодушны. Команда НХЛ, которая каждую неделю тестировала игроков прыжком вверх с подседом (CMJ), обнаружила, что <a href="https://pubmed.ncbi.nlm.nih.gov/33651739/" rel="noopener" target="_blank">высота и скорость прыжка снижались по ходу сезона</a>, а сильнее всего усталость сказывалась в конце. Исследование команды NCAA Division I за 18-недельный сезон показало, что <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" rel="noopener" target="_blank">мощность ног снижалась весь год</a>, резче всего после самых длинных выездов. Другая студенческая команда <a href="https://pubmed.ncbi.nlm.nih.gov/24910956/" rel="noopener" target="_blank">в повторных спринтах после сезона выдавала меньше мощности, чем до него</a>, и те же спринты казались тяжелее.</p>
 <p>Систематический обзор 2021&nbsp;года, обобщивший десятилетия хоккейных исследований за целые сезоны, пришёл к тому же: более новые работы указывают на <a href="https://pubmed.ncbi.nlm.nih.gov/34387221/" rel="noopener" target="_blank">снижение аэробной формы и нарастающую усталость по ходу сезона</a>, и авторы призывают искать способы ограничить эти потери ближе к концу года.</p>
 <p>Перечитай это, держа в голове плей-офф. Игроки слабее всего именно тогда, когда игры важнее всего.</p>
@@ -259,7 +261,7 @@
 <li><strong>За день до игры:</strong> только мобильность. Ничего тяжёлого, ничего нового.</li>
 <li><strong>На следующий день после игры:</strong> лёгкое движение и мобильность. Первая тяжёлая тренировка — уже после этого.</li>
 </ul>
-<figure class="ph-fig reveal"><img src="/assets/articles/skating-speed.jpg" alt="День игры — для игры. Тяжёлая работа была как минимум за 48 часов до неё." loading="lazy" width="2000" height="1116"><figcaption>День игры — для игры. Тяжёлая работа была как минимум за 48&nbsp;часов до неё.</figcaption></figure>
+<figure class="ph-pair reveal"><div class="ph-row"><img src="/assets/articles/photos/sled-push-d.webp" alt="День игры — для игры. Тяжёлая работа была как минимум за 48 часов до неё." loading="lazy" decoding="async" width="720" height="900"><img src="/assets/articles/photos/deadlift-b.webp" alt="" loading="lazy" decoding="async" width="720" height="900"></div><figcaption>День игры — для игры. Тяжёлая работа была как минимум за 48&nbsp;часов до неё.</figcaption></figure>
 <p>Почему ничего нового? Новое упражнение вызывает крепатуру даже с лёгким весом, потому что мышцы к нему ещё не привыкли. В сезоне держись движений, которые хорошо знаешь. Эксперименты оставь на лето.</p>
 <h3>А тренировка в день игры?</h3>
 <p>Некоторые профессиональные команды утром в день игры делают короткий «праймер»: несколько прыжков или два-три довольно тяжёлых повторения. Обзор 2019&nbsp;года показал, что силовая работа малого объёма и высокой интенсивности <a href="https://pubmed.ncbi.nlm.nih.gov/31203499/" rel="noopener" target="_blank">может улучшать результат до 48&nbsp;часов после неё</a>, но реакция сильно различается у разных спортсменов. Если хочешь попробовать, делай совсем немного и проверь в игре, которая ничего не решает. Главное всё равно — разминка перед игрой, и её мы разбираем в статье <a href="/ru/hockey-warm-up.html">идеальная хоккейная разминка</a>.</p>
@@ -361,7 +363,7 @@
 <figure class="ph-fig reveal"><a href="/ru/exercises/copenhagen-plank-short.html"><img src="/assets/articles/in-season/copenhagen-plank-short-lg.webp" alt="Копенгагенская планка — короткий рычаг" loading="lazy" width="960" height="540"></a><figcaption><strong>Копенгагенская планка — короткий рычаг</strong> · 2&nbsp;× 20&nbsp;с на сторону · Демо тренера Давида</figcaption></figure>
 <p>Раз в неделю — это доза для сезона, и занимает она две минуты. Оставь <a href="/ru/exercises/copenhagen-plank-short.html">копенгагенскую планку</a> в основной тренировке и не выкидывай её, когда расписание забивается. Именно тогда она нужнее всего. Полный разбор, включая силовой тест, который предсказывает растяжения паха, — в нашем гайде <a href="/ru/hockey-injury-prevention.html">как пройти хоккейный сезон без травм</a>.</p>
 <h2 id="ages">Что меняется с возрастом</h2>
-<figure class="ph-fig reveal"><img src="/assets/articles/youth-dryland.jpg" alt="Для юных игроков сезон — большая часть развития. Тренировки вне льда — короткие и в игровой форме." loading="lazy" width="2000" height="1125"><figcaption>Для юных игроков сезон — большая часть развития. Тренировки вне льда — короткие и в игровой форме.</figcaption></figure>
+<figure class="ph-pair reveal"><div class="ph-row"><img src="/assets/articles/photos/ladder-bound-c.webp" alt="Для юных игроков сезон — большая часть развития. Тренировки вне льда — короткие и в игровой форме." loading="lazy" decoding="async" width="720" height="900"><img src="/assets/articles/photos/stickhandling-track-b.webp" alt="" loading="lazy" decoding="async" width="720" height="900"></div><figcaption>Для юных игроков сезон — большая часть развития. Тренировки вне льда — короткие и в игровой форме.</figcaption></figure>
 
 <div class="age-grid cols-3 reveal">
 <div class="age-card is-youth">

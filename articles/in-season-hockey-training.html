@@ -53,10 +53,12 @@
 }
 
 /* In-season article: visuals */
-.ph-fig,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-fig,.ph-pair,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-pair .ph-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ph-pair img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--bg-3)}
 .ph-fig img,.vid-fig video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;border:1px solid var(--line);background:var(--bg-3)}
 .ph-fig a,.vid-fig a{border-bottom:none!important;display:block}
-.ph-fig figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13px;color:var(--ink-3);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
+.ph-fig figcaption,.ph-pair figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13.5px;color:var(--ink-2);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
 .ph-fig figcaption strong,.vid-fig figcaption strong{color:var(--ink-2);font-weight:600}
 .app-shots .app-row{display:flex;justify-content:center;align-items:flex-start;gap:18px;padding:28px 16px;background:radial-gradient(circle at 50% 0%,var(--ice-soft),transparent 70%),var(--card);border:1px solid var(--line);border-radius:18px}
 .app-shots img{width:44%;max-width:230px;height:auto;aspect-ratio:640/1418;object-fit:cover;object-position:top;border-radius:24px;border:1px solid var(--line-2);box-shadow:0 18px 40px rgba(0,0,0,.45)}
@@ -196,7 +198,7 @@
 <p>That slide is not bad luck. It is what a long season does to a body that stops getting a strength stimulus. The good news is that stopping it takes far less work than building it did. You do not need a summer program in the middle of winter. You need the right small dose, in the right place in the week.</p>
 <h2 id="slower">Why players get slower during the season</h2>
 <p>Hockey looks like it should keep you fit on its own. You are on the ice four or five times a week, skating hard, sweating through your gear. But practice is not a strength stimulus, and a long season piles up fatigue faster than practice can build anything back.</p>
-<figure class="ph-fig reveal"><img src="/assets/articles/training.jpg" alt="Leg power is the first thing a long season takes. It is also the cheapest thing to keep." loading="lazy" width="1600" height="900"><figcaption>Leg power is the first thing a long season takes. It is also the cheapest thing to keep.</figcaption></figure>
+<figure class="ph-pair reveal"><div class="ph-row"><img src="/assets/articles/photos/rink-a.webp" alt="Leg power is the first thing a long season takes. It is also the cheapest thing to keep." loading="lazy" decoding="async" width="720" height="900"><img src="/assets/articles/photos/rink-b.webp" alt="" loading="lazy" decoding="async" width="720" height="900"></div><figcaption>Leg power is the first thing a long season takes. It is also the cheapest thing to keep.</figcaption></figure>
 <p>The research on this is remarkably consistent. An NHL team that tested its players with countermovement jumps every week found that <a href="https://pubmed.ncbi.nlm.nih.gov/33651739/" rel="noopener" target="_blank">jump height and velocity fell across the season</a>, with the biggest effect of fatigue in the late season. A study of an NCAA Division I team over an 18-week season found that <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" rel="noopener" target="_blank">lower-body power declined throughout the year</a>, with the sharpest drops after the longest travel stretches. Another college team produced <a href="https://pubmed.ncbi.nlm.nih.gov/24910956/" rel="noopener" target="_blank">less power in repeated sprints after the season than before it</a>, and the same sprints felt harder.</p>
 <p>A 2021 systematic review that pulled together decades of season-long hockey studies came to the same place: recent research points to <a href="https://pubmed.ncbi.nlm.nih.gov/34387221/" rel="noopener" target="_blank">aerobic deconditioning and growing fatigue as the season goes on</a>, and the authors call for more work on limiting those losses in the later part of the year.</p>
 <p>Read that again with playoffs in mind. The point where players are at their weakest is the point where the games matter most.</p>
@@ -261,7 +263,7 @@
 <li><strong>The day before a game:</strong> mobility only. Nothing heavy, nothing new.</li>
 <li><strong>The day after a game:</strong> easy movement and mobility. Your first hard session comes after that.</li>
 </ul>
-<figure class="ph-fig reveal"><img src="/assets/articles/skating-speed.jpg" alt="Game day is for playing. The heavy work happened at least 48 hours earlier." loading="lazy" width="2000" height="1116"><figcaption>Game day is for playing. The heavy work happened at least 48 hours earlier.</figcaption></figure>
+<figure class="ph-pair reveal"><div class="ph-row"><img src="/assets/articles/photos/sled-push-d.webp" alt="Game day is for playing. The heavy work happened at least 48 hours earlier." loading="lazy" decoding="async" width="720" height="900"><img src="/assets/articles/photos/deadlift-b.webp" alt="" loading="lazy" decoding="async" width="720" height="900"></div><figcaption>Game day is for playing. The heavy work happened at least 48 hours earlier.</figcaption></figure>
 <p>Why nothing new? A new exercise makes you sore even at light loads, because your muscles have not adapted to it yet. In-season, stick to movements you already know well. Save the experiments for summer.</p>
 <h3>What about training on game day?</h3>
 <p>Some pro teams run a short "primer" on the morning of a game: a few jumps, or two or three fairly heavy reps. A 2019 review found that low-volume, high-intensity strength work <a href="https://pubmed.ncbi.nlm.nih.gov/31203499/" rel="noopener" target="_blank">can improve performance for up to 48 hours afterwards</a>, but responses vary a lot between athletes. If you want to try it, keep it tiny and test it in a game that does not matter. Your pre-game warm-up is still the main event, and we break that down in <a href="/hockey-warm-up.html">the perfect hockey warm-up</a>.</p>
@@ -363,7 +365,7 @@
 <figure class="ph-fig reveal"><a href="/exercises/copenhagen-plank-short.html"><img src="/assets/articles/in-season/copenhagen-plank-short-lg.webp" alt="Copenhagen Plank (Short)" loading="lazy" width="960" height="540"></a><figcaption><strong>Copenhagen Plank (Short)</strong> · 2 × 20 s per side · Coach David's demo</figcaption></figure>
 <p>Once a week is the in-season dose, and it takes two minutes. Keep the <a href="/exercises/copenhagen-plank-short.html">Copenhagen Plank</a> in your main session and do not drop it when the schedule gets busy. That is exactly when you need it. The full breakdown, including the strength test that predicts groin strains, is in our guide to <a href="/hockey-injury-prevention.html">injury-proofing your hockey season</a>.</p>
 <h2 id="ages">What changes by age</h2>
-<figure class="ph-fig reveal"><img src="/assets/articles/youth-dryland.jpg" alt="For young players the season is a big part of development. Keep their off-ice work short and playful." loading="lazy" width="2000" height="1125"><figcaption>For young players the season is a big part of development. Keep their off-ice work short and playful.</figcaption></figure>
+<figure class="ph-pair reveal"><div class="ph-row"><img src="/assets/articles/photos/ladder-bound-c.webp" alt="For young players the season is a big part of development. Keep their off-ice work short and playful." loading="lazy" decoding="async" width="720" height="900"><img src="/assets/articles/photos/stickhandling-track-b.webp" alt="" loading="lazy" decoding="async" width="720" height="900"></div><figcaption>For young players the season is a big part of development. Keep their off-ice work short and playful.</figcaption></figure>
 
 <div class="age-grid cols-3 reveal">
 <div class="age-card is-youth">

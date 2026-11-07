@@ -54,10 +54,12 @@
 }
 
 /* In-season article: visuals */
-.ph-fig,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-fig,.ph-pair,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-pair .ph-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ph-pair img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--bg-3)}
 .ph-fig img,.vid-fig video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;border:1px solid var(--line);background:var(--bg-3)}
 .ph-fig a,.vid-fig a{border-bottom:none!important;display:block}
-.ph-fig figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13px;color:var(--ink-3);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
+.ph-fig figcaption,.ph-pair figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13.5px;color:var(--ink-2);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
 .ph-fig figcaption strong,.vid-fig figcaption strong{color:var(--ink-2);font-weight:600}
 .app-shots .app-row{display:flex;justify-content:center;align-items:flex-start;gap:18px;padding:28px 16px;background:radial-gradient(circle at 50% 0%,var(--ice-soft),transparent 70%),var(--card);border:1px solid var(--line);border-radius:18px}
 .app-shots img{width:44%;max-width:230px;height:auto;aspect-ratio:640/1418;object-fit:cover;object-position:top;border-radius:24px;border:1px solid var(--line-2);box-shadow:0 18px 40px rgba(0,0,0,.45)}
@@ -198,7 +200,7 @@
 <p>Det tappet är inte otur. Det är vad en lång säsong gör med en kropp som slutar få styrkeretning. Det goda beskedet är att det kräver mycket mindre jobb att stoppa det än det krävde att bygga upp formen. Du behöver inget sommarprogram mitt i vintern. Du behöver rätt liten dos på rätt plats i veckan.</p>
 <h2 id="slower">Varför spelare blir långsammare under säsongen</h2>
 <p>Hockey ser ut som något som borde hålla dig i form av sig självt. Du är på isen fyra eller fem gånger i veckan, åker hårt och svettas igenom utrustningen. Men isträning är ingen styrkeretning, och en lång säsong samlar på sig trötthet snabbare än träningen hinner bygga upp något.</p>
-<figure class="ph-fig reveal"><img src="/assets/articles/training.jpg" alt="Benens explosivitet är det första en lång säsong tar. Den är också billigast att behålla." loading="lazy" width="1600" height="900"><figcaption>Benens explosivitet är det första en lång säsong tar. Den är också billigast att behålla.</figcaption></figure>
+<figure class="ph-pair reveal"><div class="ph-row"><img src="/assets/articles/photos/rink-a.webp" alt="Benens explosivitet är det första en lång säsong tar. Den är också billigast att behålla." loading="lazy" decoding="async" width="720" height="900"><img src="/assets/articles/photos/rink-b.webp" alt="" loading="lazy" decoding="async" width="720" height="900"></div><figcaption>Benens explosivitet är det första en lång säsong tar. Den är också billigast att behålla.</figcaption></figure>
 <p>Forskningen är påfallande samstämmig. Ett NHL-lag som testade sina spelare med countermovement-hopp varje vecka såg att <a href="https://pubmed.ncbi.nlm.nih.gov/33651739/" rel="noopener" target="_blank">hopphöjd och hastighet sjönk under säsongen</a>, med störst effekt av trötthet sent på säsongen. En studie av ett NCAA Division I-lag under en 18&nbsp;veckor lång säsong visade att <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" rel="noopener" target="_blank">benkraften minskade hela året</a>, med de största tappen efter de längsta resorna. Ett annat collegelag <a href="https://pubmed.ncbi.nlm.nih.gov/24910956/" rel="noopener" target="_blank">producerade mindre kraft i upprepade sprinter efter säsongen än före</a>, och samma sprinter kändes tyngre.</p>
 <p>En systematisk översikt från 2021&nbsp;som sammanställde årtionden av hockeystudier över hela säsonger kom fram till samma sak: nyare forskning pekar på <a href="https://pubmed.ncbi.nlm.nih.gov/34387221/" rel="noopener" target="_blank">sämre aerob kondition och ökande trötthet allt eftersom säsongen går</a>, och författarna efterlyser mer arbete för att begränsa de förlusterna sent på året.</p>
 <p>Läs det igen med slutspelet i tankarna. När spelarna är som svagast är också när matcherna betyder mest.</p>
@@ -263,7 +265,7 @@
 <li><strong>Dagen före match:</strong> bara rörlighet. Inget tungt, inget nytt.</li>
 <li><strong>Dagen efter match:</strong> lätt rörelse och rörlighet. Ditt första tunga pass kommer efter det.</li>
 </ul>
-<figure class="ph-fig reveal"><img src="/assets/articles/skating-speed.jpg" alt="Matchdagen är till för att spela. Det tunga jobbet gjordes minst 48 timmar tidigare." loading="lazy" width="2000" height="1116"><figcaption>Matchdagen är till för att spela. Det tunga jobbet gjordes minst 48&nbsp;timmar tidigare.</figcaption></figure>
+<figure class="ph-pair reveal"><div class="ph-row"><img src="/assets/articles/photos/sled-push-d.webp" alt="Matchdagen är till för att spela. Det tunga jobbet gjordes minst 48 timmar tidigare." loading="lazy" decoding="async" width="720" height="900"><img src="/assets/articles/photos/deadlift-b.webp" alt="" loading="lazy" decoding="async" width="720" height="900"></div><figcaption>Matchdagen är till för att spela. Det tunga jobbet gjordes minst 48&nbsp;timmar tidigare.</figcaption></figure>
 <p>Varför inget nytt? En ny övning ger träningsvärk även med lätt vikt, eftersom musklerna inte har vant sig vid den än. Under säsongen håller du dig till rörelser du redan kan väl. Spara experimenten till sommaren.</p>
 <h3>Och träning på matchdagen?</h3>
 <p>En del proffslag kör en kort ”primer” på morgonen före en match: några hopp, eller två tre ganska tunga repetitioner. En översikt från 2019&nbsp;fann att styrketräning med låg volym och hög intensitet <a href="https://pubmed.ncbi.nlm.nih.gov/31203499/" rel="noopener" target="_blank">kan förbättra prestationen i upp till 48&nbsp;timmar efteråt</a>, men responsen varierar mycket mellan idrottare. Vill du testa, håll det litet och prova i en match som inte spelar någon roll. Uppvärmningen före matchen är fortfarande huvudsaken, och den går vi igenom i <a href="/sv/hockey-warm-up.html">den perfekta hockeyuppvärmningen</a>.</p>
@@ -365,7 +367,7 @@
 <figure class="ph-fig reveal"><a href="/sv/exercises/copenhagen-plank-short.html"><img src="/assets/articles/in-season/copenhagen-plank-short-lg.webp" alt="Köpenhamnsplanka — Kort" loading="lazy" width="960" height="540"></a><figcaption><strong>Köpenhamnsplanka — Kort</strong> · 2&nbsp;× 20&nbsp;s per sida · Tränare Davids demo</figcaption></figure>
 <p>En gång i veckan är säsongsdosen, och den tar två minuter. Ha kvar <a href="/sv/exercises/copenhagen-plank-short.html">Köpenhamnsplankan</a> i huvudpasset och stryk den inte när schemat fylls. Det är just då du behöver den. Hela genomgången, inklusive styrketestet som förutspår ljumskskador, finns i vår guide om att <a href="/sv/hockey-injury-prevention.html">skadesäkra din hockeysäsong</a>.</p>
 <h2 id="ages">Vad som ändras med åldern</h2>
-<figure class="ph-fig reveal"><img src="/assets/articles/youth-dryland.jpg" alt="För unga spelare är säsongen en stor del av utvecklingen. Håll barmarken kort och lekfull." loading="lazy" width="2000" height="1125"><figcaption>För unga spelare är säsongen en stor del av utvecklingen. Håll barmarken kort och lekfull.</figcaption></figure>
+<figure class="ph-pair reveal"><div class="ph-row"><img src="/assets/articles/photos/ladder-bound-c.webp" alt="För unga spelare är säsongen en stor del av utvecklingen. Håll barmarken kort och lekfull." loading="lazy" decoding="async" width="720" height="900"><img src="/assets/articles/photos/stickhandling-track-b.webp" alt="" loading="lazy" decoding="async" width="720" height="900"></div><figcaption>För unga spelare är säsongen en stor del av utvecklingen. Håll barmarken kort och lekfull.</figcaption></figure>
 
 <div class="age-grid cols-3 reveal">
 <div class="age-card is-youth">
