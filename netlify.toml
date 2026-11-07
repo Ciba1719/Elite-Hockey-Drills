@@ -36,6 +36,13 @@
   status = 404
   force = true
 
+# Test files for the Netlify functions (node --test _tests/...) are not pages.
+[[redirects]]
+  from = "/_tests/*"
+  to = "/index.html"
+  status = 404
+  force = true
+
 [[redirects]]
   from = "/fonts.css"
   to = "/index.html"
