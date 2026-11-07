@@ -52,6 +52,27 @@
   .art-table.fit.days td:first-child{width:28%}
   .art-table.fit td:first-child{width:auto}
 }
+
+/* In-season article: visuals */
+.ph-fig,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-fig img,.vid-fig video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;border:1px solid var(--line);background:var(--bg-3)}
+.ph-fig a,.vid-fig a{border-bottom:none!important;display:block}
+.ph-fig figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13px;color:var(--ink-3);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
+.ph-fig figcaption strong,.vid-fig figcaption strong{color:var(--ink-2);font-weight:600}
+.app-shots .app-row{display:flex;justify-content:center;align-items:flex-start;gap:18px;padding:28px 16px;background:radial-gradient(circle at 50% 0%,var(--ice-soft),transparent 70%),var(--card);border:1px solid var(--line);border-radius:18px}
+.app-shots img{width:44%;max-width:230px;height:auto;aspect-ratio:640/1418;object-fit:cover;object-position:top;border-radius:24px;border:1px solid var(--line-2);box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.isx-block{max-width:var(--art-measure);margin:24px auto 38px}
+.isx-title{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.isx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.isx-group{grid-column:1/-1;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ice);margin-top:16px}
+.art-prose a.isx-card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;color:inherit;transition:border-color .2s,transform .2s}
+.art-prose a.isx-card:hover{border-color:var(--ice-line);transform:translateY(-2px)}
+.isx-thumb{display:block;aspect-ratio:16/9;overflow:hidden;background:var(--bg-3)}
+.isx-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.isx-body{display:flex;flex-direction:column;gap:4px;padding:10px 12px 12px}
+.isx-name{font-size:14px;font-weight:600;color:var(--ink);line-height:1.3}
+.isx-sets{font-size:13px;color:var(--warm);font-weight:600}
+@media(max-width:600px){.isx-grid{grid-template-columns:repeat(2,1fr);gap:10px}.isx-name{font-size:13px}.isx-sets{font-size:12px}.isx-body{padding:9px 10px 11px}.app-shots .app-row{gap:12px;padding:22px 12px}}
 </style>
 
 <script type="application/ld+json">{
@@ -177,6 +198,7 @@
 <p>Dieser Abfall ist kein Pech. Er ist das, was eine lange Saison mit einem Körper macht, der keinen Kraftreiz mehr bekommt. Die gute Nachricht: Ihn zu stoppen kostet viel weniger Arbeit, als das Niveau aufzubauen. Du brauchst mitten im Winter kein Sommerprogramm. Du brauchst die richtige kleine Dosis an der richtigen Stelle in der Woche.</p>
 <h2 id="slower">Warum Spieler in der Saison langsamer werden</h2>
 <p>Eishockey sieht aus, als müsste es dich von selbst fit halten. Du stehst vier- oder fünfmal pro Woche auf dem Eis, läufst hart und schwitzt durch die Ausrüstung. Aber Eistraining ist kein Kraftreiz, und eine lange Saison häuft Ermüdung schneller an, als das Training etwas aufbauen kann.</p>
+<figure class="ph-fig reveal"><img src="/assets/articles/training.jpg" alt="Die Explosivkraft der Beine geht in einer langen Saison als Erstes verloren. Sie zu halten kostet am wenigsten." loading="lazy" width="1600" height="900"><figcaption>Die Explosivkraft der Beine geht in einer langen Saison als Erstes verloren. Sie zu halten kostet am wenigsten.</figcaption></figure>
 <p>Die Forschung ist hier erstaunlich einheitlich. Ein NHL-Team, das seine Spieler jede Woche mit Countermovement-Jumps testete, stellte fest, dass <a href="https://pubmed.ncbi.nlm.nih.gov/33651739/" rel="noopener" target="_blank">Sprunghöhe und Absprunggeschwindigkeit im Saisonverlauf sanken</a>, mit dem größten Ermüdungseffekt in der Spätsaison. Eine Studie mit einem NCAA-Division-I-Team über eine 18-wöchige Saison zeigte, dass <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" rel="noopener" target="_blank">die Beinkraft über das ganze Jahr abnahm</a>, am stärksten nach den längsten Reisephasen. Ein anderes College-Team <a href="https://pubmed.ncbi.nlm.nih.gov/24910956/" rel="noopener" target="_blank">brachte in wiederholten Sprints nach der Saison weniger Leistung als davor</a>, und dieselben Sprints fühlten sich härter an.</p>
 <p>Ein systematischer Review von 2021, der Jahrzehnte an saisonbegleitenden Eishockeystudien zusammenfasste, kam zum selben Ergebnis: Neuere Forschung zeigt <a href="https://pubmed.ncbi.nlm.nih.gov/34387221/" rel="noopener" target="_blank">einen Abbau der aeroben Fitness und zunehmende Ermüdung im Saisonverlauf</a>, und die Autoren fordern mehr Arbeit daran, diese Verluste spät im Jahr zu begrenzen.</p>
 <p>Lies das noch einmal mit den Playoffs im Kopf. Die Spieler sind genau dann am schwächsten, wenn die Spiele am meisten zählen.</p>
@@ -241,6 +263,7 @@
 <li><strong>Am Tag vor dem Spiel:</strong> nur Mobilität. Nichts Schweres, nichts Neues.</li>
 <li><strong>Am Tag nach dem Spiel:</strong> lockere Bewegung und Mobilität. Deine erste harte Einheit kommt danach.</li>
 </ul>
+<figure class="ph-fig reveal"><img src="/assets/articles/skating-speed.jpg" alt="Der Spieltag ist zum Spielen da. Die schwere Arbeit lag mindestens 48 Stunden davor." loading="lazy" width="2000" height="1116"><figcaption>Der Spieltag ist zum Spielen da. Die schwere Arbeit lag mindestens 48&nbsp;Stunden davor.</figcaption></figure>
 <p>Warum nichts Neues? Eine neue Übung macht Muskelkater, selbst mit leichtem Gewicht, weil deine Muskeln noch nicht daran gewöhnt sind. In der Saison bleibst du bei Bewegungen, die du gut kennst. Experimente sparst du dir für den Sommer.</p>
 <h3>Und Training am Spieltag?</h3>
 <p>Manche Profiteams machen am Morgen eines Spiels einen kurzen „Primer“: ein paar Sprünge oder zwei, drei ziemlich schwere Wiederholungen. Ein Review von 2019&nbsp;fand, dass Krafttraining mit wenig Umfang und hoher Intensität <a href="https://pubmed.ncbi.nlm.nih.gov/31203499/" rel="noopener" target="_blank">die Leistung bis zu 48&nbsp;Stunden danach verbessern kann</a>, die Reaktion aber stark von Athlet zu Athlet schwankt. Wenn du es ausprobieren willst, halte es winzig und teste es in einem Spiel, in dem es um nichts geht. Das Aufwärmen vor dem Spiel bleibt das Wichtigste, und das zerlegen wir in <a href="/de/hockey-warm-up.html">das perfekte Eishockey-Warm-up</a>.</p>
@@ -299,29 +322,25 @@
 <a class="btn btn-primary" data-place="article_inseason_inline" href="https://apps.apple.com/de/app/elite-hockey-drills/id6787257275" rel="noopener" target="_blank"> 7&nbsp;Tage gratis testen <svg aria-hidden="true" fill="none" height="16" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24" width="16"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
 </a>
 </div>
+<figure class="app-shots reveal"><div class="app-row"><img src="/assets/app/app-gameday-de.webp" alt="Spieltag-Guide in der Elite Hockey Drills App" loading="lazy" width="640" height="1536"><img src="/assets/app/app-program-de.webp" alt="Trainingswoche rund um die Spieltage in der Elite Hockey Drills App" loading="lazy" width="640" height="1418"></div><figcaption>Der Spieltag-Guide der App (links) und eine Trainingswoche, die um die Spiele herum geplant ist (rechts).</figcaption></figure>
+
 <h2 id="session">Die 25-Minuten-Einheit für die Saison</h2>
 <p>Das ist die Haupteinheit: erst ein bisschen Explosivkraft, dann Kraft, in der Reihenfolge, die dein Nervensystem will. Sie funktioniert im Kraftraum oder zu Hause mit zwei Kurzhanteln. Jede Übung ist mit einem Demovideo verlinkt.</p>
-<div class="art-table-wrap reveal">
-<table class="art-table fit">
-<caption>Haupteinheit · 25&nbsp;Min. · 1&nbsp;bis 2&nbsp;Mal pro Woche</caption>
-<thead><tr><th>Übung</th><th>Sätze ×&nbsp;Wdh.</th></tr></thead>
-<tbody>
-<tr class="grp"><td colspan="2">Vorbereitung · 4&nbsp;Min.</td></tr>
-<tr><td><a href="/de/exercises/world-s-greatest-stretch.html">World's Greatest Stretch</a></td><td>1&nbsp;× 3&nbsp;pro Seite</td></tr>
-<tr><td><a href="/de/exercises/90-90-hip-switch.html">90/90-Hüft-Switch</a></td><td>1&nbsp;× 6&nbsp;pro Seite</td></tr>
-<tr class="grp"><td colspan="2">Explosivkraft · 4&nbsp;Min.</td></tr>
-<tr><td><a href="/de/exercises/broad-jump.html">Standweitsprung</a></td><td>3&nbsp;× 3, volle Pause</td></tr>
-<tr><td><a href="/de/exercises/lateral-bound-stick.html">Lateral Bound mit stabiler Landung</a></td><td>2&nbsp;× 3&nbsp;pro Seite</td></tr>
-<tr class="grp"><td colspan="2">Kraft · 12&nbsp;Min.</td></tr>
-<tr><td><a href="/de/exercises/trap-bar-deadlift.html">Trap-Bar-Kreuzheben</a> oder <a href="/de/exercises/db-rdl.html">Kurzhantel-RDL</a></td><td>3&nbsp;× 3–5, schwer</td></tr>
-<tr><td><a href="/de/exercises/bulgarian-split-squat.html">Bulgarian Split Squat</a></td><td>2&nbsp;× 5&nbsp;pro Seite</td></tr>
-<tr><td><a href="/de/exercises/dumbbell-row.html">Kurzhantel-Rudern</a> + <a href="/de/exercises/push-up.html">Liegestütz</a></td><td>2&nbsp;× 6–8&nbsp;je Übung</td></tr>
-<tr class="grp"><td colspan="2">Leiste und Rumpf · 4&nbsp;Min.</td></tr>
-<tr><td><a href="/de/exercises/copenhagen-plank-short.html">Copenhagen Plank (kurz)</a></td><td>2&nbsp;× 20&nbsp;s pro Seite</td></tr>
-<tr><td><a href="/de/exercises/dead-bug.html">Dead Bug</a></td><td>2&nbsp;× 6&nbsp;pro Seite</td></tr>
-</tbody>
-</table>
-</div>
+<div class="isx-block reveal"><div class="isx-title">Haupteinheit · 25&nbsp;Min. · 1&nbsp;bis 2&nbsp;Mal pro Woche</div><div class="isx-grid">
+<div class="isx-group">Vorbereitung · 4&nbsp;Min.</div>
+<a class="isx-card" href="/de/exercises/world-s-greatest-stretch.html"><span class="isx-thumb"><img src="/assets/articles/in-season/world-s-greatest-stretch.webp" alt="World's Greatest Stretch" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">World's Greatest Stretch</span><span class="isx-sets">1&nbsp;× 3&nbsp;pro Seite</span></span></a>
+<a class="isx-card" href="/de/exercises/90-90-hip-switch.html"><span class="isx-thumb"><img src="/assets/articles/in-season/90-90-hip-switch.webp" alt="90/90-Hüft-Switch" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">90/90-Hüft-Switch</span><span class="isx-sets">1&nbsp;× 6&nbsp;pro Seite</span></span></a>
+<div class="isx-group">Explosivkraft · 4&nbsp;Min.</div>
+<a class="isx-card" href="/de/exercises/broad-jump.html"><span class="isx-thumb"><img src="/assets/articles/in-season/broad-jump.webp" alt="Standweitsprung" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Standweitsprung</span><span class="isx-sets">3&nbsp;× 3, volle Pause</span></span></a>
+<a class="isx-card" href="/de/exercises/lateral-bound-stick.html"><span class="isx-thumb"><img src="/assets/articles/in-season/lateral-bound-stick.webp" alt="Lateral Bound mit stabiler Landung" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Lateral Bound mit stabiler Landung</span><span class="isx-sets">2&nbsp;× 3&nbsp;pro Seite</span></span></a>
+<div class="isx-group">Kraft · 12&nbsp;Min.</div>
+<a class="isx-card" href="/de/exercises/trap-bar-deadlift.html"><span class="isx-thumb"><img src="/assets/articles/in-season/trap-bar-deadlift.webp" alt="Trap-Bar-Kreuzheben oder Kurzhantel-RDL" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Trap-Bar-Kreuzheben oder Kurzhantel-RDL</span><span class="isx-sets">3&nbsp;× 3–5, schwer</span></span></a>
+<a class="isx-card" href="/de/exercises/bulgarian-split-squat.html"><span class="isx-thumb"><img src="/assets/articles/in-season/bulgarian-split-squat.webp" alt="Bulgarian Split Squat" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Bulgarian Split Squat</span><span class="isx-sets">2&nbsp;× 5&nbsp;pro Seite</span></span></a>
+<a class="isx-card" href="/de/exercises/dumbbell-row.html"><span class="isx-thumb"><img src="/assets/articles/in-season/dumbbell-row.webp" alt="Kurzhantel-Rudern + Liegestütz" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Kurzhantel-Rudern + Liegestütz</span><span class="isx-sets">2&nbsp;× 6–8&nbsp;je Übung</span></span></a>
+<div class="isx-group">Leiste und Rumpf · 4&nbsp;Min.</div>
+<a class="isx-card" href="/de/exercises/copenhagen-plank-short.html"><span class="isx-thumb"><img src="/assets/articles/in-season/copenhagen-plank-short.webp" alt="Copenhagen Plank (kurz)" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Copenhagen Plank (kurz)</span><span class="isx-sets">2&nbsp;× 20&nbsp;s pro Seite</span></span></a>
+<a class="isx-card" href="/de/exercises/dead-bug.html"><span class="isx-thumb"><img src="/assets/articles/in-season/dead-bug.webp" alt="Dead Bug" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Dead Bug</span><span class="isx-sets">2&nbsp;× 6&nbsp;pro Seite</span></span></a>
+</div></div>
 <h3>Die drei Regeln, damit es funktioniert</h3>
 <ol>
 <li><strong>Lass bei jedem Kraftsatz zwei Wiederholungen im Tank.</strong> Schwer, aber nie ein Kampf. Du hältst dein Niveau, du testest nicht.</li>
@@ -330,26 +349,24 @@
 </ol>
 <h3>Die 15-Minuten-Einheit für Schnelligkeit und Explosivkraft</h3>
 <p>Kurz, knackig und voll erholt. Geh zwischen den Sprints zurück und nimm dir 60&nbsp;bis 90&nbsp;Sekunden vor dem nächsten.</p>
-<div class="art-table-wrap reveal">
-<table class="art-table fit">
-<caption>Schnelligkeit und Explosivkraft · 15&nbsp;Min. · einmal pro Woche</caption>
-<thead><tr><th>Übung</th><th>Sätze ×&nbsp;Wdh.</th></tr></thead>
-<tbody>
-<tr><td><a href="/de/exercises/falling-start-sprint.html">Fallstart-Sprint</a></td><td>4&nbsp;× 10&nbsp;m</td></tr>
-<tr><td><a href="/de/exercises/10m-acceleration-sprint.html">10-m-Beschleunigungssprint</a></td><td>3&nbsp;× 10&nbsp;m</td></tr>
-<tr><td><a href="/de/exercises/lateral-skater-bound.html">Lateraler Skater Bound</a></td><td>3&nbsp;× 3&nbsp;pro Seite</td></tr>
-<tr><td><a href="/de/exercises/rotational-med-ball-toss.html">Medizinball-Rotationswurf</a></td><td>3&nbsp;× 4&nbsp;pro Seite</td></tr>
-<tr><td><a href="/de/exercises/pogo-hops.html">Pogo Hops</a></td><td>2&nbsp;× 15</td></tr>
-</tbody>
-</table>
-</div>
+<figure class="vid-fig reveal"><a href="/de/exercises/lateral-skater-bound.html" aria-label="Lateraler Skater Bound"><video autoplay muted loop playsinline preload="metadata" poster="/assets/video/drill-skater.jpg" width="640" height="360"><source src="/assets/video/drill-skater.mp4" type="video/mp4"></video></a><figcaption><strong>Lateraler Skater Bound</strong> · 3&nbsp;× 3&nbsp;pro Seite · Demo von Trainer David</figcaption></figure>
+<div class="isx-block reveal"><div class="isx-title">Schnelligkeit und Explosivkraft · 15&nbsp;Min. · einmal pro Woche</div><div class="isx-grid">
+<a class="isx-card" href="/de/exercises/falling-start-sprint.html"><span class="isx-thumb"><img src="/assets/articles/in-season/falling-start-sprint.webp" alt="Fallstart-Sprint" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Fallstart-Sprint</span><span class="isx-sets">4&nbsp;× 10&nbsp;m</span></span></a>
+<a class="isx-card" href="/de/exercises/10m-acceleration-sprint.html"><span class="isx-thumb"><img src="/assets/articles/in-season/10m-acceleration-sprint.webp" alt="10-m-Beschleunigungssprint" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">10-m-Beschleunigungssprint</span><span class="isx-sets">3&nbsp;× 10&nbsp;m</span></span></a>
+<a class="isx-card" href="/de/exercises/lateral-skater-bound.html"><span class="isx-thumb"><img src="/assets/articles/in-season/lateral-skater-bound.webp" alt="Lateraler Skater Bound" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Lateraler Skater Bound</span><span class="isx-sets">3&nbsp;× 3&nbsp;pro Seite</span></span></a>
+<a class="isx-card" href="/de/exercises/rotational-med-ball-toss.html"><span class="isx-thumb"><img src="/assets/articles/in-season/rotational-med-ball-toss.webp" alt="Medizinball-Rotationswurf" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Medizinball-Rotationswurf</span><span class="isx-sets">3&nbsp;× 4&nbsp;pro Seite</span></span></a>
+<a class="isx-card" href="/de/exercises/pogo-hops.html"><span class="isx-thumb"><img src="/assets/articles/in-season/pogo-hops.webp" alt="Pogo Hops" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Pogo Hops</span><span class="isx-sets">2&nbsp;× 15</span></span></a>
+</div></div>
 <h2 id="conditioning">Brauchst du noch Ausdauertraining?</h2>
 <p>Wenn du viel Eiszeit bekommst, meistens nicht. Spiele und harte Trainings sind dein Ausdauertraining, und zusätzliche Intervalle bringen nur Ermüdung, von der du dich dann erholen musst.</p>
 <p>Wenn du wenig Eiszeit bekommst, sieht es anders aus. Der Review oben fand, dass die aerobe Fitness bei College-Spielern im Lauf des Jahres eher nachlässt, und ein Spieler in der vierten Reihe, im dritten Verteidigerpaar, als Ersatztorhüter oder nach einer Verletzung bekommt weniger von der Ausdauer, die Spiele allen anderen geben. Ergänze eine kurze Einheit pro Woche: 6&nbsp;bis 8&nbsp;Runden mit 30&nbsp;Sekunden hart und 90&nbsp;Sekunden locker auf dem Rad, an einem Tag mindestens 48&nbsp;Stunden vor dem nächsten Spiel.</p>
 <h2 id="groin">Die eine Übung, die du nie streichst</h2>
 <p>Leistenzerrungen gehören zu den typischen Eishockeyverletzungen und passieren meist im Spiel. Die Lösung ist gut erforscht. In einem NHL-Team absolvierten Spieler mit schwachen Adduktoren ein Kräftigungsprogramm, und <a href="https://pubmed.ncbi.nlm.nih.gov/12239001/" rel="noopener" target="_blank">die Adduktorenzerrungen sanken von 3,2&nbsp;auf 0,71&nbsp;pro 1.000&nbsp;Spieler-Einsätze</a> in den zwei folgenden Saisons. Im Fußball senkte ein Programm mit einer einzigen Übung, der Copenhagen-Adduktion, dreimal pro Woche in der Vorbereitung und <a href="https://bjsm.bmj.com/content/53/3/150" rel="noopener" target="_blank">einmal pro Woche in der Saison, das Risiko für Leistenprobleme um 41&nbsp;%</a>.</p>
+<figure class="ph-fig reveal"><a href="/de/exercises/copenhagen-plank-short.html"><img src="/assets/articles/in-season/copenhagen-plank-short-lg.webp" alt="Copenhagen Plank (kurz)" loading="lazy" width="960" height="540"></a><figcaption><strong>Copenhagen Plank (kurz)</strong> · 2&nbsp;× 20&nbsp;s pro Seite · Demo von Trainer David</figcaption></figure>
 <p>Einmal pro Woche ist die Saisondosis, und sie dauert zwei Minuten. Behalte die <a href="/de/exercises/copenhagen-plank-short.html">Copenhagen Plank</a> in deiner Haupteinheit und streich sie nicht, wenn der Kalender voll wird. Genau dann brauchst du sie. Die ganze Analyse, inklusive des Krafttests, der Leistenzerrungen vorhersagt, steht in unserem Guide <a href="/de/hockey-injury-prevention.html">Verletzungsfrei durch die Eishockeysaison</a>.</p>
 <h2 id="ages">Was sich mit dem Alter ändert</h2>
+<figure class="ph-fig reveal"><img src="/assets/articles/youth-dryland.jpg" alt="Für junge Spieler ist die Saison ein großer Teil ihrer Entwicklung. Halte ihr Off-Ice-Training kurz und spielerisch." loading="lazy" width="2000" height="1125"><figcaption>Für junge Spieler ist die Saison ein großer Teil ihrer Entwicklung. Halte ihr Off-Ice-Training kurz und spielerisch.</figcaption></figure>
+
 <div class="age-grid cols-3 reveal">
 <div class="age-card is-youth">
 <h4>Nachwuchs · 9&nbsp;bis 12</h4>

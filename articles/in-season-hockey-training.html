@@ -51,6 +51,27 @@
   .art-table.fit.days td:first-child{width:28%}
   .art-table.fit td:first-child{width:auto}
 }
+
+/* In-season article: visuals */
+.ph-fig,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-fig img,.vid-fig video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;border:1px solid var(--line);background:var(--bg-3)}
+.ph-fig a,.vid-fig a{border-bottom:none!important;display:block}
+.ph-fig figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13px;color:var(--ink-3);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
+.ph-fig figcaption strong,.vid-fig figcaption strong{color:var(--ink-2);font-weight:600}
+.app-shots .app-row{display:flex;justify-content:center;align-items:flex-start;gap:18px;padding:28px 16px;background:radial-gradient(circle at 50% 0%,var(--ice-soft),transparent 70%),var(--card);border:1px solid var(--line);border-radius:18px}
+.app-shots img{width:44%;max-width:230px;height:auto;aspect-ratio:640/1418;object-fit:cover;object-position:top;border-radius:24px;border:1px solid var(--line-2);box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.isx-block{max-width:var(--art-measure);margin:24px auto 38px}
+.isx-title{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.isx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.isx-group{grid-column:1/-1;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ice);margin-top:16px}
+.art-prose a.isx-card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;color:inherit;transition:border-color .2s,transform .2s}
+.art-prose a.isx-card:hover{border-color:var(--ice-line);transform:translateY(-2px)}
+.isx-thumb{display:block;aspect-ratio:16/9;overflow:hidden;background:var(--bg-3)}
+.isx-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.isx-body{display:flex;flex-direction:column;gap:4px;padding:10px 12px 12px}
+.isx-name{font-size:14px;font-weight:600;color:var(--ink);line-height:1.3}
+.isx-sets{font-size:13px;color:var(--warm);font-weight:600}
+@media(max-width:600px){.isx-grid{grid-template-columns:repeat(2,1fr);gap:10px}.isx-name{font-size:13px}.isx-sets{font-size:12px}.isx-body{padding:9px 10px 11px}.app-shots .app-row{gap:12px;padding:22px 12px}}
 </style>
 <script type="application/ld+json">{
  "@context": "https://schema.org",
@@ -107,387 +128,339 @@
 <main id="main">
 
 <!-- HERO -->
-<section class="art-hero has-photo" aria-labelledby="art-h1">
-  <div class="art-hero-bg" style="background-image:url('/assets/articles/in-season.jpg');background-position:center"></div>
-  <div class="art-hero-glow"></div>
-  <div class="art-hero-grid"></div>
-  <div class="wrap art-hero-inner">
-    <nav aria-label="Breadcrumb">
-      <ol class="breadcrumb-list">
-        <li><a href="https://elitehockeydrills.com">Home</a></li>
-        <li><a href="/articles.html">Articles</a></li>
-        <li aria-current="page">In-Season Training</li>
-      </ol>
-    </nav>
-    <div class="art-hero-head reveal">
-      <div class="eyebrow ice art-eyebrow">In-Season</div>
-      <h1 id="art-h1" class="display art-title">In-season training: <span class="serif">stay fast until playoffs.</span></h1>
-      <p class="art-deck">Most players train hard all summer, then stop the day the season starts. By February they are slower than they were in September and nobody can explain why. Here is what the research shows, the smallest dose that stops the slide, and exactly where it goes in your week.</p>
-      <div class="art-meta">
-        <div class="art-byline">
-          <img class="art-avatar" src="/coach.jpg" alt="Coach David Ciboch" />
-          <div>
-            <div class="art-byline-name">Coach David Ciboch</div>
-            <div class="art-byline-role">M.Ed. Sport Science · Former National Team Coach</div>
-          </div>
-        </div>
-        <span class="art-meta-dot"></span>
-        <span class="art-meta-item">11 min read</span>
-        <span class="art-badge">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-          Science-based
-        </span>
-      </div>
-    </div>
-  </div>
+<section aria-labelledby="art-h1" class="art-hero has-photo">
+<div class="art-hero-bg" style="background-image:url('/assets/articles/in-season.jpg');background-position:center"></div>
+<div class="art-hero-glow"></div>
+<div class="art-hero-grid"></div>
+<div class="wrap art-hero-inner">
+<nav aria-label="Breadcrumb">
+<ol class="breadcrumb-list">
+<li><a href="https://elitehockeydrills.com">Home</a></li>
+<li><a href="/articles.html">Articles</a></li>
+<li aria-current="page">In-Season Training</li>
+</ol>
+</nav>
+<div class="art-hero-head reveal">
+<div class="eyebrow ice art-eyebrow">In-Season</div>
+<h1 class="display art-title" id="art-h1">In-season training: <span class="serif">stay fast until playoffs.</span></h1>
+<p class="art-deck">Most players train hard all summer, then stop the day the season starts. By February they are slower than they were in September and nobody can explain why. Here is what the research shows, the smallest dose that stops the slide, and exactly where it goes in your week.</p>
+<div class="art-meta">
+<div class="art-byline">
+<img alt="Coach David Ciboch" class="art-avatar" src="/coach.jpg"/>
+<div>
+<div class="art-byline-name">Coach David Ciboch</div>
+<div class="art-byline-role">M.Ed. Sport Science · Former National Team Coach</div>
+</div>
+</div>
+<span class="art-meta-dot"></span>
+<span class="art-meta-item">11 min read</span>
+<span class="art-badge">
+<svg aria-hidden="true" fill="none" height="13" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24" width="13"><path d="M20 6L9 17l-5-5"></path></svg> Science-based </span>
+</div>
+</div>
+</div>
 </section>
-
 <!-- BODY -->
 <div class="art-body">
+<!-- KEY TAKEAWAYS -->
+<div class="key-takeaways reveal">
+<div class="kt-head">
+<svg aria-hidden="true" fill="none" height="16" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24" width="16"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg> The 30-second version </div>
+<ul>
+<li><strong>The season drains your legs.</strong> Studies that tested pro and college hockey players week by week found jump height and leg power dropping as the season went on, with the worst numbers late in the year, right before playoffs.</li>
+<li><strong>One session a week holds the line.</strong> Pro soccer players who kept one strength session a week held their strength and sprint speed for 12 weeks. The group that dropped to one session every two weeks lost both.</li>
+<li><strong>Keep the weight, cut everything else.</strong> To maintain, you can cut sessions, sets and time. What you cannot cut is intensity: heavy loads and full-speed sprints.</li>
+<li><strong>Timing beats volume.</strong> Heavy leg work goes at least 48 hours before your next game. The day before a game: nothing heavy, nothing new.</li>
+<li><strong>Kids are the exception.</strong> For young players the in-season risk is usually too much, not too little. Count the hours before you add anything.</li>
+</ul>
+</div>
+<!-- TOC -->
+<nav aria-label="In this guide" class="art-toc reveal">
+<div class="toc-head">In this guide</div>
+<ol>
+<li><a href="#slower">Why players get slower during the season</a></li>
+<li><a href="#dose">The minimum dose that stops the slide</a></li>
+<li><a href="#timing">The 48-hour rule</a></li>
+<li><a href="#week">Your week, built around your games</a></li>
+<li><a href="#session">The 25-minute in-season session</a></li>
+<li><a href="#conditioning">Do you still need conditioning?</a></li>
+<li><a href="#groin">The one exercise you never drop</a></li>
+<li><a href="#ages">What changes by age</a></li>
+<li><a href="#monitor">How to know you are doing too much</a></li>
+<li><a href="#faq">Quick answers</a></li>
+<li><a href="#bottom-line">The bottom line</a></li>
+</ol>
+</nav>
+<article class="art-prose">
+<p class="lead">Every September, players show up to the season about as fit as they will be all year. Then the off-ice work stops. There are practices, games, school, work, travel, and the gym starts to feel like something that belongs to summer. By February the first three strides are not what they were, the legs are heavy in the third period, and the groin that never bothered anyone starts to talk.</p>
+<p>That slide is not bad luck. It is what a long season does to a body that stops getting a strength stimulus. The good news is that stopping it takes far less work than building it did. You do not need a summer program in the middle of winter. You need the right small dose, in the right place in the week.</p>
+<h2 id="slower">Why players get slower during the season</h2>
+<p>Hockey looks like it should keep you fit on its own. You are on the ice four or five times a week, skating hard, sweating through your gear. But practice is not a strength stimulus, and a long season piles up fatigue faster than practice can build anything back.</p>
+<figure class="ph-fig reveal"><img src="/assets/articles/training.jpg" alt="Leg power is the first thing a long season takes. It is also the cheapest thing to keep." loading="lazy" width="1600" height="900"><figcaption>Leg power is the first thing a long season takes. It is also the cheapest thing to keep.</figcaption></figure>
+<p>The research on this is remarkably consistent. An NHL team that tested its players with countermovement jumps every week found that <a href="https://pubmed.ncbi.nlm.nih.gov/33651739/" rel="noopener" target="_blank">jump height and velocity fell across the season</a>, with the biggest effect of fatigue in the late season. A study of an NCAA Division I team over an 18-week season found that <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" rel="noopener" target="_blank">lower-body power declined throughout the year</a>, with the sharpest drops after the longest travel stretches. Another college team produced <a href="https://pubmed.ncbi.nlm.nih.gov/24910956/" rel="noopener" target="_blank">less power in repeated sprints after the season than before it</a>, and the same sprints felt harder.</p>
+<p>A 2021 systematic review that pulled together decades of season-long hockey studies came to the same place: recent research points to <a href="https://pubmed.ncbi.nlm.nih.gov/34387221/" rel="noopener" target="_blank">aerobic deconditioning and growing fatigue as the season goes on</a>, and the authors call for more work on limiting those losses in the later part of the year.</p>
+<p>Read that again with playoffs in mind. The point where players are at their weakest is the point where the games matter most.</p>
+<figure aria-labelledby="season-cap" class="art-figure reveal">
+<svg role="img" viewbox="0 0 720 300" xmlns="http://www.w3.org/2000/svg">
+<title>Leg power across a hockey season</title>
+<desc>Illustration: without in-season strength work, leg power slides from September to March and is lowest late in the season. With one or two short heavy sessions a week, it holds steady.</desc>
+<line stroke="#1B1B22" stroke-width="1" x1="70" x2="690" y1="60" y2="60"></line>
+<line stroke="#1B1B22" stroke-width="1" x1="70" x2="690" y1="130" y2="130"></line>
+<line stroke="#1B1B22" stroke-width="1" x1="70" x2="690" y1="200" y2="200"></line>
+<line stroke="#2A2A33" stroke-width="1" x1="70" x2="690" y1="250" y2="250"></line>
+<text fill="#5A5F6B" font-family="'Bebas Neue',sans-serif" font-size="15" letter-spacing="0.08em" text-anchor="middle" transform="rotate(-90 40 160)" x="40" y="160">LEG POWER</text>
+<path d="M80 92 C 180 92, 230 92, 280 93 S 480 92, 680 90" fill="none" stroke="#5DB4E5" stroke-linecap="round" stroke-width="4"></path>
+<path d="M80 92 C 170 96, 230 112, 300 130 S 470 170, 560 196 S 650 214, 680 220" fill="none" stroke="#E8B777" stroke-dasharray="1 0" stroke-linecap="round" stroke-width="4"></path>
+<circle cx="680" cy="90" fill="#5DB4E5" r="6"></circle>
+<circle cx="680" cy="220" fill="#E8B777" r="6"></circle>
+<text fill="#5DB4E5" font-family="'Inter Tight',sans-serif" font-size="13" font-weight="600" text-anchor="end" x="668" y="76">1–2 short heavy sessions a week</text>
+<text fill="#E8B777" font-family="'Inter Tight',sans-serif" font-size="13" font-weight="600" text-anchor="end" x="668" y="244">Off-ice work stops in September</text>
+<g fill="#5A5F6B" font-family="'Inter Tight',sans-serif" font-size="11" text-anchor="middle">
+<text x="80" y="272">SEP</text><text x="180" y="272">OCT</text><text x="280" y="272">NOV</text><text x="380" y="272">DEC</text><text x="480" y="272">JAN</text><text x="580" y="272">FEB</text><text x="680" y="272">MAR</text>
+</g>
+<rect fill="#E8B777" fill-opacity="0.05" height="216" width="130" x="560" y="40"></rect>
+<text fill="#E8B777" font-family="'Bebas Neue',sans-serif" font-size="14" letter-spacing="0.08em" text-anchor="middle" x="625" y="54">PLAYOFF STRETCH</text>
+</svg>
+<svg class="fig-mobile" role="img" viewbox="0 0 380 300" xmlns="http://www.w3.org/2000/svg">
+<title>Leg power across a hockey season</title>
+<desc>Illustration: without in-season strength work, leg power slides through the season. With one or two short heavy sessions a week, it holds.</desc>
+<line stroke="#1B1B22" stroke-width="1" x1="20" x2="360" y1="80" y2="80"></line>
+<line stroke="#1B1B22" stroke-width="1" x1="20" x2="360" y1="150" y2="150"></line>
+<line stroke="#2A2A33" stroke-width="1" x1="20" x2="360" y1="220" y2="220"></line>
+<rect fill="#E8B777" fill-opacity="0.06" height="182" width="70" x="290" y="40"></rect>
+<text fill="#E8B777" font-family="'Bebas Neue',sans-serif" font-size="13" letter-spacing="0.06em" text-anchor="middle" x="325" y="56">PLAYOFFS</text>
+<path d="M24 100 C 120 100, 220 100, 352 98" fill="none" stroke="#5DB4E5" stroke-linecap="round" stroke-width="4"></path>
+<path d="M24 100 C 90 106, 150 130, 210 155 S 320 192, 352 198" fill="none" stroke="#E8B777" stroke-linecap="round" stroke-width="4"></path>
+<g fill="#5A5F6B" font-family="'Inter Tight',sans-serif" font-size="11" text-anchor="middle">
+<text x="24" y="240">SEP</text><text x="188" y="240">DEC</text><text x="352" y="240">MAR</text>
+</g>
+<rect fill="#5DB4E5" height="12" rx="3" width="12" x="20" y="258"></rect>
+<text fill="#5DB4E5" font-family="'Inter Tight',sans-serif" font-size="13" font-weight="600" x="40" y="269">1–2 short heavy sessions a week</text>
+<rect fill="#E8B777" height="12" rx="3" width="12" x="20" y="280"></rect>
+<text fill="#E8B777" font-family="'Inter Tight',sans-serif" font-size="13" font-weight="600" x="40" y="291">Off-ice work stops in September</text>
+</svg>
+<figcaption id="season-cap">The pattern the studies describe, drawn as a simple illustration (not to scale). Stop training and leg power slides, worst late in the season. A small weekly dose holds it.</figcaption>
+</figure>
+<div class="callout callout--youth reveal">
+<span class="callout-tag">The exception: young players</span>
+<p>A study that tested elite 13-year-old players at the start and end of a season found their <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5548157/" rel="noopener" target="_blank">muscular measures and every skating test improved during the season</a>. Growth and lots of ice time do a lot of the work at that age. For youth players the season is not something to survive, it is a big part of how they develop. More on that below.</p>
+</div>
+<h2 id="dose">The minimum dose that stops the slide</h2>
+<p>Here is what most players get wrong. They assume in-season training has to look like off-season training, so when the schedule fills up they drop it completely. The research says the opposite: holding on to strength takes a fraction of the work it took to build it.</p>
+<p>The clearest study comes from professional soccer, another sport with a long season and games every week. After a 10-week preseason with two strength sessions a week, players were split into two groups. One kept <a href="https://pubmed.ncbi.nlm.nih.gov/21873897/" rel="noopener" target="_blank">one strength session a week</a>. The other dropped to one session every two weeks. Over the first 12 weeks of the season, the once-a-week group kept their gains in leg strength and 40 m sprint time. The every-other-week group got weaker and slower.</p>
+<p>A 2021 review on the smallest dose of training needed to keep fitness lands in the same place. In younger people, strength and muscle size <a href="https://pubmed.ncbi.nlm.nih.gov/33629972/" rel="noopener" target="_blank">can be held for months with as little as one session a week and one set per exercise</a>, as long as the load stays heavy. The authors' main conclusion is that intensity is the variable that matters. You can cut how often and how much. You cannot cut how hard.</p>
+<blockquote class="pullquote reveal">To hold your strength in-season, cut the sessions, cut the sets, cut the time. <span>Never cut the weight.</span></blockquote>
+<p>For a hockey player that means a short session: a few heavy sets, a few fast jumps and sprints, and out. Twenty-five minutes, not ninety.</p>
+<h2 id="timing">The 48-hour rule</h2>
+<p>Doing the work is half of it. Doing it at the right time is the other half. A game leaves fatigue behind, and so does heavy leg training. Stack them badly and you either play tired or train tired.</p>
+<p>Studies that track players after matches show how long that fatigue hangs around. In one recent soccer study, <a href="https://www.mdpi.com/2411-5142/10/3/351" rel="noopener" target="_blank">jump height was still down 24 and 48 hours after a match</a>, and a marker of muscle damage was still raised at 48 hours. That is why the rule we use is simple:</p>
+<ul>
+<li><strong>Heavy legs:</strong> at least 48 hours before your next game.</li>
+<li><strong>Short speed and jump work:</strong> up to 48 hours before, kept low volume and fully rested.</li>
+<li><strong>Upper body, core and mobility:</strong> fine closer to a game.</li>
+<li><strong>The day before a game:</strong> mobility only. Nothing heavy, nothing new.</li>
+<li><strong>The day after a game:</strong> easy movement and mobility. Your first hard session comes after that.</li>
+</ul>
+<figure class="ph-fig reveal"><img src="/assets/articles/skating-speed.jpg" alt="Game day is for playing. The heavy work happened at least 48 hours earlier." loading="lazy" width="2000" height="1116"><figcaption>Game day is for playing. The heavy work happened at least 48 hours earlier.</figcaption></figure>
+<p>Why nothing new? A new exercise makes you sore even at light loads, because your muscles have not adapted to it yet. In-season, stick to movements you already know well. Save the experiments for summer.</p>
+<h3>What about training on game day?</h3>
+<p>Some pro teams run a short "primer" on the morning of a game: a few jumps, or two or three fairly heavy reps. A 2019 review found that low-volume, high-intensity strength work <a href="https://pubmed.ncbi.nlm.nih.gov/31203499/" rel="noopener" target="_blank">can improve performance for up to 48 hours afterwards</a>, but responses vary a lot between athletes. If you want to try it, keep it tiny and test it in a game that does not matter. Your pre-game warm-up is still the main event, and we break that down in <a href="/hockey-warm-up.html">the perfect hockey warm-up</a>.</p>
+<h2 id="week">Your week, built around your games</h2>
+<p>Most players fit one of three schedules. Find yours and slot the sessions in exactly like this. Practices stay where your team puts them. If a practice lands on a training day, do the off-ice session after the ice, not before.</p>
+<div class="art-table-wrap reveal">
+<table class="art-table fit days">
+<caption>Schedule 1 · One game a week (Saturday)</caption>
+<thead><tr><th>Day</th><th>Off-ice</th></tr></thead>
+<tbody>
+<tr><td>Sunday</td><td>Recovery: 20 min easy walk or bike, 10 min mobility</td></tr>
+<tr><td>Monday</td><td><strong>Strength session</strong> (the main one, below)</td></tr>
+<tr><td>Tuesday</td><td>Practice only</td></tr>
+<tr><td>Wednesday</td><td><strong>Speed and power</strong>, 15 min</td></tr>
+<tr><td>Thursday</td><td>Practice only</td></tr>
+<tr><td>Friday</td><td>Mobility only, 10 min</td></tr>
+<tr><td>Saturday</td><td>Game. Optional short primer in the morning</td></tr>
+</tbody>
+</table>
+</div>
+<div class="art-table-wrap reveal">
+<table class="art-table fit days">
+<caption>Schedule 2 · Two games a week (Wednesday and Saturday)</caption>
+<thead><tr><th>Day</th><th>Off-ice</th></tr></thead>
+<tbody>
+<tr><td>Sunday</td><td>Recovery</td></tr>
+<tr><td>Monday</td><td><strong>Strength session</strong>, short and heavy (48 h before Wednesday)</td></tr>
+<tr><td>Tuesday</td><td>Mobility only</td></tr>
+<tr><td>Wednesday</td><td>Game</td></tr>
+<tr><td>Thursday</td><td>Recovery: easy movement and mobility</td></tr>
+<tr><td>Friday</td><td>Mobility only</td></tr>
+<tr><td>Saturday</td><td>Game</td></tr>
+</tbody>
+</table>
+</div>
+<p>Two games a week leaves room for one real session, and that is enough. The main session already has jumps in it, so you are covering power as well as strength.</p>
+<div class="art-table-wrap reveal">
+<table class="art-table fit days">
+<caption>Schedule 3 · Weekend tournament (3 games, Friday to Sunday)</caption>
+<thead><tr><th>Day</th><th>Off-ice</th></tr></thead>
+<tbody>
+<tr><td>Monday</td><td>Recovery. Sleep, food, easy movement</td></tr>
+<tr><td>Tuesday</td><td><strong>Strength session</strong></td></tr>
+<tr><td>Wednesday</td><td><strong>Speed and power</strong>, 15 min, or rest if the legs are heavy</td></tr>
+<tr><td>Thursday</td><td>Mobility only</td></tr>
+<tr><td>Friday to Sunday</td><td>Games. Between games: eat, sleep, 10 min mobility. No training</td></tr>
+</tbody>
+</table>
+</div>
+<p>Short on time in a crazy week? Keep the strength session and drop the speed session. The strength session alone is what the research says holds your gains. Playing more than three times a week, like junior players or adults in two leagues? Drop to one 20-minute strength session on your freest day and keep the groin work. That is it.</p>
+<div class="art-inline-cta reveal">
+<div class="ic-text">
+<h4>Let the app plan your week</h4>
+<p>Tell Elite Hockey Drills when your games are. It builds your off-ice week around them, adapts when you miss a session, and has a demo video for every exercise.</p>
+</div>
+<a class="btn btn-primary" data-place="article_inseason_inline" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" rel="noopener" target="_blank"> Try it free for 7 days <svg aria-hidden="true" fill="none" height="16" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24" width="16"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+</a>
+</div>
+<figure class="app-shots reveal"><div class="app-row"><img src="/assets/app/app-gameday.webp" alt="Game-day guide in the Elite Hockey Drills app" loading="lazy" width="640" height="1536"><img src="/assets/app/app-program.webp" alt="Training week planned around game days in the Elite Hockey Drills app" loading="lazy" width="640" height="1418"></div><figcaption>The app's game-day guide (left) and a training week built around game days (right).</figcaption></figure>
 
-  <!-- KEY TAKEAWAYS -->
-  <div class="key-takeaways reveal">
-    <div class="kt-head">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-      The 30-second version
-    </div>
-    <ul>
-      <li><strong>The season drains your legs.</strong> Studies that tested pro and college hockey players week by week found jump height and leg power dropping as the season went on, with the worst numbers late in the year, right before playoffs.</li>
-      <li><strong>One session a week holds the line.</strong> Pro soccer players who kept one strength session a week held their strength and sprint speed for 12 weeks. The group that dropped to one session every two weeks lost both.</li>
-      <li><strong>Keep the weight, cut everything else.</strong> To maintain, you can cut sessions, sets and time. What you cannot cut is intensity: heavy loads and full-speed sprints.</li>
-      <li><strong>Timing beats volume.</strong> Heavy leg work goes at least 48 hours before your next game. The day before a game: nothing heavy, nothing new.</li>
-      <li><strong>Kids are the exception.</strong> For young players the in-season risk is usually too much, not too little. Count the hours before you add anything.</li>
-    </ul>
-  </div>
+<h2 id="session">The 25-minute in-season session</h2>
+<p>This is the main session: a little power first, then strength, in the order your nervous system wants it. It works in a gym, or at home with a pair of dumbbells. Every exercise links to a demo video.</p>
+<div class="isx-block reveal"><div class="isx-title">Main session · 25 min · 1 to 2 times a week</div><div class="isx-grid">
+<div class="isx-group">Prep · 4 min</div>
+<a class="isx-card" href="/exercises/world-s-greatest-stretch.html"><span class="isx-thumb"><img src="/assets/articles/in-season/world-s-greatest-stretch.webp" alt="World's Greatest Stretch" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">World's Greatest Stretch</span><span class="isx-sets">1 × 3 per side</span></span></a>
+<a class="isx-card" href="/exercises/90-90-hip-switch.html"><span class="isx-thumb"><img src="/assets/articles/in-season/90-90-hip-switch.webp" alt="90/90 Hip Switch" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">90/90 Hip Switch</span><span class="isx-sets">1 × 6 per side</span></span></a>
+<div class="isx-group">Power · 4 min</div>
+<a class="isx-card" href="/exercises/broad-jump.html"><span class="isx-thumb"><img src="/assets/articles/in-season/broad-jump.webp" alt="Broad Jump" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Broad Jump</span><span class="isx-sets">3 × 3, full rest</span></span></a>
+<a class="isx-card" href="/exercises/lateral-bound-stick.html"><span class="isx-thumb"><img src="/assets/articles/in-season/lateral-bound-stick.webp" alt="Lateral Bound, Stick" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Lateral Bound, Stick</span><span class="isx-sets">2 × 3 per side</span></span></a>
+<div class="isx-group">Strength · 12 min</div>
+<a class="isx-card" href="/exercises/trap-bar-deadlift.html"><span class="isx-thumb"><img src="/assets/articles/in-season/trap-bar-deadlift.webp" alt="Trap Bar Deadlift or DB RDL" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Trap Bar Deadlift or DB RDL</span><span class="isx-sets">3 × 3–5, heavy</span></span></a>
+<a class="isx-card" href="/exercises/bulgarian-split-squat.html"><span class="isx-thumb"><img src="/assets/articles/in-season/bulgarian-split-squat.webp" alt="Bulgarian Split Squat" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Bulgarian Split Squat</span><span class="isx-sets">2 × 5 per side</span></span></a>
+<a class="isx-card" href="/exercises/dumbbell-row.html"><span class="isx-thumb"><img src="/assets/articles/in-season/dumbbell-row.webp" alt="Dumbbell Row paired with Push-Up" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Dumbbell Row paired with Push-Up</span><span class="isx-sets">2 × 6–8 each</span></span></a>
+<div class="isx-group">Groin and trunk · 4 min</div>
+<a class="isx-card" href="/exercises/copenhagen-plank-short.html"><span class="isx-thumb"><img src="/assets/articles/in-season/copenhagen-plank-short.webp" alt="Copenhagen Plank (Short)" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Copenhagen Plank (Short)</span><span class="isx-sets">2 × 20 s per side</span></span></a>
+<a class="isx-card" href="/exercises/dead-bug.html"><span class="isx-thumb"><img src="/assets/articles/in-season/dead-bug.webp" alt="Dead Bug" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Dead Bug</span><span class="isx-sets">2 × 6 per side</span></span></a>
+</div></div>
+<h3>The three rules that make it work</h3>
+<ol>
+<li><strong>Leave two reps in the tank</strong> on every strength set. Heavy, but never a grind. You are maintaining, not testing.</li>
+<li><strong>Jumps and sprints only count when they are fast.</strong> The moment they slow down, the set is over.</li>
+<li><strong>Sore the next day? Cut a set next time, never the weight.</strong> Intensity is the thing you are protecting.</li>
+</ol>
+<h3>The 15-minute speed and power session</h3>
+<p>Short, sharp and fully rested. Walk back between sprints and take 60 to 90 seconds before the next one.</p>
+<figure class="vid-fig reveal"><a href="/exercises/lateral-skater-bound.html" aria-label="Lateral Skater Bound"><video autoplay muted loop playsinline preload="metadata" poster="/assets/video/drill-skater.jpg" width="640" height="360"><source src="/assets/video/drill-skater.mp4" type="video/mp4"></video></a><figcaption><strong>Lateral Skater Bound</strong> · 3 × 3 per side · Coach David's demo</figcaption></figure>
+<div class="isx-block reveal"><div class="isx-title">Speed and power · 15 min · once a week</div><div class="isx-grid">
+<a class="isx-card" href="/exercises/falling-start-sprint.html"><span class="isx-thumb"><img src="/assets/articles/in-season/falling-start-sprint.webp" alt="Falling Start Sprint" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Falling Start Sprint</span><span class="isx-sets">4 × 10 m</span></span></a>
+<a class="isx-card" href="/exercises/10m-acceleration-sprint.html"><span class="isx-thumb"><img src="/assets/articles/in-season/10m-acceleration-sprint.webp" alt="10m Acceleration Sprint" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">10m Acceleration Sprint</span><span class="isx-sets">3 × 10 m</span></span></a>
+<a class="isx-card" href="/exercises/lateral-skater-bound.html"><span class="isx-thumb"><img src="/assets/articles/in-season/lateral-skater-bound.webp" alt="Lateral Skater Bound" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Lateral Skater Bound</span><span class="isx-sets">3 × 3 per side</span></span></a>
+<a class="isx-card" href="/exercises/rotational-med-ball-toss.html"><span class="isx-thumb"><img src="/assets/articles/in-season/rotational-med-ball-toss.webp" alt="Rotational Med Ball Toss" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Rotational Med Ball Toss</span><span class="isx-sets">3 × 4 per side</span></span></a>
+<a class="isx-card" href="/exercises/pogo-hops.html"><span class="isx-thumb"><img src="/assets/articles/in-season/pogo-hops.webp" alt="Pogo Hops" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Pogo Hops</span><span class="isx-sets">2 × 15</span></span></a>
+</div></div>
+<h2 id="conditioning">Do you still need conditioning?</h2>
+<p>If you play big minutes, mostly no. Games and hard practices are your conditioning, and extra intervals on top just add fatigue you then have to recover from.</p>
+<p>If you do not play big minutes, the answer changes. The season review above found aerobic fitness tends to slide over the year in college players, and a player on the fourth line, the third pair, the backup goalie spot or coming back from an injury gets less of the conditioning that games give everyone else. Add one short piece a week: 6 to 8 rounds of 30 seconds hard and 90 seconds easy on a bike, on a day at least 48 hours from your next game.</p>
+<h2 id="groin">The one exercise you never drop</h2>
+<p>Groin strains are one of hockey's signature injuries, and they mostly happen in games. The fix is well studied. On one NHL team, players with weak adductors did a strengthening program, and <a href="https://pubmed.ncbi.nlm.nih.gov/12239001/" rel="noopener" target="_blank">adductor strains fell from 3.2 to 0.71 per 1,000 player-games</a> over the next two seasons. In soccer, a program built on a single exercise, the Copenhagen adduction, done three times a week in the preseason and <a href="https://bjsm.bmj.com/content/53/3/150" rel="noopener" target="_blank">once a week during the season, cut the risk of groin problems by 41%</a>.</p>
+<figure class="ph-fig reveal"><a href="/exercises/copenhagen-plank-short.html"><img src="/assets/articles/in-season/copenhagen-plank-short-lg.webp" alt="Copenhagen Plank (Short)" loading="lazy" width="960" height="540"></a><figcaption><strong>Copenhagen Plank (Short)</strong> · 2 × 20 s per side · Coach David's demo</figcaption></figure>
+<p>Once a week is the in-season dose, and it takes two minutes. Keep the <a href="/exercises/copenhagen-plank-short.html">Copenhagen Plank</a> in your main session and do not drop it when the schedule gets busy. That is exactly when you need it. The full breakdown, including the strength test that predicts groin strains, is in our guide to <a href="/hockey-injury-prevention.html">injury-proofing your hockey season</a>.</p>
+<h2 id="ages">What changes by age</h2>
+<figure class="ph-fig reveal"><img src="/assets/articles/youth-dryland.jpg" alt="For young players the season is a big part of development. Keep their off-ice work short and playful." loading="lazy" width="2000" height="1125"><figcaption>For young players the season is a big part of development. Keep their off-ice work short and playful.</figcaption></figure>
 
-  <!-- TOC -->
-  <nav class="art-toc reveal" aria-label="In this guide">
-    <div class="toc-head">In this guide</div>
-    <ol>
-      <li><a href="#slower">Why players get slower during the season</a></li>
-      <li><a href="#dose">The minimum dose that stops the slide</a></li>
-      <li><a href="#timing">The 48-hour rule</a></li>
-      <li><a href="#week">Your week, built around your games</a></li>
-      <li><a href="#session">The 25-minute in-season session</a></li>
-      <li><a href="#conditioning">Do you still need conditioning?</a></li>
-      <li><a href="#groin">The one exercise you never drop</a></li>
-      <li><a href="#ages">What changes by age</a></li>
-      <li><a href="#monitor">How to know you are doing too much</a></li>
-      <li><a href="#faq">Quick answers</a></li>
-      <li><a href="#bottom-line">The bottom line</a></li>
-    </ol>
-  </nav>
-
-  <article class="art-prose">
-
-    <p class="lead">Every September, players show up to the season about as fit as they will be all year. Then the off-ice work stops. There are practices, games, school, work, travel, and the gym starts to feel like something that belongs to summer. By February the first three strides are not what they were, the legs are heavy in the third period, and the groin that never bothered anyone starts to talk.</p>
-
-    <p>That slide is not bad luck. It is what a long season does to a body that stops getting a strength stimulus. The good news is that stopping it takes far less work than building it did. You do not need a summer program in the middle of winter. You need the right small dose, in the right place in the week.</p>
-
-    <h2 id="slower">Why players get slower during the season</h2>
-    <p>Hockey looks like it should keep you fit on its own. You are on the ice four or five times a week, skating hard, sweating through your gear. But practice is not a strength stimulus, and a long season piles up fatigue faster than practice can build anything back.</p>
-    <p>The research on this is remarkably consistent. An NHL team that tested its players with countermovement jumps every week found that <a href="https://pubmed.ncbi.nlm.nih.gov/33651739/" target="_blank" rel="noopener">jump height and velocity fell across the season</a>, with the biggest effect of fatigue in the late season. A study of an NCAA Division I team over an 18-week season found that <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" target="_blank" rel="noopener">lower-body power declined throughout the year</a>, with the sharpest drops after the longest travel stretches. Another college team produced <a href="https://pubmed.ncbi.nlm.nih.gov/24910956/" target="_blank" rel="noopener">less power in repeated sprints after the season than before it</a>, and the same sprints felt harder.</p>
-    <p>A 2021 systematic review that pulled together decades of season-long hockey studies came to the same place: recent research points to <a href="https://pubmed.ncbi.nlm.nih.gov/34387221/" target="_blank" rel="noopener">aerobic deconditioning and growing fatigue as the season goes on</a>, and the authors call for more work on limiting those losses in the later part of the year.</p>
-    <p>Read that again with playoffs in mind. The point where players are at their weakest is the point where the games matter most.</p>
-
-    <figure class="art-figure reveal" aria-labelledby="season-cap">
-      <svg viewBox="0 0 720 300" role="img" xmlns="http://www.w3.org/2000/svg">
-        <title>Leg power across a hockey season</title>
-        <desc>Illustration: without in-season strength work, leg power slides from September to March and is lowest late in the season. With one or two short heavy sessions a week, it holds steady.</desc>
-        <line x1="70" y1="60" x2="690" y2="60" stroke="#1B1B22" stroke-width="1"></line>
-        <line x1="70" y1="130" x2="690" y2="130" stroke="#1B1B22" stroke-width="1"></line>
-        <line x1="70" y1="200" x2="690" y2="200" stroke="#1B1B22" stroke-width="1"></line>
-        <line x1="70" y1="250" x2="690" y2="250" stroke="#2A2A33" stroke-width="1"></line>
-        <text x="40" y="160" transform="rotate(-90 40 160)" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="15" letter-spacing="0.08em" fill="#5A5F6B">LEG POWER</text>
-        <path d="M80 92 C 180 92, 230 92, 280 93 S 480 92, 680 90" fill="none" stroke="#5DB4E5" stroke-width="4" stroke-linecap="round"></path>
-        <path d="M80 92 C 170 96, 230 112, 300 130 S 470 170, 560 196 S 650 214, 680 220" fill="none" stroke="#E8B777" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 0"></path>
-        <circle cx="680" cy="90" r="6" fill="#5DB4E5"></circle>
-        <circle cx="680" cy="220" r="6" fill="#E8B777"></circle>
-        <text x="668" y="76" text-anchor="end" font-family="'Inter Tight',sans-serif" font-size="13" font-weight="600" fill="#5DB4E5">1–2 short heavy sessions a week</text>
-        <text x="668" y="244" text-anchor="end" font-family="'Inter Tight',sans-serif" font-size="13" font-weight="600" fill="#E8B777">Off-ice work stops in September</text>
-        <g font-family="'Inter Tight',sans-serif" font-size="11" fill="#5A5F6B" text-anchor="middle">
-          <text x="80" y="272">SEP</text><text x="180" y="272">OCT</text><text x="280" y="272">NOV</text><text x="380" y="272">DEC</text><text x="480" y="272">JAN</text><text x="580" y="272">FEB</text><text x="680" y="272">MAR</text>
-        </g>
-        <rect x="560" y="40" width="130" height="216" fill="#E8B777" fill-opacity="0.05"></rect>
-        <text x="625" y="54" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="14" letter-spacing="0.08em" fill="#E8B777">PLAYOFF STRETCH</text>
-      </svg>
-      <svg class="fig-mobile" viewBox="0 0 380 300" role="img" xmlns="http://www.w3.org/2000/svg">
-        <title>Leg power across a hockey season</title>
-        <desc>Illustration: without in-season strength work, leg power slides through the season. With one or two short heavy sessions a week, it holds.</desc>
-        <line x1="20" y1="80" x2="360" y2="80" stroke="#1B1B22" stroke-width="1"></line>
-        <line x1="20" y1="150" x2="360" y2="150" stroke="#1B1B22" stroke-width="1"></line>
-        <line x1="20" y1="220" x2="360" y2="220" stroke="#2A2A33" stroke-width="1"></line>
-        <rect x="290" y="40" width="70" height="182" fill="#E8B777" fill-opacity="0.06"></rect>
-        <text x="325" y="56" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="13" letter-spacing="0.06em" fill="#E8B777">PLAYOFFS</text>
-        <path d="M24 100 C 120 100, 220 100, 352 98" fill="none" stroke="#5DB4E5" stroke-width="4" stroke-linecap="round"></path>
-        <path d="M24 100 C 90 106, 150 130, 210 155 S 320 192, 352 198" fill="none" stroke="#E8B777" stroke-width="4" stroke-linecap="round"></path>
-        <g font-family="'Inter Tight',sans-serif" font-size="11" fill="#5A5F6B" text-anchor="middle">
-          <text x="24" y="240">SEP</text><text x="188" y="240">DEC</text><text x="352" y="240">MAR</text>
-        </g>
-        <rect x="20" y="258" width="12" height="12" rx="3" fill="#5DB4E5"></rect>
-        <text x="40" y="269" font-family="'Inter Tight',sans-serif" font-size="13" font-weight="600" fill="#5DB4E5">1–2 short heavy sessions a week</text>
-        <rect x="20" y="280" width="12" height="12" rx="3" fill="#E8B777"></rect>
-        <text x="40" y="291" font-family="'Inter Tight',sans-serif" font-size="13" font-weight="600" fill="#E8B777">Off-ice work stops in September</text>
-      </svg>
-      <figcaption id="season-cap">The pattern the studies describe, drawn as a simple illustration (not to scale). Stop training and leg power slides, worst late in the season. A small weekly dose holds it.</figcaption>
-    </figure>
-
-    <div class="callout callout--youth reveal">
-      <span class="callout-tag">The exception: young players</span>
-      <p>A study that tested elite 13-year-old players at the start and end of a season found their <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5548157/" target="_blank" rel="noopener">muscular measures and every skating test improved during the season</a>. Growth and lots of ice time do a lot of the work at that age. For youth players the season is not something to survive, it is a big part of how they develop. More on that below.</p>
-    </div>
-
-    <h2 id="dose">The minimum dose that stops the slide</h2>
-    <p>Here is what most players get wrong. They assume in-season training has to look like off-season training, so when the schedule fills up they drop it completely. The research says the opposite: holding on to strength takes a fraction of the work it took to build it.</p>
-    <p>The clearest study comes from professional soccer, another sport with a long season and games every week. After a 10-week preseason with two strength sessions a week, players were split into two groups. One kept <a href="https://pubmed.ncbi.nlm.nih.gov/21873897/" target="_blank" rel="noopener">one strength session a week</a>. The other dropped to one session every two weeks. Over the first 12 weeks of the season, the once-a-week group kept their gains in leg strength and 40 m sprint time. The every-other-week group got weaker and slower.</p>
-    <p>A 2021 review on the smallest dose of training needed to keep fitness lands in the same place. In younger people, strength and muscle size <a href="https://pubmed.ncbi.nlm.nih.gov/33629972/" target="_blank" rel="noopener">can be held for months with as little as one session a week and one set per exercise</a>, as long as the load stays heavy. The authors' main conclusion is that intensity is the variable that matters. You can cut how often and how much. You cannot cut how hard.</p>
-
-    <blockquote class="pullquote reveal">To hold your strength in-season, cut the sessions, cut the sets, cut the time. <span>Never cut the weight.</span></blockquote>
-
-    <p>For a hockey player that means a short session: a few heavy sets, a few fast jumps and sprints, and out. Twenty-five minutes, not ninety.</p>
-
-    <h2 id="timing">The 48-hour rule</h2>
-    <p>Doing the work is half of it. Doing it at the right time is the other half. A game leaves fatigue behind, and so does heavy leg training. Stack them badly and you either play tired or train tired.</p>
-    <p>Studies that track players after matches show how long that fatigue hangs around. In one recent soccer study, <a href="https://www.mdpi.com/2411-5142/10/3/351" target="_blank" rel="noopener">jump height was still down 24 and 48 hours after a match</a>, and a marker of muscle damage was still raised at 48 hours. That is why the rule we use is simple:</p>
-    <ul>
-      <li><strong>Heavy legs:</strong> at least 48 hours before your next game.</li>
-      <li><strong>Short speed and jump work:</strong> up to 48 hours before, kept low volume and fully rested.</li>
-      <li><strong>Upper body, core and mobility:</strong> fine closer to a game.</li>
-      <li><strong>The day before a game:</strong> mobility only. Nothing heavy, nothing new.</li>
-      <li><strong>The day after a game:</strong> easy movement and mobility. Your first hard session comes after that.</li>
-    </ul>
-    <p>Why nothing new? A new exercise makes you sore even at light loads, because your muscles have not adapted to it yet. In-season, stick to movements you already know well. Save the experiments for summer.</p>
-    <h3>What about training on game day?</h3>
-    <p>Some pro teams run a short "primer" on the morning of a game: a few jumps, or two or three fairly heavy reps. A 2019 review found that low-volume, high-intensity strength work <a href="https://pubmed.ncbi.nlm.nih.gov/31203499/" target="_blank" rel="noopener">can improve performance for up to 48 hours afterwards</a>, but responses vary a lot between athletes. If you want to try it, keep it tiny and test it in a game that does not matter. Your pre-game warm-up is still the main event, and we break that down in <a href="/hockey-warm-up.html">the perfect hockey warm-up</a>.</p>
-
-    <h2 id="week">Your week, built around your games</h2>
-    <p>Most players fit one of three schedules. Find yours and slot the sessions in exactly like this. Practices stay where your team puts them. If a practice lands on a training day, do the off-ice session after the ice, not before.</p>
-
-    <div class="art-table-wrap reveal">
-      <table class="art-table fit days">
-        <caption>Schedule 1 · One game a week (Saturday)</caption>
-        <thead><tr><th>Day</th><th>Off-ice</th></tr></thead>
-        <tbody>
-          <tr><td>Sunday</td><td>Recovery: 20 min easy walk or bike, 10 min mobility</td></tr>
-          <tr><td>Monday</td><td><strong>Strength session</strong> (the main one, below)</td></tr>
-          <tr><td>Tuesday</td><td>Practice only</td></tr>
-          <tr><td>Wednesday</td><td><strong>Speed and power</strong>, 15 min</td></tr>
-          <tr><td>Thursday</td><td>Practice only</td></tr>
-          <tr><td>Friday</td><td>Mobility only, 10 min</td></tr>
-          <tr><td>Saturday</td><td>Game. Optional short primer in the morning</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="art-table-wrap reveal">
-      <table class="art-table fit days">
-        <caption>Schedule 2 · Two games a week (Wednesday and Saturday)</caption>
-        <thead><tr><th>Day</th><th>Off-ice</th></tr></thead>
-        <tbody>
-          <tr><td>Sunday</td><td>Recovery</td></tr>
-          <tr><td>Monday</td><td><strong>Strength session</strong>, short and heavy (48 h before Wednesday)</td></tr>
-          <tr><td>Tuesday</td><td>Mobility only</td></tr>
-          <tr><td>Wednesday</td><td>Game</td></tr>
-          <tr><td>Thursday</td><td>Recovery: easy movement and mobility</td></tr>
-          <tr><td>Friday</td><td>Mobility only</td></tr>
-          <tr><td>Saturday</td><td>Game</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p>Two games a week leaves room for one real session, and that is enough. The main session already has jumps in it, so you are covering power as well as strength.</p>
-
-    <div class="art-table-wrap reveal">
-      <table class="art-table fit days">
-        <caption>Schedule 3 · Weekend tournament (3 games, Friday to Sunday)</caption>
-        <thead><tr><th>Day</th><th>Off-ice</th></tr></thead>
-        <tbody>
-          <tr><td>Monday</td><td>Recovery. Sleep, food, easy movement</td></tr>
-          <tr><td>Tuesday</td><td><strong>Strength session</strong></td></tr>
-          <tr><td>Wednesday</td><td><strong>Speed and power</strong>, 15 min, or rest if the legs are heavy</td></tr>
-          <tr><td>Thursday</td><td>Mobility only</td></tr>
-          <tr><td>Friday to Sunday</td><td>Games. Between games: eat, sleep, 10 min mobility. No training</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <p>Short on time in a crazy week? Keep the strength session and drop the speed session. The strength session alone is what the research says holds your gains. Playing more than three times a week, like junior players or adults in two leagues? Drop to one 20-minute strength session on your freest day and keep the groin work. That is it.</p>
-
-    <div class="art-inline-cta reveal">
-      <div class="ic-text">
-        <h4>Let the app plan your week</h4>
-        <p>Tell Elite Hockey Drills when your games are. It builds your off-ice week around them, adapts when you miss a session, and has a demo video for every exercise.</p>
-      </div>
-      <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary" data-place="article_inseason_inline" target="_blank" rel="noopener">Try it free for 7 days
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-
-    <h2 id="session">The 25-minute in-season session</h2>
-    <p>This is the main session: a little power first, then strength, in the order your nervous system wants it. It works in a gym, or at home with a pair of dumbbells. Every exercise links to a demo video.</p>
-
-    <div class="art-table-wrap reveal">
-      <table class="art-table fit">
-        <caption>Main session · 25 min · 1 to 2 times a week</caption>
-        <thead><tr><th>Exercise</th><th>Sets × reps</th></tr></thead>
-        <tbody>
-          <tr class="grp"><td colspan="2">Prep · 4 min</td></tr>
-          <tr><td><a href="/exercises/world-s-greatest-stretch.html">World's Greatest Stretch</a></td><td>1 × 3 per side</td></tr>
-          <tr><td><a href="/exercises/90-90-hip-switch.html">90/90 Hip Switch</a></td><td>1 × 6 per side</td></tr>
-          <tr class="grp"><td colspan="2">Power · 4 min</td></tr>
-          <tr><td><a href="/exercises/broad-jump.html">Broad Jump</a></td><td>3 × 3, full rest</td></tr>
-          <tr><td><a href="/exercises/lateral-bound-stick.html">Lateral Bound, Stick</a></td><td>2 × 3 per side</td></tr>
-          <tr class="grp"><td colspan="2">Strength · 12 min</td></tr>
-          <tr><td><a href="/exercises/trap-bar-deadlift.html">Trap Bar Deadlift</a> or <a href="/exercises/db-rdl.html">DB RDL</a></td><td>3 × 3–5, heavy</td></tr>
-          <tr><td><a href="/exercises/bulgarian-split-squat.html">Bulgarian Split Squat</a></td><td>2 × 5 per side</td></tr>
-          <tr><td><a href="/exercises/dumbbell-row.html">Dumbbell Row</a> paired with <a href="/exercises/push-up.html">Push-Up</a></td><td>2 × 6–8 each</td></tr>
-          <tr class="grp"><td colspan="2">Groin and trunk · 4 min</td></tr>
-          <tr><td><a href="/exercises/copenhagen-plank-short.html">Copenhagen Plank (Short)</a></td><td>2 × 20 s per side</td></tr>
-          <tr><td><a href="/exercises/dead-bug.html">Dead Bug</a></td><td>2 × 6 per side</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3>The three rules that make it work</h3>
-    <ol>
-      <li><strong>Leave two reps in the tank</strong> on every strength set. Heavy, but never a grind. You are maintaining, not testing.</li>
-      <li><strong>Jumps and sprints only count when they are fast.</strong> The moment they slow down, the set is over.</li>
-      <li><strong>Sore the next day? Cut a set next time, never the weight.</strong> Intensity is the thing you are protecting.</li>
-    </ol>
-
-    <h3>The 15-minute speed and power session</h3>
-    <p>Short, sharp and fully rested. Walk back between sprints and take 60 to 90 seconds before the next one.</p>
-    <div class="art-table-wrap reveal">
-      <table class="art-table fit">
-        <caption>Speed and power · 15 min · once a week</caption>
-        <thead><tr><th>Exercise</th><th>Sets × reps</th></tr></thead>
-        <tbody>
-          <tr><td><a href="/exercises/falling-start-sprint.html">Falling Start Sprint</a></td><td>4 × 10 m</td></tr>
-          <tr><td><a href="/exercises/10m-acceleration-sprint.html">10m Acceleration Sprint</a></td><td>3 × 10 m</td></tr>
-          <tr><td><a href="/exercises/lateral-skater-bound.html">Lateral Skater Bound</a></td><td>3 × 3 per side</td></tr>
-          <tr><td><a href="/exercises/rotational-med-ball-toss.html">Rotational Med Ball Toss</a></td><td>3 × 4 per side</td></tr>
-          <tr><td><a href="/exercises/pogo-hops.html">Pogo Hops</a></td><td>2 × 15</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h2 id="conditioning">Do you still need conditioning?</h2>
-    <p>If you play big minutes, mostly no. Games and hard practices are your conditioning, and extra intervals on top just add fatigue you then have to recover from.</p>
-    <p>If you do not play big minutes, the answer changes. The season review above found aerobic fitness tends to slide over the year in college players, and a player on the fourth line, the third pair, the backup goalie spot or coming back from an injury gets less of the conditioning that games give everyone else. Add one short piece a week: 6 to 8 rounds of 30 seconds hard and 90 seconds easy on a bike, on a day at least 48 hours from your next game.</p>
-
-    <h2 id="groin">The one exercise you never drop</h2>
-    <p>Groin strains are one of hockey's signature injuries, and they mostly happen in games. The fix is well studied. On one NHL team, players with weak adductors did a strengthening program, and <a href="https://pubmed.ncbi.nlm.nih.gov/12239001/" target="_blank" rel="noopener">adductor strains fell from 3.2 to 0.71 per 1,000 player-games</a> over the next two seasons. In soccer, a program built on a single exercise, the Copenhagen adduction, done three times a week in the preseason and <a href="https://bjsm.bmj.com/content/53/3/150" target="_blank" rel="noopener">once a week during the season, cut the risk of groin problems by 41%</a>.</p>
-    <p>Once a week is the in-season dose, and it takes two minutes. Keep the <a href="/exercises/copenhagen-plank-short.html">Copenhagen Plank</a> in your main session and do not drop it when the schedule gets busy. That is exactly when you need it. The full breakdown, including the strength test that predicts groin strains, is in our guide to <a href="/hockey-injury-prevention.html">injury-proofing your hockey season</a>.</p>
-
-    <h2 id="ages">What changes by age</h2>
-    <div class="age-grid cols-3 reveal">
-      <div class="age-card is-youth">
-        <h4>Youth · 9 to 12</h4>
-        <p>Keep off-ice play-like: two short sessions of 15 to 20 minutes with jumps and landings, bodyweight strength, sprints and games. Watch the total load first. Kids who spend more than twice as much time in organized sport as in free play get hurt more often, and the lead researcher's advice is simple: no more hours of organized sport a week than the child's age in years.</p>
-      </div>
-      <div class="age-card is-teen">
-        <h4>Teens · 13 to 18</h4>
-        <p>The group that gains most from in-season strength work. One to two sessions a week with real loads and clean technique. During a growth spurt, if knees or heels hurt when jumping, cut the jump volume and get it checked by a physio rather than pushing through.</p>
-      </div>
-      <div class="age-card is-adult">
-        <h4>Adults · 19+</h4>
-        <p>Usually one game a week, often late at night, on top of work. Two sessions is ideal: one strength, one speed and mobility. Respect the 48-hour rule even more as you get older, and note that the minimal-dose review found older adults may need two sessions a week and two to three sets to keep their muscle.</p>
-      </div>
-    </div>
-
-    <div class="callout callout--youth reveal">
-      <span class="callout-tag">For parents</span>
-      <p>Before you add a single off-ice session in the middle of the season, add up the week: practices, games, skills sessions, private lessons, other sports. A 10-year-old with four practices, two games and a skills class is already close to ten hours. In that week, the best "training" you can give them is a free afternoon to play.</p>
-    </div>
-
-    <h2 id="monitor">How to know you are doing too much</h2>
-    <p>Pro teams track fatigue with weekly jump tests. That is exactly how the studies above caught the season's slide. You can run a simple version with a tape measure.</p>
-
-    <div class="callout callout--teen reveal">
-      <span class="callout-tag">The broad jump check</span>
-      <p>Once a week, on the same day, at the end of your warm-up, do three <a href="/exercises/broad-jump.html">broad jumps</a> and write down your best. If your best is clearly down two weeks in a row, take a lighter week: same weights, fewer sets, more sleep.</p>
-    </div>
-
-    <p>How you feel is data too. In the college study above, a simple <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" target="_blank" rel="noopener">fatigue questionnaire tracked closely with jump power</a>. Watch for these: legs heavy from the first shift, sleeping worse, a nagging groin or hip, dreading sessions you normally like. Two or more of those for a week means back off for a week. If sleep is the problem, start with our guide to <a href="/articles/sleep-and-recovery-for-hockey-players.html">sleep and recovery</a>.</p>
-
-    <div class="art-inline-cta reveal">
-      <div class="ic-text">
-        <h4>Get a free program for your age</h4>
-        <p>Answer a few quick questions and we will send you a free 5-day off-ice program built for your age group.</p>
-      </div>
-      <a href="https://elitehockeydrills.com/survey.html" class="btn btn-primary">Get My Free Program
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-
-    <h2 id="faq">Quick answers</h2>
-    <h3>Should hockey players lift weights during the season?</h3>
-    <p>Yes. One or two short, heavy sessions a week keep the strength and speed you built in the off-season. Players who stop completely tend to be at their weakest late in the season, right when the games matter most.</p>
-    <h3>How many times a week should I train off-ice during the season?</h3>
-    <p>One strength session a week is the minimum that holds your gains. Two, one strength and one speed and power, is ideal for teens and adults. Young players do best with two short, play-like sessions.</p>
-    <h3>Can I lift the day before a game?</h3>
-    <p>Not heavy legs. Keep heavy lower-body work at least 48 hours before a game. The day before, do mobility only.</p>
-    <h3>Can I work out on game day?</h3>
-    <p>A tiny primer in the morning, a few jumps or two or three fairly heavy reps, can help some players, but responses vary. Test it in a game that does not matter. Never do a full session on game day.</p>
-    <h3>Do I need cardio during the season?</h3>
-    <p>Not if you play big minutes. If you play little or are coming back from an injury, add one short interval session a week, at least 48 hours away from your next game.</p>
-    <h3>Will I lose my summer gains during the season?</h3>
-    <p>Not if you keep training heavy once a week. In professional soccer players, one session a week held strength and sprint speed for 12 weeks. One session every two weeks did not.</p>
-    <h3>What should I do during a tournament weekend?</h3>
-    <p>No training during the tournament. Do your strength session early in the week, recover afterwards, and use 10 minutes of mobility between games.</p>
-
-    <h2 id="bottom-line">The bottom line</h2>
-    <p>The season does not have to cost you your summer. Keep one heavy session a week, put it at least 48 hours away from your next game, add a short speed session when the schedule allows, and never drop the groin work. Twenty-five minutes a week is the difference between the player who fades in February and the one who is still flying in the playoffs.</p>
-
-    <div class="art-table-wrap reveal">
-      <table class="art-table fit">
-        <caption>In-season training, at a glance</caption>
-        <thead>
-          <tr><th>What</th><th>Dose</th><th>Why it matters</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Strength</td><td>1 to 2 × a week, heavy, 2 reps in the tank</td><td>Holds strength and sprint speed</td></tr>
-          <tr><td>Speed and power</td><td>1 × a week, 15 min, full rest</td><td>Keeps your first strides sharp</td></tr>
-          <tr><td>Groin (Copenhagen)</td><td>1 × a week, 2 × 20 s per side</td><td>Cuts groin injury risk</td></tr>
-          <tr><td>Heavy legs</td><td>At least 48 h before a game</td><td>You play fresh, not fried</td></tr>
-          <tr><td>Day before a game</td><td>Mobility only</td><td>Nothing heavy, nothing new</td></tr>
-          <tr><td>Extra conditioning</td><td>Only if you play few minutes</td><td>Games do the job for regulars</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- REFERENCES -->
-    <section class="references" aria-label="References">
-      <h2>References</h2>
-      <p class="ref-note">Every claim above is drawn from peer-reviewed research. Sources are listed below so you can read them yourself. The weekly schedules and sessions are our coaching application of that research.</p>
-      <ol>
-        <li>Gannon EA, Higham DG, Gardner BW, Nan N, Zhao J, Bisson LJ. Changes in neuromuscular status across a season of professional men's ice hockey. <em>Journal of Strength and Conditioning Research</em>. 2021;35(5):1338–1344. <a href="https://pubmed.ncbi.nlm.nih.gov/33651739/" target="_blank" rel="noopener">PubMed 33651739</a></li>
-        <li>Whitehead PN, Conners RT, Shimizu TS. The effect of in-season demands on lower-body power and fatigue in male collegiate hockey players. <em>Journal of Strength and Conditioning Research</em>. 2019;33(4):1035–1042. <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" target="_blank" rel="noopener">PubMed 30908458</a></li>
-        <li>Laurent CM, Fullenkamp AM, Morgan AL, Fischer DA. Power, fatigue, and recovery changes in National Collegiate Athletic Association Division I hockey players across a competitive season. <em>Journal of Strength and Conditioning Research</em>. 2014;28(12):3338–3345. <a href="https://pubmed.ncbi.nlm.nih.gov/24910956/" target="_blank" rel="noopener">PubMed 24910956</a></li>
-        <li>Chiarlitti NA, Crozier M, Insogna JA, Reid RER, Delisle-Houde P. Longitudinal physiological and fitness evaluations in elite ice hockey: a systematic review. <em>Journal of Strength and Conditioning Research</em>. 2021;35(10):2963–2979. <a href="https://pubmed.ncbi.nlm.nih.gov/34387221/" target="_blank" rel="noopener">PubMed 34387221</a></li>
-        <li>Allisse M, Sercia P, Comtois AS, Leone M. Morphological, physiological and skating performance profiles of male age-group elite ice hockey players. <em>Journal of Human Kinetics</em>. 2017;58:87–97. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5548157/" target="_blank" rel="noopener">PMC5548157</a></li>
-        <li>Rønnestad BR, Nymark BS, Raastad T. Effects of in-season strength maintenance training frequency in professional soccer players. <em>Journal of Strength and Conditioning Research</em>. 2011;25(10):2653–2660. <a href="https://pubmed.ncbi.nlm.nih.gov/21873897/" target="_blank" rel="noopener">PubMed 21873897</a></li>
-        <li>Spiering BA, Mujika I, Sharp MA, Foulis SA. Maintaining physical performance: the minimal dose of exercise needed to preserve endurance and strength over time. <em>Journal of Strength and Conditioning Research</em>. 2021;35(5):1449–1458. <a href="https://pubmed.ncbi.nlm.nih.gov/33629972/" target="_blank" rel="noopener">PubMed 33629972</a></li>
-        <li>Marqués-Jiménez D, Ramirez-Jimenez M, Izquierdo JM, et al. Recovery after an official soccer match: an analysis of markers of muscle damage and oxidative stress, and endocrine, neuromuscular and perceptual responses. <em>Journal of Functional Morphology and Kinesiology</em>. 2025;10(3):351. <a href="https://www.mdpi.com/2411-5142/10/3/351" target="_blank" rel="noopener">mdpi.com</a></li>
-        <li>Harrison PW, James LP, McGuigan MR, Jenkins DG, Kelly VG. Resistance priming to enhance neuromuscular performance in sport: evidence, potential mechanisms and directions for future research. <em>Sports Medicine</em>. 2019;49(10):1499–1514. <a href="https://pubmed.ncbi.nlm.nih.gov/31203499/" target="_blank" rel="noopener">PubMed 31203499</a></li>
-        <li>Tyler TF, Nicholas SJ, Campbell RJ, Donellan S, McHugh MP. The effectiveness of a preseason exercise program to prevent adductor muscle strains in professional ice hockey players. <em>American Journal of Sports Medicine</em>. 2002;30(5):680–683. <a href="https://pubmed.ncbi.nlm.nih.gov/12239001/" target="_blank" rel="noopener">PubMed 12239001</a></li>
-        <li>Harøy J, Clarsen B, Wiger EG, et al. The Adductor Strengthening Programme prevents groin problems among male football players: a cluster-randomised controlled trial. <em>British Journal of Sports Medicine</em>. 2019;53(3):150–157. <a href="https://bjsm.bmj.com/content/53/3/150" target="_blank" rel="noopener">bjsm.bmj.com</a></li>
-        <li>Jayanthi NA, LaBella CR, Fischer D, Pasulka J, Dugas LR. Sports-specialized intensive training and the risk of injury in young athletes: a clinical case-control study. <em>American Journal of Sports Medicine</em>. 2015;43(4):794–801. <a href="https://pubmed.ncbi.nlm.nih.gov/25646361/" target="_blank" rel="noopener">PubMed 25646361</a></li>
-      </ol>
-    </section>
-
-    <!-- AUTHOR BIO -->
-    <div class="author-bio reveal">
-      <img src="/coach.jpg" alt="Coach David Ciboch" />
-      <div>
-        <div class="ab-name">Coach David Ciboch</div>
-        <div class="ab-role">M.Ed. Sport Science · Former National Team Coach</div>
-        <p>David builds science-based off-ice training for hockey players at every level, from first-year youth skaters to adult and masters players. Elite Hockey Drills exists to put real sport science in the hands of players who want to train smarter, not just harder.</p>
-      </div>
-    </div>
-
-  </article>
+<div class="age-grid cols-3 reveal">
+<div class="age-card is-youth">
+<h4>Youth · 9 to 12</h4>
+<p>Keep off-ice play-like: two short sessions of 15 to 20 minutes with jumps and landings, bodyweight strength, sprints and games. Watch the total load first. Kids who spend more than twice as much time in organized sport as in free play get hurt more often, and the lead researcher's advice is simple: no more hours of organized sport a week than the child's age in years.</p>
+</div>
+<div class="age-card is-teen">
+<h4>Teens · 13 to 18</h4>
+<p>The group that gains most from in-season strength work. One to two sessions a week with real loads and clean technique. During a growth spurt, if knees or heels hurt when jumping, cut the jump volume and get it checked by a physio rather than pushing through.</p>
+</div>
+<div class="age-card is-adult">
+<h4>Adults · 19+</h4>
+<p>Usually one game a week, often late at night, on top of work. Two sessions is ideal: one strength, one speed and mobility. Respect the 48-hour rule even more as you get older, and note that the minimal-dose review found older adults may need two sessions a week and two to three sets to keep their muscle.</p>
+</div>
+</div>
+<div class="callout callout--youth reveal">
+<span class="callout-tag">For parents</span>
+<p>Before you add a single off-ice session in the middle of the season, add up the week: practices, games, skills sessions, private lessons, other sports. A 10-year-old with four practices, two games and a skills class is already close to ten hours. In that week, the best "training" you can give them is a free afternoon to play.</p>
+</div>
+<h2 id="monitor">How to know you are doing too much</h2>
+<p>Pro teams track fatigue with weekly jump tests. That is exactly how the studies above caught the season's slide. You can run a simple version with a tape measure.</p>
+<div class="callout callout--teen reveal">
+<span class="callout-tag">The broad jump check</span>
+<p>Once a week, on the same day, at the end of your warm-up, do three <a href="/exercises/broad-jump.html">broad jumps</a> and write down your best. If your best is clearly down two weeks in a row, take a lighter week: same weights, fewer sets, more sleep.</p>
+</div>
+<p>How you feel is data too. In the college study above, a simple <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" rel="noopener" target="_blank">fatigue questionnaire tracked closely with jump power</a>. Watch for these: legs heavy from the first shift, sleeping worse, a nagging groin or hip, dreading sessions you normally like. Two or more of those for a week means back off for a week. If sleep is the problem, start with our guide to <a href="/articles/sleep-and-recovery-for-hockey-players.html">sleep and recovery</a>.</p>
+<div class="art-inline-cta reveal">
+<div class="ic-text">
+<h4>Get a free program for your age</h4>
+<p>Answer a few quick questions and we will send you a free 5-day off-ice program built for your age group.</p>
+</div>
+<a class="btn btn-primary" href="https://elitehockeydrills.com/survey.html"> Get My Free Program <svg aria-hidden="true" fill="none" height="16" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24" width="16"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+</a>
+</div>
+<h2 id="faq">Quick answers</h2>
+<h3>Should hockey players lift weights during the season?</h3>
+<p>Yes. One or two short, heavy sessions a week keep the strength and speed you built in the off-season. Players who stop completely tend to be at their weakest late in the season, right when the games matter most.</p>
+<h3>How many times a week should I train off-ice during the season?</h3>
+<p>One strength session a week is the minimum that holds your gains. Two, one strength and one speed and power, is ideal for teens and adults. Young players do best with two short, play-like sessions.</p>
+<h3>Can I lift the day before a game?</h3>
+<p>Not heavy legs. Keep heavy lower-body work at least 48 hours before a game. The day before, do mobility only.</p>
+<h3>Can I work out on game day?</h3>
+<p>A tiny primer in the morning, a few jumps or two or three fairly heavy reps, can help some players, but responses vary. Test it in a game that does not matter. Never do a full session on game day.</p>
+<h3>Do I need cardio during the season?</h3>
+<p>Not if you play big minutes. If you play little or are coming back from an injury, add one short interval session a week, at least 48 hours away from your next game.</p>
+<h3>Will I lose my summer gains during the season?</h3>
+<p>Not if you keep training heavy once a week. In professional soccer players, one session a week held strength and sprint speed for 12 weeks. One session every two weeks did not.</p>
+<h3>What should I do during a tournament weekend?</h3>
+<p>No training during the tournament. Do your strength session early in the week, recover afterwards, and use 10 minutes of mobility between games.</p>
+<h2 id="bottom-line">The bottom line</h2>
+<p>The season does not have to cost you your summer. Keep one heavy session a week, put it at least 48 hours away from your next game, add a short speed session when the schedule allows, and never drop the groin work. Twenty-five minutes a week is the difference between the player who fades in February and the one who is still flying in the playoffs.</p>
+<div class="art-table-wrap reveal">
+<table class="art-table fit">
+<caption>In-season training, at a glance</caption>
+<thead>
+<tr><th>What</th><th>Dose</th><th>Why it matters</th></tr>
+</thead>
+<tbody>
+<tr><td>Strength</td><td>1 to 2 × a week, heavy, 2 reps in the tank</td><td>Holds strength and sprint speed</td></tr>
+<tr><td>Speed and power</td><td>1 × a week, 15 min, full rest</td><td>Keeps your first strides sharp</td></tr>
+<tr><td>Groin (Copenhagen)</td><td>1 × a week, 2 × 20 s per side</td><td>Cuts groin injury risk</td></tr>
+<tr><td>Heavy legs</td><td>At least 48 h before a game</td><td>You play fresh, not fried</td></tr>
+<tr><td>Day before a game</td><td>Mobility only</td><td>Nothing heavy, nothing new</td></tr>
+<tr><td>Extra conditioning</td><td>Only if you play few minutes</td><td>Games do the job for regulars</td></tr>
+</tbody>
+</table>
+</div>
+<!-- REFERENCES -->
+<section aria-label="References" class="references">
+<h2>References</h2>
+<p class="ref-note">Every claim above is drawn from peer-reviewed research. Sources are listed below so you can read them yourself. The weekly schedules and sessions are our coaching application of that research.</p>
+<ol>
+<li>Gannon EA, Higham DG, Gardner BW, Nan N, Zhao J, Bisson LJ. Changes in neuromuscular status across a season of professional men's ice hockey. <em>Journal of Strength and Conditioning Research</em>. 2021;35(5):1338–1344. <a href="https://pubmed.ncbi.nlm.nih.gov/33651739/" rel="noopener" target="_blank">PubMed 33651739</a></li>
+<li>Whitehead PN, Conners RT, Shimizu TS. The effect of in-season demands on lower-body power and fatigue in male collegiate hockey players. <em>Journal of Strength and Conditioning Research</em>. 2019;33(4):1035–1042. <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" rel="noopener" target="_blank">PubMed 30908458</a></li>
+<li>Laurent CM, Fullenkamp AM, Morgan AL, Fischer DA. Power, fatigue, and recovery changes in National Collegiate Athletic Association Division I hockey players across a competitive season. <em>Journal of Strength and Conditioning Research</em>. 2014;28(12):3338–3345. <a href="https://pubmed.ncbi.nlm.nih.gov/24910956/" rel="noopener" target="_blank">PubMed 24910956</a></li>
+<li>Chiarlitti NA, Crozier M, Insogna JA, Reid RER, Delisle-Houde P. Longitudinal physiological and fitness evaluations in elite ice hockey: a systematic review. <em>Journal of Strength and Conditioning Research</em>. 2021;35(10):2963–2979. <a href="https://pubmed.ncbi.nlm.nih.gov/34387221/" rel="noopener" target="_blank">PubMed 34387221</a></li>
+<li>Allisse M, Sercia P, Comtois AS, Leone M. Morphological, physiological and skating performance profiles of male age-group elite ice hockey players. <em>Journal of Human Kinetics</em>. 2017;58:87–97. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5548157/" rel="noopener" target="_blank">PMC5548157</a></li>
+<li>Rønnestad BR, Nymark BS, Raastad T. Effects of in-season strength maintenance training frequency in professional soccer players. <em>Journal of Strength and Conditioning Research</em>. 2011;25(10):2653–2660. <a href="https://pubmed.ncbi.nlm.nih.gov/21873897/" rel="noopener" target="_blank">PubMed 21873897</a></li>
+<li>Spiering BA, Mujika I, Sharp MA, Foulis SA. Maintaining physical performance: the minimal dose of exercise needed to preserve endurance and strength over time. <em>Journal of Strength and Conditioning Research</em>. 2021;35(5):1449–1458. <a href="https://pubmed.ncbi.nlm.nih.gov/33629972/" rel="noopener" target="_blank">PubMed 33629972</a></li>
+<li>Marqués-Jiménez D, Ramirez-Jimenez M, Izquierdo JM, et al. Recovery after an official soccer match: an analysis of markers of muscle damage and oxidative stress, and endocrine, neuromuscular and perceptual responses. <em>Journal of Functional Morphology and Kinesiology</em>. 2025;10(3):351. <a href="https://www.mdpi.com/2411-5142/10/3/351" rel="noopener" target="_blank">mdpi.com</a></li>
+<li>Harrison PW, James LP, McGuigan MR, Jenkins DG, Kelly VG. Resistance priming to enhance neuromuscular performance in sport: evidence, potential mechanisms and directions for future research. <em>Sports Medicine</em>. 2019;49(10):1499–1514. <a href="https://pubmed.ncbi.nlm.nih.gov/31203499/" rel="noopener" target="_blank">PubMed 31203499</a></li>
+<li>Tyler TF, Nicholas SJ, Campbell RJ, Donellan S, McHugh MP. The effectiveness of a preseason exercise program to prevent adductor muscle strains in professional ice hockey players. <em>American Journal of Sports Medicine</em>. 2002;30(5):680–683. <a href="https://pubmed.ncbi.nlm.nih.gov/12239001/" rel="noopener" target="_blank">PubMed 12239001</a></li>
+<li>Harøy J, Clarsen B, Wiger EG, et al. The Adductor Strengthening Programme prevents groin problems among male football players: a cluster-randomised controlled trial. <em>British Journal of Sports Medicine</em>. 2019;53(3):150–157. <a href="https://bjsm.bmj.com/content/53/3/150" rel="noopener" target="_blank">bjsm.bmj.com</a></li>
+<li>Jayanthi NA, LaBella CR, Fischer D, Pasulka J, Dugas LR. Sports-specialized intensive training and the risk of injury in young athletes: a clinical case-control study. <em>American Journal of Sports Medicine</em>. 2015;43(4):794–801. <a href="https://pubmed.ncbi.nlm.nih.gov/25646361/" rel="noopener" target="_blank">PubMed 25646361</a></li>
+</ol>
+</section>
+<!-- AUTHOR BIO -->
+<div class="author-bio reveal">
+<img alt="Coach David Ciboch" src="/coach.jpg"/>
+<div>
+<div class="ab-name">Coach David Ciboch</div>
+<div class="ab-role">M.Ed. Sport Science · Former National Team Coach</div>
+<p>David builds science-based off-ice training for hockey players at every level, from first-year youth skaters to adult and masters players. Elite Hockey Drills exists to put real sport science in the hands of players who want to train smarter, not just harder.</p>
+</div>
+</div>
+</article>
 </div><!-- /.art-body -->
-
 
 <!-- NEWSLETTER -->
 <section class="art-news" aria-labelledby="news-h">

@@ -53,6 +53,27 @@
   .art-table.fit.days td:first-child{width:28%}
   .art-table.fit td:first-child{width:auto}
 }
+
+/* In-season article: visuals */
+.ph-fig,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-fig img,.vid-fig video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;border:1px solid var(--line);background:var(--bg-3)}
+.ph-fig a,.vid-fig a{border-bottom:none!important;display:block}
+.ph-fig figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13px;color:var(--ink-3);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
+.ph-fig figcaption strong,.vid-fig figcaption strong{color:var(--ink-2);font-weight:600}
+.app-shots .app-row{display:flex;justify-content:center;align-items:flex-start;gap:18px;padding:28px 16px;background:radial-gradient(circle at 50% 0%,var(--ice-soft),transparent 70%),var(--card);border:1px solid var(--line);border-radius:18px}
+.app-shots img{width:44%;max-width:230px;height:auto;aspect-ratio:640/1418;object-fit:cover;object-position:top;border-radius:24px;border:1px solid var(--line-2);box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.isx-block{max-width:var(--art-measure);margin:24px auto 38px}
+.isx-title{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.isx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.isx-group{grid-column:1/-1;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ice);margin-top:16px}
+.art-prose a.isx-card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;color:inherit;transition:border-color .2s,transform .2s}
+.art-prose a.isx-card:hover{border-color:var(--ice-line);transform:translateY(-2px)}
+.isx-thumb{display:block;aspect-ratio:16/9;overflow:hidden;background:var(--bg-3)}
+.isx-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.isx-body{display:flex;flex-direction:column;gap:4px;padding:10px 12px 12px}
+.isx-name{font-size:14px;font-weight:600;color:var(--ink);line-height:1.3}
+.isx-sets{font-size:13px;color:var(--warm);font-weight:600}
+@media(max-width:600px){.isx-grid{grid-template-columns:repeat(2,1fr);gap:10px}.isx-name{font-size:13px}.isx-sets{font-size:12px}.isx-body{padding:9px 10px 11px}.app-shots .app-row{gap:12px;padding:22px 12px}}
 </style>
 
 <style>
@@ -184,6 +205,7 @@
 <p>Ten pokles není smůla. Je to to, co dlouhá sezóna udělá s&nbsp;tělem, které přestane dostávat silový podnět. Dobrá zpráva je, že ho zastavit stojí mnohem méně práce než formu vybudovat. Uprostřed zimy nepotřebuješ letní program. Potřebuješ správnou malou dávku na správném místě v&nbsp;týdnu.</p>
 <h2 id="slower">Proč hráči během sezóny zpomalují</h2>
 <p>Hokej vypadá, že by tě měl udržet ve formě sám od sebe. Jsi na ledě čtyřikrát nebo pětkrát týdně, bruslíš naplno a&nbsp;propotíš výstroj. Jenže trénink na ledě není silový podnět a&nbsp;dlouhá sezóna nabaluje únavu rychleji, než ji tréninky stihnou vyrovnat.</p>
+<figure class="ph-fig reveal"><img src="/assets/articles/training.jpg" alt="Výbušnost nohou je první, o co tě dlouhá sezóna připraví. Udržet ji přitom stojí nejmíň práce." loading="lazy" width="1600" height="900"><figcaption>Výbušnost nohou je první, o&nbsp;co tě dlouhá sezóna připraví. Udržet ji přitom stojí nejmíň práce.</figcaption></figure>
 <p>Výzkum je tu nápadně jednotný. Tým NHL, který své hráče každý týden testoval výskokem z&nbsp;podřepu (countermovement jump), zjistil, že <a href="https://pubmed.ncbi.nlm.nih.gov/33651739/" rel="noopener" target="_blank">výška a&nbsp;rychlost výskoku během sezóny klesaly</a> a&nbsp;únava se nejvíc projevila na jejím konci. Studie týmu NCAA Division I&nbsp;během 18týdenní sezóny ukázala, že <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" rel="noopener" target="_blank">výbušnost dolních končetin klesala celý rok</a>, nejprudčeji po nejdelších výjezdech. Další univerzitní tým podával <a href="https://pubmed.ncbi.nlm.nih.gov/24910956/" rel="noopener" target="_blank">v&nbsp;opakovaných sprintech po sezóně menší výkon než před ní</a> a&nbsp;stejné sprinty mu připadaly těžší.</p>
 <p>Systematický přehled z&nbsp;roku 2021, který shrnul desítky let hokejových studií sledujících celou sezónu, došel ke stejnému závěru: novější výzkum ukazuje na <a href="https://pubmed.ncbi.nlm.nih.gov/34387221/" rel="noopener" target="_blank">pokles aerobní kondice a&nbsp;narůstající únavu v&nbsp;průběhu sezóny</a> a&nbsp;autoři volají po tom, aby se tyto ztráty v&nbsp;závěru roku víc řešily.</p>
 <p>Přečti si to znovu s&nbsp;play-off na mysli. Hráči jsou nejslabší přesně ve chvíli, kdy na zápasech záleží nejvíc.</p>
@@ -248,6 +270,7 @@
 <li><strong>Den před zápasem:</strong> jen mobilita. Nic těžkého, nic nového.</li>
 <li><strong>Den po zápase:</strong> lehký pohyb a&nbsp;mobilita. První těžký trénink přijde až potom.</li>
 </ul>
+<figure class="ph-fig reveal"><img src="/assets/articles/skating-speed.jpg" alt="Den zápasu je na hraní. Těžká práce proběhla nejméně o 48 hodin dřív." loading="lazy" width="2000" height="1116"><figcaption>Den zápasu je na hraní. Těžká práce proběhla nejméně o&nbsp;48&nbsp;hodin dřív.</figcaption></figure>
 <p>Proč nic nového? Nový cvik tě rozbolí i&nbsp;s lehkou zátěží, protože si na něj svaly ještě nezvykly. V&nbsp;sezóně se drž pohybů, které dobře znáš. Experimenty si nech na léto.</p>
 <h3>A&nbsp;co trénink v&nbsp;den zápasu?</h3>
 <p>Některé profesionální týmy dělají ráno v&nbsp;den zápasu krátký „primer“: pár skoků nebo dvě tři docela těžká opakování. Přehled z&nbsp;roku 2019&nbsp;zjistil, že silový trénink s&nbsp;malým objemem a&nbsp;vysokou intenzitou <a href="https://pubmed.ncbi.nlm.nih.gov/31203499/" rel="noopener" target="_blank">může zlepšit výkon až na 48&nbsp;hodin</a>, reakce se ale mezi sportovci hodně liší. Pokud to chceš zkusit, udělej to opravdu malé a&nbsp;vyzkoušej to v&nbsp;zápase, na kterém nezáleží. Hlavní je pořád rozcvička před zápasem, kterou rozebíráme v&nbsp;článku <a href="/cs/hockey-warm-up.html">dokonalá hokejová rozcvička</a>.</p>
@@ -306,29 +329,25 @@
 <a class="btn btn-primary" data-place="article_inseason_inline" href="https://apps.apple.com/cz/app/elite-hockey-drills/id6787257275" rel="noopener" target="_blank"> Vyzkoušej 7&nbsp;dní zdarma <svg aria-hidden="true" fill="none" height="16" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24" width="16"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
 </a>
 </div>
+<figure class="app-shots reveal"><div class="app-row"><img src="/assets/app/app-gameday-cs.webp" alt="Průvodce dnem zápasu v aplikaci Elite Hockey Drills" loading="lazy" width="640" height="1536"><img src="/assets/app/app-program-cs.webp" alt="Tréninkový týden naplánovaný kolem zápasů v aplikaci Elite Hockey Drills" loading="lazy" width="640" height="1418"></div><figcaption>Průvodce dnem zápasu v&nbsp;aplikaci (vlevo) a&nbsp;tréninkový týden postavený kolem zápasů (vpravo).</figcaption></figure>
+
 <h2 id="session">25minutový trénink v&nbsp;sezóně</h2>
 <p>Tohle je hlavní trénink: nejdřív trocha výbušnosti, pak síla, v&nbsp;pořadí, jaké chce tvůj nervový systém. Funguje v&nbsp;posilovně i&nbsp;doma s&nbsp;párem jednoruček. Každý cvik odkazuje na ukázkové video.</p>
-<div class="art-table-wrap reveal">
-<table class="art-table fit">
-<caption>Hlavní trénink · 25&nbsp;min · 1&nbsp;až 2× týdně</caption>
-<thead><tr><th>Cvik</th><th>Série ×&nbsp;opakování</th></tr></thead>
-<tbody>
-<tr class="grp"><td colspan="2">Příprava · 4&nbsp;min</td></tr>
-<tr><td><a href="/cs/exercises/world-s-greatest-stretch.html">Nejlepší strečink na světě (World's Greatest Stretch)</a></td><td>1&nbsp;× 3&nbsp;na stranu</td></tr>
-<tr><td><a href="/cs/exercises/90-90-hip-switch.html">Přetáčení kyčlí 90/90</a></td><td>1&nbsp;× 6&nbsp;na stranu</td></tr>
-<tr class="grp"><td colspan="2">Výbušnost · 4&nbsp;min</td></tr>
-<tr><td><a href="/cs/exercises/broad-jump.html">Skok z&nbsp;místa</a></td><td>3&nbsp;× 3, plný odpočinek</td></tr>
-<tr><td><a href="/cs/exercises/lateral-bound-stick.html">Laterální odraz s&nbsp;dopadem</a></td><td>2&nbsp;× 3&nbsp;na stranu</td></tr>
-<tr class="grp"><td colspan="2">Síla · 12&nbsp;min</td></tr>
-<tr><td><a href="/cs/exercises/trap-bar-deadlift.html">Mrtvý tah s&nbsp;trap barem</a> nebo <a href="/cs/exercises/db-rdl.html">Rumunský mrtvý tah s&nbsp;jednoručkami (RDL)</a></td><td>3&nbsp;× 3–5, těžce</td></tr>
-<tr><td><a href="/cs/exercises/bulgarian-split-squat.html">Bulharský dřep</a></td><td>2&nbsp;× 5&nbsp;na stranu</td></tr>
-<tr><td><a href="/cs/exercises/dumbbell-row.html">Přítah jednoručky</a> + <a href="/cs/exercises/push-up.html">Klik</a></td><td>2&nbsp;× 6–8&nbsp;obojího</td></tr>
-<tr class="grp"><td colspan="2">Třísla a&nbsp;střed těla · 4&nbsp;min</td></tr>
-<tr><td><a href="/cs/exercises/copenhagen-plank-short.html">Kodaňské prkno — krátká páka</a></td><td>2&nbsp;× 20&nbsp;s na stranu</td></tr>
-<tr><td><a href="/cs/exercises/dead-bug.html">Dead bug</a></td><td>2&nbsp;× 6&nbsp;na stranu</td></tr>
-</tbody>
-</table>
-</div>
+<div class="isx-block reveal"><div class="isx-title">Hlavní trénink · 25&nbsp;min · 1&nbsp;až 2× týdně</div><div class="isx-grid">
+<div class="isx-group">Příprava · 4&nbsp;min</div>
+<a class="isx-card" href="/cs/exercises/world-s-greatest-stretch.html"><span class="isx-thumb"><img src="/assets/articles/in-season/world-s-greatest-stretch.webp" alt="Nejlepší strečink na světě (World's Greatest Stretch)" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Nejlepší strečink na světě (World's Greatest Stretch)</span><span class="isx-sets">1&nbsp;× 3&nbsp;na stranu</span></span></a>
+<a class="isx-card" href="/cs/exercises/90-90-hip-switch.html"><span class="isx-thumb"><img src="/assets/articles/in-season/90-90-hip-switch.webp" alt="Přetáčení kyčlí 90/90" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Přetáčení kyčlí 90/90</span><span class="isx-sets">1&nbsp;× 6&nbsp;na stranu</span></span></a>
+<div class="isx-group">Výbušnost · 4&nbsp;min</div>
+<a class="isx-card" href="/cs/exercises/broad-jump.html"><span class="isx-thumb"><img src="/assets/articles/in-season/broad-jump.webp" alt="Skok z místa" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Skok z&nbsp;místa</span><span class="isx-sets">3&nbsp;× 3, plný odpočinek</span></span></a>
+<a class="isx-card" href="/cs/exercises/lateral-bound-stick.html"><span class="isx-thumb"><img src="/assets/articles/in-season/lateral-bound-stick.webp" alt="Laterální odraz s dopadem" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Laterální odraz s&nbsp;dopadem</span><span class="isx-sets">2&nbsp;× 3&nbsp;na stranu</span></span></a>
+<div class="isx-group">Síla · 12&nbsp;min</div>
+<a class="isx-card" href="/cs/exercises/trap-bar-deadlift.html"><span class="isx-thumb"><img src="/assets/articles/in-season/trap-bar-deadlift.webp" alt="Mrtvý tah s trap barem nebo Rumunský mrtvý tah s jednoručkami (RDL)" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Mrtvý tah s&nbsp;trap barem nebo Rumunský mrtvý tah s&nbsp;jednoručkami (RDL)</span><span class="isx-sets">3&nbsp;× 3–5, těžce</span></span></a>
+<a class="isx-card" href="/cs/exercises/bulgarian-split-squat.html"><span class="isx-thumb"><img src="/assets/articles/in-season/bulgarian-split-squat.webp" alt="Bulharský dřep" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Bulharský dřep</span><span class="isx-sets">2&nbsp;× 5&nbsp;na stranu</span></span></a>
+<a class="isx-card" href="/cs/exercises/dumbbell-row.html"><span class="isx-thumb"><img src="/assets/articles/in-season/dumbbell-row.webp" alt="Přítah jednoručky + Klik" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Přítah jednoručky + Klik</span><span class="isx-sets">2&nbsp;× 6–8&nbsp;obojího</span></span></a>
+<div class="isx-group">Třísla a&nbsp;střed těla · 4&nbsp;min</div>
+<a class="isx-card" href="/cs/exercises/copenhagen-plank-short.html"><span class="isx-thumb"><img src="/assets/articles/in-season/copenhagen-plank-short.webp" alt="Kodaňské prkno — krátká páka" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Kodaňské prkno — krátká páka</span><span class="isx-sets">2&nbsp;× 20&nbsp;s na stranu</span></span></a>
+<a class="isx-card" href="/cs/exercises/dead-bug.html"><span class="isx-thumb"><img src="/assets/articles/in-season/dead-bug.webp" alt="Dead bug" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Dead bug</span><span class="isx-sets">2&nbsp;× 6&nbsp;na stranu</span></span></a>
+</div></div>
 <h3>Tři pravidla, díky kterým to funguje</h3>
 <ol>
 <li><strong>V&nbsp;každé silové sérii si nech dvě opakování v&nbsp;rezervě.</strong> Těžce, ale nikdy na krev. Udržuješ, netestuješ.</li>
@@ -337,26 +356,24 @@
 </ol>
 <h3>15minutový trénink rychlosti a&nbsp;výbušnosti</h3>
 <p>Krátce, ostře a&nbsp;plně odpočatý. Mezi sprinty se vrať chůzí a&nbsp;před dalším si dej 60&nbsp;až 90&nbsp;sekund.</p>
-<div class="art-table-wrap reveal">
-<table class="art-table fit">
-<caption>Rychlost a&nbsp;výbušnost · 15&nbsp;min · 1× týdně</caption>
-<thead><tr><th>Cvik</th><th>Série ×&nbsp;opakování</th></tr></thead>
-<tbody>
-<tr><td><a href="/cs/exercises/falling-start-sprint.html">Sprint z&nbsp;pádového startu</a></td><td>4&nbsp;× 10&nbsp;m</td></tr>
-<tr><td><a href="/cs/exercises/10m-acceleration-sprint.html">Akcelerační sprint 10&nbsp;m</a></td><td>3&nbsp;× 10&nbsp;m</td></tr>
-<tr><td><a href="/cs/exercises/lateral-skater-bound.html">Laterální bruslařský odraz</a></td><td>3&nbsp;× 3&nbsp;na stranu</td></tr>
-<tr><td><a href="/cs/exercises/rotational-med-ball-toss.html">Rotační hod medicinbalem</a></td><td>3&nbsp;× 4&nbsp;na stranu</td></tr>
-<tr><td><a href="/cs/exercises/pogo-hops.html">Pogo skoky</a></td><td>2&nbsp;× 15</td></tr>
-</tbody>
-</table>
-</div>
+<figure class="vid-fig reveal"><a href="/cs/exercises/lateral-skater-bound.html" aria-label="Laterální bruslařský odraz"><video autoplay muted loop playsinline preload="metadata" poster="/assets/video/drill-skater.jpg" width="640" height="360"><source src="/assets/video/drill-skater.mp4" type="video/mp4"></video></a><figcaption><strong>Laterální bruslařský odraz</strong> · 3&nbsp;× 3&nbsp;na stranu · Ukázka trenéra Davida</figcaption></figure>
+<div class="isx-block reveal"><div class="isx-title">Rychlost a&nbsp;výbušnost · 15&nbsp;min · 1× týdně</div><div class="isx-grid">
+<a class="isx-card" href="/cs/exercises/falling-start-sprint.html"><span class="isx-thumb"><img src="/assets/articles/in-season/falling-start-sprint.webp" alt="Sprint z pádového startu" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Sprint z&nbsp;pádového startu</span><span class="isx-sets">4&nbsp;× 10&nbsp;m</span></span></a>
+<a class="isx-card" href="/cs/exercises/10m-acceleration-sprint.html"><span class="isx-thumb"><img src="/assets/articles/in-season/10m-acceleration-sprint.webp" alt="Akcelerační sprint 10 m" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Akcelerační sprint 10&nbsp;m</span><span class="isx-sets">3&nbsp;× 10&nbsp;m</span></span></a>
+<a class="isx-card" href="/cs/exercises/lateral-skater-bound.html"><span class="isx-thumb"><img src="/assets/articles/in-season/lateral-skater-bound.webp" alt="Laterální bruslařský odraz" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Laterální bruslařský odraz</span><span class="isx-sets">3&nbsp;× 3&nbsp;na stranu</span></span></a>
+<a class="isx-card" href="/cs/exercises/rotational-med-ball-toss.html"><span class="isx-thumb"><img src="/assets/articles/in-season/rotational-med-ball-toss.webp" alt="Rotační hod medicinbalem" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Rotační hod medicinbalem</span><span class="isx-sets">3&nbsp;× 4&nbsp;na stranu</span></span></a>
+<a class="isx-card" href="/cs/exercises/pogo-hops.html"><span class="isx-thumb"><img src="/assets/articles/in-season/pogo-hops.webp" alt="Pogo skoky" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Pogo skoky</span><span class="isx-sets">2&nbsp;× 15</span></span></a>
+</div></div>
 <h2 id="conditioning">Potřebuješ ještě kondici?</h2>
 <p>Když hraješ hodně minut, většinou ne. Zápasy a&nbsp;tvrdé tréninky jsou tvoje kondice a&nbsp;intervaly navíc jen přidají únavu, ze které se pak musíš zotavit.</p>
 <p>Když moc minut nehraješ, odpověď je jiná. Přehled zmíněný výše zjistil, že aerobní kondice u&nbsp;univerzitních hráčů během roku klesá, a&nbsp;hráč ve čtvrté lajně, ve třetí obranné dvojici, náhradní brankář nebo hráč po zranění dostává méně kondice, kterou ostatním dávají zápasy. Přidej jeden krátký blok týdně: 6&nbsp;až 8&nbsp;kol po 30&nbsp;sekundách naplno a&nbsp;90&nbsp;sekundách volně na kole, v&nbsp;den alespoň 48&nbsp;hodin od dalšího zápasu.</p>
 <h2 id="groin">Jediný cvik, který nikdy nevynecháš</h2>
 <p>Natažená třísla patří k&nbsp;typickým hokejovým zraněním a&nbsp;většinou přicházejí v&nbsp;zápasech. Řešení je dobře prozkoumané. V&nbsp;jednom týmu NHL absolvovali hráči se slabými adduktory posilovací program a&nbsp;<a href="https://pubmed.ncbi.nlm.nih.gov/12239001/" rel="noopener" target="_blank">natažení adduktorů kleslo z&nbsp;3,2&nbsp;na 0,71&nbsp;na 1&nbsp;000&nbsp;hráčských startů v&nbsp;zápasech</a> během dalších dvou sezón. Ve fotbale snížil program postavený na jediném cviku, kodaňské addukci, prováděném třikrát týdně v&nbsp;přípravě a&nbsp;<a href="https://bjsm.bmj.com/content/53/3/150" rel="noopener" target="_blank">jednou týdně během sezóny, riziko problémů s&nbsp;třísly o&nbsp;41&nbsp;%</a>.</p>
+<figure class="ph-fig reveal"><a href="/cs/exercises/copenhagen-plank-short.html"><img src="/assets/articles/in-season/copenhagen-plank-short-lg.webp" alt="Kodaňské prkno — krátká páka" loading="lazy" width="960" height="540"></a><figcaption><strong>Kodaňské prkno — krátká páka</strong> · 2&nbsp;× 20&nbsp;s na stranu · Ukázka trenéra Davida</figcaption></figure>
 <p>Jednou týdně je dávka pro sezónu a&nbsp;zabere dvě minuty. Měj <a href="/cs/exercises/copenhagen-plank-short.html">kodaňské prkno</a> v&nbsp;hlavním tréninku a&nbsp;nevypouštěj ho, ani když se rozvrh zaplní. Právě tehdy ho potřebuješ nejvíc. Celý rozbor, včetně silového testu, který natažení třísel předpovídá, najdeš v&nbsp;našem průvodci <a href="/cs/hockey-injury-prevention.html">jak se v&nbsp;sezóně vyhnout zraněním</a>.</p>
 <h2 id="ages">Co se mění s&nbsp;věkem</h2>
+<figure class="ph-fig reveal"><img src="/assets/articles/youth-dryland.jpg" alt="Pro mladé hráče je sezóna velká část rozvoje. Suchou přípravu jim drž krátkou a hravou." loading="lazy" width="2000" height="1125"><figcaption>Pro mladé hráče je sezóna velká část rozvoje. Suchou přípravu jim drž krátkou a&nbsp;hravou.</figcaption></figure>
+
 <div class="age-grid cols-3 reveal">
 <div class="age-card is-youth">
 <h4>Mládež · 9&nbsp;až 12</h4>

@@ -53,6 +53,27 @@
   .art-table.fit.days td:first-child{width:28%}
   .art-table.fit td:first-child{width:auto}
 }
+
+/* In-season article: visuals */
+.ph-fig,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-fig img,.vid-fig video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;border:1px solid var(--line);background:var(--bg-3)}
+.ph-fig a,.vid-fig a{border-bottom:none!important;display:block}
+.ph-fig figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13px;color:var(--ink-3);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
+.ph-fig figcaption strong,.vid-fig figcaption strong{color:var(--ink-2);font-weight:600}
+.app-shots .app-row{display:flex;justify-content:center;align-items:flex-start;gap:18px;padding:28px 16px;background:radial-gradient(circle at 50% 0%,var(--ice-soft),transparent 70%),var(--card);border:1px solid var(--line);border-radius:18px}
+.app-shots img{width:44%;max-width:230px;height:auto;aspect-ratio:640/1418;object-fit:cover;object-position:top;border-radius:24px;border:1px solid var(--line-2);box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.isx-block{max-width:var(--art-measure);margin:24px auto 38px}
+.isx-title{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.isx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.isx-group{grid-column:1/-1;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ice);margin-top:16px}
+.art-prose a.isx-card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;color:inherit;transition:border-color .2s,transform .2s}
+.art-prose a.isx-card:hover{border-color:var(--ice-line);transform:translateY(-2px)}
+.isx-thumb{display:block;aspect-ratio:16/9;overflow:hidden;background:var(--bg-3)}
+.isx-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.isx-body{display:flex;flex-direction:column;gap:4px;padding:10px 12px 12px}
+.isx-name{font-size:14px;font-weight:600;color:var(--ink);line-height:1.3}
+.isx-sets{font-size:13px;color:var(--warm);font-weight:600}
+@media(max-width:600px){.isx-grid{grid-template-columns:repeat(2,1fr);gap:10px}.isx-name{font-size:13px}.isx-sets{font-size:12px}.isx-body{padding:9px 10px 11px}.app-shots .app-row{gap:12px;padding:22px 12px}}
 </style>
 
 <script type="application/ld+json">{
@@ -173,6 +194,7 @@
 <p>Этот спад — не невезение. Это то, что длинный сезон делает с телом, которое перестаёт получать силовой стимул. Хорошая новость: остановить его гораздо проще, чем было набрать форму. Посреди зимы тебе не нужна летняя программа. Нужна правильная маленькая доза в правильном месте недели.</p>
 <h2 id="slower">Почему игроки медленнеют по ходу сезона</h2>
 <p>Кажется, что хоккей сам по себе должен держать тебя в форме. Ты на льду четыре-пять раз в неделю, катаешься на полную и промокаешь насквозь. Но тренировка на льду — не силовой стимул, а длинный сезон копит усталость быстрее, чем тренировки успевают что-то построить.</p>
+<figure class="ph-fig reveal"><img src="/assets/articles/training.jpg" alt="Взрывная сила ног — первое, что забирает длинный сезон. И сохранить её проще всего." loading="lazy" width="1600" height="900"><figcaption>Взрывная сила ног — первое, что забирает длинный сезон. И сохранить её проще всего.</figcaption></figure>
 <p>Исследования здесь на удивление единодушны. Команда НХЛ, которая каждую неделю тестировала игроков прыжком вверх с подседом (CMJ), обнаружила, что <a href="https://pubmed.ncbi.nlm.nih.gov/33651739/" rel="noopener" target="_blank">высота и скорость прыжка снижались по ходу сезона</a>, а сильнее всего усталость сказывалась в конце. Исследование команды NCAA Division I за 18-недельный сезон показало, что <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" rel="noopener" target="_blank">мощность ног снижалась весь год</a>, резче всего после самых длинных выездов. Другая студенческая команда <a href="https://pubmed.ncbi.nlm.nih.gov/24910956/" rel="noopener" target="_blank">в повторных спринтах после сезона выдавала меньше мощности, чем до него</a>, и те же спринты казались тяжелее.</p>
 <p>Систематический обзор 2021&nbsp;года, обобщивший десятилетия хоккейных исследований за целые сезоны, пришёл к тому же: более новые работы указывают на <a href="https://pubmed.ncbi.nlm.nih.gov/34387221/" rel="noopener" target="_blank">снижение аэробной формы и нарастающую усталость по ходу сезона</a>, и авторы призывают искать способы ограничить эти потери ближе к концу года.</p>
 <p>Перечитай это, держа в голове плей-офф. Игроки слабее всего именно тогда, когда игры важнее всего.</p>
@@ -237,6 +259,7 @@
 <li><strong>За день до игры:</strong> только мобильность. Ничего тяжёлого, ничего нового.</li>
 <li><strong>На следующий день после игры:</strong> лёгкое движение и мобильность. Первая тяжёлая тренировка — уже после этого.</li>
 </ul>
+<figure class="ph-fig reveal"><img src="/assets/articles/skating-speed.jpg" alt="День игры — для игры. Тяжёлая работа была как минимум за 48 часов до неё." loading="lazy" width="2000" height="1116"><figcaption>День игры — для игры. Тяжёлая работа была как минимум за 48&nbsp;часов до неё.</figcaption></figure>
 <p>Почему ничего нового? Новое упражнение вызывает крепатуру даже с лёгким весом, потому что мышцы к нему ещё не привыкли. В сезоне держись движений, которые хорошо знаешь. Эксперименты оставь на лето.</p>
 <h3>А тренировка в день игры?</h3>
 <p>Некоторые профессиональные команды утром в день игры делают короткий «праймер»: несколько прыжков или два-три довольно тяжёлых повторения. Обзор 2019&nbsp;года показал, что силовая работа малого объёма и высокой интенсивности <a href="https://pubmed.ncbi.nlm.nih.gov/31203499/" rel="noopener" target="_blank">может улучшать результат до 48&nbsp;часов после неё</a>, но реакция сильно различается у разных спортсменов. Если хочешь попробовать, делай совсем немного и проверь в игре, которая ничего не решает. Главное всё равно — разминка перед игрой, и её мы разбираем в статье <a href="/ru/hockey-warm-up.html">идеальная хоккейная разминка</a>.</p>
@@ -295,29 +318,25 @@
 <a class="btn btn-primary" data-place="article_inseason_inline" href="https://apps.apple.com/ru/app/elite-hockey-drills/id6787257275" rel="noopener" target="_blank"> Попробовать 7&nbsp;дней бесплатно <svg aria-hidden="true" fill="none" height="16" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24" width="16"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
 </a>
 </div>
+<figure class="app-shots reveal"><div class="app-row"><img src="/assets/app/app-gameday.webp" alt="Гид на день игры в приложении Elite Hockey Drills" loading="lazy" width="640" height="1536"><img src="/assets/app/app-program.webp" alt="Неделя тренировок вокруг игр в приложении Elite Hockey Drills" loading="lazy" width="640" height="1418"></div><figcaption>Гид на день игры в приложении (слева) и неделя тренировок, построенная вокруг игр (справа).</figcaption></figure>
+
 <h2 id="session">25-минутная тренировка в сезоне</h2>
 <p>Это основная тренировка: сначала немного взрывной силы, потом сила, в том порядке, который нужен нервной системе. Подходит для зала или дома с парой гантелей. У каждого упражнения есть ссылка на видео.</p>
-<div class="art-table-wrap reveal">
-<table class="art-table fit">
-<caption>Основная тренировка · 25&nbsp;мин · 1–2&nbsp;раза в неделю</caption>
-<thead><tr><th>Упражнение</th><th>Подходы ×&nbsp;повторения</th></tr></thead>
-<tbody>
-<tr class="grp"><td colspan="2">Подготовка · 4&nbsp;мин</td></tr>
-<tr><td><a href="/ru/exercises/world-s-greatest-stretch.html">«Величайшая растяжка»</a></td><td>1&nbsp;× 3&nbsp;на сторону</td></tr>
-<tr><td><a href="/ru/exercises/90-90-hip-switch.html">Переключение 90/90</a></td><td>1&nbsp;× 6&nbsp;на сторону</td></tr>
-<tr class="grp"><td colspan="2">Взрывная сила · 4&nbsp;мин</td></tr>
-<tr><td><a href="/ru/exercises/broad-jump.html">Прыжок в длину с места</a></td><td>3&nbsp;× 3, полный отдых</td></tr>
-<tr><td><a href="/ru/exercises/lateral-bound-stick.html">Боковой многоскок с фиксацией</a></td><td>2&nbsp;× 3&nbsp;на сторону</td></tr>
-<tr class="grp"><td colspan="2">Сила · 12&nbsp;мин</td></tr>
-<tr><td><a href="/ru/exercises/trap-bar-deadlift.html">Становая тяга с трэп-грифом</a> или <a href="/ru/exercises/db-rdl.html">Румынская тяга с гантелями</a></td><td>3&nbsp;× 3–5, тяжело</td></tr>
-<tr><td><a href="/ru/exercises/bulgarian-split-squat.html">Болгарский сплит-присед</a></td><td>2&nbsp;× 5&nbsp;на сторону</td></tr>
-<tr><td><a href="/ru/exercises/dumbbell-row.html">Тяга гантели</a> + <a href="/ru/exercises/push-up.html">Отжимание</a></td><td>2&nbsp;× 6–8&nbsp;каждого</td></tr>
-<tr class="grp"><td colspan="2">Пах и корпус · 4&nbsp;мин</td></tr>
-<tr><td><a href="/ru/exercises/copenhagen-plank-short.html">Копенгагенская планка — короткий рычаг</a></td><td>2&nbsp;× 20&nbsp;с на сторону</td></tr>
-<tr><td><a href="/ru/exercises/dead-bug.html">Мёртвый жук</a></td><td>2&nbsp;× 6&nbsp;на сторону</td></tr>
-</tbody>
-</table>
-</div>
+<div class="isx-block reveal"><div class="isx-title">Основная тренировка · 25&nbsp;мин · 1–2&nbsp;раза в неделю</div><div class="isx-grid">
+<div class="isx-group">Подготовка · 4&nbsp;мин</div>
+<a class="isx-card" href="/ru/exercises/world-s-greatest-stretch.html"><span class="isx-thumb"><img src="/assets/articles/in-season/world-s-greatest-stretch.webp" alt="«Величайшая растяжка»" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">«Величайшая растяжка»</span><span class="isx-sets">1&nbsp;× 3&nbsp;на сторону</span></span></a>
+<a class="isx-card" href="/ru/exercises/90-90-hip-switch.html"><span class="isx-thumb"><img src="/assets/articles/in-season/90-90-hip-switch.webp" alt="Переключение 90/90" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Переключение 90/90</span><span class="isx-sets">1&nbsp;× 6&nbsp;на сторону</span></span></a>
+<div class="isx-group">Взрывная сила · 4&nbsp;мин</div>
+<a class="isx-card" href="/ru/exercises/broad-jump.html"><span class="isx-thumb"><img src="/assets/articles/in-season/broad-jump.webp" alt="Прыжок в длину с места" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Прыжок в длину с места</span><span class="isx-sets">3&nbsp;× 3, полный отдых</span></span></a>
+<a class="isx-card" href="/ru/exercises/lateral-bound-stick.html"><span class="isx-thumb"><img src="/assets/articles/in-season/lateral-bound-stick.webp" alt="Боковой многоскок с фиксацией" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Боковой многоскок с фиксацией</span><span class="isx-sets">2&nbsp;× 3&nbsp;на сторону</span></span></a>
+<div class="isx-group">Сила · 12&nbsp;мин</div>
+<a class="isx-card" href="/ru/exercises/trap-bar-deadlift.html"><span class="isx-thumb"><img src="/assets/articles/in-season/trap-bar-deadlift.webp" alt="Становая тяга с трэп-грифом или Румынская тяга с гантелями" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Становая тяга с трэп-грифом или Румынская тяга с гантелями</span><span class="isx-sets">3&nbsp;× 3–5, тяжело</span></span></a>
+<a class="isx-card" href="/ru/exercises/bulgarian-split-squat.html"><span class="isx-thumb"><img src="/assets/articles/in-season/bulgarian-split-squat.webp" alt="Болгарский сплит-присед" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Болгарский сплит-присед</span><span class="isx-sets">2&nbsp;× 5&nbsp;на сторону</span></span></a>
+<a class="isx-card" href="/ru/exercises/dumbbell-row.html"><span class="isx-thumb"><img src="/assets/articles/in-season/dumbbell-row.webp" alt="Тяга гантели + Отжимание" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Тяга гантели + Отжимание</span><span class="isx-sets">2&nbsp;× 6–8&nbsp;каждого</span></span></a>
+<div class="isx-group">Пах и корпус · 4&nbsp;мин</div>
+<a class="isx-card" href="/ru/exercises/copenhagen-plank-short.html"><span class="isx-thumb"><img src="/assets/articles/in-season/copenhagen-plank-short.webp" alt="Копенгагенская планка — короткий рычаг" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Копенгагенская планка — короткий рычаг</span><span class="isx-sets">2&nbsp;× 20&nbsp;с на сторону</span></span></a>
+<a class="isx-card" href="/ru/exercises/dead-bug.html"><span class="isx-thumb"><img src="/assets/articles/in-season/dead-bug.webp" alt="Мёртвый жук" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Мёртвый жук</span><span class="isx-sets">2&nbsp;× 6&nbsp;на сторону</span></span></a>
+</div></div>
 <h3>Три правила, без которых не работает</h3>
 <ol>
 <li><strong>В каждом силовом подходе оставляй два повторения в запасе.</strong> Тяжело, но никогда не через силу. Ты поддерживаешь, а не тестируешь.</li>
@@ -326,26 +345,24 @@
 </ol>
 <h3>15-минутная тренировка скорости и взрывной силы</h3>
 <p>Коротко, резко и с полным восстановлением. Между спринтами возвращайся шагом и отдыхай 60–90&nbsp;секунд перед следующим.</p>
-<div class="art-table-wrap reveal">
-<table class="art-table fit">
-<caption>Скорость и взрывная сила · 15&nbsp;мин · раз в неделю</caption>
-<thead><tr><th>Упражнение</th><th>Подходы ×&nbsp;повторения</th></tr></thead>
-<tbody>
-<tr><td><a href="/ru/exercises/falling-start-sprint.html">Старт из падения</a></td><td>4&nbsp;× 10&nbsp;м</td></tr>
-<tr><td><a href="/ru/exercises/10m-acceleration-sprint.html">Ускорение 10&nbsp;м</a></td><td>3&nbsp;× 10&nbsp;м</td></tr>
-<tr><td><a href="/ru/exercises/lateral-skater-bound.html">Боковой многоскок «конькобежец»</a></td><td>3&nbsp;× 3&nbsp;на сторону</td></tr>
-<tr><td><a href="/ru/exercises/rotational-med-ball-toss.html">Ротационный бросок медбола</a></td><td>3&nbsp;× 4&nbsp;на сторону</td></tr>
-<tr><td><a href="/ru/exercises/pogo-hops.html">Прыжки «пого»</a></td><td>2&nbsp;× 15</td></tr>
-</tbody>
-</table>
-</div>
+<figure class="vid-fig reveal"><a href="/ru/exercises/lateral-skater-bound.html" aria-label="Боковой многоскок «конькобежец»"><video autoplay muted loop playsinline preload="metadata" poster="/assets/video/drill-skater.jpg" width="640" height="360"><source src="/assets/video/drill-skater.mp4" type="video/mp4"></video></a><figcaption><strong>Боковой многоскок «конькобежец»</strong> · 3&nbsp;× 3&nbsp;на сторону · Демо тренера Давида</figcaption></figure>
+<div class="isx-block reveal"><div class="isx-title">Скорость и взрывная сила · 15&nbsp;мин · раз в неделю</div><div class="isx-grid">
+<a class="isx-card" href="/ru/exercises/falling-start-sprint.html"><span class="isx-thumb"><img src="/assets/articles/in-season/falling-start-sprint.webp" alt="Старт из падения" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Старт из падения</span><span class="isx-sets">4&nbsp;× 10&nbsp;м</span></span></a>
+<a class="isx-card" href="/ru/exercises/10m-acceleration-sprint.html"><span class="isx-thumb"><img src="/assets/articles/in-season/10m-acceleration-sprint.webp" alt="Ускорение 10 м" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Ускорение 10&nbsp;м</span><span class="isx-sets">3&nbsp;× 10&nbsp;м</span></span></a>
+<a class="isx-card" href="/ru/exercises/lateral-skater-bound.html"><span class="isx-thumb"><img src="/assets/articles/in-season/lateral-skater-bound.webp" alt="Боковой многоскок «конькобежец»" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Боковой многоскок «конькобежец»</span><span class="isx-sets">3&nbsp;× 3&nbsp;на сторону</span></span></a>
+<a class="isx-card" href="/ru/exercises/rotational-med-ball-toss.html"><span class="isx-thumb"><img src="/assets/articles/in-season/rotational-med-ball-toss.webp" alt="Ротационный бросок медбола" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Ротационный бросок медбола</span><span class="isx-sets">3&nbsp;× 4&nbsp;на сторону</span></span></a>
+<a class="isx-card" href="/ru/exercises/pogo-hops.html"><span class="isx-thumb"><img src="/assets/articles/in-season/pogo-hops.webp" alt="Прыжки «пого»" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Прыжки «пого»</span><span class="isx-sets">2&nbsp;× 15</span></span></a>
+</div></div>
 <h2 id="conditioning">Нужна ли ещё выносливость?</h2>
 <p>Если играешь много минут, скорее нет. Игры и тяжёлые тренировки и есть твоя выносливость, а лишние интервалы сверху только добавляют усталость, от которой потом надо восстанавливаться.</p>
 <p>Если играешь мало, ответ другой. Обзор выше показал, что аэробная форма у студенческих игроков за год снижается, а игрок четвёртого звена, третьей пары защиты, запасной вратарь или игрок после травмы получает меньше той выносливости, которую игры дают остальным. Добавь одну короткую работу в неделю: 6–8&nbsp;раундов по 30&nbsp;секунд интенсивно и 90&nbsp;секунд легко на велосипеде, в день не ближе чем за 48&nbsp;часов до следующей игры.</p>
 <h2 id="groin">Упражнение, которое нельзя бросать</h2>
 <p>Растяжения паха — одна из фирменных хоккейных травм, и случаются они в основном в играх. Решение хорошо изучено. В одной команде НХЛ игроки со слабыми приводящими мышцами прошли программу укрепления, и <a href="https://pubmed.ncbi.nlm.nih.gov/12239001/" rel="noopener" target="_blank">растяжения приводящих мышц снизились с 3,2&nbsp;до 0,71&nbsp;на 1000&nbsp;игроко-игр</a> за два следующих сезона. В футболе программа всего из одного упражнения, копенгагенского приведения, три раза в неделю в предсезонке и <a href="https://bjsm.bmj.com/content/53/3/150" rel="noopener" target="_blank">раз в неделю в сезоне, снизила риск проблем с пахом на 41%</a>.</p>
+<figure class="ph-fig reveal"><a href="/ru/exercises/copenhagen-plank-short.html"><img src="/assets/articles/in-season/copenhagen-plank-short-lg.webp" alt="Копенгагенская планка — короткий рычаг" loading="lazy" width="960" height="540"></a><figcaption><strong>Копенгагенская планка — короткий рычаг</strong> · 2&nbsp;× 20&nbsp;с на сторону · Демо тренера Давида</figcaption></figure>
 <p>Раз в неделю — это доза для сезона, и занимает она две минуты. Оставь <a href="/ru/exercises/copenhagen-plank-short.html">копенгагенскую планку</a> в основной тренировке и не выкидывай её, когда расписание забивается. Именно тогда она нужнее всего. Полный разбор, включая силовой тест, который предсказывает растяжения паха, — в нашем гайде <a href="/ru/hockey-injury-prevention.html">как пройти хоккейный сезон без травм</a>.</p>
 <h2 id="ages">Что меняется с возрастом</h2>
+<figure class="ph-fig reveal"><img src="/assets/articles/youth-dryland.jpg" alt="Для юных игроков сезон — большая часть развития. Тренировки вне льда — короткие и в игровой форме." loading="lazy" width="2000" height="1125"><figcaption>Для юных игроков сезон — большая часть развития. Тренировки вне льда — короткие и в игровой форме.</figcaption></figure>
+
 <div class="age-grid cols-3 reveal">
 <div class="age-card is-youth">
 <h4>Дети · 9–12</h4>

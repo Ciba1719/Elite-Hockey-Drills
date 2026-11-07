@@ -52,6 +52,27 @@
   .art-table.fit.days td:first-child{width:28%}
   .art-table.fit td:first-child{width:auto}
 }
+
+/* In-season article: visuals */
+.ph-fig,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-fig img,.vid-fig video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;border:1px solid var(--line);background:var(--bg-3)}
+.ph-fig a,.vid-fig a{border-bottom:none!important;display:block}
+.ph-fig figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13px;color:var(--ink-3);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
+.ph-fig figcaption strong,.vid-fig figcaption strong{color:var(--ink-2);font-weight:600}
+.app-shots .app-row{display:flex;justify-content:center;align-items:flex-start;gap:18px;padding:28px 16px;background:radial-gradient(circle at 50% 0%,var(--ice-soft),transparent 70%),var(--card);border:1px solid var(--line);border-radius:18px}
+.app-shots img{width:44%;max-width:230px;height:auto;aspect-ratio:640/1418;object-fit:cover;object-position:top;border-radius:24px;border:1px solid var(--line-2);box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.isx-block{max-width:var(--art-measure);margin:24px auto 38px}
+.isx-title{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.isx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.isx-group{grid-column:1/-1;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ice);margin-top:16px}
+.art-prose a.isx-card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;color:inherit;transition:border-color .2s,transform .2s}
+.art-prose a.isx-card:hover{border-color:var(--ice-line);transform:translateY(-2px)}
+.isx-thumb{display:block;aspect-ratio:16/9;overflow:hidden;background:var(--bg-3)}
+.isx-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.isx-body{display:flex;flex-direction:column;gap:4px;padding:10px 12px 12px}
+.isx-name{font-size:14px;font-weight:600;color:var(--ink);line-height:1.3}
+.isx-sets{font-size:13px;color:var(--warm);font-weight:600}
+@media(max-width:600px){.isx-grid{grid-template-columns:repeat(2,1fr);gap:10px}.isx-name{font-size:13px}.isx-sets{font-size:12px}.isx-body{padding:9px 10px 11px}.app-shots .app-row{gap:12px;padding:22px 12px}}
 </style>
 
 <script type="application/ld+json">{
@@ -177,6 +198,7 @@
 <p>Se lasku ei ole huonoa tuuria. Se on sitä, mitä pitkä kausi tekee keholle, joka lakkaa saamasta voimaärsykettä. Hyvä uutinen on, että sen pysäyttäminen vaatii paljon vähemmän työtä kuin kunnon rakentaminen. Et tarvitse kesäohjelmaa keskellä talvea. Tarvitset oikean pienen annoksen oikeassa kohdassa viikkoa.</p>
 <h2 id="slower">Miksi pelaajat hidastuvat kauden aikana</h2>
 <p>Jääkiekko näyttää lajilta, jonka pitäisi pitää sinut kunnossa itsestään. Olet jäällä neljä tai viisi kertaa viikossa, luistelet kovaa ja hikoilet varusteiden läpi. Mutta jääharjoitus ei ole voimaärsyke, ja pitkä kausi kasaa väsymystä nopeammin kuin harjoittelu ehtii rakentaa mitään.</p>
+<figure class="ph-fig reveal"><img src="/assets/articles/training.jpg" alt="Jalkojen räjähtävyys on ensimmäinen asia, jonka pitkä kausi vie. Sen ylläpitäminen on myös halvinta." loading="lazy" width="1600" height="900"><figcaption>Jalkojen räjähtävyys on ensimmäinen asia, jonka pitkä kausi vie. Sen ylläpitäminen on myös halvinta.</figcaption></figure>
 <p>Tutkimus on tässä hämmästyttävän yksimielistä. NHL-joukkue, joka testasi pelaajiaan kevennyshypyllä joka viikko, havaitsi, että <a href="https://pubmed.ncbi.nlm.nih.gov/33651739/" rel="noopener" target="_blank">hyppykorkeus ja -nopeus laskivat kauden aikana</a>, ja väsymyksen vaikutus oli suurin kauden lopulla. Tutkimus NCAA Division I -joukkueesta 18&nbsp;viikon kauden ajalta osoitti, että <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" rel="noopener" target="_blank">jalkojen teho heikkeni koko vuoden</a>, jyrkimmin pisimpien matkojen jälkeen. Toinen yliopistojoukkue <a href="https://pubmed.ncbi.nlm.nih.gov/24910956/" rel="noopener" target="_blank">tuotti toistetuissa sprinteissä vähemmän tehoa kauden jälkeen kuin ennen sitä</a>, ja samat sprintit tuntuivat raskaammilta.</p>
 <p>Vuonna 2021&nbsp;julkaistu systemaattinen katsaus, joka kokosi vuosikymmenten jääkiekkotutkimukset koko kauden ajalta, päätyi samaan: uudempi tutkimus viittaa <a href="https://pubmed.ncbi.nlm.nih.gov/34387221/" rel="noopener" target="_blank">aerobisen kunnon heikkenemiseen ja kasvavaan väsymykseen kauden edetessä</a>, ja kirjoittajat peräänkuuluttavat keinoja rajoittaa näitä menetyksiä vuoden loppupuolella.</p>
 <p>Lue se uudestaan pudotuspelit mielessä. Pelaajat ovat heikoimmillaan juuri silloin, kun otteluilla on eniten merkitystä.</p>
@@ -241,6 +263,7 @@
 <li><strong>Ottelua edeltävä päivä:</strong> vain liikkuvuutta. Ei mitään raskasta, ei mitään uutta.</li>
 <li><strong>Ottelun jälkeinen päivä:</strong> kevyttä liikettä ja liikkuvuutta. Ensimmäinen raskas treeni tulee vasta sen jälkeen.</li>
 </ul>
+<figure class="ph-fig reveal"><img src="/assets/articles/skating-speed.jpg" alt="Ottelupäivä on pelaamista varten. Raskas työ tehtiin vähintään 48 tuntia aiemmin." loading="lazy" width="2000" height="1116"><figcaption>Ottelupäivä on pelaamista varten. Raskas työ tehtiin vähintään 48&nbsp;tuntia aiemmin.</figcaption></figure>
 <p>Miksi ei mitään uutta? Uusi liike aiheuttaa lihaskipua kevyilläkin painoilla, koska lihaksesi eivät ole vielä tottuneet siihen. Kauden aikana pysyt liikkeissä, jotka osaat hyvin. Säästä kokeilut kesään.</p>
 <h3>Entä harjoittelu ottelupäivänä?</h3>
 <p>Jotkin ammattilaisjoukkueet tekevät ottelupäivän aamuna lyhyen ”primerin”: muutaman hypyn tai kaksi kolme melko raskasta toistoa. Vuoden 2019&nbsp;katsaus havaitsi, että pieni määrä intensiivistä voimaharjoittelua <a href="https://pubmed.ncbi.nlm.nih.gov/31203499/" rel="noopener" target="_blank">voi parantaa suoritusta jopa 48&nbsp;tunnin ajan</a>, mutta vasteet vaihtelevat paljon urheilijoiden välillä. Jos haluat kokeilla, pidä se pienenä ja testaa ottelussa, jolla ei ole merkitystä. Ottelua edeltävä lämmittely on silti pääasia, ja sen käymme läpi artikkelissa <a href="/fi/hockey-warm-up.html">täydellinen jääkiekkolämmittely</a>.</p>
@@ -299,29 +322,25 @@
 <a class="btn btn-primary" data-place="article_inseason_inline" href="https://apps.apple.com/fi/app/elite-hockey-drills/id6787257275" rel="noopener" target="_blank"> Kokeile 7&nbsp;päivää ilmaiseksi <svg aria-hidden="true" fill="none" height="16" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24" width="16"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
 </a>
 </div>
+<figure class="app-shots reveal"><div class="app-row"><img src="/assets/app/app-gameday-fi.webp" alt="Ottelupäivän opas Elite Hockey Drills -sovelluksessa" loading="lazy" width="640" height="1536"><img src="/assets/app/app-program-fi.webp" alt="Otteluiden ympärille suunniteltu treeniviikko Elite Hockey Drills -sovelluksessa" loading="lazy" width="640" height="1418"></div><figcaption>Sovelluksen ottelupäivän opas (vasemmalla) ja otteluiden ympärille rakennettu treeniviikko (oikealla).</figcaption></figure>
+
 <h2 id="session">25&nbsp;minuutin kausitreeni</h2>
 <p>Tämä on päätreeni: ensin vähän räjähtävyyttä, sitten voimaa, siinä järjestyksessä kuin hermostosi haluaa. Se toimii salilla tai kotona käsipainoparin kanssa. Jokaisesta liikkeestä on linkki esittelyvideoon.</p>
-<div class="art-table-wrap reveal">
-<table class="art-table fit">
-<caption>Päätreeni · 25&nbsp;min · 1–2&nbsp;kertaa viikossa</caption>
-<thead><tr><th>Liike</th><th>Sarjat ×&nbsp;toistot</th></tr></thead>
-<tbody>
-<tr class="grp"><td colspan="2">Valmistelu · 4&nbsp;min</td></tr>
-<tr><td><a href="/fi/exercises/world-s-greatest-stretch.html">Maailman paras venytys</a></td><td>1&nbsp;× 3&nbsp;per puoli</td></tr>
-<tr><td><a href="/fi/exercises/90-90-hip-switch.html">90/90-lonkanvaihto</a></td><td>1&nbsp;× 6&nbsp;per puoli</td></tr>
-<tr class="grp"><td colspan="2">Räjähtävyys · 4&nbsp;min</td></tr>
-<tr><td><a href="/fi/exercises/broad-jump.html">Vauhditon pituus</a></td><td>3&nbsp;× 3, täysi palautus</td></tr>
-<tr><td><a href="/fi/exercises/lateral-bound-stick.html">Sivuloikka pysäytyksellä</a></td><td>2&nbsp;× 3&nbsp;per puoli</td></tr>
-<tr class="grp"><td colspan="2">Voima · 12&nbsp;min</td></tr>
-<tr><td><a href="/fi/exercises/trap-bar-deadlift.html">Trap bar -maastaveto</a> tai <a href="/fi/exercises/db-rdl.html">RDL käsipainoilla</a></td><td>3&nbsp;× 3–5, raskas</td></tr>
-<tr><td><a href="/fi/exercises/bulgarian-split-squat.html">Bulgarialainen askelkyykky</a></td><td>2&nbsp;× 5&nbsp;per puoli</td></tr>
-<tr><td><a href="/fi/exercises/dumbbell-row.html">Käsipainosoutu</a> + <a href="/fi/exercises/push-up.html">Punnerrus</a></td><td>2&nbsp;× 6–8&nbsp;kumpaakin</td></tr>
-<tr class="grp"><td colspan="2">Nivuset ja keskivartalo · 4&nbsp;min</td></tr>
-<tr><td><a href="/fi/exercises/copenhagen-plank-short.html">Kööpenhamina-lankku — lyhyt</a></td><td>2&nbsp;× 20&nbsp;s per puoli</td></tr>
-<tr><td><a href="/fi/exercises/dead-bug.html">Dead bug</a></td><td>2&nbsp;× 6&nbsp;per puoli</td></tr>
-</tbody>
-</table>
-</div>
+<div class="isx-block reveal"><div class="isx-title">Päätreeni · 25&nbsp;min · 1–2&nbsp;kertaa viikossa</div><div class="isx-grid">
+<div class="isx-group">Valmistelu · 4&nbsp;min</div>
+<a class="isx-card" href="/fi/exercises/world-s-greatest-stretch.html"><span class="isx-thumb"><img src="/assets/articles/in-season/world-s-greatest-stretch.webp" alt="Maailman paras venytys" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Maailman paras venytys</span><span class="isx-sets">1&nbsp;× 3&nbsp;per puoli</span></span></a>
+<a class="isx-card" href="/fi/exercises/90-90-hip-switch.html"><span class="isx-thumb"><img src="/assets/articles/in-season/90-90-hip-switch.webp" alt="90/90-lonkanvaihto" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">90/90-lonkanvaihto</span><span class="isx-sets">1&nbsp;× 6&nbsp;per puoli</span></span></a>
+<div class="isx-group">Räjähtävyys · 4&nbsp;min</div>
+<a class="isx-card" href="/fi/exercises/broad-jump.html"><span class="isx-thumb"><img src="/assets/articles/in-season/broad-jump.webp" alt="Vauhditon pituus" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Vauhditon pituus</span><span class="isx-sets">3&nbsp;× 3, täysi palautus</span></span></a>
+<a class="isx-card" href="/fi/exercises/lateral-bound-stick.html"><span class="isx-thumb"><img src="/assets/articles/in-season/lateral-bound-stick.webp" alt="Sivuloikka pysäytyksellä" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Sivuloikka pysäytyksellä</span><span class="isx-sets">2&nbsp;× 3&nbsp;per puoli</span></span></a>
+<div class="isx-group">Voima · 12&nbsp;min</div>
+<a class="isx-card" href="/fi/exercises/trap-bar-deadlift.html"><span class="isx-thumb"><img src="/assets/articles/in-season/trap-bar-deadlift.webp" alt="Trap bar -maastaveto tai RDL käsipainoilla" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Trap bar -maastaveto tai RDL käsipainoilla</span><span class="isx-sets">3&nbsp;× 3–5, raskas</span></span></a>
+<a class="isx-card" href="/fi/exercises/bulgarian-split-squat.html"><span class="isx-thumb"><img src="/assets/articles/in-season/bulgarian-split-squat.webp" alt="Bulgarialainen askelkyykky" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Bulgarialainen askelkyykky</span><span class="isx-sets">2&nbsp;× 5&nbsp;per puoli</span></span></a>
+<a class="isx-card" href="/fi/exercises/dumbbell-row.html"><span class="isx-thumb"><img src="/assets/articles/in-season/dumbbell-row.webp" alt="Käsipainosoutu + Punnerrus" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Käsipainosoutu + Punnerrus</span><span class="isx-sets">2&nbsp;× 6–8&nbsp;kumpaakin</span></span></a>
+<div class="isx-group">Nivuset ja keskivartalo · 4&nbsp;min</div>
+<a class="isx-card" href="/fi/exercises/copenhagen-plank-short.html"><span class="isx-thumb"><img src="/assets/articles/in-season/copenhagen-plank-short.webp" alt="Kööpenhamina-lankku — lyhyt" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Kööpenhamina-lankku — lyhyt</span><span class="isx-sets">2&nbsp;× 20&nbsp;s per puoli</span></span></a>
+<a class="isx-card" href="/fi/exercises/dead-bug.html"><span class="isx-thumb"><img src="/assets/articles/in-season/dead-bug.webp" alt="Dead bug" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Dead bug</span><span class="isx-sets">2&nbsp;× 6&nbsp;per puoli</span></span></a>
+</div></div>
 <h3>Kolme sääntöä, joilla se toimii</h3>
 <ol>
 <li><strong>Jätä joka voimasarjassa kaksi toistoa varastoon.</strong> Raskasta, mutta ei koskaan väkisin vääntämistä. Ylläpidät, et testaa.</li>
@@ -330,26 +349,24 @@
 </ol>
 <h3>15&nbsp;minuutin nopeus- ja räjähtävyystreeni</h3>
 <p>Lyhyt, terävä ja täysin palautunut. Kävele takaisin sprinttien välissä ja pidä 60–90&nbsp;sekunnin tauko ennen seuraavaa.</p>
-<div class="art-table-wrap reveal">
-<table class="art-table fit">
-<caption>Nopeus ja räjähtävyys · 15&nbsp;min · kerran viikossa</caption>
-<thead><tr><th>Liike</th><th>Sarjat ×&nbsp;toistot</th></tr></thead>
-<tbody>
-<tr><td><a href="/fi/exercises/falling-start-sprint.html">Kaatumislähtösprintti</a></td><td>4&nbsp;× 10&nbsp;m</td></tr>
-<tr><td><a href="/fi/exercises/10m-acceleration-sprint.html">10&nbsp;m kiihdytyssprintti</a></td><td>3&nbsp;× 10&nbsp;m</td></tr>
-<tr><td><a href="/fi/exercises/lateral-skater-bound.html">Sivuttainen luistelijaloikka</a></td><td>3&nbsp;× 3&nbsp;per puoli</td></tr>
-<tr><td><a href="/fi/exercises/rotational-med-ball-toss.html">Kuntopallon kiertoheitto</a></td><td>3&nbsp;× 4&nbsp;per puoli</td></tr>
-<tr><td><a href="/fi/exercises/pogo-hops.html">Pogohypyt</a></td><td>2&nbsp;× 15</td></tr>
-</tbody>
-</table>
-</div>
+<figure class="vid-fig reveal"><a href="/fi/exercises/lateral-skater-bound.html" aria-label="Sivuttainen luistelijaloikka"><video autoplay muted loop playsinline preload="metadata" poster="/assets/video/drill-skater.jpg" width="640" height="360"><source src="/assets/video/drill-skater.mp4" type="video/mp4"></video></a><figcaption><strong>Sivuttainen luistelijaloikka</strong> · 3&nbsp;× 3&nbsp;per puoli · Valmentaja Davidin demo</figcaption></figure>
+<div class="isx-block reveal"><div class="isx-title">Nopeus ja räjähtävyys · 15&nbsp;min · kerran viikossa</div><div class="isx-grid">
+<a class="isx-card" href="/fi/exercises/falling-start-sprint.html"><span class="isx-thumb"><img src="/assets/articles/in-season/falling-start-sprint.webp" alt="Kaatumislähtösprintti" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Kaatumislähtösprintti</span><span class="isx-sets">4&nbsp;× 10&nbsp;m</span></span></a>
+<a class="isx-card" href="/fi/exercises/10m-acceleration-sprint.html"><span class="isx-thumb"><img src="/assets/articles/in-season/10m-acceleration-sprint.webp" alt="10 m kiihdytyssprintti" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">10&nbsp;m kiihdytyssprintti</span><span class="isx-sets">3&nbsp;× 10&nbsp;m</span></span></a>
+<a class="isx-card" href="/fi/exercises/lateral-skater-bound.html"><span class="isx-thumb"><img src="/assets/articles/in-season/lateral-skater-bound.webp" alt="Sivuttainen luistelijaloikka" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Sivuttainen luistelijaloikka</span><span class="isx-sets">3&nbsp;× 3&nbsp;per puoli</span></span></a>
+<a class="isx-card" href="/fi/exercises/rotational-med-ball-toss.html"><span class="isx-thumb"><img src="/assets/articles/in-season/rotational-med-ball-toss.webp" alt="Kuntopallon kiertoheitto" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Kuntopallon kiertoheitto</span><span class="isx-sets">3&nbsp;× 4&nbsp;per puoli</span></span></a>
+<a class="isx-card" href="/fi/exercises/pogo-hops.html"><span class="isx-thumb"><img src="/assets/articles/in-season/pogo-hops.webp" alt="Pogohypyt" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Pogohypyt</span><span class="isx-sets">2&nbsp;× 15</span></span></a>
+</div></div>
 <h2 id="conditioning">Tarvitsetko vielä kestävyystreeniä?</h2>
 <p>Jos pelaat paljon minuutteja, yleensä et. Ottelut ja kovat harjoitukset ovat kestävyystreenisi, ja ylimääräiset intervallit vain lisäävät väsymystä, josta sinun pitää sitten palautua.</p>
 <p>Jos et pelaa paljon minuutteja, vastaus muuttuu. Yllä mainittu katsaus havaitsi, että yliopistopelaajien aerobinen kunto heikkenee vuoden mittaan, ja neljännen ketjun pelaaja, kolmannen puolustusparin pelaaja, varamaalivahti tai loukkaantumisesta palaava saa vähemmän sitä kestävyyttä, jota ottelut antavat muille. Lisää yksi lyhyt treeni viikossa: 6–8&nbsp;kierrosta 30&nbsp;sekuntia kovaa ja 90&nbsp;sekuntia kevyesti pyörällä, päivänä, joka on vähintään 48&nbsp;tunnin päässä seuraavasta ottelusta.</p>
 <h2 id="groin">Liike, jota et koskaan jätä pois</h2>
 <p>Nivusrevähdykset ovat jääkiekon tyypillisiä vammoja, ja ne sattuvat useimmiten otteluissa. Ratkaisu on hyvin tutkittu. Yhdessä NHL-joukkueessa heikot lähentäjät omaavat pelaajat tekivät vahvistusohjelman, ja <a href="https://pubmed.ncbi.nlm.nih.gov/12239001/" rel="noopener" target="_blank">lähentäjärevähdykset laskivat 3,2:sta 0,71:een tuhatta pelaajaottelua kohden</a> kahden seuraavan kauden aikana. Jalkapallossa yhteen liikkeeseen, Kööpenhamina-lähennykseen, perustuva ohjelma, jota tehtiin kolmesti viikossa harjoituskaudella ja <a href="https://bjsm.bmj.com/content/53/3/150" rel="noopener" target="_blank">kerran viikossa kauden aikana, pienensi nivusvaivojen riskiä 41&nbsp;%</a>.</p>
+<figure class="ph-fig reveal"><a href="/fi/exercises/copenhagen-plank-short.html"><img src="/assets/articles/in-season/copenhagen-plank-short-lg.webp" alt="Kööpenhamina-lankku — lyhyt" loading="lazy" width="960" height="540"></a><figcaption><strong>Kööpenhamina-lankku — lyhyt</strong> · 2&nbsp;× 20&nbsp;s per puoli · Valmentaja Davidin demo</figcaption></figure>
 <p>Kerran viikossa on kauden annos, ja se vie kaksi minuuttia. Pidä <a href="/fi/exercises/copenhagen-plank-short.html">Kööpenhamina-lankku</a> päätreenissäsi äläkä jätä sitä pois, kun kalenteri täyttyy. Juuri silloin tarvitset sitä. Koko läpikäynti, mukaan lukien voimatesti, joka ennustaa nivusrevähdyksiä, löytyy oppaastamme <a href="/fi/hockey-injury-prevention.html">vammat kuriin jääkiekkokaudella</a>.</p>
 <h2 id="ages">Mikä muuttuu iän mukaan</h2>
+<figure class="ph-fig reveal"><img src="/assets/articles/youth-dryland.jpg" alt="Nuorille pelaajille kausi on iso osa kehitystä. Pidä heidän oheisharjoittelunsa lyhyenä ja leikinomaisena." loading="lazy" width="2000" height="1125"><figcaption>Nuorille pelaajille kausi on iso osa kehitystä. Pidä heidän oheisharjoittelunsa lyhyenä ja leikinomaisena.</figcaption></figure>
+
 <div class="age-grid cols-3 reveal">
 <div class="age-card is-youth">
 <h4>Juniorit · 9–12</h4>

@@ -52,6 +52,27 @@
   .art-table.fit.days td:first-child{width:28%}
   .art-table.fit td:first-child{width:auto}
 }
+
+/* In-season article: visuals */
+.ph-fig,.vid-fig,.app-shots{max-width:var(--art-measure);margin:34px auto 38px}
+.ph-fig img,.vid-fig video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;border:1px solid var(--line);background:var(--bg-3)}
+.ph-fig a,.vid-fig a{border-bottom:none!important;display:block}
+.ph-fig figcaption,.vid-fig figcaption,.app-shots figcaption{font-size:13px;color:var(--ink-3);text-align:center;line-height:1.55;max-width:58ch;margin:12px auto 0}
+.ph-fig figcaption strong,.vid-fig figcaption strong{color:var(--ink-2);font-weight:600}
+.app-shots .app-row{display:flex;justify-content:center;align-items:flex-start;gap:18px;padding:28px 16px;background:radial-gradient(circle at 50% 0%,var(--ice-soft),transparent 70%),var(--card);border:1px solid var(--line);border-radius:18px}
+.app-shots img{width:44%;max-width:230px;height:auto;aspect-ratio:640/1418;object-fit:cover;object-position:top;border-radius:24px;border:1px solid var(--line-2);box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.isx-block{max-width:var(--art-measure);margin:24px auto 38px}
+.isx-title{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.isx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.isx-group{grid-column:1/-1;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ice);margin-top:16px}
+.art-prose a.isx-card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;color:inherit;transition:border-color .2s,transform .2s}
+.art-prose a.isx-card:hover{border-color:var(--ice-line);transform:translateY(-2px)}
+.isx-thumb{display:block;aspect-ratio:16/9;overflow:hidden;background:var(--bg-3)}
+.isx-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.isx-body{display:flex;flex-direction:column;gap:4px;padding:10px 12px 12px}
+.isx-name{font-size:14px;font-weight:600;color:var(--ink);line-height:1.3}
+.isx-sets{font-size:13px;color:var(--warm);font-weight:600}
+@media(max-width:600px){.isx-grid{grid-template-columns:repeat(2,1fr);gap:10px}.isx-name{font-size:13px}.isx-sets{font-size:12px}.isx-body{padding:9px 10px 11px}.app-shots .app-row{gap:12px;padding:22px 12px}}
 </style>
 
 <script type="application/ld+json">{
@@ -177,6 +198,7 @@
 <p>Det tappet är inte otur. Det är vad en lång säsong gör med en kropp som slutar få styrkeretning. Det goda beskedet är att det kräver mycket mindre jobb att stoppa det än det krävde att bygga upp formen. Du behöver inget sommarprogram mitt i vintern. Du behöver rätt liten dos på rätt plats i veckan.</p>
 <h2 id="slower">Varför spelare blir långsammare under säsongen</h2>
 <p>Hockey ser ut som något som borde hålla dig i form av sig självt. Du är på isen fyra eller fem gånger i veckan, åker hårt och svettas igenom utrustningen. Men isträning är ingen styrkeretning, och en lång säsong samlar på sig trötthet snabbare än träningen hinner bygga upp något.</p>
+<figure class="ph-fig reveal"><img src="/assets/articles/training.jpg" alt="Benens explosivitet är det första en lång säsong tar. Den är också billigast att behålla." loading="lazy" width="1600" height="900"><figcaption>Benens explosivitet är det första en lång säsong tar. Den är också billigast att behålla.</figcaption></figure>
 <p>Forskningen är påfallande samstämmig. Ett NHL-lag som testade sina spelare med countermovement-hopp varje vecka såg att <a href="https://pubmed.ncbi.nlm.nih.gov/33651739/" rel="noopener" target="_blank">hopphöjd och hastighet sjönk under säsongen</a>, med störst effekt av trötthet sent på säsongen. En studie av ett NCAA Division I-lag under en 18&nbsp;veckor lång säsong visade att <a href="https://pubmed.ncbi.nlm.nih.gov/30908458/" rel="noopener" target="_blank">benkraften minskade hela året</a>, med de största tappen efter de längsta resorna. Ett annat collegelag <a href="https://pubmed.ncbi.nlm.nih.gov/24910956/" rel="noopener" target="_blank">producerade mindre kraft i upprepade sprinter efter säsongen än före</a>, och samma sprinter kändes tyngre.</p>
 <p>En systematisk översikt från 2021&nbsp;som sammanställde årtionden av hockeystudier över hela säsonger kom fram till samma sak: nyare forskning pekar på <a href="https://pubmed.ncbi.nlm.nih.gov/34387221/" rel="noopener" target="_blank">sämre aerob kondition och ökande trötthet allt eftersom säsongen går</a>, och författarna efterlyser mer arbete för att begränsa de förlusterna sent på året.</p>
 <p>Läs det igen med slutspelet i tankarna. När spelarna är som svagast är också när matcherna betyder mest.</p>
@@ -241,6 +263,7 @@
 <li><strong>Dagen före match:</strong> bara rörlighet. Inget tungt, inget nytt.</li>
 <li><strong>Dagen efter match:</strong> lätt rörelse och rörlighet. Ditt första tunga pass kommer efter det.</li>
 </ul>
+<figure class="ph-fig reveal"><img src="/assets/articles/skating-speed.jpg" alt="Matchdagen är till för att spela. Det tunga jobbet gjordes minst 48 timmar tidigare." loading="lazy" width="2000" height="1116"><figcaption>Matchdagen är till för att spela. Det tunga jobbet gjordes minst 48&nbsp;timmar tidigare.</figcaption></figure>
 <p>Varför inget nytt? En ny övning ger träningsvärk även med lätt vikt, eftersom musklerna inte har vant sig vid den än. Under säsongen håller du dig till rörelser du redan kan väl. Spara experimenten till sommaren.</p>
 <h3>Och träning på matchdagen?</h3>
 <p>En del proffslag kör en kort ”primer” på morgonen före en match: några hopp, eller två tre ganska tunga repetitioner. En översikt från 2019&nbsp;fann att styrketräning med låg volym och hög intensitet <a href="https://pubmed.ncbi.nlm.nih.gov/31203499/" rel="noopener" target="_blank">kan förbättra prestationen i upp till 48&nbsp;timmar efteråt</a>, men responsen varierar mycket mellan idrottare. Vill du testa, håll det litet och prova i en match som inte spelar någon roll. Uppvärmningen före matchen är fortfarande huvudsaken, och den går vi igenom i <a href="/sv/hockey-warm-up.html">den perfekta hockeyuppvärmningen</a>.</p>
@@ -299,29 +322,25 @@
 <a class="btn btn-primary" data-place="article_inseason_inline" href="https://apps.apple.com/se/app/elite-hockey-drills/id6787257275" rel="noopener" target="_blank"> Testa gratis i 7&nbsp;dagar <svg aria-hidden="true" fill="none" height="16" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24" width="16"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
 </a>
 </div>
+<figure class="app-shots reveal"><div class="app-row"><img src="/assets/app/app-gameday-sv.webp" alt="Matchdagsguide i Elite Hockey Drills-appen" loading="lazy" width="640" height="1536"><img src="/assets/app/app-program-sv.webp" alt="Träningsvecka planerad runt matcherna i Elite Hockey Drills-appen" loading="lazy" width="640" height="1418"></div><figcaption>Appens matchdagsguide (vänster) och en träningsvecka byggd runt matcherna (höger).</figcaption></figure>
+
 <h2 id="session">Säsongspasset på 25&nbsp;minuter</h2>
 <p>Det här är huvudpasset: lite explosivitet först, sedan styrka, i den ordning nervsystemet vill ha det. Det funkar på gymmet eller hemma med ett par hantlar. Varje övning länkar till en demovideo.</p>
-<div class="art-table-wrap reveal">
-<table class="art-table fit">
-<caption>Huvudpass · 25&nbsp;min · 1&nbsp;till 2&nbsp;gånger i veckan</caption>
-<thead><tr><th>Övning</th><th>Set ×&nbsp;reps</th></tr></thead>
-<tbody>
-<tr class="grp"><td colspan="2">Förberedelse · 4&nbsp;min</td></tr>
-<tr><td><a href="/sv/exercises/world-s-greatest-stretch.html">Världens bästa stretch</a></td><td>1&nbsp;× 3&nbsp;per sida</td></tr>
-<tr><td><a href="/sv/exercises/90-90-hip-switch.html">90/90&nbsp;höftväxling</a></td><td>1&nbsp;× 6&nbsp;per sida</td></tr>
-<tr class="grp"><td colspan="2">Explosivitet · 4&nbsp;min</td></tr>
-<tr><td><a href="/sv/exercises/broad-jump.html">Stående längdhopp</a></td><td>3&nbsp;× 3, full vila</td></tr>
-<tr><td><a href="/sv/exercises/lateral-bound-stick.html">Sidohopp med stopp</a></td><td>2&nbsp;× 3&nbsp;per sida</td></tr>
-<tr class="grp"><td colspan="2">Styrka · 12&nbsp;min</td></tr>
-<tr><td><a href="/sv/exercises/trap-bar-deadlift.html">Marklyft med trap bar</a> eller <a href="/sv/exercises/db-rdl.html">RDL med hantlar</a></td><td>3&nbsp;× 3–5, tungt</td></tr>
-<tr><td><a href="/sv/exercises/bulgarian-split-squat.html">Bulgarisk split squat</a></td><td>2&nbsp;× 5&nbsp;per sida</td></tr>
-<tr><td><a href="/sv/exercises/dumbbell-row.html">Hantelrodd</a> + <a href="/sv/exercises/push-up.html">Armhävning</a></td><td>2&nbsp;× 6–8&nbsp;av varje</td></tr>
-<tr class="grp"><td colspan="2">Ljumske och bål · 4&nbsp;min</td></tr>
-<tr><td><a href="/sv/exercises/copenhagen-plank-short.html">Köpenhamnsplanka — Kort</a></td><td>2&nbsp;× 20&nbsp;s per sida</td></tr>
-<tr><td><a href="/sv/exercises/dead-bug.html">Dead bug</a></td><td>2&nbsp;× 6&nbsp;per sida</td></tr>
-</tbody>
-</table>
-</div>
+<div class="isx-block reveal"><div class="isx-title">Huvudpass · 25&nbsp;min · 1&nbsp;till 2&nbsp;gånger i veckan</div><div class="isx-grid">
+<div class="isx-group">Förberedelse · 4&nbsp;min</div>
+<a class="isx-card" href="/sv/exercises/world-s-greatest-stretch.html"><span class="isx-thumb"><img src="/assets/articles/in-season/world-s-greatest-stretch.webp" alt="Världens bästa stretch" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Världens bästa stretch</span><span class="isx-sets">1&nbsp;× 3&nbsp;per sida</span></span></a>
+<a class="isx-card" href="/sv/exercises/90-90-hip-switch.html"><span class="isx-thumb"><img src="/assets/articles/in-season/90-90-hip-switch.webp" alt="90/90 höftväxling" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">90/90&nbsp;höftväxling</span><span class="isx-sets">1&nbsp;× 6&nbsp;per sida</span></span></a>
+<div class="isx-group">Explosivitet · 4&nbsp;min</div>
+<a class="isx-card" href="/sv/exercises/broad-jump.html"><span class="isx-thumb"><img src="/assets/articles/in-season/broad-jump.webp" alt="Stående längdhopp" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Stående längdhopp</span><span class="isx-sets">3&nbsp;× 3, full vila</span></span></a>
+<a class="isx-card" href="/sv/exercises/lateral-bound-stick.html"><span class="isx-thumb"><img src="/assets/articles/in-season/lateral-bound-stick.webp" alt="Sidohopp med stopp" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Sidohopp med stopp</span><span class="isx-sets">2&nbsp;× 3&nbsp;per sida</span></span></a>
+<div class="isx-group">Styrka · 12&nbsp;min</div>
+<a class="isx-card" href="/sv/exercises/trap-bar-deadlift.html"><span class="isx-thumb"><img src="/assets/articles/in-season/trap-bar-deadlift.webp" alt="Marklyft med trap bar eller RDL med hantlar" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Marklyft med trap bar eller RDL med hantlar</span><span class="isx-sets">3&nbsp;× 3–5, tungt</span></span></a>
+<a class="isx-card" href="/sv/exercises/bulgarian-split-squat.html"><span class="isx-thumb"><img src="/assets/articles/in-season/bulgarian-split-squat.webp" alt="Bulgarisk split squat" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Bulgarisk split squat</span><span class="isx-sets">2&nbsp;× 5&nbsp;per sida</span></span></a>
+<a class="isx-card" href="/sv/exercises/dumbbell-row.html"><span class="isx-thumb"><img src="/assets/articles/in-season/dumbbell-row.webp" alt="Hantelrodd + Armhävning" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Hantelrodd + Armhävning</span><span class="isx-sets">2&nbsp;× 6–8&nbsp;av varje</span></span></a>
+<div class="isx-group">Ljumske och bål · 4&nbsp;min</div>
+<a class="isx-card" href="/sv/exercises/copenhagen-plank-short.html"><span class="isx-thumb"><img src="/assets/articles/in-season/copenhagen-plank-short.webp" alt="Köpenhamnsplanka — Kort" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Köpenhamnsplanka — Kort</span><span class="isx-sets">2&nbsp;× 20&nbsp;s per sida</span></span></a>
+<a class="isx-card" href="/sv/exercises/dead-bug.html"><span class="isx-thumb"><img src="/assets/articles/in-season/dead-bug.webp" alt="Dead bug" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Dead bug</span><span class="isx-sets">2&nbsp;× 6&nbsp;per sida</span></span></a>
+</div></div>
 <h3>De tre reglerna som gör att det funkar</h3>
 <ol>
 <li><strong>Lämna två reps i reserv</strong> i varje styrkeset. Tungt, men aldrig en kamp. Du underhåller, du testar inte.</li>
@@ -330,26 +349,24 @@
 </ol>
 <h3>Fart- och explosivitetspasset på 15&nbsp;minuter</h3>
 <p>Kort, skarpt och fullt utvilat. Gå tillbaka mellan sprinterna och ta 60&nbsp;till 90&nbsp;sekunder före nästa.</p>
-<div class="art-table-wrap reveal">
-<table class="art-table fit">
-<caption>Fart och explosivitet · 15&nbsp;min · en gång i veckan</caption>
-<thead><tr><th>Övning</th><th>Set ×&nbsp;reps</th></tr></thead>
-<tbody>
-<tr><td><a href="/sv/exercises/falling-start-sprint.html">Fallstart med sprint</a></td><td>4&nbsp;× 10&nbsp;m</td></tr>
-<tr><td><a href="/sv/exercises/10m-acceleration-sprint.html">10&nbsp;m accelerationssprint</a></td><td>3&nbsp;× 10&nbsp;m</td></tr>
-<tr><td><a href="/sv/exercises/lateral-skater-bound.html">Lateralt skridskohopp</a></td><td>3&nbsp;× 3&nbsp;per sida</td></tr>
-<tr><td><a href="/sv/exercises/rotational-med-ball-toss.html">Rotationskast med medicinboll</a></td><td>3&nbsp;× 4&nbsp;per sida</td></tr>
-<tr><td><a href="/sv/exercises/pogo-hops.html">Pogohopp</a></td><td>2&nbsp;× 15</td></tr>
-</tbody>
-</table>
-</div>
+<figure class="vid-fig reveal"><a href="/sv/exercises/lateral-skater-bound.html" aria-label="Lateralt skridskohopp"><video autoplay muted loop playsinline preload="metadata" poster="/assets/video/drill-skater.jpg" width="640" height="360"><source src="/assets/video/drill-skater.mp4" type="video/mp4"></video></a><figcaption><strong>Lateralt skridskohopp</strong> · 3&nbsp;× 3&nbsp;per sida · Tränare Davids demo</figcaption></figure>
+<div class="isx-block reveal"><div class="isx-title">Fart och explosivitet · 15&nbsp;min · en gång i veckan</div><div class="isx-grid">
+<a class="isx-card" href="/sv/exercises/falling-start-sprint.html"><span class="isx-thumb"><img src="/assets/articles/in-season/falling-start-sprint.webp" alt="Fallstart med sprint" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Fallstart med sprint</span><span class="isx-sets">4&nbsp;× 10&nbsp;m</span></span></a>
+<a class="isx-card" href="/sv/exercises/10m-acceleration-sprint.html"><span class="isx-thumb"><img src="/assets/articles/in-season/10m-acceleration-sprint.webp" alt="10 m accelerationssprint" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">10&nbsp;m accelerationssprint</span><span class="isx-sets">3&nbsp;× 10&nbsp;m</span></span></a>
+<a class="isx-card" href="/sv/exercises/lateral-skater-bound.html"><span class="isx-thumb"><img src="/assets/articles/in-season/lateral-skater-bound.webp" alt="Lateralt skridskohopp" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Lateralt skridskohopp</span><span class="isx-sets">3&nbsp;× 3&nbsp;per sida</span></span></a>
+<a class="isx-card" href="/sv/exercises/rotational-med-ball-toss.html"><span class="isx-thumb"><img src="/assets/articles/in-season/rotational-med-ball-toss.webp" alt="Rotationskast med medicinboll" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Rotationskast med medicinboll</span><span class="isx-sets">3&nbsp;× 4&nbsp;per sida</span></span></a>
+<a class="isx-card" href="/sv/exercises/pogo-hops.html"><span class="isx-thumb"><img src="/assets/articles/in-season/pogo-hops.webp" alt="Pogohopp" loading="lazy" width="480" height="270"></span><span class="isx-body"><span class="isx-name">Pogohopp</span><span class="isx-sets">2&nbsp;× 15</span></span></a>
+</div></div>
 <h2 id="conditioning">Behöver du fortfarande kondition?</h2>
 <p>Spelar du mycket istid är svaret oftast nej. Matcher och hårda träningar är din kondition, och extra intervaller ovanpå ger bara mer trötthet som du sedan måste återhämta dig från.</p>
 <p>Spelar du lite istid ändras svaret. Översikten ovan fann att den aeroba konditionen hos collegespelare tenderar att sjunka under året, och en spelare i fjärdekedjan, i tredje backparet, som reservmålvakt eller på väg tillbaka från en skada får mindre av den kondition som matcherna ger alla andra. Lägg till ett kort pass i veckan: 6&nbsp;till 8&nbsp;omgångar med 30&nbsp;sekunder hårt och 90&nbsp;sekunder lätt på cykel, på en dag minst 48&nbsp;timmar från nästa match.</p>
 <h2 id="groin">Övningen du aldrig stryker</h2>
 <p>Ljumskskador är en av hockeyns typiska skador, och de sker mest i matcher. Lösningen är väl studerad. I ett NHL-lag fick spelare med svaga adduktorer ett styrkeprogram, och <a href="https://pubmed.ncbi.nlm.nih.gov/12239001/" rel="noopener" target="_blank">adduktorskadorna sjönk från 3,2&nbsp;till 0,71&nbsp;per 1&nbsp;000&nbsp;spelarmatcher</a> under de två följande säsongerna. Inom fotboll minskade ett program byggt på en enda övning, Köpenhamnsadduktionen, gjord tre gånger i veckan under försäsongen och <a href="https://bjsm.bmj.com/content/53/3/150" rel="noopener" target="_blank">en gång i veckan under säsongen, risken för ljumskproblem med 41&nbsp;%</a>.</p>
+<figure class="ph-fig reveal"><a href="/sv/exercises/copenhagen-plank-short.html"><img src="/assets/articles/in-season/copenhagen-plank-short-lg.webp" alt="Köpenhamnsplanka — Kort" loading="lazy" width="960" height="540"></a><figcaption><strong>Köpenhamnsplanka — Kort</strong> · 2&nbsp;× 20&nbsp;s per sida · Tränare Davids demo</figcaption></figure>
 <p>En gång i veckan är säsongsdosen, och den tar två minuter. Ha kvar <a href="/sv/exercises/copenhagen-plank-short.html">Köpenhamnsplankan</a> i huvudpasset och stryk den inte när schemat fylls. Det är just då du behöver den. Hela genomgången, inklusive styrketestet som förutspår ljumskskador, finns i vår guide om att <a href="/sv/hockey-injury-prevention.html">skadesäkra din hockeysäsong</a>.</p>
 <h2 id="ages">Vad som ändras med åldern</h2>
+<figure class="ph-fig reveal"><img src="/assets/articles/youth-dryland.jpg" alt="För unga spelare är säsongen en stor del av utvecklingen. Håll barmarken kort och lekfull." loading="lazy" width="2000" height="1125"><figcaption>För unga spelare är säsongen en stor del av utvecklingen. Håll barmarken kort och lekfull.</figcaption></figure>
+
 <div class="age-grid cols-3 reveal">
 <div class="age-card is-youth">
 <h4>Ungdom · 9&nbsp;till 12</h4>
