@@ -1628,17 +1628,19 @@ const STATIC_PAGES = [
   { loc: '/articles/the-off-season-blueprint.html',                freq: 'monthly', pri: '0.7' },
   { loc: '/articles/off-season-nutrition-for-hockey-players.html', freq: 'monthly', pri: '0.7' },
   { loc: '/articles/sleep-and-recovery-for-hockey-players.html',   freq: 'monthly', pri: '0.7' },
+  { loc: '/articles/in-season-hockey-training.html',              freq: 'monthly', pri: '0.8' },
   { loc: '/library.html',                                          freq: 'weekly',  pri: '0.8' },
 ];
 
 function buildSitemap(exercises) {
   // Every page exists in every language (/, /cs/, /sv/) — list all and pair them with hreflang.
   const locFor = (pre, loc) => (loc === '/' ? (pre || '') + '/' : pre + loc);
-  const alt = (enLoc) => '\n' + SITE_LANGS.map(([code, pre]) =>
+  const langsFor = (p) => SITE_LANGS.filter(([code]) => !p.langs || p.langs.includes(code));
+  const alt = (enLoc, langs = SITE_LANGS) => '\n' + langs.map(([code, pre]) =>
     `    <xhtml:link rel="alternate" hreflang="${code}" href="${SITE_URL}${locFor(pre, enLoc)}"/>`).join('\n')
     + `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${enLoc}"/>\n  `;
-  const staticUrls = STATIC_PAGES.flatMap(p => SITE_LANGS.map(([, pre]) =>
-    `  <url><loc>${SITE_URL}${locFor(pre, p.loc)}</loc><lastmod>${TODAY}</lastmod><changefreq>${p.freq}</changefreq><priority>${p.pri}</priority>${alt(p.loc)}</url>`));
+  const staticUrls = STATIC_PAGES.flatMap(p => langsFor(p).map(([, pre]) =>
+    `  <url><loc>${SITE_URL}${locFor(pre, p.loc)}</loc><lastmod>${TODAY}</lastmod><changefreq>${p.freq}</changefreq><priority>${p.pri}</priority>${alt(p.loc, langsFor(p))}</url>`));
   const exerciseUrls = exercises.flatMap(ex => {
     // Video extension — only when a thumbnail exists (video:thumbnail_loc is required).
     const videoBlock = (ex.video && hasThumb(ex.slug)) ? `
