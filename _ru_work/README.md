@@ -41,6 +41,9 @@ The exercise library comes from `exercises.ru.json` through the normal generator
 
 ## Known limits
 
+- `ru/app.html` (like every language's `app.html`) was edited directly on 2026-11-08: the App Store
+  link carries Apple's provider token (`pt=129111129&ct=<src>&mt=8`) so installs count as campaigns.
+
 - `ru/*.html` was edited directly on 2026-11-01 (annual-only free week wording, root-absolute file
   paths). Re-injecting from `seg/` would undo both unless the segments are updated too.
 
