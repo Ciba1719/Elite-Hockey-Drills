@@ -457,14 +457,14 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
 
     <div class="gift">
       <div class="gift-row">
-        <img class="gift-cover" id="giftCover" src="/free/cover-youth-5-foundations.jpg" alt="" width="480" height="854" />
+        <img class="gift-cover" id="giftCover" src="/free/cover-week-one-12-14.jpg" alt="" width="480" height="854" />
         <div>
           <div class="gift-kicker" id="giftKicker"></div>
           <div class="gift-name" id="giftName"></div>
           <div class="gift-meta" id="giftMeta"></div>
         </div>
       </div>
-      <a class="gift-btn" id="giftBtn" href="/free/EHD-5-Day-Youth-Off-Ice-Program-Ages-9-14.pdf" target="_blank" rel="noopener">
+      <a class="gift-btn" id="giftBtn" href="/free/EHD-Week-One-Off-Ice-Program-12-14.pdf" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
         <span>Öppna mitt gratisprogram</span>
       </a>
@@ -627,11 +627,11 @@ bindSingleSelect(getScreen(4), 'goal');
 // The free program each age group is emailed (the emails and PDFs are in English) — keep in sync with the
 // MailerLite "Send … PDF" automations
 const FREE_PROGRAM = {
-  '9_11':   { acc: "det kostnadsfria 5-dagars barmarksprogrammet för unga (”The 5 Foundations”, på engelska)", nom: "Ditt kostnadsfria 5-dagars barmarksprogram" },
-  '12_14':  { acc: "det kostnadsfria 5-dagars barmarksprogrammet för unga (”The 5 Foundations”, på engelska)", nom: "Ditt kostnadsfria 5-dagars barmarksprogram" },
-  '15_18':  { acc: "det kostnadsfria 5-dagars barmarksprogrammet (på engelska)", nom: "Ditt kostnadsfria 5-dagarsprogram" },
-  '19_39':  { acc: "den kostnadsfria planen ”30-Minute Hockey Power Plan” (på engelska)", nom: "Din kostnadsfria ”30-Minute Hockey Power Plan”" },
-  '40plus': { acc: "den kostnadsfria planen ”30-Minute Hockey Power Plan” (på engelska)", nom: "Din kostnadsfria ”30-Minute Hockey Power Plan”" }
+  '9_11':   { acc: "det kostnadsfria programmet ”Week One” (5 pass, på engelska)", nom: "Ditt kostnadsfria program ”Week One”" },
+  '12_14':  { acc: "det kostnadsfria programmet ”Week One” (5 pass, på engelska)", nom: "Ditt kostnadsfria program ”Week One”" },
+  '15_18':  { acc: "det kostnadsfria programmet ”Week One” (4 pass, på engelska)", nom: "Ditt kostnadsfria program ”Week One”" },
+  '19_39':  { acc: "det kostnadsfria programmet ”Week One” (tre 30-minuterspass, på engelska)", nom: "Ditt kostnadsfria program ”Week One”" },
+  '40plus': { acc: "det kostnadsfria programmet ”Week One” (tre 30-minuterspass, på engelska)", nom: "Ditt kostnadsfria program ”Week One”" }
 };
 const isAdultAge = (age) => age === '19_39' || age === '40plus';
 
@@ -651,7 +651,7 @@ function populateEmailScreen(){
   sub.innerHTML = `Fyll i din e-post och få ${free.acc} för spelare i&nbsp;åldern <strong>${answers.ageLabel}</strong>.`;
   // Youth (9–14): the program and any follow-up go to a parent or guardian, not to the child
   const youth = answers.age === '9_11' || answers.age === '12_14';
-  if (youth) sub.innerHTML = `<strong>Föräldrar:</strong> fyll i <em>din</em> e-post så skickar vi det kostnadsfria 5-dagarsprogrammet för ditt barn (${answers.ageLabel}&nbsp;år) – med en guide för föräldrar om hur ni gör det säkert. Programmet är på engelska.`;
+  if (youth) sub.innerHTML = `<strong>Föräldrar:</strong> fyll i <em>din</em> e-post så skickar vi det kostnadsfria programmet ”Week One” för ditt barn (${answers.ageLabel}&nbsp;år) – med en guide för föräldrar om hur ni gör det säkert. Programmet är på engelska.`;
   const input = document.getElementById('emailInput');
   if (input) input.placeholder = youth ? 'foralder@epost.se' : 'din@epost.se';
 }
@@ -662,41 +662,21 @@ function populateEmailScreen(){
    Same layout as /survey.html. The program opens right on this page
    (the email is the copy). The PDFs and the teen page are in English.
    ============================================================ */
-const PDF_YOUTH = '/free/EHD-5-Day-Youth-Off-Ice-Program-Ages-9-14.pdf';
-const PDF_ADULT = '/free/EHD-30-Minute-Hockey-Power-Plan.pdf';
+const PDF = { '9_11': '/free/EHD-Week-One-Off-Ice-Program-9-11.pdf', '12_14': '/free/EHD-Week-One-Off-Ice-Program-12-14.pdf', '15_18': '/free/EHD-Week-One-Off-Ice-Program-15-18.pdf', '19_39': '/free/EHD-Week-One-Off-Ice-Program-19-39.pdf', '40plus': '/free/EHD-Week-One-Off-Ice-Program-40-plus.pdf' };
+const COVER = { '9_11': '/free/cover-week-one-9-11.jpg', '12_14': '/free/cover-week-one-12-14.jpg', '15_18': '/free/cover-week-one-15-18.jpg', '19_39': '/free/cover-week-one-19-39.jpg', '40plus': '/free/cover-week-one-40-plus.jpg' };const PDF_YOUTH = '/free/EHD-5-Day-Youth-Off-Ice-Program-Ages-9-14.pdf';
 const GIFT = {
-  '9_11':   { kicker:"Gratis · 9–11 år", name:'The 5 Foundations', meta:"5-dagars off-ice-program · ingen utrustning · 20–35 minuter per pass · på engelska", url:PDF_YOUTH, cover:'/free/cover-youth-5-foundations.jpg' },
-  '12_14':  { kicker:"Gratis · 12–14 år", name:'The 5 Foundations', meta:"5-dagars off-ice-program · ingen utrustning · 20–35 minuter per pass · på engelska", url:PDF_YOUTH, cover:'/free/cover-youth-5-foundations.jpg' },
-  '15_18':  { kicker:"Gratis · 15–18 år", name:'5-Day Off-Ice Program', meta:"35–45 minuter per pass · demovideo till varje övning · på engelska", url:'/free-program-15-18.html', badge:'5<br>DAYS' },
-  '19_39':  { kicker:"Gratis · vuxna spelare", name:'The 30-Minute Hockey Power Plan', meta:"Tre 30-minuterspass i veckan · hemma, med hantlar eller på gym · på engelska", url:PDF_ADULT, cover:'/free/cover-adult-30-minute-plan.jpg' },
-  '40plus': { kicker:"Gratis · 40+", name:'The 30-Minute Hockey Power Plan', meta:"Tre 30-minuterspass i veckan · hemma, med hantlar eller på gym · på engelska", url:PDF_ADULT, cover:'/free/cover-adult-30-minute-plan.jpg' }
+  '9_11': { kicker:"Gratis · 9–11 år", name:'Week One', meta:"5 pass · 20–32 minuter · ingen utrustning · vecka 1 av appens program · på engelska", url:PDF['9_11'], cover:COVER['9_11'] },
+  '12_14': { kicker:"Gratis · 12–14 år", name:'Week One', meta:"5 pass · 22–31 minuter · ingen utrustning · vecka 1 av appens program · på engelska", url:PDF['12_14'], cover:COVER['12_14'] },
+  '15_18': { kicker:"Gratis · 15–18 år", name:'Week One', meta:"4 pass · 22–46 minuter · ingen utrustning · vecka 1 av appens program · på engelska", url:PDF['15_18'], cover:COVER['15_18'] },
+  '19_39': { kicker:"Gratis · vuxna spelare", name:'Week One', meta:"Tre 30-minuterspass · ingen utrustning · vecka 1 av appens program · på engelska", url:PDF['19_39'], cover:COVER['19_39'] },
+  '40plus': { kicker:"Gratis · 40+", name:'Week One', meta:"Tre ledvänliga 30-minuterspass · ingen utrustning · vecka 1 av appens program · på engelska", url:PDF['40plus'], cover:COVER['40plus'] }
 };
 const START_STEPS = {
-  "9_11": [
-    "Föräldrar: läs sidorna <strong>Safety</strong> och <strong>With hockey</strong> först.",
-    "Använd <strong>Track A</strong>, doserna för 9–11 år.",
-    "Dag 1 börjar med <strong>5-Foundation Check</strong>. Filma det: det görs om i vecka 4."
-  ],
-  "12_14": [
-    "Föräldrar: läs sidorna <strong>Safety</strong> och <strong>With hockey</strong> först.",
-    "Använd <strong>Track B</strong>, doserna för 12–14 år. Ny på off-ice-träning? Kör vecka 1 på Track A.",
-    "Dag 1 börjar med <strong>5-Foundation Check</strong>. Filma det: det görs om i vecka 4."
-  ],
-  "15_18": [
-    "Varje pass tar 35–45 minuter <strong>inklusive uppvärmningen</strong>. Hoppa aldrig över den.",
-    "Dag 1 är <strong>Lower Power + Strength</strong>, dag 2 är <strong>Speed Day</strong>.",
-    "Tryck på ett blått övningsnamn för <strong>demovideon</strong> och steg-för-steg-guiden."
-  ],
-  "19_39": [
-    "Välj nivå på sidan 3: <strong>Rebuild</strong> eller <strong>Experienced</strong>.",
-    "Välj utrustning. Varje övning har en version för <strong>hemma</strong>, med <strong>hantlar</strong> och på <strong>gym</strong>.",
-    "Kör Session A och B minst <strong>48 timmar</strong> före match."
-  ],
-  "40plus": [
-    "Välj nivå på sidan 3. Över 40: börja på <strong>Rebuild</strong> i två veckor och gör uppvärmningen två gånger (sidan 7).",
-    "Välj utrustning. Varje övning har en version för <strong>hemma</strong>, med <strong>hantlar</strong> och på <strong>gym</strong>.",
-    "Kör Session A och B minst <strong>48 timmar</strong> före match."
-  ]
+  '9_11': ["Föräldrar: testa er spelare först (sidan 3): stående längdhopp, 10 m sprint, 5-10-5-skyttel. Tio minuter.", "Dag 1 är <strong>Speed & Movement Quality</strong>, 28 minuter. Tryck på en övning för demovideon.", "Match en annan dag? Håll de hårda passen <strong>48 timmar</strong> från den. Appen bygger om veckan efter ditt schema."],
+  '12_14': ["Föräldrar: testa er spelare först (sidan 3): stående längdhopp, 10 m sprint, 5-10-5-skyttel. Tio minuter.", "Dag 1 är <strong>Speed, Power & Landing</strong>, 31 minuter. Tryck på en övning för demovideon.", "Match en annan dag? Håll de hårda passen <strong>48 timmar</strong> från den. Appen bygger om veckan efter ditt schema."],
+  '15_18': ["Testa dig själv först (sidan 3): stående längdhopp, 10 m sprint, 5-10-5-skyttel. Tio minuter.", "Dag 1 är <strong>Athletic Lower Body</strong>, 46 minuter. Tryck på en övning för demovideon.", "Match en annan dag? Håll de hårda passen <strong>48 timmar</strong> från den. Appen bygger om veckan efter ditt schema."],
+  '19_39': ["Testa dig själv först (sidan 3): stående längdhopp, 10 m sprint, 5-10-5-skyttel. Tio minuter.", "Dag 1 är <strong>Athletic Lower Body</strong>, 30 minuter. Tryck på en övning för demovideon.", "Match en annan dag? Håll de hårda passen <strong>48 timmar</strong> från den. Appen bygger om veckan efter ditt schema."],
+  '40plus': ["Testa dig själv först (sidan 3): stående längdhopp, 10 m sprint, 5-10-5-skyttel. Tio minuter.", "Dag 1 är <strong>Lower Strength (Joint-Friendly)</strong>, 30 minuter. Tryck på en övning för demovideon.", "Match en annan dag? Håll de hårda passen <strong>48 timmar</strong> från den. Appen bygger om veckan efter ditt schema."]
 };
 const PROGRAM_MATCH = {
   '9_11':   [ { name:'GRUNDEN',     age:'9–11',  url:'/sv/program-9-11.html' } ],
@@ -721,7 +701,7 @@ function buildAppBlock(age, youth){
     + '<div><span class="app-badge">' + "Ålder AGE · 7 dagar gratis".replace('AGE', age) + '</span>'
     + `<div class="app-name">Elite Hockey Drills-appen</div>`
     + '<ul class="app-points">' + points.map((p) => `<li>${p}</li>`).join('') + '</ul></div>'
-    + `<a class="app-btn" href="${APP_URL}" data-place="survey-success" target="_blank" rel="noopener">Starta din gratisvecka ${ARROW_SVG}</a>`
+    + `<a class="app-btn" href="/app?src=survey_success" data-place="survey-success" target="_blank" rel="noopener">Starta din gratisvecka ${ARROW_SVG}</a>`
     + `<div class="app-fine">Årsplan: 7&nbsp;dagar gratis, sedan 1&nbsp;295&nbsp;kr/år. Månadsplan: 229&nbsp;kr/mån, utan gratisvecka. Avsluta när du vill.<br>${other}</div>`;
 }
 

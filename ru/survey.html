@@ -457,14 +457,14 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
 
     <div class="gift">
       <div class="gift-row">
-        <img class="gift-cover" id="giftCover" src="/free/cover-youth-5-foundations.jpg" alt="" width="480" height="854" />
+        <img class="gift-cover" id="giftCover" src="/free/cover-week-one-12-14.jpg" alt="" width="480" height="854" />
         <div>
           <div class="gift-kicker" id="giftKicker">Бесплатно</div>
           <div class="gift-name" id="giftName">Ваша бесплатная программа</div>
           <div class="gift-meta" id="giftMeta"></div>
         </div>
       </div>
-      <a class="gift-btn" id="giftBtn" href="/free/EHD-5-Day-Youth-Off-Ice-Program-Ages-9-14.pdf" target="_blank" rel="noopener">
+      <a class="gift-btn" id="giftBtn" href="/free/EHD-Week-One-Off-Ice-Program-12-14.pdf" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
         <span>Открыть бесплатную программу</span>
       </a>
@@ -626,11 +626,11 @@ bindSingleSelect(getScreen(4), 'goal');
 
 // The free program each age group is emailed — keep in sync with the MailerLite "Send … PDF" automations
 const FREE_PROGRAM = {
-  '9_11':   'бесплатную 5-дневную детскую программу вне льда (The 5 Foundations)',
-  '12_14':  'бесплатную 5-дневную детскую программу вне льда (The 5 Foundations)',
-  '15_18':  'бесплатную 5-дневную программу вне льда',
-  '19_39':  'бесплатный план 30-Minute Hockey Power Plan',
-  '40plus': 'бесплатный план 30-Minute Hockey Power Plan'
+  '9_11':   'бесплатную программу Week One (5 тренировок, на английском)',
+  '12_14':  'бесплатную программу Week One (5 тренировок, на английском)',
+  '15_18':  'бесплатную программу Week One (4 тренировок, на английском)',
+  '19_39':  'бесплатную программу Week One (три 30-минутные тренировки, на английском)',
+  '40plus': 'бесплатную программу Week One (три 30-минутные тренировки, на английском)'
 };
 const isAdultAge = (age) => age === '19_39' || age === '40plus';
 
@@ -662,31 +662,21 @@ function populateEmailScreen(){
    nobody waits on an inbox. Keep the steps in sync with the PDFs and
    with the "Send … PDF" emails (campaigns/shared/emails/build-emails.mjs).
    ============================================================ */
-const PDF_YOUTH = '/free/EHD-5-Day-Youth-Off-Ice-Program-Ages-9-14.pdf';
-const PDF_ADULT = '/free/EHD-30-Minute-Hockey-Power-Plan.pdf';
+const PDF = { '9_11': '/free/EHD-Week-One-Off-Ice-Program-9-11.pdf', '12_14': '/free/EHD-Week-One-Off-Ice-Program-12-14.pdf', '15_18': '/free/EHD-Week-One-Off-Ice-Program-15-18.pdf', '19_39': '/free/EHD-Week-One-Off-Ice-Program-19-39.pdf', '40plus': '/free/EHD-Week-One-Off-Ice-Program-40-plus.pdf' };
+const COVER = { '9_11': '/free/cover-week-one-9-11.jpg', '12_14': '/free/cover-week-one-12-14.jpg', '15_18': '/free/cover-week-one-15-18.jpg', '19_39': '/free/cover-week-one-19-39.jpg', '40plus': '/free/cover-week-one-40-plus.jpg' };const PDF_YOUTH = '/free/EHD-5-Day-Youth-Off-Ice-Program-Ages-9-14.pdf';
 const GIFT = {
-  '9_11':   { kicker:'Бесплатно · 9–11 лет', name:'The 5 Foundations', meta:'5-дневная детская программа вне льда · без инвентаря · 20–35 минут на тренировку · на английском', url:PDF_YOUTH, cover:'/free/cover-youth-5-foundations.jpg' },
-  '12_14':  { kicker:'Бесплатно · 12–14 лет', name:'The 5 Foundations', meta:'5-дневная детская программа вне льда · без инвентаря · 20–35 минут на тренировку · на английском', url:PDF_YOUTH, cover:'/free/cover-youth-5-foundations.jpg' },
-  '15_18':  { kicker:'Бесплатно · 15–18 лет', name:'5-дневная программа вне льда', meta:'35–45 минут на тренировку · демо-видео к каждому упражнению · на английском', url:'/free-program-15-18.html', badge:'5<br>ДНЕЙ' },
-  '19_39':  { kicker:'Бесплатно · взрослые игроки', name:'30-Minute Hockey Power Plan', meta:'Три 30-минутные тренировки в неделю · дома, с гантелями или в зале · на английском', url:PDF_ADULT, cover:'/free/cover-adult-30-minute-plan.jpg' },
-  '40plus': { kicker:'Бесплатно · игроки 40+', name:'30-Minute Hockey Power Plan', meta:'Три 30-минутные тренировки в неделю · дома, с гантелями или в зале · на английском', url:PDF_ADULT, cover:'/free/cover-adult-30-minute-plan.jpg' }
+  '9_11': { kicker:"Бесплатно · 9–11 лет", name:'Week One', meta:"5 тренировок · 20–32 минут · без инвентаря · 1-я неделя программы из приложения · на английском", url:PDF['9_11'], cover:COVER['9_11'] },
+  '12_14': { kicker:"Бесплатно · 12–14 лет", name:'Week One', meta:"5 тренировок · 22–31 минут · без инвентаря · 1-я неделя программы из приложения · на английском", url:PDF['12_14'], cover:COVER['12_14'] },
+  '15_18': { kicker:"Бесплатно · 15–18 лет", name:'Week One', meta:"4 тренировок · 22–46 минут · без инвентаря · 1-я неделя программы из приложения · на английском", url:PDF['15_18'], cover:COVER['15_18'] },
+  '19_39': { kicker:"Бесплатно · взрослые игроки", name:'Week One', meta:"Три 30-минутные тренировки · без инвентаря · 1-я неделя программы из приложения · на английском", url:PDF['19_39'], cover:COVER['19_39'] },
+  '40plus': { kicker:"Бесплатно · игроки 40+", name:'Week One', meta:"Три щадящие для суставов 30-минутные тренировки · без инвентаря · 1-я неделя программы из приложения · на английском", url:PDF['40plus'], cover:COVER['40plus'] }
 };
 const START_STEPS = {
-  '9_11':   ['Родители: сначала прочитайте страницы <strong>Safety</strong> (безопасность) и <strong>With hockey</strong> (совмещение с хоккеем).',
-             'Используйте <strong>Track A</strong> — дозировки для 9–11 лет.',
-             'День 1 начинается с <strong>5-Foundation Check</strong> — проверки пяти основ. Снимите её на видео: ваш игрок повторит её на 4-й неделе.'],
-  '12_14':  ['Родители: сначала прочитайте страницы <strong>Safety</strong> (безопасность) и <strong>With hockey</strong> (совмещение с хоккеем).',
-             'Используйте <strong>Track B</strong> — дозировки для 12–14 лет. Впервые тренируетесь вне льда? Первую неделю начните с Track A.',
-             'День 1 начинается с <strong>5-Foundation Check</strong> — проверки пяти основ. Снимите её на видео: ваш игрок повторит её на 4-й неделе.'],
-  '15_18':  ['Каждая тренировка длится 35–45 минут <strong>вместе с разминкой</strong>. Разминку не пропускайте никогда.',
-             'День 1 — <strong>Lower Power + Strength</strong> (мощность и сила ног), день 2 — <strong>Speed Day</strong> (день скорости).',
-             'Нажмите на любое название упражнения, выделенное синим, — откроются <strong>демо-видео</strong> и пошаговое описание.'],
-  '19_39':  ['Выберите свой уровень на странице 3: <strong>Rebuild</strong> (восстановление базы) или <strong>Experienced</strong> (опытный).',
-             'Выберите инвентарь. У каждого упражнения есть варианты <strong>для дома</strong>, <strong>с гантелями</strong> и <strong>для зала</strong>.',
-             'Делайте тренировки A и B не позднее чем за <strong>48 часов</strong> до игры.'],
-  '40plus': ['Выберите свой уровень на странице 3. Если вам больше 40: первые две недели работайте по <strong>Rebuild</strong> и делайте разминку дважды (страница 7).',
-             'Выберите инвентарь. У каждого упражнения есть варианты <strong>для дома</strong>, <strong>с гантелями</strong> и <strong>для зала</strong>.',
-             'Делайте тренировки A и B не позднее чем за <strong>48 часов</strong> до игры.']
+  '9_11': ["Родители: сначала протестируйте игрока (страница 3): прыжок в длину с места, спринт 10 м, челночный бег 5-10-5. Десять минут.", "День 1 — <strong>Speed & Movement Quality</strong>, 28 минут. Нажмите на упражнение, чтобы открыть демо-видео.", "Игра в другой день? Держите тяжёлые тренировки за <strong>48 часов</strong> до неё. Приложение перестроит неделю под ваше расписание."],
+  '12_14': ["Родители: сначала протестируйте игрока (страница 3): прыжок в длину с места, спринт 10 м, челночный бег 5-10-5. Десять минут.", "День 1 — <strong>Speed, Power & Landing</strong>, 31 минут. Нажмите на упражнение, чтобы открыть демо-видео.", "Игра в другой день? Держите тяжёлые тренировки за <strong>48 часов</strong> до неё. Приложение перестроит неделю под ваше расписание."],
+  '15_18': ["Сначала протестируйте себя (страница 3): прыжок в длину с места, спринт 10 м, челночный бег 5-10-5. Десять минут.", "День 1 — <strong>Athletic Lower Body</strong>, 46 минут. Нажмите на упражнение, чтобы открыть демо-видео.", "Игра в другой день? Держите тяжёлые тренировки за <strong>48 часов</strong> до неё. Приложение перестроит неделю под ваше расписание."],
+  '19_39': ["Сначала протестируйте себя (страница 3): прыжок в длину с места, спринт 10 м, челночный бег 5-10-5. Десять минут.", "День 1 — <strong>Athletic Lower Body</strong>, 30 минут. Нажмите на упражнение, чтобы открыть демо-видео.", "Игра в другой день? Держите тяжёлые тренировки за <strong>48 часов</strong> до неё. Приложение перестроит неделю под ваше расписание."],
+  '40plus': ["Сначала протестируйте себя (страница 3): прыжок в длину с места, спринт 10 м, челночный бег 5-10-5. Десять минут.", "День 1 — <strong>Lower Strength (Joint-Friendly)</strong>, 30 минут. Нажмите на упражнение, чтобы открыть демо-видео.", "Игра в другой день? Держите тяжёлые тренировки за <strong>48 часов</strong> до неё. Приложение перестроит неделю под ваше расписание."]
 };
 // the paid alternative to the app, one per age
 const PROGRAM_MATCH = {
@@ -711,7 +701,7 @@ function buildAppBlock(age, youth){
     + `<div><span class="app-badge">Возраст ${age} · 7 дней бесплатно</span>`
     + `<div class="app-name">Приложение Elite Hockey Drills</div>`
     + `<ul class="app-points"><li>${youth ? "Для вашего игрока:" : 'Для вас:'} весь сезон, выстроенный под возраст, уровень, позицию и расписание</li><li>Демо-видео к каждому упражнению</li><li>Режим игрового дня и отслеживание прогресса</li></ul></div>`
-    + `<a class="app-btn" href="${APP_URL}" data-place="survey-success" target="_blank" rel="noopener">Начать бесплатную неделю ${ARROW_SVG}</a>`
+    + `<a class="app-btn" href="/app?src=survey_success" data-place="survey-success" target="_blank" rel="noopener">Начать бесплатную неделю ${ARROW_SVG}</a>`
     + `<div class="app-fine">Годовой план: 7 дней бесплатно, затем $99.90/год. Месячный план: $17.99/мес, без бесплатной недели. Отмена в любой момент.<br>${other}</div>`;
 }
 

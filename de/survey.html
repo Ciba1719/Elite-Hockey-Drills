@@ -457,14 +457,14 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
 
     <div class="gift">
       <div class="gift-row">
-        <img class="gift-cover" id="giftCover" src="/free/cover-youth-5-foundations.jpg" alt="" width="480" height="854" />
+        <img class="gift-cover" id="giftCover" src="/free/cover-week-one-12-14.jpg" alt="" width="480" height="854" />
         <div>
           <div class="gift-kicker" id="giftKicker"></div>
           <div class="gift-name" id="giftName"></div>
           <div class="gift-meta" id="giftMeta"></div>
         </div>
       </div>
-      <a class="gift-btn" id="giftBtn" href="/free/EHD-5-Day-Youth-Off-Ice-Program-Ages-9-14.pdf" target="_blank" rel="noopener">
+      <a class="gift-btn" id="giftBtn" href="/free/EHD-Week-One-Off-Ice-Program-12-14.pdf" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
         <span>Mein Gratisprogramm öffnen</span>
       </a>
@@ -627,11 +627,11 @@ bindSingleSelect(getScreen(4), 'goal');
 // The free program each age group is emailed (the emails and PDFs are in English) — keep in sync with the
 // MailerLite "Send … PDF" automations
 const FREE_PROGRAM = {
-  '9_11':   { acc: "das kostenlose 5-Tage-Off-Ice-Programm für Jugendliche („The 5 Foundations“, auf Englisch)", nom: "Dein kostenloses 5-Tage-Off-Ice-Programm" },
-  '12_14':  { acc: "das kostenlose 5-Tage-Off-Ice-Programm für Jugendliche („The 5 Foundations“, auf Englisch)", nom: "Dein kostenloses 5-Tage-Off-Ice-Programm" },
-  '15_18':  { acc: "das kostenlose 5-Tage-Off-Ice-Programm (auf Englisch)", nom: "Dein kostenloses 5-Tage-Off-Ice-Programm" },
-  '19_39':  { acc: "den kostenlosen „30-Minute Hockey Power Plan“ (auf Englisch)", nom: "Dein kostenloser „30-Minute Hockey Power Plan“" },
-  '40plus': { acc: "den kostenlosen „30-Minute Hockey Power Plan“ (auf Englisch)", nom: "Dein kostenloser „30-Minute Hockey Power Plan“" }
+  '9_11':   { acc: "das kostenlose Programm „Week One“ (5 Einheiten, auf Englisch)", nom: "Dein kostenloses Programm „Week One“" },
+  '12_14':  { acc: "das kostenlose Programm „Week One“ (5 Einheiten, auf Englisch)", nom: "Dein kostenloses Programm „Week One“" },
+  '15_18':  { acc: "das kostenlose Programm „Week One“ (4 Einheiten, auf Englisch)", nom: "Dein kostenloses Programm „Week One“" },
+  '19_39':  { acc: "das kostenlose Programm „Week One“ (drei 30-Minuten-Einheiten, auf Englisch)", nom: "Dein kostenloses Programm „Week One“" },
+  '40plus': { acc: "das kostenlose Programm „Week One“ (drei 30-Minuten-Einheiten, auf Englisch)", nom: "Dein kostenloses Programm „Week One“" }
 };
 const isAdultAge = (age) => age === '19_39' || age === '40plus';
 
@@ -651,7 +651,7 @@ function populateEmailScreen(){
   sub.innerHTML = `Gib deine E-Mail-Adresse ein und erhalte ${free.acc} für Spieler im&nbsp;Alter von <strong>${answers.ageLabel}</strong>.`;
   // Youth (9–14): the program and any follow-up go to a parent or guardian, not to the child
   const youth = answers.age === '9_11' || answers.age === '12_14';
-  if (youth) sub.innerHTML = `<strong>Eltern:</strong> Gib <em>deine</em> E-Mail-Adresse ein – wir schicken dir das kostenlose 5-Tage-Programm für dein Kind (${answers.ageLabel}&nbsp;Jahre), mit einem Leitfaden für Eltern, wie es sicher klappt. Das Programm ist auf Englisch.`;
+  if (youth) sub.innerHTML = `<strong>Eltern:</strong> Gib <em>deine</em> E-Mail-Adresse ein – wir schicken dir das kostenlose Programm „Week One“ für dein Kind (${answers.ageLabel}&nbsp;Jahre), mit einem Leitfaden für Eltern, wie es sicher klappt. Das Programm ist auf Englisch.`;
   const input = document.getElementById('emailInput');
   if (input) input.placeholder = youth ? 'eltern@email.de' : 'deine@email.de';
 }
@@ -662,41 +662,21 @@ function populateEmailScreen(){
    Same layout as /survey.html. The program opens right on this page
    (the email is the copy). The PDFs and the teen page are in English.
    ============================================================ */
-const PDF_YOUTH = '/free/EHD-5-Day-Youth-Off-Ice-Program-Ages-9-14.pdf';
-const PDF_ADULT = '/free/EHD-30-Minute-Hockey-Power-Plan.pdf';
+const PDF = { '9_11': '/free/EHD-Week-One-Off-Ice-Program-9-11.pdf', '12_14': '/free/EHD-Week-One-Off-Ice-Program-12-14.pdf', '15_18': '/free/EHD-Week-One-Off-Ice-Program-15-18.pdf', '19_39': '/free/EHD-Week-One-Off-Ice-Program-19-39.pdf', '40plus': '/free/EHD-Week-One-Off-Ice-Program-40-plus.pdf' };
+const COVER = { '9_11': '/free/cover-week-one-9-11.jpg', '12_14': '/free/cover-week-one-12-14.jpg', '15_18': '/free/cover-week-one-15-18.jpg', '19_39': '/free/cover-week-one-19-39.jpg', '40plus': '/free/cover-week-one-40-plus.jpg' };const PDF_YOUTH = '/free/EHD-5-Day-Youth-Off-Ice-Program-Ages-9-14.pdf';
 const GIFT = {
-  '9_11':   { kicker:"Gratis · 9–11 Jahre", name:'The 5 Foundations', meta:"5-Tage-Off-Ice-Programm · ohne Geräte · 20–35 Minuten pro Einheit · auf Englisch", url:PDF_YOUTH, cover:'/free/cover-youth-5-foundations.jpg' },
-  '12_14':  { kicker:"Gratis · 12–14 Jahre", name:'The 5 Foundations', meta:"5-Tage-Off-Ice-Programm · ohne Geräte · 20–35 Minuten pro Einheit · auf Englisch", url:PDF_YOUTH, cover:'/free/cover-youth-5-foundations.jpg' },
-  '15_18':  { kicker:"Gratis · 15–18 Jahre", name:'5-Day Off-Ice Program', meta:"35–45 Minuten pro Einheit · Demovideo zu jeder Übung · auf Englisch", url:'/free-program-15-18.html', badge:'5<br>DAYS' },
-  '19_39':  { kicker:"Gratis · Erwachsene", name:'The 30-Minute Hockey Power Plan', meta:"Drei 30-Minuten-Einheiten pro Woche · zu Hause, mit Kurzhanteln oder im Gym · auf Englisch", url:PDF_ADULT, cover:'/free/cover-adult-30-minute-plan.jpg' },
-  '40plus': { kicker:"Gratis · 40+", name:'The 30-Minute Hockey Power Plan', meta:"Drei 30-Minuten-Einheiten pro Woche · zu Hause, mit Kurzhanteln oder im Gym · auf Englisch", url:PDF_ADULT, cover:'/free/cover-adult-30-minute-plan.jpg' }
+  '9_11': { kicker:"Gratis · 9–11 Jahre", name:'Week One', meta:"5 Einheiten · 20–32 Minuten · ohne Geräte · Woche 1 des App-Programms · auf Englisch", url:PDF['9_11'], cover:COVER['9_11'] },
+  '12_14': { kicker:"Gratis · 12–14 Jahre", name:'Week One', meta:"5 Einheiten · 22–31 Minuten · ohne Geräte · Woche 1 des App-Programms · auf Englisch", url:PDF['12_14'], cover:COVER['12_14'] },
+  '15_18': { kicker:"Gratis · 15–18 Jahre", name:'Week One', meta:"4 Einheiten · 22–46 Minuten · ohne Geräte · Woche 1 des App-Programms · auf Englisch", url:PDF['15_18'], cover:COVER['15_18'] },
+  '19_39': { kicker:"Gratis · Erwachsene", name:'Week One', meta:"Drei 30-Minuten-Einheiten · ohne Geräte · Woche 1 des App-Programms · auf Englisch", url:PDF['19_39'], cover:COVER['19_39'] },
+  '40plus': { kicker:"Gratis · 40+", name:'Week One', meta:"Drei gelenkschonende 30-Minuten-Einheiten · ohne Geräte · Woche 1 des App-Programms · auf Englisch", url:PDF['40plus'], cover:COVER['40plus'] }
 };
 const START_STEPS = {
-  "9_11": [
-    "Eltern: Lest zuerst die Seiten <strong>Safety</strong> und <strong>With hockey</strong>.",
-    "Nimm <strong>Track A</strong>, die Dosierung für 9–11 Jahre.",
-    "Tag 1 beginnt mit dem <strong>5-Foundation Check</strong>. Filmt ihn: In Woche 4 wird er wiederholt."
-  ],
-  "12_14": [
-    "Eltern: Lest zuerst die Seiten <strong>Safety</strong> und <strong>With hockey</strong>.",
-    "Nimm <strong>Track B</strong>, die Dosierung für 12–14 Jahre. Neu im Off-Ice-Training? Starte Woche 1 mit Track A.",
-    "Tag 1 beginnt mit dem <strong>5-Foundation Check</strong>. Filmt ihn: In Woche 4 wird er wiederholt."
-  ],
-  "15_18": [
-    "Jede Einheit dauert 35–45 Minuten <strong>inklusive Aufwärmen</strong>. Lass es nie aus.",
-    "Tag 1 ist <strong>Lower Power + Strength</strong>, Tag 2 ist <strong>Speed Day</strong>.",
-    "Tippe auf einen blauen Übungsnamen für das <strong>Demovideo</strong> und die Schritt-für-Schritt-Anleitung."
-  ],
-  "19_39": [
-    "Wähle auf Seite 3 dein Level: <strong>Rebuild</strong> oder <strong>Experienced</strong>.",
-    "Wähle dein Equipment. Jede Übung gibt es für <strong>zu Hause</strong>, mit <strong>Kurzhanteln</strong> und im <strong>Gym</strong>.",
-    "Mach Session A und B mindestens <strong>48 Stunden</strong> vor deinem Spiel."
-  ],
-  "40plus": [
-    "Wähle auf Seite 3 dein Level. Über 40: Starte zwei Wochen mit <strong>Rebuild</strong> und mach das Aufwärmen doppelt (Seite 7).",
-    "Wähle dein Equipment. Jede Übung gibt es für <strong>zu Hause</strong>, mit <strong>Kurzhanteln</strong> und im <strong>Gym</strong>.",
-    "Mach Session A und B mindestens <strong>48 Stunden</strong> vor deinem Spiel."
-  ]
+  '9_11': ["Eltern: Testet euren Spieler zuerst (Seite 3): Standweitsprung, 10-m-Sprint, 5-10-5-Shuttle. Zehn Minuten.", "Tag 1 ist <strong>Speed & Movement Quality</strong>, 28 Minuten. Tippe auf eine Übung für das Demovideo.", "Spiel an einem anderen Tag? Halte die harten Einheiten <strong>48 Stunden</strong> davon fern. Die App baut die Woche um deinen Plan herum."],
+  '12_14': ["Eltern: Testet euren Spieler zuerst (Seite 3): Standweitsprung, 10-m-Sprint, 5-10-5-Shuttle. Zehn Minuten.", "Tag 1 ist <strong>Speed, Power & Landing</strong>, 31 Minuten. Tippe auf eine Übung für das Demovideo.", "Spiel an einem anderen Tag? Halte die harten Einheiten <strong>48 Stunden</strong> davon fern. Die App baut die Woche um deinen Plan herum."],
+  '15_18': ["Teste dich zuerst (Seite 3): Standweitsprung, 10-m-Sprint, 5-10-5-Shuttle. Zehn Minuten.", "Tag 1 ist <strong>Athletic Lower Body</strong>, 46 Minuten. Tippe auf eine Übung für das Demovideo.", "Spiel an einem anderen Tag? Halte die harten Einheiten <strong>48 Stunden</strong> davon fern. Die App baut die Woche um deinen Plan herum."],
+  '19_39': ["Teste dich zuerst (Seite 3): Standweitsprung, 10-m-Sprint, 5-10-5-Shuttle. Zehn Minuten.", "Tag 1 ist <strong>Athletic Lower Body</strong>, 30 Minuten. Tippe auf eine Übung für das Demovideo.", "Spiel an einem anderen Tag? Halte die harten Einheiten <strong>48 Stunden</strong> davon fern. Die App baut die Woche um deinen Plan herum."],
+  '40plus': ["Teste dich zuerst (Seite 3): Standweitsprung, 10-m-Sprint, 5-10-5-Shuttle. Zehn Minuten.", "Tag 1 ist <strong>Lower Strength (Joint-Friendly)</strong>, 30 Minuten. Tippe auf eine Übung für das Demovideo.", "Spiel an einem anderen Tag? Halte die harten Einheiten <strong>48 Stunden</strong> davon fern. Die App baut die Woche um deinen Plan herum."]
 };
 const PROGRAM_MATCH = {
   '9_11':   [ { name:'FUNDAMENT',   age:'9–11',  url:'/de/program-9-11.html' } ],
@@ -721,7 +701,7 @@ function buildAppBlock(age, youth){
     + '<div><span class="app-badge">' + "Alter AGE · 7 Tage gratis".replace('AGE', age) + '</span>'
     + `<div class="app-name">Die Elite Hockey Drills App</div>`
     + '<ul class="app-points">' + points.map((p) => `<li>${p}</li>`).join('') + '</ul></div>'
-    + `<a class="app-btn" href="${APP_URL}" data-place="survey-success" target="_blank" rel="noopener">Starte deine Gratiswoche ${ARROW_SVG}</a>`
+    + `<a class="app-btn" href="/app?src=survey_success" data-place="survey-success" target="_blank" rel="noopener">Starte deine Gratiswoche ${ARROW_SVG}</a>`
     + `<div class="app-fine">Jahresabo: 7&nbsp;Tage gratis, danach 99,90&nbsp;€/Jahr. Monatsabo: 19,99&nbsp;€/Monat, ohne Gratiswoche. Jederzeit kündbar.<br>${other}</div>`;
 }
 
