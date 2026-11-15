@@ -69,7 +69,43 @@
   ].join('');
 
   var PLAY = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>';
-  var PHASE = { w:'Warm-up', m:'Main', c:'Cool-down' };
+  // UI words per language. Warm-up / main / cool-down / rest day / game day are the app's own words
+  // (src/i18n/<lang>/session.js); everything else in the player comes translated in week-one-data.<lang>.js.
+  var T = {
+    en: { age:'Age', ageAria:'Player age', play:'Play the demo video', list:'Exercises in this session', cue:'Coach’s cue', weekOne:'Week one',
+      w:'Warm-up', m:'Main', c:'Cool-down', rest:'rest {n} s', day1:'Day 1', meta:'{m} min · {n} exercises · no equipment',
+      restDay:'Rest', gameDay:'Game day', pregame:'Pre-game primer',
+      next:'Week 2 is already written: <b>{x}</b>. The app moves the week when your games move.', nextPlain:'Week 2 is already written. The app moves the week when your games move.' },
+    cs: { age:'Věk', ageAria:'Věk hráče', play:'Přehrát ukázku', list:'Cviky v tomto tréninku', cue:'Rada trenéra', weekOne:'První týden',
+      w:'Rozcvička', m:'Hlavní část', c:'Zklidnění', rest:'pauza {n} s', day1:'Den 1', meta:'{m} min · {n} cviků · bez vybavení',
+      restDay:'Volno', gameDay:'Zápas', pregame:'Aktivace před zápasem',
+      sessions:function(n){ return n === 1 ? 'trénink' : (n < 5 ? 'tréninky' : 'tréninků'); }, game:'zápas',
+      next:'2. týden je už napsaný: <b>{x}</b>. Když se ti posunou zápasy, aplikace týden přeskládá.', nextPlain:'2. týden je už napsaný. Když se ti posunou zápasy, aplikace týden přeskládá.' },
+    sv: { age:'Ålder', ageAria:'Spelarens ålder', play:'Spela demovideon', list:'Övningar i passet', cue:'Tränarens tips', weekOne:'Vecka ett',
+      w:'Uppvärmning', m:'Huvuddel', c:'Nedvarvning', rest:'vila {n} s', day1:'Dag 1', meta:'{m} min · {n} övningar · ingen utrustning',
+      restDay:'Vila', gameDay:'Matchdag', pregame:'Aktivering inför match',
+      sessions:function(){ return 'pass'; }, game:'match',
+      next:'Vecka 2 är redan skriven: <b>{x}</b>. Appen lägger om veckan när dina matcher flyttas.', nextPlain:'Vecka 2 är redan skriven. Appen lägger om veckan när dina matcher flyttas.' },
+    de: { age:'Alter', ageAria:'Alter des Spielers', play:'Demovideo abspielen', list:'Übungen dieser Einheit', cue:'Tipp vom Coach', weekOne:'Woche eins',
+      w:'Aufwärmen', m:'Hauptteil', c:'Cool-down', rest:'Pause {n} s', day1:'Tag 1', meta:'{m} Min. · {n} Übungen · ohne Geräte',
+      restDay:'Ruhetag', gameDay:'Spieltag', pregame:'Aktivierung vor dem Spiel',
+      sessions:function(n){ return n === 1 ? 'Einheit' : 'Einheiten'; }, game:'Spiel',
+      next:'Woche 2 ist schon geschrieben: <b>{x}</b>. Verschieben sich deine Spiele, baut die App die Woche um.', nextPlain:'Woche 2 ist schon geschrieben. Verschieben sich deine Spiele, baut die App die Woche um.' },
+    fi: { age:'Ikä', ageAria:'Pelaajan ikä', play:'Toista demovideo', list:'Treenin liikkeet', cue:'Valmentajan vinkki', weekOne:'Ensimmäinen viikko',
+      w:'Lämmittely', m:'Päätreeni', c:'Jäähdyttely', rest:'lepo {n} s', day1:'Päivä 1', meta:'{m} min · {n} liikettä · ei välineitä',
+      restDay:'Lepo', gameDay:'Pelipäivä', pregame:'Aktivointi ennen peliä',
+      sessions:function(n){ return n === 1 ? 'treeni' : 'treeniä'; }, game:'peli',
+      next:'Viikko 2 on jo kirjoitettu: <b>{x}</b>. Kun pelisi siirtyvät, sovellus rakentaa viikon uudelleen.', nextPlain:'Viikko 2 on jo kirjoitettu. Kun pelisi siirtyvät, sovellus rakentaa viikon uudelleen.' },
+    ru: { age:'Возраст', ageAria:'Возраст игрока', play:'Включить видео', list:'Упражнения этой тренировки', cue:'Совет тренера', weekOne:'Первая неделя',
+      w:'Разминка', m:'Основная часть', c:'Заминка', rest:'отдых {n} с', day1:'День 1', meta:'{m} мин · {n} упражнений · без инвентаря',
+      restDay:'Отдых', gameDay:'Игровой день', pregame:'Предыгровая активация',
+      sessions:function(n){ return n === 1 ? 'тренировка' : (n < 5 ? 'тренировки' : 'тренировок'); }, game:'игра',
+      next:'2-я неделя уже написана: <b>{x}</b>. Если игры сдвинутся, приложение перестроит неделю.', nextPlain:'2-я неделя уже написана. Если игры сдвинутся, приложение перестроит неделю.' }
+  };
+  var LANG = (function(){ var l = (document.documentElement.getAttribute('lang') || 'en').slice(0, 2).toLowerCase(); return T[l] ? l : 'en'; })();
+  var L = T[LANG];
+  var MIN = { de:'Min.', ru:'мин' }[LANG] || 'min';
+  var PHASE = { w: L.w, m: L.m, c: L.c };
   var AGES = ['9_11','12_14','15_18','19_39','40plus'];
   var FULL = { Mon:'Monday', Tue:'Tuesday', Wed:'Wednesday', Thu:'Thursday', Fri:'Friday', Sat:'Saturday', Sun:'Sunday' };
 
@@ -94,24 +130,24 @@
     root.classList.add('w1');
     if (opts.wide) root.classList.add('w1--wide');
     root.innerHTML =
-      (opts.picker ? '<div class="w1-ages" role="group" aria-label="Player age"><span>Age</span>' + AGES.map(function(a){
+      (opts.picker ? '<div class="w1-ages" role="group" aria-label="' + esc(L.ageAria) + '"><span>' + esc(L.age) + '</span>' + AGES.map(function(a){
         return '<button type="button" class="w1-age" data-age="' + a + '" aria-pressed="false">' + esc(DATA[a].label) + '</button>'; }).join('') + '</div>' : '')
       + '<div class="w1-card">'
       +   '<div class="w1-top"><span class="w1-kicker"></span><h3 class="w1-title"></h3><span class="w1-meta"></span></div>'
       +   '<div class="w1-body">'
       +     '<div class="w1-main">'
       +       '<div class="w1-stage"><video muted playsinline loop preload="none" disablepictureinpicture></video>'
-      +         '<button type="button" class="w1-play" aria-label="Play the demo video">' + PLAY + '</button>'
+      +         '<button type="button" class="w1-play" aria-label="' + esc(L.play) + '">' + PLAY + '</button>'
       +         '<div class="w1-now"><b></b><span class="w1-dose"></span><span class="w1-rest"></span></div><div class="w1-count"></div></div>'
-      +       '<p class="w1-cue"><b>Coach’s cue</b><span></span></p>'
+      +       '<p class="w1-cue"><b>' + esc(L.cue) + '</b><span></span></p>'
       +     '</div>'
-      +     '<div class="w1-side"><ol class="w1-list" aria-label="Exercises in this session"></ol></div>'
+      +     '<div class="w1-side"><ol class="w1-list" aria-label="' + esc(L.list) + '"></ol></div>'
       +   '</div>'
       + '</div>';
     // the week overview: under the player, or in its own element (opts.weekInto)
     var weekRoot = opts.weekInto || root;
     if (opts.weekInto) { weekRoot.classList.add('w1'); weekRoot.innerHTML = ''; }
-    weekRoot.insertAdjacentHTML('beforeend', '<div class="w1-week"><div class="w1-week-h"><b>Week one</b><span></span></div><ol class="w1-days"></ol></div><p class="w1-next"></p>');
+    weekRoot.insertAdjacentHTML('beforeend', '<div class="w1-week"><div class="w1-week-h"><b>' + esc(L.weekOne) + '</b><span></span></div><ol class="w1-days"></ol></div><p class="w1-next"></p>');
 
     var $ = function(sel){ return root.querySelector(sel) || weekRoot.querySelector(sel); };
     var stage = $('.w1-stage'), video = $('video'), list = $('.w1-list');
@@ -126,7 +162,7 @@
       stage.style.backgroundImage = 'url("/assets/week-one/' + it.id + '.jpg")';
       $('.w1-now b').textContent = it.n;
       $('.w1-dose').textContent = it.r;
-      $('.w1-rest').textContent = it.rest ? 'rest ' + it.rest + ' s' : PHASE[it.p];
+      $('.w1-rest').textContent = it.rest ? L.rest.replace('{n}', it.rest) : PHASE[it.p];
       $('.w1-count').textContent = (i + 1) + ' / ' + items().length;
       $('.w1-cue span').textContent = it.cue || '';
       Array.prototype.forEach.call(list.querySelectorAll('.w1-item'), function(b, n){
@@ -148,24 +184,29 @@
       Array.prototype.forEach.call(root.querySelectorAll('.w1-age'), function(b){
         b.setAttribute('aria-pressed', b.getAttribute('data-age') === age ? 'true' : 'false');
       });
-      $('.w1-kicker').textContent = 'Day 1 · ' + (FULL[d1.d] || d1.d);
+      $('.w1-kicker').textContent = L.day1 + ' · ' + (d1.dl || FULL[d1.d] || d1.d);
       $('.w1-title').textContent = d1.n;
-      $('.w1-meta').textContent = d1.m + ' min · ' + d1.total + ' exercises · no equipment';
+      $('.w1-meta').textContent = L.meta.replace('{m}', d1.m).replace('{n}', d1.total);
       list.innerHTML = d1.items.map(function(it, i){
         return '<li><button type="button" class="w1-item" data-i="' + i + '" aria-current="false">'
           + '<div class="w1-thumb" style="background-image:url(\'/assets/week-one/' + it.id + '.jpg\')"><i>' + PHASE[it.p] + '</i></div>'
           + '<div class="w1-txt"><b>' + esc(it.n) + '</b><small>' + esc(it.r) + '</small></div></button></li>';
       }).join('');
-      $('.w1-week-h span').textContent = d.sessions + ' sessions, built around a ' + (FULL[d.game] || 'weekend') + ' game';
+      $('.w1-week-h span').textContent = L.sessions
+        ? d.sessions + ' ' + L.sessions(d.sessions) + ' · ' + L.game + ': ' + (d.gameL || d.game)
+        : d.sessions + ' sessions, built around a ' + (FULL[d.game] || 'weekend') + ' game';
       $('.w1-days').innerHTML = d.days.map(function(x){
-        var cls = 'is-rest', label = 'Rest', sub = '';
-        if (x.t === 'game') { cls = 'is-game'; label = 'Game day'; }
-        else if (x.m > 0) { cls = 'is-train'; label = x.n || (x.t === 'pre-game' ? 'Pre-game primer' : 'Session'); sub = x.m + ' min'; }
-        return '<li class="w1-day ' + cls + '"><em>' + esc(x.d) + '</em><b>' + esc(label) + '</b><small>' + sub + '</small></li>';
+        var cls = 'is-rest', label = L.restDay, sub = '';
+        if (x.t === 'game') { cls = 'is-game'; label = L.gameDay; }
+        else if (x.m > 0) { cls = 'is-train'; label = (LANG === 'en' && x.t === 'pre-game' ? '' : x.n) || (x.t === 'pre-game' ? L.pregame : ''); sub = x.m + ' ' + MIN; }
+        return '<li class="w1-day ' + cls + '"><em>' + esc(x.dl || x.d) + '</em><b>' + esc(label) + '</b><small>' + sub + '</small></li>';
       }).join('');
       $('.w1-next').innerHTML = d.week2
-        ? 'Week 2 is already written: <b>' + esc(d.week2.charAt(0).toLowerCase() + d.week2.slice(1)) + '</b>. The app moves the week when your games move.'
-        : 'Week 2 is already written. The app moves the week when your games move.';
+        ? (d.week2.indexOf(':') > -1
+            // a label that has a colon of its own ("Same plan: progress when it feels easy") gets its own sentence
+            ? L.next.replace(': <b>{x}</b>.', '. <b>' + esc(d.week2) + '.</b>')
+            : L.next.replace('{x}', esc(d.week2.charAt(0).toLowerCase() + d.week2.slice(1))))
+        : L.nextPlain;
       // open on the first main exercise: that is where the session shows what it is
       var first = 0;
       for (var i = 0; i < d1.items.length; i++) { if (d1.items[i].p === 'm') { first = i; break; } }

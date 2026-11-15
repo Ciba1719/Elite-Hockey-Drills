@@ -17,7 +17,9 @@ fs.mkdirSync(OUT_IMG, { recursive: true });
 
 const KEYS = { kids: '9_11', youth: '12_14', teen: '15_18', adult: '19_39', masters: '40plus' };
 const clean = (s) => String(s || '').replace(/\s+/g, ' ').trim();
-const name = (x) => clean(x.name).replace(/\s*\(Youth\)/, '');
+// same plain names as the free PDFs (campaigns/week1/build.mjs NAME)
+const NAME = { 'Fast Feet / Ladder Equiv': 'Fast Feet', 'Backpack Swing (KB Pattern)': 'Backpack Swing', 'Brisk Walk (Zone 2)': 'Brisk Walk' };
+const name = (x) => { const n = clean(x.name).replace(/\s*\(Youth\)/, ''); return NAME[n] || n; };
 function dose(e) {
   const r = clean(e.reps).split(' — ')[0].replace(/\s*-\s*1 rep$/, '').replace(/(\d)m\b/, '$1 m');
   if (e.sets > 1) return e.sets + ' × ' + r;

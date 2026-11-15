@@ -273,6 +273,33 @@ body::after{
 .success-ig-link{display:inline-block;margin-top:18px;font-size:13px;color:var(--ice);font-weight:500;transition:opacity .2s;}
 .success-ig-link:hover{opacity:.75;text-decoration:underline;}
 .success-footnote{font-size:12px;color:var(--ink-3);margin-top:14px;line-height:1.5;}
+/* Result screen: playable Day 1 (assets/week-one.js), then two doors: the app, or the PDF */
+.success-screen .w1{width:100%;max-width:520px;margin:0 auto;}
+#weekOneWeek{margin-top:20px;}
+#weekOneWeek .w1-week{margin-top:0;}
+.doors{width:100%;max-width:520px;margin:18px auto 0;display:flex;flex-direction:column;gap:10px;text-align:center;}
+.door-app{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:18px;border-radius:14px;
+  background:linear-gradient(135deg,#FBE6BC,#E8B777 55%,#D9A25E);color:#1A0F00;font-weight:800;font-size:17px;letter-spacing:.01em;
+  box-shadow:0 14px 30px -12px rgba(232,183,119,.55);transition:transform .2s,box-shadow .2s;}
+.door-app svg{width:18px;height:18px;flex-shrink:0;}
+.door-app:hover{transform:translateY(-2px);box-shadow:0 18px 34px -12px rgba(232,183,119,.7);}
+.door-fine{font-size:12.5px;color:#9AA0AB;line-height:1.5;margin:-2px 0 6px;}
+.door-pdf,.door-parent{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:15px 18px;border-radius:14px;
+  border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.03);color:var(--ink);font-weight:700;font-size:15.5px;transition:border-color .2s,background .2s;}
+.door-pdf svg,.door-parent svg{width:18px;height:18px;flex-shrink:0;}
+.door-pdf:hover,.door-parent:hover{border-color:rgba(255,255,255,.45);background:rgba(255,255,255,.06);}
+.door-parent{border-color:rgba(93,180,229,.5);color:var(--ice);margin-top:6px;}
+.door-parent[hidden],.door-fine[hidden]{display:none;}
+.doors .gift-mail{margin-top:0;}
+.stickybar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:12px;align-items:center;justify-content:center;
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(7,7,8,.93);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-top:1px solid rgba(255,255,255,.14);transform:translateY(110%);transition:transform .3s;}
+.stickybar.show{transform:none;}
+.stickybar span{flex:1;max-width:300px;font-size:13px;line-height:1.3;color:#C7CCD5;text-align:left;}
+.stickybar span b{display:block;color:var(--ink);font-weight:700;font-size:14px;}
+.stickybar a{flex-shrink:0;padding:13px 18px;border-radius:12px;background:linear-gradient(135deg,#FBE6BC,#E8B777 55%,#D9A25E);color:#1A0F00;font-weight:800;font-size:15px;}
+body.success-mode{padding-bottom:86px;}
+@media(prefers-reduced-motion:reduce){.stickybar,.door-app{transition:none;}}
 @media(max-width:380px){
   .gift{padding:16px;} .gift-cover{width:94px;} .gift-name{font-size:30px;}
   .appblock{grid-template-columns:92px 1fr;gap:14px;padding:15px;} .app-name{font-size:24px;}
@@ -290,6 +317,8 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
 }
 </style>
 <script src="/assets/store-links.js" defer></script>
+<script src="/assets/week-one-data.ru.js" defer></script>
+<script src="/assets/week-one.js" defer></script>
   <link rel="alternate" hreflang="en" href="https://elitehockeydrills.com/survey.html" />
   <link rel="alternate" hreflang="cs" href="https://elitehockeydrills.com/cs/survey.html" />
   <link rel="alternate" hreflang="sv" href="https://elitehockeydrills.com/sv/survey.html" />
@@ -449,27 +478,31 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
     </form>
   </section>
 
-  <!-- SUCCESS: the free program first (open it right here; the email is the copy), a 3-step start, then the app -->
+  <!-- SUCCESS: Day 1 plays right here (assets/week-one.js), then two doors: the app, or the PDF (the email is the copy).
+       Then the week at a glance, a 3-step start and what the app adds. Applied by _apply_week_one_i18n.mjs. -->
   <section class="screen success-screen" data-screen="success">
     <div class="ok-pill"><span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Вы в команде</span></div>
-    <h2 class="ok-title display">Ваша бесплатная программа<br><em>готова</em>.</h2>
-    <p class="ok-lead" id="okLead">Откройте её сейчас и сохраните на телефон.</p>
+    <h2 class="ok-title display">Первая неделя<br><em>готова</em>.</h2>
+    <p class="ok-lead" id="okLead">Вот ваш День 1. Нажмите на упражнение, чтобы посмотреть его.</p>
 
-    <div class="gift">
-      <div class="gift-row">
-        <img class="gift-cover" id="giftCover" src="/free/cover-week-one-12-14.jpg" alt="" width="480" height="854" />
-        <div>
-          <div class="gift-kicker" id="giftKicker">Бесплатно</div>
-          <div class="gift-name" id="giftName">Ваша бесплатная программа</div>
-          <div class="gift-meta" id="giftMeta"></div>
-        </div>
-      </div>
-      <a class="gift-btn" id="giftBtn" href="/free/EHD-Week-One-Off-Ice-Program-12-14.pdf" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
-        <span>Открыть бесплатную программу</span>
+    <div id="weekOne"></div>
+
+    <div class="doors">
+      <a class="door-app" id="doorApp" href="/ru/app?src=survey_week_one" data-place="survey-week-one" target="_blank" rel="noopener"><span id="doorAppLabel">Тренируйтесь в приложении</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <p class="door-fine">Видео, таймер отдыха и результаты к каждому упражнению. Годовой план: 7 дней бесплатно, затем $99.90/год. Месячный план: $17.99/мес, без бесплатной недели. Отмена в любой момент. iOS и Android.</p>
+      <a class="door-pdf" id="giftBtn" href="/free/EHD-Week-One-Off-Ice-Program-12-14.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+        <span>Открыть бесплатный PDF (на английском)</span>
       </a>
       <p class="gift-mail" id="giftMail">Мы также отправили её на <strong id="successEmail">вашу почту</strong>. Нет письма через 2 минуты? Проверьте папки «Промоакции» и «Спам».</p>
+      <button type="button" class="door-parent" id="parentShare" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/></svg>
+        <span id="parentShareLabel">Отправить родителю</span>
+      </button>
+      <p class="door-fine" id="parentNote" hidden>Родитель получит короткую страницу: что это за приложение, сколько оно стоит и как отменить подписку.</p>
     </div>
+
+    <div id="weekOneWeek"></div>
 
     <div class="steps">
       <div class="steps-title">Начните сегодня</div>
@@ -489,6 +522,11 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
   </section>
 
 </main>
+
+<div class="stickybar" id="stickyBar" aria-hidden="true">
+  <span><b>2-я неделя — в приложении</b>7 дней бесплатно, отмена в любой момент</span>
+  <a href="/ru/app?src=survey_bar" data-place="survey-bar" target="_blank" rel="noopener" tabindex="-1">Скачать приложение</a>
+</div>
 
 <script>
 /* ============================================================
@@ -710,21 +748,31 @@ function populateSuccessScreen(){
   const g = GIFT[age];
   const adult = isAdultAge(age);
   const youth = age === '9_11' || age === '12_14';
-  const cover = document.getElementById('giftCover');
-  if (g.cover) {
-    cover.outerHTML = `<img class="gift-cover" id="giftCover" src="${g.cover}" alt="Обложка: ${g.name}" width="480" height="854" />`;
-  } else {
-    cover.outerHTML = `<div class="gift-cover is-badge" id="giftCover" aria-hidden="true">${g.badge}</div>`;
-  }
-  document.getElementById('giftKicker').textContent = g.kicker;
-  document.getElementById('giftName').textContent = g.name;
-  document.getElementById('giftMeta').textContent = g.meta;
   const btn = document.getElementById('giftBtn');
   btn.href = g.url;
   btn.onclick = () => { if (typeof gtag === 'function') gtag('event', 'free_program_open', { age, placement:'survey-success', transport_type:'beacon' }); };
-  document.getElementById('okLead').textContent = youth
-    ? 'Откройте её сейчас и сохраните на телефон. Тренировки занимают 20–35 минут.'
-    : 'Откройте её сейчас и сохраните на телефон.';
+  // Day 1, playable (assets/week-one.js). If the script did not load, the two buttons below still work.
+  if (window.EHDWeekOne) window.EHDWeekOne.mount(document.getElementById('weekOne'), { age, place:'survey-success', weekInto: document.getElementById('weekOneWeek') });
+  document.getElementById('okLead').textContent = youth ? "Вот День 1 для вашего игрока (AGE лет). Нажмите на упражнение, чтобы посмотреть его.".replace('AGE', answers.ageLabel || '') : "Вот ваш День 1. Нажмите на упражнение, чтобы посмотреть его.";
+  document.getElementById('doorAppLabel').textContent = youth ? "Запустить в приложении" : "Тренируйтесь в приложении";
+  // 15–18: the player is usually the one reading, and a parent holds the card
+  const share = document.getElementById('parentShare');
+  const teen = age === '15_18';
+  share.hidden = !teen;
+  document.getElementById('parentNote').hidden = !teen;
+  if (teen) share.onclick = shareWithParent;
+  // The bar with the app button shows whenever the first app button is off screen
+  const bar = document.getElementById('stickyBar');
+  const door = document.getElementById('doorApp');
+  if (bar && door && 'IntersectionObserver' in window && !bar.dataset.on) {
+    bar.dataset.on = '1';
+    new IntersectionObserver((entries) => {
+      const on = !entries[0].isIntersecting;
+      bar.classList.toggle('show', on);
+      bar.setAttribute('aria-hidden', on ? 'false' : 'true');
+      bar.querySelector('a').tabIndex = on ? 0 : -1;
+    }, { threshold: 0 }).observe(door);
+  }
   document.getElementById('okSteps').innerHTML = START_STEPS[age]
     .map((s, i) => `<li><span class="n">${i + 1}</span><span>${s}</span></li>`).join('');
   const p = PROGRAM_MATCH[age];
@@ -733,6 +781,29 @@ function populateSuccessScreen(){
   const alt = document.getElementById('programAlt');
   alt.href = p.url;
   alt.innerHTML = `Предпочитаете разовую 8-недельную программу? <b>${p.name}</b> · $79 →`;
+}
+
+// App buttons on the result screen → GA4 "survey_app_click" (placement says which one).
+document.addEventListener('click', (e) => {
+  const a = e.target.closest ? e.target.closest('a[href*="/app?src=survey"]') : null;
+  if (!a || typeof gtag !== 'function') return;
+  gtag('event', 'survey_app_click', { placement: a.getAttribute('data-place') || 'survey', age: answers.age || '', lang: "ru", transport_type:'beacon' });
+}, true);
+
+// "Send this to a parent" (15–18): the phone's share sheet, or the message copied where there is none
+async function shareWithParent(){
+  const url = 'https://elitehockeydrills.com/ru/parents';
+  const text = "У меня есть программа тренировок вне льда для моего возраста, первая неделя бесплатно. Чтобы продолжить, нужно приложение. В нём есть бесплатная неделя. Посмотришь вместе со мной?";
+  const label = document.getElementById('parentShareLabel');
+  let method = 'share';
+  try {
+    if (navigator.share) { await navigator.share({ text, url }); }
+    else { method = 'copy'; await navigator.clipboard.writeText(text + ' ' + url); label.textContent = "Скопировано. Вставьте в сообщение"; }
+  } catch (err) {
+    if (err && err.name === 'AbortError') return;       // closed the share sheet
+    method = 'mailto'; location.href = 'mailto:?subject=' + encodeURIComponent("Программа тренировок вне льда") + '&body=' + encodeURIComponent(text + '\n\n' + url);
+  }
+  if (typeof gtag === 'function') gtag('event', 'parent_share', { placement:'survey-success', method, age: answers.age || '', lang: "ru" });
 }
 
 // emailed: false when a returning subscriber already had the program emailed recently (see subscribe.mjs)

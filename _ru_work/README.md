@@ -44,6 +44,11 @@ The exercise library comes from `exercises.ru.json` through the normal generator
 - `ru/app.html` (like every language's `app.html`) was edited directly on 2026-11-08: the App Store
   link carries Apple's provider token (`pt=129111129&ct=<src>&mt=8`) so installs count as campaigns.
 
+- `ru/index.html` and `ru/survey.html` were edited directly on 2026-11-15 by `_apply_week_one_i18n.mjs` (playable
+  Week One on the quiz result screen and the homepage, parents section, desktop QR dialog; the Russian strings are
+  in that script, the exercise texts in `assets/week-one-data.ru.js` from the app's translations). Re-injecting
+  these two pages from `seg/` would remove it: run the script again afterwards (it skips pages that have it).
+
 - `ru/*.html` was edited directly on 2026-11-01 (annual-only free week wording, root-absolute file
   paths). Re-injecting from `seg/` would undo both unless the segments are updated too.
 

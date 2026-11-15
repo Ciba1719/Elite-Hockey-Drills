@@ -510,8 +510,53 @@ section{position:relative}
 .lang-hint a{font-weight:600;color:#070708;background:var(--ice);padding:9px 14px;border-radius:999px;white-space:nowrap}
 .lang-hint button{background:none;border:0;color:var(--muted);font-size:20px;line-height:1;padding:4px 6px;cursor:pointer}
 @media (min-width:720px){.lang-hint{left:auto;right:20px;bottom:20px;max-width:380px}}
+/* ── Short laptop screens: the hero buttons stay on the first screen ── */
+@media (min-width:1024px) and (max-height:860px){
+  .hero h1{font-size:clamp(56px,13vh,128px);margin-bottom:16px}
+  .hero-pills{margin-bottom:14px}
+  .hero .lede{margin-bottom:20px;font-size:17px}
+  .hero-trust{margin-top:24px}
+}
+/* ── Russian headline runs to five lines: sized by screen height so the buttons stay on the first screen ── */
+@media (min-width:1024px){
+  html[lang="ru"] .hero h1{font-size:clamp(48px,min(8.4vw,9.6vh),104px);margin-bottom:14px}
+}
+/* ── Week One, playable (assets/week-one.js) ── */
+.try{background:radial-gradient(900px 480px at 50% 0%,rgba(232,183,119,.07),transparent 60%)}
+.try-cta{display:flex;flex-direction:column;gap:12px;margin-top:24px;align-items:stretch}
+.try-cta .btn{width:100%}
+.try-cta small{font-size:13.5px;color:var(--muted);line-height:1.5}
+@media (min-width:720px){.try-cta{flex-direction:row;align-items:center;flex-wrap:wrap}.try-cta .btn{width:auto}.try-cta small{flex:1 1 240px;max-width:44ch}}
+/* ── Parents ── */
+.parents-grid{display:grid;gap:12px}
+@media (min-width:640px){.parents-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1024px){.parents-grid{grid-template-columns:repeat(4,1fr);gap:16px}}
+.parent-card{padding:24px 22px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line)}
+.parent-card .ic{width:40px;height:40px;border-radius:12px;background:var(--ice-dim);display:grid;place-items:center;margin-bottom:14px}
+.parent-card .ic svg{width:19px;height:19px;stroke:var(--ice);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.parent-card h3{font-family:var(--display);font-size:27px;letter-spacing:.03em;line-height:1;margin-bottom:9px;text-transform:uppercase;font-weight:400}
+.parent-card p{color:var(--muted);font-size:14.5px}
+.parents-foot{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center}
+.parents-foot span{font-size:14px;color:var(--muted)}
+/* ── Desktop: "get it on your phone" dialog ── */
+.getapp{position:fixed;inset:0;z-index:1100;display:none;place-items:center;padding:20px;background:rgba(4,4,6,.74);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.getapp.open{display:grid}
+.getapp-box{position:relative;width:100%;max-width:520px;background:var(--panel);border:1px solid var(--line-2);border-radius:24px;padding:34px 28px 26px;text-align:center;box-shadow:0 40px 90px -30px rgba(0,0,0,.9)}
+.getapp-box h3{font-family:var(--display);font-weight:400;font-size:42px;line-height:.95;letter-spacing:.02em;text-transform:uppercase;margin-bottom:10px}
+.getapp-box h3 em{font-family:var(--serif,'Instrument Serif',serif);font-style:italic;text-transform:none;color:var(--ice-2)}
+.getapp-box > p{color:var(--ink-2);font-size:15px;margin-bottom:20px}
+.getapp-qrs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.getapp-qr{display:block;background:#fff;border-radius:16px;padding:14px 14px 12px;color:#111}
+.getapp-qr img{width:100%;height:auto;display:block;filter:invert(1)}
+.getapp-qr b{display:block;margin-top:8px;font-size:14px;font-weight:700}
+.getapp-alt{margin-top:18px;font-size:13px;color:var(--muted)}
+.getapp-x{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;color:var(--ink-2);background:rgba(255,255,255,.03);cursor:pointer}
+.getapp-x:hover{color:var(--ink);border-color:var(--ink-2)}
+.getapp-x svg{width:16px;height:16px}
 </style>
 <script src="/assets/lang-switch.js" defer></script>
+<script src="/assets/week-one-data.ru.js" defer></script>
+<script src="/assets/week-one.js" defer></script>
 </head>
 <body>
 
@@ -538,6 +583,7 @@ section{position:relative}
   </div>
 </header>
 <div class="mobile-menu" id="mobileMenu">
+  <a href="#week-one">Посмотреть первый день</a>
   <a href="#app">Приложение</a>
   <a href="#how">Как это работает</a>
   <a href="#trial">Цены</a>
@@ -571,7 +617,7 @@ section{position:relative}
         <div class="hero-ctas">
           <a href="https://apps.apple.com/ru/app/elite-hockey-drills/id6787257275" class="btn btn-primary btn-lg" data-place="hero">Начать бесплатную неделю
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
-          <a href="#app" class="btn btn-ghost btn-lg">Заглянуть в приложение</a>
+          <a href="#week-one" class="btn btn-ghost btn-lg">Посмотреть первый день</a>
         </div>
         <div class="hero-sub">
           <div class="store-badges">
@@ -616,6 +662,24 @@ section{position:relative}
 </div>
 
 <!-- ═══════════════ HOW IT WORKS ═══════════════ -->
+<!-- WEEK ONE, PLAYABLE: the app's real first week per age group (assets/week-one-data.ru.js). Applied by _apply_week_one_i18n.mjs. -->
+<section class="sec try" id="week-one">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow gold">Попробуй сейчас · без регистрации</div>
+      <h2 class="display">Выбери возраст.<br>Посмотри <em>первый день.</em></h2>
+      <p class="lede">Это первая неделя, которую составляет приложение, упражнение за упражнением. Нажми на упражнение, чтобы посмотреть демо.</p>
+    </div>
+    <div id="weekOne"></div>
+    <div class="try-cta reveal">
+      <a href="https://apps.apple.com/ru/app/elite-hockey-drills/id6787257275" class="btn btn-primary btn-lg" data-place="week_one">Начать эту неделю в приложении
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="survey.html" class="btn btn-ghost btn-lg">Прислать эту неделю на почту, бесплатно</a>
+      <small>Приложение перестроит её под твой возраст, позицию, инвентарь и игры. Первая неделя бесплатно.</small>
+    </div>
+  </div>
+</section>
+
 <section class="sec" id="how">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -739,6 +803,43 @@ section{position:relative}
 </section>
 
 <!-- ═══════════════ PRICING ═══════════════ -->
+<!-- PARENTS (same facts as parents.html). Applied by _apply_week_one_i18n.mjs. -->
+<section class="sec-tight" id="parents">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-bottom:26px">
+      <div class="eyebrow ice">Для родителей хоккеистов</div>
+      <h2 class="display" style="font-size:clamp(36px,6.4vw,64px)">Тренировки<br><em>по возрасту.</em></h2>
+    </div>
+    <div class="parents-grid">
+      <article class="parent-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Для растущего организма</h3>
+        <p>Игроки 14 лет и младше занимаются только с собственным весом и лёгким инвентарём, никогда со штангой. Лёгкие недели запланированы заранее.</p>
+      </article>
+      <article class="parent-card reveal d1">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9.5v5l4.5-2.5z"/></svg></div>
+        <h3>Показано, а не угадано</h3>
+        <p>Видео и подсказка тренера к каждому упражнению, чтобы игрок сразу учился выполнять правильно.</p>
+      </article>
+      <article class="parent-card reveal d2">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+        <h3>Вписывается в хоккей</h3>
+        <p>От 2 до 5 тренировок в неделю, спланированных вокруг льда и игр. Завтра игра — значит короткая активация, а не тяжёлые ноги.</p>
+      </article>
+      <article class="parent-card reveal d3">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+        <h3>Без сюрпризов</h3>
+        <p>Первая неделя в годовом плане бесплатна. Оплата идёт через Apple или Google, отменить можно в два касания. Без рекламы. Личные данные никогда не продаются.</p>
+      </article>
+    </div>
+    <div class="parents-foot reveal">
+      <a href="/ru/parents.html" class="btn btn-ghost">Страница для родителей
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <span>Что это, сколько стоит, как отменить. Две минуты.</span>
+    </div>
+  </div>
+</section>
+
 <section class="sec pricing" id="trial">
   <div class="wrap">
     <div class="sec-head reveal" style="text-align:center">
@@ -972,6 +1073,20 @@ section{position:relative}
 </footer>
 
 
+<!-- Desktop visitors cannot install from here: the gold buttons open this instead of the store's web page -->
+<div class="getapp" id="getApp" role="dialog" aria-modal="true" aria-labelledby="getAppTitle">
+  <div class="getapp-box">
+    <button type="button" class="getapp-x" id="getAppClose" aria-label="Закрыть"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <h3 id="getAppTitle">Установи на <em>телефон.</em></h3>
+    <p>Наведи камеру телефона на код. Первая неделя бесплатно.</p>
+    <div class="getapp-qrs">
+      <a class="getapp-qr" href="https://apps.apple.com/ru/app/elite-hockey-drills/id6787257275" data-store="ios" data-place="desktop_dialog" target="_blank" rel="noopener"><img src="/assets/app/app-store-qr.svg" alt="QR: App Store" width="200" height="200" /><b>iOS · App Store</b></a>
+      <a class="getapp-qr" href="https://play.google.com/store/apps/details?id=com.elitehockeydrills.training&amp;hl=ru" data-place="desktop_dialog" target="_blank" rel="noopener"><img src="/assets/app/google-play-qr.svg" alt="QR: Google Play" width="200" height="200" /><b>Android · Google Play</b></a>
+    </div>
+    <p class="getapp-alt">Телефона нет под рукой? Нажми на код, чтобы открыть страницу магазина здесь.</p>
+  </div>
+</div>
+
 <div class="mobile-bar" id="mobileBar">
   <a href="https://apps.apple.com/ru/app/elite-hockey-drills/id6787257275" class="btn btn-primary" data-place="mobile_bar">Начать бесплатно</a>
   <a href="#trial" class="btn btn-ghost">Цены</a>
@@ -1125,6 +1240,34 @@ function toggleFaq(btn){
 
 /* ── App Store click tracking → GA4 "app_store_click" ──────── */
 document.addEventListener('click',function(e){var t=e.target;var a=t&&t.closest?t.closest('a[href*="apps.apple.com"]'):null;if(!a||typeof gtag!=='function')return;var s=a.closest('section[id],header,footer,nav,.mobile-bar,.mobile-menu');gtag('event','app_store_click',{placement:a.getAttribute('data-place')||(s&&(s.id||String(s.className).split(' ')[0]))||'link',link_text:(a.textContent||'').replace(/[ \t\r\n]+/g,' ').trim().slice(0,60),page_path:location.pathname,transport_type:'beacon'});},true);
+
+/* ── Week One, playable ────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', function(){
+  var el = document.getElementById('weekOne');
+  if (el && window.EHDWeekOne) window.EHDWeekOne.mount(el, { age:'12_14', picker:true, wide:true, place:'home' });
+});
+
+/* ── Desktop: gold "start" buttons open the scan-to-phone dialog ── */
+(function(){
+  var box = document.getElementById('getApp');
+  if (!box) return;
+  var ua = navigator.userAgent || '';
+  var phone = /Android|iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  if (phone || !window.matchMedia('(hover:hover) and (pointer:fine)').matches) return;
+  var last = null;
+  function open(from){
+    last = from; box.classList.add('open');
+    document.getElementById('getAppClose').focus();
+    try { gtag('event', 'getapp_dialog_open', { placement: from.getAttribute('data-place') || 'link' }); } catch (e) {}
+  }
+  function close(){ box.classList.remove('open'); if (last) last.focus(); }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('a.btn[href*="apps.apple.com"]') : null;
+    if (a && !box.contains(a)) { e.preventDefault(); open(a); return; }
+    if (e.target === box || (e.target.closest && e.target.closest('#getAppClose'))) close();
+  });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && box.classList.contains('open')) close(); });
+})();
 </script>
 </body>
 </html>
