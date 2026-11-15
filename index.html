@@ -486,8 +486,50 @@ section{position:relative}
 .lang-hint a{font-weight:600;color:#070708;background:var(--ice);padding:9px 14px;border-radius:999px;white-space:nowrap}
 .lang-hint button{background:none;border:0;color:var(--muted);font-size:20px;line-height:1;padding:4px 6px;cursor:pointer}
 @media (min-width:720px){.lang-hint{left:auto;right:20px;bottom:20px;max-width:380px}}
+
+/* ── Short laptop screens: the hero buttons stay on the first screen ── */
+@media (min-width:1024px) and (max-height:860px){
+  .hero h1{font-size:clamp(56px,13vh,128px);margin-bottom:16px}
+  .hero-pills{margin-bottom:14px}
+  .hero .lede{margin-bottom:20px;font-size:17px}
+  .hero-trust{margin-top:24px}
+}
+/* ── Week One, playable (assets/week-one.js) ── */
+.try{background:radial-gradient(900px 480px at 50% 0%,rgba(232,183,119,.07),transparent 60%)}
+.try-cta{display:flex;flex-direction:column;gap:12px;margin-top:24px;align-items:stretch}
+.try-cta .btn{width:100%}
+.try-cta small{font-size:13.5px;color:var(--muted);line-height:1.5}
+@media (min-width:720px){.try-cta{flex-direction:row;align-items:center;flex-wrap:wrap}.try-cta .btn{width:auto}.try-cta small{flex:1 1 240px;max-width:44ch}}
+/* ── Parents ── */
+.parents-grid{display:grid;gap:12px}
+@media (min-width:640px){.parents-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1024px){.parents-grid{grid-template-columns:repeat(4,1fr);gap:16px}}
+.parent-card{padding:24px 22px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line)}
+.parent-card .ic{width:40px;height:40px;border-radius:12px;background:var(--ice-dim);display:grid;place-items:center;margin-bottom:14px}
+.parent-card .ic svg{width:19px;height:19px;stroke:var(--ice);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.parent-card h3{font-family:var(--display);font-size:27px;letter-spacing:.03em;line-height:1;margin-bottom:9px;text-transform:uppercase;font-weight:400}
+.parent-card p{color:var(--muted);font-size:14.5px}
+.parents-foot{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center}
+.parents-foot span{font-size:14px;color:var(--muted)}
+/* ── Desktop: "get it on your phone" dialog ── */
+.getapp{position:fixed;inset:0;z-index:1100;display:none;place-items:center;padding:20px;background:rgba(4,4,6,.74);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.getapp.open{display:grid}
+.getapp-box{position:relative;width:100%;max-width:520px;background:var(--panel);border:1px solid var(--line-2);border-radius:24px;padding:34px 28px 26px;text-align:center;box-shadow:0 40px 90px -30px rgba(0,0,0,.9)}
+.getapp-box h3{font-family:var(--display);font-weight:400;font-size:42px;line-height:.95;letter-spacing:.02em;text-transform:uppercase;margin-bottom:10px}
+.getapp-box h3 em{font-family:var(--serif,'Instrument Serif',serif);font-style:italic;text-transform:none;color:var(--ice-2)}
+.getapp-box > p{color:var(--ink-2);font-size:15px;margin-bottom:20px}
+.getapp-qrs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.getapp-qr{display:block;background:#fff;border-radius:16px;padding:14px 14px 12px;color:#111}
+.getapp-qr img{width:100%;height:auto;display:block;filter:invert(1)}
+.getapp-qr b{display:block;margin-top:8px;font-size:14px;font-weight:700}
+.getapp-alt{margin-top:18px;font-size:13px;color:var(--muted)}
+.getapp-x{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;color:var(--ink-2);background:rgba(255,255,255,.03);cursor:pointer}
+.getapp-x:hover{color:var(--ink);border-color:var(--ink-2)}
+.getapp-x svg{width:16px;height:16px}
 </style>
 <script src="/assets/lang-switch.js" defer></script>
+<script src="/assets/week-one-data.js" defer></script>
+<script src="/assets/week-one.js" defer></script>
 </head>
 <body>
 
@@ -514,6 +556,7 @@ section{position:relative}
   </div>
 </header>
 <div class="mobile-menu" id="mobileMenu">
+  <a href="#week-one">Watch Day One</a>
   <a href="#app">The App</a>
   <a href="#how">How it works</a>
   <a href="#trial">Pricing</a>
@@ -547,7 +590,7 @@ section{position:relative}
         <div class="hero-ctas">
           <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary btn-lg" data-place="hero">Start your free week
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          <a href="#app" class="btn btn-ghost btn-lg">See inside the app</a>
+          <a href="#week-one" class="btn btn-ghost btn-lg">Watch day one</a>
         </div>
         <div class="hero-sub">
           <div class="store-badges">
@@ -590,6 +633,25 @@ section{position:relative}
     <span><i></i>Personalized to your age &amp; position</span><span><i></i>Built around your games</span><span><i></i>Every exercise on video</span><span><i></i>Game-day mode</span><span><i></i>Progress &amp; PRs</span><span><i></i>Built around your equipment</span><span><i></i>Ages 9 to 40+</span>
   </div>
 </div>
+
+<!-- ═══════════════ WEEK ONE, PLAYABLE ═══════════════
+     The app's real first week per age group (assets/week-one-data.js, built by _build_week_one_preview.mjs). -->
+<section class="sec try" id="week-one">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow gold">Try it now · no sign-up</div>
+      <h2 class="display">Pick an age.<br>Watch <em>day one.</em></h2>
+      <p class="lede">This is the first week the app builds, exercise by exercise. Tap any drill to watch the demo.</p>
+    </div>
+    <div id="weekOne"></div>
+    <div class="try-cta reveal">
+      <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary btn-lg" data-place="week_one">Start this week in the app
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="survey.html" class="btn btn-ghost btn-lg">Email me this week, free</a>
+      <small>The app rebuilds it around your own age, position, equipment and games. Your first week is free.</small>
+    </div>
+  </div>
+</section>
 
 <!-- ═══════════════ HOW IT WORKS ═══════════════ -->
 <section class="sec" id="how">
@@ -710,6 +772,43 @@ section{position:relative}
       <p class="muted" style="font-size:15px;max-width:52ch">Filmed by Coach David, cued for hockey — not repurposed gym content. The full library is free to browse; the app tells you which ones to do, when, and how heavy.</p>
       <a href="/library.html" class="btn btn-ghost">Browse the free library
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PARENTS ═══════════════ (same facts as parents.html) -->
+<section class="sec-tight" id="parents">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-bottom:26px">
+      <div class="eyebrow ice">For hockey parents</div>
+      <h2 class="display" style="font-size:clamp(36px,6.4vw,64px)">Training that fits<br><em>their age.</em></h2>
+    </div>
+    <div class="parents-grid">
+      <article class="parent-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Right for a growing body</h3>
+        <p>Players 14 and under train with bodyweight and light equipment only, never barbells. Lighter weeks are built in.</p>
+      </article>
+      <article class="parent-card reveal d1">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9.5v5l4.5-2.5z"/></svg></div>
+        <h3>Shown, not guessed</h3>
+        <p>A demo video and a coaching cue for every exercise, so they learn to do it right the first time.</p>
+      </article>
+      <article class="parent-card reveal d2">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+        <h3>Fits around hockey</h3>
+        <p>2 to 5 sessions a week, planned around practices and games. Game tomorrow means a short primer, not heavy legs.</p>
+      </article>
+      <article class="parent-card reveal d3">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+        <h3>No surprises</h3>
+        <p>The first week is free on the yearly plan. Apple or Google handles the billing, and you cancel in two taps. No ads. Personal data is never sold.</p>
+      </article>
+    </div>
+    <div class="parents-foot reveal">
+      <a href="/parents.html" class="btn btn-ghost">Read the parent page
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <span>What it is, what it costs, how to cancel. Two minutes.</span>
     </div>
   </div>
 </section>
@@ -948,6 +1047,20 @@ section{position:relative}
 </footer>
 
 
+<!-- Desktop visitors cannot install from here: the gold buttons open this instead of the store's web page -->
+<div class="getapp" id="getApp" role="dialog" aria-modal="true" aria-labelledby="getAppTitle">
+  <div class="getapp-box">
+    <button type="button" class="getapp-x" id="getAppClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <h3 id="getAppTitle">Get it on <em>your phone.</em></h3>
+    <p>Point your phone camera at the code. Your first week is free.</p>
+    <div class="getapp-qrs">
+      <a class="getapp-qr" href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" data-store="ios" data-place="desktop_dialog" target="_blank" rel="noopener"><img src="assets/app/app-store-qr.svg" alt="QR code for the App Store" width="200" height="200" /><b>iOS · App Store</b></a>
+      <a class="getapp-qr" href="https://play.google.com/store/apps/details?id=com.elitehockeydrills.training" data-place="desktop_dialog" target="_blank" rel="noopener"><img src="assets/app/google-play-qr.svg" alt="QR code for Google Play" width="200" height="200" /><b>Android · Google Play</b></a>
+    </div>
+    <p class="getapp-alt">No phone at hand? Click a code to open the store page here.</p>
+  </div>
+</div>
+
 <div class="mobile-bar" id="mobileBar">
   <a href="https://apps.apple.com/us/app/elite-hockey-drills/id6787257275" class="btn btn-primary" data-place="mobile_bar">Start free week</a>
   <a href="#trial" class="btn btn-ghost">Pricing</a>
@@ -1101,6 +1214,34 @@ function toggleFaq(btn){
 
 /* ── App Store click tracking → GA4 "app_store_click" ──────── */
 document.addEventListener('click',function(e){var t=e.target;var a=t&&t.closest?t.closest('a[href*="apps.apple.com"]'):null;if(!a||typeof gtag!=='function')return;var s=a.closest('section[id],header,footer,nav,.mobile-bar,.mobile-menu');gtag('event','app_store_click',{placement:a.getAttribute('data-place')||(s&&(s.id||String(s.className).split(' ')[0]))||'link',link_text:(a.textContent||'').replace(/[ \t\r\n]+/g,' ').trim().slice(0,60),page_path:location.pathname,transport_type:'beacon'});},true);
+
+/* ── Week One, playable ────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', function(){
+  var el = document.getElementById('weekOne');
+  if (el && window.EHDWeekOne) window.EHDWeekOne.mount(el, { age:'12_14', picker:true, wide:true, place:'home' });
+});
+
+/* ── Desktop: gold "start" buttons open the scan-to-phone dialog ── */
+(function(){
+  var box = document.getElementById('getApp');
+  if (!box) return;
+  var ua = navigator.userAgent || '';
+  var phone = /Android|iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  if (phone || !window.matchMedia('(hover:hover) and (pointer:fine)').matches) return;
+  var last = null;
+  function open(from){
+    last = from; box.classList.add('open');
+    document.getElementById('getAppClose').focus();
+    try { gtag('event', 'getapp_dialog_open', { placement: from.getAttribute('data-place') || 'link' }); } catch (e) {}
+  }
+  function close(){ box.classList.remove('open'); if (last) last.focus(); }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('a.btn[href*="apps.apple.com"]') : null;
+    if (a && !box.contains(a)) { e.preventDefault(); open(a); return; }
+    if (e.target === box || (e.target.closest && e.target.closest('#getAppClose'))) close();
+  });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && box.classList.contains('open')) close(); });
+})();
 </script>
 </body>
 </html>
