@@ -490,9 +490,9 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
     <div class="doors">
       <a class="door-app" id="doorApp" href="/ru/app?src=survey_week_one" data-place="survey-week-one" target="_blank" rel="noopener"><span id="doorAppLabel">Тренируйтесь в приложении</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
       <p class="door-fine">Видео, таймер отдыха и результаты к каждому упражнению. Годовой план: 7 дней бесплатно, затем $99.90/год. Месячный план: $17.99/мес, без бесплатной недели. Отмена в любой момент. iOS и Android.</p>
-      <a class="door-pdf" id="giftBtn" href="/free/EHD-Week-One-Off-Ice-Program-12-14.pdf" target="_blank" rel="noopener">
+      <a class="door-pdf" id="giftBtn" href="/free/EHD-Week-One-Off-Ice-Program-12-14-ru.pdf" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
-        <span>Открыть бесплатный PDF (на английском)</span>
+        <span>Открыть бесплатный PDF</span>
       </a>
       <p class="gift-mail" id="giftMail">Мы также отправили её на <strong id="successEmail">вашу почту</strong>. Нет письма через 2 минуты? Проверьте папки «Промоакции» и «Спам».</p>
       <button type="button" class="door-parent" id="parentShare" hidden>
@@ -700,7 +700,7 @@ function populateEmailScreen(){
    nobody waits on an inbox. Keep the steps in sync with the PDFs and
    with the "Send … PDF" emails (campaigns/shared/emails/build-emails.mjs).
    ============================================================ */
-const PDF = { '9_11': '/free/EHD-Week-One-Off-Ice-Program-9-11.pdf', '12_14': '/free/EHD-Week-One-Off-Ice-Program-12-14.pdf', '15_18': '/free/EHD-Week-One-Off-Ice-Program-15-18.pdf', '19_39': '/free/EHD-Week-One-Off-Ice-Program-19-39.pdf', '40plus': '/free/EHD-Week-One-Off-Ice-Program-40-plus.pdf' };
+const PDF = { '9_11': '/free/EHD-Week-One-Off-Ice-Program-9-11-ru.pdf', '12_14': '/free/EHD-Week-One-Off-Ice-Program-12-14-ru.pdf', '15_18': '/free/EHD-Week-One-Off-Ice-Program-15-18-ru.pdf', '19_39': '/free/EHD-Week-One-Off-Ice-Program-19-39-ru.pdf', '40plus': '/free/EHD-Week-One-Off-Ice-Program-40-plus-ru.pdf' };
 const COVER = { '9_11': '/free/cover-week-one-9-11.jpg', '12_14': '/free/cover-week-one-12-14.jpg', '15_18': '/free/cover-week-one-15-18.jpg', '19_39': '/free/cover-week-one-19-39.jpg', '40plus': '/free/cover-week-one-40-plus.jpg' };
 const GIFT = {
   '9_11': { kicker:"Бесплатно · 9–11 лет", name:'Week One', meta:"5 тренировок · 20–32 минут · без инвентаря · 1-я неделя программы из приложения · на английском", url:PDF['9_11'], cover:COVER['9_11'] },

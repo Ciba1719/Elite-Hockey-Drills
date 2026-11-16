@@ -490,9 +490,9 @@ body.success-mode .stage{padding-top:calc(60px + var(--sat));}
     <div class="doors">
       <a class="door-app" id="doorApp" href="/de/app?src=survey_week_one" data-place="survey-week-one" target="_blank" rel="noopener"><span id="doorAppLabel">Trainiere es in der App</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
       <p class="door-fine">Video, Pausen-Timer und Ergebnisse zu jeder Übung. Jahresabo: 7&nbsp;Tage gratis, danach 99,90&nbsp;€/Jahr. Monatsabo: 19,99&nbsp;€/Monat, ohne Gratiswoche. Jederzeit kündbar. iOS und Android.</p>
-      <a class="door-pdf" id="giftBtn" href="/free/EHD-Week-One-Off-Ice-Program-12-14.pdf" target="_blank" rel="noopener">
+      <a class="door-pdf" id="giftBtn" href="/free/EHD-Week-One-Off-Ice-Program-12-14-de.pdf" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
-        <span>Kostenloses PDF öffnen (auf Englisch)</span>
+        <span>Kostenloses PDF öffnen</span>
       </a>
       <p class="gift-mail" id="giftMail"><strong id="successEmail"></strong></p>
       <button type="button" class="door-parent" id="parentShare" hidden>
@@ -662,7 +662,7 @@ bindSingleSelect(getScreen(4), 'goal');
 
 /* Age -> MailerLite group routing now happens server-side in subscribe.mjs. */
 
-// The free program each age group is emailed (the emails and PDFs are in English) — keep in sync with the
+// The free program each age group is emailed (the emails are in English; the PDF on the result screen is translated) — keep in sync with the
 // MailerLite "Send … PDF" automations
 const FREE_PROGRAM = {
   '9_11':   { acc: "das kostenlose Programm „Week One“ (5 Einheiten, auf Englisch)", nom: "Dein kostenloses Programm „Week One“" },
@@ -698,9 +698,9 @@ function populateEmailScreen(){
    SUCCESS SCREEN — the free program first, then the app
    ============================================================
    Same layout as /survey.html. The program opens right on this page
-   (the email is the copy). The PDFs and the teen page are in English.
+   (the email is the copy). The PDF is translated (campaigns/week1/publish-pdf-i18n.mjs); the email and the teen page are in English.
    ============================================================ */
-const PDF = { '9_11': '/free/EHD-Week-One-Off-Ice-Program-9-11.pdf', '12_14': '/free/EHD-Week-One-Off-Ice-Program-12-14.pdf', '15_18': '/free/EHD-Week-One-Off-Ice-Program-15-18.pdf', '19_39': '/free/EHD-Week-One-Off-Ice-Program-19-39.pdf', '40plus': '/free/EHD-Week-One-Off-Ice-Program-40-plus.pdf' };
+const PDF = { '9_11': '/free/EHD-Week-One-Off-Ice-Program-9-11-de.pdf', '12_14': '/free/EHD-Week-One-Off-Ice-Program-12-14-de.pdf', '15_18': '/free/EHD-Week-One-Off-Ice-Program-15-18-de.pdf', '19_39': '/free/EHD-Week-One-Off-Ice-Program-19-39-de.pdf', '40plus': '/free/EHD-Week-One-Off-Ice-Program-40-plus-de.pdf' };
 const COVER = { '9_11': '/free/cover-week-one-9-11.jpg', '12_14': '/free/cover-week-one-12-14.jpg', '15_18': '/free/cover-week-one-15-18.jpg', '19_39': '/free/cover-week-one-19-39.jpg', '40plus': '/free/cover-week-one-40-plus.jpg' };
 const GIFT = {
   '9_11': { kicker:"Gratis · 9–11 Jahre", name:'Week One', meta:"5 Einheiten · 20–32 Minuten · ohne Geräte · Woche 1 des App-Programms · auf Englisch", url:PDF['9_11'], cover:COVER['9_11'] },
