@@ -228,7 +228,7 @@ section{position:relative}
 .trust-cred i{width:26px;height:26px;border-radius:50%;background:var(--gold-dim);display:grid;place-items:center;flex:none}
 .trust-cred i svg{width:13px;height:13px;stroke:var(--gold)}
 @media (min-width:560px){
-  .hero-ctas{flex-direction:row;align-items:center}
+  .hero-ctas{flex-direction:row;flex-wrap:wrap;align-items:center}
   .hero-ctas .btn{width:auto}
   .hero-trust{grid-template-columns:repeat(4,1fr)}
   .trust-cred{grid-column:1/-1}
@@ -236,6 +236,7 @@ section{position:relative}
 @media (min-width:1024px){
   .hero{justify-content:center;padding-top:calc(var(--nav-h) + 10px)}
   .hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:40px;align-items:center}
+  .hero-ctas{flex-wrap:nowrap}
   .hero h1{font-size:clamp(80px,8.4vw,128px)}
   .hero-phone{display:block}
   .hero-trust{grid-template-columns:repeat(4,1fr) auto;align-items:center}

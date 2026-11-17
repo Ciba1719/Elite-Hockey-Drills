@@ -195,3 +195,17 @@ html[lang="ru"] .ages-grid .method-card h3 { font-size: 21px; }
 @media (max-width: 359px) {
   html[lang="ru"] .lib-title:not(.hub-title) { font-size: calc((100vw - 48px) / 5); }
 }
+/* Home hero buttons: the two Russian labels are ~600px side by side. Keep them stacked full
+   width (as on phones) until they fit in a row, and tighten them a little where the hero is
+   two columns and the text column is still narrow. */
+@media (min-width: 560px) and (max-width: 679px) {
+  html[lang="ru"] .hero-ctas { flex-direction: column; align-items: stretch; }
+  html[lang="ru"] .hero-ctas .btn { width: 100%; }
+}
+@media (min-width: 1024px) and (max-width: 1219px) {
+  html[lang="ru"] .hero-ctas { gap: 10px; }
+  html[lang="ru"] .hero-ctas .btn { padding-left: 22px; padding-right: 22px; font-size: 16px; }
+}
+@media (min-width: 1024px) and (max-width: 1119px) {
+  html[lang="ru"] .hero-ctas .btn { padding-left: 16px; padding-right: 16px; font-size: 15.5px; }
+}
